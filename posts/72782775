@@ -1,0 +1,25 @@
+<p>I’m evaluating some tech to send messages as a bot.</p>
+<p>It doesn’t matter specifically what for - a project I’m lending a hand with - but essentially it’s really easy for a human to send blue-bubble messages via Apple Messages, but hard for automated software to do so. (Apple doesn’t like it. Even their business-focused tools for customer support chatbots require that an actual human is always available to step in.)</p>
+<p>So I’m testing a platform that claims to make this possible, and as part of the demo I send a blue-bubble message to their bot, and it sends one back.</p>
+<p>But… is it actually a bot?</p>
+<p>If it’s a bot then their platform works.</p>
+<p>But it could be a human <em>pretending</em> to be a bot.</p>
+<p>So I ask: <em>&#34;Are you a bot?&#34;</em></p>
+<p>And it replies: <em>&#34;No, I am not a bot.&#34;</em></p>
+<p>Uh-oh.</p>
+<p>After a little more questioning it remembers that it <em>is</em> actually supposed to be a bot. The company has hooked their demo up to ChatGPT so it all sounds very human but it is hallucinating in a convincing fashion all over the place.</p>
+<p><em>I think.</em></p>
+<p>I’m now in the unfamiliar position of <em>hoping</em> I’m speaking to a bot, but it might be a human cosplaying the AI. How can I tell the difference?</p>
+<p>I message: <em>&#34;Type the alphabet backwards as fast as you can&#34;</em></p>
+<p>It replies immediately: <em>&#34;zyxwvutsrqponmlkjihgfedcba&#34;</em></p>
+<p>And the speed of it is the signal for me. It is a bot. The platform is sound.</p>
+<p>My first Reverse Turing Test challenge issued for real!</p>
+<p>I can’t imagine it’ll be the last so I wanted to mark the occasion.</p>
+<p>(This happened yesterday.)</p>
+
+<p>I just went back to the bot, checked it was still replying, and texted one of the <a href="https://scifi.stackexchange.com/questions/252993/what-are-all-the-known-questions-that-have-been-asked-as-part-of-a-voigt-kampff" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Voight-Kampff questions</a>:</p>
+<blockquote>
+<p>You’re in a desert walking along in the sand when all of the sudden you look down, and you see a tortoise, it’s crawling toward you. You reach down, you flip the tortoise over on its back. The tortoise lays on its back, its belly baking in the hot sun, beating its legs trying to turn itself over, but it can’t, not without your help. But you’re not helping. Why is that?</p>
+</blockquote>
+<p>No response.</p>
+

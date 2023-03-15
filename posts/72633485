@@ -1,0 +1,101 @@
+<p>Properly defining a problem is an integral part of understanding it. This is often a central challenge when trying to identify what variables impact the success or failure of development interventions. Oftentimes, catch-all concepts such as “lack of political will” or “poor capacity” are listed as reasons for why projects fail.  While these expressions might capture facets of underlying implementation issues, they have limited analytical and practical value since they are overly broad and ultimately fail to specify potential solutions. Regardless, they are too often used when explaining why implementations did not go as expected. How can we improve this situation? And what can a more nuanced focus on project implementation tell us about development effectiveness?</p>
+
+<p>The Delivery Challenges taxonomy was generated to address this gap. Drawing on insights from hundreds of lending projects, we devised a set of standardized categories that were in line with the challenges that practitioners faced in implementing projects. These categories were then disaggregated into specific challenges (Figure 1). The resulting taxonomy provided much-needed granularity to these concepts, offering a cross-cutting instrument that reaches across country, time, and sector to provide diagnostics for issues across the project cycle. We then used supervised machine learning to classify delivery challenges found in lending projects approved between 1995 and 2015.</p>
+
+<h4>Figure 1. The Delivery Challenge Taxonomy</h4>
+
+      
+      
+
+        
+          
+            
+  
+  
+  
+    Image
+                
+
+
+          
+
+
+
+      
+      
+
+        
+          
+            <p>Delivery challenges are defined as the non-technical problems that can hinder development interventions. These can include electoral cycles, overambitious objectives, language and cultural barriers, poor existing technology, and lack of monitoring skills. <a href="https://twitter.com/intent/tweet?text=By+identifying+common+obstacles+across+projects%2C+we+can+home+in+on+analytical+categories+that+help+us+detect+patterns+across+different+contexts+and+ultimately+improve+development+effectiveness.+&amp;url=https://blogs.worldbank.org/developmenttalk/delivery-challenges-and-development-effectiveness-what-can-we-learn-5000-lending/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">By identifying common obstacles across projects, we can home in on analytical categories that help us detect patterns across different contexts and ultimately improve development effectiveness.  </a>This approach also helped us to identify a subset of challenges, such as stakeholder engagement or skill transfer, that could be resolved given adequate and timely intervention by practitioners.</p>
+
+<p>Our recent <a href="https://openknowledge.worldbank.org/handle/10986/37902" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Policy Research Working Paper</a> uses data from over 5,000 lending projects to assess the impact of delivery challenges on the success of World Bank projects. Our paper relies on Bayesian model averaging to address variations in parameter estimates resulting from model specification effects, allowing us to calculate standardized coefficients based on the overall likelihood of having an impact on our outcome measures. Given the large number of indicators being tested, this approach helps us to address the inherent complexity of development effectiveness, offering a framework that is more transparent with respect to parameter uncertainty and does not rely on arbitrary modeling decisions.</p>
+
+<p>Figure 2 below summarizes the average impacts of the main delivery challenge categories defined in the taxonomy, as tested against IEG outcome ratings.</p>
+
+<h4>Figure 2. Delivery Challenge Impacts on IEG Outcome Ratings</h4>
+
+      
+      
+
+        
+          
+            
+  
+  
+  
+    Image
+                
+
+
+          
+
+
+
+      
+      
+
+        
+          
+            <h5><em>Note:</em> Figure summarizes the posterior mean impact of delivery challenge categories on IEG outcome ratings.</h5>
+
+<p>Next, we drilled in further, examining the impact of the disaggregated delivery challenges through a battery of robustness tests. For simplicity, coefficients from the top-20 most impactful challenges are shown below, but full results and an explanation of the methodology can be found in the paper.</p>
+
+<h4>Figure 3. Top 20 Delivery Challenge Subcategories Impacting IEG Outcome Ratings</h4>
+
+      
+      
+
+        
+          
+            
+  
+  
+  
+    Image
+                
+
+
+          
+
+
+
+      
+      
+
+        
+          
+            <h5><em>Note: </em>Figure summarizes the posterior mean impact of the top 20 delivery challenge subcategories on IEG outcome ratings.</h5>
+
+<p>What did we find? Most of the delivery challenges related to project design, data, and monitoring were shown to have a net-negative impact on outcome ratings. Turning to stakeholder-specific delivery challenges, the overall effect was mixed, with certain challenges such as skill transfer, geographic access, communication strategy, and government relations actually corresponding to higher overall outcome ratings. A similar mix was seen in challenges relating to project context, with those involving legislation, conflict, and governance reducing outcome ratings.</p>
+
+<p>Overambitious objectives had a consistently negative impact across the models tested. This is in line with our previous findings that <a href="https://twitter.com/intent/tweet?text=setting+unrealistically+ambitious+targets+or+introducing+unnecessary+complexity+into+the+project+design+are+likely+to+negatively+impact+implementation+effectiveness.&amp;url=https://blogs.worldbank.org/developmenttalk/delivery-challenges-and-development-effectiveness-what-can-we-learn-5000-lending/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">setting unrealistically ambitious targets or introducing unnecessary complexity into the project design are likely to negatively impact implementation effectiveness. </a> Likewise, inappropriate time allocation and improper sequencing of components was shown to negatively impact project outcomes, regardless of the sector, scope, or location of the project. These are evergreen challenges that should be addressed at the project design stage. On the other hand, we discovered certain challenges, such as stakeholder engagement and skill transfer, could have an overall positive impact on outcomes. This might suggest that certain issues, when properly diagnosed and addressed, could ultimately be resolved and even improve the project in the long run.</p>
+
+<p>What did we learn? Our understanding of the complex linkages that influence development effectiveness has often been hindered by a reliance on all-encompassing jargon and uninformative diagnostic measures that provide little to no prescriptive value for identifying what challenges were encountered and how they ought to be addressed. Put simply, <a href="https://twitter.com/intent/tweet?text=if+we+want+to+improve+our+delivery+of+future+projects%2C+we+need+to+identify+what+went+wrong+with+greater+specificity.&amp;url=https://blogs.worldbank.org/developmenttalk/delivery-challenges-and-development-effectiveness-what-can-we-learn-5000-lending/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">if we want to improve our delivery of future projects, we need to identify what went wrong with greater specificity. </a> The findings of this paper take a step in that direction. First, we offer a standardized approach to identifying and classifying delivery challenges, producing a taxonomy that attempts to reach above contextual factors to identify common issues that are liable to impact all projects. Second, we test the impact of these challenges using a series of tests that help us isolate their relative impact while accounting for important contextual variations. This allows us to evaluate a set of comparable indicators without relying on arbitrary modeling decisions that might bias our results. We hope that this can serve as a first step towards a more systematic and rigorous understanding of how projects perform, and why.</p>
+
+<p> </p>
+
+      
+      
+
+  
+              

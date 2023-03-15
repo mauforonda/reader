@@ -1,0 +1,61 @@
+<p>
+I noticed last year that some of my projects behave inconsistently on touch devices. I didn&#39;t do anything about it. But then I was working on a <a href="https://simblob.blogspot.com/2023/01/making-of-circle-drawing.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">tutorial about how I make my interactive tutorials</a>, I had to show how to handle touch events, and I was <em>embarassed</em> by my code. I decided to take a week to learn about mouse, touch, and pointer events.
+</p>
+
+<p>
+That week turned into two. And three. And eight.
+</p>
+
+<p>
+<strong>I learned a lot</strong>. Not only about the event handling spec, but also differences in browser behavior and operating system behavior.
+</p>
+
+<figure>
+  <img src="https://reader.miniflux.app/proxy/akAa4U5ZInF1DL3dTiqSeX3clTzAZTZfR0xGLKUHLs8=/aHR0cHM6Ly93d3cucmVkYmxvYmdhbWVzLmNvbS9tYWtpbmctb2YvZHJhZ2dhYmxlL2J1aWxkL21vdXNlLWFuZC10b3VjaC5zdmc=" alt="" loading="lazy"/>
+  <figcaption>State diagram for mouse and touch events</figcaption>
+</figure>
+
+<p>
+I was able to greatly simplify my code by using newer APIs and by removing unnecessary code.
+</p>
+
+
+
+<p>
+The trouble with my code was that I was &#34;<a href="https://en.wikipedia.org/wiki/Cargo_cult_programming" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">cargo culting</a>&#34; my event handling code. I had lines like <kbd>event.stopPropagation()</kbd> without really thinking about or understanding why it was there. I went through and removed each line I wasn&#39;t sure about, and tested the behavior.
+I tested my code on Gecko/Firefox (Mac, Windows, Linux, Android), Blink/Chrome (Mac, Windows, Linux, Android), and WebKit/Safari (Mac, iPhone, iPad). I did <em>not</em> test on hoverable stylus, hybrid touch+mouse devices, or voice input. I tried dragging different types of objects with different types of drag behavior.
+</p>
+
+<p>
+I made a <a href="https://www.redblobgames.com/x/2251-draggable/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">test page</a> where I printed out all the events, along with some of the additional fields like <code>button</code> and <code>pointerId</code>. I learned a lot this way. This page is also full of unorganized notes.
+</p>
+
+<p>
+The biggest issues I wanted to solve were:
+</p>
+
+<ol>
+<li><strong>Capture</strong>: with both mouse and touch, I want to handle drag events that go outside the diagram.</li>
+<li><strong>Scrolling</strong>: on touch devices, dragging with the finger scrolls the page, but I also want dragging with the finger to move the object.</li>
+</ol>
+
+<p>
+But in going through the tests I found lots of other situations I might want to handle: text selection, system drag, right click context menu, middle click autoscroll, holding down multiple buttons, and more. The right click context menu was especially interesting, as Windows, Mac, and Linux work quite differently! And Chrome, Safari, and Firefox also work quite differently.
+</p>
+
+<p>
+I kept finding more and more weird edge cases! What happens when you start dragging on a phone and then rotate the phone to landscape mode? The behavior is different on iPhone and Android! What happens when you start dragging with a finger on iPad and then use the stylus? The stylus overrides the finger drag. What happens when you resize the window while you&#39;re dragging? What happens if you put the computer to sleep while dragging?
+</p>
+
+<p>
+I just had to stop! I decided I should handle common cases but not worry about all the edge cases.
+</p>
+
+<p>
+I made a <a href="https://www.redblobgames.com/making-of/draggable/targets.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">test page</a> where I listed some of the edge cases, and also tested different types of dragging. And then I wrote 
+<a href="https://www.redblobgames.com/making-of/draggable/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">my recommended event handling code</a>. And <em>then</em> I implemented this new code on some of my existing pages: <a href="https://www.redblobgames.com/maps/mapgen4/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">mapgen4</a>, <a href="https://www.redblobgames.com/grids/hexagons/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">hexagons</a>, <a href="https://www.redblobgames.com/grids/edges/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">grids/edges</a>, <a href="https://www.redblobgames.com/making-of/responsive-design/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">responsive design</a>. It works really well on mapgen4. I had mixed results with hexagons, because that page sometimes uses different interactions for touch and mouse, so the unified event handlers weren&#39;t the right approach. The edges page never supported touch events, and now partially supports them. The responsive design page also never supported touch events, and now fully supports them.
+</p>
+
+<p>
+Despite this project taking <em>much</em> longer than expected, I consider it to be a success. I&#39;ll continue updating these pages as I learn more. And I&#39;d love to hear from you about what I got wrong. <strong>Start with the <a href="https://www.redblobgames.com/making-of/draggable/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">event handling page</a>.</strong>
+</p>

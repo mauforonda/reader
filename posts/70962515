@@ -1,0 +1,68 @@
+<p><em>African American biographies (1508–1865), foreign direct
+investment, India’s high-court judges, US aquifers, and prognosticating
+groundhogs.</em></p>
+<p> </p>
+<p><strong>African American biographies, 1508–1865.</strong> The <a href="https://hutchinscenter.fas.harvard.edu/AANB" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">African American
+National Biography</a>, first printed in 2008 and expanded to a <a href="https://global.oup.com/academic/product/african-american-national-biography-9780199920778" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">twelve-volume
+second edition in 2013</a>, is “the most extensive African American
+biographical encyclopedia ever compiled, including the widest range of
+historically significant black individuals possible.” Edited by <a href="https://en.wikipedia.org/wiki/Henry_Louis_Gates_Jr." rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Henry Louis
+Gates, Jr.</a> and <a href="https://en.wikipedia.org/wiki/Evelyn_Brooks_Higginbotham" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Evelyn
+Brooks Higginbotham</a>, the print volumes feature nearly 5,000 entries,
+with additional biographies published in an <a href="https://oxfordaasc.com/page/about" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">online collection</a> (<a href="https://oxfordaasc.com/page/subscribe#personal-subscriptions" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">subscription
+required</a>). Executive editor <a href="https://hutchinscenter.fas.harvard.edu/people/steven-j-niven" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Steven
+J. Niven</a> has <a href="https://jsdp.enslaved.org/fullDataArticle/volume1-issue2-african-american-national-biography/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">created</a>
+a <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/FIEYGJ" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">dataset</a>
+describing the 1,300+ people in the encyclopedia born before the US
+abolition of slavery. It includes their names, dates and places of
+birth, occupations, whether they were ever enslaved and/or freed before
+abolition, how they obtained freedom, and much more.</p>
+<p> </p>
+<p><strong>Foreign direct investment.</strong> Among its many
+activities, the <a href="https://www.bea.gov/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Bureau of Economic
+Analysis</a> collects data on <a href="https://www.bea.gov/surveys/diasurv" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">US-owned businesses’ direct
+investments abroad</a> and <a href="https://www.bea.gov/surveys/fdiusurv" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">those by foreign-owned
+businesses in the US</a>. The agency provides <a href="https://www.bea.gov/itable/direct-investment-multinational-enterprises" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">statistics
+based on that data</a>, aggregated by industry and country. The metrics,
+available as <a href="https://www.bea.gov/international/direct-investment-and-multinational-enterprises-comprehensive-data" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">spreadsheets</a>
+and <a href="https://apps.bea.gov/iTable/?ReqID=2&amp;step=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">interactive
+tables</a>, include cumulative investments, overall transaction flows,
+foreign affiliates’ employee counts, and more. <strong>As seen
+in</strong>: “<a href="https://usafacts.org/articles/why-are-us-companies-investing-more-abroad/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Why
+are US companies investing more abroad?</a>” (USAFacts).</p>
+<p> </p>
+<p><strong>India’s high-court judges.</strong> <a href="https://justicehub.in/initiatives/khoj-india" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Know Your High Court
+Judges</a>, a multi-institution collaboration, has compiled biographical
+and professional data on all 1,700+ judges appointed to India’s <a href="https://en.wikipedia.org/wiki/High_courts_of_India" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">high
+courts</a> (each state and union territory’s top appellate court)
+between late 1993 and mid-2021. The details, based on a <a href="https://justicehub.in/dataset/khoj-india/resource/fa59eb2e-04a5-461f-94e3-1367f67c3a8c" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">range
+of official sources</a>, include each judge’s name, gender, date and
+place of birth, dates of appointment and retirement, courts served,
+prior experience, and more. [h/t <a href="https://github.com/apoorv74" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Apoorv Anand</a> via <a href="https://csvconf.com/speakers/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">csv,conf,v7</a>]</p>
+<p> </p>
+<p><strong>US aquifers.</strong> <a href="https://www.nature.com/articles/s41467-022-29678-7" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Merhawi
+GebreEgziabher et al.</a>, seeing several shortcomings of the <a href="https://www.usgs.gov/mission-areas/water-resources/science/principal-aquifers-united-states" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">US
+Geological Survey’s aquifer location data</a> for “locally relevant”
+research, decided to build the <a href="https://www.hydroshare.org/resource/d2260651b51044d0b5cb2d293d21af08/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">United
+States Aquifer Database</a>. It delineates the <a href="https://ucsb.maps.arcgis.com/apps/instant/nearby/index.html?appid=2a238e4ed2434d21b3b53c861a064d8f" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">boundaries</a>,
+constructed “after reviewing hundreds of primary literature sources,” of
+440 aquifer systems in the contiguous US — from the <a href="https://www.env.gov.bc.ca/wsd/plan_protect_sustain/groundwater/aquifers/absumas.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Abbotsford-Sumas
+Aquifer</a> straddling the Washington-Canada border to the <a href="https://www.usgs.gov/centers/caribbean-florida-water-science-center-%28cfwsc%29/science/mapping-water-levels-biscayne" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Biscayne
+Aquifer</a> in southern Florida. <strong>Read more</strong>: <a href="https://storymaps.arcgis.com/stories/a91f061759e64e44af38daf6cefa4259" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">A
+visual tour of twelve aquifers</a>.</p>
+<p> </p>
+<p><strong>Prognosticating groundhogs.</strong> <a href="https://pcraig3.ca/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Paul Craig</a>’s <a href="https://groundhog-day.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Groundhog-Day.com</a> calls <a href="https://groundhog-day.com/about" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">itself</a> “the leading data
+source for North America’s prognosticating groundhogs and their yearly
+predictions.” Its <a href="https://groundhog-day.com/api" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">structured
+data</a> lists the names, descriptions, locations, and prediction
+histories for <a href="https://groundhog-day.com/groundhogs" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">74 real and
+“alternative” groundhogs</a>, the latter of which include <a href="https://groundhog-day.com/groundhogs/lucy-the-lobster" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Lucy the
+Lobster</a> and <a href="https://groundhog-day.com/groundhogs/dover-doug" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Dover Doug</a>, a
+human in a groundhog suit.</p>
+<p> </p>
+<p><em>Dataset suggestions? Criticism? Praise? Send six more weeks of
+feedback to jsvine@gmail.com, or just reply to this email. • Looking for
+past datasets? <a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">This
+spreadsheet contains them all</a>. • Visit <a href="https://www.data-is-plural.com" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">data-is-plural.com</a> to
+subscribe and to browse past editions. • <a href="https://docs.google.com/document/d/e/2PACX-1vSP5xYrhqEvoGTi2aFzrsYQXadG8Gv0Y6YGWjib1e4qcXG45Sq5TSvngvh342DdcAEyEDIVd5V3RYcc/pub" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Learn
+how to place an ad in Data Is Plural</a>.</em></p>

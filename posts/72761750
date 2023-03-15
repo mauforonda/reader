@@ -1,0 +1,4 @@
+<p><a href="https://github.com/dogsheep/apple-notes-to-sqlite" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">apple-notes-to-sqlite</a></p>
+<p>With the help of ChatGPT I finally figured out just enough AppleScript to automate the export of my notes to a SQLite database. AppleScript is a notoriously read-only language, which is turns out makes it a killer app for LLM-assisted coding.</p>
+
+    <p>Via <a href="https://til.simonwillison.net/gpt3/chatgpt-applescript" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Using ChatGPT to write AppleScript</a></p>

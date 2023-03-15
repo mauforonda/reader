@@ -1,0 +1,119 @@
+<p>Yesterday, the SPIP team released <a href="https://git.spip.net/spip/spip/src/branch/4.1/CHANGELOG.md#4-1-8-2023-02-27" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">SPIP
+4.1.8</a>,
+fixing a critical security issue. The bug in question was introduced by
+<a href="https://git.spip.net/spip/spip/commit/4b83cb23ccbaa433fedc51040479230115bb4b5c" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">4b83cb23ccbaa433fedc51040479230115bb4b5c</a>,
+the 17<sup>th</sup> of Match 2010. SPIP uses
+<a href="https://www.php.net/manual/en/function.eval.php" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><code>eval</code></a> for its templating
+system, so being able to inject <code>&lt;?php</code> in it is game over: this is exactly
+what happened here and it was
+<a href="https://git.spip.net/spip/spip/commit/0e6c4f114acf362f85122d078572f1b8d856318a" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">patched</a>
+like this:</p>
+<pre><code>function protege_champ($texte) {
+    if (is_array($texte)) {
+        return array_map(&#39;protege_champ&#39;, $texte);
+    } elseif ($texte === null) {
+        return $texte;
+    } elseif (is_bool($texte)) {
+        return $texte ? &#39;1&#39; : &#39;&#39;;
+    } elseif (is_string($texte) and $texte) {
+-       if (preg_match(&#39;,^[abis]:\d+[:;],&#39;, $texte) and @unserialize($texte) !== false) {
+-           // ne pas corrompre une valeur serialize
+-           return $texte;
+-       } elseif (strpbrk($texte, &#34;&amp;\&#34;&#39;&lt;&gt;&#34;) !== false) {
++       if (strpbrk($texte, &#34;&amp;\&#34;&#39;&lt;&gt;&#34;) !== false) {
+            return spip_htmlspecialchars($texte, ENT_QUOTES);
+        }
+    }
+
+    return $texte;
+}
+</code></pre>
+
+<p>The exploit is
+<a href="https://github.com/rapid7/metasploit-framework/pull/17711" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">obvious</a>: pass a
+string that can be unserialized, containing your payload in php, like
+<code>s:22:&#34;&lt;?php system(&#39;id&#39;);?&gt;&#34;;</code>. Various people have been sitting on this one
+since years.</p>
+<p>Amusingly, there is a denial of service that was always present for
+sufficiently nested arrays, because of the recursive call, on which <a href="https://bugs.php.net/bug.php?id=64196" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">php can
+choke with a segfault</a>.</p>
+<p>What is more worrying, is that the patch is making use of the
+<a href="https://www.php.net/manual/en/function.strpbrk.php" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><code>strpbrk</code></a>, which can be
+made to return false should its first parameter contain a NULL byte before the
+characters being looked for. But there is a twist: SPIP has a &#34;<a href="https://www.spip.net/en_article4201.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">security
+screen</a>&#34;, a simili web application
+firewall, a single file that can be updated independently, to mitigate known
+vulnerabilities, giving the time to the administrator to upgrade at a later
+point.</p>
+<p>It contains <a href="https://git.spip.net/spip/spip/src/branch/master/config/ecran_securite.php#L406-L416" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">this particular
+check</a>,
+preventing us from injecting NULL-bytes:</p>
+<pre><code>if (strpos(
+    (function_exists(&#39;get_magic_quotes_gpc&#39;) and @get_magic_quotes_gpc())
+        ? stripslashes(serialize($_REQUEST))
+        : serialize($_REQUEST),
+    chr(0)
+) !== false) {
+    $ecran_securite_raison = &#34;%00&#34;;
+}
+</code></pre>
+
+<p>This is quite brittle, since the format used by
+<a href="https://www.php.net/manual/en/function.serialize.php" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><code>serialize</code></a> is more or
+less opaque, and could absolutely change its representation to encode NULL byte
+at some point. Interestingly, serialized classes <em>do</em> contain NULL-bytes, but
+more on this later.</p>
+<p>Anyway, this is the
+<a href="https://git.spip.net/spip/spip/commit/2e4b6c441369bec04c8af137adb2583dae2ec11f" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">snippet</a> add to the security screen to mitigate the vulnerability:</p>
+<pre><code>if (
+    isset($_REQUEST[&#39;formulaire_action_args&#39;])
+) {
+    foreach ($_REQUEST as $k =&gt; $v) {
+        if (is_string($v)
+          and strpos($v, &#39;:&#39;) !== false
+          and strpos($v, &#39;&#34;&#39;) !==false
+          and preg_match(&#39;,[bidsaO]:,&#39;, $v)
+          and @unserialize($v)) {
+            $_REQUEST[$k] = htmlentities($v);
+            if (isset($_POST[$k])) $_POST[$k] = $_REQUEST[$k];
+            if (isset($_GET[$k])) $_GET[$k] = $_REQUEST[$k];
+        }
+    }
+}
+</code></pre>
+
+<p>A couple of things are standing out:</p>
+<ol>
+<li><code>strpos</code> could be bypassed by NULL-byte injection, should this snippet be
+   placed before the aforementioned one. This isn&#39;t the case.</li>
+<li>The needle argument in <code>preg_match</code> doesn&#39;t include <a href="https://www.phpinternalsbook.com/php5/classes_objects/serialization.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">all the possible type
+   specifiers</a>,
+   so a payload like <code>oubli=C:11:&#34;HashContext&#34;:21:{&lt;?php system(&#39;id&#39;);?&gt;}</code>
+   would bypass it, albeit it wouldn&#39;t be executed since it doesn&#39;t match
+   <code>preg_match(&#39;,^[abis]:\d+[:;],&#39;, $texte)</code>.</li>
+<li>The call to
+   <a href="https://www.php.net/manual/en/function.unserialize.php" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><code>unserialize</code></a> is
+   scary, if only for the big fat red warning in PHP&#39;s documentation: &#34;Do not
+   pass untrusted user input to unserialize()&#34;. Fortunately, there is not a
+   single call to magic methods in the whole SPIP core: no <code>__wakeup</code>,
+   <code>__destruct</code>, ……  but some extensions are making use of those. Oh, and also,
+   odds are that there are
+   <a href="https://www.evonide.com/fuzzing-unserialize/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">still</a> some exploitable
+   memory corruptions in it ;)</li>
+</ol>
+<p>This is all super-brittle, and I&#39;ve been told that more low-hanging
+unauthenticated RCE are lurking in the dark. The right move would be to move
+away from SPIP, but this isn&#39;t always possible. Then there is of course
+<a href="https://github.com/jvoisin/snuffleupagus" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">snuffleupagus</a>, but given the
+architecture of SPIP, it&#39;s non-trivial to mitigate things there, but all hope
+is not lost: One can use an <a href="https://snuffleupagus.readthedocs.io/config.html#eval-white-and-blacklist" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">allow list in
+<code>eval</code></a>,
+with something like <code>sp.eval_whitelist.list(&#34;strlen,strcmp,echo&#34;);</code> to prevent
+code execution via template injection. Moreover, dangerous functions like
+<code>system</code>, <code>shell_exec</code>, …… should have their calls logged via
+<code>sp.disable_function.function(&#34;system&#34;).simulation();</code>. But keep in mind that
+bypasses are both plenty and not particularly hard. For this particular
+vulnerability, <a href="https://snuffleupagus.readthedocs.io/features.html#unserialize-related-magic" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><code>sp.unserialize_hmac.enable();</code></a>
+does mitigate it, by side-effect.</p>
+<p>Thanks to <a href="https://thinkloveshare.com/about/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Laluka</a> for being my rubber duck
+debugger when it comes to SPIP.</p>

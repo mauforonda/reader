@@ -1,0 +1,34 @@
+<p>My “<em>Hey, how come you don’t hear about ex-Apple folks launching startups?</em>” musing in <a href="https://daringfireball.net/linked/2023/03/08/humane-100-million-microsoft-openai" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">the previous item</a> reminded me that I never linked to this news from January. Kyle Wiggers, reporting for TechCrunch:</p>
+
+<blockquote>
+  <p>In December, <a href="https://www.techtarget.com/searchstorage/news/252528650/Microsoft-reportedly-acquires-DPU-maker-Fungible" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">reports</a> suggested that Microsoft had acquired
+Fungible, a startup fabricating a type of data center hardware
+known as a data processing unit (DPU), for around $190 million.
+Today, Microsoft <a href="https://blogs.microsoft.com/blog/2023/01/09/microsoft-announces-acquisition-of-fungible-to-accelerate-datacenter-innovation/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">confirmed</a> the acquisition but not the
+purchase price, saying that it plans to use Fungible’s tech and
+team to deliver “multiple DPU solutions, network innovation and
+hardware systems advancements.” [...]</p>
+
+<p>Fungible was launched in 2016 by Bertrand Serlet, a former Apple
+software engineer who sold a cloud storage startup, Upthere, to
+Western Digital in 2017, alongside Krishna Yarlagadda and Juniper
+Networks co-founder Pradeep Sindhu. Fungible sold DPUs that relied
+on two operating systems, one open source and the other
+proprietary, and a microprocessor architecture called <a href="https://en.wikipedia.org/wiki/MIPS_architecture" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">MIPS</a>
+to control flash storage volumes.</p>
+
+<p>“The Fungible DPU was invented in 2016 to address the most
+significant problems in scale-out data centers: the inefficient
+execution of data-centric computations within server nodes,”
+Fungible wrote in a <a href="https://www.fungible.com/2023/01/09/microsoft-acquires-fungible/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">statement</a> on its website. “We are
+proud to be part of a company that shares Fungible’s vision and
+will leverage the Fungible DPU and software to enhance its storage
+and networking offerings.”</p>
+
+<p>The Fungible team will join Microsoft’s data center infrastructure
+engineering teams, Bablani said.</p>
+</blockquote>
+
+<p>Bertrand Serlet at Microsoft — albeit quietly — is an outcome I certainly wouldn’t have imagined circa 2006, <a href="https://www.youtube.com/watch?v=N-2C2gb6ws8" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">when he skewered the then-still-in-beta Windows Vista</a> on stage at WWDC. Maybe the funniest 4 minutes of an Apple keynote ever.</p>
+
+<p><em>Link: <strong><a href="https://techcrunch.com/2023/01/09/microsoft-acquires-fungible-a-maker-of-data-processing-units-to-bolster-azure/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">techcrunch.com/2023/01/09/microsoft-acquires-fungible-a…</a></strong></em></p>

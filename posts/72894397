@@ -1,0 +1,9 @@
+<p>Exactly two years ago to the day, I reported <a href="https://shkspr.mobi/blog/2021/03/emoji-passwords-and-bitwarden/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">a weird little emoji bug with Bitwarden</a>.</p>
+<p>Let&#39;s say you want a password of:</p>
+<p>✅🐎🔋📎</p>
+<p>(As close as possible to <a href="https://xkcd.com/936/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Correct Horse Battery Staple</a>)</p>
+<p>That works. Emoji are stored and retrieved correctly. You can use them with any system which supports them.  But you can&#39;t <em>view</em> them. Here&#39;s what it looks like if you try to see your password using the Bitwarden Android app:</p>
+<p><img src="https://reader.miniflux.app/proxy/JO_TWjKWqebwKgrtKEW0UVGqpS92pVmfqraMhnZ89Tc=/aHR0cHM6Ly9zaGtzcHIubW9iaS9ibG9nL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIxLzAzL0Vtb2ppLVRlc3QuanBn" alt="Screenshot of the Bitwarden Android interface. Emoji are showing as question marks." width="512" height="512" loading="lazy"/></p>
+<p>Yup - a bunch of emoji are replaced with ����. Ew.</p>
+<p>Now, in fairness, this bug was quickly fixed in the <a href="https://github.com/bitwarden/desktop/issues/768" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">desktop client</a> and the <a href="https://github.com/bitwarden/clients/issues/1682" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">browser plugins</a>. But, sadly, even the latest version of the Android app is still broken.</p>
+<p>I use Bitwarden, and I happily pay for it. But I wish they were a bit more responsive about fixing trivial bugs like this.</p>

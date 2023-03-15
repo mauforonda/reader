@@ -1,0 +1,217 @@
+Latest Complexity Digest Posts
+        
+    
+    
+        
+        
+            <table>
+                <tbody><tr>
+                    <td>
+                        
+                        <table>
+                            <tbody><tr>
+                                <td>
+                                
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                                Learn about the latest and greatest related to complex systems research. More at <a href="http://comdig.unam.mx" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">http://comdig.unam.mx</a>
+                                            </td>
+                                            
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                
+                                </td>
+                            </tr>
+                        </tbody></table>
+                        
+                        <table>
+                            <tbody><tr>
+                                <td>
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                            
+                                                
+                                                <a href="http://comdig.unam.mx" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/gWY-VZqmIAQWx2fEMyEg0xaNJDkctXXxaVrxadZohB4=/aHR0cHM6Ly9nYWxsZXJ5Lm1haWxjaGltcC5jb20vMGViMGFjOWI0ZTg1NjVmMjk2N2E4MzA0Yi9pbWFnZXMvbG9nb2Q3NzAzOC5wbmc=" alt="Complexity Digest" width="600" loading="lazy"/></a>
+                                                
+                                            
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                
+                                                
+                                                <table>
+                                                    <tbody><tr>
+                                                        <td>
+                                                            <strong>Contents from of the 02/06/2023 edition:</strong><br/>
+<ul id="mctoc"><li><a href="#mctoc1">A Physical Theory For When the Brain Performs Best</a></li><li><a href="#mctoc2">Understanding congestion propagation by combining percolation theory with the macroscopic fundamental diagram</a></li><li><a href="#mctoc3">How do bees self-organise? – Orit Peleg in Simplifying Complexity</a></li><li><a href="#mctoc4">Homophily-Based Social Group Formation in a Spin Glass Self-Assembly Framework</a></li><li><a href="#mctoc5">Machines Learn Better if We Teach Them the Basics</a></li><li><a href="#mctoc6">RESEARCHER ON THE CLASSIFICATION, ANALYSIS AND MODELLING OF ONLINE DISINFORMATION SPREADING BEHAVIOUR</a></li></ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            
+<h2><br/>
+A Physical Theory For When the Brain Performs Best</h2>
+<p>The critical brain hypothesis suggests that neural networks do their best work when connections are not too weak or too strong.</p>
+<p>Read the full article at: <a href="https://www.quantamagazine.org/a-physical-theory-for-when-the-brain-performs-best-20230131/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">www.quantamagazine.org</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-5e3f72c8&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D15cfed834e%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F02%252F04%252Fa-physical-theory-for-when-the-brain-performs-best%252F%26title%3DA%2520Physical%2520Theory%2520For%2520When%2520the%2520Brain%2520Per...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=15cfed834e" title="Like A Physical Theory For When the Brain Performs Best on Facebook" id="fblike-5e3f72c8" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like A Physical Theory For When the Brain Performs Best on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Understanding congestion propagation by combining percolation theory with the macroscopic fundamental diagram</h2>
+<p><img src="https://reader.miniflux.app/proxy/Hm6xSXaWFRbddoNZa-I-0Qh-Pz8RzcjVbKo683-Efic=/aHR0cHM6Ly9jeGRpZy5maWxlcy53b3JkcHJlc3MuY29tLzIwMjMvMDIvZWI0MDNiNjgtYzcyOS00OWQ4LWEzNzgtYTk4MGNiZGViYTFkLTEuanBnP3c9MTEwOA==" loading="lazy"/></p>
+<p>Lukas Ambühl, Monica Menendez &amp; Marta C. González <br/>Communications Physics volume 6, Article number: 26 (2023)</p>
+<p>The science of cities aims to model urban phenomena as aggregate properties that are functions of a system’s variables. Following this line of research, this study seeks to combine two well-known approaches in network and transportation science: (i) The macroscopic fundamental diagram (MFD), which examines the characteristics of urban traffic flow at the network level, including the relationship between flow, density, and speed. (ii) Percolation theory, which investigates the topological and dynamical aspects of complex networks, including traffic networks. Combining these two approaches, we find that the maximum number of congested clusters and the maximum MFD flow occur at the same moment, precluding network percolation (i.e. traffic collapse). These insights describe the transition of the average network flow from the uncongested phase to the congested phase in parallel with the percolation transition from sporadic congested links to a large, congested cluster of links. These results can help to better understand network resilience and the mechanisms behind the propagation of traffic congestion and the resulting traffic collapse.</p>
+<p>Read the full article at: <a href="https://www.nature.com/articles/s42005-023-01144-w" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">www.nature.com</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-5a0e1039&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D15cfed834e%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F02%252F03%252Funderstanding-congestion-propagation-by-combining-percolation-theory-with-the-macroscopic-fundamental-diagram%252F%26title%3DUnderstanding%2520congestion%2520propagation%2520by%2520...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=15cfed834e" title="Like Understanding congestion propagation by combining percolation theory with the macroscopic fundamental diagram on Facebook" id="fblike-5a0e1039" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Understanding congestion propagation by combining percolation theory with the macroscopic fundamental diagram on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+How do bees self-organise? – Orit Peleg in Simplifying Complexity</h2>
+<p>One of the things that make complexity science so fascinating is the diversity of the systems that it applies to. In this series so far, you’ve learnt about everything from ecologies to economies, tipping points in ecologies and economies, to power and influence in the 1400s, and even the spread of coronavirus in the lungs and the thing that brings all of these different topics together is complexity. This means that we can study one system to help us understand other systems — including bees.</p>
+<p>In today’s episode, Orit Peleg, Faculty at the University of Colorado, Boulder, and External Faculty at the Santa Fe Institute, explains how bees self-organise and produce sophisticated behaviour. In this case, you’ll hear how thousands of bees can work out where their queen is at any given point.</p>
+<p>Listen at: <a href="https://omny.fm/shows/simplifying-complexity/orit-peleg-topic-2?in_playlist=podcast" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">omny.fm</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-f945db86&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D15cfed834e%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F02%252F03%252Fhow-do-bees-self-organise-orit-peleg-in-simplifying-complexity%252F%26title%3DHow%2520do%2520bees%2520self-organise%253F%2520%25E2%2580%2593%2520Orit%2520Pele...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=15cfed834e" title="Like How do bees self-organise? – Orit Peleg in Simplifying Complexity on Facebook" id="fblike-f945db86" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like How do bees self-organise? – Orit Peleg in Simplifying Complexity on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Homophily-Based Social Group Formation in a Spin Glass Self-Assembly Framework</h2>
+<p>Jan Korbel, Simon D. Lindner, Tuan Minh Pham, Rudolf Hanel, and Stefan Thurner<br/>Phys. Rev. Lett. 130, 057401</p>
+<p>Homophily, the tendency of humans to attract each other when sharing similar features, traits, or opinions, has been identified as one of the main driving forces behind the formation of structured societies. Here we ask to what extent homophily can explain the formation of social groups, particularly their size distribution. We propose a spin-glass-inspired framework of self-assembly, where opinions are represented as multidimensional spins that dynamically self-assemble into groups; individuals within a group tend to share similar opinions (intragroup homophily), and opinions between individuals belonging to different groups tend to be different (intergroup heterophily). We compute the associated nontrivial phase diagram by solving a self-consistency equation for “magnetization” (combined average opinion). Below a critical temperature, there exist two stable phases: one ordered with nonzero magnetization and large clusters, the other disordered with zero magnetization and no clusters. The system exhibits a first-order transition to the disordered phase. We analytically derive the group-size distribution that successfully matches empirical group-size distributions from online communities.</p>
+<p>Read the full article at: <a href="https://link.aps.org/doi/10.1103/PhysRevLett.130.057401" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">link.aps.org</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-f6062126&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D15cfed834e%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F02%252F03%252Fhomophily-based-social-group-formation-in-a-spin-glass-self-assembly-framework%252F%26title%3DHomophily-Based%2520Social%2520Group%2520Formation%2520i...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=15cfed834e" title="Like Homophily-Based Social Group Formation in a Spin Glass Self-Assembly Framework on Facebook" id="fblike-f6062126" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Homophily-Based Social Group Formation in a Spin Glass Self-Assembly Framework on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Machines Learn Better if We Teach Them the Basics</h2>
+<p>A wave of research improves reinforcement learning algorithms by pre-training them as if they were human.</p>
+<p>Read the full article at: <a href="https://www.quantamagazine.org/machines-learn-better-if-we-teach-them-the-basics-20230201/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">www.quantamagazine.org</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-7f8af1c0&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D15cfed834e%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F02%252F03%252Fmachines-learn-better-if-we-teach-them-the-basics%252F%26title%3DMachines%2520Learn%2520Better%2520if%2520We%2520Teach%2520Them%2520t...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=15cfed834e" title="Like Machines Learn Better if We Teach Them the Basics on Facebook" id="fblike-7f8af1c0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Machines Learn Better if We Teach Them the Basics on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+RESEARCHER ON THE CLASSIFICATION, ANALYSIS AND MODELLING OF ONLINE DISINFORMATION SPREADING BEHAVIOUR</h2>
+<p>FBK-CHuB is seeking a Researcher in the field of the classification, analysis and modelling of online disinformation spreading behaviour.<br/>In particular, the candidate will be involved in a large European research project focused on the development of a platform tackling misinformation and disinformation across the EU by empowering scientific researchers and media practitioners with advanced AI-based technologies that: 1) allow multichannel (distinct online social media and news feeds), multilingual and multimodal (textual, visual and audio content) monitoring, detection and recording of misinformation and disinformation on online social media and traditional media; 2) estimate the risk of unreliable information consumption; 3) create a trustworthy online environment involving researchers, media practitioners and policy makers to facilitate the creation and distribution of reliable information and counter-narratives, while labelling and countering mis/disinformation.</p>
+<p>Read the full article at: <a href="https://jobs.fbk.eu/Annunci/Jobs_Researcher_on_the_Classification_Analysis_and_Modelling_of_online_disinformation_spreading_behaviour_225840324.htm" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">jobs.fbk.eu</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-fce876d8&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D15cfed834e%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F31%252Fresearcher-on-the-classification-analysis-and-modelling-of-online-disinformation-spreading-behaviour%252F%26title%3DRESEARCHER%2520ON%2520THE%2520CLASSIFICATION%252C%2520ANALYS...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=15cfed834e" title="Like RESEARCHER ON THE CLASSIFICATION, ANALYSIS AND MODELLING OF ONLINE DISINFORMATION SPREADING BEHAVIOUR on Facebook" id="fblike-fce876d8" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like RESEARCHER ON THE CLASSIFICATION, ANALYSIS AND MODELLING OF ONLINE DISINFORMATION SPREADING BEHAVIOUR on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h3>More to read:</h3>
+
+<table>
+	
+		<tbody><tr>
+			<td>
+			<table>
+				
+					<tbody><tr>
+						<td><a href="https://comdig.unam.mx/2023/01/29/the-circular-economy/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The circular economy</a><br/><a href="https://comdig.unam.mx/2023/01/28/scaling-up-our-understanding-of-tipping-points/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Scaling up our understanding of tipping points</a><br/><a href="https://comdig.unam.mx/2023/01/28/the-clinical-trials-puzzle-how-network-effects-limit-drug-discovery/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The Clinical Trials Puzzle: How Network Effects Limit Drug Discovery</a><br/><a href="https://comdig.unam.mx/2023/01/27/exact-and-rapid-linear-clustering-of-networks-with-dynamic-programming/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Exact and rapid linear clustering of networks with dynamic programming</a><br/><a href="https://comdig.unam.mx/2023/01/27/emergent-criticality-in-coupled-boolean-networks/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Emergent Criticality in Coupled Boolean Networks</a><br/><a href="https://comdig.unam.mx/2023/01/26/will-we-know-alien-life-when-we-see-it/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Will We Know Alien Life When We See It?</a><br/><a href="https://comdig.unam.mx/2023/01/23/does-spending-more-always-ensure-higher-cooperation-an-analysis-of-institutional-incentives-on-heterogeneous-networks/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Does Spending More Always Ensure Higher Cooperation? An Analysis of Institutional Incentives on Heterogeneous Networks</a><br/><a href="https://comdig.unam.mx/2023/01/22/thoughts-on-complex-systems-an-interview-with-giorgio-parisi/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Thoughts on complex systems: an interview with Giorgio Parisi</a><br/><a href="https://comdig.unam.mx/2023/01/22/complex-systems-in-the-spotlight-next-steps-after-the-2021-nobel-prize-in-physics/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Complex systems in the spotlight: next steps after the 2021 Nobel Prize in Physics</a><br/><a href="https://comdig.unam.mx/2023/01/21/strong-emergence-arising-from-weak-emergence/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Strong Emergence Arising from Weak Emergence</a></td>
+					</tr>
+				
+			</tbody></table>
+			</td>
+		</tr>
+	
+</tbody></table>
+
+                                                        </td>
+                                                    </tr>
+                                                </tbody></table>
+                                                
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                            
+                                                
+                                                <table>
+                                                    <tbody><tr>
+                                                        <td colspan="2">
+                                                             <a href="http://twitter.com/cxdig" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">follow on Twitter</a> | <a href="https://www.facebook.com/pages/Complexity-Digest/103026839755164" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">like on Facebook</a> | <a href="http://www.linkedin.com/groups?gid=3270291" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">join on LinkedIn</a> | <a href="https://plus.google.com/b/105687854558109225649/105687854558109225649/posts" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Google+</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            
+                                                        </td>
+                                                        <td>
+                                                            
+                                                                 <a href="http://www.mailchimp.com/email-referral/?utm_source=freemium_newsletter&amp;utm_medium=email&amp;utm_campaign=referral_marketing&amp;aid=0eb0ac9b4e8565f2967a8304b&amp;afl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/KELiOftXffLqcIBSflNQcnWkdolUAJv6Cich_jrkdMM=/aHR0cHM6Ly9nYWxsZXJ5Lm1haWxjaGltcC5jb20vMDg5NDQzMTkzZGQ5MzgyM2YzZmVkNzhiNC9pbWFnZXMvYmFubmVyMS5naWY=" alt="Email Marketing Powered by Mailchimp" title="Mailchimp Email Marketing" loading="lazy"/></a> 
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                </tbody></table>
+                                                
+                                            
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                </td>
+                            </tr>
+                        </tbody></table>
+                        <br/>
+                    </td>
+                </tr>
+            </tbody></table>
+        
+                
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <table>
+                    <tbody><tr>
+                        <td>
+                            <table>
+                                <tbody><tr>
+                                    <td>
+                                        This email was sent to <a href="mailto:&lt;&lt;Email Address&gt;&gt;" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">&lt;&lt;Email Address&gt;&gt;</a>
+                                        <br/>
+                                        <a href="https://unam.us4.list-manage.com/about?u=0eb0ac9b4e8565f2967a8304b&amp;id=f55ea67de1&amp;e=[UNIQID]&amp;c=15cfed834e" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><em>why did I get this?</em></a>    <a href="https://unam.us4.list-manage.com/unsubscribe?u=0eb0ac9b4e8565f2967a8304b&amp;id=f55ea67de1&amp;e=[UNIQID]&amp;c=15cfed834e" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">unsubscribe from this list</a>    <a href="https://unam.us4.list-manage.com/profile?u=0eb0ac9b4e8565f2967a8304b&amp;id=f55ea67de1&amp;e=[UNIQID]&amp;c=15cfed834e" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">update subscription preferences</a>
+                                        <br/>
+                                        Complexity Digest · Universidad Nacional Autónoma de México · Ciudad Universitaria · Mexico City, DF 01000 · Mexico
+                                        <br/>
+                                        <br/>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+                
+            

@@ -1,0 +1,10 @@
+<p>There is a new minor version of MAT2:
+<a href="https://0xacab.org/jvoisin/mat2/tags/0.13.1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">0.13.1</a>, without major fixes,
+but with cleaner code and some minor improvements. The main change is
+that the Nautilus extension is <a href="https://0xacab.org/jvoisin/mat2/-/issues/176" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">no more</a>:
+Nautilus 43 is slow and I don&#39;t like it, so my motivation/incentive to port the
+mat2 extension to its new API is non-existent. Moreover, <a href="https://metadatacleaner.romainvigier.fr/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Metadata Cleaner</a>
+is a stellar alternative: pretty, simple, accessible, translated, … it&#39;s
+glorious.</p>
+<p>As usual, if you know some python help is
+<a href="https://0xacab.org/jvoisin/mat2/issues?label_name%5B%5D=good+first+issue" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">welcome</a>.</p>

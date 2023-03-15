@@ -1,0 +1,17 @@
+<p>Right now, “Zero Trust” is in serious danger of becoming an empty buzzword. The problem isn’t just that marketers have slapped the Zero Trust label on everything short of breakfast cereal — it’s that for all the hype, <a href="https://www.cshub.com/attacks/articles/the-biggest-data-breaches-and-leaks-of-2022" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">we don’t seem to be getting any safer</a>.</p>
+
+<p>At the heart of Zero Trust is a good idea, but the way most companies execute that idea is <em>incomplete</em>. Specifically, most security practitioners forget that device compliance is a crucial element of Zero Trust.</p>
+
+<p>Think about it: your identity provider can ensure that only <em>known</em> devices access your company’s apps, but just because you recognize a device, doesn’t mean it’s in a secure state. A malware-infected laptop running an outdated OS can’t exactly be “trusted.” And you can’t count on MDMs to achieve total compliance. Things like <a href="https://l.kolide.co/3HNQBX5" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">unencrypted access credentials</a> are out of their reach, not to mention <a href="https://l.kolide.co/3YinMcq" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Linux devices writ large</a>. </p>
+
+<p>Kolide solves the device compliance element of Zero Trust for companies that use Okta.</p>
+
+<p><em>Our premise is simple: if an employee’s device is out of compliance, it can’t access your apps.</em></p>
+
+<p>Kolide’s unique approach works with Okta to make device compliance part of the authentication process. If a device isn’t compliant, users can’t log in to their cloud apps until they’ve fixed the problem. And instead of creating more work for IT, <a href="https://daringfireball.net/martini/images/kolide-device-blocked.png" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Kolide provides instructions so users can get unblocked on their own</a>.</p>
+
+<p>Kolide works across your Mac, Windows, and even Linux devices, with mobile support coming soon. Our lightweight agent complements your existing tools, brings a lot of compliance issues into scope and under control, and can complete your Zero Trust picture.</p>
+
+<p>To learn more and see our product in action, <a href="https://l.kolide.co/3XlSqAq" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">visit kolide.com</a>.</p>
+
+<p><em>Link: <strong><a href="https://l.kolide.co/3JWbXEv" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">l.kolide.co/3JWbXEv</a></strong></em></p>

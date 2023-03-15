@@ -1,0 +1,716 @@
+<figure><img src="https://reader.miniflux.app/proxy/mTXgGdTv1N7adNd737tU9VSQnPCmVh6hKQfvPZbU_4s=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMS9NYWNoaW5lLWlzLWl0LW91ci1mYXVsdC5qcGc=" alt="Robot looking over the shoulder of a computer, saying &#34;Is that our fault?&#34; (Cartoon by Hilda Bastian.)" width="313" height="309" srcset="https://reader.miniflux.app/proxy/mTXgGdTv1N7adNd737tU9VSQnPCmVh6hKQfvPZbU_4s=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMS9NYWNoaW5lLWlzLWl0LW91ci1mYXVsdC5qcGc= 710w, https://reader.miniflux.app/proxy/tefioB8SqwrX_MajTmvrBtm8Ra3Muw4asgheoe1JmSY=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMS9NYWNoaW5lLWlzLWl0LW91ci1mYXVsdC0zMDB4Mjk3LmpwZw== 300w" sizes="(max-width: 313px) 100vw, 313px" loading="lazy"/></figure>
+
+
+
+
+
+
+
+<p>The first myth to dispense with: That there’s almost no research on quote tweets! I added to this misconception with <a href="https://absolutelymaybe.plos.org/2022/12/01/reflecting-on-twitter-white-flight-quote-tweet-tensions-at-mastodon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">my December post</a>. I’d heard there was next to no research so often, that when I had trouble finding studies, I assumed digging harder would be futile. Big mistake!</p>
+
+
+
+<p>Soon after I posted, I saw mention of a few studies I hadn’t seen. The problem wasn’t a lack of research, but poor retrievability of studies – and a lack of adequate literature reviews. </p>
+
+
+
+<p>Events also rapidly overtook that last post. A thoughtful and wide-ranging debate about whether to add quote boosts to the core Mastodon software blossomed. (You can dip into it via <a href="https://sauropods.win/@futurebird/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">@futurebird</a>‘s comments <a href="https://github.com/mastodon/mastodon/issues/14597#issuecomment-1362907651" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a>, and <a href="https://mstdn.social/@rysiek/109598221617781883" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">this thread</a>.) And then <a href="https://mastodon.online/@hildabast/109623926844140075" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">on January 3</a>, Mastodon’s lead developer announced he was now open to the idea of <a href="https://mastodon.social/@Gargron/109623910323239777" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">opt-out</a> quote-boosting, after having adamantly ruled it out in the past. That would mean you would be able to set preferences on your Mastodon account about whether to offer the quote function, restricting it or disallowing it completely. </p>
+
+
+
+<p>I had argued for controlled experimentation in my post – aka A/B testing. That’s not likely to happen. But as we continue down the road of uncontrolled experimentation, at least we could have a better grip on the evidence about the Twitter experience. So I went back to the drawing board, and got started on a serious dive into the literature. I’m sure there must be more studies I didn’t find – especially non-English ones. But I found enough to give reasonable, or at least partial, answers to most of my questions.</p>
+
+
+
+<p>I found 37 studies with data and/or content analysis for quote tweets (QTs) that I use in this post, and another 4 that I don’t. Of those 4, I didn’t use 3 of them because the quality was too low – and the fourth, because there wasn’t enough information for me to be able to interpret the data. They’re all detailed <a href="#list">below this post</a>, along with some explanation for how I found them.</p>
+
+
+
+<p>Most of the studies use <a href="https://dev.twitter.com/streaming/public" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Twitter’s API</a>, a data service that pours out a random selection of public tweets that is meant to be a fairly reliable representation of Twitter activity. (The <a href="https://absolutelymaybe.plos.org/2017/04/28/whos-who-on-science-twitter-and-who-counts/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">one time</a> I was involved in using that data, there were over 4m tweets across 3 days – out of roughly 1.5 billion.) Few studies with large samples of tweets report on whether they considered the possible contribution of bots.</p>
+
+
+
+<p>Large-scale studies use different ways of inferring the sentiment of tweets – eg whether a user is retweeting or quoting content they disagree with or doesn’t match the stance of their network, or what they usually tweet. Those methods might over-estimate how often people agree with what they retweet [Guerra <a href="https://www.aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15702/14847" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2017</a>].</p>
+
+
+
+<p>Only one of the studies included both manual quotes that linked to other tweets and QTs – but it didn’t report if there were differences between them. I didn’t find any studies analyzing the use of screenshots of tweets without linking back.</p>
+
+
+
+<p>I gave each of the 37 studies a rough 4-star rating for scientific quality for the data I’m using – and I was pretty generous with it, giving half of them 3 stars (“very good”) or 4 (“best and most relevant”). If you want to keep my rating in mind as you read, references 1 to 8 are rated “best and most relevant”; 9 to 17c are “very good”; 18 to 26a are “good”; and 27 to 33 are “low”. Within those tiers, they are “equal” – that is, a lower number within a tier doesn’t mean the is lower.</p>
+
+
+
+<p>I’ve organized the evidence around 9 questions, each starting with a key point summary in bullet form. There are links to navigate backwards and forwards between the questions and the list of studies – and because the post got so big, I’ve included the summary points for each question within the “contents” list.</p>
+
+
+
+<p>In my December post, I wrote, “So where have I landed after all this? I’m not convinced that the fears about developing quote boosting in some form are justified, given the different context.” Now that I’ve seen a lot more data, I’m convinced that making quoting easy is not a major vector for abuse or toxicity, and there are benefits. That’s not to say that the QT can’t be abused. Every form of tweet/post can be, and has been. The toxicity was already there, thriving in replies in particular, and amplified in all its forms by the algorithm, retweets, and hashtags.</p>
+
+
+
+<h2 id="contents"></h2>
+
+
+
+
+
+
+
+<ul><li><a href="#1">How common</a> are QTs and how are they used?</li><li><ul><li><em>QTs tend to be short, and they are much less common than replies and retweets – around 10% of all tweets</em>.</li></ul><ul><li><em>Use of QTs varies internationally.</em></li><li><em>Major common uses of QTs are to add context and/or opinion, and to forward tweets to others. They are often used to include some translation. QTs are also used for debunking, and to praise and criticize others.</em></li><li><em>People using QTs are mostly neutral towards, or in agreement with, the tweet they’re quoting. The rate of disagreement in QTs can be high on controversial issues.</em></li></ul></li></ul>
+
+
+
+<ul><li>Do some <a href="#2">groups of people</a> use QTs more than others?</li><li><ul><li><em>There’s quite solid evidence that journalists, politicians, and African-Americans use QTs more often.</em></li><li><em>In a single small study of autistic people, QT use was low.</em></li></ul></li></ul>
+
+
+
+<ul><li>Do QTs <a href="#3">increase the spread</a> of tweets?</li><li><ul><li><em>QTs may result in a small increase in tweets, but they mostly replace retweets and replies.</em></li><li><em>QTs may be more influential than other forms of engagement, including retweets and replies or mentions.</em></li></ul></li></ul>
+
+
+
+<ul><li>Do QTs increase or decrease the <a href="#4">spread of misinformation</a>?</li><li><ul><li><em>There wasn’t much evidence on this question. QTs weren’t a major vector of misinformation in these studies, and in one, debunking QTs spread faster than false stories.</em></li></ul></li></ul>
+
+
+
+<ul><li>Do QTs increase <a href="#5">incivility and/or abuse</a>?</li><li><ul><li><em>The primary vectors of incivility and abuse on Twitter appear to be replies and hashtags, and it comes from a small minority of users.</em></li><li><em>There’s conflicting evidence on whether QTs increase or decrease incivility, and whatever effect there is, it doesn’t seem to be major.</em></li></ul></li></ul>
+
+
+
+<ul><li>Do QTs increase Twitter <a href="#6">pile-ons or swarms</a>?</li><li><ul><li><em>None of the studies could answer this question or estimate how often this happens.</em></li><li><em>While mass hate attacks are a form of cyber-violence, opinions are divided about calling people</em> <em>out</em> <em>for anti-social behavior or micro-aggression. In the US, people of color and women are more likely to regard this as a form of accountability rather than unfair. </em></li></ul></li></ul>
+
+
+
+<ul><li>What aspects of Twitter’s system differ from potential <a href="#9">“quote boosts” at Mastodon</a>?</li></ul>
+
+
+
+<ul><li><a href="#list">List of studies</a></li></ul>
+
+
+
+<h2 id="1"></h2>
+
+
+
+
+
+
+
+<h5>How common are QTs and how are they used?</h5>
+
+
+
+
+
+
+
+<ul><li><em>QTs tend to be short, and they are much less common than replies and retweets – around 10% of all tweets</em>.</li><li><em>Use of QTs varies internationally.</em></li><li><em>Major common uses of QTs are to add context and/or opinion, and to forward tweets to others. They are often used to include some translation. QTs are also used for debunking, and <em>to praise and criticize others</em>.</em></li><li><em>People using QTs are mostly neutral towards, or in agreement with, the tweet they’re quoting. The rate of disagreement in QTs can be high on controversial issues.</em></li></ul>
+
+
+
+
+
+
+
+<p>Twitter originally only enabled tweets and replies, <a href="https://www.theverge.com/2015/11/3/9661180/twitter-vine-favorite-fav-likes-hearts" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">soon after</a> adding a star for bookmarking (which users quickly turned into likes). In 2009, in response to the way people were manually “retweeting”, along with a problem with fakes, Twitter introduced the retweet button. Hyperlinks were added to hashtags that year, too. The QT button was introduced in April 2015, originally called “retweet with comments”. (See <a href="https://absolutelymaybe.plos.org/2022/12/01/reflecting-on-twitter-white-flight-quote-tweet-tensions-at-mastodon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">my December post</a> for timeline sources.)</p>
+
+
+
+<p>This means there have been 5 ways to tweet or engage with others’ tweets:</p>
+
+
+
+<ul><li>New tweets;</li><li>3 ways of responding to others’ tweets – by replying, retweeting, or “liking” it; and</li><li>quote tweets, a hybrid including a new tweet and a retweet at the same time.</li></ul>
+
+
+
+<p>A study of tweets by influential political Twitter users and responses to them began before the introduction of QTs [18]. Those authors reported that QTs ate into the proportion of replies and forwarding of tweets to other Twitter accounts via mentions. From their chart, it looks as though they may also have replaced some retweets. They didn’t look for how much “manual” quoting remained. </p>
+
+
+
+<p>From more recent data, the overwhelming majority of tweets are engagements with others’ tweets, not new tweets – as shown in the chart using API data below – and even some of those new tweets would engage with others’ tweets by linking to them manually instead of using the QT function, by discussing them without linking, and/or by attaching a screenshot of a tweet or tweets.</p>
+
+
+
+
+
+
+
+<p><strong><em>Breakdown of tweet types</em></strong></p>
+
+
+
+<p><em>(3 days in February 2020)</em></p>
+
+
+
+<figure><img src="https://reader.miniflux.app/proxy/XWieoxwuhuM9Ivhnnkf5aLruxj9d7Fxm4NCxc_AAkiE=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMS9Ud2VldC1icmVha2Rvd24tMTAyNHg3MTkuanBn" alt="New tweet: In English 21%, German 22%. Reply: English 17%, German 24%. Retweet: English 54%, German 43%. Quote tweet: English 8%, German 10%.
+" width="523" height="367" srcset="https://reader.miniflux.app/proxy/XWieoxwuhuM9Ivhnnkf5aLruxj9d7Fxm4NCxc_AAkiE=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMS9Ud2VldC1icmVha2Rvd24tMTAyNHg3MTkuanBn 1024w, https://reader.miniflux.app/proxy/HUPRzoGF7MxDeilEXxmfRDY4c33lCP91MDWasVMvp6U=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMS9Ud2VldC1icmVha2Rvd24tMzAweDIxMS5qcGc= 300w, https://reader.miniflux.app/proxy/f2ynr-h9a9P9Lkmt10bHYcFlN02eNEalOjAULHqrHMs=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMS9Ud2VldC1icmVha2Rvd24tNzY4eDUzOS5qcGc= 768w, https://reader.miniflux.app/proxy/_8c-17NGTHyN6eTv4Ao8b1_ViQfm6Y-6CHBxwOwHqCo=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMS9Ud2VldC1icmVha2Rvd24tMTUzNngxMDc4LmpwZw== 1536w, https://reader.miniflux.app/proxy/xR7SOmFvqupOUBaBgkoIqubE989q5H4fefYNq6vJvE8=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMS9Ud2VldC1icmVha2Rvd24tMjA0OHgxNDM4LmpwZw== 2048w" sizes="(max-width: 523px) 100vw, 523px" loading="lazy"/><figcaption><em>From Twitter API data stream [2]</em></figcaption></figure>
+
+
+
+
+
+
+
+<p>While the proportion of quote tweets varied in other studies, the overall pattern of them being very much in the minority compared to replies and retweets remained. Those studies were looking at particular topics, though, usually political. One other study included a large assessment of general users – a corpus of German-language tweets, where language was determined by a different method to that in the chart above. From more than 7 million users in 2019, they found a QT rate of only 4% [6]. Those researchers also concluded that a much smaller proportion of users reply than retweet: 23% versus 64%: People who reply are doing more tweeting. They also found that 12% of retweets were of QTs, and 22% were retweeting replies. Most QTs were being added to new tweets (77%), with 15% quoting replies and 7% quoting other QTs.</p>
+
+
+
+<p>I couldn’t find a study showing rates of QT use in more languages. There’s an analysis of other Twitter data in 150 languages from 2009 to 2020, though [Alshaabi <a href="https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-021-00271-0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a>]. Again, language was assigned to tweets with a different method, and the language of a substantial group of tweets wasn’t identifiable. English tweets were more than half of all tweets until 2010, and they’re now a little under 40%. The second-largest language group is Japanese, followed by Spanish, Portuguese, and Thai.</p>
+
+
+
+<p>That study combined new tweets and replies in one group (“original tweets”), and retweets and quote tweets in another (“retweets”). The rate of retweeting varied a great deal from language to language, and from year to year. For example, by their calculation, in 2020 there were more retweets/quote tweets than new tweets/replies in English, Spanish, and Thai, whereas the reverse was so in Japanese and German.</p>
+
+
+
+<p>QTs are often particularly short. I found 2 sources of data on this:</p>
+
+
+
+<ul><li>According to Twitter, in an experiment with prompting people to QT when they clicked “retweet,” QTs were very short: “45% of them included single-word affirmations and 70% had less than 25 characters.” [32]</li><li>In a study of people who followed at least one US political Twitter account between 2016 and 2019 (who were 40% of a random sample of people on Twitter), 43% of QTs were less than 5 words (and 20% of QTs were of Trump’s tweets) [33]. </li></ul>
+
+
+
+<p>A large proportion of the studies examined some aspect of the use of QTs, usually with a fairly broad-brush approach as the number of tweets were so large. For example, agreement or disagreement could have been inferred from characteristics of the language used, or in comparison with the sentiments in what users were retweeting without comment. As I mentioned earlier, work by Guerra and colleagues suggests this might under-estimate how often people disagree with what they’re retweeting [<a href="https://www.aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15702/14847" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2017</a>].</p>
+
+
+
+<p>These were the most common uses of QTs drawn out in the studies I found:</p>
+
+
+
+<ul><li>Adding a contextual comment to, or indicating agreement with, a tweet. That’s more common than disagreement, even with controversial topics. For example:<ul><li>People were more likely to express a contrary view with a reply than a QT in general use or during protests in South America: 34% in QTs versus 42% in replies [26].</li><li>A detailed analysis of QTs on Covid vaccines classified 41% as neutral, 34% agreeing, and 25% as disagreeing [16].</li></ul></li><li>Adding critical comment when sharing a tweet they don’t agree with, with too much variation among studies to give a clear idea of how common this is [1, 7, 8, 10, 12, 16, 18, 20, 23, 26, 30, 33 – caveats*]:<ul><li>Disagreement was negligible or very uncommon in QTs around an Italian referendum in 2016 [12] or QTs of politician/electoral candidate tweets in a German election in 2017 [20], while QTs contesting the 2020 US presidential election results tended to be somewhat less negative than the tweets being quoted [17c];</li><li>Disagreement was very common in 25% of Covid vaccine QTs in 2020-21 [16], 33% of English-language QTs on the Israel-Palestine conflict across a decade [30], and 58% of QTs of US politicians’ tweets in 2015 [18];</li><li>A subset of disagreeing is using the QT to develop the arguments challenging opposing camps, including interactions between high status users – it’s a “tactic for contesting narratives…between distinct structural groups” [7] (from a study of tweets related to shootings and Black/Blue/AllLives Matters in 2016).</li></ul></li><li>Forwarding to one or more users – 14% in a random sample of Covid-related tweets in 2020 [1]. That didn’t include using a QT to add a hashtag, which is another way to forward a tweet to other users.</li><li>Translation – the newly added text was “often” in a different language to the quoted tweet [1]. (Note: Around 40% of quoted tweets in that study were in English.)</li><li>Praising or congratulating [20], or criticizing, people. The proportions of this weren’t studied.</li><li>Debunking misinformation [8].</li></ul>
+
+
+
+<p>Another motivation is suggested by Draucker and Collister’s content analysis of manual retweeting and use of the retweet button just after the QT was introduced (<a href="http://d-scholarship.pitt.edu/26326/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2015</a>):</p>
+
+
+
+<ul><li>Adding a comment as a way to gain credit for the broadcast, “a part of Twitter’s micro-celebrity culture.” (Otherwise, a user’s contribution to the chain of a tweet’s spread is quickly lost.)</li></ul>
+
+
+
+
+
+
+
+<p>* Caveat re [33]: In this study, the analysis of sentiments of QTs and retweets only included QTs with 5 or more words (57% of QTs) which may have skewed the results. The Twitter users were ones who follow a political elite account (politician or media organization), and 20% of the QTs were of Trump’s tweets.</p>
+
+
+
+
+
+
+
+<p><em><a href="#contents">Return to contents</a></em></p>
+
+
+
+<h2 id="2"></h2>
+
+
+
+
+
+
+
+<h5>Do some groups of people use QTs more than others?</h5>
+
+
+
+<ul><li><em>There’s quite solid evidence that journalists, politicians, and African-Americans use QTs more often.</em></li><li><em>In a single small study of autistic people, QT use was low. </em></li></ul>
+
+
+
+
+
+
+
+<p>Journalists might use QTs more than average. A study of close to 2,300 US political journalists (Congress-credentialed) in 2017 found a QT rate of 14% [15]. Another in the US in 2016 around/during a US presidential debate [3] found that over 27% of less than 800 political journalists’ tweets were QTs, usually of journalism (63%) or political elites’ tweets (20%). They had very little interaction with the general public. Their use of Twitter was, according to the authors, like the office water-cooler, talking and joking predominantly with each other. Lower engagement isn’t surprising, given the amount of trolling and abuse directed at journalists.</p>
+
+
+
+<p>There’s more confirmation of a higher level of journalists’ quote tweeting from a study of close to 700,000 quote trees in the French language – a string of tweets including at least 1 non-trivial, non-self-quoting QT – by around 14,000 fairly active tweeters with at least 195 followers who had tweeted about the European parliament elections in 2019 [23]. Those authors concluded that journalists and politicians were the highest producers of quote trees.</p>
+
+
+
+<p>A study of 800,000 Twitter users who could be matched to voter records in the US found that African-Americans were more likely to QT than Caucasian Americans, and far less likely to tweet replies [24].</p>
+
+
+
+<p>In the early months when QTs had just been introduced, a study found that QTs were more likely to come from people who were more social in that early adoption phase – they followed more people, had more followers, tweeted more, and had been on Twitter longer [18]. That study analyzed QTs and retweets of the tweets of US politicians and other political tweeters with over 100,000 followers.</p>
+
+
+
+<p>Another 2020 study found a QT rate of 25% around the time of the US mid-term elections [9]. Only 40% of US users might be following at least one political elite account – which includes journalists, whereas 71% follow at least one celebrity [33]. This pattern doesn’t necessarily apply to elections internationally. For example, the QT rate among users engaged with politicians during a German election in 2017 was only 10% [19].</p>
+
+
+
+<p>I only found 1 other study that analyzed Twitter use by a community. It was a study of autistic people who use Twitter. They were recruited with a partner autistic community organization in England, and consented to have their tweets tracked and analyzed in 2021 [11]. Among these 31 people, the QT rate was low (4%).</p>
+
+
+
+<p>Finally, a couple of studies gives an idea of how different use of QT can be among the users analyzed. A study of the accounts of alternative online political media outlets in the UK showed among over 14,000 tweets between 2015 and 2018, the QT rate was 4%, ranging from 0 to 58% from outlet to outlet [25]. A study of the Twitter use of member organizations of the WHO Vaccine Safety Network found that QTs varied greatly – for example, only 1 organization replied to tweets with QTs, and they did so quite often [17b].</p>
+
+
+
+
+
+
+
+<p><em><a href="#contents">Return to contents</a></em></p>
+
+
+
+<h2 id="3"></h2>
+
+
+
+
+
+
+
+<h5>Do QTs increase the spread of tweets?</h5>
+
+
+
+
+
+
+
+<ul><li><em>QTs may result in a small increase in tweets, but they mostly replace retweets and replies.</em></li><li><em>QTs may be more influential than other forms of engagement, including retweets and replies or mentions.</em></li></ul>
+
+
+
+
+
+
+
+<p>People can share their comments on others’ tweets in several ways without using the QT function. But if they want their tweet to refer back to the one they’re commenting on, the other options require at least an extra step to execute – copying and adding a link, taking and attaching/sharing a screenshot, or writing a reply and then retweeting it so that all their followers might see it. By making it easier to do, there are several ways that the QT function could increase the spread of tweets – for example:</p>
+
+
+
+<ul><li>If the seamless affordance encouraged people to share comments on others’ tweets more often;</li><li>If either the QT, or the tweet it’s showcasing, were more likely to catch people’s eyes when they are scrolling than a reply or ordinary retweet; </li><li>If QTs were more likely to be surfaced by Twitter’s algorithm, and thus be seen by a larger audience; and/or</li><li>If QTs were more likely to be retweeted or commented on in turn than replies or ordinary retweets.</li></ul>
+
+
+
+<p>That final point – offering the reward of additional engagement – isn’t just about some people who want to “perform to the gallery” and/or get people riled up. Positive <a href="https://epjds.epj.org/articles/epjdata/abs/2020/01/13688_2020_Article_243/13688_2020_Article_243.html?mb=0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">feedback might encourage</a> quite a few people to keep going in the direction of more feedback.</p>
+
+
+
+<p>Twitter released a fragment of data that addresses this question [32]. When they tested a prompt to people to add a quote before retweeting, they found that: “This change introduced some friction, and gave people an extra moment to consider why and what they were adding to the conversation.” The overall number of retweets and QTs decreased by 20%, with a small shift towards QTs within that (a 26% increase in QTs and a 23% decrease in retweets).</p>
+
+
+
+<p>A study using several large sets of tweets between 2017 and 2019, including general ones and tweets after a mass-shooting in Las Vegas, developed a model for assessing influence on Twitter [17]. Those authors said hashtags are so widely used that it’s hard to pin down when they have influence. QTs were the most influential type of interaction in their analysis. They suggest that “people are more deeply influenced by others when they decide to quote tweets and write down feelings.”</p>
+
+
+
+<p>One of the studies analyzed tweets that quoted other tweets from 2008 to 2018 – any tweet that included a link to another tweet, so manual quotes plus QTs [30]. The subject matter was related to the Israel-Palestine conflict. There was no mention of time trends. The authors concluded that while most tweets didn’t get retweets or likes, most tweets quoting another tweet did. (It’s not clear if they took follower counts of quoters into account.)</p>
+
+
+
+<p>I already mentioned a study that reported on tweets from influential US political Twitter users from before the introduction of QTs to a few months afterwards [18]. Those authors didn’t report that QTs drove up the rate of tweets, just that they replaced some of the tweeting that was previously replies etc.</p>
+
+
+
+<p>However, they concluded that QTs increase the diffusion of tweets more than replies. That was a supposition, based on QTs circulating tweets from users their followers don’t follow. But they didn’t have data on the actual spread of tweets for that question. If QTs replaced ordinary retweets, for example, the potential audience size would have been the same. That study also found that QTs were retweeted and favorited more than replies. But keep in mind in this study, QTs were more likely to be posted by users who had more followers, and the authors don’t say that they took that into account for this analysis. What’s more, users that replied to others’ tweets had a lower rate of followers – something you typically see in these studies. The mean retweeting rate for replies was 0.2, while for QTs it was 2.2; mean rate of favorites was 0.6, while for QTs it was 2.6.</p>
+
+
+
+<p>A study of tweets in Italian on politics in 2020 concluded, based on simulations, that QTs might have more influence than retweets [26a].</p>
+
+
+
+<p>Finally, the author of a study of tweets in Farsi/Persian and English using a hashtag for protests about women’s lack of freedom in Iran, reported that QTs increased retweets, but didn’t include the data for this conclusion [27]. It’s not clear if that meant they increased retweets alone (it’s easy to retweet the quoted tweet, not just the QT), or the overall number of QTs and retweets combined.</p>
+
+
+
+
+
+
+
+<p><em><a href="#contents">Return to contents</a></em></p>
+
+
+
+<h2 id="4"></h2>
+
+
+
+
+
+
+
+<h5>Do QTs increase or decrease the spread of misinformation?</h5>
+
+
+
+
+
+
+
+<ul><li><em>There wasn’t much evidence on this question. QTs weren’t a major vector of misinformation in these studies, and in one, debunking QTs spread faster than false stories.  </em></li></ul>
+
+
+
+
+
+
+
+<p>There were only 2 studies with analyses that contribute here. One included some data on misinformation when 2 movies with social justice and representation themes were released [8]. The first was <em>Black Panther</em> in 2018, with 4 false claims made in 304 tweets getting around 155,000 responses (QTs, replies, retweets) – roughly 3% of the tweets. The second was <em>Captain Marvel</em> in 2019. For both movies, the researchers concluded that “debunking and mocking quote responses appear to diffuse faster in the community attacking false stories than the false stories themselves.”</p>
+
+
+
+<p>The other study [28] used a <a href="https://www.kaggle.com/datasets/mrisdal/fake-news" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">database called Kaggle</a>, which includes 244 news websites tagged as “bullshit” after being crawled looking for reputable sources for their claims. The researchers analyzed 16,000 tweets linking to one of those websites and over 56,000 links to news reports from over 65,000 Twitter users (between 2015 and 2019). They don’t seem to have analyzed retweets though, from what I can see, but they reported that the BS links got fewer QTs and replies. Stories from those news websites were being tweeted for a longer time than ones from reputable news sources, and the researchers suggested some Twitter accounts may be set up to propagate misinformation: “it can be deduced that someone keeps tweeting fake news constantly and gradually.”</p>
+
+
+
+
+
+
+
+<p><em><a href="#contents">Return to contents</a></em></p>
+
+
+
+<h2 id="5"></h2>
+
+
+
+
+
+
+
+<h5>Do QTs increase incivility and/or abuse?</h5>
+
+
+
+
+
+
+
+<ul><li><em>The primary vectors of incivility and abuse on Twitter appear to be replies and hashtags, and it comes from a small minority of users.</em></li><li><em>There’s conflicting evidence on whether QTs increase or decrease incivility, and whatever effect there is, it doesn’t seem to be major.</em></li></ul>
+
+
+
+
+
+
+
+<p>When Twitter introduced the QT function – shortly before Trump announced his bid for the US presidency – there already were vectors of incivility and abuse at Twitter: Replies, retweets, hashtags, trending topics, bots, and an algorithm that, by seeking to maximize engagement, can escalate conflicts.</p>
+
+
+
+<p>The tactics that drove <a href="https://en.wikipedia.org/wiki/Gamergate_(harassment_campaign)#Harassment_and_Twitter" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Gamergate</a> before there were QTs were still in play: Hashtags, and creating new accounts after being blocked. The MAGA hashtag, for example, both networks and extends a community – it’s co-used with white supremacist and similar hashtags, exposing people to more extreme circles [Eddington <a href="https://journals.sagepub.com/doi/epub/10.1177/2056305118790763" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2018</a>].</p>
+
+
+
+<p>Moving to new accounts after falling foul of moderators continued, too. A study of suspended Jihadist accounts called these new accounts “resurgents” [Wright <a href="https://cvir.st-andrews.ac.uk/articles/10.15664/jtr.1213/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2016</a>]. Resurgent accounts, those authors found, grew more quickly than non-suspended Jihadist Twitter accounts – it was so common, there was even a specific hashtag to see who the resurgents were that week. That phenomenon may also be at play in a study of ISIS-related tweets in 2014 and 2015 [13]. In that study, there wasn’t much retweeting or quoting, but there were spikes when a large number of accounts were suspended. </p>
+
+
+
+<p>Did QTs make all this worse, have no impact, or make it better? A couple of studies reached a conclusion on this:</p>
+
+
+
+<ul><li>The 2015 study of US politicians’ tweets that I’ve already discussed found that QTs were less likely to include insults than replies – and as there was a shift away from replies to QTs, and QTs were more widely circulated, “Twitter’s new feature, has led to a slightly positive change to the message, i.e., a more civil political discourse” [18]. That was early days in the use of QTs, however.</li><li>A study of tweets by German politicians and electoral candidates around the 2017 election found that even though QTs were more likely to accuse opposing parties of “fake news”, the QT “promotes a civilized form of communication with little in the way of strong criticism for opponents and lots of praise for colleagues” [20].</li></ul>
+
+
+
+<p>A study of around 6,000 tweets in 2020 containing disability slurs (98% of them) or Holocaust denial found that 86% of them were replies or QTs – though only 7% of them were QTs [29]. Another study from 2020 analyzed tweets using a Covid-shaming hashtag (#Covidiot) and a positive Covid hashtag (#NHSHeroes). The authors concluded that the shaming hashtag didn’t mobilize people the way the positive associations of NHS Heroes did. QTs were not a major negative force in their analysis, but they don’t report the numbers of each type of tweet.</p>
+
+
+
+<p>As mentioned earlier, a study of users contesting the results of the 2020 US presidential election concluded that the QTs were less negative than the tweets being commented on [17c]. (This study was based on a subset of tweets from another study [17a].)</p>
+
+
+
+<p>I also found 2 studies that attempted to identify features most predictive of the propagation of abusive or hateful tweets:</p>
+
+
+
+<ul><li>A study of mask-shaming videos during the Covid pandemic [4] listed these characteristics of tweets – replies and those containing mentions, and tweets with hashtags; and</li><li>A study of abusive and hateful tweets came to the same conclusion [22].</li></ul>
+
+
+
+<p>Those studies didn’t provide enough detail on lower-ranked features (like QTs) that may or may not have been associated with incivility or hate.</p>
+
+
+
+<p>A thesis includes a very detailed report of mixed methods to study tweets on abortion in 2018 and 2020, in Ireland and the US [5]. There were quantitative analyses of 7.7 million tweets, including over 5.5 million retweets and over 850,000 QTs, and a qualitative analysis of a random sample of 3,000. QTs were more common in Ireland, and replies were more common in the US. This study was an outlier in this set of studies, which may be because of the intense topic: Incivility was more common in retweets and QTs than in replies. US tweets had a higher rate of incivility (15%) than Irish ones (9%). A key finding: More than 44% of all uncivil tweets came from the top 10% of the most active users. </p>
+
+
+
+<p>The author speculated that incivility within a closed circle of like-minded people might drive up levels of incivility and hostility to people with differing views “as their intolerance is not challenged by other users.” The rise of populism and reactionary backlash in the world, in combination with echo chambers, has, she suggested, increased the level of incivility and intolerance.</p>
+
+
+
+<p>A study of over 99,000 tweets including antisemitic terms along with election-related hashtags in 2018 [14] concluded it was complex: “…some tweets that were not antisemitic were ultimately made so by way of people adding antisemitic references/context in their quote-tweets, and some tweets that were antisemitic were couched in language contesting them, leading to the overall compositum of tweet plus quote not being antisemitic.”</p>
+
+
+
+
+
+
+
+<p><em><a href="#contents">Return to contents</a></em></p>
+
+
+
+<h2 id="6"></h2>
+
+
+
+
+
+
+
+<h5>Do QTs increase Twitter pile-ons or swarms?</h5>
+
+
+
+
+
+
+
+<ul><li><em>None of the studies could answer this question or estimate how often this happens.</em></li><li><em>While mass hate attacks are a form of cyber-violence, opinions are divided about calling people</em> <em>out</em> <em>for anti-social behavior or micro-aggression. In the US, people of color and women are more likely to regard this as a form of accountability rather than unfair.  </em></li></ul>
+
+
+
+
+
+
+
+<p>Pile-ons, or swarming of a person’s Twitter account, are the “massification” of hate directed at an individual – it’s not just the content of the attacks that define this, it’s the “sizeable group of people brought together through networks…[resulting in violence from] the collective pressure of the multiple and often simultaneous adverse actions” [Cover <a href="https://journals.sagepub.com/doi/full/10.1177/1329878X221088048" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a>].</p>
+
+
+
+<p>This pre-dates the introduction of the QT. Swarming was one of the major tactics of Gamergate, including the use of its hashtag in replies (<a href="https://en.wikipedia.org/wiki/Gamergate_(harassment_campaign)#Harassment_and_Twitter" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">from 2014</a> – the same year, as it happens, that another hashtag took off – #BlackLivesMatter). The process of being baited to reply, and then replies being taken out of context and retweeted to antagonists’ followers is well-described by a journalist in a paper by Binns [<a href="https://intellectdiscover.com/content/journals/10.1386/ajms.6.2.183_1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2017</a>].</p>
+
+
+
+<p>Both before and after the introduction of the QT, there have been pile-ons and swarms from all sorts of tweets, including manual tweets (with or without a screenshot of someone else’s tweet). Being swarmed like this can be distressing or traumatizing, and it can inhibit or prevent people from participating in social media [Marwick <a href="https://journals.sagepub.com/doi/full/10.1177/20563051211021378" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a>]. Indeed, driving people offline can be an objective.</p>
+
+
+
+<p>Twitter’s trending topics feature, and hashtags, can call networks into action, and that can be done through any form of tweet, including replies. In aiming to increase engagement, Twitter’s algorithm can also escalate conflict to the point where pile-ons become a risk. People can have enough followers to launch a pile-on or swarm on their own, by any form of tweet, including replies (or retweets/QTs of replies).</p>
+
+
+
+<p>Pile-ons or swams can attack Twitter behavior, or people can be pursued on Twitter in relation to offline events – as in the case of Brad Raffensperger, the Georgia Secretary of State who refused to overturn 2020 election results [Gross <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4206554" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a>].</p>
+
+
+
+<p>The closest thing I found to a study of the pile-on phenomenon in the QT era is a paper on ratioing of Presidents Obama and Trump, but I don’t think it helps answer the question for this section [21]. (A tweet is <a href="https://www.merriam-webster.com/words-at-play/words-were-watching-ratio-ratioed-ratioing" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">ratioed</a> when there is a disproportionately negative response to it – far more replies and quote tweets than retweets and likes.) Those authors report that out of the 20 Trump tweets with the most engagement, 16 were ratioed. (That may be complicated, given Twitter’s implementation of restrictive measures on election misinformation – for some tweets, you couldn’t reply, retweet, or like them: QT was the only engagement permitted.)</p>
+
+
+
+<p>QTs calling out someone’s behavior on Twitter is a highly contested issue. I discussed this particularly in the context of the African-American experience of Twitter in <a href="https://absolutelymaybe.plos.org/2022/12/01/reflecting-on-twitter-white-flight-quote-tweet-tensions-at-mastodon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">my December post on quote tweets</a>, including this quote: “display of moral behavior by members of one group may well look like deviant behavior to members of the other.” [Rawls, quoted by Brock <a href="https://www.tandfonline.com/doi/abs/10.1080/08838151.2012.732147" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2012</a>.] Pew Research <a href="https://www.pewresearch.org/fact-tank/2022/06/09/a-growing-share-of-americans-are-familiar-with-cancel-culture/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">in April 2022</a> found that 71% of Black Americans and 61% of English-speaking Hispanic and Asian Americans regarded calling people out for potentially offensive social media posts holds them accountable, versus 44% for White Americans. There was a race and gender divide on whether calling out punishes people who don’t deserve it: 52% of men agreed with that statement, but only 38% of women and 26% of Black Americans.</p>
+
+
+
+<p>Since I wrote that post, someone – apologies, but I lost track of who – pointed out a blog post by an academic who studies digital ethics and rhetorics [Brown <a href="https://www.digitalrhetoriccollaborative.org/2018/10/01/unhealthy-infrastructures/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2018</a>]. It’s really worth reading. In discussing the phenomenon of calling out, Brown writes that because people who are targets of abuse “can use the quote tweet to expose an unhealthy media infrastructure…[T]he quote tweet is a moment when everyone has to witness” what’s going on in the shadows. And it’s “the result of an unhealthy infrastructure that pushes the responsibility for content moderation onto users.”</p>
+
+
+
+<p>Even though calling out seems to be a very small proportion of quote tweeting – and most calling out might not even done with the QT function –  it’s often the center of conflict about QTs. <a href="https://github.com/mastodon/mastodon/issues/14597#issuecomment-1362907651" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">As @futurebird wrote</a>, “It seems like it’s about keeping things quiet and polite. <strong>Avoiding conflict isn’t the same thing as preventing abuse.</strong> In fact, minimizing conflict and keeping things polite can work in opposition to prevention of abuse.”</p>
+
+
+
+<p>One of the other potential effects of calling out micro-aggressions is social progress. Learning to be ever more sensitive to the ways we, unthinkingly, contribute to the white supremacy, misogyny, homophobia, and transphobia in our societies is a critical potential benefit of having people calling it to attention.</p>
+
+
+
+
+
+
+
+<p><em><a href="#contents">Return to contents</a></em></p>
+
+
+
+<h2 id="9"></h2>
+
+
+
+
+
+
+
+<h5>What aspects of Twitter’s system differ from potential “quote boosts” at Mastodon?</h5>
+
+
+
+
+
+
+
+<p>Regardless of whether or not a form of opting in or out were to be introduced with automated quote boosting at Mastodon, there are other differences that could, theoretically, affect the impact of an automated quoting function:</p>
+
+
+
+<ul><li>Absence of an algorithm bumping conflicts up to greater attention;</li><li>Ability to edit offending Mastodon posts;</li><li>Longer posts; </li><li>Current virality speed bumps in the decentralized structure; and</li><li>Possibly more diligent moderating, especially at many smaller instances, than at Twitter.</li></ul>
+
+
+
+<p>Mastodon already has a couple of features that come close to quote boosting, albeit with more friction and less visibility, and no notification to the person whose tweet has been quoted (unless the quoter adds a mention as well):</p>
+
+
+
+<ul><li>You can copy the link to a person’s boost from the … menu at the bottom of each tweet (next to the bookmark symbol); and</li><li>Links show previews, though these vary quite a bit around Mastodon. (And some instances already enable quote boosts.)</li></ul>
+
+
+
+<p>Leaving aside the issue of friction to well-meaning users, perhaps the biggest implication for the introduction of fully-integrated quote boosting at Mastodon is for moderation. When people quote via screenshot or link without actively pinging the person who posted, early moderator intervention may be less likely.</p>
+
+
+
+<p><a href="https://write.as/collisiondomain/some-thoughts-on-quote-boosts" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">John (@cd24@sfba.social) wrote</a> about the current challenges to moderators. Without the context of the quoted post and user embedded, moderating is made more time-intensive and “can make revealing incomplete or malicious reports laborious. I have now seen two types of faux-quote boost chains, which each wasted 20+ minutes of my life.” One involved “vile screenshots” – “it took me more than 20 minutes to track down all of the (~10) posts and create a timeline of links in a text file I created separately from the Mastodon service. The dispute appears to have been in flight for nearly a week before someone brought it before the moderators… Whatever concerns may be levied against quote boosts, they will leave a trail that can be quickly inspected and addressed by moderators.”</p>
+
+
+
+<p>Improving infrastructure support for moderators could go a long way towards not just mitigating harmful use of quote boosts, but preventing it by reducing the presence of malicious users. And there are other features that may prevent more toxicity and distress than friction in quoting can. One such feature is <a href="https://mastodon.online/@hildabast/109610986824867198" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">on the Mastodon roadmap</a>: Giving people the ability to limit who can reply to some or all of their posts.  </p>
+
+
+
+
+
+
+
+<p><em><a href="#contents">Return to contents</a></em></p>
+
+
+
+
+
+
+
+<p>~~~~</p>
+
+
+
+
+
+
+
+<p><em>I’m <a href="https://mastodon.online/@hildabast" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">@hildabast@mastodon.online</a> at Mastodon. You can keep up with my work at my newsletter, <a href="https://hildabastian.substack.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Living With Evidence</a>.</em></p>
+
+
+
+<p><em>Disclosure: I joined Twitter in October 2010, and Mastodon in October 2022. At the time of writing this post, I had over 3,900 followers at Mastodon (increasing), and over 31,300 <a href="https://twitter.com/hildabast" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">at Twitter</a> (decreasing).</em></p>
+
+
+
+<p><em>The cartoons are my own <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">(CC BY-NC-ND license)</a>. (More cartoons at <a href="http://statistically-funny.blogspot.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Statistically Funny</a>.)</em></p>
+
+
+
+<p><em>Update January 16, 2023: I added 4 studies, which didn’t change the conclusions. I’m grateful to the authors that alerted to me 2 of them, <a href="https://fediscience.org/@albertoacerbi/109676567359181926" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Alberto Acerbi</a> [17a] and <a href="https://techpolicy.social/@davidmanheim/109677527193968552" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">David Manheim</a> [17b].</em> <em>(I found the other 2 by following citation chains beginning with those articles.)</em></p>
+
+
+
+<p><em>Acknowledgments: A <a href="https://privacy.thenexus.today/black-twitter-quoting-and-white-toxicity-on-mastodon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">post by Jon Pincus at </a></em><a href="https://privacy.thenexus.today/black-twitter-quoting-and-white-toxicity-on-mastodon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The Nexus of Privacy</a><em> alerted me to Garimella 2016, and a thread by Katherine Cross <a href="https://wandering.shop/@Quinnae_Moon/109579229299490307" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">on Mastodon</a></em> <em>alerted me to Riedl 2022 and Wojcieszak 2021. (Note: Cross cited a 2020 preprint for the study by Wojcieszak and colleagues, as well as a third paper by Marwick (<a href="https://journals.sagepub.com/doi/full/10.1177/20563051211021378" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a>) which I had been aware of when I wrote my original post. It wasn’t included then or here because the paper included only one person mentioning response QT, not an analysis of QTs.)   </em></p>
+
+
+
+<h2 id="list"></h2>
+
+
+
+
+
+
+
+<h4><strong>List of studies</strong></h4>
+
+
+
+
+
+
+
+<p><strong><em>Search notes</em></strong></p>
+
+
+
+
+
+
+
+<p>All 41 studies including data on QTs are listed below. I had found 3 for my original post, and 3 were the ones I’d seen others post (Jon Pincus at <em><a href="https://privacy.thenexus.today/black-twitter-quoting-and-white-toxicity-on-mastodon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The Nexus of Privacy</a></em> and Katherine Cross <a href="https://mastodon.online/@Quinnae_Moon@wandering.shop/109579217297455009" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">on Mastodon</a>). By doing a lot of new searches in Google Scholar and Google, I found another 14. That involved doing searches that had a very low yield –  which meant I had to drag through thousands of hits for studies that didn’t differentiate QTs in the data, only mentioned the QT affordance exists, or used the word quote in another context. I found the other 17 because they were either cited by another study, or because they had cited one of the other studies: I searched <em>twitter quote</em> within the citations Google Scholar listed for the older papers.</p>
+
+
+
+<p>After posting, authors of another 2 studies alerted me to theirs, and by tracking citation chains from those, I found another 2, bringing the total to 41 (add on January 16, 2023).</p>
+
+
+
+<p>I included all studies with adequate methodology and interpretable data. I’ve given the reasons for excluding 4 of them below. I didn’t use a formal method for judging the quality of the studies.</p>
+
+
+
+
+
+
+
+<p><strong><em>Included studies</em></strong></p>
+
+
+
+
+
+
+
+<p>In alphabetical order by first author, within quality tiers:</p>
+
+
+
+<ul><li>Tier 1 (best and most relevant):  from 1 to 8</li><li>Tier 2 (very good): from 9 to 17c</li><li>Tier 3 (good): from 18 to 26a</li><li>Tier 4 (low): from 27 to 33</li></ul>
+
+
+
+<p>Because the study numbering in this post isn’t dynamic, when I added studies in an update, when I added studies to tier 2, they were numbered 17a, 17b, and 17c, and the study added to tier 3 was numbered 26a.</p>
+
+
+
+<p>Via<em> = </em>how this study was identified. (Citation means the paper was found because it either cited one of the studies, or was cited in one of them.)</p>
+
+
+
+
+
+
+
+<figure><table><thead><tr><th>ID</th><th>First author (year)<br/><em>[Link to source(s)</em>]</th><th>Year(s) with<br/>tweets</th><th>Non-English<br/>focus</th><th>Specialized<br/>topic</th><th>Via</th></tr></thead><tbody><tr><td>1</td><td>Bean <a href="https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=10138&amp;context=etd" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a></td><td>2020</td><td></td><td>Covid pandemic</td><td>Citation</td></tr><tr><td>2</td><td>Kratzke <a href="https://www.preprints.org/manuscript/202002.0170/v1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2020</a></td><td>2020</td><td>German (+ English)</td><td></td><td>New search</td></tr><tr><td>3</td><td>Molyneux <a href="https://www.tandfonline.com/doi/abs/10.1080/1461670X.2017.1370978" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2017</a></td><td>2016</td><td></td><td>US political journalists &amp; media</td><td>Citation</td></tr><tr><td>4</td><td>Nicholas <a href="https://www.duo.uio.no/bitstream/handle/10852/88461/1/1014.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a></td><td>2020</td><td></td><td>Pandemic mask-shaming videos</td><td>New search</td></tr><tr><td>5</td><td>Oh <a href="https://repository.lboro.ac.uk/articles/thesis/Incivility_and_intolerance_on_Twitter_A_case_study_of_political_tweets_about_abortion_in_Ireland_2018_and_the_United_States_2020_/19646613/1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a> <em>(<a href="https://repository.lboro.ac.uk/articles/thesis/Incivility_and_intolerance_on_Twitter_A_case_study_of_political_tweets_about_abortion_in_Ireland_2018_and_the_United_States_2020_/19646613/1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Plus</a>)</em></td><td>2018 and 2020</td><td></td><td>Abortion (Ireland &amp; US)</td><td>Citation</td></tr><tr><td>6</td><td>Pflugmacher <a href="https://ieeexplore.ieee.org/abstract/document/9162728" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2020</a></td><td>2019</td><td>German</td><td></td><td>Citation</td></tr><tr><td>7</td><td>Stewart <a href="https://dl.acm.org/doi/10.1145/3134920" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2017</a></td><td>2016</td><td></td><td>Shooting, Black Lives Matter</td><td>New search</td></tr><tr><td>8</td><td>Villa-Cox <a href="http://reports-archive.adm.cs.cmu.edu/anon/anon/usr/ftp/home/ftp/isr2022/CMU-ISR-22-108.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a> <em>(<a href="https://link.springer.com/article/10.1007/s10588-018-09286-x" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Plus</a>)</em></td><td>2018-2020</td><td></td><td>Conversations; includes protests in South America</td><td>Citation</td></tr><tr><td>9</td><td>Chowdhury <a href="https://arxiv.org/abs/2101.09575" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a></td><td>2020</td><td></td><td>US election</td><td>New search</td></tr><tr><td>10</td><td>de França <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417422017663" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2023</a></td><td>2021</td><td>Portuguese</td><td>Contentious topics</td><td>New search</td></tr><tr><td>11</td><td>Koteyko <a href="https://journals.sagepub.com/doi/full/10.1177/17504813211070655" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a></td><td>2021</td><td></td><td>Autistic people</td><td>New search</td></tr><tr><td>12</td><td>Lai <a href="https://www.sciencedirect.com/science/article/abs/pii/S0169023X19300187" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2019</a> <em>(<a href="https://riunet.upv.es/bitstream/handle/10251/119116/Lai%20-%20On%20Language%20and%20Structure%20in%20Polarized%20Communities.pdf?sequence=6" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Plus</a>)</em></td><td>2016</td><td>Italian</td><td>Italian referendum</td><td>Citation</td></tr><tr><td>13</td><td>Murugan <a href="https://ieeexplore.ieee.org/abstract/document/9671644" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a></td><td>2014-2015</td><td>Arabic</td><td>ISIS-related</td><td>New search</td></tr><tr><td>14</td><td>Riedl <a href="https://journals.sagepub.com/doi/10.1177/14614448221082122" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a></td><td>2018</td><td></td><td>Anti-semitism (US election)</td><td>K. Cross thread</td></tr><tr><td>15</td><td>Usher <a href="https://journals.sagepub.com/doi/full/10.1177/1940161218781254" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2018</a></td><td>2017</td><td></td><td>US political journalists</td><td>New search</td></tr><tr><td>16</td><td>Yousefinaghani <a href="https://www.sciencedirect.com/science/article/pii/S1201971221004628" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a></td><td>2020-2021</td><td></td><td>Covid vaccines</td><td>New search</td></tr><tr><td>17</td><td>Zheng <a href="https://ieeexplore.ieee.org/abstract/document/9083959" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2020</a></td><td>2017-2019</td><td></td><td>Shootings &amp; general tweets</td><td>Citation</td></tr><tr><td>17a</td><td>Abilov <a href="https://arxiv.org/abs/2101.08210" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a></td><td>2020</td><td></td><td>Contesting US presidential election</td><td>Citation</td></tr><tr><td>17b</td><td>Manheim <a href="https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/structure-of-tweets-about-vaccine-safety-between-health-organizations-experts-and-the-public-analyzing-risk-communication-conversations/EE76CCEEFD82AF76024CEC503CE069B9" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2020</a></td><td>2018</td><td></td><td>Vaccines</td><td>Author</td></tr><tr><td>17c</td><td>Youngblood <a href="https://psyarxiv.com/2jksg" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a></td><td>2020</td><td></td><td>Contesting US presidential election</td><td>Author</td></tr><tr><td>18</td><td>Garimella <a href="https://arxiv.org/abs/1603.07933" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2016</a></td><td>2015</td><td></td><td>US politicians</td><td>J. Pincus (<em>Nexus of Privacy</em>)</td></tr><tr><td>19</td><td>Kratzke <a href="https://www.mdpi.com/2306-5729/2/4/34" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2017</a></td><td>2017</td><td>German</td><td>Interaction with German politicians</td><td>Citation</td></tr><tr><td>20</td><td>Meier <a href="https://dl.acm.org/doi/abs/10.1145/3295750.3298944" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2019</a></td><td>2017</td><td>German</td><td>German politicians/candidates</td><td>Citation</td></tr><tr><td>21</td><td>Minot <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0248880" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a></td><td>2009-?</td><td></td><td>US Presidents Obama &amp; Trump</td><td>New search</td></tr><tr><td>22</td><td>Osho <a href="https://arxiv.org/abs/2006.11456" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2020</a></td><td>2017</td><td></td><td>Abuse, hate speech</td><td>New search</td></tr><tr><td>23</td><td>Roth <a href="https://arxiv.org/abs/2112.00554" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a> <em>(<a href="https://link.springer.com/chapter/10.1007/978-3-030-93409-5_58" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Plus</a>)</em></td><td>2020</td><td>French</td><td>Political journalists &amp; media, Euro election</td><td>Citation</td></tr><tr><td>24</td><td>Shugars <a href="https://journalqd.org/article/view/2570/1813" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a></td><td>2020</td><td></td><td></td><td>My December post</td></tr><tr><td>25</td><td>Thomas <a href="https://www.tandfonline.com/doi/full/10.1080/17512786.2022.2050469" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a></td><td>2015-2018</td><td></td><td>Alternative online political media (UK)</td><td>Citation</td></tr><tr><td>26</td><td>Villa-Cox <a href="https://arxiv.org/abs/2006.00691" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2020</a></td><td>2018</td><td></td><td></td><td>Citation</td></tr><tr><td>26a</td><td>Zola <a href="https://www.mdpi.com/2076-3417/10/23/8394" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2020</a></td><td>2020</td><td>Italian</td><td>Politics</td><td>Citation</td></tr><tr><td>27</td><td>Hashemi <a href="https://preprints.apsanet.org/engage/apsa/article-details/5f46e661937df300128bfa64" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2020</a></td><td>2018-2019</td><td>Farsi (+ English)</td><td>Iranian womens’ protest</td><td>My December post</td></tr><tr><td>28</td><td>Jang <a href="https://www.mdpi.com/2079-9292/8/12/1377" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2019</a> <em>(<a href="https://www.techscience.com/cmc/v69n3/44165" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Plus</a>)</em></td><td>2015-2019</td><td></td><td>Misinformation</td><td>Citation</td></tr><tr><td>29</td><td>Jiménez-Durán <a href="https://www.econstor.eu/bitstream/10419/266349/1/1822173515.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a></td><td>2020</td><td></td><td>Disability slurs, Holocaust denial</td><td>New search</td></tr><tr><td>30</td><td>Matalon <a href="https://www.nature.com/articles/s41598-021-86510-w" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a></td><td>2008-2018</td><td></td><td>Israel-Palestine conflict</td><td>Citation</td></tr><tr><td>31</td><td>Rathnayake <a href="https://pure.strath.ac.uk/ws/portalfiles/portal/119029163/Rathnayake_Caliandro_iConference_2021_Repurposing_sentiment_analysis_for_social_research_scopes.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a></td><td>2020</td><td></td><td>Covid pandemic (UK-centric)</td><td>New search</td></tr><tr><td>32</td><td>Twitter <a href="https://twitter.com/TwitterSupport/status/1339350335270240256" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2020</a> <em>(<a href="https://blog.twitter.com/en_us/topics/company/2020/2020-election-update" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Plus</a>)</em></td><td>2020</td><td></td><td></td><td>My December post</td></tr><tr><td>33</td><td>Wojcieszak <a href="https://www.science.org/doi/10.1126/sciadv.abn9418" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a> <em>(<a href="https://osf.io/xwc79/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Plus</a>)</em></td><td>2016-2019</td><td></td><td>US political elite &amp; media</td><td>K. Cross thread</td></tr></tbody></table></figure>
+
+
+
+
+
+
+
+<p><strong><em>Studies I didn’t use:</em></strong></p>
+
+
+
+<ul><li>Imran <a href="https://www.webology.org/data-cms/articles/20220713114515amwebology%2019%20(3)%20-%20126%20pdf.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a>: Hard to decipher data, too much methodology and basic data lacking to be reliable. <em>(Found via citation.)</em></li><li>Kowalczyk <a href="https://arxiv.org/abs/1910.02807" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2020</a> <em>(<a href="https://backend.orbit.dtu.dk/ws/portalfiles/portal/239597614/phd_thesis_dakowalc.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">plus</a>)</em>: quality of the research was not the problem here, but the reporting of the data for a reader without major expertise in the methods they used – there wasn’t enough information provided for me to be able to interpret it. <em>(Found via citation.)</em></li><li>Rude <a href="https://www.econstor.eu/handle/10419/266260" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a>: Not enough data reported, and though the dataset includes data from before the introduction of QTs (from 2014), that’s not mentioned and not taken into account in the analysis. <em>(Found via new search.)</em></li><li>Toraman <a href="https://arxiv.org/abs/2110.00070" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a> <em>(<a href="https://dl.acm.org/doi/fullHtml/10.1145/3501247.3531539" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">plus</a>)</em>: The decision to “collect half of the tweets for control, whereas the other half of the tweets are distributed equally as much as possible among active, deleted, and suspended users” meant I couldn’t interpret the data. Relied on the Internet Archive for some of the data. <em>(Found via new search.)</em></li></ul>
+
+
+
+<p><em><a href="#contents">Return to contents</a></em></p>
+
+
+
+
+
+
+
+<p></p>
+
+<p>The post <a href="https://absolutelymaybe.plos.org/2023/01/12/quote-tweeting-over-30-studies-dispel-some-myths/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Quote Tweeting: Over 30 Studies Dispel Some Myths</a> appeared first on <a href="https://absolutelymaybe.plos.org" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Absolutely Maybe</a>.</p>

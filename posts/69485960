@@ -1,0 +1,77 @@
+<p><em>Unreturned remains, money in UK politics, Brazilian biodiversity,
+government open-source policies, and food coloring.</em></p>
+<p> </p>
+<p><em>👋 Will you be attending <a href="https://www.ire.org/training/conferences/nicar-2023/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">NICAR
+2023</a>? If so, <a href="https://docs.google.com/forms/d/e/1FAIpQLScflesJGWaChVJp1OokDpX3m7Ob8p_ZIqPakboD_BnC5MH_5g/viewform" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">click
+here</a> to propose a “Data Blitz” presentation; I’ll be moderating the
+event.</em></p>
+<p> </p>
+<p><strong>Unreturned remains.</strong> “The remains of more than
+110,000 Native American, Native Hawaiian and Alaska Natives’ ancestors
+are still held by museums, universities and federal agencies,” <a href="https://www.propublica.org/article/repatriation-nagpra-museums-human-remains" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">according
+to The Repatriation Project</a>, a ProPublica <a href="https://www.propublica.org/series/the-repatriation-project" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">investigative
+series</a> launched last week. The project’s <a href="https://projects.propublica.org/repatriation-nagpra-database/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">interactive
+database</a> provides more detailed figures — such as counts by
+institution, tribe, and geography. It builds upon <a href="https://www.nps.gov/subjects/nagpra/databases.htm" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">National Park
+Service databases</a> that track institutional compliance with the <a href="https://www.nps.gov/subjects/nagpra/index.htm" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Native American
+Graves Protection and Repatriation Act</a>, including each institution’s
+<a href="https://grantsdev.cr.nps.gov/NagpraPublic/Home/Inventory" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">self-reported
+counts of human remains and funerary objects not yet made available for
+return</a> and <a href="https://grantsdev.cr.nps.gov/NagpraPublic/Home/Notice" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">compliance
+updates published in the Federal Register</a>. <strong>Event</strong>:
+<a href="https://www.propublica.org/events/repatriation" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">ProPublica is
+hosting a webinar</a> at <a href="https://time.is/compare/4pm_18_Jan_2023_in_New_York" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">4pm US
+Eastern today</a>.</p>
+<p> </p>
+<p><strong>Money in UK politics.</strong> <a href="https://news.sky.com/story/the-westminster-accounts-12786091" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The
+Westminster Accounts</a>, a recent collaboration between Sky News and
+Tortoise Media, examines the flow of money through UK politics. It does
+so by <a href="https://www.tortoisemedia.com/2023/01/08/letting-the-light-in/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">combining</a>
+data from three key sources: the <a href="https://www.parliament.uk/mps-lords-and-offices/standards-and-financial-interests/parliamentary-commissioner-for-standards/registers-of-interests/register-of-members-financial-interests/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Register
+of Members’ Financial Interests</a>, <a href="http://search.electoralcommission.org.uk/English/Search/Donations" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Electoral
+Commission records of donations to parties</a>, and the <a href="https://www.parliament.uk/mps-lords-and-offices/standards-and-financial-interests/parliamentary-commissioner-for-standards/registers-of-interests/register-of-all-party-party-parliamentary-groups/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Register
+of All-Party Parliamentary Groups</a>. You can search and explore the
+results through the collaboration’s <a href="https://www.tortoisemedia.com/westminster-accounts-explore/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">interactive</a>
+<a href="https://news.sky.com/story/westminster-accounts-search-for-your-mp-or-enter-your-full-postcode-12771627" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">database</a>.
+They haven’t published a downloadable version yet, but <a href="https://til.simonwillison.net/shot-scraper/scraping-flourish" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Simon
+Willison has extracted one</a>. <strong>Read more</strong>: <a href="https://www.tortoisemedia.com/2023/01/08/the-westminster-accounts-methodology/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The
+project’s methodology</a>.</p>
+<p> </p>
+<p><strong>Brazilian biodiversity.</strong> <a href="https://floradobrasil.jbrj.gov.br/reflora/listaBrasil/ConsultaPublicaUC/ConsultaPublicaUC.do#CondicaoTaxonCP" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Flora
+e Funga do Brasil</a>, a project led by the Rio de Janeiro Botanical
+Garden Research Institute, aims to collect “morphological descriptions,
+identification keys and illustrations for all species of plants, algae
+and fungi known to the country.” With <a href="https://onlinelibrary.wiley.com/doi/10.1002/tax.12640" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">the help of
+hundreds of scientists</a>, the project currently covers 50,000+
+species. A <a href="https://ipt.jbrj.gov.br/jbrj/resource?r=lista_especies_flora_brasil" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">downloadable
+dataset</a> links each species’ various names and synonyms, geographic
+distribution, reference citations, and more. [h/t <a href="https://www.getgrist.com/blog/relational-spreadsheets-protect-brazil-plants-conservation/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Grist
+Labs</a>]</p>
+<p> </p>
+<p><strong>Government open-source policies.</strong> Researchers at the
+<a href="https://www.csis.org/programs/about-us" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Center for Strategic
+and International Studies</a> have <a href="https://www.csis.org/programs/strategic-technologies-program/government-open-source-software-policies" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">compiled
+a dataset</a> of <a href="https://github.com/github/government-open-source-policies" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">660+
+government policies regarding open-source software</a> proposed at the
+national level since 1999. The <a href="https://github.com/github/government-open-source-policies/tree/main/data" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">dataset</a>
+indicates each proposed policy’s country, year, title, issuing
+authority, stated objective, status, and more. The countries with <a href="https://github.github.io/government-open-source-policies/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">the
+largest number of entries</a>: Argentina, the US, and South Korea. [h/t
+<a href="https://github.com/khxu" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Kevin Xu</a>]</p>
+<p> </p>
+<p><strong>Food coloring.</strong> <a href="https://www.sciencedirect.com/science/article/pii/S2352340922010095" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Arlie
+L. Lehmkuhler et al.</a> have used <a href="https://en.wikipedia.org/wiki/High-performance_liquid_chromatography" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">high-performance
+liquid chromatography</a> to assemble a <a href="https://data.mendeley.com/datasets/7rpwxrphws/1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">dataset</a>
+measuring the levels of <a href="https://www.fda.gov/industry/color-additive-inventories/summary-color-additives-use-united-states-foods-drugs-cosmetics-and-medical-devices#table1B" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">“FD&amp;C”
+color additives</a> (e.g., Yellow 5 and Red 40) in foods and drinks
+popular with children, such as breakfast cereals and fruit-flavored soft
+drinks. The results, organized by product category, include product- and
+dye-specific measurements, but do not name the particular products or
+brands.</p>
+<p> </p>
+<p><em>Dataset suggestions? Criticism? Praise? Send artificial feedback
+to jsvine@gmail.com, or just reply to this email. • Looking for past
+datasets? <a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">This
+spreadsheet contains them all</a>. • Visit <a href="https://www.data-is-plural.com" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">data-is-plural.com</a> to
+subscribe and to browse past editions. • <a href="https://docs.google.com/document/d/e/2PACX-1vSP5xYrhqEvoGTi2aFzrsYQXadG8Gv0Y6YGWjib1e4qcXG45Sq5TSvngvh342DdcAEyEDIVd5V3RYcc/pub" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Learn
+how to place an ad in Data Is Plural</a>.</em></p>

@@ -1,0 +1,157 @@
+<p><em>This blog post is adapted/revised from parts of <a href="https://arxiv.org/abs/2205.01605" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">my ICCC 2022 paper</a>, which borrowed from previous blog posts</em>.</p>
+
+<p>How does an artist decide what to do? We often think of artists as <em>goal-oriented</em>: an artist has an idea, a vision, or inspiration, and then they produce an artwork based on that inspiration.  Likewise, we sometimes think of researchers and scientists as first identifying a problem to solve, and then <a href="https://twitter.com/MattNiessner/status/1628114935388446721?s=20" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">executing on a solution</a>.</p>
+
+<p>I believe that both these conceptions are often wrong.</p>
+
+<table>
+  
+    <tbody><tr>
+      <td><strong>Very often, the best art and the best research arises from open-ended exploration: when the artist or the researcher starts with an idea without knowing where it will lead.</strong></td>
+    </tr>
+  
+</tbody></table>
+
+<p>We often interpret art and research works as though they had been intended all along. They are often they are presented that way But often the apparent “intentions” came during the work, not before it.</p>
+
+<p>Understanding this has been liberating for me when I paint, and I think it’s essential to understand when doing research, managing or funding research, and building tools for artists.</p>
+
+<h1 id="art-and-research-dont-have-simple-goals">Art and Research Don’t Have Simple Goals</h1>
+
+<p>When I started painting again in 2019, I started each painting with a goal, and often failed to achieve that goal. But sometimes my “failures” became my favorites, <a href="https://aaronhertzmann.com/2020/10/05/art-is-a-process.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">where I’d created something surprising and more interesting than my original intention</a>.</p>
+
+<p>I embraced the idea of not needing to achieve a specific goal, but starting a painting only with an intuition that “this looks like an interesting thing to try.”  I then read <a href="https://link.springer.com/book/10.1007/978-3-319-15524-1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><em>Why Greatness Cannot Be Planned</em></a> which provided many vivid examples of accidental innovations.
+<a href="https://arxiv.org/abs/2205.01605" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">While I disagree with the book’s theory of exploration</a>, I loved its emphasis on open-ended exploration as a practice in itself.</p>
+
+<p>Then, in my readings and viewings, I began to notice more quotes from artists and scientists who describe their processes in open-ended terms, which I’ve been collecting since then. Here are a few of those examples.</p>
+
+<h1 id="examples-from-abstract-art">Examples from Abstract Art</h1>
+
+<p>Artists carefully consider and develop their artistic processes; process is not merely incidental to outcomes. In the context of the fine art world,  Jerry Saltz writes <strong>“serious artists tend to develop a kind of creative mechanism—a conceptual approach—that allows them to be led by new ideas and surprise themselves without deviating from their artistic principles.”</strong></p>
+
+<p><strong>Pablo Picasso</strong>: “I don’t know in advance what I am going to put on canvas any more than I decide beforehand what colors I am going to use … Each time I undertake to paint a picture I have a sensation of leaping into space. I never know whether I shall fall on my feet. It is only later that I begin to estimate more exactly the effect of my work.”</p>
+
+
+<figure>
+   <p>
+   <img src="https://reader.miniflux.app/proxy/fxCXSDxHFpSeusKixs1VpVQIlkF20MUQTgEzDVMkj2Y=/aHR0cHM6Ly9hYXJvbmhlcnR6bWFubi5jb20vaW1hZ2VzL2FydGhpc3RvcnkvcGljYXNzby5qcGc=" alt="Picasso portrait" loading="lazy"/>
+</p>
+  <figcaption>I doubt he knew what this was going to look like when he started working on it.
+</figcaption>
+</figure>
+
+
+<p><strong>Francis Bacon</strong>: “one has an intention, but what really happens comes about in working … In working, you are following this cloud of sensation in yourself, but don’t know what it really is.” That is, his work starts with an initial intention, but it quickly gives way to surprise and discovery. He operates on the high-level goal of making paintings, but the specific intentions of those paintings are not fixed in advance.</p>
+
+<p>Here’s <strong>Gerhard Richter</strong> describing his process:</p>
+
+
+	<figure>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jF4SAmtCyLg?start=37" frameborder="0" allowfullscreen="" sandbox="allow-scripts allow-same-origin allow-popups" loading="lazy"></iframe><figcaption>&#34;When I first approach a canvas, I can smear anything I want on it. Then there is a condition I must react to, by changing it or destroying it. There is no plan.&#34;
+</figcaption>
+</figure>
+
+
+<p>In a separate interview, <strong>Gerhard Richter</strong> said “I want to end up with a picture that I haven’t planned,” for which he uses a process that involves chance. “There have been times when this has worried me a great deal, and I’ve seen this reliance on chance as a shortcoming on my part.” But, “it’s never blind chance: it’s a chance that is always planned, but also always surprising. And I need it in order to carry on, in order to eradicate my mistakes, to destroy what I’ve worked out wrong, to introduce something different and disruptive. I’m often astonished to find how much better chance is than I am.”</p>
+
+<p><strong>Amy Sillman</strong> <a href="https://www.frieze.com/article/shit-happens" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">on the practice of abstract art</a>: “The art-making process is a recording of these restless interactions … Perhaps this is particular to abstract painting, where you often don’t really ‘know’ what you’re doing, and so you are doomed to work in between hoping and groping. In abstraction, time goes by in fits and starts, with resistance of materials being part of that time. … I know of no artist who is attempting to make something more beautiful, but I do know many artists who are looking for a form that ‘feels right’ without knowing why. Maybe it’s just satisfying to see something productive come of feeling like an idiot and the accompanying feeling of embarrassment.”</p>
+
+<p><strong>Computer Art.</strong>
+People often think of computer art as somehow mechanical or automatic. But the earliest generative art pioneers talk about how they use it as a tool for discovery and surprise.  Here are two pioneering computer artists, who began making generative art with random numbers in the 1960s. <a href="https://www.artnews.com/art-news/news/charles-csuri-dead-1234621107/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><strong>Charles Csuri</strong>:</a> “When I allow myself to play and search in the space of uncertainty, the more creativity becomes a process of discovery. The more childlike and curious I become about this world and space full of objects, the better the outcome.” <a href="https://news.artnet.com/art-world/vera-molnar-venice-biennale-2098046" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><strong>Vera Molnar</strong>:</a> talks about using randomness and “the thing that is not planned” to find surprising solutions, that she uses her generative art code to find surprises.  (I had a better quote from her but cannot find it at the moment.)</p>
+
+<h1 id="two-examples-from-rock-music">Two examples from rock music</h1>
+
+<p>In so many histories of art I’ve read or watching, at some point someone says something like <a href="https://www.google.com/search?q=we+didnt+set+out+to+invent&amp;oq=we+didnt+set+out+to+invent" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">“we didn’t set out to invent”</a> hip-hop or heavy metal or whatever.</p>
+
+<p><em>Why Greatness Cannot Be Planned</em> recounts how Elvis Presley came up with his signature sound. According to his guitarist: “All of a sudden, Elvis just started singing this song, jumping around and acting the fool, and then Bill picked up his bass, and he started acting the fool, too, and I started playing with them. … [the recording engineer] stuck his head out and said, ‘What are you doing?’ And we said, ‘We don’t know.’”</p>
+
+<p><strong>Get Back.</strong> Many illustrations appear in the recent documentary <em>Get Back</em>. The documentary follows The Beatles in January 1969 when they were under enormous pressure to write, record, and perform an entirely new album in only a few weeks’ time.  <a href="https://www.youtube.com/watch?v=4QtCxjyuA08" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">In one clip, Paul McCartney comes into the studio and improvises random sounds on his guitar</a>, until the kernel of a new melody and chorus emerge. We then see The Beatles experimenting with different approaches to refining the song.  Ultimately, this song became the hit single “Get Back.”  The song arose from the high-level goal of making a good song, and then going into the studio and exploring until something emerged.</p>
+
+<p>At one time, The Beatles considered making it a protest song about anti-immigration policies. In this version, the chorus “Get back to where you once belonged,” which came from the original jam session, had a totally different meaning than in the final song. Had they released it as a protest song, surely many listeners would have inferred that the song originated  from the political message, when in fact the song came before the message.</p>
+
+<p>This example illustrates two kinds of goals in a work. There is the initial, high-level goal (“write a good song”), and the apparent goal or intent of the final song (“protest immigration policies”).    As noted by Bacon, there is often also an initial idea or goal that begins the work, but this initial goal may be discarded along the way.</p>
+
+<h1 id="creative-exercises">Creative Exercises</h1>
+
+<p>There are some explicit processes that codify exploration.</p>
+
+<p>Improv theatre is an entire art-form of developing theatre pieces from scratch before a live audience. One of my improv teachers compared it to driving on a dark foggy road in the night, with your headlights illuminating only the road immediately in front of you. All you can do is to keep driving to the next visible spot and continuing from there. You cannot plan, you can only take it one step at a time. Yet, somehow even amateur improv actors can create compelling performances out of nothing.  Driving on a foggy night in search of any interesting destination seems like an excellent metaphor for the creative process in general.</p>
+
+<p>The use of creativity exercises and <a href="https://en.wikipedia.org/wiki/Surrealist_techniques" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Surrealist techniques</a> illustrate the importance of strategy and starting point. Exercises like Exquisite Corpse and automatic drawing can lead to entirely different outcomes each time.</p>
+
+<h1 id="research">Research</h1>
+
+<p>Numerous examples of significant scientific discoveries came about somewhat “by accident,” or an unplanned series of discoveries: penicillin, benzene, Uranus, even computer science itself.</p>
+
+<p>In the words of Isaac Asimov: <strong>“The most exciting phrase to hear in science, the one that heralds new discoveries, is not ‘Eureka’ but ‘That’s funny…’“</strong></p>
+
+<p>It is often said that the most important skill in research is figuring out what problem to work on, and figuring this out is part of the exploration.  When I was in grad school, Richard Hamming’s <a href="https://www.cs.virginia.edu/~robins/YouAndYourResearch.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><em>You And Your Research</em></a> really affected my understanding of research. He describes a very focused search for both the right problem and the solution.   The <a href="https://en.wikipedia.org/wiki/The_Lean_Startup" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">“lean start-up”</a> idea seems similar as well.</p>
+
+<p>The distinguished mathematician Michael Atiyah, <a href="https://www.ocf.berkeley.edu/~lekheng/interviews/MichaelAtiyah.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">when asked “How do you select a problem to study?”,</a> responded “I don’t think that’s the way I work at all. … I just move around in the mathematical waters … I have practically never started off with any idea of what I’m going to be doing or where it’s going to go. … I have never started off with a particular goal, except the goal of understanding mathematics.”</p>
+
+<h1 id="image-analogies">Image Analogies</h1>
+
+<p>Many of my projects basically solve the problem they set out to. Sometimes they solve the problem, but having discovered totally different techniques than we started out with.  Some projects fail entirely to solve any problem and get abandoned.</p>
+
+<p>However, some of many of my favorite papers developed accidentally—most notably, our <a href="https://dl.acm.org/doi/10.1145/383259.383295" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">“Image Analogies”</a> paper.</p>
+
+<p>For that project, I initially proposed developing a semi-automatic system to assist artists in stylized rotoscoping, inspired by having recently seen Bob Sabiston’s <a href="https://vimeo.com/38360045" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">“Snack and Drink”</a> at an animation festival.</p>
+
+<p>Here a few of the slides from the internship proposal presentation that I gave at the beginning of the summer:</p>
+
+
+<figure>
+   <p>
+<a href="https://aaronhertzmann.com/images/analogies/ia1.jpg" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+   <img src="https://reader.miniflux.app/proxy/jjS0iPjEOrQlEgmASZkg4ZB-6lSBiiLUH_DCL1ivdBE=/aHR0cHM6Ly9hYXJvbmhlcnR6bWFubi5jb20vaW1hZ2VzL2FuYWxvZ2llcy9pYTEuanBn" alt="Image Analogies proposal slide 1" loading="lazy"/></a>
+ <a href="https://aaronhertzmann.com/images/analogies/ia2.jpg" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">  <img src="https://reader.miniflux.app/proxy/ZRql9Lonqp_GL7AA5zI6QYPaVPI07zdIi3MNduCaBzg=/aHR0cHM6Ly9hYXJvbmhlcnR6bWFubi5jb20vaW1hZ2VzL2FuYWxvZ2llcy9pYTIuanBn" alt="Image Analogies proposal slide 2" loading="lazy"/></a>
+  <a href="https://aaronhertzmann.com/images/analogies/ia3.jpg" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"> <img src="https://reader.miniflux.app/proxy/GXA_7pvObY1cvxb_OwDWdxXbhGy48kZkir6Zn85KFLY=/aHR0cHM6Ly9hYXJvbmhlcnR6bWFubi5jb20vaW1hZ2VzL2FuYWxvZ2llcy9pYTMuanBn" alt="Image Analogies proposal slide 3" loading="lazy"/></a>
+  <a href="https://aaronhertzmann.com/images/analogies/ia4.jpg" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"> <img src="https://reader.miniflux.app/proxy/DjAlHrfKJXR8BcENveaFDhf2GNDkZ_3vrlScJ_3eg2w=/aHR0cHM6Ly9hYXJvbmhlcnR6bWFubi5jb20vaW1hZ2VzL2FuYWxvZ2llcy9pYTQuanBn" alt="Image Analogies proposal slide 4" loading="lazy"/></a>
+</p>
+</figure>
+
+
+<p>I started working on curve filtering for rotoscoping, and, in collaboration, one idea led to a different one which led to a different one, <strong>eventually leading to a very different project,</strong> namely a way to “learn” image transformations from examples (by guided texture synthesis).  Since it was my thesis topic, we applied it to artistic image stylization, such as learning painting, pen-and-ink, and pastel styles:</p>
+
+<figure>
+   <p>
+   <img src="https://reader.miniflux.app/proxy/Zp7o21Z-dSmDFJOmIZ4HzeJiZXCOlosiDwUTRn83F8M=/aHR0cHM6Ly9hYXJvbmhlcnR6bWFubi5jb20vaW1hZ2VzL2FuYWxvZ2llcy9wYXN0ZWwtc3dhbi5qcGc=" alt="Pastel landscape stylization" loading="lazy"/>
+</p>
+</figure>
+
+<p>along with various other filters.</p>
+
+<p>One we had a technique for learning filters, we started to find applications for it everywhere.   At one point while working on the project, I walked into a friend’s office and saw this painting by Masaaki Miyasako on the wall:</p>
+
+<figure>
+   <p>
+   <img src="https://reader.miniflux.app/proxy/w6lP_QOXlQj2MpCQ4Yirs0berGM5Ko8NUZ4YHROPOiI=/aHR0cHM6Ly9hYXJvbmhlcnR6bWFubi5jb20vaW1hZ2VzL2FuYWxvZ2llcy9tZWxvZHkuanBn" alt="Changing Melody painting" loading="lazy"/>
+</p>
+</figure>
+
+<p>which immediately gave me the idea for controllable texture synthesis:</p>
+
+<figure>
+   <p>
+   <img src="https://reader.miniflux.app/proxy/VgqxGvyurUqqvac5ZqaZYbHhPmavRYkKXY_OUonRbno=/aHR0cHM6Ly9hYXJvbmhlcnR6bWFubi5jb20vaW1hZ2VzL2FuYWxvZ2llcy9tZWxvZHktYW5hbG9neS5qcGc=" alt="Changing Melody texture-by-numbers" loading="lazy"/>
+</p>
+</figure>
+
+<p>which we could then make more <a href="https://mrl.cs.nyu.edu/projects/image-analogies/potomac.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">complex</a> and also interactive:</p>
+
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AIHt9bb3WzU" frameborder="0" allowfullscreen="" sandbox="allow-scripts allow-same-origin allow-popups" loading="lazy"></iframe><p>(The interface was built by Chuck Jacobs.)</p>
+
+<p>I wanted to call the paper “Learning Image Filters,” but my coauthors preferred the title “Image Analogies.”</p>
+
+<p>After <a href="https://dl.acm.org/doi/10.1145/383259.383295" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">the paper was published in 2001</a>, someone downloaded our software and applied it to an application we hadn’t thought of: <a href="https://mrl.cs.nyu.edu/projects/image-analogies/flightsim.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">generating terrain from maps</a>.</p>
+
+<p><strong>None of these ideas were planned. They were all the product of a focused exploration and constantly throwing out the old goals when better ones appeared.</strong></p>
+
+<p>I’ve heard from other colleagues about projects that had similarly circuitous routes. The PatchMatch algorithm began as an attempt to <a href="https://gfx.cs.princeton.edu/pubs/Barnes_2010_VTW/index.php" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">summarize videos</a>. DALL-E (someone once told me) began as an attempt to improve language models using image data.</p>
+
+<p>At the time, we translated the title of the painting “変奏曲” as “Changing Melody” or “Musical Improvisation.” While Google Translate now gives me a different translation, those titles and the zig-zag path seems like a good analogy of exploration.</p>
+
+
+
+<p>Thanks to Heidi McDowell for pointing me to the Amy Sillman essay.</p>

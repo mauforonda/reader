@@ -1,0 +1,106 @@
+<p>This post wraps up the series of posts I created about applying ML to some developer tasks that are hard to do programatically. Specifically, I wanted to create a tool that would let me detect if an anchor on a page <code>&lt;a&gt;</code> was styled to look like a button or not (woot, it worked!)</p>
+<p>You can check out the previous posts here:</p>
+<ul>
+<li>
+<p><a href="https://paul.kinlan.me/button-and-link-scraping-for-ml-training/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Scraping images of links and buttons to train an ML model</a></p>
+</li>
+<li>
+<p><a href="https://paul.kinlan.me/training-the-button-detector-ml-model/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Training the ML model</a></p>
+</li>
+<li>
+<p><a href="https://paul.kinlan.me/ml-deno-fresh-tensorflow/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Building a simple tool to help test the ML model</a></p>
+</li>
+<li>
+<p><a href="https://paul.kinlan.me/lighthouse-full-res-screenshot-gatherer/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Creating a custom lighthouse gatherer</a></p>
+</li>
+</ul>
+<p>And you can check out the code here:</p>
+<ul>
+<li>
+<p><a href="https://github.com/PaulKinlan/button-and-link-scraper" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Button and link scraper</a></p>
+</li>
+<li>
+<p><a href="https://github.com/PaulKinlan/is-it-a-button-web-app" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Is it a button web app</a></p>
+</li>
+<li>
+<p><a href="https://github.com/PaulKinlan/is-it-a-button-lighthouse-audit" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Is it a button lighthouse audit</a></p>
+</li>
+</ul>
+<p>I had a lot of fun relearning a bunch of ML for the this and while I am certainly no expert, what I learnt gave me some confidence for the future in that it is very possible to sensibly integrate ML into many existing products specifically the ability to visually inspect a page and make recommendations about it.</p>
+<p>The final step of my project was to create the Lighthouse Audit. The goal of this particular audit is to visually highlight in the final report all of the links that look like a button, like so:</p>
+<p><img src="https://reader.miniflux.app/proxy/zhwrwuiWeD8Um_b5xVRz63E0JfrPhrMYjTnMtf3ScQA=/aHR0cHM6Ly9wYXVsLmtpbmxhbi5tZS9pbWFnZXMvMjAyMy0wMS0yMy1hdWRpdC1zY3JlZW5zaG90LnBuZw==" alt="A screenshot of the lighthouse audit" loading="lazy"/></p>
+<p>I&#39;m very happy with the result.</p>
+<p>You can see from the source <a href="https://github.com/PaulKinlan/is-it-a-button-lighthouse-audit/blob/main/audit/anchor-looks-like-a-button.js" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a> that it is very <a href="https://paul.kinlan.me/ml-deno-fresh-tensorflow/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">similar to the web app</a> in that it takes a list of images and runs it through the TensorflowJS model. In fact, the code to run the image through the model is almost exactly the same in both the web app and the lighthouse Audit.</p>
+<pre><code>async function testImage(model, image) {
+  const normalizedData = tf.tidy(() =&gt; {
+    //convert the image data to a tensor
+    const decodedImage = tf.node.decodePng(image, 1);
+    const tensor = tf.image.resizeBilinear(decodedImage, [256, 256]);
+
+    // Normalize the image
+    const offset = tf.scalar(255.0);
+    const normalized = tensor.div(offset);
+    //We add a dimension to get a batch shape
+    const batched = normalized.expandDims(0);
+
+    return batched;
+  });
+
+  const predTensor = model.predict(normalizedData);
+
+  const predSoftmax = predTensor.softmax();
+  const data = await predSoftmax.data();
+  const max = Math.max(...data);
+  const maxIdx = data.indexOf(max);
+
+  const classes = {
+    0: &#34;Button&#34;,
+    1: &#34;Text Link&#34;,
+  };
+
+  return { classname: classes[maxIdx], score: max };
+}
+</code></pre><p>I loved the Lighthouse Audit API because it worked pretty much as expected. The biggest wrinkle that I had is that the ML model requires clean screenshots of the anchor which means that I have do some extra work. The first is to generate a high-res image of the page because the current &#34;FullscreenShot&#34; artefact is a heavily compressed JPEG screenshot that can&#39;t be used in the model, and the second is a list of &#34;<a href="https://paul.kinlan.me/ml-deno-fresh-tensorflow/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">NonOccludedAnchorElements</a>&#34; which is used to detect <code>&lt;a&gt;</code> elements in the DOM that are visible and unlikely to be obscured by another element.</p>
+<pre><code>static get meta() {
+    return {
+      id: &#34;anchor-looks-like-a-button&#34;,
+      title: &#34;Anchor element looks like links&#34;,
+      failureTitle: &#34;Anchor element looks like a button&#34;,
+      description:
+        &#34;Links should like links and buttons should look like buttons&#34;,
+      requiredArtifacts: [
+        &#34;AnchorElements&#34;,
+        &#34;NonOccludedAnchorElements&#34;,
+        &#34;BigScreenshot&#34;,
+      ],
+    };
+  }
+</code></pre><p>And then once the audit is running and I loop through all of the <code>nonOccludedAnchorElements</code> pull them out of the high-res screenshot and pass them through to the ML model via <code>await testImage(newModel, image);</code> as follows.</p>
+<pre><code>for (const anchorElement of nonOccludedAnchorElement) {
+      const { left, top, width, height } = anchorElement.node.newBoundingRect;
+     
+      const newScreenshot = screenshot.clone().extract({
+        left: Math.floor(Math.max(left * devicePixelRatio, 0)),
+        top: Math.floor(Math.max(top * devicePixelRatio,0)),
+        width: Math.floor(Math.min(width * devicePixelRatio, metadata.width)),
+        height: Math.floor(Math.min(height * devicePixelRatio, metadata.height)),
+      });
+      try {
+        const image = await newScreenshot.clone().png().toBuffer();
+        const { classname, score } = await testImage(newModel, image);
+        // console.log(classname, score, anchorElement.node.lhId);
+        await newScreenshot
+          .clone()
+          .png()
+          .toFile(`./images/${anchorElement.node.lhId}-${classname}.png`);
+
+        if (classname === &#34;Button&#34;) {
+          buttonsOnPage.push(anchorElement);
+        }
+      } catch (error) {
+        console.error(error, left, top, width, height);
+      }
+    }
+</code></pre><p>And that&#39;s it.</p>
+<p>Overall, I think it works well. I would caution that there are a lot of edge cases, for example it&#39;s ok sometimes to have an anchor look like a button for certain calls to action and the model can&#39;t distinguish that (yet...)</p>
+<p>I am bullish because I believe that once hard tasks that require a visual inspection of a page are now a lot more possible with the application of a well trained model and I think this opens up a new set of opportunities for developers.</p>

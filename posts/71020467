@@ -1,0 +1,131 @@
+<figure>
+    <img src="https://reader.miniflux.app/proxy/lS3_WdnBKtcFmHx9_drMjpNfdp3ZOBjJEXOtzCt3vDI=/aHR0cHM6Ly9lcG9jaGFpLm9yZy9hc3NldHMvaW1hZ2VzL3Bvc3RzLzIwMjMvc2NhbGluZy1sYXdzLWxpdGVyYXR1cmUtcmV2aWV3L3NjYWxpbmctbGF3LnBuZw==" loading="lazy"/>
+<figcaption>
+    <p>Common shape of a scaling law, taken from <a href="https://arxiv.org/abs/1712.00409" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Hestness et al. (2017)</a></p>
+  </figcaption>
+</figure>
+
+<h2 id="executive-summary">Executive summary</h2>
+
+<ul>
+  <li>Scaling laws are predictable relations between the scale of a mode and performance or other useful properties.</li>
+  <li>I have collected a <a href="https://docs.google.com/spreadsheets/d/1XHU0uyCojH6daSWEq9d1SHnlrQVW7li8iqBMasawMns/edit#gid=0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">database</a> of scaling laws for different tasks and architectures, and <a href="https://docs.google.com/document/d/1kpdCPU2I0NLWPRwQ4qPSUZcZDobnyR9UY-iSOSBQRm4/edit#heading=h.urdgcuw7nklv" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">reviewed</a> dozens of papers in the scaling law literature.</li>
+  <li>My main takeaways are:
+    <ul>
+      <li><strong>Functional forms</strong>: a basic power law can effectively model the scaling behavior in the power-law region but not the transitions to the other two regions. For this, either the <a href="https://arxiv.org/abs/2209.06640v2" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">M4 estimator</a> or the <a href="https://arxiv.org/abs/2210.14891" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">BNSL estimator</a> introduced below seem to be the best options right now.</li>
+      <li><strong>Transfer learning</strong>: there is not a simple universal scaling law for transfer learning between arbitrary tasks. When the tasks are similar enough, upstream loss and downstream performance are closely related, but when tasks are very different, the details of the architecture and hyperparameters become very relevant.</li>
+    </ul>
+  </li>
+</ul>
+
+
+
+<p>See the full table of scaling laws <a href="https://docs.google.com/spreadsheets/d/1XHU0uyCojH6daSWEq9d1SHnlrQVW7li8iqBMasawMns/edit#gid=0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a>.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>The term “scaling laws” in deep learning refers to relations between functional properties of interest (usually the test loss or some performance metric for fine-tuning tasks) and properties of the architecture or optimization process (like model size, width, or training compute). These laws can help inform the design and training of deep learning models, as well as provide insights into their underlying principles.</p>
+
+<p>In this document, I present a detailed table outlining the known scaling laws and a summary of each paper’s contributions to the understanding of scaling in deep learning.</p>
+
+<p>My main goal for this document is to serve as a comprehensive and up-to-date resource for information on scaling laws in deep learning. By presenting a curated list of papers that have explored various scaling laws, and providing a detailed table outlining the known scaling laws and a summary of each paper’s contributions, I aim to make it easier to access and understand the current state of knowledge on scaling in deep learning.</p>
+
+<p>I selected the papers using the following criteria:</p>
+<ul>
+  <li>Publication date: I only focus on recent papers, and exclude work prior to 2015</li>
+  <li>Contribution: I include papers which contribute in one of these ways:
+    <ul>
+      <li>Reporting empirical scaling laws</li>
+      <li>Proposing better functional forms or fitting methods</li>
+      <li>Proposing theoretical models to explain scaling behavior</li>
+      <li>Connecting scaling behavior with lower-level properties of models</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+
+<p>While the scaling behavior of machine learning models has been studied for a long time (e.g., <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.45.6056" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Statistical Mechanics of Learning from Examples</a>), it was only recently that empirical research into scaling deep learning models became widely known and incorporated into practice.</p>
+
+<p>Previous theoretical analyses often predicted that the test loss would decrease as a power law of training data, \(L = BD^{-b} + E\), with exponent \(b = 1\) or \(1/2\). However, this clashes with empirical results, in which the scaling exponent is usually smaller than \(1/2\).</p>
+
+<p>The modern study of scaling laws arguably started with <a href="https://arxiv.org/abs/1712.00409" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Hestness et al. (2017)</a>, who empirically identified power-law scaling of the test loss with respect to training data size in several different domains. In <a href="https://arxiv.org/abs/1909.01736" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Hestness et al. (2019)</a> this previous result was used to predict the increases in model and dataset sizes that would be needed to reach important performance milestones.</p>
+
+<p>Shortly after, <a href="https://arxiv.org/pdf/1909.12673.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Rosenfeld et al. (2020)</a> constructed a joint error function with respect to model and data sizes, given by \(L = AN^{-a} + BD^{-b} + E\) and showed that this form could accurately reproduce the empirical error landscape.</p>
+
+<p>During 2020 and 2021, our understanding of scaling laws was greatly expanded:</p>
+<ul>
+  <li><a href="https://arxiv.org/abs/2010.14701" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Henighan et al. (2020)</a> found scaling laws for more tasks and architectures.</li>
+  <li><a href="https://arxiv.org/abs/2001.08361" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Kaplan et al. (2020)</a> tested them at much larger scales.</li>
+  <li><a href="https://arxiv.org/abs/2004.10802" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Sharma et al. (2020)</a>, <a href="https://arxiv.org/abs/2102.04074" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Hutter (2021)</a> and <a href="https://arxiv.org/abs/2102.06701" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Bahri et al. (2021)</a> proposed theoretical mechanisms behind the values of the scaling exponents.</li>
+  <li><a href="https://arxiv.org/abs/2102.01293" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Hernandez et al. (2021)</a>, <a href="https://arxiv.org/abs/2108.11018" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Mikami et al. (2021)</a> and <a href="https://arxiv.org/abs/2110.02095" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Abna et al. (2021)</a> studied scaling laws in the setting of transfer learning.</li>
+</ul>
+
+<p>More recently, there have been several surprising results in the field that seem to suggest that the previously found scaling laws are less universal than one might have expected, particularly for downstream performance:</p>
+<ul>
+  <li><a href="https://arxiv.org/abs/2203.15556" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Hoffmann et al. (2022)</a> revealed that the scaling laws found by <a href="https://arxiv.org/abs/2001.08361" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Kaplan et al. (2020)</a> were suboptimal, after finding better hyperparameter choices and testing at larger scales.</li>
+  <li><a href="https://arxiv.org/abs/2206.14486" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Sorscher et al. (2022)</a> showed that, at least for some tasks, loss can scale exponentially with dataset size, rather than as a power-law.</li>
+  <li><a href="https://arxiv.org/abs/2210.11399" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Tay et al. (2022)</a> were able to drastically improve downstream performance with a small amount of extra pretraining on a different objective.</li>
+  <li><a href="https://arxiv.org/abs/2210.14891" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Caballero et al. (2022)</a> found that trend breaks in scaling curves can’t be easily predicted from smaller scale data.</li>
+</ul>
+
+<p>In addition, scaling laws have been found for other properties, such as Goodharting (<a href="https://arxiv.org/abs/2210.10760" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Gao et al. 2022</a>), and there have been more connections between high-level scaling and low-level model features.</p>
+
+<h2 id="takeaways">Takeaways</h2>
+
+<h3 id="upstream-loss">Upstream loss</h3>
+
+<p>For a vast collection of architectures and tasks, test loss for direct training scales predictably, transitioning from an initial random-guessing loss, to a power law regime, to a plateau at the irreducible loss. This is true for parameter, data, and compute scaling, and is relatively independent from the choice of architecture and hyperparameters, with some exceptions such as the learning rate schedule.</p>
+
+<p>Except for the initial transition from random guessing to the power-law regime, and the transition from the power-law regime to the final plateau, the loss is well approximated by the functional form \(L(N,D) = AN^{-a} + BD^{-b}\). There are several possible ways of modeling the transitions, but empirically it seems the best ones are the M4 estimator from <a href="https://arxiv.org/abs/2209.06640v2" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Alabdulmohsin et al. (2022)</a>:</p>
+
+<p>\[\frac{L-E}{(I-L)^\alpha} = AN^{-a}+BD^{-b}\]</p>
+
+<p>and the BNSL estimator from <a href="https://arxiv.org/abs/2210.14891" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Caballero et al. (2022)</a>, although it has significantly more parameters:</p>
+
+<p>\[L(D) = E + (b \cdot D^{-c_0})\prod_{i=1}^n(1+(\frac{D}{d_i})^\frac{1}{f_i})^{-c_if_i}\]</p>
+
+<h3 id="transfer-and-downstream-accuracy">Transfer and downstream accuracy</h3>
+
+<p>While ‘scale is all you need’ seems mostly true for direct training, when it comes to transfer learning, the downstream performance critically depends on the tasks at hand as well as the choice of architecture and hyperparameters (<a href="https://arxiv.org/abs/2207.10551" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Tay et al., 2022</a>). When the upstream and downstream tasks are similar, downstream loss can be reasonably well predicted from upstream loss, but this is not the case when the two tasks are substantially different (<a href="https://arxiv.org/abs/2110.02095" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Abnar et al., 2021</a>).</p>
+
+<h3 id="theoretical-analyses">Theoretical analyses</h3>
+
+<p>So far the most convincing theoretical analyses I’ve found are <a href="https://arxiv.org/abs/2004.10802" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Sharma et al. (2020)</a> and <a href="https://arxiv.org/pdf/2102.06701.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Bahri et al. (2021)</a>. In them, the magnitude of the scaling exponents are shown to be inversely proportional to the intrinsic dimension of the data manifold, both empirically and theoretically.</p>
+
+<h2 id="appendix-paper-reviews">Appendix: Paper reviews</h2>
+
+<p>For a summary of all the papers reviewed, see <a href="https://docs.google.com/document/d/1kpdCPU2I0NLWPRwQ4qPSUZcZDobnyR9UY-iSOSBQRm4/edit#heading=h.urdgcuw7nklv" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a>.</p>
+
+<h2 id="bibliography">Bibliography</h2>
+
+<ol>
+  <li>Abnar, Samira, et al. <em>Exploring the Limits of Large Scale Pre-Training</em>. arXiv, 5 Oct. 2021. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2110.02095" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2110.02095</a>.</li>
+  <li>Alabdulmohsin, Ibrahim, et al. <em>Revisiting Neural Scaling Laws in Language and Vision. 2</em>, arXiv, 1 Nov. 2022. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2209.06640" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2209.06640</a>.</li>
+  <li>Ardalani, Newsha, et al. <em>Understanding Scaling Laws for Recommendation Models</em>. arXiv, 17 Aug. 2022. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2208.08489" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2208.08489</a>.</li>
+  <li>Bahri, Yasaman, et al. <em>Explaining Neural Scaling Laws</em>. arXiv, 12 Feb. 2021. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2102.06701" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2102.06701</a>.</li>
+  <li>Bansal, Yamini, et al. <em>Data Scaling Laws in NMT: The Effect of Noise and Architecture</em>. arXiv, 4 Feb. 2022. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2202.01994" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2202.01994</a>.
+6 Caballero, Ethan, et al. <em>Broken Neural Scaling Laws</em>. arXiv, 10 Nov. 2022. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2210.14891" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2210.14891</a>.</li>
+  <li>Droppo, Jasha, and Oguz Elibol. <em>Scaling Laws for Acoustic Models</em>. arXiv, 11 June 2021. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2106.09488" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2106.09488</a>.</li>
+  <li>Gao, Leo, et al. <em>Scaling Laws for Reward Model Overoptimization</em>. arXiv, 19 Oct. 2022. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2210.10760" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2210.10760</a>.</li>
+  <li>Ghorbani, Behrooz, et al. <em>Scaling Laws for Neural Machine Translation</em>. 1, arXiv, 16 Sept. 2021. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2109.07740" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2109.07740</a>.</li>
+  <li>Gordon, Mitchell A., et al. “Data and Parameter Scaling Laws for Neural Machine Translation.” <em>Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing</em>, Association for Computational Linguistics, 2021, pp. 5915–22. ACLWeb, <a href="https://doi.org/10.18653/v1/2021.emnlp-main.478" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.18653/v1/2021.emnlp-main.478</a>.</li>
+  <li>Henighan, Tom, et al. <em>Scaling Laws for Autoregressive Generative Modeling</em>. arXiv, 5 Nov. 2020. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2010.14701" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2010.14701</a>.</li>
+  <li>Hernandez, Danny, et al. <em>Scaling Laws for Transfer</em>. arXiv, 1 Feb. 2021. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2102.01293" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2102.01293</a>.</li>
+  <li>Hestness, Joel, et al. <em>Deep Learning Scaling Is Predictable, Empirically</em>. arXiv, 1 Dec. 2017. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.1712.00409" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.1712.00409</a>.</li>
+  <li>Hoffmann, Jordan, et al. <em>Training Compute-Optimal Large Language Models</em>. arXiv, 29 Mar. 2022. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2203.15556" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2203.15556</a>.</li>
+  <li>Hutter, Marcus. <em>Learning Curve Theory</em>. arXiv, 8 Feb. 2021. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2102.04074" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2102.04074</a>.</li>
+  <li>Jones, Andy L. <em>Scaling Scaling Laws with Board Games</em>. arXiv, 15 Apr. 2021. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2104.03113" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2104.03113</a>.</li>
+  <li>Kaplan, Jared, et al. <em>Scaling Laws for Neural Language Models</em>. arXiv, 22 Jan. 2020. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2001.08361" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2001.08361</a>.</li>
+  <li>Mikami, Hiroaki, et al. <em>A Scaling Law for Synthetic-to-Real Transfer: How Much Is Your Pre-Training Effective?</em> arXiv, 8 Oct. 2021. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2108.11018" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2108.11018</a>.</li>
+  <li>Neumann, Oren, and Claudius Gros. <em>Scaling Laws for a Multi-Agent Reinforcement Learning Model</em>. arXiv, 29 Sept. 2022. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2210.00849" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2210.00849</a>.</li>
+  <li>Ramasesh, Vinay Venkatesh, et al. <em>Effect of Scale on Catastrophic Forgetting in Neural Networks</em>. 2022. <em>openreview.net</em>, <a href="https://openreview.net/forum?id=GhVS8_yPeEa" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://openreview.net/forum?id=GhVS8_yPeEa</a>.</li>
+  <li>Rosenfeld, Jonathan S., et al. <em>A Constructive Prediction of the Generalization Error Across Scales</em>. arXiv, 20 Dec. 2019. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.1909.12673" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.1909.12673</a>.</li>
+  <li>Rosenfeld, Jonathan S. <em>Scaling Laws for Deep Learning</em>. 1, arXiv, 17 Aug. 2021. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2108.07686" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2108.07686</a>.</li>
+  <li>Seung, H. S., et al. “Statistical Mechanics of Learning from Examples.” <em>Physical Review A</em>, vol. 45, no. 8, Apr. 1992, pp. 6056–91. APS, <a href="https://doi.org/10.1103/PhysRevA.45.6056" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.1103/PhysRevA.45.6056</a>.</li>
+  <li>Sharma, Utkarsh, and Jared Kaplan. <em>A Neural Scaling Law from the Dimension of the Data Manifold</em>. arXiv, 22 Apr. 2020. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2004.10802" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2004.10802</a>.</li>
+  <li>Sorscher, Ben, et al. <em>Beyond Neural Scaling Laws: Beating Power Law Scaling via Data Pruning</em>. arXiv, 15 Nov. 2022. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2206.14486" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2206.14486</a>.</li>
+  <li>Tay, Yi, Mostafa Dehghani, et al. <em>Scaling Laws vs Model Architectures: How Does Inductive Bias Influence Scaling?</em> arXiv, 21 July 2022. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2207.10551" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2207.10551</a>.</li>
+  <li>Tay, Yi, Jason Wei, et al. <em>Transcending Scaling Laws with 0.1% Extra Compute</em>. arXiv, 16 Nov. 2022. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2210.11399" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2210.11399</a>.</li>
+  <li>Zhai, Xiaohua, et al. <em>Scaling Vision Transformers</em>. arXiv, 20 June 2022. <em>arXiv.org</em>, <a href="https://doi.org/10.48550/arXiv.2106.04560" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.48550/arXiv.2106.04560</a>.</li>
+</ol>

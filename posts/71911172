@@ -1,0 +1,74 @@
+<p><em>Facilities handling hazardous chemicals, Animal Welfare Act
+inspections, daily European gas imports, unclaimed estates, and data
+journalists.</em></p>
+<p> </p>
+<p><strong>Facilities handling hazardous chemicals.</strong> The US
+Environmental Protection Agency’s <a href="https://www.epa.gov/rmp/risk-management-program-rmp-rule-overview" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Risk
+Management Program rule</a> requires facilities that handle “extremely
+hazardous substances” to tell the government, at least every five years,
+about those substances, their safety plans, their recent accident
+history, and more. Through a <a href="https://www.data-liberation-project.org/requests/epa-risk-management-program/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">FOIA
+request to the EPA</a>, the <a href="https://www.data-liberation-project.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Data Liberation
+Project</a> (<a href="https://www.data-liberation-project.org/about/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">which, disclosure,
+I run</a>) obtained a copy of the agency’s database of these filings
+(minus some parts the government deems non-disclosable), containing
+submissions by 21,000+ facilities from early 1999 to February 2022. You
+can now <a href="https://www.data-liberation-project.org/datasets/epa-risk-management-program-database/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">access
+that data</a>, in various formats, along with <a href="https://docs.google.com/document/d/1jrLXtv0knnACiPXJ1ZRFXR1GaPWCHJWWjin4rsthFbQ/edit" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">documentation
+guiding you through it</a>.</p>
+<p> </p>
+<p><strong>Animal Welfare Act inspections.</strong> The USDA’s <a href="https://www.aphis.usda.gov/aphis/home/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Animal and Plant Health
+Inspection Service</a> checks whether animal dealers, exhibitors,
+research facilities, and transporters are complying with the care
+standards set by the <a href="https://www.aphis.usda.gov/aphis/ourfocus/animalwelfare/awa/ct_awa_program_information" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Animal
+Welfare Act</a>. The agency provides <a href="https://efile.aphis.usda.gov/PublicSearchTool/s/inspection-reports" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">public
+access to the inspection reports</a> but no bulk data on them. So, in a
+<a href="https://biglocalnews.org/content/news/2023/02/21/usda-animal-inspection-database.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">collaboration</a>
+between <a href="https://biglocalnews.org/content/about/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Big Local
+News</a> and the <a href="https://www.data-liberation-project.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Data
+Liberation Project</a> (same disclosure as above), <a href="https://palewi.re/who-is-ben-welsh/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Ben Welsh</a> and I <a href="https://github.com/data-liberation-project/aphis-inspection-reports/blob/main/METHODOLOGY.md" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">wrote
+code</a> to fetch the 80,000+ (and counting) inspections going back to
+2014, parse their PDFs, and <a href="https://github.com/data-liberation-project/aphis-inspection-reports" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">make
+the data more accessible</a>. The information includes each inspection’s
+date, type, licensee, violation counts, species inspected, and more.</p>
+<p> </p>
+<p><strong>Daily European gas imports.</strong> Researchers at <a href="https://www.bruegel.org/bruegel-european-think-tank-specialises-economics" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Bruegel</a>
+are <a href="https://www.bruegel.org/dataset/european-natural-gas-imports" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">tracking
+daily and weekly natural gas imports to Europe</a>, using data from the
+<a href="https://www.entsog.eu/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">European Network of Transmission System
+Operators for Gas</a>’s <a href="https://transparency.entsog.eu/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">transparency portal</a>.
+Alongside the imports, which they’re aggregating by source (e.g.,
+Russia, Norway, Algeria) and by route (e.g., Nord Stream, TurkStream),
+the researchers are also tracking <a href="https://agsi.gie.eu/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">gas
+storage levels</a>, using data from <a href="https://www.gie.eu/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Gas
+Infrastructure Europe</a> (<a href="https://www.data-is-plural.com/archive/2022-01-26-edition/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DIP
+2022.01.26</a>). <strong>Previously</strong>: Eurostat’s data on annual
+European energy <a href="https://ec.europa.eu/eurostat/databrowser/explore/all/envir?lang=en&amp;subtheme=nrg.nrg_quant.nrg_quanta.nrg_t.nrg_ti&amp;display=list&amp;sort=category&amp;extractionId=NRG_TI_SFF__custom_2293925" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">imports</a>
+and <a href="https://ec.europa.eu/eurostat/databrowser/explore/all/envir?lang=en&amp;subtheme=nrg.nrg_quant.nrg_quanta.nrg_t.nrg_te&amp;display=list&amp;sort=category&amp;extractionId=NRG_TI_SFF__custom_2293925" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">exports</a>
+(<a href="https://www.data-is-plural.com/archive/2022-03-16-edition/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DIP
+2022.03.16</a>).</p>
+<p> </p>
+<p><strong>Unclaimed estates.</strong> The UK government’s <a href="https://www.gov.uk/government/organisations/bona-vacantia" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Bona
+Vacantia division</a> publishes a <a href="https://www.gov.uk/government/statistical-data-sets/unclaimed-estates-list" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">dataset
+of unclaimed estates</a> — inheritances that nobody has claimed yet to
+inherit. The entries indicate the deceased person’s name, aliases,
+date/place of birth and death, marital status, and more.
+<strong>Related</strong>: California provides a <a href="https://sco.ca.gov/upd_download_property_records.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">dataset</a>
+of <a href="https://sco.ca.gov/upd_msg.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">unclaimed property</a>,
+such as “lost or forgotten” bank accounts, insurance benefits, and stock
+holdings.</p>
+<p> </p>
+<p><strong>Data journalists, surveyed.</strong> The <a href="https://ejc.net/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">European Journalism Center</a>’s <a href="https://datajournalism.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DataJournalism.com</a> has published
+a <a href="https://github.com/ejcnet/stateofdatajournalism2022" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">dataset
+of 1,800+ anonymized responses</a> to its <a href="https://datajournalism.com/survey/2022/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">second annual State of
+Data Journalism Survey</a>, including 50+ entries each from the US, UK,
+Italy, Germany, Spain, India, and Nigeria, plus double-digit counts from
+dozens of other countries. The questions touch on demographics,
+employment, training, skills, the COVID-19 pandemic, and more. [h/t <a href="https://twitter.com/BisianiSimona" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Simona Bisiani</a>]</p>
+<p> </p>
+<p><em>Dataset suggestions? Criticism? Praise? Send data-reported
+feedback to jsvine@gmail.com, or just reply to this email. // Looking
+for past datasets? <a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">This
+spreadsheet contains them all</a>. // Visit <a href="https://www.data-is-plural.com" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">data-is-plural.com</a> to
+subscribe and to browse past editions. // <a href="https://docs.google.com/document/d/e/2PACX-1vSP5xYrhqEvoGTi2aFzrsYQXadG8Gv0Y6YGWjib1e4qcXG45Sq5TSvngvh342DdcAEyEDIVd5V3RYcc/pub" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Learn
+how to place an ad in Data Is Plural</a>.</em></p>

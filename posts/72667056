@@ -1,0 +1,4 @@
+<p><a href="https://maxhalford.github.io/blog/ogd-in-sql/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Online gradient descent written in SQL</a></p>
+<p>Max Halford trains an online gradient descent model against two years of AAPL stock data using just a single advanced SQL query. He built this against DuckDB - I tried to replicate his query in SQLite and it almost worked, but it gave me a &#34;recursive reference in a subquery&#34; error that I was unable to resolve.</p>
+
+    <p>Via <a href="https://news.ycombinator.com/item?id=35054786" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Hacker News</a></p>

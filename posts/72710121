@@ -1,0 +1,71 @@
+<p><em>Government contracting data, debt-to-income ratios, changes of
+address, decades of UK prices, and shows cut short.</em></p>
+<p> </p>
+<p><strong>Government contracting data, cataloged.</strong> The
+nonprofit <a href="https://www.open-contracting.org/about/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Open
+Contracting Partnership</a> has <a href="https://www.open-contracting.org/2023/02/23/a-new-registry-for-open-contracting-data/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">launched</a>
+a <a href="https://data.open-contracting.org/en/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">registry</a> of
+government procurement datasets that use its <a href="https://www.open-contracting.org/data-standard/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Open Contracting
+Data Standard</a> (featured in <a href="https://www.data-is-plural.com/archive/2020-02-26-edition/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DIP
+2020.02.26</a>). The registry contains 100+ entries so far, across 50+
+countries — from Argentina’s <a href="https://data.open-contracting.org/en/publication/18" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">national
+roads authority</a> and the <a href="https://data.open-contracting.org/en/publication/17" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">city of
+Buenos Aires</a> to Zambia’s <a href="https://data.open-contracting.org/en/publication/3" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Public
+Procurement Authority</a>. You can <a href="https://data.open-contracting.org/en/search/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">filter the
+listings</a> by dataset recency, update frequency, and the <a href="https://standard.open-contracting.org/latest/en/schema/reference/#release-structure" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">data
+types</a> included (parties, awards, documents, amendments, et cetera).
+[h/t <a href="https://twitter.com/georg_neu" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Georg Neumann</a>]</p>
+<p> </p>
+<p><strong>Debt-to-income ratios.</strong> The US Federal Reserve <a href="https://www.federalreserve.gov/releases/z1/dataviz/household_debt/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">generates
+quarterly statistics</a> estimating the median ratio of household debt
+to income in each state, county, and metro area. The published maps and
+datasets, which go back to 1999, don’t include precise figures, but
+rather place each geographic unit into one of ten ranges. The income
+calculations <a href="https://www.federalreserve.gov/econres/notes/feds-notes/household-debt-to-income-ratios-in-the-enhanced-financial-accounts-20180109.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">come
+from</a> the Bureau of Labor Statistics, while the debt estimates (which
+do not include student loans) come from the <a href="https://www.newyorkfed.org/research/staff_reports/sr479" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">New York
+Fed Consumer Credit Panel</a>, “an anonymized 5 percent random sample of
+Americans with credit files at the credit reporting bureau Equifax.”
+<strong>As seen in</strong>: “<a href="https://americaninequality.substack.com/p/debt-and-inequality" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Debt
+and Inequality</a>” (<a href="https://www.americaninequality.io/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">American Inequality</a>).</p>
+<p> </p>
+<p> </p>
+<p><strong>Changes of address.</strong> In the “Frequently Requested
+Records” section of its <a href="https://about.usps.com/who/legal/foia/library.htm" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">online FOIA
+library</a>, the US Postal Service provides datasets counting how many
+individuals, families, and businesses have registered for the agency’s
+change-of-address service, by month and ZIP code. The datasets tally the
+moves originating from a given ZIP code separately from those destined
+for it, although moves within the same ZIP code are counted on both
+sides of the ledger. <strong>Related</strong>: <a href="https://postalpro.usps.com/ncoalink/Full_Service_Provider_Licensees" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The
+companies to which USPS sells mover-level data</a>. [h/t <a href="https://twitter.com/TimHendersonSL/status/1632119186540441603" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Tim
+Henderson</a>]</p>
+<p> </p>
+<p><strong>Decades of UK prices.</strong> In January 2023, the UK’s
+Office for National Statistics collected 139,000+ price quotes from
+thousands of stores and across hundreds of products, from “A4 PRINTER
+PAPER (500 REAM)” to “YORKSHIRE PUDDING FROZEN”. The agency has
+collected this kind of <a href="https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceindicescpiandretailpricesindexrpiitemindicesandpricequotes" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">price-quote
+data</a> for <a href="https://www.ons.gov.uk/economy/inflationandpriceindices/adhocs/007392consumerpriceinflationpricequotes1988to1996" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">decades</a>,
+using it to calculate <a href="https://www.ons.gov.uk/economy/inflationandpriceindices" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">inflation
+and price indices</a>. Economist <a href="https://richarddavies.io/about" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Richard Davies</a> has <a href="https://richarddavies.io/research/prices" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">aggregated the data
+going back to 1988 and standardized it</a>, correcting misrecorded
+prices, offsetting measurement changes, among other efforts described in
+a <a href="https://cep.lse.ac.uk/pubs/download/occasional/op055.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021
+working paper</a>.</p>
+<p> </p>
+<p><strong>Shows cut short.</strong> <a href="https://www.isitcutshort.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">IsItCutShort.com</a> provides a
+searchable list of television shows that were canceled (e.g., <a href="https://www.imdb.com/title/tt0083437/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Knight Rider</a>), ended on
+a cliffhanger (<a href="https://www.imdb.com/title/tt0141842/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The
+Sopranos</a>), or both (<a href="https://www.imdb.com/title/tt1389371/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Rubicon</a>). The <a href="https://github.com/xdpirate/isitcutshort.com" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">database</a>
+provides each series’s title, cliffhanger and cancellation status, IMDB
+identifier, and occasional extra notes. A handful of the 130+ entries
+fit another category: shows that “ended without a cliffhanger, but more
+show content exists outside the show itself.” [h/t <a href="https://danjbrady.com" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Dan Brady</a>]</p>
+<p> </p>
+<p><em>Dataset suggestions? Criticism? Praise? Send unrenewed feedback
+to jsvine@gmail.com, or just reply to this email. // Looking for past
+datasets? <a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">This
+spreadsheet contains them all</a>. // Visit <a href="https://www.data-is-plural.com" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">data-is-plural.com</a> to
+subscribe and to browse past editions. // <a href="https://docs.google.com/document/d/e/2PACX-1vSP5xYrhqEvoGTi2aFzrsYQXadG8Gv0Y6YGWjib1e4qcXG45Sq5TSvngvh342DdcAEyEDIVd5V3RYcc/pub" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Place
+an ad in Data Is Plural</a>.</em></p>

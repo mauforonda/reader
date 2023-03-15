@@ -1,0 +1,213 @@
+Latest Complexity Digest Posts
+        
+    
+    
+        
+        
+            <table>
+                <tbody><tr>
+                    <td>
+                        
+                        <table>
+                            <tbody><tr>
+                                <td>
+                                
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                                Learn about the latest and greatest related to complex systems research. More at <a href="http://comdig.unam.mx" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">http://comdig.unam.mx</a>
+                                            </td>
+                                            
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                
+                                </td>
+                            </tr>
+                        </tbody></table>
+                        
+                        <table>
+                            <tbody><tr>
+                                <td>
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                            
+                                                
+                                                <a href="http://comdig.unam.mx" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/gWY-VZqmIAQWx2fEMyEg0xaNJDkctXXxaVrxadZohB4=/aHR0cHM6Ly9nYWxsZXJ5Lm1haWxjaGltcC5jb20vMGViMGFjOWI0ZTg1NjVmMjk2N2E4MzA0Yi9pbWFnZXMvbG9nb2Q3NzAzOC5wbmc=" alt="Complexity Digest" width="600" loading="lazy"/></a>
+                                                
+                                            
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                
+                                                
+                                                <table>
+                                                    <tbody><tr>
+                                                        <td>
+                                                            <strong>Contents from of the 03/06/2023 edition:</strong><br/>
+<ul id="mctoc"><li><a href="#mctoc1">Fundamental limits to learning closed-form mathematical models from data</a></li><li><a href="#mctoc2">Universal patterns in egocentric communication networks</a></li><li><a href="#mctoc3">Scaling of the morphology of African cities</a></li><li><a href="#mctoc4">SFI Press reissues Complexity, Entropy, and the Physics of Information</a></li><li><a href="#mctoc5">A Complexity Science Account of Humor</a></li></ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            
+<h2><br/>
+Fundamental limits to learning closed-form mathematical models from data</h2>
+<p>Oscar Fajardo-Fontiveros, Ignasi Reichardt, Harry R. De Los Ríos, Jordi Duch, Marta Sales-Pardo &amp; Roger Guimerà </p>
+<p>Nature Communications volume 14, Article number: 1043</p>
+<p>Given a finite and noisy dataset generated with a closed-form mathematical model, when is it possible to learn the true generating model from the data alone? This is the question we investigate here. We show that this model-learning problem displays a transition from a low-noise phase in which the true model can be learned, to a phase in which the observation noise is too high for the true model to be learned by any method. Both in the low-noise phase and in the high-noise phase, probabilistic model selection leads to optimal generalization to unseen data. This is in contrast to standard machine learning approaches, including artificial neural networks, which in this particular problem are limited, in the low-noise phase, by their ability to interpolate. In the transition region between the learnable and unlearnable phases, generalization is hard for all approaches including probabilistic model selection.</p>
+<p>Read the full article at: <a href="https://www.nature.com/articles/s41467-023-36657-z" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">www.nature.com</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-0b6f1721&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D7d39a3d118%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F03%252F05%252Ffundamental-limits-to-learning-closed-form-mathematical-models-from-data%252F%26title%3DFundamental%2520limits%2520to%2520learning%2520closed-fo...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=7d39a3d118" title="Like Fundamental limits to learning closed-form mathematical models from data on Facebook" id="fblike-0b6f1721" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Fundamental limits to learning closed-form mathematical models from data on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Universal patterns in egocentric communication networks</h2>
+<p>Gerardo Iñiguez, Sara Heydari, János Kertész, Jari Saramäki<br/>Tie strengths in social networks are heterogeneous, with strong and weak ties playing different roles at both the network and the individual level. Egocentric networks, networks of relationships around a focal individual, exhibit a small number of strong ties and a larger number of weaker ties, a pattern that is evident in electronic communication records, such as mobile phone calls. Mobile phone data has also revealed persistent individual differences within this pattern. However, the generality and the driving mechanisms of this tie strength heterogeneity remain unclear. Here, we study tie strengths in egocentric networks across multiple datasets containing records of interactions between millions of people over time periods ranging from months to years. Our findings reveal a remarkable universality in the distribution of tie strengths and their individual-level variation across different modes of communication, even in channels that may not reflect offline social relationships. With the help of an analytically tractable model of egocentric network evolution, we show that the observed universality can be attributed to the competition between cumulative advantage and random choice, two general mechanisms of tie reinforcement whose balance determines the amount of heterogeneity in tie strengths. Our results provide new insights into the driving mechanisms of tie strength heterogeneity in social networks and have implications for the understanding of social network structure and individual behavior.</p>
+<p>Read the full article at: <a href="https://arxiv.org/abs/2302.13972v1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">arxiv.org</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-81ff7818&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D7d39a3d118%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F03%252F04%252Funiversal-patterns-in-egocentric-communication-networks%252F%26title%3DUniversal%2520patterns%2520in%2520egocentric%2520communi...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=7d39a3d118" title="Like Universal patterns in egocentric communication networks on Facebook" id="fblike-81ff7818" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Universal patterns in egocentric communication networks on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Scaling of the morphology of African cities</h2>
+<p>Rafael Prieto-Curiel, Jorge E. Patino, and Brilé Anderson</p>
+<p>120 (9) e2214254120</p>
+<p>The emptiness, elongation, and sprawl of a city have lasting implications for cities’ future energy needs. This paper creates a publicly available set of urban form indicators and estimates intercity distances. It uses footprint data of millions of buildings in Africa as well as the boundaries of urban agglomerations, street network data, and terrain metrics to detect different extension patterns in almost six thousand cities. These methods estimate the increasingly longer commutes in urban areas and the energy needed to move millions of people. Designing compact, dense, and better-connected urban forms will help cities be more sustainable and liveable.</p>
+<p>Read the full article at: <a href="https://www.pnas.org/doi/10.1073/pnas.2214254120" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">www.pnas.org</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-507c49a5&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D7d39a3d118%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F03%252F02%252Fscaling-of-the-morphology-of-african-cities%252F%26title%3DScaling%2520of%2520the%2520morphology%2520of%2520African%2520cit...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=7d39a3d118" title="Like Scaling of the morphology of African cities on Facebook" id="fblike-507c49a5" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Scaling of the morphology of African cities on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+SFI Press reissues Complexity, Entropy, and the Physics of Information</h2>
+<p><img src="https://reader.miniflux.app/proxy/Ik9yDCI0qpALjhkFMQFGe8MCtD-t4OfDXjPCA2YDQgM=/aHR0cHM6Ly9jeGRpZy5maWxlcy53b3JkcHJlc3MuY29tLzIwMjMvMDIvMWQ4YjNmYzUtMWE4Ny00NjBmLTgzNzktNTY3NmUxZjMxYTNiLTEuanBnP3c9MTEwOA==" loading="lazy"/></p>
+<p>The workshop proceedings, Complexity, Entropy and the Physics of Information, were originally published in 1990, but contain many ideas that are still relevant today. In early 2023, the SFI Press issued a reprint of the proceedings as part of its mission to make important works of complexity science affordable and accessible. This re-publication also includes a new foreword by Lloyd. </p>
+<p>Read the full article at: <a href="https://www.santafe.edu/news-center/news/sfi-press-reissues-complexity-entropy-and-physics-information" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">www.santafe.edu</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-1485592a&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D7d39a3d118%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F02%252F28%252Fsfi-press-reissues-complexity-entropy-and-the-physics-of-information%252F%26title%3DSFI%2520Press%2520reissues%2520Complexity%252C%2520Entropy%252C%2520...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=7d39a3d118" title="Like SFI Press reissues Complexity, Entropy, and the Physics of Information on Facebook" id="fblike-1485592a" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like SFI Press reissues Complexity, Entropy, and the Physics of Information on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+A Complexity Science Account of Humor</h2>
+<p>Wolfgang Tschacher and Hermann Haken</p>
+<p>Entropy 2023, 25(2), 341</p>
+<p>A common assumption of psychological theories of humor is that experienced funniness results from an incongruity between stimuli provided by a verbal joke or visual pun, followed by a sudden, surprising resolution of incongruity. In the perspective of complexity science, this characteristic incongruity-resolution sequence is modeled by a phase transition, where an initial attractor-like script, suggested by the initial joke information, is suddenly destructed, and in the course of resolution replaced by a less probable novel script. The transition from the initial to the enforced final script was modeled as a succession of two attractors with different minimum potentials, during which free energy becomes available to the joke recipient. Hypotheses derived from the model were tested in an empirical study where participants rated the funniness of visual puns. It was found, consistent with the model, that the extent of incongruity and the abruptness of resolution were associated with reported funniness, and with social factors, such as disparagement (Schadenfreude) added to humor responses. The model suggests explanations as to why bistable puns and phase transitions in conventional problem solving, albeit also based on phase transitions, are generally less funny. We proposed that findings from the model can be transferred to decision processes and mental change dynamics in psychotherapy.</p>
+<p>Read the full article at: <a href="https://www.mdpi.com/1099-4300/25/2/341" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">www.mdpi.com</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-3820bb7e&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D7d39a3d118%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F02%252F27%252Fa-complexity-science-account-of-humor%252F%26title%3DA%2520Complexity%2520Science%2520Account%2520of%2520Humor&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=7d39a3d118" title="Like A Complexity Science Account of Humor on Facebook" id="fblike-3820bb7e" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like A Complexity Science Account of Humor on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h3>More to read:</h3>
+
+<table>
+	
+		<tbody><tr>
+			<td>
+			<table>
+				
+					<tbody><tr>
+						<td><a href="https://comdig.unam.mx/2023/02/26/frontiers-in-complex-systems/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Frontiers in Complex Systems</a><br/><a href="https://comdig.unam.mx/2023/02/25/the-inevitable-layering-of-models-to-extend-the-reach-of-our-understanding/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The inevitable “layering” of models to extend the reach of our understanding</a><br/><a href="https://comdig.unam.mx/2023/02/24/conflicting-models-for-the-origin-of-life/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Conflicting Models for the Origin of Life</a><br/><a href="https://comdig.unam.mx/2023/02/24/salt-polygons-and-porous-media-convection/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Salt Polygons and Porous Media Convection</a><br/><a href="https://comdig.unam.mx/2023/02/24/long-range-connections-real-world-networks-and-rates-of-diffusion/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">LONG-RANGE CONNECTIONS, REAL-WORLD NETWORKS AND RATES OF DIFFUSION</a><br/><a href="https://comdig.unam.mx/2023/02/23/networks-of-climate-change-connecting-causes-and-consequences/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Networks of climate change: connecting causes and consequences</a><br/><a href="https://comdig.unam.mx/2023/02/23/benchmarking-the-influential-nodes-in-complex-networks/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">BENCHMARKING THE INFLUENTIAL NODES IN COMPLEX NETWORKS</a><br/><a href="https://comdig.unam.mx/2023/02/23/scaling-up-the-self-optimization-model-by-means-of-on-the-fly-computation-of-weights/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Scaling up the self-optimization model by means of on-the-fly computation of weights</a><br/><a href="https://comdig.unam.mx/2023/02/22/how-fingerprints-get-their-one-of-a-kind-swirls/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">How fingerprints get their one-of-a-kind swirls</a><br/><a href="https://comdig.unam.mx/2023/02/22/complexity-explorables-the-prisoners-kaleidoscope/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Complexity Explorables | The Prisoner’s Kaleidoscope</a></td>
+					</tr>
+				
+			</tbody></table>
+			</td>
+		</tr>
+	
+</tbody></table>
+
+                                                        </td>
+                                                    </tr>
+                                                </tbody></table>
+                                                
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                            
+                                                
+                                                <table>
+                                                    <tbody><tr>
+                                                        <td colspan="2">
+                                                             <a href="http://twitter.com/cxdig" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">follow on Twitter</a> | <a href="https://www.facebook.com/pages/Complexity-Digest/103026839755164" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">like on Facebook</a> | <a href="http://www.linkedin.com/groups?gid=3270291" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">join on LinkedIn</a> | <a href="https://plus.google.com/b/105687854558109225649/105687854558109225649/posts" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Google+</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            
+                                                        </td>
+                                                        <td>
+                                                            
+                                                                 <a href="http://www.mailchimp.com/email-referral/?utm_source=freemium_newsletter&amp;utm_medium=email&amp;utm_campaign=referral_marketing&amp;aid=0eb0ac9b4e8565f2967a8304b&amp;afl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/KELiOftXffLqcIBSflNQcnWkdolUAJv6Cich_jrkdMM=/aHR0cHM6Ly9nYWxsZXJ5Lm1haWxjaGltcC5jb20vMDg5NDQzMTkzZGQ5MzgyM2YzZmVkNzhiNC9pbWFnZXMvYmFubmVyMS5naWY=" alt="Email Marketing Powered by Mailchimp" title="Mailchimp Email Marketing" loading="lazy"/></a> 
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                </tbody></table>
+                                                
+                                            
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                </td>
+                            </tr>
+                        </tbody></table>
+                        <br/>
+                    </td>
+                </tr>
+            </tbody></table>
+        
+                
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <table>
+                    <tbody><tr>
+                        <td>
+                            <table>
+                                <tbody><tr>
+                                    <td>
+                                        This email was sent to <a href="mailto:&lt;&lt;Email Address&gt;&gt;" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">&lt;&lt;Email Address&gt;&gt;</a>
+                                        <br/>
+                                        <a href="https://unam.us4.list-manage.com/about?u=0eb0ac9b4e8565f2967a8304b&amp;id=f55ea67de1&amp;e=[UNIQID]&amp;c=7d39a3d118" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><em>why did I get this?</em></a>    <a href="https://unam.us4.list-manage.com/unsubscribe?u=0eb0ac9b4e8565f2967a8304b&amp;id=f55ea67de1&amp;e=[UNIQID]&amp;c=7d39a3d118" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">unsubscribe from this list</a>    <a href="https://unam.us4.list-manage.com/profile?u=0eb0ac9b4e8565f2967a8304b&amp;id=f55ea67de1&amp;e=[UNIQID]&amp;c=7d39a3d118" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">update subscription preferences</a>
+                                        <br/>
+                                        Complexity Digest · Universidad Nacional Autónoma de México · Ciudad Universitaria · Mexico City, DF 01000 · Mexico
+                                        <br/>
+                                        <br/>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+                
+            

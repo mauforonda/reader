@@ -1,0 +1,3 @@
+This is part of a series of posts on building Viberary, a semantic search/recommendation engine for vibes and what happens when you have unlimited time to chase rabbit holes in side projects.
+I’m still in the early stages of this project and doing data analysis on the input data, a dump of 10GB from Goodreads in JSON. See the input data sample here.
+Last time I left off, I was working with a BigQuery table I had created from the initial JSON file and trying to read into pandas via the BigQuery connector.

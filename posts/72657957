@@ -1,0 +1,50 @@
+<p>
+I&#39;m still a bit sad about Flash going away. Yes, I know lots of people hated it. But it was an amazing tool for quick prototypes.  There are some projects that I keep revisiting, and over time I&#39;m converting them to HTML5.
+</p>
+
+<p>
+Last year I converted my <a href="https://simblob.blogspot.com/2022/06/procedural-tree-generator.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Flash procedural tree generator</a> (succeeded) and attempted to convert my <a href="https://www.redblobgames.com/x/2216-spaceship-flyer/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Flash spaceship flyer</a> (failed). This time I wanted to run my Tank Control prototype from 2012:
+</p>
+
+<figure>
+<img src="https://reader.miniflux.app/proxy/ZBqOzbcrRtVw1n0cBfySdej13glGhcFDYfY8j6bM2WE=/aHR0cHM6Ly93d3cucmVkYmxvYmdhbWVzLmNvbS94LzIzMDktdGFuay1jb250cm9sL2Jsb2cvZmxhc2gucG5n" alt="" loading="lazy"/>
+<figcaption>Screenshot of tank control prototype written in Flash</figcaption>
+</figure>
+
+
+<p>
+Tank Control was a series of 8 prototypes in which I tried out various control schemes for driving a tank, both for laptop (mouse/trackpad) and mobile (touch).
+</p>
+
+<p>
+I can still <em>run</em> Flash code because I have an old copy of Flash Player. But I can&#39;t <em>share</em> these prototypes anymore. And it&#39;d be annoying to <em>modify</em> them because I don&#39;t have the Flash compiler set up anymore. So if it&#39;s not too much work, I want to port them to HTML5.
+</p>
+
+<p>
+I tried using <a href="https://ruffle.rs/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Ruffle</a>, a Flash emulator that reads <em>existing</em> web pages, converts the SWF files linked there into HTML5, and then inserts the HTML5 version into the page. Magic! <a href="http://www-cs-students.stanford.edu/~amitp/_test/tank-control.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">This worked surprisingly well</a> and was able to generate the <em>output</em> of the tank control experiments. But it didn&#39;t support the <em>interactivity</em>. And the interactivity is the main thing I want to play with.
+</p>
+
+<p>
+So I decided to port it to HTML5.
+</p>
+
+<p>
+But which one of the eight? Or all of them? I ran all eight and compared them. I also ran <kbd>diff</kbd> on the code to see what was similar and what was different. I decided that Tank Control #3, #6, and #7 were the ones I was most interested in.
+</p>
+
+<figure>
+<img src="https://reader.miniflux.app/proxy/GLY0RfY9tFXavOiE3uqj2nckaQ83nX3Q6hfjKIxYE04=/aHR0cHM6Ly93d3cucmVkYmxvYmdhbWVzLmNvbS94LzIzMDktdGFuay1jb250cm9sL2Jsb2cvaHRtbDUucG5n" alt="" loading="lazy"/>
+<figcaption>Screenshot of tank control prototype written in HTML5</figcaption>
+</figure>
+
+<p>
+Flash&#39;s vector graphics and HTML5&#39;s SVG/Canvas vector graphics are not <em>that</em> different, and Flash&#39;s scripting language is EcmaScript4 whereas HTML5&#39;s scripting language is EcmaScript5, so the scripts were also not <em>that</em> different. Porting wasn&#39;t too bad. I wasn&#39;t using Flash&#39;s bitmap or shader graphics for this project; those are a bit harder to port. And I wasn&#39;t using Flash&#39;s MXML UI toolkit either.
+</p>
+
+<p>
+It was fun to play with the controls. I also came up with lots of ideas for variations to try. But I reminded myself that the goal was to <em>port</em> some of the the existing prototypes, <em>not</em> to come up with new control schemes. I can play with new control schemes later, if I have some goal in mind.
+</p>
+
+<p>
+<a href="https://www.redblobgames.com/x/2309-tank-control/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">You can play with the result here</a>.
+</p>

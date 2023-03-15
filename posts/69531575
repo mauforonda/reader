@@ -1,0 +1,56 @@
+<p>
+I admit I use one letter variable names in my code. But which names? Here&#39;s what I use in <code>for</code> loops:
+</p>
+
+<pre># rg &#39;for \(let . ?=&#39; 
+#     | perl -pe &#39;s/.*let //g&#39; | perl -pe &#39;s/=.*//g&#39; 
+#     | sort | uniq -c | sort -nr | head
+
+509 i
+132 x
+122 y
+118 r
+ 57 t
+ 53 q
+ 47 j
+ 43 s
+ 31 e
+ 14 k
+</pre>
+
+
+
+<p>
+My naming conventions:
+</p>
+
+<ul>
+<li><kbd>i</kbd>, <kbd>j</kbd>, <kbd>k</kbd>: generic index</li>
+  <li><kbd>x</kbd>, <kbd>y</kbd>, <kbd>z</kbd>, <kbd>w</kbd>: coordinates</li>
+<li><kbd>q</kbd>, <kbd>r</kbd>: col/row grid coordinates</li>
+<li><kbd>r</kbd>: region number</li>
+<li><kbd>r</kbd>: range or radius</li>
+<li><kbd>t</kbd>: triangle number</li>
+<li><kbd>t</kbd>: time index</li>
+<li><kbd>s</kbd>, <kbd>e</kbd>: sides/edges of a polygon</li>
+  <li><kbd>w</kbd>, <kbd>h</kbd>: width/height</li>
+</ul>
+
+<p>
+Outside of <code>for</code> loops, <kbd>rg &#39;let . ?= | grep -v for&#39;</kbd> finds that I also use these conventions:
+</p>
+
+<ul>
+<li><kbd>a</kbd>, <kbd>b</kbd>: endpoints of a range or line segment</li>
+<li><kbd>a</kbd>, <kbd>b</kbd>, <kbd>c</kbd>: equation for a line, or quadratic formula</li>
+<li><kbd>v</kbd>: generic value</li>
+<li><kbd>p</kbd>: point</li>
+<li><kbd>t</kbd>: time</li>
+<li><kbd>d</kbd>: distance</li>
+<li><kbd>d</kbd>: reference to svg <kbd>&lt;path&gt;</kbd> <kbd>d=</kbd> attribute</li>
+<li><kbd>g</kbd>: reference to svg <kbd>&lt;g&gt;</kbd> element</li>
+</ul>
+
+<p>
+If I were working in a team I&#39;d follow their naming conventions, but for the most part I am writing the code for myself, so I&#39;m ok with short variable names like these. The common objection is that I won&#39;t understand the code six months later, but I haven&#39;t found that to be an issue. These are all local variables inside a function, and I tend to use the same conventions across projects.
+</p>

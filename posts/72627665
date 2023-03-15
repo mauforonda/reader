@@ -1,0 +1,108 @@
+<p>Offering loans with flexible repayment schedules can improve outcomes for vulnerable borrowers while also reducing the risks faced by lending institutions</p>
+                                    
+                    <p><em>Editor’s Note: To know more about the role of repayment flexibility, read our <a href="https://voxdev.org/voxdevlit/microfinance" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">VoxDevLit on Microfinance</a>.</em></p>
+<p>Small business owners across the world often face irregular cash flows due to seasonal fluctuations in demand and unexpected expenses, which can in turn hamper business growth and sustainability. There is mounting evidence that adapting financial contracts to the needs and characteristics of small businesses could address these concerns by positively affecting production decisions and business growth (Field et al. 2013, Czura 2015, Battaglia et al. 2021, Bari et al. 2021, Cole et al. 2017, Casaburi and Willis 2018). Flexible financial products can take many forms - our focus is specifically on loans with flexible schedules in the same spirit as income-based repayment contracts, which allow borrowers to modify or defer repayments as needed. Such products are already available at scale in high-income settings, including Amazon’s own loan service that requires payments only in months when sales occurred, yet remain relatively rare in low-income settings (Bruhn et al. 2017). </p>
+<p>To shed light on the potential of flexible products to help entrepreneurs in low-income countries, we study the impact of a loan product offered at a high interest rate, but with the option to take a three month repayment holiday at any time. Before focusing on potential benefits, it is also important to consider the risks these types of products may pose. Not all microentrepreneurs face the same degree of cash flow irregularity and liquidity constraints, meaning they have varying needs for repayment flexibility. It follows that borrowers that are less in need of flexibility may also be attracted to the advantages of the flexible contracts, if for example they are not more expensive than non-flexible contracts, or offer larger loan sizes. If this happens, and if borrowers’ ability to repay the larger loan balance is hindered as a result, lending could become riskier for both parties. </p>
+<p>In a recent paper (Barboni and Agarwal 2022), we present evidence from a field experiment that suggests offering loans with flexible repayment schedules alongside traditional ones can improve outcomes for vulnerable borrowers, while also reducing the risks faced by lending institutions. Below we highlight our main findings, which answer key questions in considering the efficacy and scalability of such an innovation: (a) does repayment flexibility meet a need for borrowers in low-income settings, and (b) do we see any evidence of risk or benefit of such flexibility on borrowers and lenders. </p>
+<h2>Flexible loan option for small business owners  </h2>
+<p>In close coordination with a partner microfinance institution, we ran a randomised controlled trial (RCT) with 799 borrowers from 28 branch locations in the northern Indian state of Uttar Pradesh. 410 business owners at the 14 control branches were presented with a ‘business as usual’, or rigid, loan option: a two-year fixed repayment schedule with an APR of 24%. The 389 business owners at the 14 treated banks were offered two loan options: the rigid contract, identical to that offered at the control branches, or a higher-interest loan (26% APR) with an optional repayment holiday, as described earlier. Borrowers could opt for either option.</p>
+<h2>Loan flexibility fills a need</h2>
+<p>Descriptive evidence indicates that the average borrower has substantial income fluctuations. At baseline, profit reported by entrepreneurs in the lowest-earning months was almost 50% lower than that during the highest-earning months (9,800 INR vs 13,000 INR, respectively), with an annual household income of 216,000 INR. Thus business during peak times represents a very large part of households’ income, indicating that loan flexibility across seasons could be desirable to some entrepreneurs. Take-up rates corroborate this: almost one in three treated borrowers opted for the flexible and more expensive option - meaning they were willing to pay more for the option to suspend payments temporarily as needed. Further building on this, we find that borrowers with higher variability of sales were more likely to choose the flexible contract.</p>
+<p>Among those who opted in, 56% subsequently took advantage of the option in the first year. As shown in Figure 1, most of the borrowers who took up the flexible contract opted for pausing repayments between November and February, the months that correspond to both the festival (November and December) and the lean season (January and February). This indicates that borrowers took advantage of the repayment holiday as intended - during periods in which the need for liquidity was more pronounced, either because there is higher demand for their products and services (festival season) or because the lower demand following the peak business season makes it more difficult to meet debt repayment and expenditures (lean season).</p>
+<p><strong>Figure 1</strong>: Share of eligible customers using the first repayment holiday, by month of the first year of their loan.</p>
+<p><img alt="" src="https://reader.miniflux.app/proxy/8jvlUTtMFlZXaxEybcVopn3omHgacZUfkO2YlunUjmw=/aHR0cHM6Ly92b3hkZXYub3JnL3NpdGVzL2RlZmF1bHQvZmlsZXMvYmFyYm9uaV9maWd1cmUxLnBuZw==" loading="lazy"/></p>
+<p>We also find that more financially sophisticated borrowers (as measured by frequency of budget-making, tendency to worry when making household financial decision, and time-consistent preferences) were more likely to select the flexible option (see Figure 2). In addition, among treated borrowers, those who report drafting a budget for their business activities on a regular basis were significantly more likely – by 25 percentage points – to use the loan to buy more stock during festivals, an indication of making business investments at times of need.</p>
+<p><strong>Figure 2</strong>: Estimated effects of borrower characteristics on selection of the flexible contract.</p>
+<p><img alt="" src="https://reader.miniflux.app/proxy/lUCdYe5ps6qhvv0L00hFZB1l-ORBQssisiuHQRpHyJU=/aHR0cHM6Ly92b3hkZXYub3JnL3NpdGVzL2RlZmF1bHQvZmlsZXMvYmFyYm9uaV9maWd1cmUyLnBuZw==" loading="lazy"/></p>
+<p>Notes: Lines indicate 95% confidence intervals. Land ownership is a dummy equal to one if the household reports owning land at baseline. Variability of sales is measured as the (scaled by a factor of 109) squared difference between total sales in the last month and the mean value of total sales in the last month. Budgets frequently is a dummy that equals one if the respondent reports drafting a budget for their business activity on a daily or weekly basis (as opposed to less frequently). Time-consistent and risk-loving are dummies reflecting borrowers’ attitude towards time discounting and risk. Worries about making financial decisions is a dummy that equals one if the borrower reports being worried about making the best financial decisions. Controls included for business activity, age and education of the household head.</p>
+<h2>Loan flexibility benefits borrowers</h2>
+<p>We explore the benefit to borrowers in two ways: reduction in liquidity constraints and improved business outcomes. We find evidence that offering borrowers the flexible contract leads to both.</p>
+<h3>Liquidity</h3>
+<p>In terms of liquidity, we consider two behaviours - top-ups and early repayment (top-up loans typically consist of a one-shot credit boost at the same interest rate as the current loan). We find treated borrowers are 70% less likely to request a loan top-up from any financial institution, suggesting these borrowers are in lower need of additional credit, as compared to borrowers in the control group. This indicates that the design of the flexible loan has achieved the desired effect of relaxing liquidity constraints for treated borrowers. We find more evidence of this from early repayment rates: borrowers offered the flexible contract option are ten percentage points more likely to repay their loans early, as compared to those only offered the rigid contract. In sum, the flexible contract seems to provide the extra liquidity that borrowers would otherwise seek with a top-up loan.</p>
+<h3>Business Outcomes</h3>
+<p>We also see evidence that treated borrowers run their businesses more efficiently (see Figure 3). These borrowers report significantly higher sales: monthly sales in the short-term (about eight months after baseline) are approximately 16% higher and 22% higher in the long-term (about 36 months after baseline), as compared to the control group. </p>
+<p><strong>Figure 3:</strong> Impact on monthly sales at midline and endline by treatment status.</p>
+<p><img alt="" src="https://reader.miniflux.app/proxy/l-jf2-wIMupp698xGU8OLvzhkViDoofb9AsgooEAsww=/aHR0cHM6Ly92b3hkZXYub3JnL3NpdGVzL2RlZmF1bHQvZmlsZXMvYmFyYm9uaV9maWd1cmUzLnBuZw==" loading="lazy"/></p>
+<p>Notes: Monthly sales measure business sales in Indian Rupees during the 30 days prior. Lines indicate 90% and 95% confidence intervals. </p>
+<h2>Loan flexibility does not increase risk for banks</h2>
+<p>Banks may worry that repayment rates will suffer; however, we find that offering a menu of contracts does not increase default rates. Approximately 90% of borrowers in both the treatment and control groups repaid their loans by the due date. Considering the stability in repayment returns in tandem with our previous findings on financial sophistication, we see strong evidence that this type of flexibility - flexibility but at a cost - seems to successfully screen out those not suitable for financial innovations. </p>
+<h2>Integrating financial innovation into future loan products</h2>
+<p>Our work is possibly the first to evaluate how flexible loans with characteristics similar to income-based repayment contracts perform in low-income countries. We show that such products can both improve outcomes for poor borrowers while also mitigating the adverse selection problem lenders face in imperfect capital markets. </p>
+<p>Formal credit has never been more accessible than it is today. We have already seen the profound implications of the rapid expansion of fintech companies on the formal credit sector, and it is likely that an expansion of more tailored financial products will soon follow, particularly as they have already been scaling up in high-income settings. Our results suggest that some flexible products are able to provide benefit to both borrowers and lenders alike. However, they also point to the need for well-designed products that meet client needs, including those who may be less financially sophisticated. As innovations both in products and delivery become more commonplace, we believe there is a vital role for repayment flexibility to play in fostering business growth and in improving credit allocation more broadly.</p>
+<h2>References</h2>
+<p>Barboni, G, and P Agarwal (2023), “<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4358795" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">How do flexible microfinance contracts improve repayment rates and business outcomes? Experimental Evidence from India</a>”, Working Paper.</p>
+<p>Bari, F, K Malik, M Meki, and S Quinn (2021), “<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3783994" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Asset-Based Microfinance for Microenterprises: Evidence from Pakistan</a>”, CEPR Discussion Paper No. DP15768.</p>
+<p>Battaglia, M, S Gulesci, and A Madestam (2021), &#34;<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3290521" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Repayment Flexibility and Risk Taking: Experimental Evidence from Credit Contracts</a>&#34;, CEPR Discussion Paper No. DP13329.</p>
+<p>Bruhn, M, M Hommes, M Khanna, S Singh, A Sorokina and J S Wimpey (2017), “MSME finance gap: assessment of the shortfalls and opportunities in financing micro, small, and medium enterprises in emerging markets” World Bank Working Paper No. 121264.</p>
+<p>Casaburi, L, and J Willis (2018), “Time versus State in Insurance: Experimental Evidence from Contract Farming in Kenya”, <em>American Economic Review</em> 108(12): 3778-3813.</p>
+<p>Cole, S, X Giné and J Vickery (2017), “How does risk management influence production decisions? Evidence from a field experiment.” <em>The Review of Financial Studies</em>, 30(6): 1935-1970.</p>
+<p>Czura, K (2015), “Pay, peek, punish? Repayment, information acquisition and punishment in a microcredit lab-in-the-field experiment”, <em>Journal of Development Economics</em> 117(C): 119-133.</p>
+<p>Field, E, R Pande, J Papp, N Rigol (2013), “Does the Classic Microfinance Model Discourage Entrepreneurship among the Poor? Experimental Evidence from India”, <em>American Economic Review</em> 103(6): 2196-2226.<br/> </p>
+                
+
+                    
+                    
+                    Microfinance
+                                
+                    Loans
+                                
+                    India
+                                
+                    Small business
+                                
+                    Repayment Flexibility
+                                
+                    Borrowers
+                                
+                    Lenders
+                        
+    
+    
+    
+        <p>Share this article:</p>
+
+        <a href="https://twitter.com/intent/tweet/?text=The+impacts+of+flexible+repayment+schedules%3A+Evidence+from+borrowers+and+lenders+in+India+&amp;url=https%3A%2F%2Fvoxdev.org%2Ftopic%2Ffinance%2Fimpacts-flexible-repayment-schedules-evidence-borrowers-and-lenders-india" title="Share on Twitter" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvoxdev.org%2Ftopic%2Ffinance%2Fimpacts-flexible-repayment-schedules-evidence-borrowers-and-lenders-india" title="Share on Facebook" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+        
+        
+        <a href="https://voxdev.org/cdn-cgi/l/email-protection#655a1610070f000611582d001700450c16450445330a1d210013450417110c060900451c0a104508041c450700450c0b1100170016110001450c0b43070a011c580d111115165f4a4a130a1d0100134b0a17024a110a150c064a030c0b040b06004a0c081504061116480309001d0c07090048170015041c08000b114816060d0001100900164800130c01000b060048070a17170a1200171648040b014809000b01001716480c0b010c04" title="Share on Email" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+        
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fvoxdev.org%2Ftopic%2Ffinance%2Fimpacts-flexible-repayment-schedules-evidence-borrowers-and-lenders-india&amp;title=The+impacts+of+flexible+repayment+schedules%3A+Evidence+from+borrowers+and+lenders+in+India+" title="Share on LinkedIn" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+        
+        
+                    
+        
+        <a href="https://voxdev.org/print/75845" title="Print this page" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+    
+
+            

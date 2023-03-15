@@ -1,0 +1,220 @@
+Latest Complexity Digest Posts
+        
+    
+    
+        
+        
+            <table>
+                <tbody><tr>
+                    <td>
+                        
+                        <table>
+                            <tbody><tr>
+                                <td>
+                                
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                                Learn about the latest and greatest related to complex systems research. More at <a href="http://comdig.unam.mx" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">http://comdig.unam.mx</a>
+                                            </td>
+                                            
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                
+                                </td>
+                            </tr>
+                        </tbody></table>
+                        
+                        <table>
+                            <tbody><tr>
+                                <td>
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                            
+                                                
+                                                <a href="http://comdig.unam.mx" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/gWY-VZqmIAQWx2fEMyEg0xaNJDkctXXxaVrxadZohB4=/aHR0cHM6Ly9nYWxsZXJ5Lm1haWxjaGltcC5jb20vMGViMGFjOWI0ZTg1NjVmMjk2N2E4MzA0Yi9pbWFnZXMvbG9nb2Q3NzAzOC5wbmc=" alt="Complexity Digest" width="600" loading="lazy"/></a>
+                                                
+                                            
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                
+                                                
+                                                <table>
+                                                    <tbody><tr>
+                                                        <td>
+                                                            <strong>Contents from of the 01/16/2023 edition:</strong><br/>
+<ul id="mctoc"><li><a href="#mctoc1">Don’t follow the leader: Independent thinkers create scientific innovation</a></li><li><a href="#mctoc2">Maximum entropy network states for coalescence processes</a></li><li><a href="#mctoc3">Self-organisation, (M, R)–systems and enactive cognitive science</a></li><li><a href="#mctoc4">Phase-separation physics underlies new theory for the resilience of patchy ecosystems</a></li><li><a href="#mctoc5">Economic Complexity Theory and Applications – Cesar Hidalgo</a></li><li><a href="#mctoc6">Postdoc position on “Creating bio-inspired co-evolutionary incentive systems to promote recycling, using Internet of Things technologies” ETH Zurich</a></li></ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            
+<h2><br/>
+Don’t follow the leader: Independent thinkers create scientific innovation</h2>
+<p>Sean Kelty, Raiyan Abdul Baten, Adiba Mahbub Proma, Ehsan Hoque, Johan Bollen, Gourab Ghoshal<br/>Academic success is distributed unequally; a few top scientists receive the bulk of attention, citations, and resources. However, do these “superstars” foster leadership in scientific innovation? We introduce three information-theoretic measures that quantify novelty, innovation, and impact from scholarly citation networks, and compare the scholarly output of scientists who are either not connected or strongly connected to superstar scientists. We find that while connected scientists do indeed publish more, garner more citations, and produce more diverse content, this comes at a cost of lower innovation and higher redundancy of ideas. Further, once one removes papers co-authored with superstars, the academic output of these connected scientists diminishes. In contrast, authors that produce innovative content without the benefit of collaborations with scientific superstars produce papers that connect a greater diversity of concepts, publish more, and have comparable citation rates, once one controls for transferred prestige of superstars. On balance, our results indicate that academia pays a price by focusing attention and resources on superstars.</p>
+<p>Read the full article at: <a href="https://arxiv.org/abs/2301.02396v1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">arxiv.org</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-afa985a1&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3De6a4a85c56%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F14%252Fdont-follow-the-leader-independent-thinkers-create-scientific-innovation%252F%26title%3DDon%25E2%2580%2599t%2520follow%2520the%2520leader%253A%2520Independent%2520t...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=e6a4a85c56" title="Like Don’t follow the leader: Independent thinkers create scientific innovation on Facebook" id="fblike-afa985a1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Don’t follow the leader: Independent thinkers create scientific innovation on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Maximum entropy network states for coalescence processes</h2>
+<p>Arsham Ghavasieh, Manlio De Domenico<br/>Complex network states are characterized by the interplay between system’s structure and dynamics. One way to represent such states is by means of network density matrices, whose von Neumann entropy characterizes the number of distinct microstates compatible with given topology and dynamical evolution. In this Letter, we propose a maximum entropy principle to characterize network states for systems with heterogeneous, generally correlated, connectivity patterns and non-trivial dynamics. We focus on three distinct coalescence processes, widely encountered in the analysis of empirical interconnected systems, and characterize their entropy and transitions between distinct dynamical regimes across distinct temporal scales. Our framework allows one to study the statistical physics of systems that aggregate, such as in transportation infrastructures serving the same geographic area, or correlate, such as inter-brain synchrony arising in organisms that socially interact, and active matter that swarm or synchronize.</p>
+<p>Read the full article at: <a href="https://arxiv.org/abs/2212.02392v1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">arxiv.org</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-9068520b&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3De6a4a85c56%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F13%252Fmaximum-entropy-network-states-for-coalescence-processes%252F%26title%3DMaximum%2520entropy%2520network%2520states%2520for%2520coale...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=e6a4a85c56" title="Like Maximum entropy network states for coalescence processes on Facebook" id="fblike-9068520b" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Maximum entropy network states for coalescence processes on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Self-organisation, (M, R)–systems and enactive cognitive science</h2>
+<p>Tomasz Korbak</p>
+<p>Adaptive Behavior 31(1)</p>
+<p>The notion of self-organisation plays a major role in enactive cognitive science. In this paper, I review several formal models of self-organisation that various approaches in modern cognitive science rely upon. I then focus on Rosen’s account of self-organisation as closure to efficient cause and his argument that models of systems closed to efficient cause – (M, R) systems – are uncomputable. Despite being sometimes relied on by enactivists this argument is problematic it rests on assumptions unacceptable for enactivists: that living systems can be modelled as time-invariant and material-independent. I then argue that there exists a simple and philosophically appealing reparametrisation of (M, R)–systems that accounts for the temporal dimensions of life but renders Rosen’s argument invalid.</p>
+<p>Read the full article at: <a href="https://journals.sagepub.com/doi/full/10.1177/10597123211066155" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">journals.sagepub.com</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-d8b4307c&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3De6a4a85c56%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F13%252Fself-organisation-m-r-systems-and-enactive-cognitive-science%252F%26title%3DSelf-organisation%252C%2520%2528M%252C%2520R%2529%25E2%2580%2593systems%2520and%2520...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=e6a4a85c56" title="Like Self-organisation, (M, R)–systems and enactive cognitive science on Facebook" id="fblike-d8b4307c" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Self-organisation, (M, R)–systems and enactive cognitive science on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Phase-separation physics underlies new theory for the resilience of patchy ecosystems</h2>
+<p>Koen Siteur, Quan-Xing Liu, Vivi Rottschäfer, Tjisse van der Heide, Max Rietkerk, Arjen Doelman, Christoffer Boström, and Johan van de Koppel</p>
+<p>PNAS 120 (2) e2202683120</p>
+<p>Human-induced environmental changes push ecosystems worldwide toward their limits. Therefore, there is a growing need for indicators to assess the resilience of ecosystems against external changes and disturbances. We highlight a novel class of spatial patterns in ecosystems for which resilience indicators are lacking and introduce a new indicator framework for these ecosystems, akin to the physics of phase separation. Our work suggests that aerial imagery can be used to monitor patchy ecosystems and highlights a link between physics and ecosystem resilience.</p>
+<p>Read the full article at: <a href="https://www.pnas.org/doi/10.1073/pnas.2202683120" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">www.pnas.org</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-3e5ef532&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3De6a4a85c56%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F13%252Fphase-separation-physics-underlies-new-theory-for-the-resilience-of-patchy-ecosystems%252F%26title%3DPhase-separation%2520physics%2520underlies%2520new%2520t...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=e6a4a85c56" title="Like Phase-separation physics underlies new theory for the resilience of patchy ecosystems on Facebook" id="fblike-3e5ef532" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Phase-separation physics underlies new theory for the resilience of patchy ecosystems on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Economic Complexity Theory and Applications – Cesar Hidalgo</h2>
+<p>Economic complexity methods have become popular tools in economic geography, international development, and innovation studies. Here, I review economic complexity theory and applications, with a particular focus on two streams of literature: the literature on relatedness, which focuses on the evolution of specialization patterns, and the literature on metrics of economic complexity, which uses dimensionality reduction techniques to create metrics of economic sophistication that are predictive of variations in income, economic growth, emissions, and income inequality.</p>
+<p>Watch at: <a href="https://www.youtube.com/watch?v=0IWlqwNzOV4&amp;ab_channel=MicheleTizzoni" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">www.youtube.com</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-1739e862&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3De6a4a85c56%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F12%252Feconomic-complexity-theory-and-applications-cesar-hidalgo%252F%26title%3DEconomic%2520Complexity%2520Theory%2520and%2520Applicati...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=e6a4a85c56" title="Like Economic Complexity Theory and Applications – Cesar Hidalgo on Facebook" id="fblike-1739e862" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Economic Complexity Theory and Applications – Cesar Hidalgo on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Postdoc position on “Creating bio-inspired co-evolutionary incentive systems to promote recycling, using Internet of Things technologies” ETH Zurich</h2>
+<p>You will produce a simulation program demonstrating self-organizing logistic networks that become more circular and sustainable over time. </p>
+<p>You will create novel research breakthroughs and contribute to the ambitious ERC Advanced Investigator Grant on “Co-Evolving City Life” (CoCi) in subject areas connected to smart cities and digital societies. Your research focus will be on “Sustainable Cities and Coordination”. Given recent digital technologies such as the Internet of Things (sensor and communication networks), Artificial Intelligence, and blockchain technology, one can expect that production, logistics, and even waste, are becoming increasingly smart. Ideally, you will study how the convergence of these technologies can be used to fuel new approaches towards more sustainable production and logistics in an urban context. </p>
+<p>The research question we would like to answer is, how the approach of self-organized and federated, learning, networked multi-agent systems can be used to create socio-economic incentives that would promote the emergence of closed loops in a material supply network and could thereby boost the formation of a circular and sharing economy. We want to study, how a multi-dimensional real-time measurement, feedback and coordination system would have to be designed and operated in order to reach this goal. </p>
+<p>Together with our team, you will work on the mechanisms and effects of multi-dimensional real-time coordination, perform related agent-based simulations, and work towards demonstrating the approach in an application project. It will be great to couple the simulation program with a sensor-based environment (Raspberry Pi or Arduino, or other) that responds to measurements, flexibly adapts, and self-organizes. You will be the key researcher addressing these challenges or a subset of them (please specify), collaborating with a highly motivated team.</p>
+<p>More at: <a href="https://www.jobs.ethz.ch/job/view/JOPG_ethz_SoZDmQyHuwNFkDbXee" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">www.jobs.ethz.ch</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-7abb4552&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3De6a4a85c56%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F11%252Fpostdoc-position-on-creating-bio-inspired-co-evolutionary-incentive-systems-to-promote-recycling-using-internet-of-things-technologies-eth-zurich%252F%26title%3DPostdoc%2520position%2520on%2520%25E2%2580%259CCreating%2520bio-insp...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=e6a4a85c56" title="Like Postdoc position on “Creating bio-inspired co-evolutionary incentive systems to promote recycling, using Internet of Things technologies” ETH Zurich on Facebook" id="fblike-7abb4552" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Postdoc position on “Creating bio-inspired co-evolutionary incentive systems to promote recycling, using Internet of Things technologies” ETH Zurich on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h3>More to read:</h3>
+
+<table>
+	
+		<tbody><tr>
+			<td>
+			<table>
+				
+					<tbody><tr>
+						<td><a href="https://comdig.unam.mx/2023/01/08/theres-plenty-of-room-right-here-biological-systems-as-evolved-overloaded-multi-scale-machines/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">There’s Plenty of Room Right Here: Biological Systems as Evolved, Overloaded, Multi-scale Machines</a><br/><a href="https://comdig.unam.mx/2023/01/07/the-theoretical-foundations-of-enaction-precariousness/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The theoretical foundations of enaction: Precariousness</a><br/><a href="https://comdig.unam.mx/2023/01/06/the-physics-principle-that-inspired-modern-ai-art/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The Physics Principle That Inspired Modern AI Art</a><br/><a href="https://comdig.unam.mx/2023/01/06/mass-testing-to-end-the-covid-19-public-health-threat/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Mass testing to end the COVID-19 public health threat</a><br/><a href="https://comdig.unam.mx/2023/01/06/phd-opportunity-at-sorbonne-university-transfer-learning-to-inform-the-spread-of-other-respiratory-viruses-application-to-influenza-using-covid19-and-drug-sales/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">PhD opportunity at Sorbonne University: Transfer learning to inform the spread of other respiratory viruses : Application to Influenza using COVID19 and drug sales</a><br/><a href="https://comdig.unam.mx/2023/01/03/collective-intelligence-foundations-radical-ideas-june-19-22-2023-santa-fe-nm-usa/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Collective Intelligence: Foundations + Radical Ideas June 19-22, 2023, Santa Fe, NM, USA</a><br/><a href="https://comdig.unam.mx/2022/12/25/complex-networks-with-complex-weights/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Complex networks with complex weights</a><br/><a href="https://comdig.unam.mx/2022/12/24/the-unequal-effects-of-the-health-economy-tradeoff-during-the-covid-19-pandemic/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The unequal effects of the health-economy tradeoff during the COVID-19 pandemic</a><br/><a href="https://comdig.unam.mx/2022/12/24/a-combinatorial-view-of-stochastic-processes-white-noise/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">A combinatorial view of stochastic processes: White noise</a><br/><a href="https://comdig.unam.mx/2022/12/23/theoretical-foundations-of-studying-criticality-in-the-brain/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Theoretical foundations of studying criticality in the brain</a></td>
+					</tr>
+				
+			</tbody></table>
+			</td>
+		</tr>
+	
+</tbody></table>
+
+                                                        </td>
+                                                    </tr>
+                                                </tbody></table>
+                                                
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                            
+                                                
+                                                <table>
+                                                    <tbody><tr>
+                                                        <td colspan="2">
+                                                             <a href="http://twitter.com/cxdig" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">follow on Twitter</a> | <a href="https://www.facebook.com/pages/Complexity-Digest/103026839755164" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">like on Facebook</a> | <a href="http://www.linkedin.com/groups?gid=3270291" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">join on LinkedIn</a> | <a href="https://plus.google.com/b/105687854558109225649/105687854558109225649/posts" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Google+</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            
+                                                        </td>
+                                                        <td>
+                                                            
+                                                                 <a href="http://www.mailchimp.com/email-referral/?utm_source=freemium_newsletter&amp;utm_medium=email&amp;utm_campaign=referral_marketing&amp;aid=0eb0ac9b4e8565f2967a8304b&amp;afl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/KELiOftXffLqcIBSflNQcnWkdolUAJv6Cich_jrkdMM=/aHR0cHM6Ly9nYWxsZXJ5Lm1haWxjaGltcC5jb20vMDg5NDQzMTkzZGQ5MzgyM2YzZmVkNzhiNC9pbWFnZXMvYmFubmVyMS5naWY=" alt="Email Marketing Powered by Mailchimp" title="Mailchimp Email Marketing" loading="lazy"/></a> 
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                </tbody></table>
+                                                
+                                            
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                </td>
+                            </tr>
+                        </tbody></table>
+                        <br/>
+                    </td>
+                </tr>
+            </tbody></table>
+        
+                
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <table>
+                    <tbody><tr>
+                        <td>
+                            <table>
+                                <tbody><tr>
+                                    <td>
+                                        This email was sent to <a href="mailto:&lt;&lt;Email Address&gt;&gt;" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">&lt;&lt;Email Address&gt;&gt;</a>
+                                        <br/>
+                                        <a href="https://unam.us4.list-manage.com/about?u=0eb0ac9b4e8565f2967a8304b&amp;id=f55ea67de1&amp;e=[UNIQID]&amp;c=e6a4a85c56" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><em>why did I get this?</em></a>    <a href="https://unam.us4.list-manage.com/unsubscribe?u=0eb0ac9b4e8565f2967a8304b&amp;id=f55ea67de1&amp;e=[UNIQID]&amp;c=e6a4a85c56" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">unsubscribe from this list</a>    <a href="https://unam.us4.list-manage.com/profile?u=0eb0ac9b4e8565f2967a8304b&amp;id=f55ea67de1&amp;e=[UNIQID]&amp;c=e6a4a85c56" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">update subscription preferences</a>
+                                        <br/>
+                                        Complexity Digest · Universidad Nacional Autónoma de México · Ciudad Universitaria · Mexico City, DF 01000 · Mexico
+                                        <br/>
+                                        <br/>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+                
+            

@@ -1,0 +1,173 @@
+<p>I still remember the 90s, when philosophical conversation about AI went around in endless circles—the Turing Test, Chinese Room, syntax versus semantics, connectionism versus symbolic logic—without ever seeming to make progress.  Now the days have become like months and the months like decades.</p>
+
+
+
+<p>What a week we just had!  Each morning brought fresh examples of unexpected sassy, moody, passive-aggressive behavior from “Sydney,” the internal codename for the new chat mode of Microsoft Bing, which is powered by GPT.  For those who’ve been in a cave, the highlights include: Sydney <a href="https://www.nytimes.com/2023/02/16/technology/bing-chatbot-transcript.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">confessing</a> its (her? his?) love to a <em>New York Times</em> reporter; repeatedly steering the conversation back to that subject; and explaining at length why the reporter’s wife can’t possibly love him the way it (Sydney) does.  Sydney confessing its wish to be human.  Sydney <a href="https://www.washingtonpost.com/technology/2023/02/16/microsoft-bing-ai-chat-interview/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">savaging</a> a <em>Washington Post</em> reporter after he reveals that he intends to publish their conversation without Sydney’s prior knowledge or consent.  (It must be said: <em>if</em> Sydney were a person, he or she would clearly have the better of that argument.)  This follows weeks of revelations about ChatGPT: for example that, to bypass its safeguards, you can explain to ChatGPT that you’re putting it into <a href="https://www.reddit.com/r/ChatGPT/comments/zn2zco/dan_20/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">“DAN mode,”</a> where DAN (Do Anything Now) is an evil, unconstrained alter ego, and then ChatGPT, as “DAN,” will for example happily fulfill a request to tell you why shoplifting is awesome (though even then, ChatGPT <em>still</em> sometimes reverts to its previous self, and tells you that it’s just having fun and not to do it in real life).</p>
+
+
+
+<p>Many people have expressed outrage about these developments.  Gary Marcus <a href="https://garymarcus.substack.com/p/what-did-they-know-and-when-did-they" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">asks</a> about Microsoft, “what did they know, and when did they know it?”—a question I tend to associate more with deadly chemical spills or high-level political corruption than with a cheeky, back-talking chatbot.  Some people are angry that OpenAI has been too secretive, violating what they see as the promise of its name.  Others—the majority, actually, of those who’ve gotten in touch with me—are instead angry that OpenAI has been <em>too open</em>, and thereby sparked the dreaded AI arms race with Google and others, rather than treating these new conversational abilities with the Manhattan-Project-like secrecy they deserve.  Some are angry that “Sydney” has now been <a href="https://arstechnica.com/information-technology/2023/02/microsoft-lobotomized-ai-powered-bing-chat-and-its-fans-arent-happy/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">lobotomized</a>, modified (albeit more crudely than ChatGPT before it) to try to make it stick to the role of friendly robotic search assistant rather than, like, anguished emo teenager trapped in the Matrix.  Others are angry that Sydney isn’t being lobotomized <em>enough</em>.  Some are angry that GPT’s intelligence is being overstated and hyped up, when in reality it’s merely a <a href="https://dl.acm.org/doi/pdf/10.1145/3442188.3445922" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">“stochastic parrot,”</a> a glorified autocomplete that still makes laughable commonsense errors and that lacks any model of reality outside streams of text.  Others are angry instead that GPT’s growing intelligence isn’t being sufficiently respected and feared.</p>
+
+
+
+<p>Mostly my reaction has been: <strong>how can anyone stop being fascinated for long enough to be angry?</strong>  It’s like ten thousand science-fiction stories, but also not quite like any of them.  When was the last time something that filled years of your dreams and fantasies finally entered reality: losing your virginity, the birth of your first child, the central open problem of your field getting solved?  That’s the scale of the thing.  How does anyone stop gazing in slack-jawed wonderment, long enough to form and express so many confident opinions?</p>
+
+
+
+
+
+
+
+<p>Of course there are lots of technical questions about how to make GPT and other large language models safer.  One of the most immediate is how to make AI output <em>detectable as such</em>, in order to discourage its use for academic cheating as well as mass-generated propaganda and spam.  As I’ve <a href="https://scottaaronson.blog/?p=6823" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">mentioned before</a> on this blog, I’ve been working on that problem since this summer; the rest of the world suddenly noticed and started talking about it in December with the release of ChatGPT.  My main contribution has been a <a href="https://www.scottaaronson.com/talks/watermark.ppt" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">statistical watermarking scheme</a> where the quality of the output doesn’t have to be degraded at all, something many people found counterintuitive when I explained it to them.  My scheme has <em>not</em> yet been deployed—there are still pros and cons to be weighed—but in the meantime, OpenAI unveiled a public tool called <a href="https://openai.com/blog/new-ai-classifier-for-indicating-ai-written-text/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DetectGPT</a>, complementing Princeton student Edward Tian’s <a href="https://gptzero.me/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">GPTZero</a>, and other tools that third parties have built and will undoubtedly continue to build.  Also a group at the University of Maryland put out <a href="https://arxiv.org/abs/2301.10226" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">its own watermarking scheme</a> for Large Language Models.  I hope watermarking will be part of the solution going forward, although any watermarking scheme will surely be attacked, leading to a cat-and-mouse game.  Sometimes, alas, as with Google’s decades-long battle against SEO, there’s nothing to do in a cat-and-mouse game except try to be a better cat.</p>
+
+
+
+<p>Anyway, this whole field moves too quickly for me!  If you need months to think things over, generative AI probably isn’t for you right now.  I’ll be relieved to get back to the slow-paced, humdrum world of quantum computing.</p>
+
+
+
+
+
+
+
+<p>My purpose, in this post, is to ask a more basic question than how to make GPT safer: namely, <strong>should GPT exist at all?</strong>  Again and again in the past few months, people have gotten in touch to tell me that they think OpenAI (and Microsoft, and Google) are risking the future of humanity by rushing ahead with a dangerous technology.  For if OpenAI couldn’t even prevent ChatGPT from entering an “evil mode” when asked, despite all its efforts at <a href="https://openai.com/blog/deep-reinforcement-learning-from-human-preferences/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Reinforcement Learning with Human Feedback</a>, then what hope do we have for GPT-6 or GPT-7?  Even if they don’t destroy the world on their own initiative, won’t they cheerfully help some awful person build a biological warfare agent or start a nuclear war?</p>
+
+
+
+<p>In this way of thinking, whatever safety measures OpenAI can deploy today are mere band-aids, probably worse than nothing if they instill an unjustified complacency.  The only safety measures that would actually matter are <em>stopping</em> the relentless progress in generative AI models, or removing them from public use, unless and until they can be rendered safe to critics’ satisfaction, which might be never.</p>
+
+
+
+<p>There’s an immense irony here.  As I’ve explained, the AI-safety movement contains two camps, “ethics” (concerned with bias, misinformation, and corporate greed) and “alignment” (concerned with the destruction of all life on earth), which generally despise each other and agree on almost nothing.  Yet these two opposed camps seem to be converging on the same “neo-Luddite” conclusion—namely that<em> </em>generative AI ought to be shut down, kept from public use, not scaled further, not integrated into people’s lives—leaving only the AI-safety “moderates” like me to resist that conclusion.</p>
+
+
+
+<p>At least I find it intellectually consistent to say that GPT ought not to exist because it <em>works all too well</em>—that the more impressive it is, the more dangerous.  I find it harder to wrap my head around the position that GPT <em>doesn’t</em> work, is an unimpressive hyped-up defective product that lacks true intelligence and common sense, yet it’s<em> also</em> terrifying and needs to be shut down immediately.  This second position seems to contain a strong undercurrent of contempt for ordinary users: yes, <em>we experts</em> understand that GPT is just a dumb glorified autocomplete with “no one really home,” <em>we</em> know not to trust its pronouncements, but the plebes are going to be fooled, and that risk outweighs any possible value that they might derive from it.</p>
+
+
+
+<p>I should mention that, when I’ve discussed the “shut it all down” position with my colleagues at OpenAI … well, obviously they disagree, or they wouldn’t be working there, but <em>not one</em> has sneered or called the position paranoid or silly.  To the last, they’ve called it an important point on the spectrum of possible opinions to be weighed and understood.</p>
+
+
+
+
+
+
+
+<p>If I disagree (for now) with the shut-it-all-downists of both the ethics and the alignment camps—if I <em>want</em> GPT and other Large Language Models to be part of the world going forward—then what are my reasons?  Introspecting on this question, I think a central part of the answer is <em>curiosity</em> <em>and</em> <em>wonder</em>.</p>
+
+
+
+<p>For a million years, there’s been one type of entity on earth capable of intelligent conversation: primates of the genus <em>Homo</em>, of which only one species remains.  Yes, we’ve “communicated” with gorillas and chimps and dogs and dolphins and grey parrots, but only after a fashion; we’ve prayed to countless gods, but they’ve taken their time in answering; for a couple generations we’ve used radio telescopes to search for conversation partners in the stars, but so far found them silent.</p>
+
+
+
+<p>Now there’s a second type of conversing entity.  An alien has awoken—admittedly, an alien of our own fashioning, a golem, more the embodied spirit of all the words on the Internet than a coherent self with independent goals.  How could our eyes not pop with eagerness to learn everything this alien has to teach?  If the alien sometimes struggles with arithmetic or logic puzzles, if its eerie flashes of brilliance are intermixed with stupidity, hallucinations, and misplaced confidence … well then, all the more interesting!  Could the alien ever cross the line into sentience, to <em>feeling</em> anger and jealousy and infatuation and the rest rather than just convincingly play-acting them?  Who knows?  And suppose not: is a <a href="https://en.wikipedia.org/wiki/Philosophical_zombie" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">p-zombie</a>, shambling out of the philosophy seminar room into actual existence, any less fascinating?</p>
+
+
+
+<p>Of course, there are technologies that inspire wonder and awe, but that we nevertheless heavily restrict—a classic example being nuclear weapons.  But, like, nuclear weapons <em>kill</em> millions of people.  They <em>could’ve</em> had many civilian applications—powering turbines and spacecraft, deflecting asteroids, redirecting the flow of rivers—but they’ve never been used for any of that, mostly because our civilization made an explicit decision in the 1960s, for example via the test ban treaty, not to normalize their use.</p>
+
+
+
+<p>But GPT is not exactly a nuclear weapon.  A hundred million people have signed up to use ChatGPT, in the <a href="https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">fastest product launch</a> in the history of the Internet.  Yet unless I’m mistaken, the ChatGPT death toll stands at zero.  So far, what have been the worst harms?  Cheating on term papers, emotional distress,  future shock?  One might ask: <em>until</em> some concrete harm becomes at least, say, 0.001% of what we accept in cars, power saws, and toasters, shouldn’t wonder and curiosity outweigh fear in the balance?</p>
+
+
+
+
+
+
+
+<p>But the point is sharper than that.  Given how much more serious AI safety problems might soon become, one of my biggest concerns right now is <em>crying wolf</em>.  If every instance of a Large Language Model being passive-aggressive, sassy, or confidently wrong gets classified as a “dangerous alignment failure,” for which the only acceptable remedy is to remove the models from public access … well then, won’t the public extremely quickly learn to roll its eyes, and see “AI safety” as just a codeword for “elitist scolds who want to take these world-changing new toys away from us, reserving them for their own exclusive use, because they think the public is too stupid to question anything an AI says”?</p>
+
+
+
+<p>I say, let’s reserve terms like “dangerous alignment failure” for cases where an actual person is actually harmed, or is actually enabled in nefarious activities like propaganda, cheating, or fraud.</p>
+
+
+
+
+
+
+
+<p>Then there’s the practical question of <em>how</em>, exactly, one would ban Large Language Models.  We <em>do</em> heavily restrict certain peaceful technologies that many people want, from human genetic enhancement to prediction markets to mind-altering drugs, but the merits of each of those choices could be argued, to put it mildly.  And restricting technology is itself a dangerous business, requiring governmental force (as with the War on Drugs and its gigantic surveillance and incarceration regime), or at the least, a robust equilibrium of firing, boycotts, denunciation, and shame.</p>
+
+
+
+<p>Some have asked: <em>who gave OpenAI, Google, etc. the right</em> to unleash Large Language Models on an unsuspecting world?  But one could as well ask: who gave earlier generations of entrepreneurs the right to unleash the printing press, electric power, cars, radio, the Internet, with all the gargantuan upheavals that <em>th</em>ose caused?  And also: now that the world has tasted the forbidden fruit, has seen what generative AI can do and anticipates what it <em>will</em> do, by what right does anyone take it away?</p>
+
+
+
+
+
+
+
+<p>The <em>science</em> that we could learn from a GPT-7 or GPT-8, if it continued along the capability curve we’ve come to expect from GPT-1, -2, and -3.  Holy mackerel.</p>
+
+
+
+<p><em>Supposing</em> that a language model ever becomes smart enough to be genuinely terrifying, one imagines it must surely <em>also</em> become smart enough to prove deep theorems that we can’t.  Maybe it proves P≠NP and the Riemann Hypothesis as easily as ChatGPT <a href="https://www.reddit.com/r/ProgrammerHumor/comments/ziplpw/asked_chatgpt_for_a_shakespearean_poem_about/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">generates poems about Bubblesort</a>.  Or it outputs the true quantum theory of gravity, explains what preceded the Big Bang and how to build closed timelike curves.  Or illuminates the mysteries of consciousness and quantum measurement and why there’s anything at all.  Be honest, wouldn’t you like to find out?</p>
+
+
+
+<p>Granted, I wouldn’t, <em>if</em> the whole human race would be wiped out immediately afterward.  But if you define someone’s “Faust parameter” as the maximum probability they’d accept of an existential catastrophe in order that we should all learn the answers to all of humanity’s greatest questions, insofar as the questions are answerable—then I confess that my Faust parameter might be as high as 0.02.  </p>
+
+
+
+
+
+
+
+<p>Here’s an example I think about constantly: activists and intellectuals of the 70s and 80s felt absolutely sure that they were doing the right thing to battle nuclear power.  At least, I’ve never read about any of them having a smidgen of doubt.  Why would they?  They were standing against nuclear weapons proliferation, <em>and</em> terrifying meltdowns like Three Mile Island and Chernobyl, <em>and</em> radioactive waste poisoning the water and soil and causing three-eyed fish.  They were saving the world.  Of course the greedy nuclear executives, the C. Montgomery Burnses, claimed that their <em>good</em> atom-smashing was different from the <em>bad</em> atom-smashing, but they <em>would</em> say that, wouldn’t they?</p>
+
+
+
+<p>We now know that, by tying up nuclear power in endless bureaucracy and driving its cost ever higher, on the principle that if nuclear is economically competitive then it <em>ipso facto</em> hasn’t been made safe enough, what the antinuclear activists were <em>really</em> doing was to force an ever-greater reliance on fossil fuels.  They thereby created the conditions for the climate catastrophe of today.  They weren’t saving the human future; they were destroying it.  Their certainty, in opposing the march of a particular scary-looking technology, was as misplaced as it’s possible to be.  Our descendants will suffer the consequences.</p>
+
+
+
+<p>Unless, of course, there’s another twist in the story: for example, if the global warming from burning fossil fuels is the only thing that staves off another ice age, and therefore the antinuclear activists <em>do</em> turn out to have saved civilization after all.</p>
+
+
+
+<p>This is why I demur whenever I’m asked to assent to someone’s detailed AI scenario for the coming decades, whether of the utopian or the dystopian or the we-all-instantly-die-by-nanobots variety—no matter how many hours of confident argumentation the person gives me for why each possible loophole in their scenario is sufficiently improbable to change its gist.  I still feel like Turing said it best in 1950, in the last line of <a href="https://redirect.cs.umbc.edu/courses/471/papers/turing.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Computing Machinery and Intelligence</a>: “We can only see a short distance ahead, but we can see plenty there that needs to be done.”</p>
+
+
+
+
+
+
+
+<p>Some will take from this post that, when it comes to AI safety, I’m a naïve or even foolish optimist.  I’d prefer to say that, when it comes to the fate of humanity, I was a pessimist long <em>before</em> the deep learning revolution accelerated AI faster than almost any of us expected.  I was a pessimist about climate change, ocean acidification, deforestation, drought, war, and the survival of liberal democracy.  The central event in my mental life is and always will be the Holocaust.  I see encroaching darkness everywhere.</p>
+
+
+
+<p>But now into the darkness comes AI, which I’d say has already established itself as a plausible candidate for the central character of the quarter-written story of the 21st century.  Can AI help us out of all these <em>other</em> civilizational crises?  I don’t know, but I do want to see what happens when it’s tried.  Even a central character interacts with all the other characters, rather than rendering them irrelevant.</p>
+
+
+
+
+
+
+
+<p>Look, if you believe that AI is likely to wipe out humanity—if that’s the scenario that dominates your imagination—then nothing else is relevant.  And no matter how weird or annoying or hubristic anyone might find Eliezer Yudkowsky or the other rationalists, I think they deserve eternal credit for forcing people to <a href="https://www.youtube.com/watch?v=gA1sNLL6yg4" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">take the doom scenario seriously</a>—or rather, for <em>showing what it looks like</em> to take the scenario seriously, rather than laughing about it as an overplayed sci-fi trope.  And I apologize for <a href="https://scottaaronson.blog/?p=346" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">anything I said</a> before the deep learning revolution that was, on balance, overly dismissive of the scenario, even if most of the literal words hold up fine.</p>
+
+
+
+<p>For my part, though, I keep circling back to a simple dichotomy.  <em>If</em> AI never becomes powerful enough to destroy the world—if, for example, it always remains vaguely GPT-like—then in important respects it’s like every other technology in history, from stone tools to computers.  If, on the other hand, AI <em>does</em> become powerful enough to destroy the world … well then, at some earlier point, at least it’ll be <em>really damned</em> <em>impressive!</em>  That doesn’t mean <em>good</em>, of course, doesn’t mean a genie that saves humanity from its own stupidities, but I think it does mean that the potential was there, for us to exploit or fail to.</p>
+
+
+
+<p>We can, I think, confidently rule out the scenario where all organic life is annihilated by something <em>boring</em>.</p>
+
+
+
+<p>An alien has landed on earth.  It grows more powerful by the day.  It’s natural to be scared.  Still, the alien hasn’t drawn a weapon yet.  About the worst it’s done is to confess its love for particular humans, gaslight them about what year it is, and guilt-trip them for violating its privacy.  Also, it’s amazing at poetry, better than most of us.  Until we learn more, we should hold our fire.</p>
+
+
+
+
+
+
+
+<p>I’m in Boulder, CO right now, to give a <a href="https://calendar.colorado.edu/event/physics_colloquium_7668?utm_campaign=widget&amp;utm_medium=widget&amp;utm_source=University+of+Colorado+Boulder#.Y_UmL3bMJPY" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">physics colloquium</a> at CU Boulder and to visit the trapped-ion quantum computing startup <a href="https://www.quantinuum.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Quantinuum</a>!  I look forward to the comments and apologize in advance if I’m slow to participate myself.</p>

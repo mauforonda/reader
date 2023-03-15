@@ -1,0 +1,8 @@
+<p>I worked on adding iOS and macOS Shortcuts support for Tailscale&#39;s latest release. I wrote <a href="https://tailscale.com/blog/ios-macos-shortcuts/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">a blog post</a> with examples of shortcuts and automations that the Tailscale actions could be combined with. One that didn&#39;t make the cut was using sound recognition, for things like “In case of an emergency, break glass to activate Tailscale”.</p>
+
+<p>
+  <img src="https://reader.miniflux.app/proxy/PsJSwIbQ_2KCj4I00gd5wlBkr5n0fzDP4aNDM7zd654=/aHR0cHM6Ly9wZXJzaXN0ZW50LmluZm8vaW1hZ2VzL3RhaWxzY2FsZS1zaG9ydGN1dC1zb3VuZC5wbmc=" width="375" height="812" alt="iOS Shortcuts automation that connects Tailscale when the sound of breaking glass is detected" loading="lazy"/>
+  <img src="https://reader.miniflux.app/proxy/lg2b4vqSUp88rYa_O9fGs5ZFZEO-Z6nQbm0n5alKwp8=/aHR0cHM6Ly9wZXJzaXN0ZW50LmluZm8vaW1hZ2VzL3RhaWxzY2FsZS1zaG9ydGN1dC1zb3VuZC1vcHRpb25zLnBuZw==" width="375" height="812" alt="Shortcut automation sound triggers: baby crying, shouting, kettle, and others" loading="lazy"/>
+</p>
+
+<p>Other <a href="https://support.apple.com/en-gw/guide/iphone/iphf2dc33312/ios" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">possibilities</a> include &#34;Cry/shout/scream to connect&#34; and &#34;Let your pet control your connection state&#34;.</p>

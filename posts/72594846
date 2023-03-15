@@ -1,0 +1,131 @@
+<p><strong>Vision models are about to get way more capable – and human:</strong><br/><em>…Google swaps out vision model guts for a transformer, scales it, and gets some promising results…</em><br/>Google researchers have ripped out the guts of standard large-scale computer vision models and replaced them with a Vision Transformer (ViT) – an architecture modeled on the transformer which has proved so successful in domains like text. They’ve also scaled this ViT to 22B parameters (up from a record of 4B parameters for a ViT previously). <br/>   The results are compelling and echo the returns-from-scale effects seen in language: “When evaluated on downstream tasks,” they write. “ViT-22B demonstrates increasing performance with scale. We further observe other interesting benefits of scale, including an improved tradeoff between fairness and performance, state-of-the-art alignment to human visual perception in terms of shape/texture bias, and improved robustness.” </p>
+
+
+
+<p><strong>JFT just keeps getting bigger: </strong>Google has a mostly-secret giant image dataset called ;’JFT’ which was previously reported to be about 300 million images. Here, the paper says they trained the ViT-22B on a version of JFT which had been “extended to around 4B images”. </p>
+
+
+
+<p><strong>Humanlike biases:</strong> “”The ViT-22B models have the highest ever recorded shape bias in vision models: while most models have a strong texture bias (approx. 20–30% shape bias / 70–80% texture bias); humans are at 96% shape / 4% texture bias and ViT-22B-384 achieves a previously unseen 87% shape bias / 13% texture bias. Overall, ViT-22B measurably improves alignment to human visual object recognition,” the authors write. </p>
+
+
+
+<p><strong>Why this matters – scale develops human-like qualities: </strong>There’s a weird trend in contemporary AI where as we scale-up the amount of pre-training dumped into transformer-architecture models we end up with systems that display human-like qualities. This has been most prominent in language, but it has also started showing up in RL, like DeepMind’s recent result where massive pre-train leads to an agent that displays humanlike timescale-adaption to new tasks. This ViT-22B result, while not setting a new state-of-the-art, is interesting for a similar reason – it displays a major jump in shape/texture bias that brings the system in distribution with human visual perception, whereas previous convnet based systems were very far off here. <br/>   There’s something strange and important going on here. I think transformers seem to allow for emergent complexity at scale, where pre-training leads to systems which arrive at humanlike performance qualities given enough pretraining. <br/><strong>   Read more:</strong> <a href="https://arxiv.org/abs/2302.05442" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Scaling Vision Transformers to 22 Billion Parameters (arXiv)</a>.</p>
+
+
+
+<p>​<br/>####################################################<br/></p>
+
+
+
+<p><strong>Google might have invented a better optimizer? (Via AI, of course). </strong><br/><em>…Could Lion replace Adam? There’s a chance!…</em><br/>Deep learning projects have a few essential components – the architecture (e.g, a residual network, or a transformer model) and the optimizer (e.g, Adam). These components don’t tend to change much in large-scale projects – once people figure out something that works well for complicated tasks like training ImageNet, everyone tends to converge on using the same basic thing. For many years now, most projects have used the ‘Adam’ optimizer to optimizer their models during training. Now Google says that it has used some clever AI search approaches to help it identify a better optimizer, called Lion. The reason this is worth paying attention to is Lion seems to work well on large-scale, real world tasks like training ImageNet-scale computer vision systems. </p>
+
+
+
+<p><strong>What they did: </strong>Google’s main contribution here is “a method to formulate algorithm discovery as program search”, which they apply to figuring out a better optimizer. They use a symbolic approach where they shrink the search problem down into a somewhat tractable space and, crucially, they test out candidate optimizers on “metavalidation tasks that are larger than the proxy tasks by increasing the model size and training steps, to select the programs that generalize beyond proxy tasks then further simplify them.” <br/>    Add in a bunch of computation and out pops an optimizer they call EvoLved Sign Momentum, or Lion for short (<em>really grasping at straws with this acronym, folks!).</em> Lion “differs from various adaptive algorithms by only tracking momentum and leveraging the sign operation to calculate updates, leading to lower memory overhead and uniform update magnitudes across all dimensions”.</p>
+
+
+
+<p><strong>Good performance: </strong>Google tests Lion on a large range of tasks and finds that it “demonstrates outstanding performance across a range of models (Transformer, MLP, ResNet, U-Net, and Hybrid) and tasks (image classification, vision-language contrastive learning, diffusion, language modeling, and fine-tuning)”.It even sets a new high score on ImageNet, a competitive computer vision benchmark. </p>
+
+
+
+<p><strong>Why this matters: </strong>Lion may be fundamentally better than Adam – if true, that’s a big deal. It’s not often you see meaningful improvements in very well studied, generic parts of AI research. Add to the fact that Lion was discovered via a human-AI search process (the humans designed the search system, the search system found Lion), and you have the makings of a notable result. <br/><strong>   Read more</strong>: <a href="https://arxiv.org/abs/2302.06675" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Symbolic Discovery of Optimization Algorithms (arXiv)</a>.<br/><strong>   Get the </strong><a href="https://github.com/google/automl/tree/master/lion" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><strong>code</strong> here (GitHub)</a>.</p>
+
+
+
+<p><br/>####################################################</p>
+
+
+
+<p><strong>Globalization? That’s so 20th century. The 21st century is about balkanization through sovereign infrastructure: </strong><br/><em>…Dawn of the era of sovereign AI…</em><br/>Researchers with the Tony Blair Institute for Global Change (TBI) have written a report for how England can thrive in the 21st century – one of the key ideas in the report is “Government-led development of sovereign general-purpose AI systems, enabled by the required supercomputing capabilities, to underpin broad swaths of public-service delivery.”</p>
+
+
+
+<p><strong>AI balkanization was probably inevitable</strong>: This recommendation is part of a wave of AI balkanization that’s sweeping across the world as various people realize that it’s unlikely there are ‘one size fits all’ models, both for ideological reasons as well as for national security reasons. (See the Gab CEO wanted to make a Christian LLM, <a href="https://jack-clark.net/2023/02/20/import-ai-318-rl-and-addiction-toolformer-and-theology-and-ai/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Import AI 318</a>). This is also accompanied by various nationalistic efforts to create country-specific GPT3 models. <br/>   “Given these AI systems will soon be foundational to all aspects of our society and economy, it would be a risk to our national security and economic competitiveness to become entirely dependent on external providers,” the TBI researchers write. “Leading actors in the private sector are spending billions of dollars developing such systems so <strong>there may only be a few months (</strong><em>emphasis mine – Jack)</em> for policy that will enable domestic firms and our public sector to catch up.”</p>
+
+
+
+<p><strong>Why this matters:</strong> Systems like ChatGPT have ratcheted awareness of AI upward in most developed economies in a significant, irreversible way (much like how AlphaGo in 2016 led to increased awareness of AI in China). As a consequence there are now tons of policymakers looking around for ideas to latch onto – I expect we’ll see more recommendations for sovereign AI capabilities in the future. (There’s tons of other interesting stuff in the report, but this particular rec jumped out at me).<br/>   <strong>Read more</strong>: <a href="https://institute.global/policy/new-national-purpose-innovation-can-power-future-britain" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">A New National Purpose: Innovation Can Power the Future of Britain (Tony Blair Institute for Global Change)</a>.</p>
+
+
+
+<p>####################################################</p>
+
+
+
+<p><strong>Facebook half-releases some very good language models:</strong><br/><em>…And they end up on BitTorrent… The proliferation will continue until AI policy goes through vast changes…</em><br/>Facebook has built and partially released LLaMa, a set of language models ranging from 7B to 65B parameters which appear to be on par with famously good models like Chinchilla (70B) and PaLM-540B. After circulating the weights to seemingly anyone with a .edu address, they’ve also ended up on BitTorrent. The key thing here is:</p>
+
+
+
+<ol>
+<li>Facebook has shown it is able to develop pretty good language models (compared to OPT, the not-very-good GPT3 replication Facebook put out a few months ago), and </li>
+
+
+
+<li>That unlike Chinchilla, PaLM, or OpenAI’s models, Facebook is releasing the <em>weights</em> of these LLaMa models to people who filll out an access form. That opens up a whole bunch of cool uses (and abuses) compared to gating access to language models via APIs. </li>
+
+
+
+<li>Shortly after releasing the weights the inevitable happened – LLaMa models are now floating around on BitTorrent.</li>
+</ol>
+
+
+
+<p><strong>What are the LLaMas and how good are they? </strong>The LLaMa family of models are a family of language models trained on a huge amount of data – more than 1 trillion tokens (compared to hundreds of billions for LMs like GPT3). The data sources include two variants of CommonCrawl, GitHub, WikiPedia, Gutenberg and Books3, ArXiv and Stack Exchange. <br/>   In tests on a range of zero-shot reasoning task, the largest LLaMa models perform on par (or slightly better than) ‘Palm’, Google’s vast 540B parameter language model. They also do well on known-hard benchmarks like TriviaQA and some codegen benchmarks. They do less impresively on MMLU (Massive Multitask Language Understanding), suggesting they have a ways to go there; though after they conduct instruction finetuning they’re able to increase performance more. </p>
+
+
+
+<p><strong>Why this matters – AI governance is hard when there are lots of models: </strong>There’s some thinking in the sprawling AI policy/governance communities that proliferation of models is bad; given the fact these models have broadly unknown capabilities, the more models are out there, the more you’re rolling the dice on someone discovering a genuinely dangerous feature in a widely distributed model. Therefore, a lot of governance/policy conversations trend towards control – how can we somehow control the proliferation of models and also the computers on which these models are trained. <br/>   By releasing Llama (<s>yes it’s behind an access form but I bet you $100 the weights will be floating around on a torrent service in &lt;6 months</s> – <em>haha, I wrote that at the end of Feb and the weights started floating around beginning of March</em>), Facebook is shortening the delay between development of frontier capabilities like those found in Palm and GPT3 and the diffusion of these capabilities into the ungovernable open internet/ecosystem. <br/>   I’m not claiming this is necessarily bad per se – in fact, I imagine people are going to do tons of great science and experiments with LLaMa. I am however pointing out that this represents a kind of ‘race to the bottom’ in terms of moving from maximal control to maximal diffusion of models and these incentives are powerful  – Facebook is, after all, trying to exploit an ‘open access’ ecological niche to distinguish itself in an ecosystem. <br/>   Next up will likely be a fully open source language model – <em>stares pointedly at Stability.ai / CarperAI (</em><a href="https://jack-clark.net/2022/10/25/import-ai-307-copilot-lawsuit-stability-raises-101m-us-v-china-chiplomacy/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><em>Import AI 307</em></a><em>). </em><br/><strong>   Read more and download the research paper here</strong>: <a href="https://research.facebook.com/publications/llama-open-and-efficient-foundation-language-models/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">LLaMA: Open and Efficient Foundation Language Models (Facebook AI Research)</a>.</p>
+
+
+
+<p><br/>####################################################</p>
+
+
+
+<p><strong>Amazon partners with Hugging Face to add more AI to AWS:</strong><br/><em>…The Game of Clouds continues…</em><br/>AI companies are a bit like upstart factions in George RR Martin’s rambling epic ‘Game of Thrones’, while cloud companies play the role of hard political power (the ‘Thrones’). As part of this <em>game of clouds</em> Amazon has recently signed a strategic partnership with French AI startup Hugging Face. As part of the agreement, “Customers can now easily fine-tune and deploy state-of-the-art Hugging Face models in just a few clicks on Amazon SageMaker and Amazon Elastic Computing Cloud (EC2), taking advantage of purpose-built machine learning accelerators including AWS Trainium and AWS Inferentia,” according to a blog from Hugging Face. </p>
+
+
+
+<p><strong>Why this matters:</strong> I think clouds such as those operated by Google, Microsoft, and Amazon, all have a shot at being the major distribution platforms for some AI technologies, so AWS partnering with HuggingFace is worth noting. If HF models being integrated into Sagemakers drives more usage of it, expect Amazon to pursue more deals like this,</p>
+
+
+
+<p><strong>Analogy-stretching joke:</strong> In this warped metaphor, TSMC is the Iron Bank.<br/>   <strong>Read more:</strong> <a href="https://huggingface.co/blog/aws-partnership" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Hugging Face and AWS partner to make AI more accessible (Hugging Face blog)</a>. </p>
+
+
+
+<p>####################################################</p>
+
+
+
+<p><strong>Tech Tales:</strong></p>
+
+
+
+<p><strong>And the Moon was made of gold. </strong></p>
+
+
+
+<p>I had a strange dream in which the Moon was made of gold. How much sooner would man have set foot there if instead of shining bone-white it was fat and yellow and of immense value? How would people have competed against one another for a prize – unimaginable wealth. And how many of them would have realized that in racing for the prize they must surely ensure only a single person gave dominion over the gold moon – for if many people worked together, the value of the moon would be diluted across all humanity and in doing so it would temporarily destroy the economy. </p>
+
+
+
+<p>Instead the moon of gold would need to be controlled. It would need to be annexed and encircled and defended from others. From time to time its benevolent dictator might slice off a fragment of it and ship it back to Earth, perhaps to bribe people, or perhaps to pay for more people to defend those that might seek to take over the moon. </p>
+
+
+
+<p>People would ask why it was so difficult to let go of the moon. Why, once it had been taken, those that had taken it felt a keen need to retain hold of it. Why people could not simply let go of the moon. These people were ignored, of course, because the annexed moon had by this time become the status quo. The moon, once at distance from us all, was now held and controlled by a kingdom of one. </p>
+
+
+
+<p>And so started the movement to destroy the moon. Better to reign freely on a broken planet than serve at the behest of a golden emperor. </p>
+
+
+
+<p><strong>Things that inspired this story: </strong>Race dynamics and AGI; pyrrhic victories; wondering what we’re all doing on this planet and what the spiritual purpose of our lives are; dreams; a stimulating policy conference in which I heard people bemoan seemingly inevitable progress and seemingly hopeless government capacity in the face of it – which caused me to scribble ‘as if the moon was made of gold’ on a notepad in front of me and then write this story while sat on public transportation.</p>
+
+
+
+<p>.</p>

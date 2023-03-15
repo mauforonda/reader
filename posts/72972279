@@ -1,0 +1,35 @@
+<p>I needed a way to generate a TOTP secret using a fairly locked-down Mac. No Brew. No NPM. No Python. No Prolog, COBOL, or FORTRAN. No Internet connection. Just whatever software is native to MacOS.</p>
+<p>As I&#39;ve mentioned before, <a href="https://shkspr.mobi/blog/2022/05/why-is-there-no-formal-specification-for-otpauth-urls/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">the TOTP specification is a stagnant wasteland</a>. But it does have this to say about the secret:</p>
+<blockquote><p>
+  The <code>secret</code> parameter is an arbitrary key value encoded in Base32 according to <a href="https://www.rfc-editor.org/rfc/rfc3548" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">RFC 3548</a>.
+</p></blockquote>
+<p>The <a href="https://www.rfc-editor.org/rfc/rfc3548#section-5" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Base32 alphabet</a> is pretty simple. The upper-case letters A - Z, and the numbers 3 - 7.</p>
+<p>But that&#39;s only half the problem.</p>
+<h2 id="how-long-should-the-secret-be"><a href="#how-long-should-the-secret-be">How long should the secret be?</a></h2>
+<p>This is an area where <a href="https://www.rfc-editor.org/rfc/rfc6238" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">the official spec is silent</a>.  Around the web, you&#39;ll find people saying things like:</p>
+<blockquote><p>
+  The length in bytes of generated shared secrets. The minimum is 20 (or 160 bits), and the default is 32 (or 256 bits). In most use cases 32 is sufficient. Though some authenticators may have issues with more than the minimum. Our minimum is the recommended value in <a href="https://www.rfc-editor.org/rfc/rfc4226.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">RFC4226</a>, though technically according to the specification 16 bytes (or 128 bits) is the minimum.<br/>
+  <a href="https://www.authelia.com/configuration/second-factor/time-based-one-time-password/#secret_size" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Authelia</a>
+</p></blockquote>
+<p>Although that&#39;s for the <strong>H</strong>OTP algorithm, rather than <strong>T</strong>OTP.</p>
+<p>Looking through my 49(!) different TOTP codes, the shared secret ranges from 16 characters to 52 characters. No consistency whatsoever.</p>
+<h2 id="the-code"><a href="#the-code">The Code</a></h2>
+<p>Run this on your command line.</p>
+<p><code>cat /dev/urandom | LC_ALL=C tr -dc &#39;A-Z3-7&#39; | fold -w 24 | head -n 1</code></p>
+<p>That generates a random-enough<sup><a href="#fn-45094-random" title="Read footnote.">1</a></sup> string using the correct alphabet and truncated to a sensible length.</p>
+<p>Let&#39;s go through each part of it.</p>
+<p><code>cat /dev/urandom</code> spits out random data from your machine. You may wish to use <a href="https://linuxhint.com/dev_random_vs_dev_urandom/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><code>/dev/random</code></a> if you feel like it.</p>
+<p><code>LC_ALL=C</code> sets the <a href="https://www.ibm.com/support/pages/what-lcall-variable" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Locale to by ANSI bytes</a>.</p>
+<p><code>tr</code> is &#34;<a href="https://ss64.com/osx/tr.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Translate, squeeze, and/or delete characters.</a>&#34;.</p>
+<p><code>-dc &#39;A-Z3-7&#39;</code> is <strong>d</strong>elete the <strong>c</strong>omplement (i.e. delete anything which <em>isn&#39;t</em> in the following string).</p>
+<p><code>fold -w 24</code> is <a href="https://www.unix.com/man-page/osx/1/fold/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">wrap the input text</a> with a line length of 24.</p>
+<p><code>head -n 1</code> displays <a href="https://www.unix.com/man-page/osx/1/head/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">the first line of the file</a>.</p>
+<h2 id="next-steps"><a href="#next-steps">Next Steps</a></h2>
+<p>Now... How do I locally generate a QR code without anything else being installed...?</p>
+
+
+<ol>
+<li id="fn-45094-random">
+This is a shared secret. It doesn&#39;t <em>need</em> an infinite supply of high-quality entropy. Any decent login protection service should throttle incorrect attempts long before someone can brute-force it. Remember, TOTP codes are <em>not</em> random - they&#39;re deterministic product of the secret. Your adversary isn&#39;t someone who can crack your secure vault - it&#39;s someone who already has your username as password, but doesn&#39;t have your token generating device. <a href="#fnref-45094-random" title="Return to main content.">↩</a>
+</li>
+</ol>

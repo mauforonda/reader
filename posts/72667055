@@ -1,0 +1,77 @@
+<p>I spent most of this week <a href="https://www.ire.org/training/conferences/nicar-2023/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">at NICAR 2023</a>, the data journalism conference hosted this year in Nashville, Tennessee.</p>
+<p>This was my third in-person NICAR and it&#39;s an absolute delight: NICAR is one of my favourite conferences to go to. It brings together around a thousand journalists who work with data, from all over the country and quite a few from the rest of the world.</p>
+<p>People have very different backgrounds and experiences, but everyone has one thing in common: a nerdy obsession with using data to find and tell stories.</p>
+<p>I came away with at least a year&#39;s worth of new ideas for things I want to build.</p>
+<p>I also presented a session: an hour long workshop titled &#34;Datasette: An ecosystem of tools for exploring data and collaborating on data projects&#34;.</p>
+<p>I demonstrated the scope of the project, took people through some hands-on exercises derived from the Datasette tutorials <a href="https://datasette.io/tutorials/clean-data" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Cleaning data with sqlite-utils and Datasette</a> and <a href="https://datasette.io/tutorials/codespaces" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Using Datasette in GitHub Codespaces</a> and invited everyone in the room to join the <a href="https://datasette.cloud/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Datastte Cloud</a> preview and try using <a href="https://datasette.io/plugins/datasette-socrata" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">datasette-socrata</a> to import and explore some data from the <a href="https://data.sfgov.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">San Francisco open data portal</a>.</p>
+<p>My goal for this year&#39;s NICAR was to setup some direct collaborations with working newsrooms. Datasette is ready for this now, and I&#39;m willing to invest significant time and effort in onboarding newsrooms, helping them start using the tools and learning what I need to do to help them be more effective in that environment.</p>
+<p>If your newsroom is interested in that, please drop me an email at <code>swillison@</code> Google&#39;s email service.</p>
+<h4 id="kqed-forum">KQED Forum</h4>
+<p>My <a href="https://simonwillison.net/2023/Feb/15/bing/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">post about Bing</a> attracted attention from the production team at <a href="https://www.kqed.org/forum" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">KQED Forum</a>, a long-running and influential Bay Area news discussion radio show.</p>
+<p>They invited me to join a live panel discussion on Thursday morning with science-fiction author Ted Chiang and Claire Leibowitz from Partnership on AI.</p>
+<p>I&#39;ve never done live radio before, so this was an opportunity that was too exciting to miss. I ducked out of the conference for an hour to join the conversation via Zoom.</p>
+<p>Aside from a call with a producer a few days earlier I didn&#39;t have much of an idea what to expect (similar to my shorter <a href="https://simonwillison.net/2023/Feb/19/live-tv/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">live TV appearance</a>). You really have to be able to think on your feet!</p>
+<p>A recording is available <a href="https://www.kqed.org/forum/2010101892368/how-to-wrap-our-heads-around-these-new-shockingly-fluent-chatbots" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">on the KQED site</a>, and <a href="https://podcasts.apple.com/us/podcast/kqeds-forum/id73329719?i=1000602544514" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">on Apple Podcasts</a>.</p>
+<p>I&#39;m happy with most of it, but I did have one offensive and embarassing slip-up. I was talking about <a href="https://www.nytimes.com/2023/02/16/technology/bing-chatbot-transcript.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">the Kevin Roose ChatGPT conversation from the New York Times</a>, where Bing declared its love for him. I said (05:30):</p>
+<blockquote>
+<p>So I love this particular example because it actually accidentally illustrates exactly how these things work.</p>
+<p>All of these chatbots, all of these language models they&#39;re called, all they can do is predict sentences.</p>
+<p>They predict the next word that statistically makes sense given what&#39;s come before.</p>
+<p>And if you look at the way it talks to Kevin Roose, I&#39;ve got a quote.</p>
+<p>It says, &#34;You&#39;re married, but you&#39;re not happy. You&#39;re married, but you&#39;re not satisfied. You&#39;re married, but you&#39;re not in love.&#34;</p>
+<p>No human being would talk like that. That&#39;s practically a kind of weird poetry, right?</p>
+<p>But if you&#39;re thinking about in terms of, OK, what sentence should logically come after this sentence?</p>
+<p>&#34;You&#39;re not happy, and then you&#39;re not satisfied&#34;, and then &#34;you&#39;re not in love&#34; - those just work. So Kevin managed to get himself into the situation where this bot was way off the reservation.</p>
+<p>This is one of the most monumental software bugs of all time.</p>
+<p>This was Microsoft&#39;s Bing search engine. They had a bug in their search engine where it would try and get a user to break up with their wife!</p>
+<p>That&#39;s absolutely absurd.</p>
+<p>But really, all it&#39;s doing is it had got itself to a point in the conversation where it&#39;s like, Okay, well, I&#39;m in the mode of trying to talk about how why a marriage isn&#39;t working?</p>
+<p>What comes next? What comes next? What comes next?</p>
+</blockquote>
+<p>In talking about Bing&#39;s behaviour I&#39;ve been trying to avoid words like &#34;crazy&#34; and &#34;psycho&#34;, because those stigmatize mental illness. I try to use terms like &#34;wild&#34; and &#34;inappropriate&#34; and &#34;absurd&#34; instead.</p>
+<p>But saying something is &#34;off the reservation&#34; is much worse!</p>
+<p>The term <a href="https://www.npr.org/sections/codeswitch/2014/06/29/326690947/should-saying-someone-is-off-the-reservation-be-off-limits" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">is deeply offensive</a>, based on a dark history of forced relocation of Native Americans. I used it here thoughtlessly. If you asked me to think for a moment about whether it was an appropriate phrase I would have identified that it wasn&#39;t. I&#39;m really sorry to have said this, and I will be avoiding this language in the future.</p>
+<p>I&#39;ll share a few more annotated highlights from the transcript, thankfully without any more offensive language.</p>
+<p>Here&#39;s my response to a question about how I&#39;ve developed my own understanding of how these models actually work (19:47):</p>
+<blockquote>
+<p>I&#39;m a software engineer. So I&#39;ve played around with training my own models on my laptop. I found an example where you can <a href="https://til.simonwillison.net/llms/nanogpt-shakespeare-m2" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">train one just on the complete works of Shakespeare</a> and then have it spit out garbage Shakespeare, which has &#34;thee&#34; and &#34;thus&#34; and so forth.</p>
+<p>And it looks like Shakespeare until you read a whole sentence and you realize it&#39;s total nonsense.</p>
+<p><a href="https://til.simonwillison.net/llms/training-nanogpt-on-my-blog" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">I did the same thing with my blog</a>. I&#39;ve got like 20 years of writing that I piped into it and it started producing sentences which were clearly in my tone even though they meant nothing.</p>
+<p>It&#39;s so interesting seeing it generate these sequences of words in kind of a style but with no actual meaning to them.</p>
+<p>And really that&#39;s exactly the same thing as ChatGPT. It&#39;s just that ChatGPT was fed terabytes of data and trained for months and months and months, whereas I fed in a few megabytes of data and trained it for 15 minutes.</p>
+<p>So that really helps me start to get a feel for how these things work. The most interesting thing about these models is it turns out there&#39;s this sort of inflection point in size where you train them and they don&#39;t really get better up until a certain point where suddenly they start gaining these capabilities.</p>
+<p>They start being able to summarize text and generate poems and extract things into bullet pointed lists. And the impression I&#39;ve got from the AI research community is people aren&#39;t entirely sure that they understand why that happens at a certain point.</p>
+<p>A lot of AI research these days is just, let&#39;s build it bigger and bigger and bigger and play around with it. And oh look, now it can do this thing. <a href="https://twitter.com/zswitten/status/1631107663500304384" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">I just saw this morning that someone&#39;s got it playing chess</a>. It shouldn&#39;t be able to play chess, but it turns out the Bing one can play chess and like nine out of ten of the moves it generates are valid moves and one out of ten are rubbish because it doesn&#39;t have a chess model baked into it.</p>
+<p>So this is one of the great mysteries of these things, is that as you train them more, they gain these capabilities that no one was quite expecting them to gain.</p>
+<p>Another example of that: these models are really good at writing code, like writing actual code for software, and nobody really expected that to be the case, right? They weren&#39;t designed as things that would replace programmers, but actually the results you can get out of them if you know how how to use them in terms of generating code can be really sophisticated.</p>
+<p>One of the most important lessons I think is that these things are actually deceptively difficult to use, right? It&#39;s a chatbot. How hard can it be? You just type things and it says things back to you.</p>
+<p>But if you want to use it effectively, you have to understand pretty deeply what its capabilities and limitations are. If you try and give it mathematical puzzles, it will fail miserably because despite being a computer - and computers should be good at maths! - that&#39;s not something that language models are designed to handle.</p>
+<p>And it&#39;ll make things up left, right, and center, which is something you need to figure out pretty quickly. Otherwise, you&#39;re gonna start believing just garbage that it throws out at you.</p>
+<p>So there&#39;s actually a lot of depth to this. I think it&#39;s worth investing a lot of time just playing games with these things and trying out different stuff, because it&#39;s very easy to use them incorrectly. And there&#39;s very little guidance out there about what they&#39;re good at and what they&#39;re bad at. It takes a lot of learning.</p>
+</blockquote>
+<p>I was happy with my comparison of writing cliches to programming. A caller had mentioned that they had seen it produce an answer to a coding question that invented an API that didn&#39;t exist, causing them to lose trust in it as a programming tool (23:11):</p>
+<blockquote>
+<p>I can push back slightly on this example. That&#39;s absolutely right. It will often invent API methods that don&#39;t exist. But as somebody who creates APIs, I find that really useful because sometimes it invents an API that doesn&#39;t exist, and I&#39;ll be like, well, that&#39;s actually a good idea.</p>
+<p>Because the thing it&#39;s really good at is consistency. And when you&#39;re designing APIs, consistency is what you&#39;re aiming for. So, you know, in writing, you want to avoid cliches. In programming, cliches are your friend. So, yeah, I actually use it as a design assistant where it&#39;ll invent something that doesn&#39;t exist. And I&#39;ll be like, okay, well, maybe that&#39;s the thing that I should build next.</p>
+</blockquote>
+<p>A caller asked &#34;Are human beings not also statistically created language models?&#34;. My answer to that (at 35:40):</p>
+<blockquote>
+<p>So I&#39;m not a neurologist, so I&#39;m not qualified to answer this question in depth, but this does come up a lot in AI circles. In the discourse, yeah.</p>
+<p>Yes, so my personal feeling on this is there is a very small part of our brain that kind of maybe works a little bit like a language model. You know, when you&#39;re talking, it&#39;s pretty natural to think what word&#39;s going to come next in that sentence.</p>
+<p>But I&#39;m very confident that that&#39;s only a small fraction of how our brains actually work. When you look at these language models like ChatGPT today, it&#39;s very clear that if you want to reach this mythical AGI, this general intelligence, it&#39;s going to have to be a heck of a lot more than just a language model, right?</p>
+<p>You need to tack on models that can tell truth from fiction and that can do sophisticated planning and do logical analysis and so forth. So yeah, my take on this is, sure, there might be a very small part of how our brains work that looks a little bit like a language model if you squint at it, but I think there&#39;s a huge amount more to cognition than just the tricks that these language models are doing.</p>
+</blockquote>
+<p>These transcripts were all edited together from an initial attempt created using OpenAI Whisper, running directly on my Mac using <a href="https://goodsnooze.gumroad.com/l/macwhisper" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">MacWhisper</a>.</p>
+<h4>Releases this week</h4>
+<ul>
+<li>
+<strong><a href="https://github.com/simonw/datasette-simple-html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">datasette-simple-html</a></strong>: <a href="https://github.com/simonw/datasette-simple-html/releases/tag/0.1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">0.1</a> - 2023-03-01
+<br/>Datasette SQL functions for very simple HTML operations</li>
+<li>
+<strong><a href="https://github.com/simonw/datasette-app" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">datasette-app</a></strong>: <a href="https://github.com/simonw/datasette-app/releases/tag/0.2.3" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">0.2.3</a> - (<a href="https://github.com/simonw/datasette-app/releases" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">5 releases total</a>) - 2023-02-27
+<br/>The Datasette macOS application</li>
+</ul>
+<h4>TIL this week</h4>
+<ul>
+<li><a href="https://til.simonwillison.net/gpt3/chatgpt-api" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">A simple Python wrapper for the ChatGPT API</a></li>
+</ul>

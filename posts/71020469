@@ -1,0 +1,806 @@
+<p>Previous work: <a href="https://epochai.org/blog/grokking-bioanchors" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Grokking “Forecasting TAI with biological anchors“</a>, <a href="https://epochai.org/blog/grokking-semi-informative-priors" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Grokking “Semi-informative priors over AI timelines”</a></p>
+
+<h2 id="highlights">Highlights</h2>
+
+<ul>
+  <li>The review includes quantitative models, including both outside and inside view, and judgment-based forecasts by (teams of) experts.</li>
+  <li>While we do not necessarily endorse their conclusions, the inside-view model the Epoch team found most compelling is Ajeya Cotra’s <em><a href="https://epochai.org/blog/grokking-bioanchors" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">“Forecasting TAI with biological anchors”</a></em>, the best-rated outside-view model was Tom Davidson’s <em><a href="https://epochai.org/blog/grokking-semi-informative-priors" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">“Semi-informative priors over AI timelines”</a></em>, and the best-rated judgment-based forecast was <a href="https://forum.effectivealtruism.org/posts/ByBBqwRXWqX5m9erL/update-to-samotsvety-agi-timelines" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Samotsvety’s AGI Timelines Forecast</a>.</li>
+  <li>The inside-view models we reviewed predicted shorter timelines (e.g. bioanchors has a median of 2052) while the outside-view models predicted longer timelines (e.g. semi-informative priors has a median over 2100). The judgment-based forecasts are skewed towards agreement with the inside-view models, and are often more aggressive (e.g. Samotsvety assigned a median of 2043).</li>
+</ul>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Over the last few years, we have seen many attempts to quantitatively forecast the arrival of transformative and/or general Artificial Intelligence (TAI/AGI) using very different methodologies and assumptions. Keeping track of and assessing these models’ relative strengths can be daunting for a reader not familiar with the field. As such, the purpose of this review is to:</p>
+
+<ol>
+  <li>Provide a relatively comprehensive source of influential timeline estimates, as well as brief overviews of the methodologies of various models, so readers can make an informed decision over which seem most compelling to them.</li>
+  <li>Provide a concise summarization of each model/forecast distribution over arrival dates.</li>
+  <li>Provide an aggregation of internal Epoch subjective weights over these models/forecasts. These weightings do not necessarily reflect team members’ “all-things-considered” timelines, rather they are aimed at providing a sense of our views on the relative trustworthiness of the models.</li>
+</ol>
+
+<p>For aggregating internal weights, we split the timelines into “model-based” and “judgment-based” timelines. Model-based timelines are given by the output of an explicit model. In contrast, judgment-based timelines are either aggregates of group predictions on, e.g., prediction markets, or the timelines of some notable individuals. We decompose in this way as these two categories roughly correspond to “prior-forming” and “posterior-forming” predictions respectively.</p>
+
+<p>In both cases, we elicit subjective probabilities from each Epoch team member reflective of:</p>
+
+<ol>
+  <li>how likely they believe a model’s assumptions and methodology to be essentially accurate, and</li>
+  <li>how likely it is that a given forecaster/aggregate of forecasters is well-calibrated on this problem,</li>
+</ol>
+
+<p>respectively. Weights are normalized and linearly aggregated across the team to arrive at a summary probability. These numbers should not be interpreted too literally as exact credences, but rather a rough approximation of how the team views the “relative trustworthiness” of each model/forecast.</p>
+
+<p><strong>Caveats</strong></p>
+
+<ul>
+  <li>Not every model/report operationalizes AGI/TAI in the same way, and so aggregated timelines should be taken with an extra pinch of salt, given that they forecast slightly different things.</li>
+  <li>Not every model and forecast included below yields explicit predictions for the snapshots (in terms of CDF by year and quantiles) which we summarize below. In these cases, we have done our best to interpolate based on explicit data-points given.</li>
+  <li>We have included models and forecasts that were explained in more detail and lent themselves easily to a probabilistic summary. This means we do not cover less explained forecasts like <a href="https://www.lesswrong.com/posts/HguqQSY8mR7NxGopc/2022-was-the-year-agi-arrived-just-don-t-call-it-that?commentId=7n4xomkfrgdmw3jab&amp;sa=D&amp;source=editors&amp;ust=1673982853166421&amp;usg=AOvVaw07by7Ks81HOnXNkTFA14yz" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Daniel Kokotajlo</a>’s and influential pieces of work without explicit forecasts such as David Roodman’s <a href="https://www.openphilanthropy.org/research/modeling-the-human-trajectory/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Modelling the Human Trajectory</a>.</li>
+</ul>
+
+<h2 id="results">Results</h2>
+
+
+
+
+
+
+
+
+    
+      <h3>
+        
+          Model based forecasts
+        
+      </h3>
+      
+        <p>See <a href="#appendix-individual-weightings-extrapolation-and-aggregation">this appendix</a> for the individual weightings from respondents and the rationale behind their aggregation.</p>
+
+        <p>(Italicized values are interpolated from a gamma distribution fitted to known values. Note that this extrapolation has an important subjective component and we expect it will not correctly capture the beliefs of the respondents in some important ways.)</p>
+      
+      <h3>
+        
+          Judgment based forecasts
+        
+      </h3>
+      
+        <p>See <a href="#appendix-individual-weightings-extrapolation-and-aggregation">this appendix</a> for the individual weightings from respondents and the rationale behind their aggregation.</p>
+
+        <p>(Italicized values are interpolated from a gamma distribution fitted to known values. Note that this extrapolation has an important subjective component and we expect it will not correctly capture the beliefs of the respondents in some important ways.)</p>
+      
+    
+
+
+
+
+<table>
+    <thead>
+        <tr><th rowspan="2">Timeline</th><td></td><th colspan="3">Probability of TAI/AGI by…</th><td></td><th colspan="3">Quantile</th><td></td><th rowspan="2">Subjective weight<sup><a href="#fn:1">1</a></sup></th></tr>
+        <tr><td></td><td>2030</td><td>2050</td><td>2100</td><td></td><td>10%</td><td>Median</td><td>90%</td></tr>
+    </thead>
+    
+        <tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Model-based </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td><a href="#forecasting-tai-with-biological-anchorsinside-view">Ajeya Cotra’s bio anchors</a></td><td></td><td>8%</td><td>47%</td><td>78%</td><td></td><td>2031</td><td>2052</td><td>&gt;2100</td><td></td><td>0.50</td></tr>
+        <tr><td><a href="#semi-informative-priors-over-ai-timelinesoutside-view">Semi-informative priors</a></td><td></td><td>6%</td><td>11%</td><td>20%</td><td></td><td>2044</td><td>&gt;2100</td><td>&gt;2100</td><td></td><td>0.28</td></tr>
+        <tr><td><a href="#insight-based-ai-timelines-modeloutside-view">Insights-based model</a></td><td></td><td>4%</td><td>8%</td><td>15%</td><td></td><td>2060</td><td>&gt;3000</td><td>&gt;3000</td><td></td><td>0.03</td></tr>
+        <tr><td><a href="#whole-brain-emulationinside-view">Whole Brain Emulation</a></td><td></td><td>1%</td><td>25%</td><td>88%</td><td></td><td>2047</td><td>2064</td><td>&gt;2100</td><td></td><td>0.03</td></tr>
+        <tr><td><a href="#phase-transitions-and-agioutside-view">Phase transitions and AGI</a></td><td></td><td>3%</td><td>8%</td><td>21%</td><td></td><td>2042</td><td>&gt;2100</td><td>&gt;3100</td><td></td><td>0.16</td></tr>
+        <tr><td>Weighted Linear<br/>Average of Probabilities</td><td></td><td>8%</td><td>27%</td><td>54%</td><td></td><td>2032</td><td>2089</td><td>3022</td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Judgment-based</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td><a href="#ai-impacts-survey-2022">AI Impacts survey (2022)</a></td><td></td><td>12%</td><td>40%</td><td>74%</td><td></td><td>2029</td><td>2059</td><td>2148</td><td></td><td>0.08</td></tr>
+        <tr><td><a href="#metaculus-date-of-artificial-general-intelligenceas-of-2022-10-11">Metaculus</a></td><td></td><td>29%</td><td>63%</td><td>83%</td><td></td><td>2025</td><td>2039 </td><td>2193</td><td></td><td>0.23</td></tr>
+        <tr><td><a href="#samotsvetys-agi-timelines-forecasts">Samotsvety report</a></td><td></td><td>28%</td><td>60%</td><td>89%</td><td></td><td>2024</td><td>2043</td><td>2104</td><td></td><td>0.40</td></tr>
+        <tr><td><a href="#two-year-update-on-my-personal-ai-timelines">Ajeya Cotra</a></td><td></td><td>15%</td><td>60%</td><td>97%</td><td></td><td>2026</td><td>2040</td><td>2077</td><td></td><td>0.17</td></tr>
+        <tr><td><a href="#forecasting-transformative-ai-whats-the-burden-of-proof">Holden Karnofsky</a></td><td></td><td>24%</td><td>44%</td><td>67%</td><td></td><td>2024</td><td>2060</td><td>2241</td><td></td><td>0.12</td></tr>
+        <tr><td>Weighted Geometric<br/>Average of Odds</td><td></td><td>25%</td><td>57%</td><td>88%</td><td></td><td>2025</td><td>2045</td><td>2107</td><td></td><td></td></tr>
+    
+
+    </tbody><caption>
+        (Italicized values are interpolated from a gamma distribution fitted to known values. Note that this extrapolation has an important subjective component and we expect it will not correctly capture the beliefs of the respondents in some important ways.)
+    </caption>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Weights to use when calculating each average:<br/></p>
+
+  
+    
+      Model-based forecasts:
+    
+    
+      Judgment-based forecasts:
+    
+  
+  
+    
+      Bio Anchors
+      
+    
+    
+      AI Impacts
+      
+    
+  
+  
+    
+      Semi-Informative Priors
+      
+    
+    
+      Metaculus
+      
+    
+  
+  
+    
+      Insights Based
+      
+    
+    
+      Samotsvety
+      
+    
+  
+  
+    
+      Whole Brain Emulation
+      
+    
+    
+      Ajeya Cotra
+      
+    
+  
+  
+    
+      Phase Transitions
+      
+    
+    
+      Holden Karnofsky
+      
+    
+  
+  
+    
+        <br/>
+        Reweight Graph
+    
+  
+
+
+
+
+<h2 id="model-based-forecasts">Model-based forecasts</h2>
+
+<p>Model-based forecasts involve specifying an explicit model for TAI/AGI arrival dates and estimating parameters. They can loosely be divided up into “inside-view” and “outside-view” models, with the former taking into account more granular data on, e.g., compute and algorithmic progress, and the latter focusing on more big-picture base-rates.</p>
+
+<h3 id="forecasting-tai-with-biological-anchorsinside-view"><a href="https://www.lesswrong.com/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Forecasting TAI with biological anchors</a> (inside view)</h3>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Probability of TAI/AGI by…</th>
+            </tr>
+            <tr>
+                <th>2030</th>
+                <th>2050</th>
+                <th>2100</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>8%</td>
+                <td>47%</td>
+                <td>78%</td>
+            </tr>
+        
+    </tbody></table>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Quantile</th>
+            </tr>
+            <tr>
+                <th>10%</th>
+                <th>Median</th>
+                <th>90%</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>2031</td>
+                <td>2052</td>
+                <td>&gt;2100</td>
+            </tr>
+        
+    </tbody></table>
+
+
+<p>The approach of this report is to forecast TAI timelines by taking cues from the computational work required to create general intelligence in nature, and extrapolating economic trends to estimate when training a model with equivalent modern-day compute resources would be feasible. The main inputs to the model are:</p>
+
+<ol>
+  <li>Choice of “bio-anchor” to benchmark necessary computation to – these include computation in the brain across a human lifetime, total computation performed by evolution to create a human brain, and the number of parameters in the human brain or human genome. For bio-anchors relating to model size (e.g., the human brain), the report also investigates a range of “effective horizons” – crudely speaking, how much thinking a model will have to do on each forward pass – to estimate total compute required to train such a model effectively.</li>
+  <li>Estimate of future compute availability, to assess when the compute requirements of part (1.) will be economically feasible. This estimate itself is decomposed into three main ingredients: (a) rate of algorithmic progress, i.e., training compute efficiency, (b) reduction in hardware/compute costs, (c) greater willingness to spend on compute for training ML models.</li>
+</ol>
+
+<p>Estimates for total computational requirements are understandably very wide given the different approaches and the sources of uncertainty even within each approach, spanning several orders of magnitude (e.g., 10^24 on the lower end of the human-lifetime bio-anchor to 10^52 on the upper end of the evolution anchor). The report weights these various models to arrive at an overall distribution over compute requirements, which is combined with economic estimates to give a range over possible TAI arrival dates.</p>
+
+<h3 id="semi-informative-priors-over-ai-timelinesoutside-view"><a href="https://www.openphilanthropy.org/research/semi-informative-priors-over-ai-timelines/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Semi-informative priors over AI timelines</a> (outside view)</h3>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Probability of TAI/AGI by…</th>
+            </tr>
+            <tr>
+                <th>2030</th>
+                <th>2050</th>
+                <th>2100</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>6%</td>
+                <td>11%</td>
+                <td>20%</td>
+            </tr>
+        
+    </tbody></table>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Quantile</th>
+            </tr>
+            <tr>
+                <th>10%</th>
+                <th>Median</th>
+                <th>90%</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>2044</td>
+                <td>&gt;2100</td>
+                <td>&gt;2100</td>
+            </tr>
+        
+    </tbody></table>
+
+
+<p>This approach takes an extremely “outside view” approach to forecasting AI, effectively asking what our probability of TAI by a given year would be given <em>only</em> (a) a reasonable prior over timelines one would have at the very beginning of research towards AI, (b) knowledge of the inputs to subsequent AI research over time (compute, researcher hours, etc.), and (c) the fact that AI has not yet been achieved.</p>
+
+<p>        For concreteness, the author focuses on the estimate on P(AI by 2036 | No AI by 2020), and models the problem by looking at generalizations of Laplace’s Rule of Succession – a formula for estimating the probability of success of a trial given historical data on trials and their successes. Here we model AI research as a series of “trials” to create AI, each of which has so far been a failure. The author investigates the effect of a family of update rules, of which Laplace’s Rule is a special case. By choosing an appropriate update rule given a common-sense understanding of the problem (e.g., our initial, “first-trial probability” of succeeding at AI should not be 0.5 as Laplace’s Rule suggests, appropriate reference classes, etc.), we can arrive at a range of “semi-informative priors” over AI timelines. Moreover, given a candidate set of update rules giving semi-informative priors, we can form a hyper-prior over these models and update our weights on them as we observe trials.</p>
+
+<p>        Some of the main sources of variance in the model besides choice of update rule, which the author investigates the sensitivity of the model to, are:</p>
+
+<ol>
+  <li>Choice of “start-date” for the period of observation – a natural choice the author discusses is 1956, when the field of Artificial Intelligence is widely accepted to have been born, but other plausible candidates exist and the author investigates the sensitivity of the model to these choices.</li>
+  <li>Definition of “trial” – should we count ourselves as observing a failure to create TAI every calendar year? Every month? Every researcher-year?</li>
+  <li>Choice of “first-trial” probability – what should our ex-ante probability of immediate success have been at the outset of AI research?</li>
+</ol>
+
+<h3 id="insight-based-ai-timelines-modeloutside-view"><a href="http://mediangroup.org/insights" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Insight-based AI timelines model</a> (outside view)</h3>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Probability of TAI/AGI by…</th>
+            </tr>
+            <tr>
+                <th>2030</th>
+                <th>2050</th>
+                <th>2100</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>4%</td>
+                <td>8%</td>
+                <td>15%</td>
+            </tr>
+        
+    </tbody></table>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Quantile</th>
+            </tr>
+            <tr>
+                <th>10%</th>
+                <th>Median</th>
+                <th>90%</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>2060</td>
+                <td>&gt;3000</td>
+                <td>&gt;3000</td>
+            </tr>
+        
+    </tbody></table>
+
+
+<p>This approach first places a distribution over what fraction of insights/discoveries necessary for AI have so far been achieved, and then extrapolates a CDF of AI arrival dates by assuming a linear progression of insights over time. Users can either specify their precise prior over current insight-based progress towards AI, or else use a Pareto distribution. The authors estimate the linear progress of insight discovery by examining historical data of discoveries deemed to be at least as significant as LSTMs, and fitting a linear regression to the data since 1945. Some key sources of uncertainty and sensitivity in this modeling approach are:</p>
+
+<ol>
+  <li>Choice of prior over insight progress – the CDF is sensitive both to the number of insights assumed to be necessary for AI, as well as the parameters of the chosen Pareto distribution.</li>
+  <li>The assumption of linearity is key to this model and there are plausible reasons to doubt this assumption – one could think either that this assumption is <em>optimistic</em> if we have been picking “low-hanging fruit” in our insights so far, or else <em>pessimistic</em> if one thinks increased research investment/effectiveness will speed up the discovery process.</li>
+</ol>
+
+<h3 id="whole-brain-emulationinside-view"><a href="http://www.aleph.se/papers/Monte%20Carlo%20model%20of%20brain%20emulation%20development.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Whole Brain Emulation</a> (inside view)</h3>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Probability of TAI/AGI by…</th>
+            </tr>
+            <tr>
+                <th>2030</th>
+                <th>2050</th>
+                <th>2100</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>1%</td>
+                <td>25%</td>
+                <td>88%</td>
+            </tr>
+        
+    </tbody></table>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Quantile</th>
+            </tr>
+            <tr>
+                <th>10%</th>
+                <th>Median</th>
+                <th>90%</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>2047</td>
+                <td>2064</td>
+                <td>&gt;2100</td>
+            </tr>
+        
+    </tbody></table>
+
+
+<p>This model does not explicitly model the arrival date of TAI, but instead looks at the timelines for when high-fidelity modeling of an entire human brain will be feasible. Since humans are general intelligences, sufficiently cheap WBE would be a transformative source of economic productivity. The paper models the arrival date of WBE technology by decomposing the problem into four questions:</p>
+
+<ol>
+  <li>When will we have sufficient hardware/compute to run a WBE?</li>
+  <li>When will we have a project with sufficient funding to afford such compute?</li>
+  <li>When will we be able to scan a human brain at sufficient resolution?</li>
+  <li>When will we have sufficient understanding of neuroscience to interpret/run a WBE from such a scan?</li>
+</ol>
+
+<p>The author fits parametric models to the above variables using a mixture of historical data and the author’s priors. Using Monte Carlo simulation, WBE arrival date is then modeled as argmaxing over the arrival dates of the necessary components to WBE – i.e., WBE arrives whenever the last key ingredient arrives. Some key sources of uncertainty/sensitivity in this model are:</p>
+
+<ol>
+  <li>The arrivals of components are modeled independently, but there is likely some correlation/endogeneity in the model, e.g., rapid progress in scanning technology will likely accelerate neuroscience progress.</li>
+  <li>The components arrival dates are distributed with very subjective probability distributions of the author, and the overall CDF of WBE arrival is very sensitive to some of these choices.</li>
+</ol>
+
+<p>The connection of this paper to overall TAI timelines is also tricky, since affordable WBE is not necessary for TAI. This approach should maybe be thought of as putting an upper bound on TAI arrival dates conditional on other methods such as ML being unsuccessful/very slow. There are also issues with this interpretation, since the progress in WBE is likely not independent of progress in ML, i.e., there will be less economic incentive to develop WBE if we have TAI from another path.</p>
+
+<h3 id="phase-transitions-and-agioutside-view"><a href="https://www.metaculus.com/notebooks/10286/phase-transitions-and-agi/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Phase Transitions and AGI</a> (outside view)</h3>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Probability of TAI/AGI by…</th>
+            </tr>
+            <tr>
+                <th>2030</th>
+                <th>2050</th>
+                <th>2100</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>3%</td>
+                <td>8%</td>
+                <td>21%</td>
+            </tr>
+        
+    </tbody></table>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Quantile</th>
+            </tr>
+            <tr>
+                <th>10%</th>
+                <th>Median</th>
+                <th>90%</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>2042</td>
+                <td>&gt;2100</td>
+                <td>&gt;3100</td>
+            </tr>
+        
+    </tbody></table>
+
+
+<p>This model takes another outside-view approach, looking at when we should expect qualitative “phase changes” to new and substantially better modes of economic production. The model builds on work by Robin Hanson which investigates the historical frequency of phase changes, and the number of economic doublings that occurred between each. Using this, the approach models a distribution over how many economic doublings we should expect before the next phase change. Some key sources of variance/uncertainty in this approach are:</p>
+
+<ol>
+  <li>Choice of distribution to model the arrival times of phase changes. For instance, the post examines the implications of modeling wait times as exponentially vs. Pareto distributed, with much greater waiting times expected in the latter case due to fatter tails.</li>
+  <li>Given a distribution over when a phase change might next occur, inside-view assumptions are required to turn this into a distribution over AI timelines, by, e.g., estimating the probability that the next phase change will be caused by – or will soon lead to – TAI.</li>
+</ol>
+
+<h2 id="judgment-based-forecasts">Judgment-based forecasts</h2>
+
+<p>Judgment-based forecasts are subjective timelines in which predictions are given by an individual or group of individuals without an explicit model. They may be incorporating model-based timelines as inputs to their predictions, and should be viewed as more of an “all-things considered” prediction than model-based forecasts. We mainly include aggregated timelines from experts and/or forecasters, but have included timelines from individuals if they are both explicit and influential.</p>
+
+<h3 id="ai-impacts-survey-2022"><a href="https://aiimpacts.org/2022-expert-survey-on-progress-in-ai/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">AI Impacts Survey (2022)</a></h3>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Probability of TAI/AGI by…</th>
+            </tr>
+            <tr>
+                <th>2030</th>
+                <th>2050</th>
+                <th>2100</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>12%</td>
+                <td>40%</td>
+                <td>74%</td>
+            </tr>
+        
+    </tbody></table>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Quantile</th>
+            </tr>
+            <tr>
+                <th>10%</th>
+                <th>Median</th>
+                <th>90%</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>2029</td>
+                <td>2059</td>
+                <td>2148</td>
+            </tr>
+        
+    </tbody></table>
+
+
+<p>AI Impacts researches trends in AI development. 738 researchers who published either in NeurIPS or ICML (leading AI conferences) in 2021 provided forecasts on a number of AI-related questions, from arrival date to expected impact of AI on various professions. It should be noted that the survey was sent to 4271 researchers initially, for a 17% response rate. As such, there may be some sampling bias in these numbers, e.g., if researchers with more aggressive timelines are also more inclined to respond to such surveys.</p>
+
+<h3 id="metaculus-date-of-artificial-general-intelligenceas-of-2022-10-11"><a href="https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Metaculus: Date of Artificial General Intelligence</a> as of 2022-10-11</h3>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Probability of TAI/AGI by…</th>
+            </tr>
+            <tr>
+                <th>2030</th>
+                <th>2050</th>
+                <th>2100</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>29%</td>
+                <td>63%</td>
+                <td>83%</td>
+            </tr>
+        
+    </tbody></table>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Quantile</th>
+            </tr>
+            <tr>
+                <th>10%</th>
+                <th>Median</th>
+                <th>90%</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>2025</td>
+                <td>2039</td>
+                <td>2193</td>
+            </tr>
+        
+    </tbody></table>
+
+
+<p>Metaculus is a platform aggregating user predictions on a variety of forecasting questions, including a number relating to AI development. Historically the performance of forecasters on Metaculus has been strong (<a href="https://www.metaculus.com/questions/track-record/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://www.metaculus.com/questions/track-record/</a>), but for obvious reasons the accuracy of users’ long-term AI forecasting specifically is unclear. As of writing there are 314 distinct forecasters whose predictions have been aggregated into this projection.</p>
+
+<h3 id="samotsvetys-agi-timelines-forecasts"><a href="https://forum.effectivealtruism.org/posts/ByBBqwRXWqX5m9erL/update-to-samotsvety-agi-timelines" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Samotsvety’s AGI Timelines Forecasts</a></h3>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Probability of TAI/AGI by…</th>
+            </tr>
+            <tr>
+                <th>2030</th>
+                <th>2050</th>
+                <th>2100</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>28%</td>
+                <td>60%</td>
+                <td>89%</td>
+            </tr>
+        
+    </tbody></table>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Quantile</th>
+            </tr>
+            <tr>
+                <th>10%</th>
+                <th>Median</th>
+                <th>90%</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>2024</td>
+                <td>2043</td>
+                <td>2104</td>
+            </tr>
+        
+    </tbody></table>
+
+
+<p>Samotsvety are a team of forecasters selected for strong performance on Metaculus and various forecasting contests. Their track record can be found <a href="https://samotsvety.org/track-record/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a>. Eight people from their team submitted forecasts for the date at which “a system capable of passing the adversarial Turing test against a top-5% human who has access to experts on various topics is developed.”</p>
+
+<p>Note: This report was initially published prior to the most recent update of Samotsvety timelines. Although all numbers have been updated to reflect the newer forecasts, it might be of interest to readers that the timelines implied here are significantly shorter than those of the <a href="https://forum.effectivealtruism.org/posts/EG9xDM8YRz4JN4wMN/samotsvety-s-ai-risk-forecasts" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">original Samotsvety report</a> (cf. September 2022). The updated post elaborates on some reasons, but a large factor seems to be an overall shift away from outside-view models to inside-view ones - where the latter as we have noted tend to have more aggressive timelines.</p>
+
+<p>Note: The numbers found here differ slightly from the aggregates listed in Samotsvety’s post. In a process analogous to the one described in this <a href="#appendix-individual-weightings-extrapolation-and-aggregation">appendix</a>, we fit CDFs to each individual forecast, and combined them using the geometric mean of odds. You can see that process implemented <a href="https://colab.research.google.com/drive/1P4opdig38GUYVE5aZMtacfwqvDb8HfWC?usp=sharing" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a>.</p>
+
+<h3 id="two-year-update-on-my-personal-ai-timelines"><a href="https://www.alignmentforum.org/posts/AfH2oPHCApdKicM4m/two-year-update-on-my-personal-ai-timelines" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Two-year update on my personal AI timelines</a></h3>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Probability of TAI/AGI by…</th>
+            </tr>
+            <tr>
+                <th>2030</th>
+                <th>2050</th>
+                <th>2100</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>15%</td>
+                <td>60%</td>
+                <td>97%</td>
+            </tr>
+        
+    </tbody></table>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Quantile</th>
+            </tr>
+            <tr>
+                <th>10%</th>
+                <th>Median</th>
+                <th>90%</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>2026</td>
+                <td>2040</td>
+                <td>2077</td>
+            </tr>
+        
+    </tbody></table>
+
+
+<p>This is a forecast by Ajeya Cotra, the author of the Bio-anchors model discussed above. Here she discusses her updated timelines in response to factors such as (a) lowering her estimate of what would be considered TAI, increased probability of scaling Deep Learning taking us to TAI, etc. The resultant timelines are shorter than her initial bottom-lines in her first Bio-anchors report, but are still derived using the same model so readers’ updates on this second report will largely be a function of (a) how much they put weight on this model to begin with, and (b) to what extent the evidence Cotra is updating on was already incorporated by readers in her initial modeling.</p>
+
+<h3 id="forecasting-transformative-ai-whats-the-burden-of-proof"><a href="https://www.cold-takes.com/forecasting-transformative-ai-whats-the-burden-of-proof/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Forecasting transformative AI: what’s the burden of proof?</a></h3>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Probability of TAI/AGI by…</th>
+            </tr>
+            <tr>
+                <th>2030</th>
+                <th>2050</th>
+                <th>2100</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>24%</td>
+                <td>44%</td>
+                <td>67%</td>
+            </tr>
+        
+    </tbody></table>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Quantile</th>
+            </tr>
+            <tr>
+                <th>10%</th>
+                <th>Median</th>
+                <th>90%</th>
+            </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>2024</td>
+                <td>2060</td>
+                <td>2241</td>
+            </tr>
+        
+    </tbody></table>
+
+
+<p>Holden Karnofsky writes a short series of posts explaining his reasoning around AI timelines, drawing from a number of the models discussed above. Karnofsky’s conclusion: “I think there’s more than a 10% chance we’ll see … ‘transformative AI’ within 15 years (by 2036); a ~50% chance we’ll see it within 40 years (by 2060); and a ~2/3 chance we’ll see it this century (by 2100).” Although timelines are given, the piece is less focused on explicitly modeling timelines than it is on dealing with “meta-level” arguments around the fruitfulness and tractability of modeling/forecasting long-term AI trends.</p>
+
+<p>Note: To produce our extraplation, we fit the two points given explicitly (for 2060 and 2100) with the method described in the <a href="#appendix-individual-weightings-extrapolation-and-aggregation">appendix</a>, ignoring the probability given for 2036. Readers should be aware that we expect this extrapolation to fail to capture some important aspects of the author’s beliefs.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>There are a number of radically different approaches to modeling timelines in these forecasts, and we want to stress again that the purpose of this piece is to be descriptive rather than evaluative, and to primarily be a jumping-off point/consolidated source for readers to familiarize themselves with the different approaches and predictions out there.</p>
+
+<p>        That being said, there are some notable takeaways from this set of forecasts:</p>
+
+<ol>
+  <li>Due to the vastly different timelines of different model-based forecasts, aggregate timelines are sensitive to subjective weightings, and even more so to choice of aggregation methodology, so these should be taken with a large pinch of salt. This is less of a pronounced effect for aggregating judgment-based timelines due to the lower variance and less heavy tails.</li>
+  <li>Among model-based predictions, <strong>inside-view models are more aggressive than outside-view models</strong>. This is largely driven by the much heavier tails given by outside-view models, with significant probability mass on arrival dates several centuries out. In practice, this most likely corresponds to futures where TAI/AGI requires several as-yet-unforeseen breakthroughs to emerge, in contrast with inside-view models which extrapolate currently-understood input progress.</li>
+  <li>Judgment-based forecasts tend to be even more aggressive still, suggesting that peoples’ all-things-considered timelines are influenced by a lot of information or reasoning not contained in any of the explicit models included here. The extent to which timelines here are disagreeing because (a) they put low (or zero) weight on the methodology of the models, or (b) they find the reasoning plausible but have different input parameters (e.g., in the case of the Bio-Anchors model) is unclear. However, it seems likely that most of the judgment-based forecasts are taking an inside-view based on recent ML progress and trends in research inputs rather than an outside-view, which would explain a lot of the gap.</li>
+  <li>The models and forecasts Epoch has ranked higher are Ajeya Cotra’s biological anchors and Samotsvety’s AGI Timelines Forecasts. Within our team, we are split between people who weight equally outside-view and inside-view models, and people who weight inside-view models more highly.</li>
+</ol>
+
+<p>In the future, we hope to revisit this post to potentially update with any new significant models and/or forecasts.</p>
+
+<p><em>We thank Zach Stein-Perlman, Misha Yagudin, Ben Cottier and the rest of the Epoch team for their comments on this piece. We specially thank the Epoch team who contributed their guesses of the relative weights of each forecast.</em></p>
+
+<h2 id="appendix-individual-weightings-extrapolation-and-aggregation">Appendix: Individual weightings, extrapolation and aggregation</h2>
+
+<p>We asked Epoch staff to provide subjective weights quantifying the relative trustworthiness of each model and forecast.</p>
+
+<p>For each model and forecast we linearly aggregated the weights. Some comments on patterns in these weights across respondents are given below</p>
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th> </th>
+            <th><a href="#forecasting-tai-with-biological-anchorsinside-view">Ajeya Cotra’s bio anchors</a></th>
+            <th><a href="#semi-informative-priors-over-ai-timelinesoutside-view">Semi-informative priors</a></th>
+            <th><a href="#insight-based-ai-timelines-modeloutside-view">Insights-based model</a></th>
+            <th><a href="#whole-brain-emulationinside-view">Whole Brain Emulation</a></th>
+            <th><a href="#phase-transitions-and-agioutside-view">Phase transitions</a></th>
+        </tr>
+    </thead>
+    
+        <tbody><tr><th>Respondent 1</th><td>0.76</td><td>0.15</td><td>0</td><td>0.02</td><td>0.08</td></tr>
+        <tr><th>Respondent 2</th><td>0.42</td><td>0.5</td><td>0.02</td><td>0.02</td><td>0.04</td></tr>
+        <tr><th>Respondent 3</th><td>0.83</td><td>0.08</td><td>0</td><td>0</td><td>0.08</td></tr>
+        <tr><th>Respondent 4</th><td>0.40</td><td>0.40</td><td>0.01</td><td>0.01</td><td>0.18</td></tr>
+        <tr><th>Respondent 5</th><td>0.14</td><td>0.43</td><td>0.07</td><td>0.07</td><td>0.29</td></tr>
+        <tr><th>Respondent 6</th><td>0.68</td><td>0.14</td><td>0.01</td><td>0.03</td><td>0.14</td></tr>
+        <tr><th>Respondent 7</th><td>0.49</td><td>0.20</td><td>0.15</td><td>0.01</td><td>0.15</td></tr>
+        <tr><th>Respondent 8</th><td>0.46</td><td>0.30</td><td>0.02</td><td>0.04</td><td>0.18</td></tr>
+        <tr><th>Average</th><td>0.50</td><td>0.28</td><td>0.03</td><td>0.03</td><td>0.16</td></tr>
+    
+</tbody></table>
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th><a href="#ai-impacts-survey-2022">AI Impacts survey (2022)</a></th>
+            <th><a href="#metaculus-date-of-artificial-general-intelligenceas-of-2022-10-11">Metaculus</a></th>
+            <th><a href="#samotsvetys-agi-timelines-forecasts">Samotsvety report</a></th>
+            <th><a href="#two-year-update-on-my-personal-ai-timelines">Ajeya Cotra</a></th>
+            <th><a href="#forecasting-transformative-ai-whats-the-burden-of-proof">Holden Karnofsky</a></th>
+        </tr>
+    </thead>
+    
+        <tbody><tr><th>Respondent 1</th><td>0.04</td><td>0.16</td><td>0.55</td><td>0.15</td><td>0.10</td></tr>
+        <tr><th>Respondent 2</th><td>0.01</td><td>0.27</td><td>0.54</td><td>0.09</td><td>0.09</td></tr>
+        <tr><th>Respondent 3</th><td>0.06</td><td>0.18</td><td>0.24</td><td>0.47</td><td>0.06</td></tr>
+        <tr><th>Respondent 4</th><td>0.05</td><td>0.15</td><td>0.25</td><td>0.3</td><td>0.25</td></tr>
+        <tr><th>Respondent 5</th><td>0.03</td><td>0.34</td><td>0.47</td><td>0.05</td><td>0.11</td></tr>
+        <tr><th>Respondent 6</th><td>0.14</td><td>0.14</td><td>0.29</td><td>0.21</td><td>0.21</td></tr>
+        <tr><th>Respondent 7</th><td>0.18</td><td>0.4</td><td>0.35</td><td>0.05</td><td>0.02</td></tr>
+        <tr><th>Respondent 8</th><td>0.11</td><td>0.24</td><td>0.48</td><td>0.07</td><td>0.10</td></tr>
+        <tr><th>Average</th><td>0.08</td><td>0.23</td><td>0.40</td><td>0.17</td><td>0.12</td></tr>
+    
+</tbody></table>
+
+<p>Now, we use these average weights to combine the different models and forecasts.</p>
+
+<p>For each model or forecast, we fit a Gamma distribution to the known pairs of year and arrival probability. This gives us a CDF, which we can use, together with the other interpolated CDFs, to combine the forecasts into a single aggregate CDF. (This is the same procedure used by AI Impacts’ 2022 <a href="https://aiimpacts.org/2022-expert-survey-on-progress-in-ai/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">expert survey</a> to extrapolate the beliefs of their respondents.) Note that this extrapolation has an important subjective component and we expect it will not correctly capture the beliefs of the respondents in some important ways.</p>
+
+<p>For model-based forecasts, we use a weighted linear average of the CDFs to aggregate the models. Each model starts from different assumptions, so we can decompose the probability as P(TAI) = P(Model 1 assumptions) x P(TAI | Model 1 assumptions)+ … + P(Model N assumptions) x P(TAI | Model N assumptions), using the weight assigned to each model as a proxy for the credence we should give to its assumptions.</p>
+
+<p>When aggregating judgment-based forecasts, we use the weighted, continuous version of the <a href="https://forum.effectivealtruism.org/posts/sMjcjnnpoAQCcedL2/when-pooling-forecasts-use-the-geometric-mean-of-odds" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">geometric mean of odds</a> to aggregate the forecasts. In this case, we are aggregating all-considered forecasts of experts, so it makes more sense to aggregate their information according to forecasting best practices.</p>
+
+<p>You can find a notebook implementing the process described above <a href="https://colab.research.google.com/drive/1LDl8-TzBbDbW7CBLrGk9gvClRlJ0CaHT?usp=sharing" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a>.</p>
+
+<h3 id="comments-on-weights">Comments on weights</h3>
+
+<p><strong>Model-based forecasts:</strong></p>
+
+<p>Bio anchors and semi-informative priors combined were given the majority of weight by all respondents, with the main difference in relative weight being how strongly the respondent preferred inside-view vs. outside-view approaches to the question. Overall, respondents preferred approaches taking an inside-view, although had low weight on the WBE model given how unrelated current AI progress is to brain emulation, and its reliance on compute projections which have not since borne out empirically.</p>
+
+<p><strong>Judgment-based forecasts:</strong></p>
+
+<p>Samotsvety’s report received the most weight from the team, with respondents unanimously scoring it highly. The Metaculus consensus likewise received fairly high weight across the board – both of these being reflective of the fact that most respondents at Epoch had familiarity with and relatively high trust in the forecasting capability of these two sources. There was significantly more disagreement over the weights on more general AI researcher consensus, with some of this being explained by differences in how respondents rated the methodology (this being the only forecast from an opt-in survey). The individual forecasts contained in this survey were also given varying weights across respondents, with, e.g., the weighting for Cotra’s personal timeline tending to correlate with the weighting for the Bio anchors model.</p>
+
+
+
+
+  <ol>
+    <li id="fn:1">
+      <p>See <a href="#appendix-individual-weightings-extrapolation-and-aggregation">this appendix</a> for the individual weightings from respondents and the rationale behind their aggregation. <a href="#fnref:1">↩</a></p>
+    </li>
+  </ol>

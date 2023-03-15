@@ -1,0 +1,65 @@
+<p>The always awesome and insightful Luis wrote a post 9 years ago about how <a href="https://lu.is/blog/2013/04/21/why-feed-reading-is-an-open-web-problem-and-what-browsers-could-do-about-it/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">the web browser should become an RSS reader</a>. Super important set of ideas and right on.</p>
+
+
+
+<p>Meanwhile, Mozilla has announced their intent to join the Fediverse by <a href="https://blog.mozilla.org/en/mozilla/mozilla-launch-fediverse-instance-social-media-alternative/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">standing up a Mastodon instance in early 2023</a>.</p>
+
+
+
+<p>I think Mozilla should make Firefox into an awesome Fediverse client soon, right when a large group of early-adopter-type users are looking for something to replace Twitter. In fact, Mozilla could single handedly solve many of the issues I wrote about in <a href="https://benlog.com/2022/12/28/dont-let-federation-make-the-experience-suck/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Don’t let federation make the experience suck</a>. Mozilla should also stand up a Mastodon / other ActivityPub server instance to provide a full stack, but the client is the more critical work.</p>
+
+
+
+<p>Imagine.</p>
+
+
+
+<p>You open up Firefox and you’re prompted to join the Fediverse (someone find a new name for this) by creating a Firefox account, publishing as @username@firefox.com. Click, click done. Maybe there’s a fee. It’s ok to pay for things.</p>
+
+
+
+<p>Of course if you already have a Fediverse account on another server, you can link it to your Firefox in seconds. And if you need a new Fediverse account but not on the Firefox instance, you can set that up, too. It’s just that there’s an easy default and most users don’t need to immediately learn the difference between servers and clients.</p>
+
+
+
+<p>Anywhere on the web as you surf, you can share the current page with your followers via your Fediverse account. The share button is built into the browser. If the people you follow have already commented about this page you’re viewing, your browser will tell you, in context.</p>
+
+
+
+<p>When you find a person or a company or a club’s Fediverse page as you surf the Web, whether it’s on your server instance or not, you can tell right away if you already follow them, or you can follow them in one click, right in your browser. No copy/paste obstacles.</p>
+
+
+
+<p>And of course if you click a link from a fediverse post, Firefox can navigate you there, never leaving Firefox, keeping the context of the post from which you came. And of course you’ve got your cookies if you’re sent to a paywalled article where you have a subscription, because you’re in your web browser the whole time.</p>
+
+
+
+<p>Go further.</p>
+
+
+
+<p>As you browse the web, Firefox is proactively telling you about people who seem to share a lot of the links you happen to read. Maybe you should follow those people for other cool things. All privacy protecting since your browsing activity is private while the links from other folks are explicitly public.</p>
+
+
+
+<p>Firefox + ActivityPub + this weird moment in time where many people are actively looking for a Twitter alternative… Could be how we make the Web actually more social in a healthy way.</p>
+
+
+
+<p>There’s more still.</p>
+
+
+
+<p>Have you heard from less-tech savvy friends “what is this Mastodon thing and how do I try it out?” And have you been hesitant because you don’t want to say “first you have to pick a server” and then watch their eyes glaze over before you’ve even had a chance to tell them that they have to also pick a native mobile app?</p>
+
+
+
+<p>What if you just told them: download Firefox on Mac, Windows, Linux, Android, iOS, whatever,  click the Fediverse icon, and follow the instructions. And then you can send them links to people they should follow. And they just work.</p>
+
+
+
+<p>There’s so much more. Firefox, with executable code running on desktops and laptops and mobile devices, could fairly easily add e2e encrypted direct messages.</p>
+
+
+
+<p>Mozilla has been looking to make the Web more social in a healthy way for at least 10 years. This might be it. </p>

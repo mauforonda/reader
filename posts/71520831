@@ -1,0 +1,215 @@
+<figure><img src="https://reader.miniflux.app/proxy/MK_EIG2FabVJ5s8L6jTarLfd0LeO-hS4RUiXMN9C2ys=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMi9TZWFyY2gtY2l0ZS1jb2ZmZWUtcmVwZWF0LVN0YXRGdW5ueS5qcGc=" alt="Sign: Search. Cite. Coffee. Repeat. (Cartoon by Hilda Bastian.)" width="255" height="366" srcset="https://reader.miniflux.app/proxy/MK_EIG2FabVJ5s8L6jTarLfd0LeO-hS4RUiXMN9C2ys=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMi9TZWFyY2gtY2l0ZS1jb2ZmZWUtcmVwZWF0LVN0YXRGdW5ueS5qcGc= 638w, https://reader.miniflux.app/proxy/-a88x1LCHwvkoFEGbuHXm1IAB3lP4C_C9Yx9wmYPQU4=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMi9TZWFyY2gtY2l0ZS1jb2ZmZWUtcmVwZWF0LVN0YXRGdW5ueS0yMDl4MzAwLmpwZw== 209w" sizes="(max-width: 255px) 100vw, 255px" loading="lazy"/></figure>
+
+
+
+
+
+
+
+<p>In 2019, I wrote a pair of posts about the <a href="https://absolutelymaybe.plos.org/2019/09/27/google-scholar-risks-and-alternatives/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">risks of our reliance</a> on Google Scholar (GS), and <a href="https://absolutelymaybe.plos.org/2019/10/31/who-you-gonna-search-engine-news-for-systematic-reviewers/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">search engine alternatives</a> for systematic reviewers. Back then, a <a href="https://onlinelibrary.wiley.com/doi/10.1002/jrsm.1378" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">thorough assessment of 28 searchable collections</a> of academic records found only 2 that were large enough to come anywhere close to GS’ scope – the Microsoft Academic Graph (MAG) and WorldWideScience (WWS). And of those, only Microsoft indexed citations so you could search those as well. What’s more, MAG’s corpus was open, so you could download results – which you can’t in GS – or even the whole lot to use in creating something else.</p>
+
+
+
+<p>But Microsoft <a href="https://en.wikipedia.org/wiki/Microsoft_Academic" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">canned Academic Search</a> at the end of 2021. The exercise may have largely been <a href="https://direct.mit.edu/qss/article/1/1/396/15572/Microsoft-Academic-Graph-When-experts-are-not" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">a testing ground</a> for the company’s “AI” search aspirations. Now it’s started a chatbot-driven arms race between its search engine, <a href="https://techcrunch.com/2023/02/01/report-microsoft-plans-to-update-bing-with-a-faster-version-of-chatgpt-in-the-coming-weeks/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Bing, and Google</a>. Meanwhile, Google’s cutting jobs and their search engine already <a href="https://pluralistic.net/2023/01/21/potemkin-ai/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">seemed to be circling the drain</a>, over-stuffed with ads and Google-surfaced content. It’s even easier to picture GS joining the long list of products <a href="https://killedbygoogle.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">scrapped by Google</a>.</p>
+
+
+
+<p>I rely on GS on a lot, and all the talk of threats to Google financial standing is making me nervous. So it was definitely time to see whether there are any viable, free-to-use, alternatives spanning all fields now – or even on the distant horizon. And I’ve ended up a lot more relieved – even optimistic – than I expected to be!</p>
+
+
+
+<p>With GS held tightly to Google’s secretive chest, it seems to me there are 3 major strands to follow:</p>
+
+
+
+<ol><li>Federated search of a wide range of databases;</li><li>The growing corpus of open metadata, open access literature, and academic repositories, together with the expansion of <a href="https://i4oc.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">open citations</a>; and</li><li>Services building on the MAG legacy Microsoft had released for others to use.</li></ol>
+
+
+
+<p>The first of those is the minimum most of us likely need – a way to at least search across a wide range of databases, instead of having to scour all relevant databases one at a time.</p>
+
+
+
+<p>The second is complex, with limitations that make no scientific sense – but at least it’s a growing proportion of many areas of scientific work.</p>
+
+
+
+<p>The third – building on the MAG content and system – may be the best chance to approximate, and likely surpass, what GS can do. (For example, you can’t download GS search results.)</p>
+
+
+
+<p>Let’s go through the options in those categories – and please let me know if you know of free-to-use, scholarship-wide services that I’ve missed. As well as other search services I’ve seen, I’ll be drawing on the 2019 paper I mentioned above for some assessments, even though the information is out-of-date [<a href="https://onlinelibrary.wiley.com/doi/10.1002/jrsm.1378" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Gusenbauer and Haddaway, 2019</a>]. I’m only listing services I think are frontrunners in their category within the post: I’ve listed others I considered but didn’t include below the post.</p>
+
+
+
+
+
+
+
+<h5>1. Federated academic search</h5>
+
+
+
+
+
+
+
+<p>There is a large and stable one of these, thank goodness! It’s <a href="https://worldwidescience.org/index.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">WorldWideScience</a> (WWS), mentioned earlier. It has a lot of limitations – you can check some of those out in the 2019 assessment. Here’s some of what it does have:</p>
+
+
+
+<ul><li>Wide and large scope – over 323 million records in 2019, when GS had over 389 million;</li><li>Some advanced search functions;</li><li>Alerts for new results for searches;</li><li>Support for multiple languages; and</li><li>Longterm viability.</li></ul>
+
+
+
+<p><a href="https://worldwidescience.org/about.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">About WWS</a>: It comes from an international non-profit consortium, and it’s maintained by the US Department of Energy (DoE). It was a joint project of the DoE and The British Library, originally launched in 2008.</p>
+
+
+
+<p>You can see the sources WWS is search across on the <a href="https://worldwidescience.org/wws/desktop/en/search.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">advanced search page</a>.</p>
+
+
+
+<p>I hope WWS is still going to grow, because it has lots of gaps that I think could potentially be filled if the commitment to improve the service is there. It’s a decent service already, though, and it has some advantages over GS. If the plug is pulled on GS, thanks to WWS, I won’t freak out!</p>
+
+
+
+
+
+
+
+<h5>2. Open metadata and academic repositories as a basis for search </h5>
+
+
+
+
+
+
+
+<p>A lot of the open access sources are already systematically gathered in WWS. But not all. And the area is growing. It’s patchy, though.</p>
+
+
+
+<p>The frontrunner here, I think, is a large service from Germany: <a href="https://www.base-search.net/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">BASE</a>, the Bielefeld Academic Search Engine, from Bielefeld University.</p>
+
+
+
+<p>According to the 2019 assessment, it covered over 144 million records (when GS had over 389 million). BASE has over 317 million records now. Like WWS, it doesn’t include citations.</p>
+
+
+
+<p>BASE was launched in 2004, and <a href="https://en.wikipedia.org/wiki/BASE_(search_engine)" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">is comprised of</a> 2 types of records. The team harvest metadata from institutional repositories and libraries that adopt a particular open access system (the OAI-PMH). They normalize (standardize) and index it for searching. Secondly, they index some websites and collections. BASE supports several languages, too.</p>
+
+
+
+<p>The BASE team is <a href="https://openbiblio.social/@base" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">on Mastodon</a>: @base@openbiblio.social</p>
+
+
+
+
+
+
+
+<h5>3. Services building on the MAG legacy </h5>
+
+
+
+
+
+
+
+<p>I think these are the most exciting developments, because they incorporate linkages for citations. Searching studies that cite other studies is one of the most useful functions of GS. </p>
+
+
+
+<p>First up, MAG in context. According to the 2019 assessment, MAG had over 213 million records at the time GS had over 389 million. Microsoft stopped updating MAG at the end of 2021. But it has a non-profit successor…</p>
+
+
+
+<p>You may be familiar with <a href="https://unpaywall.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Unpaywall</a>, which helps you find free versions of publications. It’s one of the services produced by the US-based non-profit group, OurResearch. In May 2021, the group received a $4.5 million grant from <a href="https://www.arcadiafund.org.uk/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Arcadia</a>, a private charitable foundation founded by <a href="https://en.wikipedia.org/wiki/Lisbet_Rausing" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Lisbet Rausing</a> and <a href="https://en.wikipedia.org/wiki/Peter_Baldwin_(professor)" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Peter Baldwin</a>. (The couple are scholars as well as philanthropists, and their foundation is one of the major benefactors of the Wikimedia Foundation aka Wikipedia.)</p>
+
+
+
+<p>Soon after OurResearch received that funding, Microsoft announced they were pulling the plug on MAG, and OurResearch sprang into action. Using MAG as the legacy content, they launched <a href="https://openalex.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">OpenAlex</a>, named after the Library of Alexandria, in January 2022. It picked up where MAG left off, but excluded records on patents.</p>
+
+
+
+<p>OpenAlex provides content for others to build services with, but they don’t have a user-friendly search service to use directly. That’s on their agenda, though. <a href="https://www.vosviewer.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">VOSviewer</a> is available, which you can use to construct author and citation networks, etc. (It’s explained in <a href="https://www.leidenmadtrics.nl/articles/vosviewer-goes-online-part-1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">a pair of blog posts</a>.)</p>
+
+
+
+<p>There’s a <a href="https://arxiv.org/abs/2205.01833" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">preprint on arXiv</a> describing OpenAlex, by Jason Priem, Heather Piwowar, and Richard Orr from OurResearch. As of September 2022, they report they were adding about 50,000 records a day to OpenAlex, which contained 209 million records.</p>
+
+
+
+<p>According to Priem and colleagues, OpenAlex is drawing new content from “many sources, including Crossref, PubMed, institutional and disciplinary repositories (eg, arXiv).” (<a href="https://en.wikipedia.org/wiki/Crossref" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Crossref</a> is the organization that provides DOIs – identifiers – to academic journals.)</p>
+
+
+
+<p>The OpenAlex team isn’t on Mastodon <em>(please join!!!)</em>, but you can sign up for email updates <a href="https://openalex.org/about" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a>.</p>
+
+
+
+<p>Although the OpenAlex search isn’t available yet, others can incorporate OpenAlex. I think the frontrunner here is <a href="https://about.lens.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Lens</a>, an open source search engine which was launched for searching patents in 2000, but now includes scholarly works, too. It’s produced by <a href="https://en.wikipedia.org/wiki/Cambia_(non-profit_organization)" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Cambia</a>, an Australian-based non-profit open science enterprise. <a href="https://about.lens.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">They report</a> that they have now normalized and indexed over 225 million scholarly works, more than 127 million patent records, and more than 370 million patent sequences.</p>
+
+
+
+<p>(For systematic reviewers: <a href="http://eppi.ioe.ac.uk/cms/Default.aspx?tabid=3754" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">EPPI-Reviewer uses OpenAlex</a> to help keep reviews up-to-date.)</p>
+
+
+
+<p>I’m quite hopeful that OpenAlex will deliver what I need to abandon GS before it abandons me. Fingers tightly crossed!</p>
+
+
+
+
+
+
+
+<p>~~~~</p>
+
+
+
+
+
+
+
+<p><em>Disclosure: I was a senior scientist at the NIH’s <a href="https://www.ncbi.nlm.nih.gov/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">NCBI</a> working on PubMed-related projects from 2011 to 2018. (NCBI is part of the U.S. National Library of Medicine.)</em></p>
+
+
+
+<p><em>The cartoon is my own <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">(CC BY-NC-ND license)</a>. (More cartoons at <a href="http://statistically-funny.blogspot.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Statistically Funny</a>.)</em></p>
+
+
+
+
+
+
+
+<p><strong>Search engines I considered, but excluded:</strong></p>
+
+
+
+
+
+
+
+<ul><li><a href="https://app.dimensions.ai/discover/publication" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Dimensions</a>: A commercial service with a free online search engine, with 153 million records (including 100 million scholarly publications, plus grants and more). Uses machine-learning and full text searching. It was originally based on the <a href="https://grid.ac/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">GRID database</a>.</li><li><a href="https://www.researchrabbit.ai/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">ResearchRabbit</a>: I couldn’t find out much about this. I think it must have search, but I couldn’t find that either, and gave up.</li><li><a href="https://scholar.archive.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Scholar Archive</a>: From the Internet Archive. Quite small – around 25 million papers which they have archived. It’s still under construction.</li><li><a href="https://www.scinapse.io/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Scinapse</a>: A commercial service that currently only includes 48,000 journals. I couldn’t find much information about it.</li><li><a href="https://www.semanticscholar.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Semantic Scholar</a>: A commercial service with a limited subject scope. According to the 2019 assessment, it included over 72 million records when GS had over 389 million.</li></ul>
+
+
+
+
+
+
+
+<p><em>Correction soon after posting: Removed a sentence from my description of Dimensions thanks to a <a href="https://social.cwts.nl/@vtraag/109874085730568703" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">pointer from Vincent Traag</a>. </em></p>
+
+
+
+
+
+
+
+<p></p>
+
+<p>The post <a href="https://absolutelymaybe.plos.org/2023/02/16/could-there-be-some-viable-challengers-to-google-scholar-on-the-horizon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Could There Be Some Viable Challengers to Google Scholar on the Horizon?</a> appeared first on <a href="https://absolutelymaybe.plos.org" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Absolutely Maybe</a>.</p>

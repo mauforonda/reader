@@ -1,0 +1,16 @@
+<p>
+People sometimes ask me how I write my interactive tutorials. I started out using <a href="https://d3js.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">d3.js</a>, and five years ago I wrote <a href="https://www.redblobgames.com/making-of/line-drawing/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">an interactive tutorial about how I made interactive pages with d3.js</a>. I recreated a diagram from my <a href="https://www.redblobgames.com/grids/line-drawing.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">line drawing tutorial</a>, which was implemented in d3.js. I now use <a href="https://v3.vuejs.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Vue.js v2</a>, so I wrote a new tutorial about how I make interactive pages with Vue. I recreated several diagrams from my <a href="https://www.redblobgames.com/grids/circle-drawing/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">circle drawing tutorial</a>.
+</p>
+
+<figure>
+  <a href="https://www.redblobgames.com/making-of/circle-drawing/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/bPLuCAUPogyppnaOfCCMys1Ed6q0EU5qa2LKNsLf3fo=/aHR0cHM6Ly93d3cucmVkYmxvYmdhbWVzLmNvbS9tYWtpbmctb2YvY2lyY2xlLWRyYXdpbmcvYmxvZy9sYXllcnMtZGlhZ3JhbS5wbmc=" alt="Diagram constructed in layers" loading="lazy"/></a>
+</figure>
+
+
+<p>
+The page is intended to document <em>how I write my pages</em>. It&#39;s not a comprehensive guide to making <a href="https://explorabl.es/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Explorable Explanations</a>. Everyone has their own style and preferred implementation techniques. I approach it as a <em>document</em> (explanations) with added interactivity (explorables), and the implementation reflects that. But I don&#39;t use the same approach for every page; I&#39;ll switch to Canvas or WebGL for some projects. Most of the ideas on the page will work just as well with other libraries, but I&#39;m showing Vue because that&#39;s what I use most often.
+</p>
+
+<p>
+If you are interested in how I make my pages, or how to get started making your own, <a href="https://www.redblobgames.com/making-of/circle-drawing/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">take a look at my new tutorial</a>. Please give me feedback on what was confusing or didn&#39;t work well for you, so that I can improve the page.
+</p>

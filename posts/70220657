@@ -1,0 +1,270 @@
+<p><em>Disclaimer: I’m not an expert on LLMs, this is just a quick report on a Sunday hack project. Please <a href="mailto:gklitt@gmail.com" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">let me know</a> if I can improve my approach or I got something wrong!</em></p>
+
+<p><img src="https://reader.miniflux.app/proxy/HsmLKRWnSJUXbsyajGkDRRxLCGy4RjIMUrj3HaB-7mk=/aHR0cDovL2dlb2ZmcmV5bGl0dC5jb20vaW1hZ2VzL2FydGljbGVfaW1hZ2VzL2xhbmdjaGFpbi9yb2JvdC5wbmc=" alt="A steampunk robot playing basketball" loading="lazy"/></p>
+
+<p>Imagine you got the smartest person in the world, locked them in a room without internet, and asked them to answer a bunch of random trivia questions, with only a few seconds for each one. Now imagine the same test, but this time you give the person access to a smartphone with Google and a calculator. Which test would go better?</p>
+
+<p>This seems to be the essential logic behind some <a href="https://openai.com/blog/webgpt/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">recent</a> <a href="https://ai.googleblog.com/2022/11/react-synergizing-reasoning-and-acting.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">techniques</a> for improving the accuracy of large language models. LLMs locked in a room tend to make things up; why not let them use Google and a calculator too?</p>
+
+<p>In this post, <strong>I show how I composed a simple AI program that can answer multi-part questions about NBA statistics</strong>. It uses <a href="https://openai.com/api/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">GPT-3</a> as a general-purpose LLM “agent”, and calls out to <a href="https://statmuse.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Statmuse</a>, a specialized natural-language search engine for sports statistics. The interaction between the two is orchestrated by <a href="https://github.com/hwchase17/langchain" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Langchain</a>, a Python library that helps with composing “chains” of LLM behavior.</p>
+
+<p>The resulting program combines GPT-3’s open-ended reasoning ability with Statmuse’s more specialized database, and can answer questions that neither service can do alone. As I’ll show, it also fails in interesting ways 🙃.</p>
+
+<p>As a small teaser, here’s a printout of the program’s “thought process” while thinking through a problem. There’s an LLM agent making a plan; it delegates statistics lookups to Statmuse and math to a calculator, all through a natural language interface.</p>
+
+<blockquote>
+<p><strong>Me:</strong> How many points are the Boston Celtics allowing on defense per game this NBA season 2022-2023?
+How does that compare to their average last season, as a percent change?</p>
+
+<p><strong>Model:</strong></p>
+
+<p>Entering new AgentExecutor chain…
+ I need to find the points allowed per game for the Celtics this season and last season</p>
+
+<p><em>Action</em>: Statmuse,
+<em>Action Input</em>: “Boston Celtics points allowed per game this season”</p>
+
+<p><em>Observation</em>: The Boston Celtics have 112.29 opponent points per game played this season.</p>
+
+<p><em>Thought</em>: I need to find the points allowed per game for the Celtics last season</p>
+
+<p><em>Action</em>: Statmuse,
+<em>Action Input</em>: “Boston Celtics points allowed per game last season”</p>
+
+<p><em>Observation</em>: The Boston Celtics had 104.48 opponent points per game played in 2021-22.</p>
+
+<p><em>Thought</em>: I need to calculate the percent change</p>
+
+<p><em>Action</em>: Calculator,
+<em>Action Input</em>: (112.29 - 104.48) / 104.48</p>
+
+<p><em>Observation</em>: Answer: 0.074</p>
+
+<p><em>Thought</em>: I now know the final answer</p>
+
+<p><strong>Final Answer: The Boston Celtics are allowing 7.4% more points per game this season compared to last season.</strong></p>
+</blockquote>
+
+<p>At the end I’ll also note a few reflections on the process. Gluing this together only took an hour or two, and felt very <em>weird</em> compared to the traditional software development I’m used to. Instead of composing well-defined APIs, I was gluing together modules which used <em>natural language</em> as the interface, and even using an LLM to drive control flow. It left me wondering how common these kinds of <strong>fuzzy APIs</strong> will be in the future…</p>
+
+<h2 id="gpt-3-makes-things-up">GPT-3 makes things up</h2>
+
+<p>GPT-3 has a nice general ability to think through problems, but if you ask it about NBA stats, it often hallucinates facts. For example:</p>
+
+<blockquote>
+<p><strong>Me</strong>: Who scored more points in the 2020-2021 NBA season, Jayson Tatum or Nikola Jokic?</p>
+
+<p><strong>GPT-3</strong>: Jayson Tatum scored more points in the 2020-2021 NBA season, with 2,014 points compared to Nikola Jokic’s 1,871 points.</p>
+</blockquote>
+
+<p>The logical comparison is sound, but the facts are wrong! Jayson Tatum in fact scored 1,692 points in 2020-2021.</p>
+
+<p>If you ask it about the current ongoing season, GPT will refuse to answer since it knows that the relevant information wasn’t available when it was trained. This is better than making things up, but still useless; we need access to recent data.</p>
+
+<h2 id="statmuse-has-limited-reasoning">Statmuse has limited reasoning</h2>
+
+<p><a href="https://statmuse.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Statmuse</a> is an awesome website where you can type in natural language queries about sports and it gives detailed answers. It works perfectly for many simple queries—for example, we can give it that same query above, and it returns the correct answer, with a bar chart comparing the two players, and a detailed table of stats:</p>
+
+<p><img src="https://reader.miniflux.app/proxy/QS2r7Nmq2bqdwWBoi8KpoSYnfhKHpqcYMncmE3U_SO4=/aHR0cDovL2dlb2ZmcmV5bGl0dC5jb20vaW1hZ2VzL2FydGljbGVfaW1hZ2VzL2xhbmdjaGFpbi9zdGF0bXVzZS5wbmc=" alt="" loading="lazy"/></p>
+
+<p>But Statmuse has its own limits.</p>
+
+<p>For one, sometimes it misinterprets questions. If you ask it:</p>
+
+<blockquote>
+<p>how many points are the boston celtics allowing on defense per game this nba season 2022-2023?</p>
+</blockquote>
+
+<p>it tells you about how many points they’re <em>scoring</em>, not allowing on defense, which is wrong. And if we extend the question to have multiple parts, it totally flops. When I asked</p>
+
+<blockquote>
+<p>how many points are the boston celtics allowing on defense per game this nba season 2022-2023? how does that compare to their average last season, as a percent change</p>
+</blockquote>
+
+<p>the website refused to answer at all.</p>
+
+<p>Statmuse also prefers precise factual questions to fuzzy ones—if you ask it for the “best player on the LA Lakers”, it declines, albeit with a beautifully designed error message:</p>
+
+<p><img src="https://reader.miniflux.app/proxy/2snFqaSggghDk5_w_lZ_QsWLkV4uipGT0EvKPpITZWs=/aHR0cDovL2dlb2ZmcmV5bGl0dC5jb20vaW1hZ2VzL2FydGljbGVfaW1hZ2VzL2xhbmdjaGFpbi9zdGF0bXVzZTMucG5n" alt="" loading="lazy"/></p>
+
+<h2 id="the-best-of-both-worlds">The best of both worlds?</h2>
+
+<p>GPT-3 has general fuzzy reasoning ability, but not accurate facts. Statmuse has the actual stats, but is limited in its reasoning. Can we combine the two in a useful way?</p>
+
+<p>To help glue them together, I used <a href="https://github.com/hwchase17/langchain" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Langchain</a>, a Python library that aims to help with combining LLMs with “other sources of computation or knowledge.” I’ve been intrigued by Langchain for a while since I’ve seen so many interesting demos using it, and this was a fun chance to play with it myself.</p>
+
+<p>The main abstraction I used is called an <a href="https://langchain.readthedocs.io/en/latest/modules/agents/getting_started.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><em>agent</em></a>. Basically, you give an LLM access to a set of <em>tools</em>, which can help it with fetching external data or running computations. Then, the LLM solves a task using these tools—given an initial prompt, it thinks aloud about which tool to use next to make progress solving the problem. For example, an agent might decide that it should run a couple Google searches to gather facts before trying to answer a question.</p>
+
+<p>As an aside, I find this idea fascinating because it’s a sort of inversion from the control flow I would typically expect. Normally I might expect that traditional Python code would be calling LLM prompts. But here, the LLM is calling the shots, and is using modules written in traditional code (like a calculator) to get work done. Weird!</p>
+
+<p>Anyway, the main thing I needed to do was <strong>make a new tool for searching Statmuse</strong>. The interface for a tool has two parts.</p>
+
+<p><strong>First you write the tool’s functionality</strong>, as a Python function that takes in a string query and returns a string result. In this case, I just send the query to Statmuse’s website and scrape out the answer they print out. It’s only a few lines of code, because the input and output are both simply natural language strings:</p>
+<pre><code>def search_statmuse(query: str) -&gt; str:
+  URL = f&#39;https://www.statmuse.com/nba/ask/{query}&#39;
+  page = requests.get(URL)
+
+  soup = BeautifulSoup(page.content, &#34;html.parser&#34;)
+  return soup.find(&#34;h1&#34;, class_=&#34;nlg-answer&#34;).text
+</code></pre>
+<p>Then you <strong>tell the LLM how to use the tool</strong>. In natural language (!) you give it a sense of what kinds of tasks the tool might be well-suited for. In this case, I started with a simple description, “A sports search engine”, and iterated to make it more complex as I went. (We’ll see later how it grew.)</p>
+
+<p>Then, we give the Langchain agent access to this tool, alongside two tools built into Langchain by default: a Google Search API, and a math calculator.</p>
+<pre><code>llm = OpenAI(temperature=0)
+default_tools = load_tools(
+  [&#34;serpapi&#34;, &#34;llm-math&#34;], llm=llm
+)
+
+# Add our Statmuse tool to the mix!
+tools = default_tools + [statmuse_tool]
+agent = initialize_agent(tools, llm,
+  agent=&#34;zero-shot-react-description&#34;, verbose=True)
+</code></pre>
+<p>And that’s it—almost no code at all, really. Let’s see how well it worked…</p>
+
+<h2 id="success-composition">Success: composition!</h2>
+
+<p>The combined tool is able to answer the complex multi-part question from above that Statmuse couldn’t answer:</p>
+
+<blockquote>
+<p>how many points are the boston celtics allowing on defense per game this nba season 2022-2023? how does that compare to their average last season, as a percent change</p>
+</blockquote>
+
+<p>It figures out that it can look up the points allowed this season and last season independently on Statmuse, and then use a calculator to do the math between them. Note that I didn’t explicitly program any of this behavior, the LLM decided that this was the best way to use the available tools to get the job done.</p>
+
+<p>Below is the raw transcript of the model’s “thought process”. At each step it decides what action to take, makes an observation from using the tool, and then records a thought about what it should do next.</p>
+
+<blockquote>
+<p><strong>Me:</strong> How many points are the Boston Celtics allowing on defense per game this NBA season 2022-2023?
+How does that compare to their average last season, as a percent change?</p>
+
+<p><strong>Model:</strong></p>
+
+<p>Entering new AgentExecutor chain…
+ I need to find the points allowed per game for the Celtics this season and last season</p>
+
+<p><em>Action</em>: Statmuse,
+<em>Action Input</em>: “Boston Celtics points allowed per game this season”</p>
+
+<p><em>Observation</em>: The Boston Celtics have 112.29 opponent points per game played this season.</p>
+
+<p><em>Thought</em>: I need to find the points allowed per game for the Celtics last season</p>
+
+<p><em>Action</em>: Statmuse,
+<em>Action Input</em>: “Boston Celtics points allowed per game last season”</p>
+
+<p><em>Observation</em>: The Boston Celtics had 104.48 opponent points per game played in 2021-22.</p>
+
+<p><em>Thought</em>: I need to calculate the percent change</p>
+
+<p><em>Action</em>: Calculator,
+<em>Action Input</em>: (112.29 - 104.48) / 104.48</p>
+
+<p><em>Observation</em>: Answer: 0.074</p>
+
+<p><em>Thought</em>: I now know the final answer</p>
+
+<p><strong>Final Answer: The Boston Celtics are allowing 7.4% more points per game this season compared to last season.</strong></p>
+</blockquote>
+
+<p>Interestingly, this didn’t work when I first tried. Initially, the model asked Statmuse for “Boston Celtics points allowed per game”, without adding “this season” at the end. Statmuse would then return <em>all-time</em> stats, and the model would incorrectly assume those results were the stats for this season.</p>
+
+<p>To fix this, I iterated on the “instructions” for the Statmuse tool, telling the agent to always specify a timeframe:</p>
+
+<blockquote>
+<p>A sports search engine. Always specify a year or timeframe with your search.</p>
+</blockquote>
+
+<p>I think this points to both the beauty and fragility of this setup: I never taught the model how to use Statmuse, it just started running queries, and did fine in some cases. But with clearer instruction on how to use Statmuse, it improved its accuracy. Still, I’d want to think more about how to get the agent to detect whether the data that came back from the tool was really responding correctly to the query.</p>
+
+<p>In general the program is able to do pretty well on these kind of comparison queries.</p>
+
+<h2 id="success-learning-the-tool">Success: learning the tool</h2>
+
+<p>A fascinating exchange was when I asked my program the following query:</p>
+
+<blockquote>
+<p>How many points have been scored by the best player on the Los Angeles Lakers this year?</p>
+</blockquote>
+
+<p>What happened in my program was that the agent LLM sensibly first tried asking Statmuse who the best player is, but Statmuse replied “What does &#34;best” really mean anyway? Try something fact-based.“ The agent LLM took this error message as feedback, and came up with a more &#34;fact-based” query: asking for the highest scoring player, which succeeded in answering the question.</p>
+
+<p>Here’s the full transcript:</p>
+
+<blockquote>
+<p>I need to find out who the best player on the Lakers is and how many points they have scored this &gt; year.</p>
+
+<p><em>Action</em>: Statmuse,
+<em>Action Input</em>: Who is the best player on the Los Angeles Lakers in 2020?</p>
+
+<p><em>Observation</em>:
+What does “best” really mean anyway? Try something fact-based.</p>
+
+<p><em>Thought</em>: I need to find out the highest scoring player on the Lakers this year.</p>
+
+<p><em>Action</em>: Statmuse,
+<em>Action Input:</em> Who is the highest scoring player on the Los Angeles Lakers in 2020?</p>
+
+<p><em>Observation</em>:
+LeBron James scored the most points for the Lakers in 2019-20, with 1,698 points.</p>
+
+<p><em>Thought</em>: I now know the final answer.
+<em>Final Answer</em>: LeBron James scored 1,698 points for the Los Angeles Lakers in 2019-20.</p>
+</blockquote>
+
+<p>What I find remarkable here is that Statmuse designed an error message that was intended to be read by humans, and our agent LLM was able to use that error message to iterate on its usage of the tool. I didn’t have to explicitly teach the agent to use Statmuse, it figured out a good pattern on its own. Pretty wild!</p>
+
+<h2 id="success-comparing-player-stats-to-season-averages">Success: comparing player stats to season averages</h2>
+
+<p>Here’s a complex prompt I gave to the model:</p>
+
+<blockquote>
+<p><strong>Me</strong>: Write a colorful script for an NBA postgame show by two announcers, Stan and Dan.
+The announcers should compare the performance of key players to their 2022-2023 NBA season average.</p>
+
+<p>The game is between the LA Lakers and Boston Celtics, and the Celtics won 125 - 121 in overtime.</p>
+
+<p>Here are the stats of key players for this game.</p>
+
+<p>Jayson Tatum: 30 PTS, 8 FGM, 25 FGA, 3 3PM, 10 3PA, 11 REB, 4 AST
+Jaylen Brown: 37 PTS, 13 FGM, 23 FGA, 2 3PM, 9 3PA, 9 REB, 3 AST
+LeBron James: 41 PTS, 15 FGM, 30 FGA, 6 3PM, 12 3PA, 9 REB, 8 AST</p>
+</blockquote>
+
+<p>and here’s the final answer given by the model, after internally looking up individual player stats on Statmuse and doing some math with the calcluator:</p>
+
+<blockquote>
+<p>Stan: Jayson Tatum put up 30 points tonight, slightly below his season average of 31.1. Jaylen Brown had an incredible night, scoring 37 points, well above his season average of 27. And LeBron James had an amazing night, scoring 41 points, well above his season average of 30.2.</p>
+</blockquote>
+
+<h2 id="failure-modes">Failure modes</h2>
+
+<p>There were some interesting failures along the way as I wrote this program.</p>
+
+<p>As I mentioned earlier, sometimes the program would incorrectly interpret results from Statmuse, e.g. assuming a different timerange.</p>
+
+<p>In other cases the LLM would just fail to come up with a query that Statmuse could understand. In these cases it would loop and try things, eventually giving up and resorting to a Google search which rarely had the right data available.</p>
+
+<p>To fix these situations I also had to improve the instructions given to the agent. I ultimately landed on the following description:</p>
+
+<blockquote>
+<p>A sports search engine. Use this more than normal search if the question is about NBA basketball, like ‘who is the highest scoring player in the NBA?’. Always specify a year or timeframe with your search. Only ask about one player or team at a time, don’t ask about multiple players at once.“</p>
+</blockquote>
+
+<p>One funny failure mode was that I tried to get it to write a &#34;halftime show” script, but the agent kept comparing halftime statistics to full-game averages, resulting in nonsensical statements along the lines of “Player X has 15 points at the half, well below their season average of 30 points per game”.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>In a couple hours, I was able to get a natural language AI to think aloud about when and how to  ask another natural language AI for specific data, and reason with that data to answer complex queries. 2023 is a fun time to be in tech!</p>
+
+<p>I’m excited to play more with this class of approaches. This was the result of my first day trying this out; there’s much much more to learn.</p>
+
+<p>Some links:</p>
+
+<ul>
+<li><a href="https://gist.github.com/geoffreylitt/b345e5a3fcc18368df04b49f6924c217" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">my notebook code</a>, you can try opening in colab and running more queries, all you need is an OpenAI API key.</li>
+<li>The <a href="https://langchain.readthedocs.io/en/latest/modules/agents/getting_started.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Langchain docs</a> have a lot more interesting info as well.</li>
+<li>Another <a href="https://huggingface.co/spaces/JavaFXpert/Chat-GPT-LangChain" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">fun demo</a> of tool usage that I found inspirational: having GPT call out to Wolfram Alpha to answer factual questions. I guess Wolfram Alpha serves a sort of similar role to Statmuse: a specialized fact-based natural-language query engine.</li>
+<li>A <a href="https://dagster.io/blog/chatgpt-langchain" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">blog post</a> by Pete Hunt that I found useful as an example of how to use LangChain in a different setting.</li>
+<li>I’ve <a href="http://geoffreylitt.com/2022/11/23/dynamic-documents.html#llms-end-user-programming" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">written previously</a> about using LLMs to support non-programmers in building personal software</li>
+</ul>

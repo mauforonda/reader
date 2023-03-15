@@ -1,0 +1,5 @@
+This post is also available on Lesswrong
+Show me your original face before you were born.
+— Variation of the Zen koan
+‘The Mask’ by Rozzi Roomian, with DALL-E 2 outpainting
+I was able to use the weird centroid-proximate tokens that Jessica Mary and Matthew Watkins discovered to associate several of the Instruct models on the OpenAI API with the base models they were initialized from. Prompting GPT-3 models with these tokens causes aberrant and correlated behaviors, and I found that the correlation is preserved between base models and Instruct versions, thereby exposing a “fingerprint” inherited from pretraining.

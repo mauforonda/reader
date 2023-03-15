@@ -1,0 +1,15 @@
+<p>Today is the <a href="https://docs.jointakahe.org/en/latest/releases/0.7/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">0.7 release of Takahē</a>,
+and things are really humming along now; this release marks the point where
+we&#39;ve built enough moderation and community features to make me happy that I
+can open up <a href="https://takahe.social" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">takahe.social</a> to registrations,
+albeit with a user number cap.</p>
+<p>We&#39;ve also launched a <a href="https://patreon.com/takahe" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Patreon for Takahē</a>, in a
+quest to make development and operation of Takahē more sustainable - and
+work towards start paying some people to help out with the less exciting work
+like triaging tickets, user support, and moderation of takahe.social. If you
+want to volunteer directly, that&#39;s covered in our
+<a href="https://docs.jointakahe.org/en/latest/contributing/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Contributing docs</a>.</p>
+<p>There&#39;s some interesting technical topics I want to dig into today, though -
+it&#39;s been a little while since my last blog post and ActivityPub and friends
+continue to surprise.</p>
+<p>...</p>

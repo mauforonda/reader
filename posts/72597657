@@ -1,0 +1,38 @@
+<p>“DingleBog3899” on the Roku community forum (emphasis added):</p>
+
+<blockquote>
+  <p>Our tribal network started out IPv6, but soon learned we had to
+somehow support IPv4 only traffic. It took almost 11 months in
+order to get a small amount of IPv4 addresses allocated for this
+use. In fact there were only enough addresses to cover maybe 1% of
+population. So we were forced to create a very expensive
+proxy/translation server in order to support this traffic.</p>
+
+<p>We learned a very expensive lesson. 71% of the IPv4 traffic we
+were supporting was from Roku devices. 9% coming from DishNetwork
+&amp; DirectTV satellite tuners, 11% from HomeSecurity cameras and
+systems, and remaining 9% we replaced extremely outdated Point of
+Sale (POS) equipment. So we cut Roku some slack three years ago by
+spending a little over $300k just to support their devices.</p>
+
+<p>First off I despise both Apple and that other evil empire (house
+of mouse) I want nothing to do with either of them. Now with that
+said I am one of four individuals that suggested and lobbied 15
+other tribal nations to offer a new AppleTV device in exchange for
+active Roku devices. Other nations are facing the same dilemma.
+Spend an exorbitant amount of money to support a small amount of
+antiquated devices or replace the problem devices at fraction of
+the cost.</p>
+
+<p>Now if Roku cannot be proactive at keeping up with connectivity
+standards they are going to be wiped out by their own complacency.
+Judging by the growing number of offers to replace their devices
+for free their competitors are already proactively exploiting that
+complacency. <em>When we approached Apple to see about a discount to
+purchase a large number of their devices, for the exchange, they
+eagerly offered to supply their devices for free.</em></p>
+</blockquote>
+
+<p>Seems weird to say you despise a company that supplied a Native American tribe with a slew of free Apple TVs, but the fact that he’s not an Apple fan makes it all the more telling that they went with Apple TVs as their solution. I wonder what the deal is with Roku not supporting <a href="https://en.wikipedia.org/wiki/IPv6" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">IPv6</a>? Is it just something they haven’t gotten to, or have they somehow engineered a tech stack that only works on IPv4?</p>
+
+<p><em>Link: <strong><a href="https://community.roku.com/t5/Features-settings-updates/It-s-2022-and-still-no-IPv6/m-p/854673/highlight/true#M35732" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">community.roku.com/t5/Features-settings-updates/It-s-2022…</a></strong></em></p>

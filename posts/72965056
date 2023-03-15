@@ -1,0 +1,110 @@
+<p>The primary purpose of transportation investments is to accelerate economic growth. But research shows that although investment in roads contributes to <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2856050" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">growth in income</a>, the benefits are uneven across locations. Existing studies focus on the impacts of large economic corridors and rural connectivity programs in dense, rapidly growing countries in Asia (<a href="https://www.aeaweb.org/articles?id=10.1257/aer.20180268" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">India</a> and <a href="https://academic.oup.com/restud/article/81/3/1046/1605154?login=true" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">China</a>), but the impacts of transport investments in lower-density contexts are less studied.</p>
+
+<p><a href="https://twitter.com/intent/tweet?text=Studying+the+impacts+of+transportation+programs+is+important+because+many+low-+and+middle-income+countries+%28LMICs%29+and+donors+are+investing+in+roads+to+foster+economic+development.&amp;url=https://blogs.worldbank.org/developmenttalk/evaluating-impact-transportation-investment/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Studying the impacts of transportation programs is important because many low- and middle-income countries (LMICs) and donors are investing in roads to foster economic development. </a> Between 1995 and 2015, the World Bank supported $161 billion in transport investments. Given these large investments, it is important to examine their impact by asking: Do roads promote economic development? And do all areas experience benefits of improved roads, or are benefits highly concentrated in certain areas?</p>
+
+<p>In a <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099332404062230683/idu073a7158605532046490b712098aed9008539" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">working paper</a>, we evaluate the impact of a <a href="https://documents1.worldbank.org/curated/en/183691528124593286/pdf/ICR00004205-06012018.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Road Sector Development Program</a> (RSDP) in Ethiopia. Since 1997, the country has invested over 266,209 million ETB, or over $5 billion, to improve approximately 130,000 kilometers of its road network and accelerate economic growth. Since the end of the 1990s, most areas of the country were not well connected to economic centers, isolating much of the population from markets and social services. To study the economic impact, we built a dataset of annual road upgrades on economic development, urbanization, and cropland area. Figure 1 illustrates the geographic spread of RSDP (Figure 1a) and the growth in the road network over time (Figure 1b). Given the large scope of RSDO, we relied on satellite imagery to provide measures of outcomes of interest. We rely on <a href="https://www.nature.com/articles/s41597-020-0510-y" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">nighttime lights</a> as a <a href="https://www.aeaweb.org/articles?id=10.1257/aer.102.2.994" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">proxy for local economic development</a> and an annual <a href="https://www.esa-landcover-cci.org/?q=node/197" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">land cover dataset</a> from the European Space Agency to capture urban land and cropland patterns. While outcomes from satellite imagery might be noisier than survey-based measures, they have the advantage of being available across the entire country, at relatively fine spatial resolution, and at regular intervals for the last 30 years.</p>
+
+<h4>Figure 1. Improvement in road network</h4>
+
+      
+      
+
+        
+          
+            
+  
+  
+  
+    Image
+                
+
+
+          
+
+
+
+      
+      
+
+        
+          
+            <p>Figure 2 shows the changes in the outcome variables over time: nighttime lights and urban land—while relatively sparse at baseline—expanded significantly over the study period, while cropland—which covers much of the country—saw smaller changes. But did the roads improvements cause the changes? Assessments of economic potential were among the main criteria RSDP used to prioritize locations for road investments. By design, areas that benefited from RSDP are different from those that did not. Consequently, it is not sufficient to only compare areas that received new roads to those that did not. To address these issues, we rely on three complementary empirical approaches to triangulate the impacts of the program:</p>
+
+<ul><li>Comparing areas that benefited earlier from RSDP to areas that benefited later. (A similar differences-in-differences approach was used to evaluate corridors in <a href="https://www.sciencedirect.com/science/article/pii/S0304387820300171?casa_token=voXI9IMsep4AAAAA:hQSi8mit6R5Z3mYVFfiKbJxTUG83C2zU51KloRKmAohZcNKgm8YzNnlJ4zGYotXnb7zeJfCxquo" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">China,</a> <a href="https://www.aiddata.org/publications/evaluation-of-usaid-west-bank-gaza-infrastructure-needs-program" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">West Bank and Gaza</a>, and <a href="https://docs.iza.org/dp12018.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Haiti</a>)</li>
+	<li>Comparing areas “incidentally connected” to RSDP, such as locations connected because they happened to be between cities targeted by RSDP, to areas not connected as in the previously cited papers on China.</li>
+	<li>Comparing changes in “market access”—a composite measure of travel time from a location to other markets, scaled by market size—to changes in outcome variables. (Leveraging changes in market access is a common approach to evaluate infrastructure and corridor projects, and has also been used in the <a href="https://academic.oup.com/qje/article/131/2/799/2606976?login=true" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">United States</a>, <a href="https://smartnet.niua.org/sites/default/files/resources/alderrobertstewari_india_0.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">India</a>, <a href="https://www.tse-fr.eu/sites/default/files/TSE/documents/sem2017/dlpp/bougna.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Mexico</a>, and <a href="https://academic.oup.com/jeea/article/20/1/1/6302382?login=true" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Sub-Saharan Africa</a>.)</li>
+</ul><h4>Figure 2. Changes in nighttime lights and land cover</h4>
+
+      
+      
+
+        
+          
+            
+  
+  
+  
+    Image
+                
+
+
+          
+
+
+
+      
+      
+
+        
+          
+            <p>Across all empirical approaches, we find that <a href="https://twitter.com/intent/tweet?text=road+upgrades+contributed+to+an+increase+in+economic+activity+and+urban+land%2C+which+in+turn+led+to+a+reduction+in+cropland.&amp;url=https://blogs.worldbank.org/developmenttalk/evaluating-impact-transportation-investment/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">road upgrades contributed to an increase in economic activity and urban land, which in turn led to a reduction in cropland. </a> However, impacts varied significantly depending on the location. Locations with higher initial levels of economic activity—proxied by nighttime lights—experienced larger growth in economic activity and urban land expansion, and a larger reduction in cropland (see Figure 3). These findings are consistent with work in other contexts, such as the <a href="https://www.aiddata.org/publications/evaluation-of-usaid-west-bank-gaza-infrastructure-needs-program" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">West Bank and Gaza</a>, <a href="https://academic.oup.com/restud/article/81/3/1046/1605154?login=true" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">China</a>, and <a href="https://docs.iza.org/dp12018.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Haiti</a>. We also find a direct link between increased urbanization and less cropland; about half the area that transitioned to urban land was previously cropland.</p>
+
+<h4>Figure 3. Impact of RSDP relying on differences-in-differences approach</h4>
+
+      
+      
+
+        
+          
+            
+  
+  
+  
+    Image
+                
+
+
+          
+
+
+
+      
+      
+
+        
+          
+            <p>The table shows point estimates and 95% confidence intervals of the association of locations within 5km of an RSDP road with outcome variables in the years preceding and after an RSDP road was built. We use the inverse hyperbolic sine transformation on all outcome variables, which has a similar interpretation as logs.</p>
+
+<p>Different impacts by initial levels of development are consistent with new migration trends, which are experiencing increased intra-region rural-to-urban migration and decreased rural-to-rural migration, leading to the growing importance of regional markets. The improved connectivity of regional markets could have facilitated migration and made these regions more attractive destinations for migrants. While our results cannot confirm that RSDP primarily benefited larger markets, other studies have shown that better roads encourage migration in other contexts, such as in <a href="https://web.stanford.edu/~memorten/ewExternalFiles/Morten_Oliveira_Brasilia.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Brazil</a>.</p>
+
+<p>Overall, the findings emphasize that <a href="https://twitter.com/intent/tweet?text=although+ambitious+road+infrastructure+programs+can+help+accelerating+economic+growth%2C+important+distributional+implications+need+to+be+considered+when+planning+infrastructure+programs.&amp;url=https://blogs.worldbank.org/developmenttalk/evaluating-impact-transportation-investment/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">although ambitious road infrastructure programs can help accelerating economic growth, important distributional implications need to be considered when planning infrastructure programs. </a></p>
+
+      
+      
+
+  
+                  
+	
+
+
+	Topics
+	
+															<a href="https://blogs.worldbank.org/search?f[0]=topic:307&amp;f[1]=language:en" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Transport</a>
+																		<a href="https://blogs.worldbank.org/search?f[0]=topic:308&amp;f[1]=language:en" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Urban Development</a>
+						
+
+
+
+      
+
+              

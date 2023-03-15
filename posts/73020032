@@ -1,0 +1,118 @@
+<p>Individuals who feel relatively poor are more grateful when receiving cash transfers, but highly discontent if they miss out</p>
+                                    
+                    <p>Since the COVID-19 pandemic global income inequality has again started to rise—a trend exacerbated by the food and fertiliser crisis caused by Russia’s ongoing war in Ukraine (The Economist 2022). Increasingly common disasters (some climate-related) across the globe – such as Pakistan’s devastating 2022 floods (UNICEF 2023), ongoing severe drought in the Horn of Africa (UN News 2022), and the recent earthquake in Syria and Turkey (Francis et al. 2023) – also disproportionately affect already vulnerable groups (UNDRR 2023). Such events tend to further exacerbate the gulf between the rich and the poor. This trend toward greater income inequality is notable, given a growing body of research has demonstrated that citizens’ support for and trust in government is heavily influenced by real as well as perceived income inequality (Gimpelson and Treisman 2018, Healy et al. 2017).</p>
+<p>Trust in government is essential for a functioning democracy. It is also critical for the economy - for example, Fukuyama (1996) highlights how social trust plays a role equal to that of physical capital in determining economic prosperity. Governments often address poverty and inequality through redistributive social protection programmes, including cash transfer programmes. Can such programmes foster trust in government amid increasing inequality? Evans et al. (2019) show that they can increase trust in leaders and perceptions of leaders’ responsiveness and honesty among recipients. But the empirical evidence is mixed, and other studies show that this does not occur consistently (Freeland 2007, Ellis and Faricy 2011, Zucco 2013).</p>
+<p>Understanding of how economic welfare affects political attitudes and behaviour continues to evolve. Classical economic voting theory focuses on absolute welfare, holding that citizens reward the government for good economic outcomes and punish it for bad ones. However, an emerging literature in political science suggests that perceived relative wellbeing – how people see themselves compared with others – is also important in shaping citizens’ assessments of their political leaders and institutions.</p>
+<p>In Kosec and Mo (2023), we studied how Pakistan’s national unconditional cash transfer programme, the Benazir Income Support Programme (BISP), affected political attitudes. Specifically, we considered that cash from the government might have different effects on its recipients according to how economically well off they felt relative to others (and thus presumably how in need and deserving of a cash transfer they felt).</p>
+<h2>Empirical approach</h2>
+<p>In 2010, the Pakistani government used a proxy means test to identify BISP beneficiaries. In other words, the probability of being a BISP beneficiary jumped at a threshold family wealth score, enabling us to employ a regression discontinuity design approach to assess the causal impact of the BISP programme (see Figure 1). To assess the effects of cash transfers on political attitudes—specifically, support for leaders and the broader system of governance in Pakistan—we compared the political attitudes of those who just met the threshold for receiving cash transfers to those who just missed it. As the cut-off score was somewhat arbitrary, the two groups were naturally very similar to one another. </p>
+<p><strong>Figure 1</strong>: The chance of being a BISP beneficiary discretely jumps at the BISP wealth score cut-off</p>
+<p><img alt="" src="https://reader.miniflux.app/proxy/tVV0P_tkJpAtwvYF1xQQOaLmwdMYzRrwpawSdfcgbQI=/aHR0cHM6Ly92b3hkZXYub3JnL3NpdGVzL2RlZmF1bHQvZmlsZXMvaW1hZ2UvRnJvbU1heTIwMTQva29zZWNfZmlndXJlMTEucG5n" loading="lazy"/></p>
+<p>Note: Each dot represents the percentage of households within a given wealth score range that received BISP. The size of the dot reflects the number of households within that wealth score range. The shaded area represents the 95% confidence interval. Source: Pakistan RHPS, Round 1 (2012) and Round 2 (2013); BISP Database (2013).</p>
+<p>To evaluate whether perceptions of one’s relative economic position conditioned effects of cash transfers, we conducted a priming experiment which subtly manipulated respondents’ perceptions of their relative economic position. Specifically, we asked respondents which of five given income brackets described their household income, and manipulated the range of the bracket choices offered to them (see Table 1).  </p>
+<p><strong>Table 1</strong>: Income bracket choices (in Pakistani Rupees) offered to respondents for each experimental condition (no poverty prime or relative poverty prime)</p>
+<p><img alt="" src="https://reader.miniflux.app/proxy/P53EwSkUk4XzNivx5mfgY4rHB2O5InaxsFgtzb08hd8=/aHR0cHM6Ly92b3hkZXYub3JnL3NpdGVzL2RlZmF1bHQvZmlsZXMvaW1hZ2UvRnJvbU1heTIwMTQva29zZWNfdGFibGUxLnBuZw==" loading="lazy"/></p>
+<p>Indeed, respondents selected very different brackets depending on their randomly-assigned experimental condition – with those in the no poverty prime group being fairly evenly spread out across brackets, and those in the relative poverty prime group generally selecting the lowest income bracket (Figure 2).</p>
+<p>The priming experiment leveraged two behavioural features: (1) the fact that individuals are uncertain about the income distribution, and thus perceptions of inequality are malleable; and (2) individuals assume that the middle response in a survey is the most typical response, making it a reference point by which they assess their own reality. Those who received the relative poverty prime were thus subtly made to feel that they had less than they should, whereas the non-poverty primed individuals were not. This priming experiment has been validated in other studies conducted in Nepal, Pakistan, Papua New Guinea, and the United States (Fair et al. 2018, Haisley et al. 2008, Kosec et al. 2021, Mo 2018).</p>
+<p><strong>Figure 2</strong>: Income bracket chosen by experimental condition (no poverty prime or relative poverty prime)</p>
+<p><img alt="" src="https://reader.miniflux.app/proxy/6NoHVIcCNHG7NoOmuxYKJrdK7mxP3b3d4uiD2iyo6No=/aHR0cHM6Ly92b3hkZXYub3JnL3NpdGVzL2RlZmF1bHQvZmlsZXMvaW1hZ2UvRnJvbU1heTIwMTQva29zZWNfZmlndXJlMjIucG5n" loading="lazy"/></p>
+<p>Note: Each bar reflects the share of study participants who selected a given household income bin, where five income bins were provided (1 reflects the lowest income bin, and 5 reflects the highest income bin). Source: Pakistan RHPS, Round 1 (2012) and Round 2 (2013); BISP Database (2013).</p>
+<h2>Results</h2>
+<p>Surveying citizens between one and four years since they got their first transfers, we demonstrate that when feelings of their relative poverty are not made salient (due to being in the non-poverty primed group), citizens only minimally reward government for the programme in terms of higher political support (Figure 3, panel a). But, when feelings of relative poverty are salient (due to being in the poverty primed group), beneficiaries have significantly higher political support than do non-beneficiaries (Figure 3, panel b). </p>
+<p><strong>Figure 3</strong>: Political support differs by BISP beneficiary status only among those who are poverty primed</p>
+<p>Panel A: No Poverty Prime</p>
+<p><img alt="" src="https://reader.miniflux.app/proxy/gs3bN6e-pKP24zTUq1HVcGa6dt-OZgzQ2_VORbvz9wo=/aHR0cHM6Ly92b3hkZXYub3JnL3NpdGVzL2RlZmF1bHQvZmlsZXMvaW1hZ2UvRnJvbU1heTIwMTQva29zZWNfZmlndXJlMzNhLnBuZw==" loading="lazy"/></p>
+<p>Panel B: Relative Poverty Prime</p>
+<p><img alt="" src="https://reader.miniflux.app/proxy/y9V2TsOzgTBsroFbZnctPrRiojFqWDMqFXW7cZqwmk4=/aHR0cHM6Ly92b3hkZXYub3JnL3NpdGVzL2RlZmF1bHQvZmlsZXMvaW1hZ2UvRnJvbU1heTIwMTQva29zZWNfZmlndXJlMzNiLnBuZw==" loading="lazy"/></p>
+<p>Note: Regression discontinuity plots by relative poverty prime status is shown here. Each dot displays the level of political support for a given wealth score range, where 0 is the threshold in which the probability of being a BISP receipt increases (see Figure 1). The figure also displays fitted lines on each side of the wealth score cut-off, and the 95% confidence intervals of the fitted lines.Source: Pakistan RHPS, Round 1 (2012) and Round 2 (2013); BISP Database (2013).</p>
+<p>When we looked carefully at why there were larger differences between beneficiaries and non-beneficiaries when their relative poverty was salient, we found two dynamics at play. First, considering beneficiaries, we found that feeling relatively poor caused them to feel modestly more positive (1.7 percentage points) about their political system and leaders (this suggests that feeling relatively worse-off is not unambiguously bad for engendering political support among social protection recipients). Second, examining non-beneficiaries, we found that feeling relatively poor eroded their political support (6 percentage points). The magnitude of the drop in political support among non-beneficiaries was thus 3.5 times larger than the magnitude of the increase in political support among beneficiaries. </p>
+<p>In other words, cash transfers did little to increase government support when individuals felt that their income was typical. But when individuals felt relatively deprived and thus deserving of government transfers, receipt or non-receipt of transfers really mattered. Individuals in this mindset were mildly grateful for transfers when they were recipients, but highly discontent about not receiving them when they were overlooked. </p>
+<h2>Implications for policymaking</h2>
+<p>Our research has important policy implications. Where individuals feel especially deprived – such as following negative shocks, or on observing unequal access to opportunities, education, public services, and the like – political institutions may strongly rely on social protection. Such programmes modestly increase political confidence among beneficiaries. However, when thinking about their effects on political confidence, our study points to the importance of considering the programme’s effects on non-beneficiaries as well. If the social protection programme is not large enough to support citizens who feel relatively worse off, and hence, in need of economic assistance, the social safety net programme may unintentionally foment discontent among this population. </p>
+<p>Overall, our research illustrates the significance of a programme’s eligibility criteria and targeting. If the social protection programme is poorly targeted or the threshold for receiving aid is set in a way that excludes a lot of citizens who think they are at the bottom of the state’s income distribution, there is a risk of worsening overall levels of trust in the state.</p>
+<h2>References</h2>
+<p>Ellis, C, and C Faricy (2011), “Social Policy and Public Opinion: How the Ideological Direction of Spending Influences Public Mood”, <em>The Journal of Politics</em> 73(4): 1095-1110.</p>
+<p>Evans, D K, B Holtemeyer, and K Kosec (2019), “Cash Transfers Increase Trust in Local Government”, <em>World Development</em> 114: 138–155.</p>
+<p>Fair, C, R Littman, N Malhotra, and J N Shapiro (2018), “Relative Poverty, Perceived Violence, and Support for Militant Politics: Evidence from Pakistan”, <em>Political Science and Research Methods</em> 6(1): 57-81.</p>
+<p>Francis, E, V Bisset, S Dadouch, R Pannett, M Javaid, D Rosenzweigg-Ziff, and B Brasch (2023), “Death Toll in Turkey, Syria Earthquakes Rises to Nearly 8,000”, <em>Washington Post</em>, February 7.</p>
+<p>Freeland, N (2007), “Superfluous, Pernicious, Atrocious and Abominable? The Case Against Conditional Cash Transfers”, <em>IDS Bulletin</em> 38(3): 75.</p>
+<p>Fukuyama, F (1996). Trust: The Social Virtues and the Creation of Prosperity, New York: Simon and Schuster.</p>
+<p>Gimpelson, V, and D Treisman (2018), “Misperceiving Inequality”, <em>Economics &amp; Politics</em> 30(1): 27-54.</p>
+<p>Haisley, E, R Mostafa, and G Loewenstein (2008), “Subjective Relative Income and Lottery Ticket Purchases”, <em>Journal of Behavioral Decision Making</em> 21: 283-295.</p>
+<p>Healy, A, K Kosec, and C H Mo (2017), “Economic Development, Mobility, and Political Discontent: An Experimental Test of Tocqueville’s Thesis in Pakistan”, <em>American Political Science Review </em>111(3): 605-621.</p>
+<p>Kosec, K, C H Mo, E Schmidt, and J Song (2021), “Perceptions of Relative Deprivation and Women’s Empowerment”, <em>World Development</em> 138: 105218.</p>
+<p>Kosec, K, and C H Mo (2023), “Does Relative Deprivation Condition the Effects of Social Protection Programs on Political Support? Experimental Evidence from Pakistan”, <em>American Journal of Political Science</em>: 1-18.</p>
+<p>Mo, C H (2018), “The Effects of Perceived Relative Poverty on Risk: An Aspirations-Based Model of Trafficking Vulnerability”, <em>Political Behavior</em> 40(1): 247-277.</p>
+<p>The Economist (2022), “Global Inequality is Rising Again”, The Economist, August 2.</p>
+<p>UN News (2022), “Horn of Africa Faces Most Severe Drought in More than Two Generations”, UN News, December 22.</p>
+<p>UNDRR (2023), “Understanding Disaster Risk”.</p>
+<p>UNICEF (2023), “Devastating Floods in Pakistan”, UNICEF, January 31.</p>
+<p>Zucco Jr, C (2013), “When Payouts Pay Off: Conditional Cash Transfers and Voting Behavior in Brazil 2002–10”, <em>American Journal of Political Science</em> 57(4): 810-822.</p>
+                
+
+                    
+                    
+                    Pakistan
+                                
+                    Social protection
+                                
+                    Trust
+                                
+                    Fairness
+                                
+                    Transfers
+                                
+                    Governance
+                                
+                    Relative povery
+                        
+    
+    
+    
+        <p>Share this article:</p>
+
+        <a href="https://twitter.com/intent/tweet/?text=How+relative+poverty+influences+responses+to+social+protection+programmes%3A+Evidence+from+Pakistan&amp;url=https%3A%2F%2Fvoxdev.org%2Ftopic%2Finstitutions-political-economy%2Fhow-relative-poverty-influences-responses-social-protection-programmes-evidence-pakistan" title="Share on Twitter" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvoxdev.org%2Ftopic%2Finstitutions-political-economy%2Fhow-relative-poverty-influences-responses-social-protection-programmes-evidence-pakistan" title="Share on Facebook" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+        
+        
+        <a href="https://voxdev.org/cdn-cgi/l/email-protection#536c202631393630276e1b362136733a20733273053c2b173625733221273a303f36732a3c26733e322a733136733a3d2736213620273637733a3d75313c372a6e3b27272320697c7c253c2b3736257d3c21347c273c233a307c3a3d20273a2726273a3c3d207e233c3f3a273a30323f7e36303c3d3c3e2a7c3b3c247e21363f32273a25367e233c253621272a7e3a3d353f26363d3036207e213620233c3d2036207e203c303a323f7e23213c273630273a3c3d7e23213c3421323e3e36207e36253a37363d30367e2332383a2027323d" title="Share on Email" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+        
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fvoxdev.org%2Ftopic%2Finstitutions-political-economy%2Fhow-relative-poverty-influences-responses-social-protection-programmes-evidence-pakistan&amp;title=How+relative+poverty+influences+responses+to+social+protection+programmes%3A+Evidence+from+Pakistan" title="Share on LinkedIn" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+        
+        
+                    
+        
+        <a href="https://voxdev.org/print/75849" title="Print this page" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+    
+
+            

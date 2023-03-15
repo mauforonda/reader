@@ -1,0 +1,73 @@
+<p> Lots of major news making their way on the feeds this week, like Meta considering a project to join the fediverse. In the tech world, the collapse of the Silicon Valley Bank was the major news. Personally I have found more coverage and comments on this event on my Mastodon feed than expected, indicating that the fediverse is rapidly getting better for following along with major news event.</p>
+
+
+
+<p>But everyone talking about the major news runs the risk of missing all the other relevant things that have happened. So here is this weeks roundup of all the other things that happened, starting with WordPress:</p>
+
+
+
+<h2>WordPress</h2>
+
+
+
+<ul>
+<li>The ActivityPub plugin for WordPress is now <a href="https://mastodon.ie/@donncha/110004792066416918" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">officially developed by Automattic</a> as well, listed as an author for the plugin. This is a pretty big deal, as it signals the support of Automattic. Considering that the majority of websites on the internet run WordPress, being able to integrate all these websites into the fediverse with ease is a major development.</li>
+
+
+
+<li>The WordPress community held a survey to help to improve the WordPress-related Mastodon instances. The results are available <a href="https://raw.githubusercontent.com/danielauener/toot-the-word/main/Toot%20the%20Word%202023%20-%20Survey%20learnings.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here.</a> The very short summary is that the WordPress community thinks that Mastodon and the fediverse is highly important in the future.</li>
+
+
+
+<li>Jetpack, a popular plugin for WordPress, <a href="https://jeremy.hu/share-your-blog-posts-on-mastodon-with-jetpack/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">now allows easy sharing to Mastodon.</a></li>
+</ul>
+
+
+
+<h2>Other</h2>
+
+
+
+<ul>
+<li><a href="https://fedidocs.org/about/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Fedidocs.org</a> is a new project to document how all software on the fediverse actually interacts and implements the protocol. <a href="https://social.gabekangas.com/objects/3850cb07-a3f5-415e-908e-3d099e0a6275" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Started by the developer</a> of Owncast, a video streaming service on the fediverse</li>
+
+
+
+<li>People organised a <a href="https://fediversereport.com/tag/joinmastodon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">#joinmastodon</a> day this week, and <a href="https://indieweb.social/@tchambers/110000696151180211" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">some analysis</a> of the data shows some good results.</li>
+
+
+
+<li>The <a href="https://www.sparkhaus-shop.com/eu/magazines/linux-magazine/back-issues/eh30269.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">publication Linux Magazine</a> has devoted their April 2023 edition to the fediverse. </li>
+
+
+
+<li>Microsoft is slowly and carefully entering the fediverse: <a href="https://dotnet.social/@dotnet/109990445819820814" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">the .NET community</a> now has their own server.</li>
+
+
+
+<li><a href="https://noc.social/@moznews/110006392003561189" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Mozilla is setting themselves</a> up to join the fediverse in the near future. The server is already accessible via <a href="https://mozilla.social" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">mozilla.social</a>, but you cannot sign up for it yet. It looks like the signup is integrated with your Firefox profile, but nothing has been confirmed about this yet.</li>
+
+
+
+<li><a href="https://mas.to/@robertvh/109983483383421798" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Mastometrics has launched</a>, a way to view your own personal Mastodon metrics.</li>
+
+
+
+<li>iOS app Ice Cubes is rapidly experimenting with unique new features: it is <a href="https://mastodon.social/@dimillian/109998568960365013" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">in the work</a> to add metrics via Mastometrics and <a href="https://mastodon.social/@dimillian/109992609651628094" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">automatically add hashtags</a> to posts with the help of AI.</li>
+
+
+
+<li>Federated audio platform Funkwhale has launched <a href="https://next.funkwhale.audio/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">their new website.</a></li>
+
+
+
+<li><a href="https://thenewstack.io/cloudflares-wildebeest-not-looking-to-upset-mastodon-users/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">TheNewStack has an extensive interview</a> with Cloudflare’s CTO about Wildebeest, the company’s own fediverse software.</li>
+
+
+
+<li>Tim Chambers and his team has done valuable research on the <a href="https://fediversereport.com/tag/twittermigration/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">#Twittermigration</a>, and where users went. The results show that Mastodon is the main beneficiary, with Post being second. Full research report <a href="http://www.deweysquare.com/wp-content/uploads/2023/03/DSG-Snapshot-of-the-Twitter-Migration-March-2023.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here.</a></li>
+</ul>
+
+
+
+<p></p>

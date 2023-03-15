@@ -1,0 +1,110 @@
+<p>
+Welcome to episode 17 of the Steampipe+Mastodon series, in which we introduce a new subplot: timeline history. So far, the examples I’ve shown and discussed work with current timelines. We’ve seen SQL queries that fetch results from realtime calls to the Mastodon API, and Steampipe dashboards that display those results. But Steampipe isn’t just an API siphon, it’s also a Postgres database. As such it supports the transient tables created by Steampipe’s foreign data wrapper and plugins, but also enables you to create your own native tables as well. And you can use those native tables to accumulate data from the transient foreign tables.</p>
+<p>
+Because saving and searching Mastodon data is a controversial topic in the fediverse — none of us wants to recapitulate Big Social — I’ve focused thus far on queries that explore recent Mastodon flow, of which there are plenty more to write. But nobody should mind me remembering my own home timeline, so a few weeks ago I made a tool to read it hourly and add new toots to a Postgres table. </p>
+<p>
+Before you can add any toots to a table, of course, you’ve got to create that table. Here’s how I made this one.</p>
+<pre>create table mastodon_home_timeline as 
+  select * from mastodon_toot_home limit 200
+</pre>
+<p>
+Once created, the table can be updated with new toots like so.</p>
+<pre>with data as (
+  select
+    account,
+    -- more
+    -- columns
+    username
+  from
+    mastodon_toot_home
+  limit 200
+)
+insert into mastodon_home_timeline (
+  account,
+    -- more
+    -- columns
+  username
+)
+select
+  *
+from 
+  data
+where 
+  id not in ( select t.id from mastodon_home_timeline t )
+</pre>
+<p>
+To run that query from a crontab, on a machine where Steampipe is installed, save it as mastodon_home_timeline.sql, then schedule it.</p>
+<pre>15 * * * * cd /home/jon/mastodon; steampipe query mastodon_home_timeline.sql
+</pre>
+<p>
+That’s it! Now the number reported by select count(*) from mastodon_home_timeline is growing hourly.</p>
+<p>
+I’ve only been collecting toots for a couple of weeks, and haven’t yet begun to explore that data yet; we’ll see what happens when we get there. Meanwhile, though, I want to show how such exploration can be a team exercise. </p>
+<p>
+A friend of mine, whom I’ll call Elvis, shares my interest in teasing out connections among people, servers, and hashtags. He could capture his own timeline using the method shown here. But since we’ll be looking at this data together, we agreed that I’ll gather both our timelines. To enable that, he shared a (revokable) Mastodon API token that I’ve used to configure Steampipe with credentials for both our accounts.</p>
+<pre>connection &#34;mastodon_social_jon&#34; {
+    plugin = &#34;mastodon&#34;
+    server = &#34;https://mastodon.social&#34;
+    access_token = &#34;...&#34;
+}
+
+connection &#34;mastodon_social_elvis&#34; {
+    plugin = &#34;mastodon&#34;
+    server = &#34;https://mastodon.social&#34;
+    access_token = &#34;...&#34;
+}
+</pre>
+<p>
+Steampipe’s foreign data wrapper turns each of these named connections into its own Postgres schema. Athough we happen to share the same home server, by the way, we needn’t. A team collaborating like this could pool timelines from mastodon.social and hachyderm.io and fosstodon.org and any other Mastodon-API-compatible server.</p>
+<p>
+(You can do the same thing with AWS or Slack or GitHub or other kind of account by defining <a href="https://steampipe.io/docs/managing/connections#querying-multiple-connections" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">multiple connections</a>. Steampipe makes API calls concurrently across parallel connections.)</p>
+<p>
+With this configuration I can read my timeline like so.</p>
+<pre>select * from mastodon_social_jon.mastodon_toot_home limit 200
+</pre>
+<p>
+And Elvis’ like so.</p>
+<pre>select * from mastodon_social_elvis.mastodon_toot_home limit 200
+</pre>
+<p>
+If I want to query both in realtime, for example to count the combined total, I can use a SQL UNION. Or I can define umbrella connection that <a href="https://steampipe.io/docs/managing/connections#using-aggregators" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">aggregates</a> these two.</p>
+<pre>connection &#34;all_mastodon&#34; {
+    plugin = &#34;mastodon&#34;
+    type = &#34;aggregator&#34;
+    connections = [ &#34;mastodon_social_jon&#34;, &#34;mastodon_social_elvis&#34; ]
+}
+
+connection &#34;mastodon_social_jon&#34; {
+    plugin = &#34;mastodon&#34;
+    server = &#34;https://mastodon.social&#34;
+    access_token = &#34;...&#34;
+}
+
+connection &#34;mastodon_social_elvis&#34; {
+    plugin = &#34;mastodon&#34;
+    server = &#34;https://mastodon.social&#34;
+    access_token = &#34;...&#34;
+}
+</pre>
+<p>
+Now the query select * from all_mastodon.mastodon_toot_home limit 200 makes API calls on behalf of both accounts — in parallel — and combines the results. When we follow the resulting URLs in order to reply or boost, we’ll do so as individual identities. And we’ll be able to use Steampipe queries and dashboards in that same single-user mode. But we’ll also be able to pool our timelines and point our queries and dashboards at the combined history. </p>
+<p>
+Will that prove interesting? Useful? That remains to be seen. I think it’s one of many experiments worth trying as the fediverse sorts itself out. And I see Steampipe as one laboratory in which to run such experiments. With SQL as the abstraction over APIs, aggregation of connections, and <a href="https://www.infoworld.com/article/3668032/visualizing-the-hacker-news-api-with-hcl-and-sql.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">dashboards as code</a>, you have all the ingredients needed to iterate rapidly, at low cost, toward shared Mastodon spaces tailored for teams or groups.</p>
+<p>—<br/>
+1 <a href="https://blog.jonudell.net/2022/11/28/autonomy-packet-size-friction-fanout-and-velocity/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/11/28/autonomy-packet-size-friction-fanout-and-velocity/</a><br/>
+2 <a href="https://blog.jonudell.net/2022/12/06/mastodon-steampipe-and-rss/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/06/mastodon-steampipe-and-rss/</a><br/>
+3 <a href="https://blog.jonudell.net/2022/12/10/browsing-the-fediverse/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/10/browsing-the-fediverse/</a><br/>
+4 <a href="https://blog.jonudell.net/2022/12/17/a-bloomberg-terminal-for-mastodon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/17/a-bloomberg-terminal-for-mastodon/</a><br/>
+5 <a href="https://blog.jonudell.net/2022/12/19/create-your-own-mastodon-ux/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/19/create-your-own-mastodon-ux/</a><br/>
+6 <a href="https://blog.jonudell.net/2022/12/22/lists-and-people-on-mastodon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/22/lists-and-people-on-mastodon/</a><br/>
+7 <a href="https://blog.jonudell.net/2022/12/29/how-many-people-in-my-mastodon-feed-also-tweeted-today/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/29/how-many-people-in-my-mastodon-feed-also-tweeted-today/</a><br/>
+8 <a href="https://blog.jonudell.net/2022/12/31/instance-qualified-mastodon-urls/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/31/instance-qualified-mastodon-urls/</a><br/>
+9 <a href="https://blog.jonudell.net/2023/01/16/mastodon-relationship-graphs/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/01/16/mastodon-relationship-graphs/</a><br/>
+10 <a href="https://blog.jonudell.net/2023/01/21/working-with-mastodon-lists/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/01/21/working-with-mastodon-lists/</a><br/>
+11 <a href="https://blog.jonudell.net/2023/01/26/images-considered-harmful-sometimes/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/01/26/images-considered-harmful-sometimes/</a><br/>
+12 <a href="https://blog.jonudell.net/2023/02/02/mapping-the-wider-fediverse/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/02/02/mapping-the-wider-fediverse/</a><br/>
+13 <a href="https://blog.jonudell.net/2023/02/06/protocols-apis-and-conventions/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/02/06/protocols-apis-and-conventions/</a><br/>
+14 <a href="https://blog.jonudell.net/2023/02/14/news-in-the-fediverse/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/02/14/news-in-the-fediverse/</a><br/>
+15 <a href="https://blog.jonudell.net/2023/02/26/mapping-people-and-tags-on-mastodon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/02/26/mapping-people-and-tags-on-mastodon/</a><br/>
+16 <a href="https://blog.jonudell.net/2023/03/07/visualizing-mastodon-server-moderation/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/03/07/visualizing-mastodon-server-moderation/</a><br/>
+17 <a href="https://blog.jonudell.net/2023/03/14/mastodon-timelines-for-teams/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/03/14/mastodon-timelines-for-teams/</a></p>

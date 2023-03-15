@@ -1,0 +1,394 @@
+Published on March 13, 2023 9:20 PM GMT<br/><br/><p>
+In late 2022, Nate Soares gave some feedback on my <a href="https://www.cold-takes.com/tag/implicationsofmostimportantcentury/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Cold Takes series on AI risk</a> (shared as drafts at that point), stating that I hadn&#39;t discussed what he sees as one of the key difficulties of AI alignment. 
+</p>
+<p>
+I wanted to understand the difficulty he was pointing to, so the two of us had an extended Slack exchange, and I then wrote up a summary of the exchange that we iterated on until we were both reasonably happy with its characterization of the difficulty and our disagreement.<sup><a href="#fn1">1</a></sup> My short summary is:
+</p>
+<ul>
+
+<li>Nate thinks there are deep reasons that training an AI to do needle-moving scientific research (including alignment) would be dangerous. The overwhelmingly likely result of such a training attempt (by default, i.e., in the absence of specific countermeasures that there are currently few ideas for) would be the AI taking on a dangerous degree of <a href="https://www.lesswrong.com/tag/instrumental-convergence" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">convergent instrumental subgoals</a> while not internalizing important safety/corrigibility properties enough.
+
+</li><li>I think this is possible, but much less likely than Nate thinks under at least some imaginable training processes.
+</li>
+</ul>
+<p>
+I didn&#39;t end up agreeing that this difficulty is as important as Nate thinks it is, although I did update my views some (more on that below). My guess is that this is one of the two biggest disagreements I have with Nate&#39;s and Eliezer&#39;s views (the other one being the likelihood of a <a href="https://www.alignmentforum.org/posts/GNhMPAWcfBCASy8e6/a-central-ai-alignment-problem-capabilities-generalization" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">sharp left turn</a> that leads to a <a href="https://www.alignmentforum.org/posts/rCJQAkPTEypGjSJ8X/how-might-we-align-transformative-ai-if-it-s-developed-very#Bad__AI_systems_rapidly_become_extremely_powerful_relative_to_supervisors" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">massive capabilities gap between AI systems and their supervisors</a>.<sup><a href="#fn2">2</a></sup>)
+</p>
+<p>
+Below is my summary of:
+</p>
+<ul>
+
+<li>Some <a href="https://www.lesswrong.com/posts/iy2o4nQj9DnQD7Yhj/discussion-with-nate-soares-on-a-key-alignment-difficulty#Some_starting_points_of_agreement" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">key premises we agree on</a>.
+
+</li><li>What we <a href="https://www.lesswrong.com/posts/iy2o4nQj9DnQD7Yhj/discussion-with-nate-soares-on-a-key-alignment-difficulty#High_level_disagreement" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">disagree about</a>, at a high level.
+
+</li><li>A <a href="https://www.lesswrong.com/posts/iy2o4nQj9DnQD7Yhj/discussion-with-nate-soares-on-a-key-alignment-difficulty#Hypothetical_training_approach" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">hypothetical training process</a> we discussed in order to get more clear and mechanistic about Nate&#39;s views.
+
+</li><li>Some brief discussion of <a href="https://www.lesswrong.com/posts/iy2o4nQj9DnQD7Yhj/discussion-with-nate-soares-on-a-key-alignment-difficulty#Some_possible_cruxes" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">possible cruxes</a>; <a href="https://www.lesswrong.com/posts/iy2o4nQj9DnQD7Yhj/discussion-with-nate-soares-on-a-key-alignment-difficulty#Where_Holden_could_look_to_find_Nate_s_source_of_current_confidence__and_some_reactions_from_Holden_" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">what kind of reasoning Nate is using to arrive at his relatively high (~85%) level of confidence</a> on this point; and <a href="https://www.lesswrong.com/posts/iy2o4nQj9DnQD7Yhj/discussion-with-nate-soares-on-a-key-alignment-difficulty#Future_observations_that_could_update_Holden_or_Nate_toward_the_other_s_views" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">future observations that might update one of us toward the other&#39;s views</a>.
+</li>
+</ul>
+<p>
+MIRI might later put out more detailed notes on this exchange, drawing on all of our discussions over Slack and comment threads in Google docs.
+</p>
+<p>Nate has reviewed this post in full. I&#39;m grateful for his help with it.</p>
+<h2>Some starting points of agreement</h2>
+
+
+<p>
+<em>Nate on this section: “Seems broadly right to me!”</em>
+</p>
+<p>
+An AI is dangerous if:
+</p>
+<ul>
+
+<li>It&#39;s <strong>powerful </strong>(like, it has the ability to disempower humans if it&#39;s &#34;<a href="https://docs.google.com/document/d/1x_N0OnEfYv-ENV_ELQpIsyLL1ntWwyu75_lK_RRqrRc/edit" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">aiming</a>&#34; at that)
+
+</li><li>It aims (perhaps as a side effect of aiming at something else) at <strong>CIS (convergent instrumental subgoals)</strong> such as &#34;Preserve option value,&#34; &#34;Gain control of resources that can be used for lots of things,&#34; &#34;Avoid being turned off,&#34; and such. (Note that this is a weaker condition than &#34;maximizes utility according to some relatively simple utility function of states of the world&#34;)
+
+</li><li>It does <em>not</em> reliably <strong>avoid POUDA (pretty obviously unintended/dangerous actions)</strong> such as &#34;Design and deploy a bioweapon.&#34; 
+<ul>
+ 
+<li>&#34;Reliably&#34; just means like &#34;In situations it will actually be in&#34; (which will likely be different from training, but I&#39;m not trying to talk about &#34;all possible situations&#34;).
+ 
+</li><li>Avoiding POUDA is kind of a low bar in some sense. Avoiding POUDA doesn&#39;t necessarily require fully/perfectly internalizing some &#34;corrigibility core&#34; (such that the AI would always let us turn it off even in arbitrarily exotic situations that challenge the very meaning of &#34;let us turn it off&#34;), and it even more so doesn&#39;t require anything like CEV. It just means that stuff where Holden would be like &#34;Whoa whoa, that is OBVIOUSLY unintended/dangerous/bad&#34; is stuff that an AI would not do.
+ 
+</li><li>That said, POUDA is not something that Holden is able to articulate cleanly and simply. There are lots of actions that might be POUDA in one situation and not in another (e.g., developing a chemical that&#39;s both poisonous and useful for other purposes), and Holden isn&#39;t able to simply describe what distinguishes such situations. So, it&#39;s at least a live possibility that &#34;reliably avoiding POUDA&#34; is the kind of thing that would be hard to preserve under distributional shift.
+</li> 
+</ul>
+</li> 
+</ul>
+<p>
+If humans are doing something like &#34;ambitiously pushing AIs to do more and more cool, creative stuff that humans couldn&#39;t do, using largely outcomes-based training,&#34; then:
+</p>
+<ul>
+
+<li>They&#39;re really pushing AIs to aim at CIS.
+
+</li><li>They&#39;re probably training not &#34;avoid POUDA&#34; but a bastardized/illusory version of &#34;avoid POUDA&#34;, something more like &#34;avoid things that look to your overseers like POUDA in situations where your overseers can give negative reinforcement for the POUDA.&#34;
+
+</li><li>So if this activity results in powerful AI systems, these are probably AI systems that do aim at CIS, but only avoid POUDA under conditions (key condition being &#34;the overseer will catch them and stop them&#34;) that no longer hold.
+
+</li><li>That would suck!
+</li>
+</ul>
+<h2>High-level disagreement</h2>
+
+
+<p>
+Holden thinks there may be alternative approaches to training AI systems that:
+</p>
+<ul>
+
+<li>Are powerful enough to do things that help us a lot, such as moving the needle a lot on alignment research (Holden and Nate agree that we want something like &#34;Can have lots of novel insights, challenge existing paradigms and move forward with new ones, etc.&#34; not just something like CoPilot)
+
+</li><li>Don&#39;t have the problem of &#34;training AI systems to aim at CIS at a stage where they are not reliably avoiding POUDA.&#34;
+
+</li><li>Are kinda live possibilities that people are actively contemplating and might carry out.
+</li>
+</ul>
+<p>
+Nate disagrees with this. He thinks there is a deep tension between the first two points. Resolving the tension isn&#39;t necessarily impossible, but most people just don&#39;t seem to be seriously contending with the tension. <em>Nate endorses this characterization.</em>
+</p>
+<p>
+In order to explore this, Nate and Holden explored a hypothetical approach to training powerful AI systems, chosen by Holden to specifically have the property: &#34;This is simple, and falls way on the safe end of the spectrum (it has a good chance of training &#39;avoid POUDA&#39; about as fast or at least as fast as training &#39;aim at CIS&#39;&#34;).
+</p>
+<p>
+In a world where this hypothetical approach had a reasonable (20%+) chance of resulting in safe, powerful AI, Holden would think that there are a lot of other approaches that are more realistic while having key properties in common, such that &#34;We just get lucky and the first powerful AI systems are safe&#34; is a live possibility - and adding some <em>effort</em> and extra measures could push up the probability higher.
+</p>
+<p>
+In a world where this hypothetical approach was very unlikely (10% or less) to result in safe, powerful AI, Holden would think something more like: &#34;We&#39;re not just gonna get lucky, we&#39;re going to need big wins on interpretability or checks-and-balances or fundamentally better (currently unknown) approaches to training, or something else.&#34;
+</p>
+<h2>Hypothetical training approach</h2>
+
+
+<p>
+This isn&#39;t meant to be realistic; it&#39;s meant to be simple and illustrative along the lines of the above.
+</p>
+<p>
+Basically, we start with a ~1000x scaleup of GPT-3 (params-wise), with increased data and compute as needed to optimize performance for a NN of that size/type. 
+</p>
+<p>
+We assume that at some point during this scaled-up pretraining, this model is going to gain the raw capability to be capable of (if aimed at this) pretty robustly filling in for today&#39;s top AI alignment researchers, in terms of doing enough alignment work to &#34;solve alignment&#34; mostly on its own. (This might take the form of e.g. doing more interpretability work similar to what&#39;s been done, at great scale, and then synthesizing/distilling insights from this work and iterating on that to the point where it can meaningfully &#34;reverse-engineer&#34; itself and provide a version of itself that humans can much more easily modify to be safe, or something.)
+</p>
+<p>
+We&#39;re then going to use a small amount of RL (like, 10 training episodes) to try to point it in this direction. We&#39;re going to try to use the RL to train: &#34;Act exactly like [a given alignment researcher] would act.&#34; We&#39;re going for pure imitation in some sense (although we need it to work out-of-distribution, in the sense that the AI needs to be able to continue doing what its imitatee would do, even when faced with research questions and insights unlike those seen in training).
+</p>
+<p>
+Given these assumptions, the question is: would such a model be dangerous? That is, would it both (a) aim at CIS and (b) not reliably avoid POUDA, at least in situations as exotic as &#34;Thinking (in an inspired manner that ultimately leads to a solution) about interpretability insights and issues beyond what it ever saw in training?&#34;
+</p>
+<p>
+<strong>Why this setup is on the &#34;safe&#34; end according to Holden&#39;s views:  </strong>Mostly the safety comes from going for &#34;pure imitation&#34; in the sense I said above. 
+</p>
+<p>
+Whatever alignment researcher the AI is imitating has a certain amount of CIS, but also has great POUDA-avoidance. So a fully faithful imitation should be safe. <em>Holden and Nate agree on this paragraph.</em>
+</p>
+<p>
+(Back to things only-Holden thinks) We are avoiding giving an extra hard push toward CIS (of the kind that we&#39;d give if we were really pushing AI systems to be ambitious and creative in &#34;superhuman&#34; ways), and we are avoiding training the kind of &#34;bastardized POUDA avoidance&#34; described above (because there are few opportunities for us to screw up the anti-POUDA signal).
+</p>
+<h2>How this ends up being dangerous anyway, according to Nate</h2>
+
+
+<h3>High-level premises</h3>
+
+
+<p>
+<em>This section is trying to characterize Nate’s views, not mine (I partly disagree, as I discuss <a href="https://www.lesswrong.com/posts/iy2o4nQj9DnQD7Yhj/discussion-with-nate-soares-on-a-key-alignment-difficulty#Where_Holden_could_look_to_find_Nate_s_source_of_current_confidence__and_some_reactions_from_Holden_" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">below</a>). Nate: &#34;I broadly endorse this. (I wouldn&#39;t use the same words in quite the same ways, but \shrug, it&#39;s pretty decent.)&#34;</em>
+</p>
+<p>
+The high-level premises that imply danger here follow. (I believe both of these have to go through in order for the hypothesized training process to be dangerous in the way Nate is pointing at). (I’d suggest skipping/skimming the sub-bullets here if they’re getting daunting, as the following section will also provide some illustration of the disagreement.)
+</p>
+<ol>
+
+<li>The path to &#34;doing <em>needle-moving</em> alignment research (or other useful stuff)&#34; runs through CIS. That is, an AI has to pick up a significant amount of CIS-y behavior/patterns/habits/subsystems in order to get to the point of doing the useful stuff. 
+<ol>
+ 
+<li>A key property of &#34;needle-moving&#34; alignment research is that you&#39;re able to have insights well outside of the training distribution - this is needed for sufficient usefulness, and it is what needs to be reached through CIS. You could train a &#34;shallow&#34; imitation learner to analyze 1000 neurons similarly to how Anthropic&#39;s team has analyzed 10, but &#34;needle-moving&#34; research requires being able to take a step <em>after that</em> where you&#39;re in a state something like: &#34;OK, I have all these observations, but I&#39;m not sure what to do next - that isn&#39;t well specified<sup><a href="#fn3">3</a></sup> by the plan my boss handed me [or the plan I wrote down, or the plan one might&#39;ve inferred from my steps to this point]. To the extent I&#39;m able to figure out what comes next by pattern-matching, the most useful patterns are the ones where someone accomplished CISy things like &#39;Generate a comprehensive picture of the problem, including how it fits into the big picture and what we&#39;re trying to do and why&#39; or &#39;Gain more general knowledge and option value&#39; or &#39;Identify obstacles to progress and dispatch/avoid them&#39;&#34;
+ 
+</li><li>A particular pattern Nate has talked about is what I might call &#34;<strong>reflection</strong>.&#34; The basic idea is that in order to do certain kinds of research effectively, you need to keep asking questions like &#34;What am I actually trying to do here and why? What is my big-picture goal?&#34;, which are questions that might &#34;change your aims&#34; in some important sense. The idea is not necessarily that you&#39;re rewriting your own source code, but that you&#39;re doing the kind of reflection and self-modification a philosophically inclined, independent-minded human might do: &#34;I&#39;ve always thought I cared about X, but when I really think about the implications of that, I realize maybe I only care about Y&#34; and such. I think that in Nate&#39;s ontology (and I am partly sympathetic), it&#39;s hard to disentangle something like &#34;Refocusing my research agenda to line it up with my big-picture goals&#34; from something like &#34;Reconsidering and modifying my big-picture goals so that they feel more satisfying in light of all the things I&#39;ve noticed about myself.&#34; Reflection (figuring out what you &#34;really want&#34;) is a kind of CIS, and one that could present danger, if an AI is figuring out what it &#34;really wants&#34; and we haven&#39;t got specific reasons to think that&#39;s going to be what we want it to want.
+</li> 
+</ol>
+
+</li><li>It&#39;s relatively hard to pick up a <em>robust</em> POUDA-avoidance pattern, even without the kind of actively screwed up data points that produced the &#34;bastardized POUDA avoidance&#34; mentioned above. Specifically, it&#39;s <em>significantly</em> harder than picking up enough CIS to be dangerous, such that the odds are very high that Holden&#39;s training procedure ends up with a significant phase where the AI has picked up enough CIS to be dangerous but not enough POUDA-avoidance to be safe. 
+<ol>
+ 
+<li>&#34;Robust&#34; here means &#34;Would operate as intended in situations of at least the novelty required to do needle-moving research.&#34;
+ 
+</li><li>&#34;Relatively hard&#34; basically means &#34;It would take a lot more training to learn POUDA-avoidance than it would take to learn enough CIS to be both useful and dangerous. (Also, there&#39;s a sense that the needed training for the latter is a <em>subset</em> of the needed training for the former, i.e., this isn&#39;t just about quantities of training but about a deeper difficulty with learning POUDA-avoidance without first learning quite a lot of CIS.)&#34;
+ 
+</li><li>An underlying intuition here is that CIS-y stuff is &#34;everywhere&#34; in what humans are doing; in general, when you&#39;re trying to predict a human&#39;s next action, CIS will get you quite far, whereas you&#39;d need more data to effectively pick out the specifics of POUDA-avoidance (especially if these specifics are supposed to keep holding in very out-of-distribution scenarios, which you&#39;d have to get into in order to do needle-moving alignment research).
+ 
+</li><li>An additional relevant point is that the less <em>granularly</em> you&#39;re making your AI imitate a human, the more you&#39;re doing something like &#34;outcomes-based trial-and-error&#34; where the AI could be achieving human-like <em>end products</em> with very alien <em>intermediate steps. </em>This basically brings in a somewhat but not radically softer version of the same problems described at the top of the doc: the AI is under selection pressure to achieve CIS and to achieve <em>apparent</em> POUDA-avoidance, but this could be the &#34;bastardized POUDA-avoidance&#34; of e.g. not harming humans so far as humans can tell.
+ 
+</li><li>An important corollary of &#34;relatively hard&#34; is that failure to pick up the pattern well enough to reliably avoid POUDA does <em>not</em> result in too much negative reinforcement at the task of imitating humans (in the pretraining/next-token-prediction setting), at least compared to the negative reinforcement from trying to imitate needle-moving research moves without having picked up a lot of CIS.
+</li> 
+</ol>
+</li> 
+</ol>
+<h3>How the danger might arise mechanistically</h3>
+
+
+<p>
+<em>This section is trying to characterize Nate’s views, not mine (I partly disagree, as I discuss <a href="https://www.lesswrong.com/posts/iy2o4nQj9DnQD7Yhj/discussion-with-nate-soares-on-a-key-alignment-difficulty#Where_Holden_could_look_to_find_Nate_s_source_of_current_confidence__and_some_reactions_from_Holden_" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">below</a>). Nate: &#34;I broadly endorse this. (I wouldn&#39;t use the same words in quite the same ways, but \shrug, it&#39;s pretty decent.)&#34;</em>
+</p>
+<p>
+It&#39;s not really possible to give a real mechanistic explanation, but I can try to give a rough sketch. An ontology Nate seemed to like (and that seems pretty good to me) is to think of an AI as a dynamically weighted ensemble of &#34;mini-AIs&#34; (my term) - thingies that basically match/promote a particular pattern. (&#34;Dynamically weighted&#34; means that a mini-AI that is pushing in successful directions gets weighted more strongly as a result.)
+</p>
+<p>
+So let&#39;s imagine that we&#39;re training a Transformer-type thing on next-token prediction, and let&#39;s take as a stipulation that this is somehow going to get it to the point of having the capability to do needle-moving alignment research, at least when it&#39;s imitating a particular alignment researcher named Alice. The basic idea is that the next-token prediction gets it to the point where, if prompted to predict what it will observe next in a context where this requires predicting Alice&#39;s behavior, it will keep predicting specific reasonable next steps that Alice will take, even after the point where these next steps take us to the frontiers of knowledge/understanding about AI alignment. We&#39;ll then use a small amount of prompting, RL, etc. to point it consistently in this direction such that it is taking or describing these steps consistently. 
+</p>
+<p>
+For simplicity, we&#39;ll talk about Anthropic-style mechanistic interpretability.
+</p>
+<p>
+Here&#39;s the general sort of thing Nate sees happening in this case:
+</p>
+<p>
+Very early on (when it just sucks at everything), the AI makes pretty random guesses about what tokens will come next in contexts involving Alice. It gets lower loss when its guess is better, and this causes it to form and/or up-weight mini-AIs matching shallow/relatively useless things like &#34;When asked what her favorite color is, Alice replies that it&#39;s blue&#34; and &#34;When Alice finishes examining one neuron in a large NN, she starts examining another neuron&#34; and whatever.
+</p>
+<p>
+At some point, the AI&#39;s predictions of Alice run out of this sort of low-hanging fruit. 
+</p>
+<p>
+<strong>Research improvement. </strong>In order to improve further, it will have to accurately predict Alice&#39;s next steps in situations unlike anything that has happened (chronologically) before - such as (to give a cartoon example) &#34;when Alice finishes decoding a large number of neurons, and has to reflect about how to redesign her overall process before she moves on to doing more&#34; or &#34;when Alice finishes decoding *all* the neurons in an AI, and needs to start thinking about how they fit together.&#34; (This feels kinda unrealistic for the kind of pretraining that&#39;s common today, but so does actually learning how to do needle-moving alignment research just from next-token prediction. If we *condition on* the latter, it seems kinda reasonable to imagine there must be cases where an AI has to be able to do needle-moving alignment research in order to improve at next-token prediction, and this feels like a reasonable way that might happen.)
+</p>
+<p>
+Here, Nate claims, we should basically think that one of two classes of thing kinda has to happen:
+</p>
+<ol>
+
+<li><em>Success via CIS. </em>The AI forms and/or up-weights mini-AIs doing things like: &#34;Reflect on your goal and modify it&#34;; &#34;Do things that will be useful for your big-picture goal in the world [what goal? ~Any goal will do], via getting you to a position of greater general understanding, power, option value, etc.&#34;; &#34;Identify and remove obstacles that could stop you from achieving whatever it is you might want to achieve.&#34; (There could plausibly be smaller &#34;micro-AIs&#34; that are important, like &#34;keep track of the most limited resources&#34;; here I&#39;m just illustrating the basic idea, but I think Nate and I agree that in some sense, the &#39;smaller&#39; the needed pieces are, the stronger the case is that that they inevitably get up-weighted, so if a bunch of super-small pieces add up to danger, there&#39;s a good case for expecting danger.) These mini-AIs are helping the AI to predict Alice&#39;s moves because Alice, herself, in these difficult alignment research situations, is calling on her own CIS-y stuff. (Note that these mini-AIs are developed based on predicting all kinds of situations where CIS-y stuff worked, not just predicting Alice.) But once the AI is out of training and trying to push the research frontier, its mini-AIs will continue to cause it to do &#34;reflection&#34; to the point where it ends up with weird goals, and will cause it to do things like &#34;removing obstacles&#34; to those goals.<sup><a href="#fn4">4</a></sup>
+
+</li><li><em>Or: failure via ambling around. </em>Lacking these sorts of CIS-y mini-AIs, the AI has no way of doing truly Alice-like next steps at these difficult junctures in alignment research. So it makes moves that are kind of locally or superficially Alice-like, but don&#39;t actually match what she would do in the tough situations. Maybe a dumb example of this would be that once Alice has finished decoding all the neurons in a NN, the AI&#39;s simulation of Alice might decode the first one again, or decode a neuron in some other random NN, or just like write a lot of words about what she&#39;s done without those moving her closer to the next important step, or something.</li></ol>
+<p>
+<strong>Values improvement. </strong>In addition to junctures where the AI needs to be (in some sense, like a next-token prediction sense) good at needle-moving alignment research in order to predict Alice well, there could imaginably be junctures where the AI needs to be (in some sense) good at POUDA-avoidance. For example, the AI should know that Alice isn&#39;t likely to respond to the situation &#34;Alone with another person, such that murdering them would go undetected and result in more resources to do useful alignment research&#34; with &#34;Yeah, murder the person.&#34;
+</p>
+<p>
+That example is easy, but getting good <em>enough</em> at POUDA-avoidance to maintain it in truly exotic situations is (Nate claims) likely to require more and broader training (by a lot) than picking up the CIS-y stuff does. By &#34;truly exotic situations,&#34; I mean things like &#34;You have just done a lot of steps, many of which involved <strong>reflection</strong>, with no particular way to get &#39;back on track&#39; if you&#39;ve done some of them in goofy ways.&#34; as well as things like &#34;You have gained enough insight to be able to conquer the world with high reliability&#34; (I can imagine these two things being importantly &#34;out of distribution&#34; for different reasons.)
+</p>
+<p>
+I&#39;m not that sure how much there is to say about why/how this is the case, but here are some potential contributors:
+</p>
+<ul>
+
+<li>A pretraining data set is likely to contain a rich set of examples of Alice and other humans being CIS-y, since those are things humans are constantly doing in lots of contexts. And the CIS-y aspects of what those humans are doing generalize quite far. It is unlikely to contain a comparably rich set of examples of Alice (and other humans) being POUDA-avoidant. 
+<ul>
+ 
+<li>Maybe part of this: Alice&#39;s superficially POUDA-avoidant behavior could be generated via applying CIS to any of a number of goals, given Alice&#39;s actual situations in the pretraining data set. For example, if Alice&#39;s goal were to conquer the world and turn it into paperclips, she still wouldn&#39;t murder random people to take their money - that&#39;s just not a good idea for those goals.<sup><a href="#fn5">5</a></sup> So the AI is never forced to pattern-match &#34;true&#34; POUDA-avoidance (of the kind that nice humans actually have) in order to predict Alice&#39;s actions.
+ 
+</li><li>A sufficiently intelligent agent with any random goal can perform well in an environment, even when that requires acting as though it has another goal; so, attributing any random goal to Alice will cause the AI to predict her actions just fine, without needing correction. (By contrast, an agent that lacks CIS mini-AIs really has to pick them up to perform well in certain environments.)
+</li> 
+</ul>
+
+</li><li>It&#39;s generally a good bet that the AI will learn all these little patterns (both the CIS-y ones and the POUDA-avoidance onces) in imperfect ways. But as it goes way outside of its training distribution, the screwups in the CIS-y patterns tend to get corrected (by things like &#34;the AI notices it is not gaining power/option value&#34;), and there&#39;s no reason for the screwups in the POUDA-avoidance patterns to be similarly corrected. 
+
+</li><li>If the AI does a bunch of screwed-up reflection, it might thereby land in a state where it&#39;d be realistic to do crazy stuff (as humans who have done a lot of reflection sometimes do).
+
+</li><li>POUDA-avoidance patterns might also be inherently more &#34;brittle&#34; than CIS-y patterns (since the latter correspond to deep facts about how to accomplish ~whatever whereas the former are really all about our contingent values). So they might just generalize weirdly in unusual situations, and/or a capable enough AI might find way of accomplishing its goals that are sort of within the &#34;letter of the law&#34; of POUDA-avoidance as seen in the training distribution (but outside what we&#39;d consider the spirit of POUDA-avoidance). In general, POUDA-avoidance is going to interfere with/block CIS, so anything like &#34;following the letter but not the spirit of POUDA-avoidance&#34; or &#34;self-modifying to stop POUDA-avoiding&#34; will be helpful for CIS/roughly all other goals, so there&#39;s a sort of constant pressure for the AI to find stuff like that.</li></ul>
+<h3>So therefore</h3>
+
+
+<p>
+This has been an argument that the AI in Holden&#39;s training setup nonetheless ends up &#34;aiming at CIS&#34; more easily/faster (by a lot) than it ends up &#34;reliably avoiding POUDA.&#34; If it is also powerful, it is therefore dangerous (according to the criteria I laid out at the top). (Or, if it doesn&#39;t end up dangerous, this is because it ended up useless.)
+</p>
+<p>
+If this turns out true, Nate and Holden are on the same page about the implications (confirmed by Nate):
+</p>
+<ul>
+
+<li>If this procedure results in a dangerous AI, it&#39;s super not clear (by default - perhaps if this problem got more attention someone would think of something) how to &#34;fix&#34; it and end up with a reliably POUDA-avoiding AI.
+
+</li><li>If lots of players are racing to develop and deploy powerful AI systems, using this kind of training setup, that&#39;s a really bad situation - like maybe the most careful ones will refrain from deploying their dangerous AI, but not everyone is going to hold off on that for all that long.
+
+</li><li>So unless we find a way of resolving the central tension, &#34;You have to aim at CIS to do helpful things, and reliable POUDA-avoidance is much harder/longer to learn than aiming at CIS,&#34; we&#39;re in trouble. (Here &#34;aim at&#34; is using <a href="https://www.cold-takes.com/why-would-ai-aim-to-defeat-humanity/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">my version of &#34;aim&#34;</a> - which intends to describe an AI acting as though it&#39;s trying to do something - rather than <a href="https://www.lesswrong.com/posts/NJYmovr9ZZAyyTBwM/what-i-mean-by-alignment-is-in-large-part-about-making" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Nate&#39;s version of &#34;aim&#34;</a>.)
+</li>
+</ul>
+
+<h2>Some possible cruxes</h2>
+
+
+<p>
+Some beliefs I (Holden) have that seem in tension with the story above:
+</p>
+<ul>
+
+<li>Robust POUDA-avoidance seems like it could be &#34;easy&#34; in the sense that a realistic amount of training is sufficient.  
+<ul>
+ 
+<li>To be clear, I think both Nate and I are talking about a pretty &#34;thin&#34; version of POUDA-avoidance here, more like &#34;Don&#39;t do egregiously awful things&#34; than like &#34;Pursue the glorious transhumanist future.&#34; Possibly Nate considers it harder to get the former without the latter than I do.
+</li> 
+</ul>
+
+</li><li>It seems like the capabilities needed to do alignment research could be &#34;narrower&#34; in some sense than what I think Nate is picturing. Like, he seems to be picturing an actually-effective &#34;automated alignment researcher&#34; necessarily doing a lot of reflection<sup><a href="#fn6">6</a></sup> (this is how it ends up in parts of the distribution that really challenge the POUDA-avoidance), and/or taking on something very ambitious (e.g., disempowering all of humanity) as a necessary consequence of doing needle-moving alignment research. In my head, you can just have something that is dumb in many ways and not particularly &#34;reflective&#34; (at least, not in a way that leads to big self-modification) doing ~arbitrary goodness of alignment research. 
+<ul>
+ 
+<li>This may be the more important crux, in the sense that if I went with Nate&#39;s view here, I might then consider an &#34;automated alignment researcher&#34; to need to go far enough out of distribution that I&#39;d find robust POUDA-avoidance much less plausible.
+</li> 
+</ul>
+</li> 
+</ul>
+<h2>Where Holden could look to find Nate&#39;s source of current confidence (and some reactions from Holden)</h2>
+
+
+<p>
+Here is basically what I have from Nate in the  Slack exchange on this:
+</p>
+<p>
+<em>like, we could imagine playing a game where i propose a way that it [the AI] diverges [from POUDA-avoidance] in deployment, and you counter by asserting that there&#39;s a situation in the training data where it had to have gotten whacked if it was that stupid, and i counter either by a more-sophisticated deployment-divergence or by naming either a shallower or a factually non-[Alice]like thing that it could have learned instead such that the divergence still occurs, and we go back and forth. and i win if you&#39;re forced into exotic and unlikely training data, and you win if i&#39;m either forced into saying that it learned unnatural concepts, or if my divergences are pushed so far out that you can fit in a pivotal act before then.</em>
+</p>
+<p>
+<em>(where you win &#34;in hard mode&#34; if you stick only to the training data that people plausibly generate if they&#39;re not specifically trying to stave off the difficulties I&#39;m pointing to, and you win only in &#34;easy mode&#34; if your training data is plausibly-generatable but only by people who are intentionally trying to stave off these difficulties. (and if you win only on &#34;easy mode&#34; then i get to keep my &#34;y&#39;all will still die if you don&#39;t find others who can also point to problems that you were about to walk into b/c i can&#39;t do it alone&#34; card.))</em>
+</p>
+<p>
+<em>and, like, it&#39;s a pretty tricky game to play b/c it&#39;s all made-up bullshit and it&#39;s hard to agree on who strained credulity more, but there&#39;s some sort of idealized game here where it sounds to me like we each expect we&#39;d win if we played it ...</em>
+</p>
+<p>
+<em>So the place that my brain reports it gets its own confidence from, is from having done exercises that amount to self-play in the game I mentioned in a thread a little while back, which gives me a variety of intuitions about the rows in your table (where I&#39;m like &#34;doing science well requires CIS-ish stuff&#34; and &#34;the sort of corrigibility you learn in training doesn&#39;t generalize how we want, b/c of the interactions w/ the CIS-ish stuff&#34;)</em>
+</p>
+<p>
+<em>(that plus the way that people who hope the game goes the other way, seem to generally be arguing not from the ability to exhibit playthroughs that go some other way, but instead be arguing from ignorance / &#34;we just don&#39;t know&#34;)</em>
+</p>
+<p>
+<em>i suspect that this is a frustrating answer</em>
+</p>
+<p>
+Basically I picture Nate trying to think through - in a more detailed, mechanistic way than I can easily picture - how a training process could lead an AI to the point of being able to do useful alignment research, and as he does this Nate feels like it keeps requiring a really intense level of CIS, which then in turn (via the CIS leading the AI into situations that are highly &#34;exotic&#34; in some sense - mostly, I think, via having done a lot of self-modification/reflection?) seems like it goes places where the kind of POUDA-avoidance pattern learned in training wouldn&#39;t hold. <em>Nate endorses this paragraph. He adds, via comments: &#34;also because it just went really far. like, most humans empirically don&#39;t invent enough nanotech to move the needle, and most societies that are able to do that much radically new reasoning do undergo big cultural shifts relative to the surroundings. like, it probably had to invent new ways of seeing the problems and thinking about them and the CIS stuff generalizes better than the POUDA stuff (or so the hypothesis goes)&#34;</em>
+</p>
+<p>
+Some more Holden thoughts on this:
+</p>
+<p>
+It&#39;s not implausible to me that one could think about this kind of thing in a lot more detail than I have, to the point where one could be somewhat confident in Nate&#39;s view (maybe, like, 70% confident, so there&#39;s still a delta here as I believe Nate is around 85% confident in this view). <em>Nate adds: &#34;(tbc, my nines on doom don&#39;t come from nines on claims like this, they come from doom being disjunctive. this is but one disjunct.)&#34;</em>
+</p>
+<p>
+But:
+</p>
+<ul>
+
+<li>I broadly don’t trust Nate to have thought about this as well as he thinks he has.
+
+</li><li>I have my own inside-view of how creative intellectual work works, and it disagrees with Nate’s take that it requires the kind of CIS-y moves he refers to. 
+
+</li><li>You could argue that I should defer to Nate’s view on this since he’s almost certainly spent more hours thinking about it than I have, but I wouldn’t agree, for reasons including: 
+<ul>
+ 
+<li>I feel like I’ve been over things touching on this topic in varying amounts of depth with a number of ML researchers, including Paul, and I think they understand and reject the underlying Nate intuition here. (I think my take here is a huge judgment call and I’m super non-confident in it; I would feel very unsurprised if it turned out they didn’t really understand the intuition or were getting it wrong.)
+ 
+</li><li>Less importantly, I have thought about some vaguely nearby “how creative intellectual work works”-related topics a bunch and think there are some cases in which it seems like at least Eliezer is wrong on such things in clear-cut ways. (E.g., I’ve seen a # of signs that he seems to endorse the “golden age” view examined and criticized <a href="https://www.cold-takes.com/wheres-todays-beethoven/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a>.) For reasons not super easy to spell out, this makes me a bit more comfortable sticking to my judgment on this topic.
+</li> 
+</ul>
+
+</li><li>(There will probably be a bunch more back-and-forth on this point in the MIRI version of this exchange)
+</li>
+</ul>
+<p>
+To be clear though, I’m not unaffected by this whole exchange. I wasn’t previously understanding the line of thinking laid out here, and I think it’s a lot more reasonable than coherence-theorem-related arguments that had previously been filling a similar slot for me. I see the problem sketched in this doc as a plausible way AI alignment could turn out to be super hard even with pretty benign-seeming training setups, and not one I’d previously been thinking about. (The argument in this doc isn&#39;t clearly more or less reasonable than what I&#39;d been expecting to encounter at some point, so I&#39;m not sure my actual p(doom) changed at all, though it might in the future - see below.)
+</p>
+<h2>Future observations that could update Holden or Nate toward the other&#39;s views</h2>
+
+
+<p>
+<em>Nate’s take on this section: “I think my current take is: some of the disagreement is in what sort of research output is indicative of needle-moving capability, and historically lots of people have hope about lots of putative alignment work that I think is obviously hopeless, so I&#39;m maybe less optimistic than Holden here about getting a clear signal. But I could imagine there being clear signals in this general neighborhood, and I think it&#39;s good to be as explicit as this section is.&#34;</em>
+</p>
+<p>
+Holden nominates this as a thing Nate should update on: 
+</p>
+<ul>
+
+<li>We get AIs doing some really useful alignment-related research, despite some combination of: 
+<ul>
+ 
+<li>The AIs being trained using methods basically similar to what&#39;s going on now (just like, a Transformer trained on next-token prediction with some RLHF on top, or something not too different from that, or at least, not a lot more different from that than e.g. Bing Chat is from the original GPT-3)
+ 
+</li><li>At least some such AIs still seeming basically silly in many important ways - like they just kind of suck at reasoning about some pretty core and not-too-challenging domains, and/or there&#39;s a distinct lack of signs that they are doing much to e.g. &#34;reflect&#34; or reconcile conflicting goals
+ 
+</li><li>We&#39;re all still here
+</li> 
+</ul>
+
+</li><li>What does &#34;really useful&#34; mean? I&#39;d ask Nate to nominate a minimal level of useful/impressive that would update him, but I&#39;d think the bar should <strong>clearly</strong> be cleared by something like: an AI or pretty easy-to-point-at set of AIs being in some sense (maybe roughly comparable to <a href="https://www.lesswrong.com/posts/qy5dF7bQcFjSKaW58/bad-at-arithmetic-promising-at-math" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a>) the top contributor to a paper roughly as impressive (given the other suite of papers that exist at that time) as the 20th percentile of: Redwood&#39;s &#34;indirect object identification&#34; paper, Redwood&#39;s &#34;causal scrubbing&#34; writeup, ARC&#39;s last couple of papers as of today (something about heuristic arguments, and the ELK writeup), Anthropic&#39;s last few interpretability papers as of today, <a href="https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg/solidgoldmagikarp-plus-prompt-generation" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">this post</a>, <a href="https://www.lesswrong.com/posts/jJf4FrfiQdDGg7uco/the-telephone-theorem-information-at-a-distance-is-mediated" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The Telephone Theorem</a>, <a href="https://www.lesswrong.com/posts/3L46WGauGpr7nYubu/the-plan" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The Plan</a>, this <a href="https://www.lesswrong.com/posts/iCfdcxiyr2Kj8m8mT/the-shard-theory-of-human-values" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">shard theory</a> post, the <a href="https://www.lesswrong.com/posts/k4AQqboXz8iE5TNXK/a-shot-at-the-diamond-alignment-problem" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">shard-theory-inspired diamond maximization proposal</a>, this <a href="https://www.alignmentforum.org/posts/N6WM6hs7RQMKDhYjB/a-mechanistic-interpretability-analysis-of-grokking" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Neel Nanda post</a>, <a href="https://www.alignmentforum.org/posts/vJFdjigzmcXMhNTsx/simulators" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Simulators</a>, <a href="https://arxiv.org/abs/2212.03827" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">this Collin Burns paper</a>. 
+<ul>
+ 
+<li>Importantly, I (Holden) am NOT claiming/implying that getting a large quantity of more papers like this will be good enough to save us. I am only claiming that these papers demonstrate enough “serious wrestling with the problem” that Nate should be surprised if he sees an AI doing something like that without going into dangerous CIS-y places. The more detailed version of these notes will probably have a bunch of back-and-forth where Nate and I clarified this point.
+ 
+</li><li>Accordingly, simply producing papers “like these” does not count. The AI-driven research should be similarly indicative of a latent ability to &#34;truly wrestle with the alignment problem&#34; and &#34;push beyond the current research frontier&#34;; it shouldn’t feel like they are coming from a weird trick.
+ 
+</li><li>If it&#39;s putting out papers that I judge to be sufficiently impressive, and Nate doesn&#39;t, then sadly we will both think events are vindicating (or at least not anti-vindicating) our view. But that could be an interesting crux if it happens. 
+</li> 
+</ul>
+</li> 
+</ul>
+<p>
+What should Holden update on? I mean, I think some kind of noticeable lack of the above would update me, where &#34;noticeable&#34; means something like: &#34;Even though AI products are making great strides and AI is being heavily used as part of research/engineering workflows, and there are pretty frequent cases of an AI being lead author on something roughly as intellectually interesting as an average paper in Science/Nature,<sup><a href="#fn7">7</a></sup> we&#39;re not seeing anything like the above.&#34;
+</p>
+<p>
+I&#39;ve focused heavily on the crux about needle-moving alignment research requiring some kind of pretty dramatic reflection/modification/ambition/something - that seems like it generates pretty concretely different expectations. I&#39;m not sure I can do anything similar with the crux about POUDA-avoidance, because I think Nate&#39;s picture is that the part of the POUDA-avoidance that&#39;s hard to learn is the one that comes up in scenarios that are &#34;exotic&#34; in some sense.
+</p>
+
+
+
+<h2>Notes</h2>
+
+
+<ol><li id="fn1">
+<p>
+     We probably spent more time on the summary than on the exchange itself, which I think makes sense - I often find that trying to express something in a distilled way is a nice way to confront misunderstandings. <a href="#fnref1">↩</a></p></li><li id="fn2">
+<p>
+     To be clear, my best guess is that we&#39;ll see an explosively fast takeoff by any normal standard, but not quite as &#34;overnight&#34; as I think Nate and Eliezer picture. <a href="#fnref2">↩</a></p></li><li id="fn3">
+
+<p>
+     Like, the plan might explicitly say something like &#34;Now think of new insights&#34; - the point isn&#39;t &#34;something will come up that wasn&#39;t in the plan,&#34; just the weaker point that &#34;the plan wasn&#39;t able to give great guidance on this part.&#34; <a href="#fnref3">↩</a></p></li><li id="fn4">
+
+<p>
+     Nate: “(and you can&#39;t just &#34;turn this off&#34;, b/c these &#34;reflective&#34; and &#34;CIS&#34;ish processes are part of how it&#39;s able to continue making progress at all, beyond the training regime)” <a href="#fnref4">↩</a></p></li><li id="fn5">
+
+<p>
+     Nate: “and this model doesn&#39;t need to predict that Alice is constantly chafing under the yoke of her society (as might be refuted by her thoughts); it could model her as kinda inconsistent and likely to get more consistent over time, and then do some philosophy slightly poorly (in ways that many humans are themselves prone to! and is precedented in philosophy books in the dataset!) and conclude that Alice is fundamentally selfish, and would secretly code in a back-door to the &#39;aligned&#39; AI if she could ... which is entirely consistent with lots of training data, if you&#39;re just a little bad at philosophy and aren&#39;t actually running an Alice-em ... this is kinda a blatant and implausible example, but it maybe illustrates the genre \shrug” <a href="#fnref5">↩</a></p></li><li id="fn6">
+
+<p>
+     Nate: <em>sure, but it seems worth noting (to avoid the obv misunderstanding) that it&#39;s self-modification of the form &#34;develop new concepts, and start thinking in qualitatively new ways&#34; (as humans often do while doing research), and not self-modification of the from &#34;comprehend and rewrite my own source code&#34; ... or, well, so things go in the version of your scenario that i think is hardest for me. (i think that in real life, people might just be like &#34;fuck it, let it make experimental modifactions to its own source code and run those experimentally, and keep the ones that work well&#34;, at which point i suspect we both assume that, if the AI can start doing this competently in ways that improve its abilities to solve problems, things could go off the rails in a variety of ways.)</em> <a href="#fnref6">↩</a></p></li><li id="fn7">
+<p>
+     I do want to be quite explicit that art doesn&#39;t count here, I mean interesting in a sciencey way. <a href="#fnref7">↩</a>
+
+</p></li></ol><br/><br/><a href="https://www.lesswrong.com/posts/iy2o4nQj9DnQD7Yhj/discussion-with-nate-soares-on-a-key-alignment-difficulty#comments" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Discuss</a>

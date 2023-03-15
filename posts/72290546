@@ -1,0 +1,311 @@
+<h2>Introduction</h2>
+<p>At the time of writing this post, we are in the process of releasing pandas 2.0.
+The project has a large number of users, and it&#39;s used in production quite widely by
+personal and corporate users. This large use based forces us to be conservative and
+make us avoid most big changes that would break existing pandas code, or would change
+what users already know about pandas. So, most changes to pandas, while they are important,
+they are quite subtle. Most of our changes are bug fixes, code improvements and clean up,
+performance improvements, keep up to date with our dependencies, small changes that make
+the API more consistent, etc.</p>
+<p>A recent change that may seem subtle and it&#39;s easy to not be noticed, but it&#39;s actually
+very important is the new <a href="https://arrow.apache.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Apache Arrow</a> backend for pandas
+data. To understand this change, let&#39;s quickly summarize how pandas works. The general
+idea is that before being able to do anything in pandas it is needed to load into memory
+the data of interest (using methods like <code>read_csv</code>, <code>read_sql</code>, <code>read_parquet</code>, etc).
+When loading data into memory it&#39;s required to decide how this data will be stored in
+memory. For simple data like integers of floats this is in general not so complicated,
+as how to represent a single item is mostly standard, and we just need arrays of the
+number of elements in our data. But for other types (such as strings, dates and times,
+categories, etc.) some decisions need to be made. Python is able to represent mostly
+anything, but Python data structures (lists, dictionaries, tuples, etc) are
+very slow and can&#39;t be used. So the data representation is not Python and is not standard,
+and an implementation needs to happen via Python extensions, usually implemented
+in C (also in C++, Rust and others). For many years, the main extension to represent
+arrays and perform operations on them in a fast way has been NumPy. And this is what
+pandas was initially built on.</p>
+<p>While NumPy has been good enough to make pandas the popular library it is, it was never
+built as a backend for dataframe libraries, and it has some important limitations. A couple
+of examples are the poor support for strings and the lack of missing values. To get a more
+detailed idea of this topic, you can read Wes McKinney&#39;s article
+<a href="https://wesmckinney.com/blog/apache-arrow-pandas-internals/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Apache Arrow and the 10 Things I Hate About pandas</a>.</p>
+<p><img alt="" src="https://reader.miniflux.app/proxy/ewuAp6dXasYBxxSSTBNrAMg1o7L9jQPvU7Tzia7bzqc=/aHR0cHM6Ly9kYXRhcHl0aG9uaXN0YS5tZS9zdGF0aWMvaW1nL2Jsb2cvYXJyb3cuanBn" loading="lazy"/></p>
+<p>For some years now, while still relying heavely on NumPy, pandas has been slowly
+decoupling from it. A couple of important milestones were the addition of an API to implement
+<a href="https://tomaugspurger.github.io/posts/pandas-extension-arrays/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Extension Arrays for pandas</a>
+in 2018. Extension arrays allow pandas to work with custom data types. Not long after they
+were added to pandas, all existing complex types in pandas (e.g. categorical or datetime with
+timezone types) were moved to this interface. Another important milestone was the implementation of a
+<a href="https://github.com/pandas-dev/pandas/pull/35259" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">string data type based on Arrow</a>
+that started in 2020.</p>
+<p>After these additions, in pandas 1.5 and 2.0 we are adding Apache Arrow support for all
+data types. Which is the topic of the rest of this article.</p>
+<h2>The basics</h2>
+<p>By default pandas will keep using the original types. As mentioned earlier, one of our
+top priorities is not breaking existing code or APIs. See these pandas 2.0 examples:</p>
+<pre><code>&gt;&gt;&gt; import pandas
+&gt;&gt;&gt; pandas.__version__
+&#39;2.0.0.dev0+1578.g32f1faddc3&#39;
+
+&gt;&gt;&gt; pandas.Series([1, 2, 3, 4])
+0    1
+1    2
+2    3
+3    4
+dtype: int64
+
+&gt;&gt;&gt; pandas.Series([&#39;foo&#39;, &#39;bar&#39;, &#39;foobar&#39;])
+0       foo
+1       bar
+2    foobar
+dtype: object
+</code></pre>
+
+<p>Nothing really changed. But we can change the <code>dtype</code> to use Arrow:</p>
+<pre><code>&gt;&gt;&gt; pandas.Series([1, 2, 3, 4], dtype=&#39;int64[pyarrow]&#39;)
+0    1
+1    2
+2    3
+3    4
+dtype: int64[pyarrow]
+
+&gt;&gt;&gt; pandas.Series([&#39;foo&#39;, &#39;bar&#39;, &#39;foobar&#39;], dtype=&#39;string[pyarrow]&#39;)
+0       foo
+1       bar
+2    foobar
+dtype: string
+</code></pre>
+
+<p>There is also an option to let pandas know we want Arrow backed types by default.
+The option at the time of writing this article is partially implemented and has a
+confusing API. In particular, it&#39;s not yet working when creating data with
+<code>pandas.Series</code> or <code>pandas.DataFrame</code>. And for loading data from files it will
+only work when the parameter <code>use_nullable_dtypes</code> is set to <code>True</code>. For example,
+to load a CSV file with PyArrow directly into PyArrow backed pandas Series,
+you can use the next code:</p>
+<pre><code>import pandas
+
+pandas.options.mode.dtype_backend = &#39;pyarrow&#39;
+
+pandas.read_csv(fname, engine=&#39;pyarrow&#39;, use_nullable_dtypes=True)
+</code></pre>
+
+<h2>Why Arrow?</h2>
+<p>There are several advantages that Arrow provides, even for simple types. We are going
+to list some of them in the next sections.</p>
+<h3>Missing values</h3>
+<p>Representing missing values is a complex topic. In Python it&#39;s not, since
+everything is wrapped as a Python object, it&#39;s possible to mix different types in lists,
+and you can simply use the value <code>None</code> for any missing data.
+But when performance is important, data types are represented in the CPU representation,
+and can&#39;t be mixed with other types. For example, an unsigned integer of 8 bits,
+will represent 0 as 00000000 and 255 as 11111111, and our whole list of values needs to use that.
+Any bit representation corresponds to a number in the range 0 to 255, and it&#39;s not possible
+to represent a missing value unless using a sentinel value. For example, using 255 as the
+missing value in your code, and only allowing values from 0 to 254 for your type. But this is
+complex and tricky, and surely not ideal.</p>
+<p>For the case of floating point numbers, the internal (CPU) representation is more
+complex, and there are actually some sentinel values already defined in the
+<a href="https://en.wikipedia.org/wiki/IEEE_754" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">IEEE 754</a> standard, which CPUs implement,
+and are able to deal with efficiently. For this reason, historically, the approach
+of pandas to missing values has been to convert numbers to floating point if they were
+not already, and use <code>NaN</code> as the missing value. Converting integer values to floating
+point notation to support missing value is again not ideal, and has side effects.</p>
+<p>More recently, after extension arrays were added to pandas, it was possible for pandas
+to add its own data types for missing values. These are implemented by using two arrays
+instead of one. The main array represents the data in the same way as if there were no
+missing values. But there is an additional boolean array that indicates which values
+from the main array are present and need to be considered, and which are not and must
+be ignored.</p>
+<p>The Apache Arrow in-memory data representation includes an equivalent representation
+as part of its specification. By using Arrow, pandas is able to deal with missing
+values without having to implement its own version for each data type.</p>
+<h3>Speed</h3>
+<p>There are many operations that can be done with dataframes. And each case would
+require its own analysis, but in general we can assume that the Arrow implementation
+is able to perform operations faster. Some examples, using a dataframe with 2.5 million
+rows in my laptop:</p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Time with NumPy</th>
+<th>Time with Arrow</th>
+<th>Speed up</th>
+</tr>
+</thead>
+
+<tbody><tr>
+<td>read parquet (50Mb)</td>
+<td>141 ms</td>
+<td>87 ms</td>
+<td>1.6x</td>
+</tr>
+<tr>
+<td>mean (int64)</td>
+<td>2.03 ms</td>
+<td>1.11 ms</td>
+<td>1.8x</td>
+</tr>
+<tr>
+<td>mean (float64)</td>
+<td>3.56 ms</td>
+<td>1.73 ms</td>
+<td>2.1x</td>
+</tr>
+<tr>
+<td>endswith (string)</td>
+<td>471 ms</td>
+<td>14.9 ms</td>
+<td>31.6x</td>
+</tr>
+
+</tbody></table>
+<p>We can see how Arrow seems to be consistenly faster. And in the case of dealing with
+strings, the difference is huge, since NumPy is not really designed to work with
+strings (even if it can support them).</p>
+<h3>Interoperability</h3>
+<p>In the same way a CSV is a file format that different projects understand (pandas,
+R, Excel, etc), Arrow is also a program independent format. It may be less obvious,
+since it&#39;s an in-memory format, not a file format. But even if it doesn&#39;t have a file
+extension associated, you can think of it as data that can be accessed by different
+consumers that implement its open specification.</p>
+<p>This has two main implications. It&#39;s (relatively) easy and standard to share the
+data among different programs. And it can be done in a extremely fast and memory
+efficient way, since two programs can literally share the same data (the same
+memory, without having to make a copy for each program).</p>
+<p>This may not sound useful or intuitive, since there isn&#39;t an easy way (that I know)
+to use simultaneously for example pandas and R with the same loaded data.
+And maybe it&#39;s not common to want to do do anyway. But there are some examples where
+interoperability can be helpful, and we will see one of them.</p>
+<h4>Interoperability example</h4>
+<p>I need to build a pipeline to load some data from my company data warehouse,
+transform it, compute some analytics, and then export an automatically generated
+long report with the analytics. The infrastructure in my company is not very
+modern, and my data is available as SAS files. I want to generate my reports
+with a professional and scientific looking style, so I decide to use LATEX for
+the output.</p>
+<p>Given the problem, pandas seems like a reasonable choice of tool for the job.
+It can import data from SAS files, and it can build LATEX tables. Another
+choice could be <a href="https://www.pola.rs/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Polars</a>, which is similar to
+pandas. Not as stable or mature yet, but it&#39;s faster and more memory efficient
+than pandas. This is among other things because it provides a query optimizer
+that can make the pipeline run faster by analyzing all operations together
+before executing them. Unfortunately, Polars is not able to load data from SAS or
+export LATEX tables as easily as pandas (at least that I know).</p>
+<p>Besides just ignore Polars and use pandas, another option could be:</p>
+<ul>
+<li>Load the data from SAS into a pandas dataframe</li>
+<li>Export the dataframe to a parquet file</li>
+<li>Load the parquet file from Polars</li>
+<li>Make the transformations in Polars</li>
+<li>Export the Polars dataframe into a second parquet file</li>
+<li>Load the Parquet into pandas</li>
+<li>Export the data to the final LATEX file</li>
+</ul>
+<p>This would somehow solve our problem, but given that we&#39;re using Polars to speed
+up things, writing and reading from disk is going to be slowing down my pipeline
+significantly.</p>
+<p>In the old pandas world, we would appreciate if pandas could export the NumPy
+arrays containing the dataframe data to a memory format that Polars could understand.
+Or if Polars could understand NumPy directly. Both happen to be true actually.
+But things are even better with the new pandas. Because Polars internal data
+representation is actually Apache Arrow, and now it&#39;s also one of the possible
+internal representations for pandas dataframes.</p>
+<p>It may seem that by using Apache Arrow I can just share a Python Arrow structure
+among both projects and that&#39;s it. And it really is for final users. But things
+are actually more complex. Both pandas and Polars are Python wrappers around other
+libraries, so the data to share is not really a Python structure. In the case
+of pandas the Arrow backed data is actually a <a href="https://arrow.apache.org/docs/python/index.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">PyArrow</a>
+(C++) structure. While the Python dataframe in Polars is an wrapper around a Rust
+data structure, an <a href="https://github.com/jorgecarleitao/arrow2" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Arrow2</a>
+Rust structure to be specific (there is another Arrow implementation in Rust,
+the official <a href="https://github.com/apache/arrow-rs" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Arrow</a>).</p>
+<p>So, when sharing data between pandas and Polars, what we are really doing is to
+convert a PyArrow object into an Arrow2 object (or the other way round). And the
+good news is that there is not much to convert, since internally both libraries
+implement the same data representation specification, the Apache Arrow specification.</p>
+<p>The change is not immediate, and some metadata with the pointer to where the data
+is stored in memory and information about the schema needs to be generated from one
+library and sent to the other. But the data itself (which could potentially be gigabytes
+or terabytes of data) stays the same, and doesn&#39;t need to be copied or converted.
+This allows sharing the data to happen extremely fast even when the data is huge.</p>
+<p>So, our program could look something like this:</p>
+<pre><code>loaded_pandas_data = pandas.read_sas(fname)
+
+polars_data = polars.from_pandas(loaded_pandas_data)
+# perform operations with pandas polars
+
+to_export_pandas_data = polars.to_pandas(use_pyarrow_extension_array=True)
+to_export_pandas_data.to_latex()
+</code></pre>
+
+<p>At the time of writing this post <code>polars.to_pandas</code> has been updated just few days ago
+to support the <code>use_pyarrow_extension_array</code> and allow the Arrow data in Polars to be
+shared directly to pandas (without converting it to NumPy arrays. And <code>polars.from_pandas</code>
+has <a href="https://github.com/pola-rs/polars/pull/7084" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">a bug</a> that causes the data being copied,
+but it should be fixed soon. The above code will unnecessarily make a copy right now, but it
+should not making a copy after the release of pandas 2.0 and the next release of Polars.</p>
+<h2>Data types</h2>
+<p>One last advantage of using Apache Arrow as the container for pandas data is the support
+for more and better data types compared to NumPy. As a numerical computing tool, NumPy
+provides great support for integer and float values. It also has support for boolean values
+backed by 8 bits per value, and datetime values backed by 64 bits. But not much more than
+that.</p>
+<p>Arrow types are broader and better when used outside of a numerical tool like NumPy. It
+has better support for dates and time, including types for date-only or time-only data,
+different precision (e.g. seconds, milliseconds, etc.), different sizes (32 bits, 63 bits, etc.).
+The boolean type in Arrow uses a single bit per value, consuming one eighth of memory.
+It also supports other types, like decimals, or binary data, as well as complex types (for
+example a column where each value is a list). There is <a href="https://pandas.pydata.org/docs/dev/reference/arrays.html?highlight=arrowdtype#pyarrow" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">a table</a>
+in the pandas documentation mapping Arrow to NumPy types.</p>
+<p>Arrow also defines a type to encode categories, so you can for example have a column with
+the values &#34;red&#34;, &#34;green&#34; and &#34;blue&#34;, and instead of having to store the strings for each
+element in the possibly huge column, an index is stored for each value (e.g. 0, 1 and 2),
+and then a small lookup table to know that 0 is &#34;red&#34;, 1 is &#34;green&#34; and 2 is &#34;blue&#34;.
+All this transparent to users, who will only notice of this data representation because of
+the memory saving. As a note, pandas has its own implementation of an equivalent categorical
+type backed by NumPy arrays.</p>
+<p>See this example:</p>
+<pre><code>import datetime
+import pyarrow
+import pandas
+
+
+articles = pandas.DataFrame({
+    &#39;title&#39;: pandas.Series([&#39;pandas 2.0 and the Arrow revolution&#39;,
+                            &#39;What I did this weekend&#39;],
+                           dtype=&#39;string[pyarrow]&#39;),
+    &#39;tags&#39;: pandas.Series([[&#39;pandas&#39;, &#39;arrow&#39;, &#39;data&#39;],
+                           [&#39;scuba-diving&#39;, &#39;rock-climbing&#39;]],
+                          dtype=pandas.ArrowDtype(pyarrow.list_(pyarrow.string()))),
+    &#39;date&#39;: pandas.Series([datetime.date(2023, 2, 22),
+                           datetime.date(2022, 11, 3)],
+                          dtype=&#39;date32[pyarrow]&#39;)
+})
+</code></pre>
+
+<p>As you can see by the <code>dtype</code> attributes, pandas will be storing this information in formats
+you may have not seen before. pandas has supported all the data in the example above since the
+early days, but the internal data type used was <code>object</code>. If you are not familiar with the <code>object</code>
+type, it is just a pointer to a Python object, and operations with the data type would probably be
+as slow as if you implemented your code directly using Python structures (quite slow). In
+comparison, the Arrow types are stored in memory with performance in mind, and operations
+with the data should be reasonably fast.</p>
+<p>One question you probably have is, what operations can I do with Arrow types? And the answer
+depends on the exact data type. For example, Arrow strings are well supported, and have been
+available in pandas for few versions now. The <code>date32</code> data type is quite new, but operations
+like <code>articles[&#39;date&#39;].dt.weekday</code> will work.</p>
+<p>What about the list of strings type used for <code>tags</code>? There is nothing much supported with
+them right now. If you try the example above, you will see that not even printing pandas
+data with the data type is supported. This may sound disappointing but I have some good news.
+First, support for some Arrow types has just been introduced, and it&#39;ll be improved over
+time. And second, nothing prevents you from writing your own operations with any language
+that has an Apache Arrow implementation. And as we&#39;ll see in the part II of this article,
+it is not difficult.</p>
+<h2>Summary</h2>
+<p>In this article we&#39;ve seen how Apache Arrow and its integration into pandas is helping
+pandas be simpler, run faster, play better with related libraries, and efficiently
+represent more types of data.</p>
+<p>In part II we will show how to implement pandas extensions by using Arrow. These
+extensions can run extremely fast, and not only work for pandas, but also to work
+for any other library using Apache Arrow internally (such as Polars or Vaex).</p>

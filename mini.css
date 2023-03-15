@@ -1,0 +1,296 @@
+
+:root {
+    --background: #fffcfa;
+    --text: #1c1c1c;
+    --hover: #e1e1e1;
+    --links: #9d4f29;
+    --navHeight: 40px
+}
+
+@media (prefers-color-scheme:dark) {
+    :root {
+        --background: #1c1c20;
+        --text: #ffede6;
+        --hover: #514a44;
+        --links: #ec7e48;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Body */
+
+body {
+    font-family: 'Crimson Pro', serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    background: var(--background);
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent
+}
+
+/* Navigation */
+
+.nav {
+    font-family: "Roboto";
+	position: fixed;
+	width: 100%;
+	background: var(--background);
+    height: var(--navHeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 0px 0px 5px 0px;
+	text-align: center;
+	z-index: 5050;
+	font-size: .9em;
+}
+
+.navcat {
+	text-decoration: none;
+	color: var(--text);
+    opacity: .5;
+	cursor: pointer;
+	padding: 5px 10px;
+	font-size: 15px;
+	text-transform: uppercase;
+    
+}
+
+.active {
+	font-weight: bold;
+    opacity:1;
+}
+
+/* Feed */
+
+.feed {
+    margin-top:var(--navHeight);
+    max-width: 800px;
+}
+
+.category {
+    scroll-behavior: smooth;
+}
+
+.entries {
+    margin: 50px 0px;
+    width: 100%;
+    max-width: 900px; 
+}
+
+/* Entry */
+
+.entry {
+    text-decoration: none;
+    color: var(--text);
+    margin: 0px;
+    display: flex;
+    max-width: 100vw;
+}
+
+.header {
+	border-bottom:1px solid var(--background)
+}
+
+.entry:not(.open) .header:hover{
+	border-bottom:1px solid var(--hover)
+}
+
+.content {
+    padding: 0px 10px 0px 10px;
+    margin: 0px;
+    cursor: pointer;
+    /*! border-radius: 0px 5px 5px 0px; */
+    max-width: calc(100vw - 20px);
+}
+
+.header, .category_header {
+    font-family: 'Roboto', sans-serif;
+}
+
+.open .header {
+    position: sticky;
+    top: 30px;
+    background-color: var(--background);
+    z-index: 99999;
+    border-bottom: 1px solid var(--text);
+}
+
+.open .content {
+    background-color: var(--background);
+    padding-bottom: 10px;
+}
+
+.entry.open {
+    opacity: 1;
+}
+
+.header {
+    padding: 15px 0px;
+}
+
+.title {
+	margin-bottom: 5px;
+	margin-left: 30px;
+	font-weight: bold;
+	opacity: .8;
+	max-height: 60px;
+    overflow: hidden;
+}
+
+.meta {
+    font-size: .8em;
+    opacity: .6;
+    display: flex;
+    margin-left: 30px;
+}
+
+.reading .entry:not(.open) {
+    opacity: .4;
+}
+
+.pubdate {
+    opacity: .3;
+    margin-left: 10px;
+  }
+
+pre {
+	overflow: auto;
+    font-size: .8em;
+}
+
+.content {
+  width: 100%;
+}
+
+.original {
+	margin-left: 10px;
+	text-decoration: none;
+	color: var(--links);
+	font-weight: bold;
+	opacity: .5;
+  }
+
+.original:hover {
+	opacity: 1;
+}
+
+/* Post content */
+
+.post {
+    padding: 25px 30px 20px 30px;
+    background: var(--background);
+    font-size: 1.0em;
+    line-height: 1.7;
+    margin: 0px;
+    border-radius: 5px;
+    cursor: auto;
+    overflow: auto;
+    max-width: calc(100vw - 60px);
+}
+
+
+.post>* {
+  overflow: auto;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+  }
+
+.post, .post>*, .category {
+    animation: fadein .3s linear 1 forwards;
+}
+
+.post>p:first-child {
+    margin-top: 0;
+}
+
+.post>p:last-of-type {
+    margin-bottom: 0;
+}
+
+picture {
+	height: 100%;
+}
+
+.post img, .post video {
+	max-width: 100%;
+	object-fit: contain;
+	height: auto;
+}
+
+figure {
+	margin: 0;
+}
+
+.post a {
+    color: var(--links);
+    text-decoration: none;
+}
+
+
+figure > a {
+	display: flex;
+	justify-content: center;
+}
+
+figcaption {
+	text-align: center;
+	font-style: italic;
+	opacity: .6;
+	font-size: .9em;
+}
+
+.post > a > img {
+	display: block;
+	margin: 10px 0px;
+}
+
+/* Weird ass rules for substack posts */
+
+.post>a[href^="https://twitter.com"], .post>a[href$="&utm_campaign=post_embed&utm_medium=web"] {
+    font-family: "Roboto";
+    font-size: .8em;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 15px;
+    margin: 10px 5px 0px 25px;
+    border-top: 1px solid var(--background);
+    color:var(--text);
+    max-width: 550px;
+}
+
+.post>a[href^="https://twitter.com"] + a:not([href^="https://twitter.com"]), 
+.post>a[href^="https://twitter.com"] + video, 
+.post>a[href^="https://twitter.com"] + picture>img, 
+.post>a[href^="https://twitter.com"] + a:not([href^="https://twitter.com"]) + video, 
+.post>a[href^="https://twitter.com"] + a:not([href^="https://twitter.com"]) + picture>img {
+    font-size: .8em;
+    margin-left: 40px;
+    display: block;
+    color: var(--text);
+}
+
+.post>a[href^="https://twitter.com"]:hover,.post>a[href$="&utm_campaign=post_embed&utm_medium=web"]:hover {
+    text-decoration: underline dotted var(--links);
+}
+
+.post>a[href^="https://twitter.com"]>img, .post > a[href$="&utm_campaign=post_embed&utm_medium=web"]>img {
+    max-width: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    height: auto;
+}
+
+
+iframe {
+    max-width: 100% !important;
+}

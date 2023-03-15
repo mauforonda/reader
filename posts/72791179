@@ -1,0 +1,38 @@
+<p><em>Hi, this is David with Datawrapper! For today’s Weekly Chart, I’d like to take a look at a new feature I’m very excited about: the ability to embed Datawrapper visualizations as <strong>web components</strong>.</em></p>
+
+
+
+<p>If you’re an avid reader of Datawrapper’s blog, you might have already read yesterday’s announcement: There’s a <a href="https://blog.datawrapper.de/web-component-embedding/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">new and improved way to embed Datawrapper visualizations</a>.</p>
+
+
+
+<p>For the longest time, Datawrapper (and most other tools that allow you to embed interactive content) has used <strong>iframes</strong> to embed into other websites. Iframes are very versatile, but they have one big disadvantage, and that is their performance. When using iframes, every single embed is essentially its own little website within your article or website. This provides a clear separation between the embed and the surrounding webpage. It has a drawback though: <strong>the more iframe embeds you include in your website, the more resources your browser has to load and display</strong>, which prolongs loading time and makes your website respond more slowly. “Resources” are the underlying bits of code that make up your website: the JavaScript, CSS, markup, and other data. Less resource use means a faster website, and faster is always better, so this is something we set out to improve.</p>
+
+
+
+<p>With Datawrapper’s new <strong>web component</strong> embedding, this is turned on its head: rather than each embed bringing all its own resources with it, <strong>visualizations are able to share resources</strong>. This means, you can add more visualizations to a page while retaining great performance.</p>
+
+
+
+<p>To test this, I created a <a href="https://cdn.datawrapper.de/embedding-performance/web-components.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">dashboard of six visualizations</a>, representing a typical election results page. Then, I measured the total page size of my dashboard after adding each visualization:</p>
+
+
+
+<br/>
+
+
+
+
+<p>In this chart, the y-axis shows the total amount of data that needs to be transferred to display the webpage, and the x-axis represents the number of visualizations on the page. As you can see, as soon as you embed more than one chart, web components are already at a 30% advantage compared to iframes! This effect compounds when more embeds are added to a page.</p>
+
+
+
+<p>All in all, we believe web components to be the future of rich embeds in websites, and encourage everyone to seek out alternatives to iframes to improve your website’s loading speed.</p>
+
+
+
+
+
+
+
+<p><em>That’s it from me for this week! Next week, you’ll hear from our writer Rose again.</em></p>

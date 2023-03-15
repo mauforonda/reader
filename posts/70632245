@@ -1,0 +1,130 @@
+<p>January 30th, 2023</p>
+
+
+
+
+
+
+	
+				
+			
+			
+
+<p>The relationship between electricity consumption and economic development is extremely strong and relatively stable over time. According to the World Bank’s World Development Indicators, the ratio between <em>GDP per capita, PPP (constant 2017 international $)</em> and <em>Electric power consumption (kWh per capita)</em> for the whole world has been almost constant just below $5 per kWh between 1990 and 2014 (the period for which data was available).</p>
+<p>The cross-country correlation between the two variables is very high at 0.840 (for the 127 countries with populations above 1 million for which information was available) in 2014 (latest year with available data). However, there are still some important structural differences between countries that can cause either a lower or a higher ratio. Norway, Canada, and Finland, for example, achieve less GDP from each kWh consumed because a lot of electricity is spent on heating rather than productive activities (see Figure 1).</p>
+<p><em>Figure 1: Electricity consumption versus GDP by country, 2014</em></p>
+	
+								
+			<img width="582" height="367" src="https://reader.miniflux.app/proxy/7K2wOY9lkR5KpUsgG9QRg8EcG60TnvrddnjHyQcHIFw=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTEuanBn" alt="" srcset="https://reader.miniflux.app/proxy/7K2wOY9lkR5KpUsgG9QRg8EcG60TnvrddnjHyQcHIFw=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTEuanBn 582w, https://reader.miniflux.app/proxy/WTp5mwjLCdQUnNuT2kFMSDGr5hj9-kASv8o5vKG471g=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTEtMzAweDE4OS5qcGc= 300w" sizes="(max-width: 582px) 100vw, 582px" loading="lazy"/>						
+					
+								
+
+	
+	
+
+<p><em>Source:</em> The World Bank’s World Development Indicators: <a href="https://data.worldbank.org/indicator/EG.USE.ELEC.KH.PC" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://data.worldbank.org/indicator/EG.USE.ELEC.KH.PC</a> and <a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD</a></p>
+<p>Qatar, Singapore, Switzerland, Hong Kong, and Ireland stand out in Figure 1 as having above average GDP/kWh ratios, but the countries with the highest ratios are actually found among the relatively poor countries hidden behind the big bubbles of China and India. Figure 2 shows the same data as Figure 1, but in a way that highlights the differences between countries with relatively low levels of income. Countries that depend heavily on natural resource extraction and/or subsistence agriculture (like Nigeria, Benin, Congo, and Angola) have much higher GDP/kWh ratios than countries dominated by manufacturing industries (like China, India, and South Korea).</p>
+<p><em>Figure 2: Ratio of GDP/electricity consumption versus GDP per capita by country, 2014.</em></p>
+	
+								
+			<img width="580" height="373" src="https://reader.miniflux.app/proxy/rs061qHmuSt968cnbefyeGsqe1zMoYbhYynYZVNR1Mg=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTIuanBn" alt="" srcset="https://reader.miniflux.app/proxy/rs061qHmuSt968cnbefyeGsqe1zMoYbhYynYZVNR1Mg=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTIuanBn 580w, https://reader.miniflux.app/proxy/_uKKsSMFNy9GuwvCjLAxfiazlmHptIkuZBHo65kPazw=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTItMzAweDE5My5qcGc= 300w" sizes="(max-width: 580px) 100vw, 580px" loading="lazy"/>						
+					
+								
+
+	
+	
+
+<p><em>Source:</em> The World Bank’s World Development Indicators: <a href="https://data.worldbank.org/indicator/EG.USE.ELEC.KH.PC" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://data.worldbank.org/indicator/EG.USE.ELEC.KH.PC</a> and <a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD</a></p>
+<p>These structural characteristics change only slowly, which means that most of the short-to medium-run changes in per capita electricity consumption likely reflect real changes in GDP per capita. These changes can arise either from the supply side (electric equipment making workers more productive), or from the demand side (richer households demanding more electrical appliances, such as refrigerators, washing machines, and TVs), or, more likely, both sides simultaneously. In any case, the correlation between per capita electricity consumption and per capita GDP is extremely strong over time (e.g. 0.995 for Bolivia between 1990 and 2014).</p>
+<p>This strong correlation makes electricity consumption a very good proxy for economic development. In the remainder of this article, we will explore within country relationships between electricity consumption and development in Bolivia in 2016, using electricity consumption data from Andersen, Branisa, and Calderón (2019), and we will make extrapolations until 2021 using nighttime lights (NTL) as measured by satellites and presented in NASA’s Black Marble NTL products (Román et al., 2018).</p>
+<p>Figure 3 shows a positive, but not particularly strong (<em>r</em> = 0.252), relationship between total per capita electricity consumption in 2016 and the Municipal Index of Sustainable Development (MISD) in Bolivia 2020, which is a multidimensional index of development based on data from 2012-2019 reflecting how close each municipality is to achieve the Sustainable Development Goals (see Andersen et al., 2020). The correlation is relatively weak because some municipalities have modest levels of development despite extremely high levels of electricity consumption. This is mainly because of big cement or mining companies consuming large quantities of electricity to produce products for export (or for national consumption), but without having much positive impact on the local population. The mining company in Antequera, for example, uses almost as much electricity every year as Bolivia’s second biggest city (El Alto with 1 million inhabitants). However, Antequera has less than 4.000 inhabitants and reaches an IMDS value well below the national average.</p>
+<p><em>Figure 3: Per capita electricity consumption versus the Municipal Index of Sustainable Development by municipality in Bolivia, 2016</em></p>
+	
+								
+			<img width="577" height="317" src="https://reader.miniflux.app/proxy/kSZsoUbRuYijTH62lergjoFaTUrd32SYes5k0KmkPEE=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTMuanBn" alt="" srcset="https://reader.miniflux.app/proxy/kSZsoUbRuYijTH62lergjoFaTUrd32SYes5k0KmkPEE=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTMuanBn 577w, https://reader.miniflux.app/proxy/fV03laExfdz3DCM6ZxX-A1SjHayAkJAsz96rO84yzt0=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTMtMzAweDE2NS5qcGc= 300w" sizes="(max-width: 577px) 100vw, 577px" loading="lazy"/>						
+					
+								
+
+	
+	
+
+<p><em>Source:</em> Authors’ elaboration based on Andersen, Branisa and Calderón (2019) and Andersen et al. (2020).</p>
+<p>A much stronger relationship between electricity consumption and sustainable development can be found if we include only residential electricity consumption. In that case, the correlation increases to <em>r</em> = 0.666 (see Figure 4). Porongo is an extreme outlier, because it is a relatively rural municipality but with a very affluent neighborhood (Urubó) right next to Santa Cruz de la Sierra. If that one outlier is deleted from the sample, the correlation increases to <em>r</em> = 0.753, which suggests that residential electricity consumption is generally a very good proxy for development.</p>
+<p>As in the cross-country case, there are some structural factors that make municipalities systematically deviate from the trendline. Santa Cruz de la Sierra and neighboring municipalities in the lowlands (e.g. Porongo and La Guardia) are not as efficient in achieving the SDGs as cities in the highlands (e.g. La Paz, El Alto, Oruro, and Potosí) and valleys (e.g. Cochabamba and Tarija). That is likely due to the hot climate in the lowlands demanding a lot of air-conditioning.</p>
+<p><em>Figure 4: Per capita residential electricity consumption versus the Municipal Index of Sustainable Development, by municipality in Bolivia, 2016.</em></p>
+	
+								
+			<img width="582" height="363" src="https://reader.miniflux.app/proxy/Li-oCNrIsQTym02IA5j3dk8ZjcCfqA3dQP6FHA5R0yA=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTQuanBn" alt="" srcset="https://reader.miniflux.app/proxy/Li-oCNrIsQTym02IA5j3dk8ZjcCfqA3dQP6FHA5R0yA=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTQuanBn 582w, https://reader.miniflux.app/proxy/RNVqtaTyrFsf-sd5eZaUUd4KQsgaBmkhaHiuDW73VQM=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTQtMzAweDE4Ny5qcGc= 300w" sizes="(max-width: 582px) 100vw, 582px" loading="lazy"/>						
+					
+								
+
+	
+	
+
+<p><em>Source:</em> Authors’ elaboration based on Andersen, Branisa, and Calderón (2019) and Andersen et al. (2020).</p>
+<p>Residential electricity consumption data is not widely available; however, much-used proxy is nighttime lights (NTL) as measured by satellites. One example is NASA’s Black Marble nighttime lights product suite (Román et al., 2018). Figure 5 shows the NTL data for Bolivia in 2016, the advantages of using NTL radiance are the high spatial resolution (500 meters) and temporal resolution (monthly), as well as the global coverage.</p>
+<p>NTL data mainly reflects street lights and other highly visible parts of electricity consumption; although washing machines, refrigerators, radios, cellphones and other electrical appliances that directly enhance the quality of life of the population are invisible to the satellite. The correlation between NTL radiance and electricity consumption for public illumination across municipalities in 2016 is <em>r</em> = 0.980, which is extremely high. The correlation between NTL and residential electricity consumption is a bit lower at <em>r</em> = 0.914, but it is still a very good approximation of total human flourishing in each municipality.<em> </em></p>
+<p><em>Figure 5: Nighttime light radiance in Bolivia, 2016, according to Black Marble.</em></p>
+	
+								
+			<img width="570" height="399" src="https://reader.miniflux.app/proxy/y-y_LZNdqwtyxCkaVbrk_Yf8vhGyLzn0T7iGfugXmPI=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTUuanBn" alt="" srcset="https://reader.miniflux.app/proxy/y-y_LZNdqwtyxCkaVbrk_Yf8vhGyLzn0T7iGfugXmPI=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTUuanBn 570w, https://reader.miniflux.app/proxy/2f8Jc4FUPdlk1vdt0mfFO3mL77VG5e26yv9lInyCpbk=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTUtMzAweDIxMC5qcGc= 300w" sizes="(max-width: 570px) 100vw, 570px" loading="lazy"/>						
+					
+								
+
+	
+	
+
+<p><em>Source:</em> Authors’ elaboration based on NASA’s Black Marble nightlight product suite.</p>
+<p>Figure 6 shows the evolution in NTL for all of Bolivia for the period 2012 to 2021 (the period for which the Black Marble data is available) compared to the evolution of real GDP according to the National Statistical Institute (INE). The nightlight intensity increased a bit faster than GDP between 2012 and 2016 and a bit slower between 2016 and 2019, but both show a significant drop due to the pandemic in 2020 and a partial recuperation in 2021.</p>
+<p><em>Figure 6: Evolution of total NTL and real GDP in Bolivia, 2012-2021.</em></p>
+	
+								
+			<img width="582" height="325" src="https://reader.miniflux.app/proxy/nEU_awDaX-IhGuKNyYX2uZyMHupdKlW9HwtR2u4q0bo=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTYuanBn" alt="" srcset="https://reader.miniflux.app/proxy/nEU_awDaX-IhGuKNyYX2uZyMHupdKlW9HwtR2u4q0bo=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTYuanBn 582w, https://reader.miniflux.app/proxy/3Ef4zsjR1MP-7e-BeleJNftf0hbOcurFCcaU8k0HDvM=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlLTYtMzAweDE2OC5qcGc= 300w" sizes="(max-width: 582px) 100vw, 582px" loading="lazy"/>						
+					
+								
+
+	
+	
+
+<p><em>Source:</em> Authors’ elaboration based on data from NASA’s Black Marble and INE.</p>
+<p>Neither NTL nor GDP is a perfect measure of human flourishing, but both are positively correlated with what we are really interested in. This means that we can use changes in NTL over time to identify the regions that have experienced most human flourishing over the last decade.  </p>
+<p>Changes in NTL over time can reflect either increases in population size or increases in development, but given that people tend to migrate to locations with better opportunities, it likely reflects a combination of both.</p>
+<p>Figure 7 shows the 50 municipalities with the largest increases in NTL intensity between 2012 and 2021. The data suggests that by far the biggest increases in human flourishing are observed in the three metropolitan areas of Santa Cruz,<a href="#_ftn1">[1]</a> La Paz,<a href="#_ftn2">[2]</a> and Cochabamba.<a href="#_ftn3">[3]</a> They are followed by five other departmental capitals (Oruro, Potosí, Sucre, Tarija, and Trinidad).</p>
+<p>The increases outside the main cities are much smaller, but worth highlighting. Among the 23 most dynamic municipalities outside the main cities are six from Cochabamba (Punata, San Benito, Arbieto, Tolata, Entre Ríos, and Arani), five from Santa Cruz (Yapacaní, San Ramón, Lagunillas, Camiri, and Cabezas), three from Potosí (Uyuni, Llallagua, and Villazón), three from Tarija (Yacuiba, Villa San Lorenzo, and Villamontes), three from Oruro (Challapata, Caracollo, and Huanuni), two from La Paz (Pucarani and Sica Sica), and one from Beni (Riberalta). The capital of Pando, Cobija, has seen little improvement between 2012 and 2021, but 259 other municipalities experienced even less progress (out of a total of 339 municipalities in the country).</p>
+<p><em>Figure 7: The 50 municipalities with the largest increases in nightlight intensity between 2012 and 2021</em></p>
+<p><a href="#_ftnref1"></a></p>
+	
+								
+			<img width="467" height="457" src="https://reader.miniflux.app/proxy/7wwAhP85o7e5864lXsw3YPJbI-xgS9DTocTsE7pMJww=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlNy5qcGc=" alt="" srcset="https://reader.miniflux.app/proxy/7wwAhP85o7e5864lXsw3YPJbI-xgS9DTocTsE7pMJww=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlNy5qcGc= 467w, https://reader.miniflux.app/proxy/6ZEwYkDJ3GU5-PoSyUurcUpAgeavNztuaDOxWXqoHq8=/aHR0cHM6Ly9zZHNuYm9saXZpYS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDEvRmlndXJlNy0zMDB4Mjk0LmpwZw== 300w" sizes="(max-width: 467px) 100vw, 467px" loading="lazy"/>						
+					
+								
+
+	
+	
+
+<p><em>Source:</em> Authors’ elaboration based on data from NASA’s Black Marble NTL product suite.</p>
+<p>There are different factors that can explain these results, but it seems quite clear that the most populated municipalities (metropolitan areas and departmental capitals) are the most attractive. Undoubtedly, the more populated a municipality is, the greater the possibility of access to services such as education or health, and perhaps more importantly, there are greater opportunities to find work.</p>
+<p>However, there are other municipalities with interesting dynamics (some medium-sized cities) that we must study. It is possible that the main economic activities of the country explain these results (such as mining in LLallagua and Huanuni, gas production in Yacuiba and Villamontes,  agriculture in Yapacaní, and tourism in Uyuni). The rest of the municipalities on the list should be analyzed in more detail and, perhaps, they will show us some less evident trends in population movements.</p>
+<p><a href="#_ftnref1"></a></p>
+
+
+<p>[1] The metropolitan area of Santa Cruz includes the following 6 municipalities:  Santa Cruz de la Sierra, La Guardia, Warnes, Cotoca, El Torno, and Porongo.</p>
+<p>[2] The metropolitan area of La Paz includes the following 8 municipalities: Nuestra Señora de La Paz, El Alto, Viacha, Achocalla, Palca, Laja, Pucarani y Mecapaca.</p>
+<p>[3] The metropolitan area of Cochabamba includes the following seven municipalities: Cochabamba, Colcapirhua, Quillacollo, Sacaba, Sipe Sipe, Tiquipaya, and Vinto.</p>
+<p><strong>References:</strong></p>
+<p>Andersen, L. E., B. Branisa &amp; F. Calderón (2019) “Estimaciones del PIB per cápita y de la actividad económica a nivel municipal en Bolivia en base a datos de consumo de electricidad.” Investigación ganadora presentada al Centro de Investigaciones Sociales (CIS) de la Vicepresidencia del Estado Plurinacional de Bolivia. Mayo.</p>
+<p>Andersen, L. E., Canelas, S., Gonzales, A., Peñaranda, L. (2020). Atlas municipal de los Objetivos de Desarrollo Sostenible en Bolivia 2020. La Paz: Universidad Privada Boliviana, SDSN Bolivia. <a href="https://sdsnbolivia.org/atlas/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://sdsnbolivia.org/atlas/</a></p>
+<p>Román, M. O., Wang, Z., Sun, Q., Kalb, V., Miller, S. D., Molthan, A., Schultz, L., Bell, J., Stokes, E. C., Pandey, B., Seto, K. C., Hall, D., Oda, T., Wolfe, R. E., Lin, G., Golpayegani, N., Devadiga, S., Davidson, C., Sarkar, S., … Masuoka, E. J. (2018). NASA’s Black Marble nighttime lights product suite. <em>Remote Sensing of Environment</em>, 210, 113–143. <a href="https://doi.org/10.1016/j.rse.2018.03.017" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://doi.org/10.1016/j.rse.2018.03.017</a></p>
+<p><a href="#_ftnref1"></a></p>
+
+
+<p>This blog is part of the project <em>INEQUALITREES – A Novel Look at Socio-Economic Inequalities using Machine Learning Techniques and Integrated Data Sources</em>. For more information, please visit the project web-site: <a href="https://inequalitrees.eu/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://inequalitrees.eu/</a></p>
+<p><a href="#_ftnref1"></a></p>
+
+		
+					
+
+	
+
+
+<p>La entrada <a href="https://sdsnbolivia.org/en/electricity-consumption-nightlights-and-local-development-in-bolivia/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Electricity consumption, nightlights, and local development in Bolivia</a> se publicó primero en <a href="https://sdsnbolivia.org/en/home" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Sdsn Bolivia</a>.</p>

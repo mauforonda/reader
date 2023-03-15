@@ -1,0 +1,82 @@
+<p><em>More recalls, jazz solos, overdose-related “Good Samaritan” laws,
+upcoming weather, and cats on the move.</em></p>
+<p> </p>
+<p><strong>More recalls.</strong> <a href="https://www.data-is-plural.com/archive/2023-01-11-edition/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DIP
+2023.01.11</a> featured <a href="https://www.nhtsa.gov/recalls" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">vehicle
+recall data</a> from the National Highway Traffic Safety Administration.
+Other US federal agencies publishing recall data include the Food and
+Drug Administration, whose <a href="https://datadashboard.fda.gov/ora/cd/recalls.htm" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">dataset</a>
+contains 81,000+ entries related to food, drugs, medical devices, and
+related products going back to 2012; the Consumer Product Safety
+Commission, whose <a href="https://www.cpsc.gov/Recalls" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">database</a>
+spans 8,500+ recalls since 1973; and the Coast Guard, whose <a href="https://uscgboating.org/content/recalls.php" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">listing of 1,600+
+boat recalls</a> is not downloadable but seems possible to scrape.
+<em>[Update, 2023-02-01: Reader <a href="https://m-nolan.github.io/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Michael Nolan</a> took up the
+boat-recall challenge; <a href="https://github.com/m-nolan/USCG_Boat_Recalls" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here’s the dataset
+he extracted</a>.]</em> <strong>Also</strong>: Vehicle recall data from
+<a href="https://open.canada.ca/data/en/dataset/1ec92326-47ef-4110-b7ca-959fab03f96d" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Canadian</a>
+and <a href="https://www.check-vehicle-recalls.service.gov.uk/recall-type/vehicle/make" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">UK</a>
+regulators. <strong>Previously</strong>: <a href="https://medicaldevices.icij.org/p/about" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">International medical
+device recalls</a> from ICIJ’s <a href="https://medicaldevices.icij.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Implant Files</a> (<a href="https://www.data-is-plural.com/archive/2019-04-17-edition/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DIP
+2019.04.17</a>).</p>
+<p> </p>
+<p><strong>Jazz solos.</strong> The <a href="https://jazzomat.hfm-weimar.de/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Jazzomat Research Project</a>,
+hosted at the <a href="https://www.hfm-weimar.de/en/start" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">University of
+Music Franz Liszt Weimar</a>, aims “to investigate the creative
+processes underlying jazz solo improvisations with the help of
+statistical and computational methods.” The project’s <a href="https://jazzomat.hfm-weimar.de/dbformat/dboverview.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">main
+database</a> contains transcriptions and analyses of <a href="https://jazzomat.hfm-weimar.de/dbformat/dbcontent.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">450+
+solos</a> by John Coltrane, Charlie Parker, and dozens of other artists.
+The <a href="https://jazzomat.hfm-weimar.de/download/download.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">downloadable</a>
+version <a href="https://jazzomat.hfm-weimar.de/dbformat/dbformat.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">includes</a>
+each “event” in each solo: its pitch, loudness, time of onset, duration,
+and more. <strong>As seen in</strong>: “<a href="https://www.npr.org/sections/health-shots/2023/01/18/1139783203/what-makes-songs-swing-physicists-unravel-jazz-mystery" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">What
+makes that song swing? At last, physicists unravel a jazz mystery</a>”
+(NPR). [h/t <a href="https://twitter.com/jpmarindiaz" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Juan Pablo Marín
+Díaz</a>]</p>
+<p> </p>
+<p><strong>Overdose-related “Good Samaritan” laws.</strong> <a href="https://www.sciencedirect.com/science/article/abs/pii/S0955395922003127" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Shane
+W. Reader et al.</a> have <a href="https://data.mendeley.com/datasets/r65b6hrdhm/2" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">compiled data</a>
+on US state laws that “prevent or mitigate criminal consequences for
+activities pertaining to controlled substances for persons who call 911
+to report a drug overdose.” Their dataset spans April 2007 to June 2022
+and covers all 50 states, plus DC. The details include the types of
+people protected (e.g., the person overdosing, the caller,
+self-reporters), the kinds of protection conferred (e.g., with regard to
+arrests, charges, sentencing), the types of violations protected, and
+more.</p>
+<p> </p>
+<p><strong>Upcoming weather.</strong> <a href="https://alexanderrey.ca/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Alexander Rey</a>’s <a href="https://pirateweather.net/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Pirate Weather</a> aims to be a “drop
+in replacement” for <a href="https://darksky.net/dev" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DarkSky’s weather
+forecast API</a>, <a href="https://blog.darksky.net/dark-sky-has-a-new-home/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">which is
+shutting down</a>. It pulls data from <a href="https://docs.pirateweather.net/en/latest/#data-sources" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">several
+NOAA forecast models</a> in order to provide minute-level, hourly, and
+daily predictions of temperature, precipitation, cloud cover, and more.
+<strong>Note</strong>: The API is free to use but is limited to 20,000
+calls per month. <strong>Related</strong>: Pirate Weather powers <a href="https://merrysky.net/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Merry Sky</a>, a website <a href="https://www.houstonchronicle.com/business/tech/article/dwight-silverman-dark-sky-merry-sky-17728129.php" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">built</a>
+by <a href="https://github.com/guillaume" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Guillaume Carbonneau</a>. [h/t
+<a href="https://buttondown.email/puntofisso/archive/501-quantum-of-sollazzo/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Giuseppe
+Sollazzo</a>]</p>
+<p> </p>
+<p><strong>Cats on the move.</strong> Between 2013 and 2017, <a href="https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/acv.12563" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Roland
+Kays et al.</a> convinced hundreds of volunteers in the <a href="https://www.datarepository.movebank.org/handle/10255/move.885" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">US</a>,
+<a href="https://www.datarepository.movebank.org/handle/10255/move.882" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">UK</a>,
+<a href="https://www.datarepository.movebank.org/handle/10255/move.876" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Australia</a>,
+and <a href="https://www.datarepository.movebank.org/handle/10255/move.879" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">New
+Zealand</a> to strap GPS sensors on their pet cats. The aforelinked
+datasets include each cat’s characteristics (such as age, sex, neuter
+status, hunting habits) and timestamped GPS pings.
+<strong>Related</strong>: <a href="https://cattracker.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">CatTracker.org</a>, the homepage for the
+US branch of the project, features a <a href="https://cattracker.org/tracks/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">cat-track browser</a>.
+<strong>Previously</strong>: <a href="https://zenodo.org/record/4008297#.Y86t4uLMI-Q" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Cat meows</a> (<a href="https://www.data-is-plural.com/archive/2021-06-30-edition/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DIP
+2021.06.30</a>). [h/t <a href="https://public.tableau.com/app/profile/rika.fujiwara/viz/CatsTripGPStrackingdataofdomesticcatsintheUS/board" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Rika
+Fujiwara</a> + <a href="https://fairwarning.substack.com/p/fair-warning-why-not-have-bar-charts" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Soph
+Warnes</a>]</p>
+<p> </p>
+<p> </p>
+<p><em>Dataset suggestions? Criticism? Praise? Send feline feedback to
+jsvine@gmail.com, or just reply to this email. • Looking for past
+datasets? <a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">This
+spreadsheet contains them all</a>. • Visit <a href="https://www.data-is-plural.com" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">data-is-plural.com</a> to
+subscribe and to browse past editions. • <a href="https://docs.google.com/document/d/e/2PACX-1vSP5xYrhqEvoGTi2aFzrsYQXadG8Gv0Y6YGWjib1e4qcXG45Sq5TSvngvh342DdcAEyEDIVd5V3RYcc/pub" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Learn
+how to place an ad in Data Is Plural</a>.</em></p>

@@ -1,0 +1,325 @@
+<p>When I was VP Engineering at <a href="https://clever.com" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Clever</a>, I defined an incident response approach that I called The Flare Process. A few years later, with the added benefit of hindsight, here’s my description of the process. It goes without saying that you should shamelessly steal / copy / modify this process for your own use, including its name, if you’d like.</p>
+
+
+
+<h3>What is Incident Response?</h3>
+
+
+
+<p>Incident response is what your organization does when a problem requires rapid and well-coordinated actions. This is optimized for something like a web site outage, but could be used for any other incident response, including for example an unexpected bad press article. Incident response is about fighting a fire: it should be limited in time and look a good bit different from day-to-day work. </p>
+
+
+
+<h3>Why Only Medium-Sized Organizations?</h3>
+
+
+
+<p>The Flare Process is good for medium-sized organizations, maybe 15-500 people. It’s probably not necessary for fewer people, where a fire usually involves everyone anyways. It probably needs significant adjustments for larger groups, where determining who knows what is an order of magnitude more complicated.</p>
+
+
+
+<h3>Goals</h3>
+
+
+
+<p>We want the problem mitigated as quickly as possible. We also want internal and external stakeholders to know what’s going on at any given time. Finally, we want to learn all meaningful lessons from the incident.</p>
+
+
+
+<h3>Rapid Mitigation</h3>
+
+
+
+<p>There are many ways to fail at mitigating the problem quickly:</p>
+
+
+
+<ul>
+<li>reacting too slowly because the problem may not be visible to the right person right away.</li>
+
+
+
+<li>not coordinating the response well: no chefs, too many chefs.</li>
+
+
+
+<li>making the problem worse with good intentions: too many people doing uncoordinated things.</li>
+
+
+
+<li>making the problem worse with risky solutions: surprisingly often, the response makes the problem worse.</li>
+</ul>
+
+
+
+<p>The Flare Process solves this as follows:</p>
+
+
+
+<ol>
+<li>allow anyone in the org to “fire a flare”</li>
+
+
+
+<li>the motto is “when in doubt, fire a flare”</li>
+
+
+
+<li>if a flare turns out to be nothing, that’s okay.</li>
+
+
+
+<li>immediately establish an incident lead</li>
+
+
+
+<li>immediately establish an incident room, physical or virtual, as well as an incident communication channel, e.g. a Slack channel.</li>
+
+
+
+<li>shift to strict command-and-control: incident lead pulls in anyone needed, everyone follows direction from the incident lead, and no action is taken without explicit go-ahead from incident lead.</li>
+
+
+
+<li>have a handy list of safe actions to try for rapid mitigation – for software systems this is usually scale up service, restart service, etc. Again, only the incident lead can decide that any of these or other actions should be taken.</li>
+
+
+
+<li>the incident lead directs all necessary work until the flare is mitigated, and only the incident lead can declare the flare mitigated.</li>
+
+
+
+<li>the incident lead is explicitly not trying to perform a full root causes analysis or find the perfect fix to the problem. Their goal is to mitigate quickly. That might involve over-provisioning a service that’s overwhelmed even though it’s not clear why it’s overwhelmed in the moment. The goal is rapid mitigation. Full root causes analysis comes later.</li>
+</ol>
+
+
+
+<h3>Good Communication</h3>
+
+
+
+<p>Sometimes a problem is being solved in the most expert way, but the response is still a failure, because internal stakeholders, usually the customer support team, the CEO, etc. have no idea what’s going on, how long the problem will take to resolve, the extent of the problem, etc. Same for external stakeholders.</p>
+
+
+
+<p>The Flare Process solves this as follows:</p>
+
+
+
+<ol>
+<li>every flare is assigned a comms lead</li>
+
+
+
+<li>the comms lead summarizes the situation to the full org internally as it evolves, including as soon as there is some sense of the issue, and then regularly, no less often than every 30-60 minutes.</li>
+
+
+
+<li>ideally the comms lead is capable of gathering all the information they need for these status updates, with as little help as possible from the incident lead so as not to slow down the actual response.</li>
+
+
+
+<li>the comms lead is also responsible for coordinating any external communication as needed – updating a status page, communicating proactively to customers in other ways, etc.</li>
+
+
+
+<li>any inbound question from within or outside the org goes to the comms lead.</li>
+</ol>
+
+
+
+<p>The core idea is that the incident lead is NOT responsible for communications. They’re focused on problem solving.</p>
+
+
+
+<h3>Learning</h3>
+
+
+
+<p>The worst outcome of any incident is that no lessons are learned and the problem recurs.</p>
+
+
+
+<p>The Flare Process solves this as follows:</p>
+
+
+
+<ol>
+<li>all participants in the Flare are encouraged to post information they find as they find it in the shared channel, including screenshots of errors, metrics, graphs, user error reports, new developments of any kind.  This creates a timestamped record of all information for later analysis.</li>
+
+
+
+<li>a flare is mitigated once the problem is no longer active, but is only resolved once appropriate followup actions have been defined.</li>
+
+
+
+<li>on a regular basis (weekly, biweekly, monthly), all mitigated Flares are reviewed in a synchronous meeting by a few experienced folks, with each Flare yielding either no action, some quick action, or a referral to a full postmortem. Some would argue every Flare deserves a full postmortem – if you are able to build a system where Flares are rare enough for that to be possible, more power to you! Be careful, though, that this doesn’t create an incentive to not fire a flare due to followup work.</li>
+</ol>
+
+
+
+<h3>Tooling</h3>
+
+
+
+<p>It’s good to automate things. At Clever, we built <a href="https://github.com/Clever/flarebot" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Flarebot</a>, a simple Slack bot that automates a few aspects of running a Flare, specifically:</p>
+
+
+
+<ul>
+<li>letting anyone fire a flare</li>
+
+
+
+<li>automatically creating the Flare-specific slack channel and JIRA ticket for tracking the flare status with appropriate priority.</li>
+
+
+
+<li>prompting for the declaration of an incident lead and a comms lead</li>
+
+
+
+<li>reminding everyone that the incident lead is the boss – it’s easier to hear this from a bot!</li>
+
+
+
+<li>reminding the incident lead of the simple immediate actions to consider – it’s easier to hear this from a bot!</li>
+
+
+
+<li>providing a simple mechanism to declare the flare mitigated.</li>
+</ul>
+
+
+
+<h3>An Example</h3>
+
+
+
+<p>Here’s a realistic example:</p>
+
+
+
+<ul>
+<li>Joe on the support team is seeing some occasional error pages on the login form and is hearing the same from one customer. He asks his colleagues and most of them don’t see it, but one colleague says “yeah, I think I’m seeing the same thing.”</li>
+
+
+
+<li>Joe’s not perfectly sure but, “when in doubt, fire a flare”, so he heads to #flares in company Slack and writes<br/>“@flarebot fire a flare p2 sporadic error pages on login form”.</li>
+
+
+
+<li>Flarebot automatically creates a JIRA ticket, #43, and creates the associated Slack channel #flare-43</li>
+
+
+
+<li>Flarebot posts in the #flares channel that the Flare has been fired, and links everyone to the #flare-43 channel</li>
+
+
+
+<li>Engineers have notifications turned on for the #flares channel (and this can be linked into oncall, of course)</li>
+
+
+
+<li>A few engineers quickly post graphs from the metrics system in the #flare-43 channel showing elevated error rates.</li>
+
+
+
+<li>Flarebot reminds everyone that an incident lead is needed. If no one steps up after a couple of minutes, Flarebot asks again.</li>
+
+
+
+<li>A few experienced engineers quickly discuss in channel who should lead, and Mary steps up. She writes in the Flare channel “@flarebot I am incident lead”</li>
+
+
+
+<li>Flarebot acknowledges Mary and instructs everyone to follow Mary’s lead.</li>
+
+
+
+<li>At this point, with a team experienced in the Flare Process, we’re ideally only 2-4 minutes from the Flare having been fired.</li>
+
+
+
+<li>Mary reviews the data from engineers and confirms the issue is real, which means we need comms. </li>
+
+
+
+<li>Josh, product manager of the login system, declares himself comms lead and tells Flarebot. Josh summarizes the issue for the company in the #flares channel – anyone can join the flare-43-specific channel if they want to, but they don’t have to – Josh will update them in #flares at a regular clip.</li>
+
+
+
+<li>At this point, we have an incident lead, a comms lead, an active investigation.</li>
+
+
+
+<li>Mary brings in and directs engineering resources as she sees fit. She may ask people to join her in a physical or Zoom room. She’s asking engineers to go look at data and bring it to her.</li>
+
+
+
+<li>One engineer is convinced they know what’s going on, that the DA service needs to be restarted. He posts in the channel “I’d like to restart the DA service.” Mary responds “that’s safe to try and likely relevant, please do it.” The engineer follows through only upon hearing this confirmation from Mary.</li>
+
+
+
+<li>The restart appears to resolve the issue. Mary instructs everyone to pause all actions and report on metrics. </li>
+
+
+
+<li>A couple of minutes later, the errors have disappeared. Josh updates the company that the issue may be mitigated, the team is watching.</li>
+
+
+
+<li>A few more minutes of stability, Mary declares the flare mitigated<br/>“@flarebot flare is mitigated”</li>
+
+
+
+<li>Flarebot updates the JIRA ticket accordingly and does a little celebratory dance in the Slack channel, as well as the main #flares channel.</li>
+
+
+
+<li>Josh adds any relevant details for all-team comms.</li>
+
+
+
+<li>Over the next couple of days, Mary collects more data and writes up a simple report on the Flare in the JIRA ticket.</li>
+
+
+
+<li>Later that week, Andrea the engineering director runs the weekly Flare wrap-up meeting and brings in Mary for 5 minutes to hear about Flare 43. Mary explains that a few badly timed failures in AWS caused unexpected load on the DA service, and the restart naturally selected new AWS VMs, resolving the problem. While this was an infrastructural problem not caused by the company’s own systems, Andrea decides that the team needs to better detect these issues automatically in the future. She creates a followup ticket for the infrastructure team. Andrea marks the flare “resolved”, deciding no further postmortem is needed.</li>
+</ul>
+
+
+
+<h3>A few more points</h3>
+
+
+
+<p>Decision-making in a Flare situation has to be dramatically faster and opinionated than in a typical non-emergency situation. The incident lead must be assertive. Everyone else must follow their lead, even if they disagree – they should voice their concerns of course, in case the incident lead is missing something, but that concern, once expressed and overridden, must be cast aside. This can be difficult for an organization to adapt to, so it should be practiced. And when the Flare is mitigated and it’s time for learning, the discussion must return to a more typical collaborative tone.</p>
+
+
+
+<p>The determination of the incident lead might be tricky if there are a lot of Flares and engineers are tired. This is something engineering leadership should keep an eye on. If engineers self-select to be incident leads, and it’s not always the same ones, and it doesn’t feel too burdensome, then great. If not, worth understanding what’s going on.</p>
+
+
+
+<p>“When in doubt fire a flare” is critical. If team members, especially support team members who may be relatively new, don’t feel comfortable firing flares, if they’re not celebrated for it, they won’t do it. And that can cause very painful delays, turning a minor Flare into a major one.</p>
+
+
+
+<p>On the flip side, a Flare process layered on top of an unreliable flimsy system is going to cause havoc. If your system is too unreliable, fix that first. You can’t be constantly in firefighting mode.</p>
+
+
+
+<p>In the description above, a priority for the Flare is declared right away (P2). For this to be feasible, your whole organization needs a clear agreement on what the priorities mean in such a way that this can be determined at the onset. For example, P2 might mean small customer impact, P1 might mean large customer impact, and P0 might mean existential threat to the whole organization. If it’s hard to align on those, you may want to leave out a priority at the start.</p>
+
+
+
+<p>At Clever, we also found it useful to have preemptive flares, and to have Flarebot support those. You could say “fire a preemptive flare p2 service degradation in X, Y, Z may lead to partial downtime in a few hours,” and the same process happens except Flarebot is there to remind everyone that there’s no customer impact yet, so everybody chill. Also, no need for a comms lead in the case of a preemptive Flare.</p>
+
+
+
+<h3>Bottom Line</h3>
+
+
+
+<p>In order to respond to incidents effectively, you need a clear, simple process that prioritizes mitigation, communication, and learning. Automation can be super helpful here. And making sure everyone understands they’re all on the same team is critical. Think carefully through the incentives you create when setting up such a process. The process above has worked well for me. Hopefully it can work for you, too.</p>

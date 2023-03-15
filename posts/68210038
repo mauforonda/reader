@@ -1,0 +1,181 @@
+<figure>
+<blockquote><p>Honestly – and sincerely – many of us have seen this coming for a very, very long time. We have options, and the narrative that we can&#39;t build comparable, let alone *better* alternatives isn&#39;t massively helpful. I&#39;ve always had immense respect for you, &amp; we could use your help.<img src="https://reader.miniflux.app/proxy/4L8iZVMH-N75-W8tSNiI7CnBXk-lUTxB3ek1DOLgQgc=/aHR0cHM6Ly9zMC53cC5jb20vd3AtY29udGVudC9tdS1wbHVnaW5zL3dwY29tLXNtaWxleXMvdHdlbW9qaS8yLzcyeDcyLzFmNDljLnBuZw==" alt="💜" loading="lazy"/></p>— Blaine Cook (@blaine) <a href="https://twitter.com/blaine/status/1603612762919555073?ref_src=twsrc%5Etfw" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">December 16, 2022</a></blockquote>
+</figure>
+
+
+
+<p>I’m pessimistic about federated architectures for new end-user products, like Mastodon. But, I could be wrong. In fact, I’d love to be wrong on this one. So since Blaine fairly called me out for implying that the fediverse can’t be better than Twitter, I’m gonna try to help, at least at first by pushing on all the UX aspects of Mastodon/ActivityPub that I think should be addressed.</p>
+
+
+
+<p>Some will say that waxing poetic about software architecture is not as helpful as getting into the code and helping. There’s truth to that. That said, my strong sense is that we’re currently papering over major UX problems that are linked to core architectural properties. We’re papering over these issues out of excitement over growing adoption. I think that could limit the fediverse to a small community. So, some architectural and product analysis might be helpful.</p>
+
+
+
+<h2>Conway’s Law</h2>
+
+
+
+<p><a href="https://en.m.wikipedia.org/wiki/Conway%27s_law" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Conway’s Law</a> is sometimes referred to as “shipping your org chart”. If you’ve been in professional software development for a while, you’ve likely come to respect its power and inevitability. How your team is structured is always visible in the product you produce, and that can often be a bad thing for users. It’s the weird cracks of inconsistency and disconnectedness within a user application that makes you wonder if two parts of the app were made by two different companies.</p>
+
+
+
+<p>Conway’s Law doesn’t only apply to software, but it seems to be particularly relevant in the software realm, probably because software is always changing, thereby revealing the organizational fault lines more regularly. Martin Fowler has <a href="https://martinfowler.com/bliki/ConwaysLaw.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">a great analysis</a> of Conway’s Law applied to software. The bottom line is that team organization affects software architecture deeply.</p>
+
+
+
+<h2>Conway’s Corollary</h2>
+
+
+
+<p>If Conway’s Law tells us that team org deeply affects a product and its architecture, let’s define Conway’s Corollary: software architecture deeply affects the product. Large product changes at scale often require large architectural changes. This might sound obvious, but we seem to be ignoring it in the fediverse.</p>
+
+
+
+<p>What happens when key aspects of software architecture are immovable, or at least shockingly expensive to change? Like, say, in the fediverse, where users are signed up to different servers and the protocol between those servers is going to evolve very slowly at best?</p>
+
+
+
+<h2>UX to Fix</h2>
+
+
+
+<h3>Usernames and Server Choice</h3>
+
+
+
+<p>An example of federation with good UX is cell phone networks. No one has to know that I’m on Google Fi or T-Mobile. I can change networks and you still don’t need to know. SMS messages are delivered and phone calls are connected without a hitch.</p>
+
+
+
+<p>It wasn’t always this way. Cell phone networks used to not have number portability. You had to change numbers if you changed networks. If you never experienced this sad state of affairs, say if you only got a cell phone in 2004 or later, you might find this laughably outrageous. It was.</p>
+
+
+
+<p>The state of Mastodon account management is in just as outrageous a stage as cell phones before number portability, and we’re making excuses for this. The cell phone networks made excuses, too. It’s hard, technically. Yes. And then they fixed it.</p>
+
+
+
+<p>Users should be able to pick a username and then stick with it even if they change Mastodon provider. Other users shouldn’t need to know their Mastodon provider. No username should need to change.</p>
+
+
+
+<p>I know, the specs don’t support this. They need to. Maybe that means getting rid of email-address-like usernames and having one global namespace. Maybe that’s an indirection overlay on top of existing identifiers, and those identifiers are not directly surfaced, like DNS over IP addresses. Lots of ways to think about this. But we have to start with the acknowledgement that tying provider choice to username is bad and cannot last.</p>
+
+
+
+<p>Heck, this situation is bad even from a strongly pro-federation perspective. One key goal of federation is to let servers compete. Usernames tied to server choice is artificial lock-in. Lock-in means servers can be more poorly behaved, since users won’t want to migrate if it’s painful to do so. Let’s make it easy for users to migrate. Stable usernames, independent of server choice.</p>
+
+
+
+<h3>Full, consistent conversations</h3>
+
+
+
+<p>Did you know that if you read a Mastodon thread not on your server, you won’t see the same content as someone on a different server? You’ll only see answers known to your own server. I didn’t know this until <a href="https://fedi.simonwillison.net/@simon/109559268498004036" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Simon Willison pointed it out</a>.</p>
+
+
+
+<p>We can’t have real, quality conversations like this. And there’s no good product reason for this, it’s a Conway’s Corollary situation: the federation architecture makes it non-trivial / inefficient to make conversations consistent, so they’re not.</p>
+
+
+
+<p>We have to fix this. Maybe it’s a spec thing, maybe it’s an implementation thing. Ultimately, two different users should, barring some server malfunction, see the same conversation thread, regardless of which server they’re on, or which server the thread contributors are on. We can’t let federation make conversations suck.</p>
+
+
+
+<h3>Following users on other servers</h3>
+
+
+
+<p>The most nails-on-chalkboard experience on Mastodon is this:</p>
+
+
+
+<ul>
+<li>Browse the web, land on someone’s Mastodon profile.</li>
+
+
+
+<li>Click “follow”</li>
+
+
+
+<li>Get some awful modal telling you to copy something, go to your own server, and paste it there, and 5 steps later, you can follow them.</li>
+</ul>
+
+
+
+<p>Yes, I know, a number of native apps fix this. Great. That’s not enough. If the fediverse can’t leverage the power of the web, aka the hyperlink, what are we doing? This is another example of Conway’s Corollary in full effect, with federation making it suck.</p>
+
+
+
+<p>It has to be possible to follow someone from their Mastodon page in one click, maybe two. </p>
+
+
+
+<h2>Good Enough Federation </h2>
+
+
+
+<p>We must remember that federation is a means to an end, not the end itself. Most users don’t care and will never care about federation.</p>
+
+
+
+<p>There are, of course, some attractive features that federation gives us:</p>
+
+
+
+<ul>
+<li>Resilience to single company shenanigans</li>
+
+
+
+<li>User choice in provider, with different moderation policies and such across providers.</li>
+
+
+
+<li>Interop between different app types, e.g. Mastodon for mostly text and Pixel feed for mostly images.</li>
+</ul>
+
+
+
+<p>Then there’s areas where federation hurts. I’ve outlined 3 of them above. I don’t think any of these are goals of the fediverse. They’re unfortunate side effects of the federation architecture.</p>
+
+
+
+<p>Maybe we can fix these issues by only insisting on federation where it really matters, and loosening the architecture a bit where the pain is worse than the benefit. Because we don’t want to let federation make the experience suck.</p>
+
+
+
+<p>I see two examples of where we can loosen federation a bit without losing the core values and benefits:</p>
+
+
+
+<ul>
+<li>Imagine a coordination domain, say mastodon-coordination.org, that would be used for local storage of a user’s Mastodon home instance URL. This would enable a follow button that works across the Web. Maybe one day this turns into a real browser API.</li>
+
+
+
+<li>Imagine a username layer, something that maps <a href="https://benadida.wordpress.com/mentions/benadida/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">@benadida</a> to @ben@mastodon.gmail.com, and later if I change to @ben@mastodon.yahoo.com, no one ever needs to know. We need a spec here. Maybe even a consensus algorithm. Maybe a small set of trusted servers a-la DNS. Maybe we need to make a new username format like @<a href="https://benadida.wordpress.com/mentions/benadida/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">@benadida</a> for smooth upgrades. Lots to think about for stable URLs.</li>
+</ul>
+
+
+
+<h2>The bottom line</h2>
+
+
+
+<p>Federation is both an architectural decision and a set of evolving values for how software can be built. If it’s going to work at scale, we need to consider how the architecture might make the UX suck. And we need to fix those pain points while rejecting perfectionist ideology.</p>
+
+
+
+<p>Federation can’t be the bland vegetable of our Internet diet, where we’re telling everyone “yes, we know it tastes bad, but it’s good for you, really.” That’s not going to work. In fact that’s how we got centralized systems, because they gave users what they wanted without compromising the experience. It’s probably how we’ll get centralized systems again, even after Twitter dies.</p>
+
+
+
+<p>If we want the advantages of a federated future, we can’t let federation make the experience suck.</p>
+
+
+
+<p></p>

@@ -1,0 +1,82 @@
+<p>I have a decent <a href="https://book.dustri.org" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">ebook library</a>, featuring several
+thousands of books, that are all assumed to come from the <a href="https://www.gutenberg.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">project
+Gutenberg</a> for the rest of this article. I wanted
+to put all of them on
+<a href="https://en.wikipedia.org/wiki/InterPlanetary_File_System" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">ipfs</a> to help
+alleviate the load on <a href="https://annas-archive.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Anna&#39;s Archive</a> and make it
+more resilient to <em>intempestive</em> shutdowns, as <a href="https://annas-blog.org/help-seed-zlibrary-on-ipfs.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">they asked</a> help for.</p>
+<p>The ipfs project recommended way to interacting with the network is to use
+<a href="https://docs.ipfs.tech/concepts/nodes/#implementations" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">kubo</a>. Unfortunately,
+it&#39;s not packaged in Alpine Linux anymore, and the <a href="https://docs.ipfs.tech/install/command-line/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">prebuilt binaries</a> are depending on the glibc,
+making them unable to be ran with <a href="https://musl.libc.org" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">musl</a>, so build from source it is:</p>
+<pre><code>$ git clone https://github.com/ipfs/kubo.git
+$ cd kubo
+$ make build CGO_ENABLED=0
+$ /home/ipfs/kubo/cmd/ipfs/ipfs version
+ipfs version 0.19.0-dev
+$
+</code></pre>
+
+<p>My collection of ebooks is around 50G sitting on my NAS, so I really don&#39;t want
+to have it duplicated to be put into ipfs, which is the default method with
+kubo. Fortunately, in 2017, the <code>--nocopy</code> option <a href="https://github.com/ipfs/kubo/issues/3397#issuecomment-284337564" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">was
+added</a> to
+allow exactly this behaviour, although it&#39;s still marked as experimental.
+Enabling &#34;<a href="https://github.com/ipfs/kubo/blob/master/docs/experimental-features.md#accelerated-dht-client" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Accelerated DHT</a>&#34;
+is also handy to speed things up, so make sure to enable it as well.</p>
+<p>I&#39;m using <a href="https://www.proxmox.com/en/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">proxmox</a> on my hypervisor, so I could mount my ebooks as
+read-only inside of my ipfs container by adding <code>mp0:
+/mnt/nfs/books/,mp=/home/ipfs/books/,ro=1</code> to its configuration file. </p>
+<p>Because I&#39;m using <a href="https://en.wikipedia.org/wiki/Calibre_(software)" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">calibre</a>
+to manage my virtual library, book covers (jpg, png, …)
+and <a href="https://manual.calibre-ebook.com/generated/en/ebook-meta.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">metadata files</a>
+have to be excluded. Also make sure to use <code>--hash=blake2b-256 --chunker=size-1048576</code>
+since this is what Anna&#39;s Archive is using. &#34;Interestingly&#34; one
+can pick amongst <a href="https://github.com/multiformats/multihash" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">hundreds of hashing
+primitives</a> to generate <a href="https://docs.ipfs.tech/concepts/content-addressing/#what-is-a-cid" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">CID on
+ipfs</a>.</p>
+<pre><code>$ /home/ipfs/kubo/cmd/ipfs/ipfs init --profile server
+$ /home/ipfs/kubo/cmd/ipfs/ipfs config --json Experimental.AcceleratedDHTClient true
+$ /home/ipfs/kubo/cmd/ipfs/ipfs config --json Experimental.FilestoreEnabled true
+$ /home/ipfs/kubo/cmd/ipfs/ipfs add -r --pin=true --hash=blake2b-256 --chunker=size-1048576 --nocopy --ignore=&#39;*.jpg&#39; --ignore=&#39;*.png&#39; --ignore=&#39;*.opf&#39; ./books/
+[……]
+added bafykbzacedbkjcavohu3tghnva6v3nwgpdtz3umtt3v7s5tgmjyeltrjsftmw books/Pierre-Joseph Proudhon/De la justice dans la Revolution et dans l&#39;Eglise (515)
+added bafykbzacebwarcecieaoeeftrex4r5yisicztrzyjdarpw3ijgypsq4fpnzlm books/Pierre-Joseph Proudhon/Qu&#39;est-ce que la propriete _ (197)
+[……]
+added bafykbzacec7xpt2ojfyfeyqhw76yyzukeym4nvwhukcmyincefuyp5jzrfnhq books/William Shakespeare/Macbeth (389)
+[……]
+48.36 GiB / 48.36 GiB [===============================================] 100.00%
+$ /home/ipfs/kubo/cmd/ipfs/ipfs swarm peers | wc -l
+1337
+$ /home/ipfs/kubo/cmd/ipfs/ipfs stats bw --poll=true --interval=1s
+Total Up    Total Down  Rate Up     Rate Down
+  2.9 GB      5.2 GB       27 MB/s   51.3 MB/s      
+</code></pre>
+
+<p>Now that things are working, it&#39;s only a matter of writing a simple <a href="https://github.com/OpenRC/openrc" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">openrc</a>
+unit, running <code>rc-update add ipfs</code> and rebooting:</p>
+<pre><code>#!/sbin/openrc-run
+
+name=&#34;ipfs&#34;
+command=&#34;/home/ipfs/kubo/cmd/ipfs/ipfs&#34;
+command_args=&#34;daemon&#34;
+pidfile=&#34;/run/ipfs.pid&#34;
+command_user=&#34;ipfs&#34;
+command_background=true
+
+depend() {
+    need net
+}
+</code></pre>
+
+<p>And here we go, my whole library on ipfs for the whole world to enjoy:</p>
+<pre><code>$ curl -s -i https://ipfs.io/ipfs/bafykbzacedbkjcavohu3tghnva6v3nwgpdtz3umtt3v7s5tgmjyeltrjsftmw/ | grep epub -m 1
+&gt;De la justice dans la Revolution et dans l - Pierre-Joseph Proudhon.epub
+$ curl -s -i https://ipfs.io/ipfs/bafykbzacebwarcecieaoeeftrex4r5yisicztrzyjdarpw3ijgypsq4fpnzlm/ | grep epub -m 1
+&gt;Qu&#39;est-ce que la propriete _ - Pierre-Joseph Proudhon.epub
+</code></pre>
+
+<p>Be aware that ipfs will <a href="https://github.com/ipfs/kubo/issues/9705#issue-1615487878" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">eat a <strong>ridiculously high</strong> amount of
+CPU</a>,
+and that this behaviour is <a href="https://github.com/ipfs/kubo/issues/9705#issuecomment-1460380328" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">working as intended</a>.
+Sigh.</p>

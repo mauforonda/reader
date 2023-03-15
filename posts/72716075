@@ -1,0 +1,102 @@
+<p><em>Luke Hogg is the director of outreach at Lincoln Network, where his work focuses on the intersection of emerging technologies and public policy.</em></p>
+
+
+
+<figure><img src="https://reader.miniflux.app/proxy/7vMbmD-p3NgdtuboOi6s6iQYK_CFC45hM2x8DXx6bKc=/aHR0cHM6Ly90ZWNocG9saWN5LnByZXNzL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL0Rpc2luZm9ybWF0aW9uLTEtMS0xMDI0eDU3Ni5wbmc=" alt="" srcset="https://reader.miniflux.app/proxy/7vMbmD-p3NgdtuboOi6s6iQYK_CFC45hM2x8DXx6bKc=/aHR0cHM6Ly90ZWNocG9saWN5LnByZXNzL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL0Rpc2luZm9ybWF0aW9uLTEtMS0xMDI0eDU3Ni5wbmc= 1024w, https://reader.miniflux.app/proxy/MSdryaTgLMxvH1xysRlDhbb7jEx9xLH8oppyUo4cJxg=/aHR0cHM6Ly90ZWNocG9saWN5LnByZXNzL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL0Rpc2luZm9ybWF0aW9uLTEtMS0zMDB4MTY5LnBuZw== 300w, https://reader.miniflux.app/proxy/Yei_iBpdmt90DwtWjE0wu-daA5der1eOMXJ5UTnP9ns=/aHR0cHM6Ly90ZWNocG9saWN5LnByZXNzL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL0Rpc2luZm9ybWF0aW9uLTEtMS03Njh4NDMyLnBuZw== 768w, https://reader.miniflux.app/proxy/Y-idHjwRiF-CeQU5uoRl71srl5rAI6BlzsezTpPx6Xs=/aHR0cHM6Ly90ZWNocG9saWN5LnByZXNzL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL0Rpc2luZm9ybWF0aW9uLTEtMS5wbmc= 1200w" sizes="(max-width: 1024px) 100vw, 1024px" loading="lazy"/></figure>
+
+
+
+<p>From education to media to medicine, the rapid development of artificial intelligence tools has already begun to upend long-established conventions. Our democratic institutions will be no exception. It’s therefore crucial that we think about how to build AI systems in a way that democratically distributes the benefits.  </p>
+
+
+
+<p>These tools could have a democratizing influence, making it easier for the average American to engage with policymakers—as long as they are built openly and not locked away inside walled gardens.</p>
+
+
+
+<p>Late last year, ChatGPT—a chatbot built on top of OpenAI’s GPT-3 suite of large language AI models (LLMs)—took the online world by storm. As with other recent GPT-3 driven technologies, such as DALL-E and Whisper, many users have approached these tools in a lighthearted, playful way, enjoying silly conversations with ChatGPT and making DALL-E produce bizarre images. But what happens when the technology is applied, not to relatively frivolous uses, but by corporate America and the federal government?</p>
+
+
+
+<p>Advances in AI are already causing anxiety in the business world, even among tech giants. Reports <a href="https://www.nytimes.com/2023/01/20/technology/google-chatgpt-artificial-intelligence.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">indicate</a> that Google is at DEFCON 1, having brought in the original founders, Larry Page and Sergey Brin, to help top executives strategize a response to GPT-3. Going one step further, Paul Buchheit, an early Google employee and the mind behind Gmail and AdSense, <a href="https://twitter.com/paultoo/status/1598434161332981760" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">recently claimed</a> that advancements in AI could put Google “only a year or two away from total disruption.”</p>
+
+
+
+<p>Such disruption won’t end with the corporate world. Many social scientists have begun to warn that AI will undermine democracy itself.</p>
+
+
+
+<p>Researchers are already examining the ability of LLMs to perform the job of a corporate lobbyist. One <a href="https://arxiv.org/pdf/2301.01181.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">study</a> from John Nay of the Stanford Center for Legal Informatics found that the most recent version of GPT-3 successfully determined whether a bill is relevant to a specific company 75 percent of the time. While Nay concedes that we are still a long way from totally automated lobby shops, the idea that LLMs could begin to be deployed to influence lawmaking on any scale is, to some, troubling enough. </p>
+
+
+
+<p>One concern is that AI systems will become tools of the elite to more efficiently wield influence over policymakers, making the U.S. less a democracy than a plutocracy. A recent piece by Nathan Sanders and Bruce Schneier in the <a href="https://www.nytimes.com/2023/01/15/opinion/ai-chatgpt-lobbying-democracy.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><em>New York Times</em></a>, for example, opined that advances in AI risk “replacing humans in the democratic processes — not through voting, but through lobbying.” The authors conclude that “a future filled with A.I. lobbyists … will probably make the already influential and powerful even more so.” By improving the efficiency of traditional lobbying apparatuses and streamlining activism, the argument goes, AI could allow special interests to subvert the will of the people.</p>
+
+
+
+<p>In a scenario imagined by <a href="https://www.bloomberg.com/opinion/articles/2022-12-06/chatgpt-ai-could-make-democracy-even-more-messy?leadSource=uverify%20wall" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Tyler Cowen</a> of George Mason University, special interest groups and corporations could use AI systems to spoof public opinion and astroturf lobbying campaigns. As Cowen puts it, “interest groups will employ ChatGPT, and they will flood the political system with artificial but intelligent content,” making it more difficult to divine the public’s true opinion.</p>
+
+
+
+<p>Such concerns are not unfounded. New technologies always present new challenges, and lawmakers should be cognizant of the risks AI might present and the methods for mitigating them. </p>
+
+
+
+<p>Fortunately, innovators are already working on tools to counteract some of the potentially negative effects of AI. Even as schools and universities across the country worry about how to handle AI-enabled cheating, <a href="https://apnews.com/article/technology-education-colleges-and-universities-france-a0ab654549de387316404a7be019116b" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">OpenAI has launched</a> a new tool to detect AI-written text. As quickly as one startup can invent more realistic deep fake videos, another startup is hard at work <a href="https://spectrum.ieee.org/deepfake" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">upgrading deep fake detection software</a>. These tools are <a href="https://www.technologyreview.com/2023/02/07/1067928/why-detecting-ai-generated-text-is-so-difficult-and-what-to-do-about-it/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">notoriously difficult to build</a>, but some of the best computer scientists in the world are working to solve these problems. In this technological arms race, content generators will always have the first-mover advantage, but those endeavoring to unmask fake content will not be far behind. </p>
+
+
+
+<p>While these tools are imperfect—especially in the context of text detection—some have <a href="https://theconversation.com/we-pitted-chatgpt-against-tools-for-detecting-ai-written-text-and-the-results-are-troubling-199774" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">shown more promise</a> than others. Generally, detection tools produced by adversarial third-parties such as researchers or other startups are better than those produced by the companies themselves. AI developers should take steps to ensure that their outputs are detectable to prevent misuse. For example, opening up AI tools would be beneficial as researchers and other developers are likely to be better able to build effective detection tools if the generative models are not locked behind walled gardens. By intentionally building tools that are open and detectable, AI developers can help prevent misuse. </p>
+
+
+
+<p>The current discourse around LLMs and other AI systems is not the first time we have seen excessive hand-wringing over generated content’s impact on the democratic process. When the Federal Communications Commission (FCC) was in the process of repealing net neutrality rules in 2017, it received a record-breaking 22 million public comments on the proposed <em>Restoring Internet Freedom Order</em>. <a href="https://ag.ny.gov/sites/default/files/oag-fakecommentsreport.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">As it turned out</a>, over 17 million of those comments were fake, nearly 8 million of which were generated by a single college student.</p>
+
+
+
+<p>This and <a href="https://www.sec.gov/files/Findings-of-Alleged-Fraudulent-SEC-Rulemaking-Comment-Letters.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">similar circumstances</a> caused an uproar. Many pundits claimed that robocomments would be the death knell of democratic notice-and-comment rulemaking. The House Financial Services Committee went so far as to <a href="https://www.congress.gov/event/116th-congress/house-event/110461?s=1&amp;r=39" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">hold a hearing</a> analyzing “how bad actors use astroturfing to manipulate regulators,” and the Senate Homeland Security and Government Affairs Committee <a href="https://www.hsgac.senate.gov/wp-content/uploads/imo/media/doc/2019-10-24%20PSI%20Staff%20Report%20-%20Abuses%20of%20the%20Federal%20Notice-and-Comment%20Rulemaking%20Process.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">investigated the issue</a>. But, in the aftermath of all this, <a href="https://www.acus.gov/sites/default/files/documents/Final%20Report%20on%20Mass%2C%20Computer-Generated%2C%20and%20Fraudulent%20Comments%20%28Final%2006-01-2021%29_0.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">a report prepared</a> for the Administrative Conference of the United States told a very different story.</p>
+
+
+
+<p>While the report’s authors did recognize the challenges posed by fake comments and encouraged agencies to implement safeguards to prevent fake comments, they concluded that artificially generated comments do not “violate federal law and do not generally undermine the integrity of notice-and-comment rulemaking.” Furthermore, the report found no evidence of widespread substantive harm in either specific rulemakings or the rulemaking system overall. </p>
+
+
+
+<p>Why not? As with legislating, notice-and-comment rulemaking is not a simple up-or-down vote based on the number of comments for or against. Instead, regulators examine the arguments in public comments and proceed according to a substantive, not quantitative, analysis of the record. Similarly, when deciding how to vote on a piece of legislation, lawmakers tend to consider their constituents’ substantive arguments, rather than simply counting the number of emails and phone calls received from each side.</p>
+
+
+
+<p>Still, one can always argue that this time is different, and skeptics are right to insist that we think seriously about how we build technologies that help prevent the abuse of AI. To do so, we must ensure that these tools are built in ways that bolster the institutions of good governance. If they are built openly and honestly, AI systems could be a democratizing influence. </p>
+
+
+
+<p>Historically, it has been difficult for an average citizen to meaningfully engage with their legislature. But, over time, technology has narrowed the gap between the people and their representatives in Washington. The telegraph, telephone, and Internet all came with growing pains, but all eventually made it easier for people across the country to participate more meaningfully in the policymaking process. AI is no different. </p>
+
+
+
+<p>There are many ways that AI systems—and LLMs in particular—could make it easier for citizens to engage with their representatives in Congress. For example, Nay’s study cuts both ways: just as GPT-3 could determine the relevance of legislation to a company, it could also determine relevance for individuals. People who lack time to read through massive bills could have an AI tool do the time-intensive work for them and then contact their representative about the issues flagged by the AI.    </p>
+
+
+
+<p>AI’s democratizing influence isn’t a given, though; it depends on how the AI models are built. If AI systems are opaquely controlled by elites—be they governments or powerful corporations—then the risk of democratic backsliding will indeed become more substantial. To realize the promise of AI, we will need to build AI models and applications openly and make them widely available to the public. In other words, they should be open source wherever possible. </p>
+
+
+
+<p>Within the context of AI, open source means that the code and data used to train and operate the AI system are available for anyone to view, use, and modify. Open-sourcing databases and software allows for greater transparency and encourages informed public discourse about the advantages and disadvantages of a particular model or application. It also increases the accessibility of software by ensuring everyone has equal access to the technology and allowing individuals to iterate upon existing systems. It should also make it easier for the forensics community to build detection tools. </p>
+
+
+
+<p>Approached this way, open-sourcing AI tools could bring enormous benefits. Closed (particularly government-built) software is typically clunky and difficult to administer. Nimble, open-source AI systems, in contrast, could be rapidly customized and deployed to help detect and counter fabricated influence campaigns in ways that are difficult for top-down systems. </p>
+
+
+
+<p>The democratizing value of open-source AI systems is even more significant for the public. As the public grows distrustful of centralized control by large tech companies, distributed open-source systems offer an alternative. Some large companies are <a href="https://techcrunch.com/2023/02/07/microsoft-launches-the-new-bing-with-chatgpt-built-in/?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAADRahMHCjMNJHcXB6ZFTWbZuGrBLEy8dOZpHE3rlHG0en9rzDG6CCjca1zLCSQBrmOfWwCmNrPxo85p1ONOzOexsYqC4_R63FLAJ4WNr6aofSaMlecRGTIYdN3DJmKIPmR-qsl9L3nKTcRHBePtlM6LbtBY9YN0kMnZkwaHTEXfv" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">already working</a> to capitalize on the success of ChatGPT and other GPT-3 applications. Putting these potentially revolutionary technologies behind a walled garden would only make it more difficult for the average American to have their voice heard.</p>
+
+
+
+<p>Open-source AI software does present some unique risks and challenges. Like all software, open-source software is vulnerable to cybersecurity attacks. Using open-source software typically requires a certain level of technical literacy. What’s more, the compute cost of training AI models and requirement for increasingly specialized human reinforcement needs could restrict AI’s democratizing influence. Builders who are working on developing AI systems designed to interface with Congress or government agencies should be aware of these risks and work to mitigate them wherever possible.</p>
+
+
+
+<p>Apprehension about AI’s political effects is reasonable, but every risk also presents opportunities if hedged properly. If built freely and openly, AI has the power to make Congress more accessible, efficient, and responsive. By making these systems open source and easily available to the public, we can better ensure that they are implemented responsibly within government and are a democratizing influence outside of government. If we take the steps now to encourage openness, then AI lobbying could ultimately lead to a more inclusive and representative democracy.</p>
+<p>The post <a href="https://techpolicy.press/artificial-intelligence-could-democratize-government/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Artificial Intelligence Could Democratize Government</a> appeared first on <a href="https://techpolicy.press" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Tech Policy Press</a>.</p>

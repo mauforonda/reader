@@ -1,0 +1,406 @@
+<p>[<strong>Epistemic status</strong>: work in progress that is <strong>highly speculative</strong> but which I have reason to think has explanatory power – the content comes from <a href="https://youtu.be/NXEpMqpl09M" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">this talk</a> I gave at the <a href="https://oxpsysoc.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Oxford Psychedelic Society</a> a couple of weeks ago, which was then summarized/turned into a <a href="https://twitter.com/QualiaRI/status/1626768226196811776" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Twitter thread</a> by <a href="https://qri.org/team" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Hunter Meyer</a>]</p>
+
+
+
+
+
+
+
+<p>QRI’s ‘Good Vibes Theory’ (GVT) is a speculative proposal for a physics of consciousness. This theory aims to establish an ontological foundation for a future <em>rigorous science of good vibes</em>. <img src="https://reader.miniflux.app/proxy/F-U1NwsKq1Q-fa3bCcmmMkla1h8IdocMlsBTbU5kUPc=/aHR0cHM6Ly9zLncub3JnL2ltYWdlcy9jb3JlL2Vtb2ppLzE0LjAuMC83Mng3Mi8xZjlmNS5wbmc=" alt="🧵" loading="lazy"/><img src="https://reader.miniflux.app/proxy/F-U1NwsKq1Q-fa3bCcmmMkla1h8IdocMlsBTbU5kUPc=/aHR0cHM6Ly9zLncub3JnL2ltYWdlcy9jb3JlL2Vtb2ppLzE0LjAuMC83Mng3Mi8xZjlmNS5wbmc=" alt="🧵" loading="lazy"/><img src="https://reader.miniflux.app/proxy/F-U1NwsKq1Q-fa3bCcmmMkla1h8IdocMlsBTbU5kUPc=/aHR0cHM6Ly9zLncub3JnL2ltYWdlcy9jb3JlL2Vtb2ppLzE0LjAuMC83Mng3Mi8xZjlmNS5wbmc=" alt="🧵" loading="lazy"/> #psychedelicthermodynamics #goodvibestheory</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/QRIs-Good-Vibes-Theory-GVT-is-a-speculative-proposal-for-a-physics-of-consciousness.-This-theor...-1.gif?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/lN17ne-pZlXjxjNX0GwDHUQX3NMALVE6gxBq_GYARD4=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9RUklzLUdvb2QtVmliZXMtVGhlb3J5LUdWVC1pcy1hLXNwZWN1bGF0aXZlLXByb3Bvc2FsLWZvci1hLXBoeXNpY3Mtb2YtY29uc2Npb3VzbmVzcy4tVGhpcy10aGVvci4uLi0xLmdpZj9yZXNpemU9MzYwJTJDMjAyJnNzbD0x" alt="" width="360" height="202" srcset="https://reader.miniflux.app/proxy/JJLWnK0917xappnVCxWcJATSCyjpFM9EuQjRBp5LKcE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9RUklzLUdvb2QtVmliZXMtVGhlb3J5LUdWVC1pcy1hLXNwZWN1bGF0aXZlLXByb3Bvc2FsLWZvci1hLXBoeXNpY3Mtb2YtY29uc2Npb3VzbmVzcy4tVGhpcy10aGVvci4uLi0xLmdpZj9yZXNpemU9MTAyNCUyQzU3NiZzc2w9MQ== 1024w, https://reader.miniflux.app/proxy/QYHi912yUNUWP0jh6j_BzGql5ZPyfw8c0w27Rrl46Bc=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9RUklzLUdvb2QtVmliZXMtVGhlb3J5LUdWVC1pcy1hLXNwZWN1bGF0aXZlLXByb3Bvc2FsLWZvci1hLXBoeXNpY3Mtb2YtY29uc2Npb3VzbmVzcy4tVGhpcy10aGVvci4uLi0xLmdpZj9yZXNpemU9MzAwJTJDMTY5JnNzbD0x 300w, https://reader.miniflux.app/proxy/w4WkL3cYBV5roI-RO7F87HAOAO9idyHtCEQyhYUNqn0=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9RUklzLUdvb2QtVmliZXMtVGhlb3J5LUdWVC1pcy1hLXNwZWN1bGF0aXZlLXByb3Bvc2FsLWZvci1hLXBoeXNpY3Mtb2YtY29uc2Npb3VzbmVzcy4tVGhpcy10aGVvci4uLi0xLmdpZj9yZXNpemU9NzY4JTJDNDMyJnNzbD0x 768w, https://reader.miniflux.app/proxy/8vjst3N4gCQr16umgMuXRT6Pdcm_KxzmwfAopI-cbBo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9RUklzLUdvb2QtVmliZXMtVGhlb3J5LUdWVC1pcy1hLXNwZWN1bGF0aXZlLXByb3Bvc2FsLWZvci1hLXBoeXNpY3Mtb2YtY29uc2Npb3VzbmVzcy4tVGhpcy10aGVvci4uLi0xLmdpZj9yZXNpemU9MTIwMCUyQzY3NSZzc2w9MQ== 1200w" sizes="(max-width: 360px) 100vw, 360px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>Two groups will make the most use of GVT; one is the “vibe engineers,” who are grounded in creating good vibes technically, and the mystics, who want to connect good vibes to deep insights and truths of wisdom traditions.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNwNjBagAAUgOU.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/FAVulXqCUnkEZ6doMyivE3QAvKnZ1VkZtxz-5gOfNfQ=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53TmpCYWdBQVVnT1UuanBnP3Jlc2l6ZT05MjglMkM2MTYmc3NsPTE=" alt="" srcset="https://reader.miniflux.app/proxy/zxhfXqLsVh0ZJaWdPxmWgZgVMuc4vFva7ysxyaQ89jU=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53TmpCYWdBQVVnT1UuanBnP3c9OTI4JnNzbD0x 928w, https://reader.miniflux.app/proxy/-Ad0QmbT_7FBPJNTSOZ6Pdnc0GsjuO6pfCuGyrwJcbE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53TmpCYWdBQVVnT1UuanBnP3Jlc2l6ZT0zMDAlMkMxOTkmc3NsPTE= 300w, https://reader.miniflux.app/proxy/GigkxMW5DiomrTMAjfy7hSFj_Wko0dS2FM7YL0sKoGc=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53TmpCYWdBQVVnT1UuanBnP3Jlc2l6ZT03NjglMkM1MTAmc3NsPTE= 768w" sizes="(max-width: 928px) 100vw, 928px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>There is a deep connection between the shape of things and the way they vibrate. Different shapes have different energies, as their curvature, complexity, and surface area increase.<a href="https://twitter.com/QualiaRI/status/1626768236699328512/photo/1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"></a></p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNwT49aAAASIWQ.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/srlTptbc6wXV2Tb6SKvEx-LMNoQyvVoiq01cHt0-9Hc=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53VDQ5YUFBQVNJV1EuanBnP3Jlc2l6ZT0xMDAwJTJDNTYzJnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/lRU3JAC8KijhklqYrnAJ9ESxExvwCVkrVEgxa-9z5TM=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53VDQ5YUFBQVNJV1EuanBnP3Jlc2l6ZT0xMDI0JTJDNTc2JnNzbD0x 1024w, https://reader.miniflux.app/proxy/MTWQMtLfPg9iOZ7FtsPflAwcPZyQ2GBRfwzEUjPI7BE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53VDQ5YUFBQVNJV1EuanBnP3Jlc2l6ZT0zMDAlMkMxNjkmc3NsPTE= 300w, https://reader.miniflux.app/proxy/AujxcGL3Cbc4l0c7LagBOztSQ3mKPvkIs6e-rA6r_x8=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53VDQ5YUFBQVNJV1EuanBnP3Jlc2l6ZT03NjglMkM0MzImc3NsPTE= 768w, https://reader.miniflux.app/proxy/LPhnSlCDdoAGQX_UFGfRKf6KF0UUgIwFKVJcw9ve0Wc=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53VDQ5YUFBQVNJV1EuanBnP3Jlc2l6ZT0xNTM2JTJDODY0JnNzbD0x 1536w, https://reader.miniflux.app/proxy/WXqXKehcSSC5Jr7xNZzJauyZCQb4GaLupRa6gwMDY-8=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53VDQ5YUFBQVNJV1EuanBnP3Jlc2l6ZT0xMjAwJTJDNjc1JnNzbD0x 1200w, https://reader.miniflux.app/proxy/imax0cq8Dc_1bDWM9J7NmNytyXAHD1ERHmTu5gokhDs=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53VDQ5YUFBQVNJV1EuanBnP3c9MTk0NiZzc2w9MQ== 1946w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>Internal representations act as energy sinks that absorb and channel ambient energy. They are often symmetrical and have semantic meaning, which makes them effective energy sinks. These representations also radiate energy and have energizing effects *to other representations*.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNwZGbaMAAnueA.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/NeLelfi6n2UF_GyzFgsZoeQhwVuw7EGMNfyHJEGWDWo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53WkdiYU1BQW51ZUEuanBnP3Jlc2l6ZT0xMDAwJTJDNTYzJnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/tDe6AcMPh63PvlnpAE66NyP-ASbsgw0OdbwCJQF3Ko4=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53WkdiYU1BQW51ZUEuanBnP3Jlc2l6ZT0xMDI0JTJDNTc3JnNzbD0x 1024w, https://reader.miniflux.app/proxy/zMNrQhjZSccmvB9UKW20mPrrUJlVSTsosqLSr0GwG_o=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53WkdiYU1BQW51ZUEuanBnP3Jlc2l6ZT0zMDAlMkMxNjkmc3NsPTE= 300w, https://reader.miniflux.app/proxy/PyEgI_lRjPaYIT_toRnp2G7k7djfqBkKfo7bmE5PD9A=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53WkdiYU1BQW51ZUEuanBnP3Jlc2l6ZT03NjglMkM0MzMmc3NsPTE= 768w, https://reader.miniflux.app/proxy/9ph2ChIkLFSpXnItksFSQW2VlJfYbNsScHy_Q_6CWyM=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53WkdiYU1BQW51ZUEuanBnP3Jlc2l6ZT0xNTM2JTJDODY1JnNzbD0x 1536w, https://reader.miniflux.app/proxy/w77XvYdsvp-YARADGGoA0JG7Exausq0OUMZ8CEbS2sE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53WkdiYU1BQW51ZUEuanBnP3Jlc2l6ZT0xMjAwJTJDNjc2JnNzbD0x 1200w, https://reader.miniflux.app/proxy/MJQT_rdvZKMeZgek5jKytnoJCZjYdZUCjUq8Aqsp07M=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53WkdiYU1BQW51ZUEuanBnP3c9MTk0NiZzc2w9MQ== 1946w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>In physics, the Hamiltonian of a system is a measure of the system’s total energy. Similarly, the Hamiltonian of Consciousness would formulate how to add up all the energy of each component of a bound experience created by a system to get the total energy of that experience.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNweGDagAAL5Sc.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/m5jmlHJZN9sgMaxS0f1lF91ZcekKJip598iBUcCz_98=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53ZUdEYWdBQUw1U2MuanBnP3Jlc2l6ZT0xMDAwJTJDNTYxJnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/BqMo0XtGNomosiWDCRJSGOnjIZQI73Ilgfy6-k3Emxs=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53ZUdEYWdBQUw1U2MuanBnP3Jlc2l6ZT0xMDI0JTJDNTc0JnNzbD0x 1024w, https://reader.miniflux.app/proxy/t8fIOqo84geWiHCN2RAoYxp0MySSRJh5p2JyYtTRaOw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53ZUdEYWdBQUw1U2MuanBnP3Jlc2l6ZT0zMDAlMkMxNjgmc3NsPTE= 300w, https://reader.miniflux.app/proxy/8tfyEhch5XVm5YC0SNNMX33cy6jTGsUEhFJVSpcfDMw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53ZUdEYWdBQUw1U2MuanBnP3Jlc2l6ZT03NjglMkM0MzAmc3NsPTE= 768w, https://reader.miniflux.app/proxy/_l8qQak4rKpA-73cRjyHpKTAlzzorj8hxVwF2ysJ1ys=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53ZUdEYWdBQUw1U2MuanBnP3Jlc2l6ZT0xNTM2JTJDODYxJnNzbD0x 1536w, https://reader.miniflux.app/proxy/-6gW8Yg4v6J7-qw6WSshDN56wMjxJ1KXF7QSeRWFh-4=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53ZUdEYWdBQUw1U2MuanBnP3Jlc2l6ZT0xMjAwJTJDNjcyJnNzbD0x 1200w, https://reader.miniflux.app/proxy/e7zYYI2Wd771gRtcUtMnWQ2yj7TlLX9UeQl_bZnP9s8=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53ZUdEYWdBQUw1U2MuanBnP3c9MTkzOCZzc2w9MQ== 1938w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>QRI proposes a new framework, “<strong><em>Psychedelic thermodynamics</em></strong>”, which offers a novel perspective on energy flow in consciousness.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNwjK8aMAUUcjx.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/Akg82oULymbGBVn37T1QnMPyIXintgmhUSo1QdSyHt4=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53aks4YU1BVVVjanguanBnP3Jlc2l6ZT0xMDAwJTJDNTYzJnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/zx5KdFhZPabKzt54LlYygGMyCPvxH9-125lcLvTVnl0=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53aks4YU1BVVVjanguanBnP3Jlc2l6ZT0xMDI0JTJDNTc2JnNzbD0x 1024w, https://reader.miniflux.app/proxy/C14a-zMntj8Dzwu0AcMokKGnx99XS08OaZ0JJpJ8clU=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53aks4YU1BVVVjanguanBnP3Jlc2l6ZT0zMDAlMkMxNjkmc3NsPTE= 300w, https://reader.miniflux.app/proxy/oQ_wTuY0BZ8lRt4K8DEanjMzZcYb206CyiuCoIQtdkg=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53aks4YU1BVVVjanguanBnP3Jlc2l6ZT03NjglMkM0MzImc3NsPTE= 768w, https://reader.miniflux.app/proxy/XMYkFSG-9IZPrs5d7jpRmqH0CbE82QtgxcHjhgCu1hY=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53aks4YU1BVVVjanguanBnP3Jlc2l6ZT0xNTM2JTJDODY1JnNzbD0x 1536w, https://reader.miniflux.app/proxy/O5OSyWp3RSXt6tv81by6Wq8ssq77GYApss3gFLWNOV8=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53aks4YU1BVVVjanguanBnP3Jlc2l6ZT0xMjAwJTJDNjc1JnNzbD0x 1200w, https://reader.miniflux.app/proxy/7Q2u-Y-4UdEVBnA97LYltK1CKoTRoZu9NYESVcVFM2U=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53aks4YU1BVVVjanguanBnP3c9MTk0MCZzc2w9MQ== 1940w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>In this framework, one system’s energy sink is another system’s energy source. The energy flows from sensory input to consciousness, where it’s transformed into internal representations or “solitons” and released through motor actions or field radiation.</p>
+
+
+
+<p>The quality of conscious experience is shaped by the energy radiated from internal representations known as gestalts, which interact with each other to produce the texture and valence of the experience. The shape of the gestalts determines the vibe they radiate (cf. <a href="https://qri.org/glossary" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">valence structuralism</a>).</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNwojVaAAAOWva.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/-AMO5t7SkF9E7ygs8DIn3ES02gZ2Mfan85dHtbaFJ8I=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53b2pWYUFBQU9XdmEuanBnP3Jlc2l6ZT0xMDAwJTJDNTYwJnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/ok5-dIK-4PC5ghfDPUXxRN9qUYGANMHuvNV3fXOhiNw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53b2pWYUFBQU9XdmEuanBnP3Jlc2l6ZT0xMDI0JTJDNTczJnNzbD0x 1024w, https://reader.miniflux.app/proxy/SrA6whNz5m5ofEw5FEQNnTDLmgbMEYBjhOvTXsddiv0=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53b2pWYUFBQU9XdmEuanBnP3Jlc2l6ZT0zMDAlMkMxNjgmc3NsPTE= 300w, https://reader.miniflux.app/proxy/HJoRtITx-awW_sga5j6W_E7A7hi0Z6oqfnZ7qFlHvLU=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53b2pWYUFBQU9XdmEuanBnP3Jlc2l6ZT03NjglMkM0MzAmc3NsPTE= 768w, https://reader.miniflux.app/proxy/cF81idVIo-EWt8PcKccpG4jihS4MVPhudBaJK_Cf_Mo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53b2pWYUFBQU9XdmEuanBnP3Jlc2l6ZT0xNTM2JTJDODU5JnNzbD0x 1536w, https://reader.miniflux.app/proxy/MnFX18AbziPxvpAENYMCpsXfusAWMXqenJNr3LdCtc4=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53b2pWYUFBQU9XdmEuanBnP3Jlc2l6ZT0xMjAwJTJDNjcxJnNzbD0x 1200w, https://reader.miniflux.app/proxy/lCsNPEu395kfwhDt7lKqlc8tKhxOQ0h54ixQws_tb7U=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53b2pWYUFBQU9XdmEuanBnP3c9MTkzOCZzc2w9MQ== 1938w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>The “vibes” of our experiences are determined by the interaction of our internal representations, and dissonance can arise from being out of phase with input, incompatibility with noise, being intrinsically misshaped, or dissonance with other representations.</p>
+
+
+
+<p>Psychedelic Thermodynamics suggests that the valence of a psychedelic experience can be modulated by inputs to the extent that they are in tune with the background noise and there are no misshapen or incompatible inputs leading to dissonance and negative valence.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNwvHuaUAEybcv.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/m-AsyZiP-a-ZCiIoVP3AeTmmriqDu6ptDRRr4wUT1dw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53dkh1YVVBRXliY3YuanBnP3Jlc2l6ZT0xMDAwJTJDNTU5JnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/_JWnFn40bJVXm12TXdiDatbdmOVK22zXPVG3gZcoLHM=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53dkh1YVVBRXliY3YuanBnP3Jlc2l6ZT0xMDI0JTJDNTcyJnNzbD0x 1024w, https://reader.miniflux.app/proxy/8Z37wgtU09Si5DmRiaflzpQowSJtn-3AEJsPlKhbr9g=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53dkh1YVVBRXliY3YuanBnP3Jlc2l6ZT0zMDAlMkMxNjgmc3NsPTE= 300w, https://reader.miniflux.app/proxy/9B9HrjPuh0OjWMN0sWrsV50w3oZPyEGl1D7lwj-OVaE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53dkh1YVVBRXliY3YuanBnP3Jlc2l6ZT03NjglMkM0Mjkmc3NsPTE= 768w, https://reader.miniflux.app/proxy/iJP6rIe5R9mZg1k5EoL0Q6904anMFdp6bgDwr9Rj-4o=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53dkh1YVVBRXliY3YuanBnP3Jlc2l6ZT0xNTM2JTJDODU5JnNzbD0x 1536w, https://reader.miniflux.app/proxy/yI-G25RIhY29hNvWmeIyLfAvK1RyFLz2jrjn-Ugo0r0=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53dkh1YVVBRXliY3YuanBnP3Jlc2l6ZT0xMjAwJTJDNjcxJnNzbD0x 1200w, https://reader.miniflux.app/proxy/xf2kb89ekT9kMeFCQNEdpdF21Mj5Heelc3H8dQtLJNk=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53dkh1YVVBRXliY3YuanBnP3c9MTk1MCZzc2w9MQ== 1950w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>Input valence effects are therefore the result of how external stimuli interact with internal representations in conscious experience. The degree of coherence between the input and the background noise, as well as the shape and resonance of the internal representation, determine an input’s valence effects.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNwybWaIAIkmS8.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/KTinUAMcovlL66EYvEz17sEA88lCWdyZkCNsoIspocs=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53eWJXYUlBSWttUzguanBnP3Jlc2l6ZT0xMDAwJTJDNTYzJnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/0Z3gh7yTvCihUh433zKF9L662_OW2dmaCY1uNrxN_A0=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53eWJXYUlBSWttUzguanBnP3Jlc2l6ZT0xMDI0JTJDNTc3JnNzbD0x 1024w, https://reader.miniflux.app/proxy/tVHfvxsX76whZEatSUld80V_yuCf50qVcL5Tia9qcQ0=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53eWJXYUlBSWttUzguanBnP3Jlc2l6ZT0zMDAlMkMxNjkmc3NsPTE= 300w, https://reader.miniflux.app/proxy/4bBDxLlFfobuwkiJvyAoyTBaVRXY9esPjLDusQJWcsY=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53eWJXYUlBSWttUzguanBnP3Jlc2l6ZT03NjglMkM0MzMmc3NsPTE= 768w, https://reader.miniflux.app/proxy/xpZY8yxeSBvRtKqNSNVUpbSgXpDXFrrxbzcIXrXXHAg=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53eWJXYUlBSWttUzguanBnP3Jlc2l6ZT0xNTM2JTJDODY2JnNzbD0x 1536w, https://reader.miniflux.app/proxy/wSniGuTBEmUk61tH6zdjO1KI7BZ0tPAI-jIDrg-rx2k=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53eWJXYUlBSWttUzguanBnP3Jlc2l6ZT0xMjAwJTJDNjc2JnNzbD0x 1200w, https://reader.miniflux.app/proxy/FZZ2OjY-4PXBwOMzobB0ucR4Jwb0R0HPakga5DGqY8M=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE53eWJXYUlBSWttUzguanBnP3c9MTk0OCZzc2w9MQ== 1948w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>The <em>Flower of Life</em> from sacred geometry can be steel-manned (within indirect realism) as a powerful metaphor for how experience is constructed. It may have deeper metaphorical relevance in physics than previously realized in light of Feynman and Wheeler’s “one-electron universe” where reality is an interference pattern of one electron bouncing back and forth in time.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/image.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/DgXmECAIJ53HYbK4KNJlwXVhtBvMVXxdm58XzAHOpn4=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS5wbmc_cmVzaXplPTEwMDAlMkM2NTMmc3NsPTE=" alt="" srcset="https://reader.miniflux.app/proxy/pURrDBrdwmiscAq0cij3YE9hXtr6z8xS4jDEnEW8Uf4=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS5wbmc_cmVzaXplPTEwMjQlMkM2Njkmc3NsPTE= 1024w, https://reader.miniflux.app/proxy/_SCSy2e0kJxKqOFWl-fb23qQH9Pw3P7vT8RTUfc1pt4=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS5wbmc_cmVzaXplPTMwMCUyQzE5NiZzc2w9MQ== 300w, https://reader.miniflux.app/proxy/rkKBkzqZ6Rx8qFYjZqIHESZ2vLCEoVqs5GM7wpvTwFc=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS5wbmc_cmVzaXplPTc2OCUyQzUwMSZzc2w9MQ== 768w, https://reader.miniflux.app/proxy/4A2t8JC6UHIYgxI_4S0B9pohwKOvJHRnxA2P9eFUNlQ=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS5wbmc_cmVzaXplPTEyMDAlMkM3ODQmc3NsPTE= 1200w, https://reader.miniflux.app/proxy/lh9FqVp68-UXD6iO0_xOpRxPfMEDLpPkC2kYieaFEsQ=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS5wbmc_dz0xMjYyJnNzbD0x 1262w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>The iterative way in which the Flower of Life is constructed takes on a new potential metaphorical meaning that can be used as a lens to understand the fundamental nature of reality.</p>
+
+
+
+<p>There may be just one electron in the entire universe. It is because when an electron and an anti-electron interact, they merge and cancel out, producing a photon.</p>
+
+
+
+<p>Mathematically, the interaction of an electron moving back in time is the same as an anti-electron, called a positron. As a result, there is only one type of observer in the universe, and it is bouncing back and forth in time, interfering with itself.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNg_WZaMAI6SPU.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/06M62uRYUYoKPEjP816J341Dcj8sEku9vV02YPLAMT0=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5nX1daYU1BSTZTUFUuanBnP3Jlc2l6ZT0xMDAwJTJDNjU5JnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/Vr-0HjkOot5duywNKMNAcCHxConGuUBoS8td_EQJsEY=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5nX1daYU1BSTZTUFUuanBnP3Jlc2l6ZT0xMDI0JTJDNjc1JnNzbD0x 1024w, https://reader.miniflux.app/proxy/yYEBhRbFjwz9hsGDekd3Wgsay3j05U2R8bKf85cFHSg=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5nX1daYU1BSTZTUFUuanBnP3Jlc2l6ZT0zMDAlMkMxOTgmc3NsPTE= 300w, https://reader.miniflux.app/proxy/TFApGGpfSHTR0WAifHxb4VEk7ZVguEtWFFcJIfYwf7s=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5nX1daYU1BSTZTUFUuanBnP3Jlc2l6ZT03NjglMkM1MDYmc3NsPTE= 768w, https://reader.miniflux.app/proxy/1ssz4qIuRa0EUenICbYCg-mNHp5FVQ6ef_BnpDUReWE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5nX1daYU1BSTZTUFUuanBnP3Jlc2l6ZT0xMjAwJTJDNzkxJnNzbD0x 1200w, https://reader.miniflux.app/proxy/Gy4WTKKpenkYBvnC8Aa1P0bJ5bk9ZiZlkwOR-Qq4LaE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5nX1daYU1BSTZTUFUuanBnP3c9MTI2OCZzc2w9MQ== 1268w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>According to physics, quantum mechanics is mathematically equivalent whether it is thought of as fields or a superposition of all possible paths.</p>
+
+
+
+<p>The Schrodinger equation, which describes the behavior of quantum mechanical systems, gives the same answers whether solving the field or taking one electron or one photon and making it go through every possible path and then superimposing all those paths simultaneously.</p>
+
+
+
+<p>The behavior of an electron is the sum total of all possibilities. The field and the one electron can be thought of as the same, a matter of perspective. The field is a superposition of paths, while the electron is a smooth field evolving according to the Schrodinger equation.</p>
+
+
+
+<p>The field usually segments into pockets, and the topology of the magnetic field changes through a process known as magnetic reconnection, which has real-world implications, like solar flares and coronal mass ejections in the sun.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNhcWMakAEqcm-.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/pz1lhz94FVFRImP4IkBClTAYccxxwV4GO25FLZMDi9U=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5oY1dNYWtBRXFjbS0uanBnP3Jlc2l6ZT0xMDAwJTJDNTg4JnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/p-e1Mdvr8SjEJgVOZwdAVap7aE4gs0T7IOKRSwgOyFI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5oY1dNYWtBRXFjbS0uanBnP3Jlc2l6ZT0xMDI0JTJDNjAyJnNzbD0x 1024w, https://reader.miniflux.app/proxy/AqvsdMlfs80OCXxREznk7xspLRopZdtLsoSq1zJD5vw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5oY1dNYWtBRXFjbS0uanBnP3Jlc2l6ZT0zMDAlMkMxNzYmc3NsPTE= 300w, https://reader.miniflux.app/proxy/slxknPWmkOu-t0xeNoSohs0wvaNil3_xIPL26KrVi-w=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5oY1dNYWtBRXFjbS0uanBnP3Jlc2l6ZT03NjglMkM0NTImc3NsPTE= 768w, https://reader.miniflux.app/proxy/UF507o3Vg_qInvac8LiPylD3se3nW9JyREIccZuDcok=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5oY1dNYWtBRXFjbS0uanBnP3Jlc2l6ZT0xNTM2JTJDOTAzJnNzbD0x 1536w, https://reader.miniflux.app/proxy/jbRbBmQIFsqKbtwdTXZBsp1PJMW-3aUkEn7oEwtm7qw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5oY1dNYWtBRXFjbS0uanBnP3Jlc2l6ZT0xMjAwJTJDNzA2JnNzbD0x 1200w, https://reader.miniflux.app/proxy/KpHFoBmPAvKEqty8hF-pCGN6_b1V9VrrOAP5WYLcxww=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5oY1dNYWtBRXFjbS0uanBnP3c9MTcwNCZzc2w9MQ== 1704w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>A possible solution to the “boundary problem” (how is it that we are not all just one bound experience? why are we separate moments of experience?) is that the thing that creates a boundary around an individual’s experience is a topological pocket, and within it, there is a field.</p>
+
+
+
+<p>The question then arises, what does it feel like to be that field in the topological pocket?</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNiG9kagAAvCM1.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/u6h8A0FDx1XVxHgGyG0r9f91NRORROe6M6XVWPhjNZo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pRzlrYWdBQXZDTTEuanBnP3Jlc2l6ZT0xMDAwJTJDNTYxJnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/bdaZRhv2l7BkGATA0Z5BOHmyHdQcLMm1qRZy8ZabQ-U=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pRzlrYWdBQXZDTTEuanBnP3Jlc2l6ZT0xMDI0JTJDNTc0JnNzbD0x 1024w, https://reader.miniflux.app/proxy/VnCpkHGdkRHzy2HDE3KtnpFg-Ivoiuz8isCIp67qNQI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pRzlrYWdBQXZDTTEuanBnP3Jlc2l6ZT0zMDAlMkMxNjgmc3NsPTE= 300w, https://reader.miniflux.app/proxy/_OeiCFHhZuZV_B3KaFsFfd6rAlM17Lo_yHq0c1W6cjM=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pRzlrYWdBQXZDTTEuanBnP3Jlc2l6ZT03NjglMkM0MzEmc3NsPTE= 768w, https://reader.miniflux.app/proxy/sQjkflxWVlIz80t3ZLZvcOzS4gqfHZwanBFSJ_udweo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pRzlrYWdBQXZDTTEuanBnP3Jlc2l6ZT0xNTM2JTJDODYxJnNzbD0x 1536w, https://reader.miniflux.app/proxy/_7zCuLO-iLCLXJ8n8SZkikWJwu5OIruRGeEsxfdt5jE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pRzlrYWdBQXZDTTEuanBnP3Jlc2l6ZT0xMjAwJTJDNjczJnNzbD0x 1200w, https://reader.miniflux.app/proxy/Ux8-heb975GgzSlsW5e4B7egiHEosnI2mFzdJxLiktQ=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pRzlrYWdBQXZDTTEuanBnP3c9MTk0NCZzc2w9MQ== 1944w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>The field is equivalent to all possible paths within it. Thus, to be a pocket in the field might feel exactly like every point in that field, knowing about every other point. This interaction between all points within the field gives rise to the entirety of the shape.</p>
+
+
+
+<p>The experience of being the one electron in the topological pocket would be precisely the superposition of all possible points of view that exist within it. It aligns with what mystics have talked about for a long time – the <em><a href="https://qualiacomputing.com/2019/11/05/toy-story-4-20-movie-review/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">screen of consciousness is not fundamental</a></em>, but emergent.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNiUVgacAESE_d.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/87UL0Fue8bYA3XmVwMcVDDJUQlE09NwJDVUHl42y4OU=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pVVZnYWNBRVNFX2QuanBnP3Jlc2l6ZT0xMDAwJTJDNTU5JnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/8Iv9ih26Pw7mhczgY7MmzKgK1QySFFPMPRgIJwiBXlI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pVVZnYWNBRVNFX2QuanBnP3Jlc2l6ZT0xMDI0JTJDNTcyJnNzbD0x 1024w, https://reader.miniflux.app/proxy/NRHjAa4-F0eAjtMOU49GPu1hYxiNlaQpE7KTcuDI3gg=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pVVZnYWNBRVNFX2QuanBnP3Jlc2l6ZT0zMDAlMkMxNjgmc3NsPTE= 300w, https://reader.miniflux.app/proxy/I0yZ_XTqnAvJQjjcA7LY7k0bHpXE_WIGwjOIQHWpQ1U=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pVVZnYWNBRVNFX2QuanBnP3Jlc2l6ZT03NjglMkM0Mjkmc3NsPTE= 768w, https://reader.miniflux.app/proxy/pE7U5PWtJuL9oeWjAexVnOPr5nhtIURJTQh38BXKsfE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pVVZnYWNBRVNFX2QuanBnP3Jlc2l6ZT0xNTM2JTJDODU4JnNzbD0x 1536w, https://reader.miniflux.app/proxy/LcU-zzTSuZMCrP6MRkacVJ1XQ2zWaRwuKsLrH0F_TDE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pVVZnYWNBRVNFX2QuanBnP3Jlc2l6ZT0xMjAwJTJDNjcwJnNzbD0x 1200w, https://reader.miniflux.app/proxy/obgbLuChgPBnJ4bkg9bHxttBIy5J1kVJFsPyHzvSB40=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5pVVZnYWNBRVNFX2QuanBnP3c9MTk0NCZzc2w9MQ== 1944w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>The screen of consciousness is a special case that requires the field to be shaped in a peculiar way so that “it seems like there is a screen from every possible trajectory within the topological pocket of the field”.</p>
+
+
+
+<p>Symmetry, meaning “invariance upon transformation”, can entail that many different paths look the same. As a consequence, in some situations making the pocket perfectly symmetrical (via e.g. <a href="https://qri.org/blog/neural-annealing" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">neural annealing</a>) can collapse the dimensionality of the experience.</p>
+
+
+
+<p>As a powerful metaphor, the symmetrical nature of electron orbitals might offer insights into the experience of altered states of consciousness, such as those induced by high doses of LSD.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/image-1.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/BpjytBDOR7LCxMt2OHwfuTnVOa8rPf9vAk5rp3aEKl0=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0xLnBuZz9yZXNpemU9MTAwMCUyQzU2MiZzc2w9MQ==" alt="" srcset="https://reader.miniflux.app/proxy/We7A9an2kf9b7AXhMQ5VDS1pfbxy_vuZINFKiKQTJ2k=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0xLnBuZz9yZXNpemU9MTAyNCUyQzU3NSZzc2w9MQ== 1024w, https://reader.miniflux.app/proxy/gcxSKR--BSxCGB97UCf4Y6kQ7pIN0A3YDkAtZNNQp2A=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0xLnBuZz9yZXNpemU9MzAwJTJDMTY4JnNzbD0x 300w, https://reader.miniflux.app/proxy/Q0QjN6KGH1LSCLmkZjzGZyjjcqIflZk-XLmh59TCdsE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0xLnBuZz9yZXNpemU9NzY4JTJDNDMxJnNzbD0x 768w, https://reader.miniflux.app/proxy/6cCNUuiw5x3vCGMazxNNLTjDNlNy26W49hJCsx4qwvg=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0xLnBuZz9yZXNpemU9MTUzNiUyQzg2MyZzc2w9MQ== 1536w, https://reader.miniflux.app/proxy/hdPexCkiynrv2eUu0Aq1ItGtw8XCjX6sUXeXHBSCSkI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0xLnBuZz9yZXNpemU9MTIwMCUyQzY3NCZzc2w9MQ== 1200w, https://reader.miniflux.app/proxy/NLh4bj55Um-FDK7iUK9hTToMrkKffXE7o9XMLc1r8G0=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0xLnBuZz93PTE5MzQmc3NsPTE= 1934w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>Under LSD, symmetrification of self within a pocket collapses multiple points of view, leading to a collective wavefront. Points within the pocket sense the field and advance as a collective wavefront, blurring the line between a point and a wave.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/image-2.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/k6y8aPdfxRzOyNH7uCB1PH4AoeU-2EXWn3wccUJh8LE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0yLnBuZz9yZXNpemU9MTAwMCUyQzU2MCZzc2w9MQ==" alt="" srcset="https://reader.miniflux.app/proxy/7H8ZxDIYjj_Ky-QvKnHnObO9cODc56KGDq_DvRvUGHU=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0yLnBuZz9yZXNpemU9MTAyNCUyQzU3MyZzc2w9MQ== 1024w, https://reader.miniflux.app/proxy/CDQqpVgLR_rRwYbYvW0nmG9HUPt31s00x4U3CjeXSlI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0yLnBuZz9yZXNpemU9MzAwJTJDMTY4JnNzbD0x 300w, https://reader.miniflux.app/proxy/zl1gZzmNdI44-9x8UEQSGgtFf_z8fQesMHUhMOELWe8=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0yLnBuZz9yZXNpemU9NzY4JTJDNDI5JnNzbD0x 768w, https://reader.miniflux.app/proxy/V03sMnFHySvBmrGD-SvdXoTkb6RS5IMPd4BkMZqyERw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0yLnBuZz9yZXNpemU9MTUzNiUyQzg1OSZzc2w9MQ== 1536w, https://reader.miniflux.app/proxy/pJ-uKlbz-xqScsQoctls6CqGKc-9D0iONrGtbVmGPiA=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0yLnBuZz9yZXNpemU9MTIwMCUyQzY3MSZzc2w9MQ== 1200w, https://reader.miniflux.app/proxy/AHDh_2WxWN7eE5IeDng9PuT0sMibtvf0OuFArL8BtVc=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0yLnBuZz93PTE5Mjgmc3NsPTE= 1928w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>Some states emit coherent waves of awareness in resonant patterns, with inherent trade-offs between location and frequency due to the Heisenberg Uncertainty Principle.</p>
+
+
+
+<p>The symmetrical structures on DMT function as “witnesses of the scene”. Hence, with each pattern of resonance that gets organized in a symmetrical way, you add a new “reference frame” for the experience.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNk7WoaUAEpBDv.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/BGCE8CAtlDnjTzbqwZifuc59yrO0GhF9_gBwjvl_mwc=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5rN1dvYVVBRXBCRHYuanBnP3Jlc2l6ZT0xMDAwJTJDNTYwJnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/ilNHBPrmz4jaFjuPnYI0hORiZ84VP0W0o96RlBc_9yk=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5rN1dvYVVBRXBCRHYuanBnP3Jlc2l6ZT0xMDI0JTJDNTczJnNzbD0x 1024w, https://reader.miniflux.app/proxy/3cnW0FdWy0q5xKi5SzpPPKgCbYmOjEwhXqXeHc8rEb0=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5rN1dvYVVBRXBCRHYuanBnP3Jlc2l6ZT0zMDAlMkMxNjgmc3NsPTE= 300w, https://reader.miniflux.app/proxy/-qOjNpSvNKK-9AcL8de2dYPeup13FhVD9PAuIe1HcAc=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5rN1dvYVVBRXBCRHYuanBnP3Jlc2l6ZT03NjglMkM0MzAmc3NsPTE= 768w, https://reader.miniflux.app/proxy/gq_QKN63VTtl_8itbhiSyeAC18Mo5n8b54gVMhSO5OU=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5rN1dvYVVBRXBCRHYuanBnP3Jlc2l6ZT0xNTM2JTJDODYwJnNzbD0x 1536w, https://reader.miniflux.app/proxy/5gpcHs-OgJqlUDpwOLTwXw-yMAI_59w3v4ZKYsepMXk=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5rN1dvYVVBRXBCRHYuanBnP3Jlc2l6ZT0xMjAwJTJDNjcyJnNzbD0x 1200w, https://reader.miniflux.app/proxy/naGUbror7VHHugeigSedxs_RB91Wlc9sOBvMsOJMbkQ=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5rN1dvYVVBRXBCRHYuanBnP3c9MTkzMiZzc2w9MQ== 1932w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>With a physics of consciousness, we should be able to look at trippy DMT replication images, understand their non-trivial meaningful content, and interpret the reason for the existence of the patterns and structures within them.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNlffXaYAAljv_.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/CRKF9pzn4gbs53i5XygL5r_85Nn5B3-jtVe98ZZRyh4=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5sZmZYYVlBQWxqdl8uanBnP3Jlc2l6ZT0xMDAwJTJDNTYyJnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/RGKmvWIsgSD4XyRUlRDSbJKAyAFV6u4Cm2QtkS6ev7E=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5sZmZYYVlBQWxqdl8uanBnP3Jlc2l6ZT0xMDI0JTJDNTc1JnNzbD0x 1024w, https://reader.miniflux.app/proxy/qCitE00VbJI32fC-aDNmt9V-s-TukOZcVOtmpT31vqo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5sZmZYYVlBQWxqdl8uanBnP3Jlc2l6ZT0zMDAlMkMxNjgmc3NsPTE= 300w, https://reader.miniflux.app/proxy/if9OEDbBG9R-3SYOLPtsCxoIkOos3NTpmvHh-6fosN0=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5sZmZYYVlBQWxqdl8uanBnP3Jlc2l6ZT03NjglMkM0MzEmc3NsPTE= 768w, https://reader.miniflux.app/proxy/OwPdGxfSHen67Mmr8QYqv-oHR781bSOgSsBuYDZnZjE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5sZmZYYVlBQWxqdl8uanBnP3Jlc2l6ZT0xNTM2JTJDODYzJnNzbD0x 1536w, https://reader.miniflux.app/proxy/kwL41iTF9yRgENE7rmIsNZDjHEwAo6FrEaIfIrb7Xcw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5sZmZYYVlBQWxqdl8uanBnP3Jlc2l6ZT0xMjAwJTJDNjc0JnNzbD0x 1200w, https://reader.miniflux.app/proxy/Xi9InwnXWmE5H4qcmAa00FAG1nuLsY6tDD1azsb2kBw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5sZmZYYVlBQWxqdl8uanBnP3c9MTkzNCZzc2w9MQ== 1934w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>DMT induces resonant and coherent states of consciousness that emit waves of awareness that are in phase and which seem to be subjectively equivalent to many points simultaneously sensing the (<a href="https://qualiacomputing.com/2022/12/28/cartoon-epistemology-by-steven-lehar-2003/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">inner</a>) environment.</p>
+
+
+
+<p>These patterns on DMT are not just “3D patterns in the visual field”; they are far deeper and more coherent, with each cluster of coherence functioning as a coherent witness that is measuring its environment (art by <a href="https://symbolika.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Symbolika</a>).</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNnXN0aQAMNlmB.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/fJvHH9fFoMT5-reu58Dzuprvg-xhEHmILc75VHTyGyg=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5uWE4wYVFBTU5sbUIuanBnP3Jlc2l6ZT0xMDAwJTJDNTM1JnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/5qNgZ8ldrO4BuZ0XshY1o9HgtViDtuD40kj9BYmsmOc=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5uWE4wYVFBTU5sbUIuanBnP3Jlc2l6ZT0xMDI0JTJDNTQ4JnNzbD0x 1024w, https://reader.miniflux.app/proxy/u9Yq9i6x_hz76FmwX7TqjAM1VQTBHIjq3czVo6kQHDU=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5uWE4wYVFBTU5sbUIuanBnP3Jlc2l6ZT0zMDAlMkMxNjEmc3NsPTE= 300w, https://reader.miniflux.app/proxy/GROttKfFBJ7eRK4CQzPLZCK0VgR5oeki8AJQoziqn9M=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5uWE4wYVFBTU5sbUIuanBnP3Jlc2l6ZT03NjglMkM0MTEmc3NsPTE= 768w, https://reader.miniflux.app/proxy/YXXPVt2DazHbfTiK2rDB2_s2bfFOb4O_nyxb_iyi6hE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5uWE4wYVFBTU5sbUIuanBnP3Jlc2l6ZT0xMjAwJTJDNjQyJnNzbD0x 1200w, https://reader.miniflux.app/proxy/viA2zLLYZrKHX-ARCxyZGPPL7mAeUVXm_eQrQBzcRbM=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5uWE4wYVFBTU5sbUIuanBnP3c9MTI1NiZzc2w9MQ== 1256w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>Understanding this we can reason about highly coherent states of consciousness like those induced by psychedelics, meditation, and other ecstatic/annealing methods in terms of a network of coherence, where each frequency at which the hierarchy is coherent with one another may tell us a lot about them.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNng-BacAA912l.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/4n7VHVBQcKPyyC6oOpi_PLmznfHHJ5q7UH-FRtn2UXo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5uZy1CYWNBQTkxMmwuanBnP3Jlc2l6ZT0xMDAwJTJDNTU5JnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/C3qKdV3X_jFER_AFfSyHhzMV1vB_TCeNUMGf9aj83AM=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5uZy1CYWNBQTkxMmwuanBnP3Jlc2l6ZT0xMDI0JTJDNTcyJnNzbD0x 1024w, https://reader.miniflux.app/proxy/2bRCUnMcYl5WHndEJs7bgZDvCSRDT43x6xm2MoZ9GlY=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5uZy1CYWNBQTkxMmwuanBnP3Jlc2l6ZT0zMDAlMkMxNjgmc3NsPTE= 300w, https://reader.miniflux.app/proxy/ELO5r-i6ZJrDT45Zntf6qv_nE5cd5Vu4_0ZfHXwCFp4=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5uZy1CYWNBQTkxMmwuanBnP3Jlc2l6ZT03NjglMkM0Mjkmc3NsPTE= 768w, https://reader.miniflux.app/proxy/pZ4wxBQUYi8P7x732G-I3RmOnOk83LbTXNcqmWCJlso=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5uZy1CYWNBQTkxMmwuanBnP3Jlc2l6ZT0xNTM2JTJDODU4JnNzbD0x 1536w, https://reader.miniflux.app/proxy/gbnal3Fl58UsLugSRhhg3gjCDbJkn58-s2do1eBO61g=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5uZy1CYWNBQTkxMmwuanBnP3Jlc2l6ZT0xMjAwJTJDNjcwJnNzbD0x 1200w, https://reader.miniflux.app/proxy/W1MhEF7nH2IXUgMgU_V7XZhTBu41N-meAufgSEgyPXo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5uZy1CYWNBQTkxMmwuanBnP3c9MTkzMCZzc2w9MQ== 1930w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>The witness is a coherent wavefront of awareness that is interacting or embedded within your consciousness. As a consequence, it is possible to describe a state of consciousness as a network of coherence.</p>
+
+
+
+<figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/Pab4Z1N0z1_am7WRJ7lrxSFCuM_iZjI9IPNu33Ig5Yw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5udS0zYUFBQTJlcWstMTAyNHg1NzUuanBnP3NzbD0x" loading="lazy"/></figure><figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/N0F3xEhTrauMapU16Xszza1KW4Rad_ZtUlb1YgmXDgc=/aHR0cHM6Ly9pMS53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5udV9XYVlBRW1obngtMTAyNHg1NzQuanBnP3NzbD0x" loading="lazy"/></figure>
+
+
+
+<p></p>
+
+
+
+<p>States where the physics of consciousness is evident, include DMT’s <em>Symmetry Hotel</em>, where every two-dimensional surface looks like a coherent symmetry group, and <em>Crystal Worlds</em>, which are between <em>Magic Eye </em>and the <em>Waiting Room</em>.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/image-3.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/KB0jx-0RAs-lkZXsaJyw46STpheHGjL4GXHDrKkjAjo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0zLnBuZz9yZXNpemU9MTAwMCUyQzU1OCZzc2w9MQ==" alt="" srcset="https://reader.miniflux.app/proxy/BgSlmC5x8oVpjCsVVvJgJpl5n9_ZGnnqudfL1rDxCX0=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0zLnBuZz9yZXNpemU9MTAyNCUyQzU3MSZzc2w9MQ== 1024w, https://reader.miniflux.app/proxy/TIExgCtuyySBe8A_biVkBypWkxqB1lZDzSg0S38qkPU=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0zLnBuZz9yZXNpemU9MzAwJTJDMTY3JnNzbD0x 300w, https://reader.miniflux.app/proxy/MOsCB6m5GYG5-iCPZ-6ZRyt2-MQ4rpZ1eGz6pStDwss=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0zLnBuZz9yZXNpemU9NzY4JTJDNDI4JnNzbD0x 768w, https://reader.miniflux.app/proxy/C_DLY_4VgXTKkFR4oRoZq_wLp234_zC-MTq4un0sNaM=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0zLnBuZz9yZXNpemU9MTUzNiUyQzg1NiZzc2w9MQ== 1536w, https://reader.miniflux.app/proxy/MvPgZRET3nPkX7wqzD56qOf9J7qXKmXOUtvrUYT8-cg=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0zLnBuZz9yZXNpemU9MTIwMCUyQzY2OSZzc2w9MQ== 1200w, https://reader.miniflux.app/proxy/kDqn8xfmSsfBgxmdJReLHKGOKX_6Z8Ahv_26O7svyeo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS0zLnBuZz93PTE5NDQmc3NsPTE= 1944w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>In the <em>Crystal Worlds</em>, the witnesses are three-dimensional, and there is a question of whether they are external or internal entities. However, they are coherent witnesses of awareness that are interacting or embedded within your consciousness and their inherently 3D “point of view” has geometric effects on the unfolding of the experience.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/image-4.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/OwgnxSWBO9XQhZg_dDl3QWfFPwsRC8Wee5hCQVIMcfU=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS00LnBuZz9yZXNpemU9MTAwMCUyQzU2MSZzc2w9MQ==" alt="" srcset="https://reader.miniflux.app/proxy/FB7Y41VPgwDhcDRMVzaM6mVLPvXHrrQ9LZOqVTGWWBI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS00LnBuZz9yZXNpemU9MTAyNCUyQzU3NCZzc2w9MQ== 1024w, https://reader.miniflux.app/proxy/doN-DwQIlt8gBsCPWNL0aToFPQFX0vKIndMd-JacCtU=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS00LnBuZz9yZXNpemU9MzAwJTJDMTY4JnNzbD0x 300w, https://reader.miniflux.app/proxy/8KmsohoSIOskypRLl4hxbchWaTe0FWsd7lLlCqJca78=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS00LnBuZz9yZXNpemU9NzY4JTJDNDMwJnNzbD0x 768w, https://reader.miniflux.app/proxy/FtaMNM4RC6WeVu3ju2Nz3Mi28Plt6yBm5Rv-oQPPwY8=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS00LnBuZz9yZXNpemU9MTUzNiUyQzg2MSZzc2w9MQ== 1536w, https://reader.miniflux.app/proxy/5Re6GH46AbP59FxZ-IHRyLDszzWtnJ2kE2fXUVeV6bI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS00LnBuZz9yZXNpemU9MTIwMCUyQzY3MiZzc2w9MQ== 1200w, https://reader.miniflux.app/proxy/O2lcUcydQ-GP9s2thQnaKd4O7J-pRAefjs4Rblyy9hc=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS00LnBuZz93PTE5Mzgmc3NsPTE= 1938w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>Coherence can help us understand the <a href="https://youtu.be/e0mpayTwKDM" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">zoo of possible self-organizing principles</a> that arise on something like DMT. The network of coherence can crystallize in various shapes, including low-level features or high-level features, fractally coherent, or hyperbolic networks (also <a href="https://symbolika.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Symbolika</a> below). Many <a href="https://qualiacomputing.com/2020/03/20/qc-coronavirus-edition-preventing-pandemics-by-living-on-toroidal-planets-and-other-cocktail-napkin-ideas/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">scale-specific network geometries</a> are possible.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/image-5.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/2sShZIjNtolvzGKTytBSWNf-ExlERZY-csWh4fie4l4=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS01LnBuZz9yZXNpemU9MTAwMCUyQzU1NiZzc2w9MQ==" alt="" srcset="https://reader.miniflux.app/proxy/lGdwksbj_mes8MA6wK5PentBTAbDhjI0d6vFEvFrzAM=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS01LnBuZz9yZXNpemU9MTAyNCUyQzU2OSZzc2w9MQ== 1024w, https://reader.miniflux.app/proxy/6Ny4AtBs9-x12TWeljhQhieQ-wAxmT-_BMYdswU_7Jo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS01LnBuZz9yZXNpemU9MzAwJTJDMTY3JnNzbD0x 300w, https://reader.miniflux.app/proxy/E09Amwqu-8F7BWSDYI7m7szjOJF4MIy7SonYYeCueEY=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS01LnBuZz9yZXNpemU9NzY4JTJDNDI2JnNzbD0x 768w, https://reader.miniflux.app/proxy/7q-iXyfBKoUJHRdTcEMaR7QSvkKev3KFgyEf8CEupcI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS01LnBuZz9yZXNpemU9MTIwMCUyQzY2NiZzc2w9MQ== 1200w, https://reader.miniflux.app/proxy/GIUVMk8xKnmfjMZQoYVflozAPaIns_SVMHA4qadsOKo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS01LnBuZz93PTEyNjgmc3NsPTE= 1268w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>On DMT, as soon as there are coherent symmetrical structures there will be mirror rooms.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/image-6.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/l4W379FLqygCZRm71h5JHYD_A0ZvIGdKllFd6lC0yyM=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS02LnBuZz9yZXNpemU9MTAwMCUyQzU5OCZzc2w9MQ==" alt="" srcset="https://reader.miniflux.app/proxy/i-RP7ChvV40XlMl4FS6o5uv6DKh0Z67gmi1UUJpahkc=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS02LnBuZz9yZXNpemU9MTAyNCUyQzYxMiZzc2w9MQ== 1024w, https://reader.miniflux.app/proxy/Ud30Td5V8E6KY8jfOFmRg5lNvJ3QuDL3JaORgBWSS3s=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS02LnBuZz9yZXNpemU9MzAwJTJDMTc5JnNzbD0x 300w, https://reader.miniflux.app/proxy/vwP8liqZnX32tTi6dCA641urF3tmoUaDd2bklp0oVic=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS02LnBuZz9yZXNpemU9NzY4JTJDNDU5JnNzbD0x 768w, https://reader.miniflux.app/proxy/ype0taAiHN6F0gNVkCSgGlHbir1szyMMreHrGYLe1WM=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS02LnBuZz9yZXNpemU9MTUzNiUyQzkxOCZzc2w9MQ== 1536w, https://reader.miniflux.app/proxy/AN-tgL8FHQcsPHCxIv_U4hhVt0f4j9DXk6wxpORzkJw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS02LnBuZz9yZXNpemU9MTIwMCUyQzcxNyZzc2w9MQ== 1200w, https://reader.miniflux.app/proxy/9QFMVHair4dgD1Zu_xqEYxWuq0pmNpM0Do7VUl9emak=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS02LnBuZz93PTE4MTgmc3NsPTE= 1818w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>Each surface emits a coherent wavefront of awareness that reflects off of the other surfaces, and this behavior is reminiscent of light in that a coherent witness bounces off of itself in the various surfaces. This may explain why “mirror room experiences” on DMT are incredibly common.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/image-7.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/rDi77CiU4zJ5so-t-dDUd153efgp8FFzT1LHaoCraSw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS03LnBuZz9yZXNpemU9MTAwMCUyQzY3NCZzc2w9MQ==" alt="" srcset="https://reader.miniflux.app/proxy/IdUedQ0JhoIT_PIlkryyxtV9Wu7k1nS_8Qw1UllxBJI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS03LnBuZz9yZXNpemU9MTAyNCUyQzY5MCZzc2w9MQ== 1024w, https://reader.miniflux.app/proxy/OHPC9YnDrQRqdGBn2VbpsuiD1AhlVr6JpLHcdtGNCmo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS03LnBuZz9yZXNpemU9MzAwJTJDMjAyJnNzbD0x 300w, https://reader.miniflux.app/proxy/lSWAPeRKEuqJOgAG07ZzbIhEnP1lQ8h1SMYUIptH1AI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS03LnBuZz9yZXNpemU9NzY4JTJDNTE4JnNzbD0x 768w, https://reader.miniflux.app/proxy/wEsQqn6WevYnGMq52nRoVbPh43yWsBM3YJDl9XQNOHo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS03LnBuZz9yZXNpemU9MTIwMCUyQzgwOSZzc2w9MQ== 1200w, https://reader.miniflux.app/proxy/TLPh53cWFlgn5x_3EZatgFKmiXFAFvr3uHe9uARUBNg=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS03LnBuZz93PTEzNTAmc3NsPTE= 1350w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>Coherence has a remarkable effect on consciousness that mirrors its effect on light. When mirrors become parallel, the subject and object collapse with perfect symmetry. Every alignment feels like a union because the witness and the witnessed collapse.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/image-8.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/Xacr-yhLcYoiM3f8Au9wS229QIqQaopwCDG0DnNtAY8=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS04LnBuZz9yZXNpemU9NTE4JTJDMzIzJnNzbD0x" alt="" width="518" height="323" srcset="https://reader.miniflux.app/proxy/mCDoBXwkgMbDHaxKHzxFskP282WK4AHjWdKbYTBlHec=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS04LnBuZz93PTk3NiZzc2w9MQ== 976w, https://reader.miniflux.app/proxy/an433LyXlWm0WcaETPjujsxWnIhh0nPKQCyl3-zOXyE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS04LnBuZz9yZXNpemU9MzAwJTJDMTg3JnNzbD0x 300w, https://reader.miniflux.app/proxy/zPeC-ALA_V0IxryZoioQHPWly5iT4saDSNL1_C-3Y4I=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9pbWFnZS04LnBuZz9yZXNpemU9NzY4JTJDNDc4JnNzbD0x 768w" sizes="(max-width: 518px) 100vw, 518px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>DMT induces resonant and coherent states of consciousness that emit waves of awareness, and each cluster of coherence functions as a coherent witness that is measuring its environment.</p>
+
+
+
+<p>Understanding the physics of consciousness on DMT can help us understand the network of coherence, the zoo of possible self-organizing principles that arise, and the common experiences such as the mirror room experiences.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNrCZQaIAEG6zV.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/7js72-004hn7Lq9dyhAxFd4Y9uDAxzUtBNn8DMJO_Jg=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yQ1pRYUlBRUc2elYuanBnP3Jlc2l6ZT0xMDAwJTJDNTYwJnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/oRS0DX-w45ZR-7X12EbpNbwr5Fxc7Jb4iNs9-xf6exc=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yQ1pRYUlBRUc2elYuanBnP3Jlc2l6ZT0xMDI0JTJDNTczJnNzbD0x 1024w, https://reader.miniflux.app/proxy/zfnuXYupv_yd0qq3gD_Yi5rTGSqpORNjc-OYvjVtuGI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yQ1pRYUlBRUc2elYuanBnP3Jlc2l6ZT0zMDAlMkMxNjgmc3NsPTE= 300w, https://reader.miniflux.app/proxy/vyh_1zO2LMeotSmZDbAH6p_nCWf1UU9xY2KZNk8aKVE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yQ1pRYUlBRUc2elYuanBnP3Jlc2l6ZT03NjglMkM0Mjkmc3NsPTE= 768w, https://reader.miniflux.app/proxy/xd08r3HIVdfBva9DlHOJDYz3H1b4nnRefNcQ0X9V1mI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yQ1pRYUlBRUc2elYuanBnP3Jlc2l6ZT0xNTM2JTJDODU5JnNzbD0x 1536w, https://reader.miniflux.app/proxy/9GBxU8U59G-q6tzArdHhntRArr17wDxknDX_IzkzApY=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yQ1pRYUlBRUc2elYuanBnP3Jlc2l6ZT0xMjAwJTJDNjcxJnNzbD0x 1200w, https://reader.miniflux.app/proxy/AslGhebX81_3FIo3FL_jNeO2yKKekOb0EB8UPcKPdcs=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yQ1pRYUlBRUc2elYuanBnP3c9MTk0MiZzc2w9MQ== 1942w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>The present depiction is an intuitive and conceptual overview, while a formal and scientifically rigorous formulation is currently under development. Nonetheless, we are enthusiastic about its capacity to provide comprehensive explanations and develop its practical applications.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/02/FpNrLh8aEAYWY70.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/VBi1RaD_86rj4qDtxVy-MqnhKCAHTsrnhSQJvGKEvm0=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yTGg4YUVBWVdZNzAuanBnP3Jlc2l6ZT0xMDAwJTJDNTYwJnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/qCNnRkyCAOYvAI0ZhkOODSPIdyMXmUwdQg3TzEfnbPE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yTGg4YUVBWVdZNzAuanBnP3Jlc2l6ZT0xMDI0JTJDNTczJnNzbD0x 1024w, https://reader.miniflux.app/proxy/UsMoWeHT1fpuXgZbNsZMhIg3Vq-_KBL_TXZqdF9e88k=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yTGg4YUVBWVdZNzAuanBnP3Jlc2l6ZT0zMDAlMkMxNjgmc3NsPTE= 300w, https://reader.miniflux.app/proxy/P15OkGflVGHHvdDD-Zu5Rlx7mtAMCVNBbw3BuKSUcGg=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yTGg4YUVBWVdZNzAuanBnP3Jlc2l6ZT03NjglMkM0MzAmc3NsPTE= 768w, https://reader.miniflux.app/proxy/z940nT0YGaMbXRip74wH6csO9sjdGuAYQWOSi_yHaag=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yTGg4YUVBWVdZNzAuanBnP3Jlc2l6ZT0xNTM2JTJDODYwJnNzbD0x 1536w, https://reader.miniflux.app/proxy/LorFu2FEyohF1aqmAi47R1ARWM22y86xMaKvGSq-KJI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yTGg4YUVBWVdZNzAuanBnP3Jlc2l6ZT0xMjAwJTJDNjcyJnNzbD0x 1200w, https://reader.miniflux.app/proxy/-kLU5nkN4-8uxtA-RsvcoFpnNTAdLIrArSLa5UUwrZI=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5yTGg4YUVBWVdZNzAuanBnP3c9MTkzNiZzc2w9MQ== 1936w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>QRI’s GVT and Psychedelic Thermodynamics are ambitious proposals, but they are exciting ones that could open up new avenues of exploration in the field of consciousness.</p>
+
+
+
+<p>If you are as excited as we are about the direction consciousness research is headed, please consider learning more at qri.org</p>
+
+
+
+<p>You can find the full presentation on GVT here. Thank you <a href="https://twitter.com/kfshinozuka" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">@kfshinozuka</a> and Ali-Reza Omidvar and the rest of the folks at <a href="https://twitter.com/OxPsySoc" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">@OxPsySoc</a> for hosting this event:</p>
+
+
+
+<figure>
+<iframe width="1000" height="563" src="https://www.youtube-nocookie.com/embed/NXEpMqpl09M?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-US&amp;autohide=2&amp;wmode=transparent" allowfullscreen="true" sandbox="allow-scripts allow-same-origin allow-popups" loading="lazy"></iframe></figure><p></p>
+
+
+
+<p>Thank you for reading!</p>
+
+
+
+<p>Infinite bliss!</p>

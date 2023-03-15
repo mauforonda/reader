@@ -1,0 +1,188 @@
+<p>
+In <a href="https://blog.jonudell.net/2023/02/02/mapping-the-wider-fediverse/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Mapping the wider fediverse</a> I showed how a new table added to the <a href="https://github.com/turbot/steampipe-plugin-mastodon" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Mastodon plugin</a> — mastodon_domain_block — enables queries that find which servers are moderating which other servers. For example, here are servers on <a href="https://nerdculture.de" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">nerdculture.de</a>‘s list of offenders.</p>
+<pre>select
+  server,
+  domain,
+  severity
+from
+  mastodon_domain_block
+where
+  server = &#39;https://nerdculture.de&#39;
+
++------------------------+--------------------------------+----------+
+| server                 | domain                         | severity |
++------------------------+--------------------------------+----------+
+| https://nerdculture.de | roysbeer.place                 | silence  |
+| https://nerdculture.de | *.10minutepleroma.com          | suspend  |
+| https://nerdculture.de | *.activitypub-troll.cf         | suspend  |
+
+...snip...
+
+| https://nerdculture.de | shitposter.club                | suspend  |
+| https://nerdculture.de | wolfgirl.bar                   | suspend  |
+| https://nerdculture.de | www2.gabbers.me                | suspend  |
++------------------------+--------------------------------+----------+
+</pre>
+<p>
+I used the new query pattern to build a <a href="https://github.com/turbot/steampipe-mod-mastodon-insights" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">dashboard</a> to report, for each server in the home timeline:</p>
+<ul>
+<li>The list of blocking servers.
+</li><li>The count of blocked servers for each blocking server.
+</li><li>The list of blocking servers for each blocked server, and the count of those blocking servers.
+</li></ul>
+<p>
+This was a good start, but I had a hunch that <a href="https://blog.jonudell.net/2023/01/16/mastodon-relationship-graphs/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">relationship graphs</a> would reveal non-obvious connections among these servers. And indeed they do! Here’s a view of the new graph-enriched dashboard.</p>
+<p>
+<a href="https://i0.wp.com/jonudell.info/images/blocked-and-blocking.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/prwIonjvKPWsSPak8Kgn7qayuc8KLTt1ereYXKYR7Sk=/aHR0cHM6Ly9pMC53cC5jb20vam9udWRlbGwuaW5mby9pbWFnZXMvYmxvY2tlZC1hbmQtYmxvY2tpbmcucG5nP3c9NjU2JnNzbD0x" loading="lazy"/></a></p>
+<p>
+The left pane shows the blocked servers shunned by a blocking server selected from those in the home timeline. The right pane has the inverse view: the blocking servers that shun a selected blocked server. These were the two categories I defined for the first iteration of these graphs.</p>
+<pre>category &#34;blocking_server&#34; {
+  color = &#34;darkgreen&#34;
+  icon = &#34;server&#34;
+}
+
+category &#34;blocked_server&#34; {
+  color = &#34;darkred&#34;
+  icon = &#34;server&#34;
+}
+</pre>
+<p>
+Here’s the code for one of the graphs.</p>
+<pre>graph {
+   node {
+    base = node.blocking_server
+  }
+   node {
+    base = node.blocked_server
+  }
+   node {
+    base = node.blocked_and_blocking_server
+  }
+   edge {
+    args = [ self.input.blocking_server.value ]
+    base = edge.match_blocked_server
+  }
+   edge {
+    args = [ self.input.blocking_server.value ]
+    base = edge.match_blocking_server
+  }
+}
+</pre>
+<p>
+Here is the definition of node.blocking_server, which refers to category.blocking_server.</p>
+<pre>node &#34;blocking_server&#34; {
+  category = category.blocking_server
+  sql = &lt;&lt;EOQ
+    with servers as (
+      select distinct
+        blocking_server,
+        blocked_server
+      from
+        blocking_servers(${local.limit})
+    )
+    select
+      blocking_server as id,
+      blocking_server as title
+    from
+      servers
+    order by
+      blocking_server
+  EOQ
+}
+</pre>
+<p>
+The FROM clause calls blocking_servers(), a <a href="https://blog.jonudell.net/2021/08/21/postgres-functional-style/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">set-returning function</a> defined like so.</p>
+<pre>create or replace function public.blocking_servers(max int) returns table (
+  blocking_server text,
+  blocked_server text
+) as $$
+with servers as (
+  select distinct
+    server as domain,
+    &#39;https://&#39; || server as server_url
+  from
+    mastodon_toot
+  where
+    timeline = &#39;home&#39;
+  limit max
+),
+blocking_and_blocked as (
+  select
+    s.domain as blocking_domain,
+    d.domain as blocked_domain
+  from
+    servers s
+  join
+    mastodon_domain_block d
+  on
+    s.server_url = d.server
+)
+select
+  blocking_domain,
+  blocked_domain
+from
+  blocking_and_blocked
+order by
+  blocking_domain, blocked_domain
+$$ language sql
+</pre>
+<p>I thought these ingredients would suffice. But when I began poking around in the graphs made with these definitions, infosec.exchange behaved strangely. Someties it would appear as a blocking server, other times as a blocked server. I was missing a category!</p>
+<pre>category &#34;blocked_and_blocking_server&#34; {
+  color = &#34;orange&#34;
+  icon = &#34;server&#34;
+}
+</pre>
+<p>
+As you can see in the graph, infosec.exchange not only blocks 73 servers, it is also blocked by two servers: religion.masto.host and weatherishappening.net. Why?</p>
+<p>
+<a href="https://weatherishappening.net/about" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">weatherishappening.net</a> calls infosec.exchange a “HOSTING DEATH SPIRAL FASCIST ORGANIZATION” and blocks it with “Limited” severity.</p>
+<p>
+<a href="https://religion.masto.host/about" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">religion.masto.host</a> blocks infosec.exchange at the “Suspended” level, but does not explain why (“Reason not available”).</p>
+<p>
+Although those servers could, in turn, be blocked by others, no such blocks appear in the block lists of my immediate server neighborhood.</p>
+<pre>&gt; select count(*) from blocking_servers(100) where blocked_server = &#39;weatherishappening.net&#39;
++-------+
+| count |
++-------+
+| 0     |
++-------+
+
+&gt; select count(*) from blocking_servers(100) where blocked_server = &#39;religion.masto.host&#39;
++-------+
+| count |
++-------+
+| 0     |
++-------+
+</pre>
+<p>
+There is another switch hitter in my neighborhood, though. <a href="https://c.im" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">c.im</a> is blocked by <a href="https://blog.jonudell.net/2023/03/07/visualizing-mastodon-server-moderation/me.dm" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">me.dm</a> and <a href="https://octodon.social" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">octodon.social</a>.</p>
+<p>
+<a href="https://i0.wp.com/jonudell.info/images/blocked-and-blocking2.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/BxJJuRguIMoe1io6uLY6HN9SWNNnJAGpdyC0oWO7R70=/aHR0cHM6Ly9pMC53cC5jb20vam9udWRlbGwuaW5mby9pbWFnZXMvYmxvY2tlZC1hbmQtYmxvY2tpbmcyLnBuZz93PTY1NiZzc2w9MQ==" loading="lazy"/></a></p>
+<p>
+Why?</p>
+<p>
+me.dm (Medium) has “Suspended” c.im for “Hate speech”.</p>
+<p>
+octodon.social has “Suspended” c.im for “Reason not available”.</p>
+<p>
+When the opinions and policies of your server differ from those of mine, we see different realities through our respective lenses. Could such fragmentation drive the fediverse-curious back into arms of Big Social? I’m sure that will happen — indeed is happening — to some degree.</p>
+<p>
+But I hope that some of us, at least, will learn to thrive in diverse networks of online communities, aware of the kaleidoscopic interplay of filters but not overwhelmed by it. That skill  will serve us well IRL too. To acquire it, we’ll need to visualize the operation of our filters. One great way to do that: SQL queries that drive relationship graphs.</p>
+<p>—<br/>
+1 <a href="https://blog.jonudell.net/2022/11/28/autonomy-packet-size-friction-fanout-and-velocity/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/11/28/autonomy-packet-size-friction-fanout-and-velocity/</a><br/>
+2 <a href="https://blog.jonudell.net/2022/12/06/mastodon-steampipe-and-rss/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/06/mastodon-steampipe-and-rss/</a><br/>
+3 <a href="https://blog.jonudell.net/2022/12/10/browsing-the-fediverse/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/10/browsing-the-fediverse/</a><br/>
+4 <a href="https://blog.jonudell.net/2022/12/17/a-bloomberg-terminal-for-mastodon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/17/a-bloomberg-terminal-for-mastodon/</a><br/>
+5 <a href="https://blog.jonudell.net/2022/12/19/create-your-own-mastodon-ux/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/19/create-your-own-mastodon-ux/</a><br/>
+6 <a href="https://blog.jonudell.net/2022/12/22/lists-and-people-on-mastodon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/22/lists-and-people-on-mastodon/</a><br/>
+7 <a href="https://blog.jonudell.net/2022/12/29/how-many-people-in-my-mastodon-feed-also-tweeted-today/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/29/how-many-people-in-my-mastodon-feed-also-tweeted-today/</a><br/>
+8 <a href="https://blog.jonudell.net/2022/12/31/instance-qualified-mastodon-urls/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2022/12/31/instance-qualified-mastodon-urls/</a><br/>
+9 <a href="https://blog.jonudell.net/2023/01/16/mastodon-relationship-graphs/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/01/16/mastodon-relationship-graphs/</a><br/>
+10 <a href="https://blog.jonudell.net/2023/01/21/working-with-mastodon-lists/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/01/21/working-with-mastodon-lists/</a><br/>
+11 <a href="https://blog.jonudell.net/2023/01/26/images-considered-harmful-sometimes/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/01/26/images-considered-harmful-sometimes/</a><br/>
+12 <a href="https://blog.jonudell.net/2023/02/02/mapping-the-wider-fediverse/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/02/02/mapping-the-wider-fediverse/</a><br/>
+13 <a href="https://blog.jonudell.net/2023/02/06/protocols-apis-and-conventions/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/02/06/protocols-apis-and-conventions/</a><br/>
+14 <a href="https://blog.jonudell.net/2023/02/14/news-in-the-fediverse/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/02/14/news-in-the-fediverse/</a><br/>
+15 <a href="https://blog.jonudell.net/2023/02/26/mapping-people-and-tags-on-mastodon/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/02/26/mapping-people-and-tags-on-mastodon/</a><br/>
+16 <a href="https://blog.jonudell.net/2023/03/07/visualizing-mastodon-server-moderation/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/03/07/visualizing-mastodon-server-moderation/</a><br/>
+17 <a href="https://blog.jonudell.net/2023/03/14/mastodon-timelines-for-teams/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://blog.jonudell.net/2023/03/14/mastodon-timelines-for-teams/</a></p>

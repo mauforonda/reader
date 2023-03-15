@@ -1,0 +1,280 @@
+<p>We have recently seen some <a href="https://thezvi.substack.com/p/ai-1-sydney-and-bing" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">incredible</a> “rogue AI behavior” in Microsoft’s Bing.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/03/image.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/8ITfVs3MMbhCZUHk5tOg4fY7zPFY7hjL0sECbrnpw8A=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9pbWFnZS5wbmc_cmVzaXplPTUyNiUyQzI3OSZzc2w9MQ==" alt="" width="526" height="279" srcset="https://reader.miniflux.app/proxy/2ocSAYZnvXiYLp9Aen2-1ulEo61sjMp2E_r2Ql9OykE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9pbWFnZS5wbmc_cmVzaXplPTEwMjQlMkM1NDQmc3NsPTE= 1024w, https://reader.miniflux.app/proxy/AiZ9pIT2XysfezvazUovV0jvkHQHLOHE02_9dR1ZWZU=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9pbWFnZS5wbmc_cmVzaXplPTMwMCUyQzE1OSZzc2w9MQ== 300w, https://reader.miniflux.app/proxy/ukUf87tobBxug0ZuLuagi34DvdDnVJVOc92Z8XHdosg=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9pbWFnZS5wbmc_cmVzaXplPTc2OCUyQzQwOCZzc2w9MQ== 768w, https://reader.miniflux.app/proxy/-M3SBp3uqHyIKiuBOIvGcHBTDPhC6UixVpA-C1jKS2I=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9pbWFnZS5wbmc_cmVzaXplPTEyMDAlMkM2Mzcmc3NsPTE= 1200w, https://reader.miniflux.app/proxy/RWL_k40pwRB_TYKFI9JGcaEdRJNO7IAqeQaY1goImjw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9pbWFnZS5wbmc_dz0xNDQ2JnNzbD0x 1446w" sizes="(max-width: 526px) 100vw, 526px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>While reading some of these outputs I was reminded of… <strong>rogue DMT entities</strong>. Indeed, sometimes people have DMT experiences and encounter beautiful angelic beings that want to help and heal you (and sometimes do so!), but other times people encounter demonic beings that want to harm and hurt you (and sometimes do so!).</p>
+
+
+
+<p>Just as it is unwise to roll-out a technology like Bing that is full of potential misaligned subagents, I also reckon that it’s unwise to deliver DMT therapy to the masses *before* fixing this bug. While I think that responsible consenting adults *should* be allowed to experiment with DMT as they wish, the bar for “safety and effectiveness” should be much higher when we think of it as a possible mental health intervention.</p>
+
+
+
+<p>Ok, so both Bing and DMT experiences can create insane rogue subagents. How are these two things more than merely superficially connected?</p>
+
+
+
+<p>Someone I talked to recently was actually worried that DMT entities are perhaps controlling these AI technologies to infiltrate our world. I don’t think that’s a very likely explanation. Rather, I think there is a much more parsimonious explanation for this similarity. Namely that both involve having a <strong>predictive system spun up misaligned agents in order to fit narratives that appear in the training data</strong>. Let’s dig in!</p>
+
+
+
+<h2>When in Rome</h2>
+
+
+
+<p>Last year when <a href="https://qualiacomputing.com/2022/10/30/and-it-starts-with-a-bang-a-treatise-on-narrative-thermodynamics/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">playing with GPT</a> and also after talking to <a href="https://youtu.be/Oz4G9zrlAGs" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Connor from Conjecture</a> who introduced me to <a href="https://www.lesswrong.com/users/janus-1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Janus</a>‘ <a href="https://www.lesswrong.com/posts/vJFdjigzmcXMhNTsx/simulators" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Simulator Theory</a>[1] (see also: <a href="https://astralcodexten.substack.com/p/janus-simulators" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Janus’ Simulators</a> by Scott Alexander) it became clear that there is a similarity between DMT entities and the quasi-agentic simulated characters GPT-like systems spin up in order to predict the next token in text. If this is true, then this suggests that there might be interesting transpositions between the strategies and concerns discussed in the <a href="https://www.alignmentforum.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">AI Alignment world</a> and the <a href="https://qri.org/blog/rigorous-reports" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">findings from psychedelic phenomenology</a> about how to have a good time with the beings that you encounter in far-out places. Let me explain.</p>
+
+
+
+<p>A very large fraction of our nervous system is dedicated to <a href="https://slatestarcodex.com/2017/09/05/book-review-surfing-uncertainty/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">minimizing surprise</a> (cf. <a href="https://youtu.be/45tG1oVigVo" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">free energy principle</a>, predictive processing). Now, I don’t think that this is all that the nervous system is doing, nor do I think it is a theory of consciousness. But it is a very important piece of the puzzle nonetheless.</p>
+
+
+
+<p><a href="https://qri.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">QRI</a> has championed a set of integrative models that tie together the free energy principle within the larger context of consciousness research in order to explain psychedelic phenomenology. Most recently we have been discussing the frame of “<a href="https://qualiacomputing.com/2023/02/25/good-vibe-theory/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Psychedelic Thermodynamics</a>”, which brings together <a href="https://opentheory.net/2019/11/neural-annealing-toward-a-neural-theory-of-everything/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Neural Annealing</a>, <a href="https://qri.org/blog/nonlinear-wave-computing" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Non-Linear Wave Computing</a>, <a href="https://opentheory.net/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Johnson’s</a> <a href="https://opentheory.net/PrincipiaQualia.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Symmetry Theory of Valence</a>, and <a href="https://qri.org/blog/digital-sentience" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Topological Approaches to Binding</a>.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/03/FpNwjK8aMAUUcjx.jpg?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/KhIO8h2Tn_I0T0yMaQCV1C3BOMBlK-UVjZhOqn-vff8=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9GcE53aks4YU1BVVVjanguanBnP3Jlc2l6ZT0xMDAwJTJDNTYzJnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/4VSvPRvsLtuCLeyM6LQILMAQ8hrZLH1vZnw8SIvu-aU=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9GcE53aks4YU1BVVVjanguanBnP3Jlc2l6ZT0xMDI0JTJDNTc2JnNzbD0x 1024w, https://reader.miniflux.app/proxy/fEfKTj6xeztVFVwtUhPGCAMMl1CHhSBJDMqcnzhfSCo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9GcE53aks4YU1BVVVjanguanBnP3Jlc2l6ZT0zMDAlMkMxNjkmc3NsPTE= 300w, https://reader.miniflux.app/proxy/uWkl6GGWNU7lqC2beq-BH517xh3Zo-Wy3am2iBBMznE=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9GcE53aks4YU1BVVVjanguanBnP3Jlc2l6ZT03NjglMkM0MzImc3NsPTE= 768w, https://reader.miniflux.app/proxy/F-8AdxIZ_wR0aL4_tcwlnkSNEYEjhQbyAVPOpbkDwI4=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9GcE53aks4YU1BVVVjanguanBnP3Jlc2l6ZT0xNTM2JTJDODY1JnNzbD0x 1536w, https://reader.miniflux.app/proxy/ICsNWvZLPb8pQF-1vQC7GJ7caayxCcniupAStk5KsIU=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9GcE53aks4YU1BVVVjanguanBnP3Jlc2l6ZT0xMjAwJTJDNjc1JnNzbD0x 1200w, https://reader.miniflux.app/proxy/Ty_rTDVJE05J5p1zXbWAT_lXHqmH6HE8nz_nBwEcvXM=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9GcE53aks4YU1BVVVjanguanBnP3c9MTk0MCZzc2w9MQ== 1940w" sizes="(max-width: 1000px) 100vw, 1000px" loading="lazy"/></a></figure>
+
+
+<p></p>
+
+
+
+<p>The bit that is relevant from <em>Psychedelic Thermodynamics</em> here is that there is a process by which psychedelics intensify the background noise that, together with sensory stimuli, stimulate internal representations (via a process of <a href="https://en.wikipedia.org/wiki/Stochastic_resonance" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">stochastic resonance</a>). Importantly, internal representations function as energy sinks from the point of view of the background noise, whereas they are energy sources from the point of view of other representations. </p>
+
+
+
+<p>The two key features that work as energy sinks of this background energy are symmetry and “recognition”. This was first discussed in <a href="https://qri.org/blog/hyperbolic-geometry-dmt" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The Hyperbolic Geometry of DMT Experiences</a>, but it also shows up elsewhere[2]. In particular, when you can interpret an ambiguous input as “expected given the context” then that <em>sucks energy out of the background noise</em> in order to energize a gestalt that binds together low-level features into a coherent high-level percept (e.g. Necker Cube). When this “clicks” it will radiate out its excess energy to the rest of the field, and also *constraint* the shape of the field such that it functions as new context that changes the probability for other ambiguous sensations to collapse into representations consistent with the new gestalt. In other words, on DMT you can go from what feels like “pure undifferentiated non dual consciousness” to “this specific carnival with harlequins doing acrobatics” by collapsing how you interpret slight imperfections in the field, which then <em>snowball</em> into instantiating an entire realm of experience where each shape resonates with every other shape (a “vibe lock”, as we call it).</p>
+
+
+
+<figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/zvgeFai4pkUFJGHFR3TM_JTPWjXsNYPlDTJxcRbhCFg=/aHR0cHM6Ly9pMS53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9GbmM2aFRSYVFBQU9EWFIuanBlZz9zc2w9MQ==" loading="lazy"/></figure><figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/k9RquYQBPZQ_hXsAraNOtCfsyGDeKdEk9M_UkGuGQfo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy8zMTE3NDE1MzBfMTAxNjAzMjUwODgyMTI1OTRfMTc2MTk4MTAzOTM1NjM4NTY0OV9uLTEwMjR4NzU3LmpwZz9zc2w9MQ==" loading="lazy"/></figure><figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/8e8A_hhIx3BLzHW8JSrZVte39z7cpjgE_LilNhSsbDI=/aHR0cHM6Ly9pMi53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy8xc3A0NjdseHB2aDYxLmpwZz9zc2w9MQ==" loading="lazy"/></figure>
+
+
+
+<p></p>
+
+
+
+<p>Now, once you interpret a sufficient number of features as high-level gestalts, then they will start interacting with each other and further constraining the possible interpretations of the rest of the field. This, I believe, is somewhat similar to GPT, except on a full spatiotemporal context rather than a sequence of tokens context (cf. <a href="https://en.wikipedia.org/wiki/Graphical_model" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">probabilistic graphical models</a>).</p>
+
+
+
+<p>If this model is correct, as soon as you start collapsing the energized field into interpretations, then a particular narrative structure may start dominating and “making sense” of what is happening. This can indeed snowball into getting into tricky and sometimes really unpleasant situations.</p>
+
+
+
+<figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/Pab4Z1N0z1_am7WRJ7lrxSFCuM_iZjI9IPNu33Ig5Yw=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5udS0zYUFBQTJlcWstMTAyNHg1NzUuanBnP3NzbD0x" loading="lazy"/></figure><figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/ped3z44Vc8yFskZcp6AzIyw0r_vth7pzjOFvImmqyRQ=/aHR0cHM6Ly9pMS53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMS8wNS9IZWFsaW5nLVRyYXVtYS13aXRoLU5ldXJhbC1Bbm5lYWxpbmctQE94Zm9yZFBzeWNoZWRlbGljU29jaWV0eS1jb3B5LTE0LnBuZz9zc2w9MQ==" loading="lazy"/></figure><figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/N0F3xEhTrauMapU16Xszza1KW4Rad_ZtUlb1YgmXDgc=/aHR0cHM6Ly9pMS53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMi9GcE5udV9XYVlBRW1obngtMTAyNHg1NzQuanBnP3NzbD0x" loading="lazy"/></figure><figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/8o147ANyfEajvTjoRVfZOHQ6syfUI6ptELpTToEXHRI=/aHR0cHM6Ly9pMi53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMS8wNS9IZWFsaW5nLVRyYXVtYS13aXRoLU5ldXJhbC1Bbm5lYWxpbmctQE94Zm9yZFBzeWNoZWRlbGljU29jaWV0eS1jb3B5LTE3LnBuZz9zc2w9MQ==" loading="lazy"/></figure>
+
+
+
+<p><em>Slides from:</em> <a href="https://qri.org/blog/neural-annealing" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><em>Healing Trauma With Neural Annealing</em></a></p>
+
+
+
+<p></p>
+
+
+
+<h2>Meet the Meeseeks</h2>
+
+
+
+<p>In parallel, it’s important to briefly mention the role that subagents typically have in us. Namely, what <a href="https://twitter.com/RomeoStevens76" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Romeo Stevens</a> calls the “Mr. Meeseeks interpretation of subagents”. The subagents are created to achieve a goal, they don’t really like existing, but will continue to hang in there until they’re convinced the goal has been met. The subagents are spun up in order to accomplish goals that would normally require you to spend a lot of attention but that cannot be simply offloaded to muscle memory (e.g. like driving a car). Typical examples are things like the response one may have to living in an environment with very negative people (say, dark triad personalities) where you need to spin up subagents that behave like them so that you can predict their next move. In cases of PTSD, it may be that part of the problem is that one created a lot of rather negative subagents (of people, situations, dynamics, actual physical hazards, etc.) and that as a collective they reinforce each other.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/03/image-1.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img width="130" height="148" src="https://reader.miniflux.app/proxy/uXK7YJCVp_r0f9OVU06qYNVI9oFZ_wQZmkFEv_fDyok=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9pbWFnZS0xLnBuZz9yZXNpemU9MTMwJTJDMTQ4JnNzbD0x" alt="" loading="lazy"/></a></figure>
+
+
+<p><em>Hi I’m Mr. Meeseeks! I see your grandmother is emotionally abusive. I’ll pretend to be her inside your mind so that you can predict what she will do next and thus avoid getting harmed. Let me know when she’s gone so I can go *PUFF*.</em></p>
+
+
+
+<h2>The Return to Goodness</h2>
+
+
+
+<p>Here loving-kindness meditation can be enormously helpful. I refer you to Anders &amp; Maggie’s meditative exercise to heal negative internal subagents (see <a href="https://qualiacomputing.com/2022/02/13/qualia-productions-presents-thinking-like-a-musical-instrument-and-other-communications-from-our-swedish-qri-advisors/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Letter XI: Douglas Adams</a>). Essentially what you do is visualize a container of very positive benevolent and high-valence feelings (call it <em>unconditional love</em>, <em>God</em>, <em>primordial goodnes</em>s, <em>Buddhamind</em>, etc. – or whatever really resonates in your inner world simulation). You then <strong>tell the story</strong> that subagents come out of that container and once they achieve their goals they go back to it in order to “merge with love” once again. You can even explain this to the subagents, and they can feel the sense of relief that comes when they finally achieve union with this primordial love. Gently guide them towards it. And if you do this over and over, you will in fact be cleaning up a lot of subagents lingering implicit in the field, until you achieve a smooth field with high-valence and a non-dual feel.</p>
+
+
+
+<p>Ok, so taking stock: our field of experience can “collapse” into familiar representations when they start predicting each other, sub-agents cease to exist once they have achieved their goal, and loving-kindness exercises can help you steer lost and lingering subagents towards their re-unification with primordial love (or, again, whatever resonates with you!). More so, these subagents are embedded in the predictive processing hierarchy and will try to do exactly what you find them most likely to do. So given these conditions, how do you align DMT entities?</p>
+
+
+
+<h2>Aligning DMT Entities</h2>
+
+
+
+<p>Here are some suggestions:</p>
+
+
+
+<p>* <strong>First</strong>, the simplest and most straightforward intervention is to simply get good and prosocial training data. This is highlighted by the <a href="https://www.lesswrong.com/posts/D7PumeYTDPfBTp3i7/the-waluigi-effect-mega-post" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Waluigi Effect</a>, in which Bing sort of turns nasty *because* character trait inversion is a *trope* in human stories, and there are plenty of such stories online. This could in principle be fixed by having an AI that classifies tropes and narrative structures and filters texts that contain any hint of Waluigi tropes or character trait switching narrative structures before feeding them as training data to GPT. Similarly, in the case of DMT entities, you can go to an environment with vetted inputs that are always really wholesome. Recall: the influence that the last couple of weeks have on what comes up in a psychedelic experience is vastly larger than what you experienced a year or a decade ago. The recent inputs matter a lot, so don’t worry about the fact that you’ve seen horror movies in the past. If you’ve been consuming really wholesome media for the last three months, that will matter enormously more.</p>
+
+
+
+<p>* <strong>Second</strong>, add really highly-weighted good training data that makes it so that aligned outcomes are always the most likely. In our case, this would be indeed things like exercising the “gently guide subagents to the pool of love” move so that it’s a very likely outcome and they predict that that’s what’s going to happen. Train on visualizing the Buddha with a hand up saying “don’t fear”. Internalize that “love is always stronger than fear” (which is something I actually believe in, based on many incredible experiences). And so on.</p>
+
+
+
+<figure><a href="https://i0.wp.com/qualiacomputing.com/wp-content/uploads/2023/03/image-2.png?ssl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img width="600" height="435" src="https://reader.miniflux.app/proxy/J6sNHUauSLOE7W7XXrsD3KOwKqSWciFxOlH0mkOkCsQ=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9pbWFnZS0yLnBuZz9yZXNpemU9NjAwJTJDNDM1JnNzbD0x" alt="" srcset="https://reader.miniflux.app/proxy/YV1BjmW71NpxfU5lcaByPnFclAcrGNs0b0CaWKE3u-E=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9pbWFnZS0yLnBuZz93PTYwMCZzc2w9MQ== 600w, https://reader.miniflux.app/proxy/wcpKO1AhWN0lNPwSY6QZhvbxoWtwMfaYskUEODA3Zpo=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9pbWFnZS0yLnBuZz9yZXNpemU9MzAwJTJDMjE4JnNzbD0x 300w" sizes="(max-width: 600px) 100vw, 600px" loading="lazy"/></a></figure>
+
+
+<p><em>Don’t Fear</em></p>
+
+
+
+<p>* <strong>Third</strong>, use good vibes as the base. Essentially, negative entities feed off of negatively valanced patterns. Literally, feeling somatic sensations of pinching, pressure, twisting, etc. can become the building blocks of gestalts that end up becoming negative entities. Starting out with a very positive and smooth field reduces the fuel that negative entities have to construct themselves in resonance with patterns of dissonance. We’ve heard about good outcomes from <a href="https://youtu.be/tybOi4hjZFQ" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Wim Hof</a> and <a href="https://youtu.be/Ee4wLOuMNkM" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">chanting metta meditation</a> before trips (YMMV!).</p>
+
+
+
+<p>* <strong>Fourth</strong>, <a href="https://thezvi.wordpress.com/2017/12/02/more-dakka/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">More Dakka </a>on equanimity. Remember the teachings of <a href="https://dharmaseed.org/retreats/4496/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Rob Burbea</a> (“what you resist persists”) and <a href="https://youtu.be/9u9nuSf9g1g" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Shinzen Young</a> (“suffering equals pain times resistance”). Essentially, resisting negative energies makes them stronger. This is doubly so on psychedelic states of consciousness. Instead, remember that high enough equanimity, where you don’t let positive or negative vibes “move you”, maximizes the <a href="https://qualiacomputing.com/2021/04/04/buddhist-annealing-wireheading-done-right-with-the-seven-factors-of-awakening/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">rate of stress dissipation</a> within your nervous system, and this accelerates the rate at which negative vibes flow through you and exit your system via some kind of radiative cooling process currently not understood by science. Practice taking cold showers without stalling or flinching, or eating relatively hot peppers without resisting or letting the pain get to you. At least for DMT realms <a href="https://youtu.be/loCBvaj4eSg" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">up to Magic Eye-level</a> the physical discomfort of the state is not stronger than a cold shower… that is, if you don’t resist it! If you do resits it, the discomfort can be drastically amplified, and you can turn some waves in a glass of water into a storm.</p>
+
+
+
+<p>* <strong>Fifth</strong>, going back to the Waluigi Effect: the article explains why Reinforcement Learning via Human Feedback (RLHF) doesn’t really work for it (it encourages Waluigies to hide and pretend, rather than really getting rid of them). So instead of simply “rewarding good behavior” I suggest you reward “clean subagentic structures”. There is a “vibe” to the “intentions” of subagents. And you will soon realize that Waluigies have an “ambiguous intention” vibe. Use metta to reward sub-agents that have collapsed and clean intentions instead. Importantly, <strong>this takes priority over rewarding subagents that are really good at flattering you</strong>, for example. Because you’ve been fed enough narratives where flattery turns to betrayal that this is not a guarantee of alignment.</p>
+
+
+
+<p>* <strong>Sixth</strong>, I think the principles of <a href="https://www.lesswrong.com/posts/xqkGmfikqapbJ2YMj/shard-theory-an-overview" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Shard Theory</a> might be really useful here. In particular, really notice how not only is it that you can reward sub-agents with your attention and your top-down vibes, but once they are sufficiently “alive” they can actually start to *reward each other*. This, I believe, is how you get things like “<a href="https://en.wikipedia.org/wiki/Egregore" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">egregore</a> possessions” and other uncanny related phenomena. More on this below. You want to have a clean and smooth field of awareness so that subagent conspiracies can be easily spotted and addressed before they snowball.</p>
+
+
+
+<h2>Example Entities</h2>
+
+
+
+<p>Finally, let me ground this with some of the common categories of DMT entities:</p>
+
+
+
+<figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/CNh8kOPjIDv0R9EqCjf-I8g8MjmztX0B9K_qbjkE0AQ=/aHR0cHM6Ly9pMS53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy8yMDEwOTEyMTNfMTAxNjEwNzc3NzIzMDM4MTJfNTUxNTkxNTY5NDQ2NzkwMDI5X24tMTAyNHg0NjEuanBnP3NzbD0x" loading="lazy"/></figure><figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/hOE_NaWmmOpEe8CHwQWva_ZbrY4evjYcu_v3ypzWLho=/aHR0cHM6Ly9pMS53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy8yMDI3NjM2MDRfMTAxNTk3MTk3MjUxMzE1MTRfNDk2NTIxMjE0MzMzNTczMTkxMV9uLTEwMjR4MTAwMS5qcGc_c3NsPTE=" loading="lazy"/></figure><figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/zjsqS7SN4aeYFiyRiH8Tjn1nykf2jWyPLj3Ym__EFdA=/aHR0cHM6Ly9pMi53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9zaG9nZ290aF9ieV9lY2xlY3RpeHhfZDRycjdyOS1mdWxsdmlldy5qcGVnP3NzbD0x" loading="lazy"/></figure>
+
+
+
+<p></p>
+
+
+
+<p><strong>Shoggoths</strong>: These are entities that seem to emerge out of the resonance of interpersonal representations of preferences at the cultural level. The things that you can “recognize the field as” in this case are “people doing what they want” where what they want may be different than what you want. If you have an adversarial relationship with a particular culture or subculture and you resist these wants, they will get reinforced by you disliking them and in some cases can start to locally bind with each other until you get what some psychonauts call “an amalgam” of cultural preferences. This is also what I think people are talking about when they say they have met an “egregore” of a culture of ideology on DMT. These are hard or perhaps impossible to align: cultures are in fact self-contradictory. So the amalgam will typically hold a lot of internal contradictions, which it will then externalize. The way to deal with a Shoggoth involves re-annealing, in addition to the suggestions above. DMT Shoggoths are sort of a symptom of failed clean annealing, in that they “coagulate” rather than “click”, and are amalgams of lots of incompatible preferences loosely held by a political coalition. This could perhaps be predicted from first principles with non-linear wave computing and Shard Theory, so the fact that it does happen to people makes it a salient case for this field of study.</p>
+
+
+
+<figure><img srcset="https://reader.miniflux.app/proxy/CgXwqtyje09TQrA8oHXUHm6xKqgel1_XCVd8x_y0Wfg=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9jOGE0MmQxNjA2MzU3NzEuWTNKdmNDd3hOekkxTERFek5Ea3NNVEV4TERRMk1RLnBuZz9zdHJpcD1pbmZvJnc9NDA0JnNzbD0x 404w" alt="" src="https://reader.miniflux.app/proxy/GfDnY4KbOcHQCBPF-t4KCtm7kE0TWAmipRZz06V3rAA=/aHR0cHM6Ly9pMC53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9jOGE0MmQxNjA2MzU3NzEuWTNKdmNDd3hOekkxTERFek5Ea3NNVEV4TERRMk1RLnBuZz9zc2w9MQ==" loading="lazy"/></figure><figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/fenNykROWT8kCZIAoZC1abRvH-96j3bOsMmK75xA2F0=/aHR0cHM6Ly9pMS53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy84MDBweC1ETVRfSmVzdGVyLTYxNXgxMDI0LmpwZWc_c3NsPTE=" loading="lazy"/></figure>
+
+
+
+<p></p>
+
+
+
+<p><strong>Demons</strong>: these are sub-agents that come up in “hell realms” which are states of consciousness where you believe that you are a bad person and deserve some kind of punishment. The demons here are just, in my opinion, doing exactly what you expect them to do, namely, punishing you. I think that in addition to equanimity and metta, these entities also respond to boosting narratives of redemption that are wholesome in nature. For example, there is this spiritual belief that demons ultimately are all on the path towards God… they are just in a more extreme version of the <a href="https://en.wikipedia.org/wiki/Parable_of_the_Prodigal_Son" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Parable of the Prodigal Son</a>, and they might take thousands of years to redeem themselves. But they will do so. In this case, you sending them metta and telling them that they are actually intrinsically good, can slowly, but surely, help them unwind their dissonant configurations.</p>
+
+
+
+<figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/MtBjDExk-o5rVHHBeCUUSFXB1xmqvBdNYuRJRShn6cA=/aHR0cHM6Ly9pMi53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9kbXRfamVzdGVyc19ieV90cnlwdGFtaW5ldmlzaW9uc19kYjcyZTl2LWZ1bGx2aWV3LmpwZWc_c3NsPTE=" loading="lazy"/></figure><figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/rUxWK0HqA-PUzsBbWXcjSenA6tcLhj6K_lEMLN44568=/aHR0cHM6Ly9pMS53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9kbXQtamVzdGVycy5qcGVnP3NzbD0x" loading="lazy"/></figure><figure><img srcset="" alt="" src="https://reader.miniflux.app/proxy/RoHZyHjolQf96ggDIowop-OGDxbOlAnL1LEsmye2A0I=/aHR0cHM6Ly9pMi53cC5jb20vcXVhbGlhY29tcHV0aW5nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9XZWJwLm5ldC1yZXNpemVpbWFnZS04LmpwZz9zc2w9MQ==" loading="lazy"/></figure>
+
+
+
+<p></p>
+
+
+
+<p><strong>Harlequins</strong>: these are entities from what feels like some kind of “clown dimension”. They are <em>extremely common on DMT</em>. Because we have so many tropes of negative clowns, this can often turn ugly. I suggest you reinforce the narrative of “harlequins as tricksters who are child-like in their curiosity about consciousness”. In fact, prompted properly and softened with enough metta, harlequins can be extremely helpful for consciousness research. You can play positive sum games with them in which you give them a really good time, and in exchange they help you explore the most surprising features of the space you are inhabiting. They can become “consciousness research assistants” with a flair for the weird and wondrous.</p>
+
+
+
+<p>There is of course a zoo of possible entities, and in fact many possible entities currently exist merely in potential. As we imagine new healthy and wholesome tropes in our sense-making attempts for DMT realms, I predict that we will “unlock” new and more helpful DMT beings. In particular, I think that <a href="https://qualiacomputing.com/2017/12/20/the-universal-plot-part-i-consciousness-vs-pure-replicators/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Team Consciousness</a> tropes can give us a really good aesthetic to use as the primary energy sink for “recognizing” entities in this space. If you ever meet <a href="https://qualiacomputing.com/2019/02/24/burning-man-theme-camps-of-the-year-2029-from-replicator-to-rainbow-god-1-2/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Rainbow God</a>, say hi for me. It *always* gives you a mind-blowing revelation about reality and consciousness that enriches your life for the better <img src="https://reader.miniflux.app/proxy/Pm4t2_1OV3jUiNx-XDdBlWzD7LmljLEt_SlkPxbPhQ8=/aHR0cHM6Ly9zLncub3JnL2ltYWdlcy9jb3JlL2Vtb2ppLzE0LjAuMC83Mng3Mi8xZjYwOS5wbmc=" alt="😉" loading="lazy"/></p>
+
+
+
+<h2>How does this help AI Alignment?</h2>
+
+
+
+<p>I will conclude by saying that studying DMT entities might actually be a way to make headway in AI alignment in two ways. First, because they genuinely can be really smart entities you can interact with, on a bounded timeframe, and who seem to share a lot of features with AI technologies. They are human-level or higher in their intelligence (because they have access to new geometries of phenomenal space and hence to novel qualia computing, and because they lack the ego defenses that <em>make you</em> incapable of having certain thoughts!). And second, because all of the above may actually also transpose to discussions in AI alignment. In particular, I think the above suggestions are helpful for researchers. AI alignment can expose you to a lot of mental health risks (from the belief that “we’re doomed”, to creating strong <a href="https://www.reddit.com/r/Tulpas/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">tulpas</a> that don’t align with your own values!). The recommendations I provide above may transpose to that domain: realize that even AI alignment research makes you spin up subagents inside you! The tools I shared may be helpful to increase the mental health of anyone studying this field who is now suffering from an infestation of negative subagents. Bring them back to Love!</p>
+
+
+
+<p></p>
+
+
+
+<p><strong>See also:</strong></p>
+
+
+
+<ul>
+<li><a href="https://wiki.dmt-nexus.me/Main_Page" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DMT-Nexus</a>‘ <a href="https://wiki.dmt-nexus.me/Hyperspace_lexicon" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Hyperspace Lexicon</a></li>
+
+
+
+<li><a href="https://meltingasphalt.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Kevin Simler</a>‘s <a href="https://meltingasphalt.com/neurons-gone-wild/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Neurons Gone Wild</a></li>
+
+
+
+<li><a href="http://qri.org" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">QRI</a>‘s <a href="https://qri.org/blog/magical-creatures" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Magical Creatures</a> line of <a href="https://qri.org/scents" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">scents</a></li>
+
+
+
+<li><a href="https://smoothbrains.net/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">CubeFlipper</a>‘s <a href="https://smoothbrains.net/posts/2022-09-22-how-to-use-dmt-without-going-insane.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">How to use DMT without going insane</a></li>
+
+
+
+<li><a href="https://youtu.be/v7FGcpVR2hE" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Trolls Under the Bridge</a> by Evan McMullen at <a href="https://www.youtube.com/@TheStoa" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The Stoa</a></li>
+
+
+
+<li><a href="https://youtu.be/Eg3cQXf4zSE" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The Bayesian Brain and Meditation</a> by <a href="https://www.youtube.com/@ShamilChandaria" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Shamil Chandaria</a></li>
+
+
+
+<li><a href="https://youtu.be/sxWIy2X0SDw" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Mapping the Heaven Realms</a> – presentation I gave at an <a href="https://astralcodexten.substack.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Astral Codex Ten</a> meetup</li>
+
+
+
+<li><a href="https://www.integrateddaniel.info/a-z-blog/2016/8/3/the-magickal-shamanic-imperial-ethical-and-tan" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The Magickal, Shamanic, Imperial, Ethical, and Tantric Implications of Pokémon Go</a> by <a href="https://www.integrateddaniel.info/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Daniel Ingram</a></li>
+
+
+
+<li><a href="https://opentheory.net/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Michael Johnson</a>‘s <a href="https://opentheory.net/2018/12/the-neuroscience-of-meditation/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The Neuroscience of Meditation: Four Models</a> and his writeup on <a href="https://opentheory.net/2019/11/neural-annealing-toward-a-neural-theory-of-everything/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Neural Annealing</a></li>
+
+
+
+<li><a href="https://qualiacomputing.com/2021/05/14/what-happens-when-you-ask-questions-to-the-dmt-entities/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">What Happens When You Ask Questions to the DMT Entities?</a> (excerpt from <a href="https://www.youtube.com/channel/UCUJnH-MsFgAgvCVHplxqJOQ" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Josikinz</a>‘ <a href="https://youtu.be/4zFB5TvqodQ" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Psychedelic Entities – broken down and described</a>)</li>
+</ul>
+
+
+
+
+
+
+
+<p>[1] Not to be confused with <a href="https://builtin.com/hardware/simulation-theory" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">simulationism</a> (the belief that we actually live in a computer simulation) or <a href="https://qualiacomputing.com/2022/12/28/cartoon-epistemology-by-steven-lehar-2003/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">indirect realism about perception</a> (the philosophical realization that all we ever have access to are the features of an internal world simulation and we don’t perceive the world “directly”)</p>
+
+
+
+<p>[2] Lehar’s <a href="https://youtu.be/LJiXTCbFtu0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Harmonic Gestalt</a> argues that this emerges naturally out of the hill-claiming towards higher harmony between internal representations. Also discussed in <a href="https://qri.org/blog/neural-annealing" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Healing Trauma with Neural Annealing</a>.</p>
+
+
+
+<p></p>
+
+
+
+<figure>
+<iframe width="1000" height="563" src="https://www.youtube-nocookie.com/embed/ARVF87flWvI?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-US&amp;autohide=2&amp;wmode=transparent" allowfullscreen="true" sandbox="allow-scripts allow-same-origin allow-popups" loading="lazy"></iframe></figure><p></p>
+
+
+
+<p></p>

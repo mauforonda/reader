@@ -1,0 +1,34 @@
+<p>CNBC:</p>
+
+<blockquote>
+  <p>Financial regulators have closed Silicon Valley Bank and taken
+control of its deposits, the Federal Deposit Insurance Corp.
+announced Friday, in what is the largest U.S. bank failure since
+the global financial crisis more than a decade ago.</p>
+
+<p>The collapse of SVB, a key player in the tech and venture capital
+community, leaves companies and wealthy individuals largely unsure
+of what will happen to their money. [...]</p>
+
+<p>The FDIC’s standard insurance covers up to $250,000 per depositor,
+per bank, for each account ownership category. The FDIC said
+uninsured depositors will get receivership certificates for their
+balances. The regulator said it will pay uninsured depositors an
+advanced dividend within the next week, with potential additional
+dividend payments as the regulator sells SVB’s assets.</p>
+
+<p>Whether depositors with more than $250,000 ultimately get all
+their money back will be determined by the amount of money the
+regulator gets as it sells Silicon Valley assets or if another
+bank takes ownership of the remaining assets. There were concerns
+in the tech community that until that process unfolds, some
+companies may have issues making payroll.</p>
+</blockquote>
+
+<p>To say this is shocking is an understatement. This just shouldn’t happen to a bank. To make a long story short (and to be honest I’m cribbing this from a summary my pal <a href="https://stratechery.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Ben Thompson</a> wrote in a private group chat), SVB took in a ton of cash during the COVID bubble, and because they couldn’t make money loaning that money at the time, they bought a bunch of corporate bonds and mortgage-backed securities. The problem is they bought those securities when interest rates were still at historical lows. Today, with higher interest rates, those securities are underwater — they’d lose a fortune selling them now before maturity. SVB would’ve been fine if they’d been able to let those securities mature for their full 10 years (or whatever the terms were). But withdrawals are up because startups are having trouble raising money, so SVB did an equity raise to fill the gap, but screwed up — to say the least — by announcing the equity raise before it was officially completed. At this point their stock tanked, the equity partner pulled out, and their customers started a run on the bank — and a bank run was the one thing SVB couldn’t withstand. Within 24 hours they went from “having a bad quarter” to “failed bank”.</p>
+
+<p>Some of SVB’s customers might be in trouble, at least momentarily: even a 100-employee company needs millions in the bank to make payroll, pay rent and utilities, etc. Larger companies, much more. $250K in deposit insurance is a drop in the bucket for most of SVB’s business customers. Everyone is assuming that some big bank will buy SVB and make all depositors whole, but until that happens, it’s an open question. If there is no buyer and SVB is liquidated, there’s no way uninsured deposits will be made whole.</p>
+
+<p><strong>See Also:</strong> <a href="https://twitter.com/justinwolfers/status/1634258402598592512" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Good thread from economist Justin Wolfers</a>.</p>
+
+<p><em>Link: <strong><a href="https://www.cnbc.com/2023/03/10/silicon-valley-bank-is-shut-down-by-regulators-fdic-to-protect-insured-deposits.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">cnbc.com/2023/03/10/silicon-valley-bank-is-shut-down-by…</a></strong></em></p>

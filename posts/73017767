@@ -1,0 +1,101 @@
+<p>Happy Pi Day, fellow nerds!
+This is a holiday I&#39;ve celebrated every year since at least 2010, and I&#39;m not stopping anytime soon.</p>
+<p>The celebrations have evolved.
+It used to be just &#34;bake a pie&#34; and &#34;haha pi, pie&#34;.</p>
+<p>Over time, I twisted it a bit (pizza is a pie of sorts! a cake with a pi symbol on it!).
+This year is the next evolution.
+I&#39;ve made a cake with an experiment on it for estimating the value of pi.</p>
+<p>This is a really cool technique called <a href="https://en.wikipedia.org/wiki/Buffon%27s_needle_problem" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Buffon&#39;s needle problem</a> and I first heard about it from my grandfather at a restaurant.
+I think I was in middle school.
+Anyway, he was telling me about this way that you could estimate pi by tossing a needle on the floor and counting the number of times where it ended up crossing the line between floor boards.</p>
+<p>I didn&#39;t really <em>get</em> it then, but it stuck in my mind that it was really neat that you could do this thing to estimate the value of pi!
+I understood it had something to do with the needle being able to form a circle (rotated around its center) and some such.</p>
+<p>Fast forward to 2023, and I&#39;m sitting idly thinking about Pi Day plans, and I realize.
+I can make a cake.
+I can draw lines on it.
+I have sprinkles.
+We can do Grandpa Bill&#39;s pi needle estimate, but on a <em>cake</em>!</p>
+<p>First, I have to figure out what is that even that he had told me about.
+It was easy enough to find the Wikipedia page for <a href="https://en.wikipedia.org/wiki/Buffon%27s_needle_problem" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Buffon&#39;s needle problem</a>.
+The original formulation wasn&#39;t around estimating the value of pi, but it sure can be used that way.</p>
+<p>Basically, you have this formula: <code>p = (2/pi) * (l/t)</code>, where:</p>
+<ul>
+<li><code>p</code> is the probability that the needle will cross the line between two floor boards</li>
+<li><code>l</code> is the length of the needle</li>
+<li><code>t</code> is the width of the floor boards</li>
+</ul>
+<p>We can reformulate this as <code>pi = (2/p) * (l/t)</code>, and then can derive an estimate of pi from an estimate of the probability that the needle crosses a floor board.
+Or the probability that a sprinkle crosses a line on a cake.
+You see where this is going.</p>
+<p>We&#39;re going to &#34;bake&#34; a cake on an HTML canvas, and do a <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Monte Carlo simulation</a> of the value of pi.</p>
+<p>The first thing we need to do is setup our canvas.
+We make the element, and set some styles so that it&#39;s square and as big as can be, but not <em>too</em> big, we&#39;re not monsters.</p>
+<pre><code>&lt;canvas id=&#34;needles&#34; style=&#34;aspect-ratio: 1/1; display: inline-block; width: 100%; max-width: 400px;&#34;&gt;&lt;/canvas&gt;
+</code></pre>
+<p>Then we do a little bit of JS to make the canvas scale to the size of the element.
+We add the lines on the cake, and we add sprinkles on it.</p>
+<p>The code is all available <a href="https://git.sr.ht/%7Entietz/ntietz.com/tree/main/item/static/js/blog/buffon-needles.js" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">in the repo</a>, so I won&#39;t go into detail on all of it here.
+But there&#39;s this one really cool bit I ran across while coding it up.</p>
+<p>How do you put the sprinkle facing a random direction?
+My first thought was to generate a random angle and then compute the sprinkle vector from there.
+That either relies on picking an angle in radians (thus relying on pi) or using sine or cosine, which also feels like it&#39;s against the spirit of estimating pi.
+So what to do?</p>
+<p>Enter: the unit circle!</p>
+<p>I found <a href="https://www.kuniga.me/blog/2022/08/01/random-points-in-circumference.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">a cool blog post</a> which mentioned an algorithm from von Neumann himself.
+The key insight is that if you have a uniformly distributed random number in a range, you can map that onto the unit circle (and keep regenerating if you are outside the unit circle).
+Then you can scale it to land on the circle, instead of inside it, and you now have a random point on the circumference of the unit circle!</p>
+<p>Let&#39;s see that in code.</p>
+<pre><code>// Generate a vector at a random angle between -90 and 90 degrees
+function randomAngleUnitVector() {
+  // If we&#39;re not inside the unit circle, we&#39;ll keep retrying
+  // until we succeed. This should pass pretty quickly.
+  while (true) {
+
+    // Math.random() gives us a uniform distribution in [0,1].
+    let x = Math.random();
+    let y = 2 * Math.random() - 1;
+
+    let r = Math.sqrt(x*x + y*y);
+
+    if (r &lt;= 1) {
+      // We got it, so we&#39;ll scale the vector out to the circle
+      return [x / r, y / r];
+    }
+  }
+}
+</code></pre>
+<p>I sprinkled (pun intended) some comments in.
+The core idea here is so cool and clever.
+Glad it&#39;s in my tool bag now.</p>
+<p>So now we have everything we need.
+The cake&#39;s been in the oven and, oh look, <strong>it&#39;s done</strong>.
+Let&#39;s pull it out and see what we got!</p>
+<p>I left some sliders down below for you to play around with.
+You can drag them around to play with different parameters, like the size and quantity of sprinkles, and see how that affects the estimate of pi.</p>
+<p>Just remember that since this is a simulation, you&#39;ll get very different values each time.
+So if you want to see if parameters improved it, you may want to click &#34;bake&#34; a few times to see a clearer picture of the change.</p>
+<p></p>
+<p>This cake estimates pi as . <br/>
+The running estimate for these params is . <br/>
+You&#39;ve baked  of this kind.</p>
+<p>Number of sprinkles:  <br/>
+</p>
+<p>Sprinkle-to-stripe ratio:  <br/>
+</p>
+<p>Number of stripes:  <br/>
+</p>
+
+<br/>
+<p>Oh yeah, and I did this in real-life, too.
+Here&#39;s the pi-approximation cake in all its glory.</p>
+<p><img alt="Cake with lines and sprinkles on it to illustrate a method of approximating pi." src="https://reader.miniflux.app/proxy/6KZz7G65KUvLwumfXbejDeYY63ysjs17Yyd6l0UYaOE=/aHR0cHM6Ly9udGlldHouY29tL2ltYWdlcy9waS1jYWtlLmpwZWc=" loading="lazy"/></p>
+
+  
+
+
+<p>
+    This post was originally published <a href="https://ntietz.com/blog/happy-pi-day-2023/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a> and
+    you are reading it in the
+    <a href="https://blaggregator.recurse.com/new/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Blaggregator</a> feed.
+    <a href="https://recurse.zulipchat.com/#narrow/stream/blogging/topic/Approximating.20pi.20using.2E.2E.2E.20a.20cake.3F" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Join the discussion</a> on Zulip!.
+</p>

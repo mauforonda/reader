@@ -1,0 +1,53 @@
+<p>Other federated protocols are having a moment in the spotlight. Last week saw the release of Bluesky, A Twitter alternative by ex-Twitter CEO Jack Dorsey. Bluesky is runs on the AT protocol, a federated protocol that has some similarities to ActivityPub (the protocol that runs the fediverse). Nostr is another decentralized protocol that has been in development for a bit, and also has backing of Jack Dorsey. A developer recently released a bridge between ActivityPub and Nostr. Lets take a look at this from the perspective of the fediverse.</p>
+
+
+
+<p>First, some language clarification. The protocol is the standardized computer language that all of our apps, servers and websites use to communicate. In the case of the fediverse this is ActivityPub, which allows you to easily see PixelFed posts on your Mastodon profile. ActivityPub is an open standard for the internet by the World Wide Web Consortium (W3C), which means that has a common agreed upon definition just like other web technologies such as HTML.</p>
+
+
+
+<p>With that out of the way, let’s talk about Nostr. It is a protocol that allows for decentralized communications. The core idea is that people make an account once (independent of a server or something), that comes with a set of unique keys, that allow you to securely sign your messages to prove it was really you who send them. You send your message to a relay, but it does not particularly matter which relay. The core functionality of a relay is simply to get your message to the person who follows you. This makes the Nostr protocol even more independent from servers than the fediverse is.</p>
+
+
+
+<p>However, giving a technical comparison between the Nostr network and the fediverse is kind of missing the point, since there is a much bigger difference in culture, that is more relevant. The function of these protocols is to enable communication between people, and analysis of protocols should be viewed through the lens of how it enables and steers communication. For Nostr, it is intrinsically and by design linked with the crypto universe, and has build in support for various cryptocurrencies in various ways. One of the core features is the ability to send micropayments via a Bitcoin-derived payment network. As a relevant context to this, the crypto community prides itself on its libertarian roots, and the ability to be uncensorable, whether that is communications or payment systems.</p>
+
+
+
+<p>These cultural values differ significantly from the fediverse. On the fediverse, it is encouraged to block different servers that do not align with the values of your server. Web3 and crypto is looked at with significant skepticism. This came to a head last week with the following events.</p>
+
+
+
+<p><strong>Mostr, a bridge between Nostr and the fediverse released</strong></p>
+
+
+
+<p><a href="https://soapbox.pub/blog/mostr-fediverse-nostr-bridge/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Mostr is a newly released</a> bridge between ActivityPub and Nostr. In practice this means that both networks can send and receive each others messages. The developer also created Soapbox, another fediverse client. Soapbox has some controversial status within the fediverse, and is often <a href="https://mastodon.social/@atomicpoet/109941204573745518" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">blocked on sight</a>, and thus is not really visible in official statistics. This background explains the reason to develop this, and also community reactions. The developer is explicit that the blocking and banning is a big part of their reason to connect these two networks, stating:</p>
+
+
+
+<p>“Nostr solves my most basic frustration with ActivityPub, which is that some of my followers on different servers can’t see me because their admin said so. I’m tired of it.”</p>
+
+
+
+<p>Not surprisingly, this exact sentiment also explains why fediverse instances are not particularly interested in the bridge between the fediverse and Nostr, <a href="https://mastindia.co/objects/633388a4-69e7-473a-93d7-0755ba6dd72b" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">like here </a>for example.</p>
+
+
+
+<p>The community separation is also visible with notable instance bitcoinhackers.org moving from the fediverse to Nostr. The admin shut down the instance last week, <a href="https://bitcoinhackers.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">stating:</a> “Instances are also blanket banning other instances. This means the whole ActivityPub universe was just a patchy-verse, and able to block Bitcoiners out.”</p>
+
+
+
+<p><strong>Bluesky and AT</strong></p>
+
+
+
+<p>From a technical perspective, Bluesky and the AT protocol has some interestin ideas regarding a digital identity and domain names. Bluesky<a href="https://blueskyweb.xyz/blog/3-6-2023-domain-names-as-handles-in-bluesky" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"> announced</a> this week that you can keep using the same custom identity when you switch between services. This is an upgrade from how the system works in the fediverse, where you can transfer followers, but if you move to a different server, your username will still be different. However, Bluesky will have to deal with its founder<a href="https://macaw.social/@mahdi/109973456513413" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"> spending a lot more time</a> and focus on Nostr over Bluesky/AT.</p>
+
+
+
+<p>Both Nostr and AT are interesting protocols that have relevant features that could benefit the fediverse. But for understanding why people choose a network, community and values are often much more decisive.</p>
+
+
+
+<p></p>

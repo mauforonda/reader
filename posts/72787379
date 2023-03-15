@@ -1,0 +1,9 @@
+I’ve wanted to get more experience writing programs that analyze programs, and after using Prisma schema I decided to try writing a program to convert a Python dataclass to a SQL schema.
+At the time, I was starting up a project to extract and load Philadelphia city data into my own database. In the early stages of the project, I found myself toiling through “drop, recreate, rehydrate” cycles of rebuilding my tables and “rehydrating” my local db with test data.
+
+<p>
+    This post was originally published <a href="http://blog.sory.biz/posts/python-to-sql/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a> and
+    you are reading it in the
+    <a href="https://blaggregator.recurse.com/new/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Blaggregator</a> feed.
+    <a href="https://recurse.zulipchat.com/#narrow/stream/blogging/topic/Generating.20SQL.20from.20Python" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Join the discussion</a> on Zulip!.
+</p>

@@ -1,0 +1,78 @@
+<p>What to say about this month - well, I’m a few days
+late to the <em>Recently</em>, because I’ve been pretty busy! Things
+are good. Building products is fun but also a lot of work.
+Pretty excited about what I’m working on. Ready for winter to
+end.</p>
+
+<h3 id="reading">Reading</h3>
+
+<p>I enjoyed reading Ross Barkan’s <a href="https://rossbarkan.substack.com/p/what-to-do-about-the-police" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">What to Do About Police</a>,
+though it’s bound to generate some controversy. Barkan is,
+I think, a geniunely ‘center’ or balanced commentator, if you
+consider the political spectrum of major American cities as the
+guide. He also has a sense for reading polls and knowing people
+enough to identify surprising but true disconnects between what
+we <em>think</em> people believe and what they do.</p>
+
+<blockquote>
+  <p>There’s a strangely libertarian tinge to the leftist arguments around defunding and abolishing the police. The NYPD budget is described as “bloated” in the same way a Manhattan Institute scholar might refer to the Department of Education. To pay for non-violent responders, mental health clinics, and other community-based organizations that could reduce the need for violent police interactions, the department itself must be slashed so the money can be made available.</p>
+</blockquote>
+
+<p>And I agree with a lot
+of his critiques of the left, despite being in it - especially
+identifying the libertarian underpinnings of leftist thought.</p>
+
+
+
+<blockquote>
+  <p>A legal AI that’s wrong 10% of the time would be, in prac­tice, no better than one that’s wrong 90% of the time, because either way it can’t be trusted.</p>
+</blockquote>
+
+<p>Matthew Butterick is <a href="https://githubcopilotinvestigation.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">suing GitHub over Copilot, their AI-powered
+code completion</a>, and a
+<a href="https://matthewbutterick.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Renaissance man</a> and wrote about
+<a href="https://matthewbutterick.com/chron/camera-obscura-the-case-against-ai-in-classrooms.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">AI in classrooms</a>,
+which eloquently argues against AI in that context and others.</p>
+
+<h3 id="watching">Watching</h3>
+
+<p>I’m <em>very</em> late to this one, but I’ve been watching <a href="https://en.wikipedia.org/wiki/Search_Party_(TV_series)" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Search Party</a>,
+which is a real grab-bag of styles and genres. It’s good, but
+maybe not exceptional. I think a lot of the TV produced now
+is so heavily invested in aesthetics and soundtracks and, generally
+“vibes” and Search Party is a show that’s interesting just because
+of the plot. It looks fine, but not exceptional. It’s not cool,
+and the lighting looks like mainstream TV. But it’s occasionally
+really clever.</p>
+
+<p>Also, in between watching and listening, revisiting this Do Make Say
+Think song &amp; performance. It’s so great:</p>
+
+<iframe width="100%" height="320" src="https://www.youtube-nocookie.com/embed/EYRwE9HPgpM" frameborder="0" allowfullscreen="" sandbox="allow-scripts allow-same-origin allow-popups" loading="lazy"></iframe><h3 id="listening">Listening</h3>
+
+<iframe src="https://bandcamp.com/EmbeddedPlayer/album=1099074784/size=small/bgcol=ffffff/linkcol=333333/transparent=true/" sandbox="allow-scripts allow-same-origin allow-popups" loading="lazy"></iframe><p>Following the thread of crazy guitar music past Polyphia and Hella,
+I inevitably ended up at Chon. Another great band, especially
+in the way they balance the heavy and acoustic elements.</p>
+
+<h3 id="elsewhere">Elsewhere</h3>
+
+<p><img src="https://reader.miniflux.app/proxy/MI0P8cjXKbCuVWeFEMW0O5tGdNZIpjdFPEKHx4BfhN0=/aHR0cHM6Ly9tYWN3cmlnaHQuY29tL2ltYWdlcy8yMDIzLTAzLTAzLXJlY2VudGx5LWNiMzYzOGQwZWQzNWQ3MDM2Zjc5ZmVhZGExZTQzMDFmLnBuZw==" alt="" loading="lazy"/></p>
+
+<p>Elsewhere, I’ve been building and building with <a href="https://val.town" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Val.town</a>,
+most recently <a href="https://www.val.town/tmcw.nearestOpenStation" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">a val that finds the nearest Citibike parking dock</a>
+with open spots, so I can use it from Apple Shortcuts.
+It’s been fun! I’ve been working on a tricky project to
+move Val.town’s internals to <a href="https://deno.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Deno</a> and adding
+better isolation between execution and the host environment.
+Luckily, it feels like we’re in the right place at the right
+time - there are a lot of new <a href="https://dev.to/tomlienard/v8-isolates-are-taking-over-the-world-3h4m" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">V8 Isolate</a>-based JavaScript
+runtimes coming to the surface, standards emerging for them
+like <a href="https://wintercg.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">WinterCG</a>, and frameworks built
+for them like <a href="https://hono.dev/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Hono</a> and <a href="https://remix.run/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Remix</a>.
+The last mile - isolation, code bundling, and communication - is still
+the wild west, and that’s what I’ve been building.</p>
+
+<p><img src="https://reader.miniflux.app/proxy/8ectnFWof9ydMdnoiMpBGti8NWlwjTyVpixE_Y1lgsY=/aHR0cHM6Ly9tYWN3cmlnaHQuY29tL2ltYWdlcy8yMDIzLTAzLTAzLXJlY2VudGx5LWNvbHVtYnVzLW9oaW8uanBlZw==" alt="Columbus Ohio" loading="lazy"/></p>
+
+<p>I did a tiny bit of traveling this month. Besides that, I’ve been
+busy! So much to do.</p>

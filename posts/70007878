@@ -1,0 +1,524 @@
+<figure><img src="https://reader.miniflux.app/proxy/ZZUNNmu-oYJosbbcmDgkMYO2ayBfygBP5B0aIDa5_wk=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMS9TeXN0ZW0taGFzLWFsd2F5cy1kb25lLWl0cy1qb2IuanBn" alt="Two people in a library. The old white man with glasses and a bowtie smiling comfortably, says, &#34;The system has always done its job.&#34; The young white 
+woman is frowning, and thinking, &#34;Hmmm....&#34; (Cartoon by Hilda Bastian)" width="423" height="464" srcset="https://reader.miniflux.app/proxy/ZZUNNmu-oYJosbbcmDgkMYO2ayBfygBP5B0aIDa5_wk=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMS9TeXN0ZW0taGFzLWFsd2F5cy1kb25lLWl0cy1qb2IuanBn 689w, https://reader.miniflux.app/proxy/VZicz_uw-Bt3VwXZAqmFA4NVaRkvQngNDPiDYO4HDKI=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMy8wMS9TeXN0ZW0taGFzLWFsd2F5cy1kb25lLWl0cy1qb2ItMjczeDMwMC5qcGc= 273w" sizes="(max-width: 423px) 100vw, 423px" loading="lazy"/></figure>
+
+
+
+
+
+
+
+<p>This post is part of a series that I started <a href="https://absolutelymaybe.plos.org/?category=peer-review-research-roundup" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">in 2019</a>, recapping the scientific results on peer review to that point. Since then, I do an annual pick of the main areas where I think research has reached a stage of telling us something new, or tipping the balance on something that had been very unclear.</p>
+
+
+
+<p>For something so critical to science as editorial peer review, there’s very little scientific foundation to it. This year, though, there were reports from 5 randomized trials – which I think must be an all-time record. The Peer Review Congress tipped the scales heavily with 3 trials – and that Congress only comes once every 4 years. Still, we can’t usually count on there being even one in a year.</p>
+
+
+
+<p>One of those trials didn’t make my list, though. It was a trial by Jürgen Huber and colleagues, with results released <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4190976" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">in September</a>. It got a lot of attention, with the claim that their study proved peer reviewers’ bias towards well-known authors is so great, that “double-anonymization is a minimum requirement for an unbiased review process.” I don’t think it proved much at all, and I wrote <a href="https://absolutelymaybe.plos.org/2022/09/21/experiments-on-naming-authors-in-peer-review-now-with-a-new-kid-on-the-block/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">a blog post</a> about. Meanwhile, here’s my pick for the top 5 advances in knowledge this year – plus a short list of some other research that might interest you.</p>
+
+
+
+<h2 id="contents"></h2>
+
+
+
+
+
+
+
+<ul><li>A randomized trial showed <a href="#patients">carefully selected, trained, and supported community members</a> can be good medical journal peer reviewers, and improve consideration of health disparity and sociocultural issues.</li></ul>
+
+
+
+<p></p>
+
+
+
+<ul><li>Given the choice between having their <a href="#double">names concealed or revealed</a> in peer review at a journal, most authors will opt for revealing their names. The gender of corresponding authors doesn’t seem to affect the choice. It’s still not clear, though, if choosing to stay unnamed affects authors’ chances of being rejected.</li></ul>
+
+
+
+<p></p>
+
+
+
+<ul><li><a href="#prompts">Prompting peer reviewers</a> to look for particular quality issues is starting to look like a dead end – at least for substantial improvements in reports of biomedical research.</li></ul>
+
+
+
+<p></p>
+
+
+
+<ul><li><a href="#discrepancy">A specialized review</a> comparing study registrations and manuscripts could reduce undisclosed discrepancies between plans and study reports. It takes roughly half an hour to an hour to do, with additional peer review time needed from editors and authors.</li></ul>
+
+
+
+<p></p>
+
+
+
+<ul><li>Although at least as many medical graduates have been women as men for over 20 years in the UK and US, the <a href="#women">proportion of women peer reviewers</a> at medical journals may not have been growing substantially. Women editors may be likely to recruit more women as peer reviewers, but they remain in a minority too. Could the software editors use to find potential peer reviewers be further entrenching the biased patterns of the past?</li></ul>
+
+
+
+<p></p>
+
+
+
+<ul><li><a href="#other">Other interesting studies</a></li></ul>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<h2 id="patients"></h2>
+
+
+
+
+
+
+
+<h5>A randomized trial showed carefully selected, trained, and supported community members can be good medical journal peer reviewers, and improve consideration of health disparity and sociocultural issues.</h5>
+
+
+
+
+
+
+
+<p><em>[Randomized trial]</em></p>
+
+
+
+
+
+
+
+<p>This paper is behind a paywall, so I’m going to describe it in detail, given the subject. (The research was NIH-funded, so it should be available in full text at PubMed Central a year after publication – so you can check back <a href="https://pubmed.ncbi.nlm.nih.gov/36163530/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a> by October 2023.)</p>
+
+
+
+<p>I’d listed this trial as on the horizon <a href="https://absolutelymaybe.plos.org/2021/02/02/5-things-we-learned-about-peer-review-in-2020/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">in my 2021 post in this series</a>. Results arrived in September. It was <a href="https://clinicaltrials.gov/ct2/show/NCT03432143" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">registered</a> with <a href="https://www.metrohealth.org/population-health-research-institute/researchers/ashwini-sehgal" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Ashwini Sehgal</a> as principal investigator – a co-director of a Center for Reducing Health Disparities – with addressing health disparities mentioned in the registration. So I was hopeful about the potential profile of the community members recruited. The plan was for 568 manuscripts at 2 medical journals to be randomized to one of 24 trained people. They hit that recruitment mark and then a bit: 578 manuscripts and 28 people. And the 28 people were almost all women (only 2 men), with over half the group Black. The 2 journals were <em>Annals of Internal Medicine</em> and <em>Annals of Family Medicine</em>.</p>
+
+
+
+<p>Participants were recruited via flyers at libraries and community centers in Cleveland, Ohio. They had to have at least a high school education, be proficient in English, and have access to a computer. In addition, they had to have experience as either a patient or carer of at least one of a list of common health conditions – and not to have a healthcare or research background. People were then given a test: 59 people did that test, and 45 of them did well enough to be invited to join the training on research types and peer review.</p>
+
+
+
+<p>To enter the trial, you had to complete the training – 6 sessions of 90 minutes each – and write practice reviews the researchers judged to be effective. Of the 45 who started, 12 didn’t finish the 6-week course, and of those that did, 5 weren’t writing reviews considered good enough to join the trial. (The authors report they weren’t different in age, educational status, race, or gender.) So out of the 59 eligible people who started out, nearly half didn’t join the trial. Out of those 28 that started in the trial, 12 dropped out along the way because of competing demands on their time. Unfortunately, the demographics of the participants who provided the final reviews isn’t reported.</p>
+
+
+
+<p>The randomized manuscripts were full-length primary research reports (not reviews) that weren’t focused on statistics (e.g. prediction models), medical practice or education, or a rare condition. They were randomized to the journal’s usual scientific review alone, or that plus a community reviewer. For the manuscripts randomized to the intervention, a reviewer with relevant interests was chosen by study staff. The deadlines for their reviews were a week early, and in that time, study staff reviewed their drafts and provided feedback – a process similar to <a href="https://link.springer.com/article/10.1007/s11606-015-3450-z" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">the one used by PCORI</a>. The participants were paid US $100 for each completed review. Editors knew which reviews came from the community reviewers – they were all marked, and the study authors say it was too obvious which they were to keep the editors masked.</p>
+
+
+
+<p>Unfortunately, there are a couple of fundamental problems in the trial’s conduct and reporting. One of the journals (<em>Annals of Internal Medicine</em>) required author consent to participation in the trial, and they only seem to have requested that permission after randomization – and nearly a third refused. You can’t work out how this played out, and that leads to a second of the fundamental problems – key data aren’t reported. I wonder if it’s because it was included in <a href="https://www.consort-statement.org/consort-statement/flow-diagram" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">a CONSORT flow diagram</a> – which is a basic part of adequate trial reporting. It’s possibly an error at the journal: At one point, data in an appendix is mentioned, but there isn’t one. (The only additional information is a CONSORT checklist, and those don’t include data.) (I’ll chase this up.)</p>
+
+
+
+<p>The community reviewers assessed the manuscripts more favorably than the professionals: Their mean scores for recommending publication were 2.7 compared to 2.2 by the professionals. The editors rated the professionals’ reviews a little more highly (3.1 for community reviews versus 3.3 for professional). Editors found the community perspectives the most useful part of the reviews (e.g. socioeconomic factors potentially affecting adherence).</p>
+
+
+
+<p>Community reviewers were more likely than the professionals to address study design, participant selection, and importance of the research. There were several themes they addressed very often: diversity of the study participants, relevance of the research to patients and the community, cultural and social considerations, and implementation by patients and the community.</p>
+
+
+
+<p>Community reviewers’ comments were integrated into 64 of the 66 papers that were published in the intervention group, including 186 comments in all – though the number 66 is only mentioned in the abstract, so there’s some confusion on this when you get to the results. The authors didn’t count listing additional demographic data in that tally, unless there was also discussion, which seems to me under-counting the influence. Unfortunately, the study authors don’t report the same for the professionals’ reviews. For the 4 themes, they do report that the 64 papers with community reviewer feedback were substantially more likely to address these issues than the 54 published papers from the control group.</p>
+
+
+
+<p>This is an important addition to the research base on consumer and community participation generally, as well as peer review. No word, though, as far as I’ve seen, on whether either of the journals involved are going to act on these results. (One of them published the article.)</p>
+
+
+
+
+
+
+
+<p><em>Anne Huml and colleagues (<a href="https://link.springer.com/article/10.1007/s11606-022-07802-z" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a>). Community members as reviewers of medical journal manuscripts: A randomized controlled trial. </em></p>
+
+
+
+
+
+
+
+<p><em><a href="#contents">Back to contents</a></em></p>
+
+
+
+<h2 id="double"></h2>
+
+
+
+
+
+
+
+<h5>Given the choice between having their names concealed or revealed in peer review at a journal, most authors will opt for revealing their names. The gender of corresponding authors doesn’t seem to affect the choice. It’s still not clear, though, if choosing to stay unnamed affects authors’ chances of being rejected.</h5>
+
+
+
+
+
+
+
+<p><em>[Cross-sectional study]</em></p>
+
+
+
+
+
+
+
+<p>Many scientists firmly believe that concealing the names of authors reduces bias based on gender, race, geographical or institutional home, prestige and seniority, etc. Some journals that routinely conceal the names of reviewers (“single-blind”) offer authors the option to have their names concealed as well (“double-blind”). Some people think giving the authors the choice is the best of all worlds. Others are concerned that it’s risky, since we don’t know whether peer reviewers make negative judgments about authors who want their names concealed – and <a href="https://www.pnas.org/doi/full/10.1073/pnas.1707323114" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">reviewer bias</a> about which authors reveal their names may be important factor. </p>
+
+
+
+<p>I know of 2 previous studies on this, the first was a small study in 2 physics journals in 2017 [Harris <a href="https://peerreviewcongress.org/abstract/assessment-of-author-demand-for-double-blind-peer-review-in-iop-institute-of-physics-publishing-journals/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2018</a>] where 20% chose to have their names concealed. The second from 25 journals in the <em>Nature</em> group [McGillivray <a href="https://link.springer.com/article/10.1186/s41073-018-0049-z" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2018</a>] was large – more than 106,000 manuscripts – and only 12% authors opted for being unnamed. Going by presumed gender of corresponding authors, gender wasn’t a factor in the choice, but country/less prestigious institution was – though a large majority of authors still chose to be named.</p>
+
+
+
+<p>The new study has so far only been reported as a conference poster, and it’s not as strong a study as the one from the <em>Nature</em> group. And in this new study, the lack of data about the overall experience is frustrating. It’s from a single journal, <em>Pediatrics</em>, and they focus on US-based authors only, for reasons that aren’t explained. The way the authors went about this is perplexing. They were only interested in research studies, of which 2,720 were submitted in the year they were studying (from April 2020). Authors of 18.6% chose to have their names concealed from peer reviewers – a little over 500 articles.</p>
+
+
+
+<p>To get a sample to compare single- to double-concealment, though, they pulled 150 of each from all the articles, not just the research ones. And then they excluded the non-research articles from the random samples, along with all those that had no US-based author. They don’t tell how many were excluded for which reason, though. Out of 300, they ended up with 96 manuscripts with author names’ concealed versus 73 with author names revealed.</p>
+
+
+
+<p>The rate of rejection was 95% for the group with the authors’ names concealed and 86% for the group with named authors. Though that sounds like a fairly big difference, the sample was relatively small, and this difference wasn’t statistically significant. Based on the gender and seniority of the corresponding authors, the groups were similar. They had expected women and less senior people to be more likely to choose concealed names.</p>
+
+
+
+<p>From these 3 studies, it seems that in the context of a journal offering a choice, most authors choose to be named. That doesn’t take into account authors who choose journals that never reveal names, though. We don’t know if having already presented results at a conference or in a preprint is influencing these choices. And we still don’t know if acceptance the manuscripts would have been more or less likely if the authors were named in the context of a journal where it’s the authors’ choice – and there’s no insight here on how peer reviewers view authors’ choosing to have their names concealed.</p>
+
+
+
+<p>In the trials of revealed or concealed author names, authors were randomized, and so the peer reviewers didn’t think the authors had chosen to withhold their names. In that context, I think the evidence suggests it might make no difference to the rejection rate. When I was writing <a href="https://absolutelymaybe.plos.org/2022/09/21/experiments-on-naming-authors-in-peer-review-now-with-a-new-kid-on-the-block/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">my post</a> on the Huber trial, I hunted for randomized trials of concealing or revealing names in peer reviews – including in 2 new systematic reviews published in 2022.</p>
+
+
+
+<p>Counting the Huber trial, I found 9 published trials – and only 1 of those included peer review at more than 1 single journal. The larger trials tended to find no effect, while the small ones sometimes found a small effect, though generally in people who hadn’t guessed who the unnamed people were – and a high proportion do, especially when the pool of people working on a particular subject isn’t large.</p>
+
+
+
+<p>I think both of those new systematic reviews are problematic, as they place considerable weight on studies with major scientific problems that make them susceptible to bias. One review compared concealing just peer reviewers’ names with concealing both theirs and the authors’ [Ucci <a href="https://www.sciencedirect.com/science/article/abs/pii/S2589933322000805" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a>]. They concluded that 52% of people guessed the names of the concealed people, and that concealing names of both authors and peers reviewers might lower acceptance rate.</p>
+
+
+
+<p>The second review studied concealing both parties’ names and gender bias [Kern-Goldberger <a href="https://www.sciencedirect.com/science/article/abs/pii/S0002937822000680" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a>]. Those authors include highly biased studies, and when they conclude “there is reasonable evidence that gender bias may exist in scientific publishing and that double-blinding can mitigate its impact,” they are leaning on the more biased studies.</p>
+
+
+
+
+
+
+
+<p><em>Meredith Campbell Joseph and colleagues (<a href="https://peerreviewcongress.org/abstract/preference-and-characteristics-of-us-based-authors-for-single-vs-double-anonymous-peer-review/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a>).</em> <em>Preference and characteristics of US-based authors for single- and double-anonymous peer review.</em></p>
+
+
+
+
+
+
+
+<p><em><a href="#contents">Back to contents</a></em></p>
+
+
+
+<h2 id="prompts"></h2>
+
+
+
+
+
+
+
+<h5>Prompting peer reviewers to look for particular quality issues is starting to look like a dead end – at least for substantial improvements in reports of biomedical research.  </h5>
+
+
+
+
+
+
+
+<p><em>[3 randomized trials]</em></p>
+
+
+
+
+
+
+
+<p>Before we get to the 3 new trials, here are 3 previous trials of prompting peer reviewers I know of:</p>
+
+
+
+<ul><li>2 trials by the same group, at a single medical journal, found no improvement of manuscript quality after providing peer reviewers with reporting guidelines. [Cobo <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000332" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2007</a> and <a href="https://www.bmj.com/content/343/bmj.d6783" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2011</a>; <em>Source:</em> <a href="https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-016-0631-5" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2016</a> systematic review; a <a href="https://www.ahajournals.org/doi/full/10.1161/JAHA.120.019903" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a> systematic review did not identify further prompting studies.]</li><li>1 trial of short instructions on reducing spin in abstracts at a single medical journal didn’t reduce abstract spin [Ghannad <a href="https://www.sciencedirect.com/science/article/pii/S0895435620311537" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2021</a>; <em>Source:</em> my <em>things we learned in 2021</em> <a href="https://absolutelymaybe.plos.org/2021/12/31/5-things-we-learned-about-journal-peer-review-in-2021/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">post</a>. I wrote more on this topic <a href="https://absolutelymaybe.plos.org/2022/08/30/bad-and-good-ish-news-on-the-abstract-spin-cycle/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">in 2022</a>.]</li></ul>
+
+
+
+<p>Reporting guidelines are the intervention tested in 2 trials released in 2022, though this time it focused on the 10 most important and poorly reported items from the guidelines. Reporting guidelines have a straightforward goal – preventing gaps in critical information about how a study was done. (You can read more about them <a href="https://www.equator-network.org/about-us/what-is-a-reporting-guideline/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a>, and how they evolved <a href="https://www.jameslindlibrary.org/articles/a-history-of-the-evolution-of-guidelines-for-reporting-medical-research-the-long-road-to-the-equator-network/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a>.)</p>
+
+
+
+<p>The first of the new pair of trials addressed protocols of clinical trials and the SPIRIT guidelines; the second, reports of clinical trial results and the CONSORT guidelines. In both trials, the completeness of research reporting wasn’t improved. Looking at the data they presented, I wouldn’t rule out this line out completely. Perhaps narrowing in on fewer items, and explaining them better would help? That said, people who are suitable peer reviewers for clinical trials should know all this. Sigh. </p>
+
+
+
+<p>The third new trial was even more targeted, and with the researchers even doing some of the heavy lifting for the peer reviewers. The trial studied clusters of eligible trials submitted to 13 medical journals in a year. There ended up being 243 control manuscripts, and 176 in the intervention group. Roughly 40% ended up published – for 173 trials.</p>
+
+
+
+<p>The goal was to reduce the discrepancy between the outcomes specified in trial registrations, and the outcomes the trialists chose to include in their manuscripts. Peer reviewers didn’t even have to look the trial registrations up – they were provided with the information for the specific trial they were asked to review. Still, no luck. </p>
+
+
+
+<p>Meanwhile, a systematic review <a href="https://www.jclinepi.com/article/S0895-4356(22)00323-7/fulltext" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">in 2022</a> showed that peer review isn’t making much difference to poorly reported research. Those authors compared the preprints and following published papers of studies they had included in a living systematic review of Covid prediction models. The reporting in the preprints was lousy, and the published papers were only trivially less so.</p>
+
+
+
+
+
+
+
+<p><em>Benjamin Speich and colleagues (<a href="https://peerreviewcongress.org/abstract/reminding-peer-reviewers-of-the-most-important-reporting-guideline-items-to-improve-completeness-in-published-articles-primary-results-of-2-randomized-controlled-trials/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a>) [abstract only]. Reminding peer reviewers of the most important reporting guideline items to improve completeness in published articles: Primary results of 2 randomized controlled trials.</em></p>
+
+
+
+<p><em>Christopher Jones and colleagues (<a href="https://bmjopen.bmj.com/content/12/9/e066624" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a>). Peer reviewed evaluation of registered end-points of randomised trials (the PRE-REPORT study): A stepped wedge, cluster-randomised trial.</em></p>
+
+
+
+
+
+
+
+<p><em><a href="#contents">Back to contents</a></em></p>
+
+
+
+<h2 id="discrepancy"></h2>
+
+
+
+
+
+
+
+<h5>A specialized review comparing study registrations and manuscripts could reduce undisclosed discrepancies between plans and study reports. It takes roughly half an hour to an hour to do, with additional peer review time needed from editors and authors.</h5>
+
+
+
+
+
+
+
+<p><em>[Feasibility study]</em></p>
+
+
+
+
+
+
+
+<p>One of the only types of peer review we can be sure <a href="https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-016-0631-5" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">increases the quality</a> of manuscripts is a form of specialized review – a statistical review. We already saw in the previous section that simply prompting peer reviewers to check for discrepancies between study registration plans and what’s reported in a manuscript isn’t enough to improve reporting. Perhaps dedicated reviewers given this task could make a difference.</p>
+
+
+
+<p>This feasibility study is an interesting read. The detail about the twists, turns, barriers, and rejections they had to navigate gives great insight into why it’s so hard to get studies of journal operations done – with an added layer of pain from trying to do it in the pandemic. For people who are in the business of research, it’s remarkable how many editors and authors sure don’t welcome being studied themselves!</p>
+
+
+
+<p>The authors report on their process of refining their guidelines for doing the review, the inconsistencies in people’s reviews, and some perspectives of editors and authors. Five of the 13 editors involved in this feasibility responded to a questionnaire. They all said it would be feasible to implement and they’d be interested “if they were provided with discrepancy reviewers”.</p>
+
+
+
+<p>That’s no small “if”. The intervention this group has developed is like pulling the work meta-scientists do forward into the peer review process, instead of methodically assessing the extent of problems in published papers – a form of activist meta-science, studying a problem and trying to fix it at the same time. An early intervention version of sorts to <a href="https://www.compare-trials.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Ben Goldacre’s COMPare project</a>.</p>
+
+
+
+<p>The authors concluded it’s worth putting this intervention to the test, and they describe the trial they recommend. That would be interesting to see, even though there are questions about how you scale this up and get it adopted at least at the journals that publish a lot of pre-registered clinical trials and other studies. </p>
+
+
+
+
+
+
+
+<p><em>Robert Thibault and colleagues (<a href="https://royalsocietypublishing.org/doi/10.1098/rsos.220142" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a>). Discrepancy review: A feasibility study of a novel peer review intervention to reduce undisclosed discrepancies between registrations and publications.</em></p>
+
+
+
+
+
+
+
+<p><em><a href="#contents">Back to contents</a></em></p>
+
+
+
+<h2 id="women"></h2>
+
+
+
+
+
+
+
+<h5>Although at least as many medical graduates have been women as men for more than 20 years in the UK and US, the proportion of women peer reviewers at medical journals may not have been growing substantially. Women editors may be likely to recruit more women as peer reviewers, but they remain in a minority too. Could the software editors use to find potential peer reviewers be further entrenching the biased patterns of the past?</h5>
+
+
+
+
+
+
+
+<p><em>[Observational studies]</em></p>
+
+
+
+
+
+
+
+<p>Women have been about half of the medical profession in the <a href="https://www.bmj.com/content/360/bmj.k254?ijkey=34f4ddfd43691f517c9cb9cfc033e21fe652dade&amp;keytype2=tf_ipsecsha" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">UK</a> and <a href="https://www.aamc.org/data-reports/data/2018-2019-state-women-academic-medicine-exploring-pathways-equity" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">US</a> for more than 20 years. A new study of women as peer reviewers and editors at 47 <em>BMJ</em> journals in 2020 also looked at some time trend data for <em>BMJ</em> journals, and 2 US journals (<em>JAMA</em> and <em>NEJM</em>). There was some growth in the proportion of women peer reviewers, but that seems to have stalled at the <em>BMJ </em>journals and <em>NEJM</em>.</p>
+
+
+
+<p>Women’s representation among peer reviewers across the board at <em>BMJ</em> was 30%, and tended to be lower at more prestigious journals. The highest rate was 50%. (Gender of peer reviewers was assessed as binary using software on names.)</p>
+
+
+
+<p>The proportion of women editors was 33% at these journals. The number of editors ranged from 3 to 39, with the proportion of women ranging from 0 to 88%. The authors concluded that there was an association between women editors or a woman editor-in-chief and a higher proportion of women peer reviewers. They didn’t explore whether the medical specialty was a factor here, but looking at table of data, that didn’t seem like a major factor.</p>
+
+
+
+<p>As if the rate being stagnant isn’t depressing enough, according to a second study at 21 <em>BMJ</em> journals [abstract only], women’s peer reviewing activity took a hit in the pandemic – though we don’t know if it’s still going backwards. And the authors of the first study also say we need to watch out for impact on diversity of changes in publishing, like more open peer review.</p>
+
+
+
+<p>So what now? Women’s under-representation, argued the authors of the study of women as editors and peer reviewers, “may be both a symptom and a cause of broader under-representation in senior positions in academia”, and it could be having serious implications for medical research. They point to several issues that journals need to be acting on. For example, they write, many journals use software  based on databases of authors to find matches for manuscripts. They suggest the algorithms used in that software by definition replicate, or perhaps even worsen, existing biases. Journals need policies on gender, and so they need adequate representation on editorial boards as well.</p>
+
+
+
+
+
+
+
+<p><em>Ana-Catarina Pinho-Gomes and colleagues (<a href="https://bmjopen.bmj.com/content/12/5/e061054" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a>). Cross-sectional study of the relationship between women’s representation among editors and peer reviewers in journals of the British Medical Journal Publishing Group.</em></p>
+
+
+
+<p><em>Khaoula Ben Messaoud and colleagues (<a href="https://peerreviewcongress.org/abstract/womens-responses-to-peer-review-invitations-by-21-biomedical-journals-prior-to-and-during-the-covid-19-pandemic/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">2022</a>) [abstract only].</em> <em>Women’s responses to peer review invitations by 21 biomedical journals prior to and during the COVID-19 pandemic. </em></p>
+
+
+
+
+
+
+
+<p><em><a href="#contents">Back to contents</a></em></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<h2 id="other"></h2>
+
+
+
+
+
+
+
+<h5>Other interesting studies</h5>
+
+
+
+
+
+
+
+<ul><li>The journal research “Olympics” was in 2022: The Ninth International Congress on Peer Review and Scientific Publication. Abstracts for presentations and posters, as well as slides and videos for presentations, are online <a href="https://peerreviewcongress.org/peer-review-congress-2022-program/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a>.</li><li>A trial of randomizing group discussions to be kicked off by people who were positive or negative to a manuscript didn’t affect the outcome – there was, wrote the others, no sign of a herding effect. The context: Submissions for a computer conference [<a href="https://peerreviewcongress.org/abstract/effect-of-positive-vs-negative-reviewer-led-discussion-on-herding-and-acceptance-rates-of-papers-submitted-to-a-machine-learning-conference-a-randomized-controlled-trial/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">abstract only</a>].</li><li>In neuroscience articles in <em>PLOS ONE</em>, <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0273994" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">author-suggested peer reviewers</a> rated manuscripts more favorably.</li><li><a href="https://arxiv.org/abs/2207.09821" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">A study</a> used machine-learning to study journal impact factor and 10,000 peer review reports in medical and life sciences journals. The authors concluded: “Differences were modest and variability high, indicating that the JIF is a bad predictor for the quality of peer review of an individual manuscript.” <a href="https://peerj.com/articles/13539/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Another study</a> used machine-learning to study over 1.3m peer review reports from 740 Elsevier journals. </li><li>A group analyzed the content of the corpus of peer review reports from Royal Society journals, publishing a pair of papers in <a href="https://www.sciencedirect.com/science/article/abs/pii/S1751157722000682" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">August</a> and <a href="https://royalsocietypublishing.org/doi/10.1098/rsos.210681" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">September</a>.</li><li><a href="https://www.nature.com/articles/d41586-022-00493-w" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">In March</a>, <em>Nature</em>‘s editors announced that nearly half of their authors were agreeing to have anonymous versions of their papers’ peer review reports published. <a href="https://www.nature.com/articles/s41467-022-33056-8" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">In October</a>, they announced that all papers submitted from November 2022 would have peer review reports (signed or anonymous) and authors’ responses published.</li></ul>
+
+
+
+
+
+
+
+<p><em><a href="#contents">Back to contents</a></em></p>
+
+
+
+
+
+
+
+<p>~~~~</p>
+
+
+
+
+
+
+
+<figure><img src="https://reader.miniflux.app/proxy/nv6Q55N7koAONhyEFjE5-yydZ1DqC3segV5NvHpUc2Q=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMC8wNS9PaC10aGUtdGhpbmdzLXdlLWNvdWxkLWtub3ctMS03NDV4MTAyNC5qcGc=" alt="Cartoon about things we could know" width="175" height="240" srcset="https://reader.miniflux.app/proxy/nv6Q55N7koAONhyEFjE5-yydZ1DqC3segV5NvHpUc2Q=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMC8wNS9PaC10aGUtdGhpbmdzLXdlLWNvdWxkLWtub3ctMS03NDV4MTAyNC5qcGc= 745w, https://reader.miniflux.app/proxy/QCYrWwn5BKB957R-c1P8IuHeIGeQN6nHFJEeCtiyI24=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMC8wNS9PaC10aGUtdGhpbmdzLXdlLWNvdWxkLWtub3ctMS0yMTh4MzAwLmpwZw== 218w, https://reader.miniflux.app/proxy/3Z3KBl5WYTmeaM9Hx1b6ghdYkf-1UsnIzwuZWzqa3bM=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMC8wNS9PaC10aGUtdGhpbmdzLXdlLWNvdWxkLWtub3ctMS03Njh4MTA1Ni5qcGc= 768w, https://reader.miniflux.app/proxy/F8y4IE0d2cOPvdry4O7kexAFCG8Ww2YukHDikaNWW8w=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMC8wNS9PaC10aGUtdGhpbmdzLXdlLWNvdWxkLWtub3ctMS0xMTE3eDE1MzYuanBn 1117w, https://reader.miniflux.app/proxy/b7mDlAIqQCJSSS-tpYPQR1HS19pQgo6vAfAvSU-5RJ0=/aHR0cHM6Ly9hYnNvbHV0ZWx5bWF5YmUucGxvcy5vcmcvd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzgvMjAyMC8wNS9PaC10aGUtdGhpbmdzLXdlLWNvdWxkLWtub3ctMS5qcGc= 1440w" sizes="(max-width: 175px) 100vw, 175px" loading="lazy"/></figure>
+
+
+
+<p><em>This is the 6th post of a series on peer review research – that started with a couple of catch-ups on peer review research milestones from 1945 to 2018</em>:</p>
+
+
+
+<p><em><strong><a href="https://absolutelymaybe.plos.org/?category=peer-review-research-roundup" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Peer review research roundups</a></strong></em></p>
+
+
+
+<p><em><strong><a href="https://absolutelymaybe.plos.org/?post_tag=peer-review" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">All posts tagged “Peer Review”</a></strong></em></p>
+
+
+
+
+
+
+
+<p><em>Disclosures: I know at least one author of 2 of the papers or abstracts I selected this year (Thibault, Speich). I’ve had a variety of editorial roles at multiple journals across the years, including having been a member of the ethics committee of the </em>BMJ<em>, the editorial boards of </em>PLOS Medicine<em> and </em>The Drugs and Therapeutics Bulletin<em>, and </em>PLOS ONE<em>‘s human ethics advisory group. I wrote a chapter of the second edition of the </em>BMJ<em>‘s <a href="https://trove.nla.gov.au/work/9793841" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">book</a>, </em>Peer Review in<em> </em>Health Sciences<em>. I have done research on post-publication peer review, subsequent to a previous role I had, as Editor-in-Chief of PubMed Commons (a discontinued post-publication commenting system for PubMed). I have been advising on some controversial issues for </em>The Cochrane Library<em>, a systematic review journal which I helped establish, and for which I was an editor for several years. I was a longtime health consumer advocate in health research, and designed and led many 1- or 2-day training workshops internationally for potential consumer peer reviewers for Cochrane.</em></p>
+
+
+
+<p><em>The cartoon is my own <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">(CC BY-NC-ND license)</a>. (More cartoons at <a href="http://statistically-funny.blogspot.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Statistically Funny</a>.)</em></p>
+
+
+
+
+
+
+
+<p></p>
+
+<p>The post <a href="https://absolutelymaybe.plos.org/2023/01/26/5-things-we-learned-about-journal-peer-review-in-2022/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">5 Things We Learned About Journal Peer Review in 2022</a> appeared first on <a href="https://absolutelymaybe.plos.org" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Absolutely Maybe</a>.</p>

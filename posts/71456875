@@ -1,0 +1,73 @@
+<p><em>Fair market rents, humanitarian groups, diplomatic visits, bog
+bodies, and Open Data Day events.</em></p>
+<p> </p>
+<p><em>👋 Free workshop! I’m teaching a PDF-parsing class at <a href="https://www.ire.org/training/conferences/nicar-2023/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">NICAR
+2023</a> in a couple of weeks. I’d like to test out the material by
+teaching it online first. If you’re interested (and have some experience
+with Python), <a href="https://docs.google.com/forms/d/e/1FAIpQLSdS2Z30DhzWN-3AwJZTECHYNmCbEtswDQ5s5K8IrLkqgC0oOA/viewform" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">click
+here</a>.</em></p>
+<p> </p>
+<p><strong>Fair market rents.</strong> Every year, the Department of
+Housing and Urban Development recalculates what it calls “fair market
+rents” <a href="https://www.huduser.gov/portal/datasets/fmr.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">for
+every county in the US</a> and <a href="https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">for
+individual ZIP codes in metropolitan counties</a>. The results, which
+factor into various housing subsidy programs, <a href="https://www.law.cornell.edu/cfr/text/24/888.113" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">represent</a> the
+40th percentile cost of monthly rent and (basic) utilities for “recent
+movers” in “standard quality” units, adjusted for the number of
+bedrooms. HUD’s annual spreadsheets go back to the early 2000s; you can
+also browse the estimates online and <a href="https://www.huduser.gov/portal/dataset/fmr-api.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">query them
+via an API</a>. <strong>As seen in</strong>: “<a href="https://usafacts.org/articles/where-are-rents-rising-post-covid-19/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Where
+are rents rising post COVID-19?</a>” (USAFacts).</p>
+<p> </p>
+<p><strong>Humanitarian groups.</strong> “Based on clear and
+reproducible criteria,” <a href="https://claramarieegger.wordpress.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Clara Egger</a> and <a href="http://www.ge2p2.org/people/2018/10/12/doris-schopper-md-dph" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Doris
+Schopper</a> have <a href="https://academic.oup.com/isq/article/66/2/sqac009/6564592" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">compiled</a>
+the <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/52GFWC" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Humanitarian
+Organizations Dataset</a>, which describes 2,500+ groups active in the
+sector. It includes the organizations’ founding years, structures,
+countries headquartered, regional scopes, types of activities, targets
+for assistance, and more. You can also <a href="https://humanitarianencyclopedia.org/community/organizations" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">explore
+a version of the dataset online</a>. <strong>Related</strong>: The <a href="https://www.humanitarianoutcomes.org/projects/gdho" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Global
+Database of Humanitarian Organisations</a>, from <a href="https://www.humanitarianoutcomes.org/about" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Humanitarian
+Outcomes</a>, “a team of specialist consultants providing research and
+policy advice for humanitarian aid agencies and donor governments.”</p>
+<p> </p>
+<p><strong>Diplomatic visits.</strong> The US Department of State’s <a href="https://history.state.gov/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Office of the Historian</a> maintains
+a <a href="https://github.com/HistoryAtState/visits" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">dataset</a> and <a href="https://history.state.gov/departmenthistory/visits" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">online
+directory</a> of every visit by a foreign leader from 1874 to 2020. The
+details include each visit’s starting and ending date, the visitor’s
+name, their country, and a brief description. The office publishes <a href="https://github.com/HistoryAtState/travels" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">similar data</a> on the
+<a href="https://history.state.gov/departmenthistory/travels" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">travels of
+US presidents and secretaries of state</a>. <strong>Related</strong>: <a href="https://mattmalis.github.io/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Matt Malis</a> and <a href="https://wp.nyu.edu/alastairsmith/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Alastair Smith</a> have <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/2ZNR5R" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">expanded
+the data for 1946–2019</a>, adding fields that indicate the type of
+visit, whether it involved a presidential meeting, the names of
+agreements signed, and more. <strong>Previously</strong>: <a href="https://github.com/tacookson/data/tree/master/us-government-gifts" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Diplomatic
+gifts</a> (<a href="https://www.data-is-plural.com/archive/2022-08-03-edition/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DIP
+2022.08.03</a>).</p>
+<p> </p>
+<p><strong>Bog bodies.</strong> <a href="https://www.cambridge.org/core/journals/antiquity/article/bogs-bones-and-bodies-the-deposition-of-human-remains-in-northern-european-mires-9000-bcad-1900/B90A16A211894CB87906A7BCFC0B2FC7" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Roy
+van Beek et al.</a> “present the first large-scale overview of
+well-dated human remains from northern European mires, based on a
+database of 266 sites and more than 1000 bog mummies, bog skeletons and
+disarticulated/partial skeletal remains.” The database, which can be
+found in the study’s <a href="https://www.cambridge.org/core/journals/antiquity/article/bogs-bones-and-bodies-the-deposition-of-human-remains-in-northern-european-mires-9000-bcad-1900/B90A16A211894CB87906A7BCFC0B2FC7#supplementary-materials" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">supplementary
+materials tab</a>, indicates the bog bodies’ location, year found,
+preservation level, sex, estimated age, assumed cause of death, and much
+more. [h/t <a href="https://dair-community.social/@miriamkp/109785940080210793" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Miriam
+Posner</a> + <a href="https://www.robinsloan.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Robin Sloan</a>]</p>
+<p> </p>
+<p><strong>Open Data Day events.</strong> <a href="https://opendataday.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Open Data Day(s)</a>, scheduled for
+March 4–10 this year, “is an annual celebration of open data all over
+the world.” The <a href="https://okfn.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Open Knowledge
+Foundation</a>, which <a href="https://blog.okfn.org/2023/02/07/open-data-days-2023-will-take-place-from-4th-to-10th-march/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">helps
+to coordinate</a> the locally-organized gatherings, hosts a <a href="https://opendataday.org/events/2023/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">searchable list</a> of
+registered events, plus <a href="https://github.com/okfn/opendataday/tree/master/Datasets" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">datasets
+of each year’s events since 2014</a>.</p>
+<p> </p>
+<p><em>Dataset suggestions? Criticism? Praise? Send open feedback to
+jsvine@gmail.com, or just reply to this email. // Looking for past
+datasets? <a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">This
+spreadsheet contains them all</a>. // Visit <a href="https://www.data-is-plural.com" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">data-is-plural.com</a> to
+subscribe and to browse past editions. // <a href="https://docs.google.com/document/d/e/2PACX-1vSP5xYrhqEvoGTi2aFzrsYQXadG8Gv0Y6YGWjib1e4qcXG45Sq5TSvngvh342DdcAEyEDIVd5V3RYcc/pub" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Learn
+how to place an ad in Data Is Plural</a>.</em></p>

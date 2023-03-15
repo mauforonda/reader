@@ -1,0 +1,226 @@
+Latest Complexity Digest Posts
+        
+    
+    
+        
+        
+            <table>
+                <tbody><tr>
+                    <td>
+                        
+                        <table>
+                            <tbody><tr>
+                                <td>
+                                
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                                Learn about the latest and greatest related to complex systems research. More at <a href="http://comdig.unam.mx" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">http://comdig.unam.mx</a>
+                                            </td>
+                                            
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                
+                                </td>
+                            </tr>
+                        </tbody></table>
+                        
+                        <table>
+                            <tbody><tr>
+                                <td>
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                            
+                                                
+                                                <a href="http://comdig.unam.mx" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/gWY-VZqmIAQWx2fEMyEg0xaNJDkctXXxaVrxadZohB4=/aHR0cHM6Ly9nYWxsZXJ5Lm1haWxjaGltcC5jb20vMGViMGFjOWI0ZTg1NjVmMjk2N2E4MzA0Yi9pbWFnZXMvbG9nb2Q3NzAzOC5wbmc=" alt="Complexity Digest" width="600" loading="lazy"/></a>
+                                                
+                                            
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                
+                                                
+                                                <table>
+                                                    <tbody><tr>
+                                                        <td>
+                                                            <strong>Contents from of the 01/30/2023 edition:</strong><br/>
+<ul id="mctoc"><li><a href="#mctoc1">The circular economy</a></li><li><a href="#mctoc2">Scaling up our understanding of tipping points</a></li><li><a href="#mctoc3">The Clinical Trials Puzzle: How Network Effects Limit Drug Discovery</a></li><li><a href="#mctoc4">Exact and rapid linear clustering of networks with dynamic programming</a></li><li><a href="#mctoc5">Emergent Criticality in Coupled Boolean Networks</a></li><li><a href="#mctoc6">Will We Know Alien Life When We See It?</a></li><li><a href="#mctoc7">Does Spending More Always Ensure Higher Cooperation? An Analysis of Institutional Incentives on Heterogeneous Networks</a></li></ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            
+<h2><br/>
+The circular economy</h2>
+<p><img src="https://reader.miniflux.app/proxy/ya69fISSoVrjaOjkf3oj071CLSj0CfkL_MLRi2Vn7VE=/aHR0cHM6Ly9jeGRpZy5maWxlcy53b3JkcHJlc3MuY29tLzIwMjMvMDEvYTI5ZjQyNGItZDU1Yy00OWRhLWI1OWEtMTY1MGI1MjNlN2FhLTEuanBnP3c9MTEwOA==" loading="lazy"/></p>
+<p>A sustainable future requires preservation of the world’s finite resources, which often means the waste from one process loops back and becomes the input for another. Advanced technologies and techniques are helping an array of industries to make reuse and recycling more central to their operations. </p>
+<p>Read the full Outlook at: <a href="https://www.nature.com/collections/aiehecifha" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">www.nature.com</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-1ff6f480&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D54fc1f0619%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F29%252Fthe-circular-economy%252F%26title%3DThe%2520circular%2520economy&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=54fc1f0619" title="Like The circular economy on Facebook" id="fblike-1ff6f480" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like The circular economy on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Scaling up our understanding of tipping points</h2>
+<p>Sonia Kéfi, Camille Saade, Eric L. Berlow, Juliano S. Cabral and Emanuel A. Fronhofer</p>
+<p>Philosophical Transactions of the Royal Society B-Biological Sciences; Vol.: 377; Issue: 1857; Article No.: 20210386</p>
+<p>Anthropogenic activities are increasingly affecting ecosystems across the globe. Meanwhile, empirical and theoretical evidence suggest that natural systems can exhibit abrupt collapses in response to incremental increases in the stressors, sometimes with dramatic ecological and economic consequences. These catastrophic shifts are faster and larger than expected from the changes in the stressors and happen once a tipping point is crossed. The primary mechanisms that drive ecosystem responses to perturbations lie in their architecture of relationships, i.e. how species interact with each other and with the physical environment and the spatial structure of the environment. Nonetheless, existing theoretical work on catastrophic shifts has so far largely focused on relatively simple systems that have either few species and/or no spatial structure. This work has laid a critical foundation for understanding how abrupt responses to incremental stressors are possible, but it remains difficult to predict (let alone manage) where or when they are most likely to occur in more complex real-world settings. Here, we discuss how scaling up our investigations of catastrophic shifts from simple to more complex—species rich and spatially structured—systems could contribute to expanding our understanding of how nature works and improve our ability to anticipate the effects of global change on ecological systems.</p>
+<p>Read the full article at: <a href="https://royalsocietypublishing.org/doi/10.1098/rstb.2021.0386" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">royalsocietypublishing.org</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-52c85fc8&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D54fc1f0619%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F28%252Fscaling-up-our-understanding-of-tipping-points%252F%26title%3DScaling%2520up%2520our%2520understanding%2520of%2520tipping%2520...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=54fc1f0619" title="Like Scaling up our understanding of tipping points on Facebook" id="fblike-52c85fc8" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Scaling up our understanding of tipping points on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+The Clinical Trials Puzzle: How Network Effects Limit Drug Discovery</h2>
+<p>Kishore Vasan, Deisy Gysi, Albert-Laszlo Barabasi<br/>The depth of knowledge offered by post-genomic medicine has carried the promise of new drugs, and cures for multiple diseases. To explore the degree to which this capability has materialized, we extract meta-data from 356,403 clinical trials spanning four decades, aiming to offer mechanistic insights into the innovation practices in drug discovery. We find that convention dominates over innovation, as over 96% of the recorded trials focus on previously tested drug targets, and the tested drugs target only 12% of the human interactome. If current patterns persist, it would take 170 years to target all druggable proteins. We uncover two network-based fundamental mechanisms that currently limit target discovery: preferential attachment, leading to the repeated exploration of previously targeted proteins; and local network effects, limiting exploration to proteins interacting with highly explored proteins. We build on these insights to develop a quantitative network-based model of drug discovery. We demonstrate that the model is able to accurately recreate the exploration patterns observed in clinical trials. Most importantly, we show that a network-based search strategy can widen the scope of drug discovery by guiding exploration to novel proteins that are part of under explored regions in the human interactome.</p>
+<p>Read the full article at: <a href="https://arxiv.org/abs/2301.10709v1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">arxiv.org</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-c9166a68&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D54fc1f0619%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F28%252Fthe-clinical-trials-puzzle-how-network-effects-limit-drug-discovery%252F%26title%3DThe%2520Clinical%2520Trials%2520Puzzle%253A%2520How%2520Network%2520...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=54fc1f0619" title="Like The Clinical Trials Puzzle: How Network Effects Limit Drug Discovery on Facebook" id="fblike-c9166a68" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like The Clinical Trials Puzzle: How Network Effects Limit Drug Discovery on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Exact and rapid linear clustering of networks with dynamic programming</h2>
+<p>Alice Patania, Antoine Allard, Jean-Gabriel Young<br/>We study the problem of clustering networks whose nodes have imputed or physical positions in a single dimension, such as prestige hierarchies or the similarity dimension of hyperbolic embeddings. Existing algorithms, such as the critical gap method and other greedy strategies, only offer approximate solutions. Here, we introduce a dynamic programming approach that returns provably optimal solutions in polynomial time — O(n^2) steps — for a broad class of clustering objectives. We demonstrate the algorithm through applications to synthetic and empirical networks, and show that it outperforms existing heuristics by a significant margin, with a similar execution time.</p>
+<p>Read the full article at: <a href="https://arxiv.org/abs/2301.10403v1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">arxiv.org</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-c018aa87&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D54fc1f0619%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F27%252Fexact-and-rapid-linear-clustering-of-networks-with-dynamic-programming%252F%26title%3DExact%2520and%2520rapid%2520linear%2520clustering%2520of%2520net...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=54fc1f0619" title="Like Exact and rapid linear clustering of networks with dynamic programming on Facebook" id="fblike-c018aa87" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Exact and rapid linear clustering of networks with dynamic programming on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Emergent Criticality in Coupled Boolean Networks</h2>
+<p>Chris Kang, Madelynn McElroy, and Nikolaos K. Voulgarakis</p>
+<p>Entropy 2023, 25(2), 235</p>
+<p>Early embryonic development involves forming all specialized cells from a fluid-like mass of identical stem cells. The differentiation process consists of a series of symmetry-breaking events, starting from a high-symmetry state (stem cells) to a low-symmetry state (specialized cells). This scenario closely resembles phase transitions in statistical mechanics. To theoretically study this hypothesis, we model embryonic stem cell (ESC) populations through a coupled Boolean network (BN) model. The interaction is applied using a multilayer Ising model that considers paracrine and autocrine signaling, along with external interventions. It is demonstrated that cell-to-cell variability can be interpreted as a mixture of steady-state probability distributions. Simulations have revealed that such models can undergo a series of first- and second-order phase transitions as a function of the system parameters that describe gene expression noise and interaction strengths. These phase transitions result in spontaneous symmetry-breaking events that generate new types of cells characterized by various steady-state distributions. Coupled BNs have also been shown to self-organize in states that allow spontaneous cell differentiation.</p>
+<p>Read the full article at: <a href="https://www.mdpi.com/1099-4300/25/2/235" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">www.mdpi.com</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-de7e49a8&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D54fc1f0619%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F27%252Femergent-criticality-in-coupled-boolean-networks%252F%26title%3DEmergent%2520Criticality%2520in%2520Coupled%2520Boolean%2520...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=54fc1f0619" title="Like Emergent Criticality in Coupled Boolean Networks on Facebook" id="fblike-de7e49a8" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Emergent Criticality in Coupled Boolean Networks on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Will We Know Alien Life When We See It?</h2>
+<p><img src="https://reader.miniflux.app/proxy/VYrPol3FyT_LefCKVTmnTTjnsVMEZYUCJl4qyFHy60c=/aHR0cHM6Ly9jeGRpZy5maWxlcy53b3JkcHJlc3MuY29tLzIwMjMvMDEvODkyNzA0MTYtY2MxMy00MjBlLThkNDEtNzc2NDA0MzZhM2E5LTEuanBnP3c9MTEwOA==" loading="lazy"/></p>
+<p>Scientists and philosophers have been attempting to define life for ages. In biology class we were taught to define life through the set of features that we, and every other species on the planet share. Things like movement, respiration, growth, and reproduction. Life is made of cells and has DNA. But does biochemistry constitute the whole picture? As far back as 1970, Carl Sagan didn’t think so. Attempts at defining life, he and many others thought, were too constrained by the characteristics of life as we know it. A single example of extraterrestrial life could change everything.</p>
+<p>Read the full article at: <a href="https://nautil.us/will-we-know-alien-life-when-we-see-it-256501/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">nautil.us</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-2264dde7&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D54fc1f0619%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F26%252Fwill-we-know-alien-life-when-we-see-it%252F%26title%3DWill%2520We%2520Know%2520Alien%2520Life%2520When%2520We%2520See%2520It%253F&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=54fc1f0619" title="Like Will We Know Alien Life When We See It? on Facebook" id="fblike-2264dde7" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Will We Know Alien Life When We See It? on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+<h2><br/>
+Does Spending More Always Ensure Higher Cooperation? An Analysis of Institutional Incentives on Heterogeneous Networks</h2>
+<p>Theodor Cimpeanu, Francisco C Santos, The Anh Han<br/>Humans have developed considerable machinery used at scale to create policies and to distribute incentives, yet we are forever seeking ways in which to improve upon these, our institutions. Especially when funding is limited, it is imperative to optimise spending without sacrificing positive outcomes, a challenge which has often been approached within several areas of social, life and engineering sciences. These studies often neglect the availability of information, cost restraints, or the underlying complex network structures, which define real-world populations. Here, we have extended these models, including the aforementioned concerns, but also tested the robustness of their findings to stochastic social learning paradigms. Akin to real-world decisions on how best to distribute endowments, we study several incentive schemes, which consider information about the overall population, local neighbourhoods, or the level of influence which a cooperative node has in the network, selectively rewarding cooperative behaviour if certain criteria are met. Following a transition towards a more realistic network setting and stochastic behavioural update rule, we found that carelessly promoting cooperators can often lead to their downfall in socially diverse settings. These emergent cyclic patterns not only damage cooperation, but also decimate the budgets of external investors. Our findings highlight the complexity of designing effective and cogent investment policies in socially diverse populations.</p>
+<p>Read the full article at: <a href="https://arxiv.org/abs/2301.06620v1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">arxiv.org</a></p>
+<br/>
+<img src="https://reader.miniflux.app/proxy/uHW-W2zObBC4JGiWQw8sER1b_icXfMic20JVGR6vgBg=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9zb2NpYWxfY29ubmVjdF90d2VldC5wbmc=" width="55" height="20" alt="share on Twitter" loading="lazy"/> <a href="https://us4.campaign-archive.com/?fblike=fblike-c4a1c6f7&amp;e=[UNIQID]&amp;socialproxy=https%3A%2F%2Fus4.campaign-archive.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0eb0ac9b4e8565f2967a8304b%26id%3D54fc1f0619%26url%3Dhttps%253A%252F%252Fcomdig.unam.mx%252F2023%252F01%252F23%252Fdoes-spending-more-always-ensure-higher-cooperation-an-analysis-of-institutional-incentives-on-heterogeneous-networks%252F%26title%3DDoes%2520Spending%2520More%2520Always%2520Ensure%2520Higher%2520...&amp;u=0eb0ac9b4e8565f2967a8304b&amp;id=54fc1f0619" title="Like Does Spending More Always Ensure Higher Cooperation? An Analysis of Institutional Incentives on Heterogeneous Networks on Facebook" id="fblike-c4a1c6f7" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/PcB_tt0CWxqCjRWJtU1Py1n9qh35rJZX3Is9dWNxnIc=/aHR0cDovL2Nkbi1pbWFnZXMubWFpbGNoaW1wLmNvbS9mYi9saWtlLmdpZg==" alt="Like Does Spending More Always Ensure Higher Cooperation? An Analysis of Institutional Incentives on Heterogeneous Networks on Facebook" height="20" width="48" loading="lazy"/></a><br/>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h3>More to read:</h3>
+
+<table>
+	
+		<tbody><tr>
+			<td>
+			<table>
+				
+					<tbody><tr>
+						<td><a href="https://comdig.unam.mx/2023/01/22/thoughts-on-complex-systems-an-interview-with-giorgio-parisi/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Thoughts on complex systems: an interview with Giorgio Parisi</a><br/><a href="https://comdig.unam.mx/2023/01/22/complex-systems-in-the-spotlight-next-steps-after-the-2021-nobel-prize-in-physics/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Complex systems in the spotlight: next steps after the 2021 Nobel Prize in Physics</a><br/><a href="https://comdig.unam.mx/2023/01/21/strong-emergence-arising-from-weak-emergence/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Strong Emergence Arising from Weak Emergence</a><br/><a href="https://comdig.unam.mx/2023/01/20/stigmergic-coordination-and-minimal-cognition-in-plants/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Stigmergic coordination and minimal cognition in plants</a><br/><a href="https://comdig.unam.mx/2023/01/19/maximum-entropy-network-states-for-coalescence-processes-2/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Maximum entropy network states for coalescence processes</a><br/><a href="https://comdig.unam.mx/2023/01/19/long-covid-major-findings-mechanisms-and-recommendations/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Long COVID: major findings, mechanisms and recommendations</a><br/><a href="https://comdig.unam.mx/2023/01/18/statistical-analysis-of-word-flow-among-five-indo-european-languages/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Statistical analysis of word flow among five Indo-European languages</a><br/><a href="https://comdig.unam.mx/2023/01/17/the-brain-computer-analogy-a-special-issue/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The brain-computer analogy—“A special issue”</a><br/><a href="https://comdig.unam.mx/2023/01/14/dont-follow-the-leader-independent-thinkers-create-scientific-innovation/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Don’t follow the leader: Independent thinkers create scientific innovation</a><br/><a href="https://comdig.unam.mx/2023/01/13/maximum-entropy-network-states-for-coalescence-processes/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Maximum entropy network states for coalescence processes</a></td>
+					</tr>
+				
+			</tbody></table>
+			</td>
+		</tr>
+	
+</tbody></table>
+
+                                                        </td>
+                                                    </tr>
+                                                </tbody></table>
+                                                
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                            
+                                                
+                                                <table>
+                                                    <tbody><tr>
+                                                        <td colspan="2">
+                                                             <a href="http://twitter.com/cxdig" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">follow on Twitter</a> | <a href="https://www.facebook.com/pages/Complexity-Digest/103026839755164" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">like on Facebook</a> | <a href="http://www.linkedin.com/groups?gid=3270291" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">join on LinkedIn</a> | <a href="https://plus.google.com/b/105687854558109225649/105687854558109225649/posts" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Google+</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            
+                                                        </td>
+                                                        <td>
+                                                            
+                                                                 <a href="http://www.mailchimp.com/email-referral/?utm_source=freemium_newsletter&amp;utm_medium=email&amp;utm_campaign=referral_marketing&amp;aid=0eb0ac9b4e8565f2967a8304b&amp;afl=1" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/KELiOftXffLqcIBSflNQcnWkdolUAJv6Cich_jrkdMM=/aHR0cHM6Ly9nYWxsZXJ5Lm1haWxjaGltcC5jb20vMDg5NDQzMTkzZGQ5MzgyM2YzZmVkNzhiNC9pbWFnZXMvYmFubmVyMS5naWY=" alt="Email Marketing Powered by Mailchimp" title="Mailchimp Email Marketing" loading="lazy"/></a> 
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                </tbody></table>
+                                                
+                                            
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                </td>
+                            </tr>
+                        </tbody></table>
+                        <br/>
+                    </td>
+                </tr>
+            </tbody></table>
+        
+                
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <table>
+                    <tbody><tr>
+                        <td>
+                            <table>
+                                <tbody><tr>
+                                    <td>
+                                        This email was sent to <a href="mailto:&lt;&lt;Email Address&gt;&gt;" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">&lt;&lt;Email Address&gt;&gt;</a>
+                                        <br/>
+                                        <a href="https://unam.us4.list-manage.com/about?u=0eb0ac9b4e8565f2967a8304b&amp;id=f55ea67de1&amp;e=[UNIQID]&amp;c=54fc1f0619" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><em>why did I get this?</em></a>    <a href="https://unam.us4.list-manage.com/unsubscribe?u=0eb0ac9b4e8565f2967a8304b&amp;id=f55ea67de1&amp;e=[UNIQID]&amp;c=54fc1f0619" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">unsubscribe from this list</a>    <a href="https://unam.us4.list-manage.com/profile?u=0eb0ac9b4e8565f2967a8304b&amp;id=f55ea67de1&amp;e=[UNIQID]&amp;c=54fc1f0619" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">update subscription preferences</a>
+                                        <br/>
+                                        Complexity Digest · Universidad Nacional Autónoma de México · Ciudad Universitaria · Mexico City, DF 01000 · Mexico
+                                        <br/>
+                                        <br/>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+                
+            

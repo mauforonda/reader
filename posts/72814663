@@ -1,0 +1,29 @@
+<p>Shiona McCallum and Chris Vallance, reporting for the BBC News:</p>
+
+<blockquote>
+  <p>WhatsApp says it would rather be blocked in the UK than undermine
+its encrypted-messaging system, if required to do so under the
+Online Safety Bill. [...]</p>
+
+<p>The government said it is possible to have both privacy and
+child safety.</p>
+</blockquote>
+
+<p>Cryptographers and privacy experts agree that end-to-end encryption is the only way to guarantee privacy. Dum-dum elected officials around the globe have a <a href="https://daringfireball.net/2020/05/doj_apple_iphone_encryption" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">persistent</a> “it must be possible” fantasy that it’s possible to create an encryption system with backdoor keys that would only be available to “the good guys”.</p>
+
+<blockquote>
+  <p>Undermining the privacy of WhatsApp messages in the UK would do so
+for all users, Mr Cathcart said.</p>
+
+<p>“Our users all around the world want security - 98% of our users
+are outside the UK, they do not want us to lower the security of
+the product,” he said. And the app would rather accept being
+blocked in the UK.</p>
+
+<p>“We’ve recently been blocked in Iran, for example. We’ve never
+seen a liberal democracy do that,” he added.</p>
+</blockquote>
+
+<p>It’s not even a matter of willingness. It’s not technically possible for WhatsApp or Signal or iMessage or any platform that’s end-to-end encrypted to use some weaker backdoor-able encryption on a country-by-country basis. The platform is either truly end-to-end encrypted or it’s not. They can’t just flip and switch and let U.K. WhatsApp users use an entirely different non-E2E protocol. The principled stand in the name of cryptographically guaranteed privacy isn’t happening now, in response to this deeply misguided legislation — it happened at the outset of these platforms, when they were designed from the ground up with E2E.</p>
+
+<p><em>Link: <strong><a href="https://www.bbc.com/news/technology-64863448" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">bbc.com/news/technology-64863448</a></strong></em></p>

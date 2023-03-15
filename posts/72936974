@@ -1,0 +1,107 @@
+<p>This week, news got out that Meta is making a plan to build a decentralized text-based social network. It would be a competitor to Twitter that uses ActivityPub, and would thus be part of the fediverse. The news broke on the <a href="https://www.moneycontrol.com/news/business/startup/meta-mulls-a-twitter-competitor-codenamed-p92-that-will-be-interoperable-with-mastodon-10223961.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">website MoneyControl</a>, who saw a copy of a product brief. A few hours later, the news got confirmed by Meta to the <a href="https://www.platformer.news/p/meta-is-building-a-decentralized" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">newsletter Platformer</a>. Both articles have all the details and the best analysis, so if you want to get in-depth information check those out. The short summary is as follows:</p>
+
+
+
+<ul>
+<li>The project is in the earliest stages, it is unclear if it is still in the ideas-phase or if development work has begun.</li>
+
+
+
+<li>It is a “separate space where creators and public figures can share timely updates about their interests.”</li>
+
+
+
+<li>Users can log in using their existing Instagram credentials.</li>
+
+
+
+<li>The MVP of the project is to be able to send content. The idea seems to be that you can send text-based content out to people on other servers (such as Mastodon).</li>
+
+
+
+<li>Being able to receive content or follow people from other servers is up in the air. A source says that it “may or may not enable” this.</li>
+</ul>
+
+
+
+<p>This news has caused some serious waves in the fediverse. People have significantly different opinions and ideas about this news. In this article I document some of the main lines of thinking that I’ve encountered. At this point we have no idea how this will actually play out, especially since Meta is so early in the development of the project. But it is a milestone in the history of the fediverse, a validation that Big Tech wants to be a part of it all. </p>
+
+
+
+<p>In order to understand this development, here are some of the main types of responses that have been played out on the feeds. The documentation is here is to help understand how different people have varying ideas about this all.</p>
+
+
+
+<h2>Validation of the fediverse</h2>
+
+
+
+<p>Mastodon’s lead developer Eugen Rochko gave a positive statement on the development, <a href="https://mastodon.social/@Gargron/110001525647048508" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">stating:</a> </p>
+
+
+
+<figure><img width="584" height="188" src="https://reader.miniflux.app/proxy/JSK8ZUR6rZRRh2wFJGAFqTy1boAwct5yPN8BhM_VIlo=/aHR0cHM6Ly9mZWRpdmVyc2VyZXBvcnQuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL2V1Z2VuLXJvY2hrby1tZXRhLnBuZw==" alt="" srcset="https://reader.miniflux.app/proxy/JSK8ZUR6rZRRh2wFJGAFqTy1boAwct5yPN8BhM_VIlo=/aHR0cHM6Ly9mZWRpdmVyc2VyZXBvcnQuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL2V1Z2VuLXJvY2hrby1tZXRhLnBuZw== 584w, https://reader.miniflux.app/proxy/9WyPrlwdAQALBcW59ghMG4Re_36bTBjZZ6aLFodImaM=/aHR0cHM6Ly9mZWRpdmVyc2VyZXBvcnQuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL2V1Z2VuLXJvY2hrby1tZXRhLTMwMHg5Ny5wbmc= 300w" sizes="(max-width: 584px) 100vw, 584px" loading="lazy"/></figure>
+
+
+
+<p>This way of thinking, the validation of the value of decentralized social networks, was also <a href="https://mastodon.social/@atomicpoet/110000249690410261" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">echoed here</a> by Chris Trottier, who <a href="https://mastodon.social/@atomicpoet/110001544112104104" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">further added</a> that all Meta’s recent successes are either acquired or copied, giving him confidence that it will not be easy for Meta to take over the fediverse. He also <a href="https://mastodon.social/@atomicpoet/110000357375424899" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">emphases </a>the validation that this gives to the decentralized social networks, enabling and confirming other developers that want to work on the fediverse. </p>
+
+
+
+<p></p>
+
+
+
+<h2>Extend Embrace Extinguish</h2>
+
+
+
+<p>A common response in the feeds is to call this an Extend Embrace Extinguish strategy by Meta. This seems to be one of the more common responses by people. Flipboard CEO Mike McCrue (who recently set up a Mastodon server for Flipboard as well),<a href="https://flipboard.social/@mike/110002535044533438" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"> spells out in more detail </a>how this strategy works: </p>
+
+
+
+<figure><img width="566" height="449" src="https://reader.miniflux.app/proxy/BzGKodz8jQgvUjx7SjRTSNjDA-pcxjGiklZdN8QG_dE=/aHR0cHM6Ly9mZWRpdmVyc2VyZXBvcnQuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL2ZsaXBib2FyZC1leHRlbmQtZW1icmFjZS1leHRpbmd1aXNoLnBuZw==" alt="" srcset="https://reader.miniflux.app/proxy/BzGKodz8jQgvUjx7SjRTSNjDA-pcxjGiklZdN8QG_dE=/aHR0cHM6Ly9mZWRpdmVyc2VyZXBvcnQuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL2ZsaXBib2FyZC1leHRlbmQtZW1icmFjZS1leHRpbmd1aXNoLnBuZw== 566w, https://reader.miniflux.app/proxy/dt0oN50DqWLZLUL8ACVoJ4CqvUoLVjmSOyGfVBbfCRk=/aHR0cHM6Ly9mZWRpdmVyc2VyZXBvcnQuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL2ZsaXBib2FyZC1leHRlbmQtZW1icmFjZS1leHRpbmd1aXNoLTMwMHgyMzgucG5n 300w" sizes="(max-width: 566px) 100vw, 566px" loading="lazy"/></figure>
+
+
+
+<p><a href="https://fedified.com/@DataDrivenMD/109997092247979199" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Another thread</a> points out the risk of the strategy by Meta by building an app that has features that people want, but are currently only partially available on the fediverse, such as search and quote posting. The same thread also points to the possibility of Meta forgoing hosting a server alltogether, and only providing access to the fediverse via a third-party client.</p>
+
+
+
+<h2>Historical parallels</h2>
+
+
+
+<p>As part of calling this the Embrace Extend Extinguish strategy by Meta, is some reflection by people on earlier open source standards. Some people reflected on how email became dominated by a few giants, and that it is surprisingly hard to run your own email server now. This draws direct parallels to fears that people have on the fediverse, where it only becomes possible to really join the fediverse via some large instances, and small instances do not get federated properly due to spam concerns. <a href="https://xoxo.zone/@fraying/110001543019526385" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Other reflections</a> on how Google did this with search, and the power that comes with the large size that big tech giants have. <a href="https://gender.systems/@kvuzet/110000566455973729" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Similar arguments</a> are also made about XMPP, and how adoption for this was destroyed, leading to the fragmentation of chat platforms.</p>
+
+
+
+<p>A notable historical reference was made <a href="https://hub.netzgemeinde.eu/display/b64.aHR0cHM6Ly9odWIubmV0emdlbWVpbmRlLmV1L2l0ZW0vMDcyMDRlYmMtZDMwYi00NWRjLThlMzctYTNmOWY0ZTUzNzM2" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a>, pointing out the history that Facebook and Friendica have. Friendica used to interoperate with Facebook, but Facebook shut that down years ago. </p>
+
+
+
+<p></p>
+
+
+
+<h2>Working on standards</h2>
+
+
+
+<p>Another line of arguments is the need to further work on the ActivityPub standards that powers the fediverse. <a href="https://hachyderm.io/@hrefna/109997904697867300" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">This thread</a> goes into more detail about the risk that the fediverse faces with the immaturity of its standards and issues with the implementation of interoperability. The core argument is that big players can set rules in incompatible ways, because there is no strong protection against that. This does not need to happen on purpose, but can even happen by accident. <a href="https://social.wildeboer.net/@jwildeboer/109999038826506486" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Another thread</a> that calls on the ActivityPub Working Group that created the standard with the W3C to spring into action again. The discussion involves one of the co-creators of the standard, where she points out some of the practical difficulties, especially regarding funding.</p>
+
+
+
+<p></p>
+
+
+
+<h2>Looking forward</h2>
+
+
+
+<p>At this point in time, there are way to many unknowns to make a proper prediction of what is actually going to happen. But the variety of responses show that multiple ideas and reactions can be valid at the same time. Meta joining the fediverse is indeed a validation of the power of decentralized networks, while at the same time providing risks in specific ways. And even without Meta, there is value in standardizing the way different software interacts with the fediverse, helping it grow. At the same time, it can help prevent organisations to implement ActivityPub in ways that are incompatible, either on purpose or by accident. </p>
+
+
+
+<p></p>

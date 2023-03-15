@@ -1,0 +1,459 @@
+Published on March 1, 2023 12:30 PM GMT<br/><br/><p>Some people (<a href="https://twitter.com/Aella_Girl/status/1630284781962547200" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">although very far from all people</a>) are worried that AI will wipe out all value in the universe.</p>
+
+
+
+<figure><a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F57093420-42cd-4ff3-848a-76d0049d64c9_904x621.jpeg" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/B5f0E-T9lwkSNbIlh1gaqyMl3Mo2nel3hag7RAe-ZTc=/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vbGVzc3dyb25nLTItMC9pbWFnZS91cGxvYWQvdjE2Nzc2NzM4MDMvbWlycm9yZWRJbWFnZXMvQ3ZmWnJyRW9rakN1M1hIWHAvaHdtM2lhNjdnY2h4cmdtdXN4M3AuanBn" alt="" loading="lazy"/></a></figure>
+
+
+
+<p>Some people, including some of those same people, need practical advice.</p>
+
+
+
+
+
+
+
+<h4><strong>A Word On Thinking For Yourself</strong></h4>
+
+
+
+<p>There are good reasons to worry about AI. This includes good reasons to worry about AI wiping out all value in the universe, or AI killing everyone, or other similar very bad outcomes.</p>
+
+
+
+<p>There are also good reasons that AGI, or otherwise transformational AI, might not come to pass for a long time.</p>
+
+
+
+<p>As I say in the Q&amp;A section later, I do not consider imminent transformational AI inevitable in our lifetimes: Some combination of ‘we run out of training data and ways to improve the systems, and AI systems max out at not that much more powerful than current ones’ and ‘turns out there are regulatory and other barriers that prevent AI from impacting that much of life or the economy that much’ could mean that things during our lifetimes turn out to be not <em>that </em>strange. These are definitely world types my model says you should consider plausible.</p>
+
+
+
+<p>There is also the highly disputed question of how likely it is that if we did create an AGI reasonably soon, it would wipe out all value in the universe. There are what I consider very good arguments that this is what happens unless we solve extremely difficult problems to prevent it, and that we are unlikely to solve those problems in time. Thus I believe this is very likely, although there are some (such as Eliezer Yudkowsky) who consider it more likely still.</p>
+
+
+
+<p>That does not mean you should adapt my position, <em>or anyone else’s position, or mostly use social cognition from those around you, </em>on such questions, no matter what those methods would tell you. If this is something that is going to impact your major life decisions, or keep you up at night, you need to develop your own understanding and model, and decide for yourself what you predict.</p>
+
+
+
+<h4><strong>Reacting Properly To Such Information is Hard</strong></h4>
+
+
+
+<p>People who do react by worrying about such AI outcomes are rarely reacting <em>about right </em>given their beliefs<em>. </em>Calibration is hard.</p>
+
+
+
+<p>Many effectively suppress this info, cutting the new information about the future off from the rest of their brain. They live their lives as if such risks do not exist.</p>
+
+
+
+<p>There are <em>much worse </em>options than this. It has its advantages. It leaves value on the table, both personally and for the world. In exchange, one avoids major <em>negative </em>outcomes that potentially include things like missing out on the important things in life, ruining one’s financial future and bouts of existential despair.</p>
+
+
+
+<p>Also the risk of doing ill-advised counterproductive things in the name of helping with the problem.</p>
+
+
+
+<p>Remember that <em>the default outcome </em>of those working in AI in order to help is to end up working primarily on capabilities, and making the situation worse.</p>
+
+
+
+<p>That does not mean that you should not make any attempt to improve our chances. It <em>does </em>mean that you should consider your actions carefully when doing so, and the possibility that you are fooling yourself. Remember that you are the easiest person to fool.</p>
+
+
+
+<p><a href="https://twitter.com/QiaochuYuan/status/1628135232158445569" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">While some ignore the issue, others, in various ways, <em>dramatically overreact.</em></a></p>
+
+
+
+<figure><a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F15c2753c-d086-4300-8990-4777125bde89_1333x382.jpeg" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/9jHc4uk1OVR3jKXslobSZF42iUqPGvj_h8dQe8DsDSA=/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vbGVzc3dyb25nLTItMC9pbWFnZS91cGxvYWQvdjE2Nzc2NzM4MDMvbWlycm9yZWRJbWFnZXMvQ3ZmWnJyRW9rakN1M1hIWHAvem12NHllMmticWMyYml2MW01Z3ouanBn" alt="" loading="lazy"/></a></figure>
+
+
+
+<p>I am going to step up here, and dare to answer these, those added by Twitter and some raised recently in personal conversations.</p>
+
+
+
+<p>Before I begin, it must be said: <strong>NONE OF THIS IS INVESTMENT ADVICE.</strong></p>
+
+
+
+<h4><strong>Overview</strong></h4>
+
+
+
+<p>There is some probability that humanity will create transformational AI soon, for various definitions of soon. You can and should decide what <em>you</em> think that probability is, and conditional on that happening, <em>your</em> probability of various outcomes.</p>
+
+
+
+<p>Many of these outcomes, <em>both good and bad, </em>will radically alter the payoffs of various life decisions you might make now. Some such changes are predictable. Others not.</p>
+
+
+
+<p>None of this is <em>new. </em>We have long lived under the very real threat of potential nuclear annihilation. The employees of the RAND corporation, in charge of nuclear strategic planning, famously did not contribute to their retirement accounts because they did not expect to live long enough to need them. Given what we know now about the close calls of the cold war, and what they knew at the time, perhaps this was not so crazy a perspective.</p>
+
+
+
+<p>Should this imminent small but very real risk radically change your actions? I think the answer here is a clear no, unless your actions are relevant to nuclear war risks, either personally or globally, in some way, in which case one can shut up and multiply.</p>
+
+
+
+<p>This goes back far longer. For much longer than that, various religious folks have expected Judgment Day to arrive soon, often with a date attached. Often they made poor decisions in response to this, even given their beliefs.</p>
+
+
+
+<p>There are some people that talk or feel this same way about climate change, as an impending inevitable extinction event for humanity.</p>
+
+
+
+<p>Under such circumstances, I would center my position on a simple claim: Normal Life is Worth Living, even if you think P(doom) relatively soon is very high.</p>
+
+
+
+<h4><strong>Normal Life is Worth Living</strong></h4>
+
+
+
+<p>One still greatly benefits from having a good ‘normal’ life, with a good ‘normal’ future.</p>
+
+
+
+<p>Some of the reasons:</p>
+
+
+
+<ol>
+<li>A ‘normal’ future could still happen.</li>
+
+
+
+<li>It is psychologically very important <em>to you today </em>that <em>if a ‘normal’ future does </em>happen, that you are ready for it on a personal level.</li>
+
+
+
+<li>The future happens far sooner than you think. Returns to normality accrue quickly. As does the price for burning candles at both ends.</li>
+
+
+
+<li>Living like there is no (normal) tomorrow rapidly loses its luster. It can be fun for a day, perhaps a week or even a month. Years, not so much.</li>
+
+
+
+<li>If you are not ready for a normal future, this fact will stress you out.</li>
+
+
+
+<li>It will constrain your behavior if problems start to loom on that horizon.</li>
+
+
+
+<li>It is important for those who love you, that you are ready for it on a personal level.</li>
+
+
+
+<li>It is important for those evaluating or interacting with you, on a professional level.</li>
+
+
+
+<li>You will lose your ability to relate to people and the world if you don’t do this.</li>
+
+
+
+<li>It will become difficult to admit you made a mistake, if the consequences of doing so seem too dire.</li>
+</ol>
+
+
+
+<p>More generally, on a personal level: There are not good ways to sacrifice <em>quite a lot </em>of utility in the normal case, and in exchange get good experiential value in unusual cases. Moving consumption forward, taking on debt or other long term problems and other tactics like that can be useful <em>on the margin </em>but suffer rapidly decreasing marginal returns. Even the most extreme timeline expectations I have seen – where high probability is assigned to doom within the decade – are long enough for this to catch up to you.</p>
+
+
+
+<p>More generally, in terms of helping: Burning yourself out, stressing yourself out, tying yourself up in existential angst all are not helpful. It would be better to keep yourself sane and healthy and financially intact, in case you are later offered leverage. Fighting the good fight, however doomed it might be, because it is a far, far better thing to do, is also a fine response, if you keep in mind how easy it is to end up not helping that fight. But do that <em>while also living a normal life, </em>even if that might seem indulgent. You will be more effective for it, especially over time.</p>
+
+
+
+<p><a href="https://twitter.com/QualyThe/status/1629996007206313985" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">In short</a>,<a href="https://twitter.com/WilliamAEden/status/1630098885829070848" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"> the choice is clear.</a></p>
+
+
+
+<figure><a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdcb9f88b-08c0-4ea7-ba06-d0c20e285223_886x1135.jpeg" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/IfW5v1wDX1O3oH5n53XLSqv7_Zf-ZH239Q4Cpah_1Js=/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vbGVzc3dyb25nLTItMC9pbWFnZS91cGxvYWQvdjE2Nzc2NzM4MDMvbWlycm9yZWRJbWFnZXMvQ3ZmWnJyRW9rakN1M1hIWHAvYWdsZXU0b21sY253MGZ1NHN4N20uanBn" alt="" loading="lazy"/></a></figure>
+
+
+
+<p><a href="https://twitter.com/catehall/status/1630005914576244736" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Don’t be like past Cate Hall</a> (in this particular way – in general she’s pretty cool).</p>
+
+
+
+<figure><a href="https://res.cloudinary.com/lesswrong-2-0/image/upload/v1677677624/mirroredImages/EDi3b8fyNPagDxeJk/deodmxnucmgnlwbnz4if.png" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/S4g9_uT3PiBvFqXJy6whzPANVzcE5RyW5zCYMZJYWkI=/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vbGVzc3dyb25nLTItMC9pbWFnZS91cGxvYWQvdjE2Nzc2Nzc2MjQvbWlycm9yZWRJbWFnZXMvRURpM2I4ZnlOUGFnRHhlSmsvZGVvZG14bnVjbWdubHdibno0aWYucG5n" alt="" loading="lazy"/></a></figure>
+
+
+
+<p><a href="https://twitter.com/astridwilde1/status/1630033924176121856" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">It wasn’t Cate alone</a> back then. I witnessed some of it. Astrid Wilde reports dozens of such cases, in a situation where (as Cate readily now admits) the positions in question made little physical sense, and were (in my model) largely the result of a local social information cascade. Consider the possibility that this is happening again, <em>for your model, </em>not merely for your actions.</p>
+
+
+
+<p>One <em>really bad </em>reason to burn your bridges is to satisfy people who ask why you haven’t burned your bridges. </p>
+
+
+
+<figure><a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fce811a3f-ea7e-4284-ba18-603bd314ad6a_892x538.png" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/49W_vHsZvzu2qeYR4eNta27t6k_pKn-wHYBIxAkT3-w=/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vbGVzc3dyb25nLTItMC9pbWFnZS91cGxvYWQvdjE2Nzc2NzM4MDMvbWlycm9yZWRJbWFnZXMvQ3ZmWnJyRW9rakN1M1hIWHAvdHBraDN2MXhsdHRiYnR3cW5pZnAuanBn" alt="" loading="lazy"/></a></figure>
+
+
+
+<p>I worry about people taking jokes like this seriously, also if you must overextend Arthur makes a strong point here:</p>
+
+
+
+<figure><a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa04d47f-f3c8-40b9-a8aa-2c9529857645_910x705.jpeg" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/ihORDDdSElzaWmZ_E1KHe0QB6ePFR4hgbNSOcFJPXfY=/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vbGVzc3dyb25nLTItMC9pbWFnZS91cGxvYWQvdjE2Nzc2NzM4MDMvbWlycm9yZWRJbWFnZXMvQ3ZmWnJyRW9rakN1M1hIWHAvYWZpdzJqcnZ0MXRubTg2amFxcWouanBn" alt="" loading="lazy"/></a></figure>
+
+
+
+<p>Similar to Digital Abundance,<a href="https://twitter.com/SamoBurja/status/1630312914027679745" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"> Samo emphasizes the dangers of intellectual inconsistency in places like this.</a></p>
+
+
+
+<figure><a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7b06a9a8-0cb1-49d4-bae4-c4f90abf4967_880x210.jpeg" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img src="https://reader.miniflux.app/proxy/SWXJJeXQlZuavRyXkZ2-8w8VGdtBTMrCF_OawD-T47k=/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vbGVzc3dyb25nLTItMC9pbWFnZS91cGxvYWQvdjE2Nzc2NzM4MDMvbWlycm9yZWRJbWFnZXMvQ3ZmWnJyRW9rakN1M1hIWHAvbmhrdW1iaG43enFsdG5leXRmZzcuanBn" alt="" loading="lazy"/></a></figure>
+
+
+
+<p>If people say the world is <em>definitely for sure </em>ending <em>real soon now, </em>then yes, talk is cheap and one should check if they are following through. If people say the world <em>might be </em>ending and it is hard to know exactly when, then this kind of thing easily turns into a gotcha, a conflation of the two positions and their implications – a lot of normal behaviors will still make sense. Whereas it is a natural move to end up thinking ‘well, if no one is willing to bet their life on this definitely happening, then I don’t have to take the possibility it happens into account.’ Except, yeah, you still do.</p>
+
+
+
+<p>Thus one should both, as Vassar also points out here, if you <em>did </em>end up so confident that talk would have been cheap,<a href="https://twitter.com/HiFromMichaelV/status/1630069485846626304" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"> question how you ended up with such confident assumptions about the future, especially after they don’t come to pass</a>, along with whether your actions made sense even given your assumptions. Also remember that someone is making statements against interest in order to be helpful to others, admitting they were very wrong. So, as Cate responds, chill out bro.</p>
+
+
+
+<p>On to individual questions to flesh all this out.</p>
+
+
+
+<h4><strong>Q&amp;A</strong></h4>
+
+
+
+<p><strong>Q: Should I still save for retirement?</strong></p>
+
+
+
+<p><strong>Short Answer: Yes.</strong></p>
+
+
+
+<p><strong>Long Answer: Yes, to most (but not all) of the extent that this would otherwise be a concern and action of yours in the ‘normal’ world.</strong> It would be better to say ‘build up asset value over time’ than ‘save for retirement’ in my model. Building up assets gives you resources to influence the future on all scales, whether or not retirement is even involved. I wouldn’t get too attached to labels.</p>
+
+
+
+<p>Remember that while it is not something one should do lightly, none of this is lightly, and you <em>can </em>raid retirement accounts with what in context is a modest penalty, in an extreme enough ‘endgame’ situation – it does not even take that many years for the expected value of the compounded tax advantages to exceed the withdraw penalty – the cost of emptying the account, should you need to do that, is only 10% of funds and about a week (plus now having to pay taxes on it). And that in some extreme future situations, having that cash would be highly valuable, none of which suggests now is the time to empty it, or to not build it up.</p>
+
+
+
+<p>The case for saving money does not depend on expecting a future ‘normal’ world. Which is good, because even without AI the future world is likely to not be all that ‘normal.’   </p>
+
+
+
+<p><strong>Q: Should I take on a ton of debt intending to never have to pay it back?</strong></p>
+
+
+
+<p><strong>Short Answer: No, except for a mortgage.</strong></p>
+
+
+
+<p>Long Answer: Mostly no, except for a mortgage. Save your powder.<a href="https://thezvi.substack.com/p/on-ai-and-interest-rates" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"> See my post On AI and Interest Rates</a> for an extended treatment of this question – I feel that is a definitive answer to the supposed ‘gotcha’ question of why doomers don’t take on lots of debt. Taking on a bunch of debt is a limited resource, and <em>good </em>ways to do it are even more limited for most of us. Yes, where you get the opportunity it would be good to lock in long borrow periods at fixed rates if you think things are about to get super weird. But if your plan is ‘the market will realize what is happening and adjust the value of my debt in time for me to profit’ that does not seem, to me, like a good plan. Nor does borrowing now much change your actual constraints on where you run out of money.</p>
+
+
+
+<p>Does borrowing money that you have to pay back in 2033 mean you have more money to spend? That depends. What is your intention if 2033 rolls around and the world hasn’t ended? Are you going to pay it back? If so then <em>you need to prepare now to be able to do that. </em>So you didn’t accomplish all that much.</p>
+
+
+
+<p>You need <em>very high confidence </em>in High Weirdness Real Soon Now before you can expect to get net rewarded for putting your financial future on quicksand, where you are in real trouble if you get the timing wrong. You also need a good way <em>to spend </em>that money to change the outcome.</p>
+
+
+
+<p>Yes, there is a level of confidence in both speed and magnitude, combined with a good way to spend, that would change that, and that I do not believe is warranted. One must notice that <em>you need vastly less certainty than this </em>to be shouting about these issues from the rooftops, or devoting your time to working on them.</p>
+
+
+
+<p>Eliezer’s position, as per his most recent podcast is something like ‘AGI could come very soon, seems inevitable by 2050 barring civilizational collapse, and if it happens we almost certainly all die.’ Suppose you <em>really actually </em>believed that. It’s <em>still </em>not enough to do much with debt unless you have a great use of money – there’s still a lot of probability mass that the money is due back while you’re still alive, potentially right before it might matter.</p>
+
+
+
+<p>Yes, also, this changes if you think you can actually change the outcome for the better by spending money now, money loses impact over time, so your discount factor should be high. That however <em>does not </em>seem to be the case that I see being made.</p>
+
+
+
+<p><strong>Q: Does buying a house make sense?</strong></p>
+
+
+
+<p><strong>A: Maybe.</strong> <strong>It is an opportunity to borrow money at low interest rates with good tax treatment. It also potentially ties up capital and ties you down to a particular location, and is not as liquid as some other forms of capital.</strong> So ask yourself how psychologically hard it would be to undo that. In terms of whether it looks like a good investment in a world with useful but non-transformational AI, an AI could figure out how to more efficiently build housing, but would that cause more houses to be built?</p>
+
+
+
+<p><strong>Q: Does it make sense to start a business?</strong></p>
+
+
+
+<p><strong>A: Yes, although not because of AI. It is good to start a business.</strong> Of course, if the business is going to involve AI, carefully consider whether you are making the situation worse.</p>
+
+
+
+<p><strong>Q: Does It Still Make Sense to Try and Have Kids?</strong></p>
+
+
+
+<p><strong>Short Answer: Yes.</strong></p>
+
+
+
+<p>Long Answer: Yes. Kids are valuable and make the world and your own world better, even if the world then ends. I would much rather exist for a bit than never exist at all. Kids give you hope for the future and something to protect, get you to step up. They get others to take you more seriously. Kids teach you many things that help one think better about AI. You think they take away your free time, but there is a limit to how much creative work one can do in a day. This is what life is all about. Missing out on this is deeply sad. Don’t let it pass you by.</p>
+
+
+
+<p>Is there a level of working directly on the problem, or being uniquely positioned to help with the problem, where I would consider changing this advice? Yes, there are a few names where I think this is not so clear, but I am thinking of a very small number of names right now, <em>and yours is not one of them.</em></p>
+
+
+
+<p>You can guess how I would answer most other similar questions. I do not agree with Buffy Summers that<a href="https://www.youtube.com/watch?v=XW6mCgUewUE&amp;ab_channel=NepheistaSolace" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"> the hardest thing in this world is to live in it</a>. I do think she knows better than any of us that <em>not </em>living in this world is not the way to save it.</p>
+
+
+
+<p><a href="https://twitter.com/FJustinianus/status/1629211080084844544" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><strong>Q</strong></a><strong>: Should I talk to my kids about how there’s a substantial chance they won’t get to grow up?</strong></p>
+
+
+
+<p><strong>A: I would not (and will not) hide this information from my kids, any more than I would hide the risk from nuclear war, but ‘you may not get to grow up’ is not a helpful thing to say to (or to emphasize to) kids.</strong> Talking to your kids about this (in the sense of ‘talk to your kids about drugs’) is only going to distress them to no purpose. While I don’t believe in hiding stuff from kids, I also don’t think this is something it is useful to hammer into them. Kids should still get to be and enjoy being kids.</p>
+
+
+
+<p><a href="https://twitter.com/CSatisficer/status/1629141124421124097" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><strong>Q</strong></a><strong>: If we believe our odds of good outcomes are low, is it cruel to explain what is coming to the normies in our lives?</strong> If grandma is on her deathbed, do you tell her there probably isn’t a heaven? What’s the point of changing minds when mind-changing was needed a decade ago?</p>
+
+
+
+<p><strong>A: When in doubt I tend to favor more honesty and openness, but there is no need to shove such things in people’s faces.</strong> If grandma asks me on her deathbed if there is a heaven, I am not going to lie to her. I also think it would be cruel to bring the subject up if she wasn’t asking and it wasn’t impacting her decisions or experience in negative ways. So if there are minds that it would not be helpful to change, I’d mostly be inclined to let them be by default. I’d also ask, would this person want to know? Some people would want to know. Others would not.</p>
+
+
+
+<p><a href="https://twitter.com/RatOrthodox/status/1629427286729695232" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><strong>Q</strong></a><strong>: Should I just try to have a good time while I can?</strong></p>
+
+
+
+<p><strong>A: No, because my model says that this <em>doesn’t work.</em></strong>It is empty. You can have fun for a day, a week, a month, perhaps a year, but after a while it rings hollow, feels empty, and your future will fill you with dread. Certainly it makes sense to shift this on the margin, get your key bucket list items in early, put a higher marginal priority on fun – even more so than you should have been doing anyway. But I don’t think my day-to-day life experience would improve for very long by taking this kind of path. Then again, each of us is different.</p>
+
+
+
+<p>That all assumes you have ruled out attempting to improve our chances. Personally, even if I had to go down, I’d rather go down fighting. Insert rousing speech here.</p>
+
+
+
+<p><strong>Q: How Long Do We Have? What is the Timeline?</strong></p>
+
+
+
+<p><strong>Short Answer: Unknown. Look at the arguments and evidence. Form your own opinion.</strong></p>
+
+
+
+<p>Long Answer: High uncertainty about <em>when </em>this will happen if it happens, whether or not one has high uncertainty about whether it happens at all within our lifetimes. Eliezer’s answer was that he would be very surprised if it didn’t happen by 2050, but that within that range little would surprise him and he has low confidence. Others have longer or shorter means and medians in their timelines. Mine are substantially longer and less confident than Eliezer’s. This is a question you must decide for yourself. The key is that there is <em>uncertainty, </em>so lots of difference scenarios matter.</p>
+
+
+
+<p><strong>Q: Should I invest in AI companies?</strong></p>
+
+
+
+<p><strong>Short Answer: Not if the company could plausibly be funding constrained.</strong></p>
+
+
+
+<p>Long Answer: Investing in AI companies, by default, gives them more funding and more ambition, and thus accelerates AI. That’s bad, and a good reason not to invest in them. Any AI company that is a good investment and maximizing profits is not something to be encouraged. If you were purely profit maximizing and were dismissive of the risks from AI, that would be different, but these questions assume a different perspective. The exception is that the Big Tech companies (Google, Amazon, Apple, Microsoft, although importantly <em>not </em>Facebook, seriously <em>f*** Facebook</em>) have essentially unlimited cash, and their funding situation changes little (if at all) based on their stock price.</p>
+
+
+
+<p><a href="https://twitter.com/baesrule1/status/1629362182541410304" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><strong>Q</strong></a><strong>: Have you made an AI ETF so we can at least try to leverage some capital to help if things start to ramp up?</strong></p>
+
+
+
+<p><strong>A: No. As noted above, that does not seem like a net-positive thing to do.</strong></p>
+
+
+
+<p><strong>Q: Are there any ‘no regrets’ steps you should take, similar to stocking up on canned goods? Would this include learning to code if you’re not a coder, or learning something else instead if you<em> are </em>a coder?</strong></p>
+
+
+
+<p><strong>Short Answer: Not that you shouldn’t have done anyway.</strong></p>
+
+
+
+<p>Long Answer: Keeping your situation flexible, and being mentally ready to change things if the world changes radically, is probably what would count here. On the margin I would learn to code rather than learn things other than how to code. Good coding will help you keep up with events, help you get mundane utility from whatever happens, and if AI wipes out demand for coding then that will be the least of your worries. That seems like good advice regardless of what you expect from AI.</p>
+
+
+
+<p><strong>Q: When will my job be replaced by AGI? When should I switch to a physical skill?</strong></p>
+
+
+
+<p><strong>Short Answer: Impossible to know the timing on this. AI should be a consideration in choice of jobs and careers when choosing anew, but I wouldn’t abandon your job just yet.</strong></p>
+
+
+
+<p>Long Answer: All the previous predictions about which jobs would go away now seem wrong. All the predictions of mass unemployment around the corner, for now, are still also wrong. We don’t know if AI will effectively eliminate a lot of jobs or which jobs they will be, or what jobs or how many jobs it will <em>create </em>or that will arise with our new wealth and newly available labor, or what the net effect will be. If you are worried about AI coming for <em>your particular </em>job, do your best to model that given what we know. If you stay ahead of the curve learning to use AI to improve your performance, that should also help a lot.</p>
+
+
+
+<p><a href="https://twitter.com/tyler_m_john/status/1629434005622865920" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><strong>Q</strong></a><strong>: How should I weigh long-term career arc considerations? If things don’t get so crazy that none of my life plans make sense any more, what does the world look like? What kind of world should I be hedging on? Is there a way to prepare for the new world order if we are not all dead?</strong></p>
+
+
+
+<p><strong>A: The worlds in which one’s life plans still make sense are the worlds that continue to look ‘normal.’</strong> <strong>They contain powerful LLMs and better search and AI art and such, but none of that changes the basic state of play.</strong> Some combination of ‘we run out of training data and ways to improve the systems, and they max out at not that much more powerful’ and ‘turns out there are regulatory and other barriers that prevent AI from impacting that much of life or the economy that much’ makes things not look so strange during your lifetime. These are definitely world types my model says you should consider plausible. There is also the possibility over one’s lifetime of things like civilizational inadequacy and collapse, economic depression or hyperinflation, war (or even nuclear war) or otherwise some major disaster that changes everything. If you want to fully cover your bases, that is an important base.</p>
+
+
+
+<p>That does not mean that the standard ‘normal’ long-term career arc considerations <em>ever made sense in the first place. </em>Even in worlds in which AI does not much matter, and the world still looks mostly like it looks, standard ‘long-term career arc considerations’ thinking seems quite poor – people don’t often start businesses, people don’t focus on equity, people don’t emphasize skill development enough, and so on. And even if AI does not much matter, the chances we have decades more of ‘nothing that important changes much’ still seem rather low.  </p>
+
+
+
+<p>If there is a new world order – AI or something else changes everything – and we are <em>not </em>all dead, how do you prepare for that? Good question. What does such a world look like? Some such worlds you don’t <em>have to </em>prepare and it is fine. Others, it is very important that you start with capital. Keeping yourself healthy, cultivating good habits and remaining flexible and grounded are probably some good places to start.</p>
+
+
+
+<p><strong>Q: What is the personal cost of being wrong?</strong></p>
+
+
+
+<p><strong>A: Definitely a key consideration</strong>, as well as the non-personal cost of being wrong, and the value of being right, and the probability you are right versus wrong. Make sure your actions have positive expected value, for whatever you place value upon<strong>.</strong></p>
+
+
+
+<p><strong>Q: How would you rate the ‘badness’ of doing the following actions: Direct work at major AI labs, working in VC funding AI companies, using applications based on the models, playing around and finding jailbreaks, things related to jobs or hobbies, doing menial tasks, having chats about the cool aspects of AI models?</strong></p>
+
+
+
+<p><strong>A: Ask yourself what you think accelerates AI to what extent, and what improves our ability to align one to what extent. </strong>This is my personal take only – you should think about what <em>your </em>model says about the things you might do. So here goes. <strong>Working directly on AI capabilities, or working directly <em>to fund </em>work on AI capabilities, both seem maximally bad, with ‘which is worse’ being a question of scope.</strong> Working on the core capabilities of the LLMs seems worse than working on applications and layers, but applications and layers are how LLMs are going to get more funding and more capabilities work, so the more promising the applications and layers, the more I’d worry. Similarly, if you are spreading the hype about AI in ways that advance its use and drive more investment, that is not great, but seems hard to do <em>that </em>much on such fronts on the margin unless you are broadcasting in some fashion, and you would presumably also mention the risks at least somewhat.</p>
+
+
+
+<p>I think tinkering around with the systems, trying to jailbreak or hack them or test their limits, is generally a good thing. Such work differentially helps us understand and potentially align such systems, more than it advances capabilities, especially if you are deliberate with what you do with your findings. <strong>Using existing AI for mundane utility is not something I would worry about the ‘badness’ of, if you want some AI art or AI coding or writing or search help then go for it. </strong>Mostly talking to others about cool things seems fine.</p>
+
+
+
+<p><a href="https://twitter.com/ftpanga/status/1629164752147476480" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><strong>Q</strong></a><strong>: Are these questions answerable right now, or should I leave my options open until they become more answerable down the line? What is my tolerance for risk and uncertainty of outcome, and how should this play into my decisions about these questions?</strong></p>
+
+
+
+<p><strong>A: One must act under uncertainty. There is no certainty or safety anywhere, under any actions, not really.</strong> People crave the <em>illusion of safety, </em>the feeling everything is all right. One needs to find a way to get past this desire without depending on lies. What does ‘tolerance for risk’ mean in context? Generally it means <em>social </em>or <em>emotional </em>risk, or risk <em>under the baseline normal scenarios </em>or something like that. If you can’t handle that kind of thing, and it would negatively impact you, then consider that when deciding whether to do it or try to do it. Especially don’t do short term superficially ‘fun’ things that this would prevent you from enjoying, or taking on burdens you can’t handle. </p>
+
+
+
+<p><strong>Q: How do you deal with the distraction of all this and still go about your life?</strong></p>
+
+
+
+<p>A: The same way you avoid being distracted by all the other important and terrible things and risks out there. Nuclear risks are a remarkably similar problem many have had to deal with. Without AI and even with world peace, the planetary death rate would still be expected to hold steady at 100%. Memento mori.</p><br/><br/><a href="https://www.lesswrong.com/posts/CvfZrrEokjCu3XHXp/ai-practical-advice-for-the-worried#comments" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Discuss</a>

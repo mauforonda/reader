@@ -1,0 +1,9 @@
+Keeping with last year’s tradition, this post comes when we are almost 1/5th through this year.
+2022 projects Expense Tracker I built a personal Expense Tracker over the month of October using SQLite and Streamlit, because I wasn’t comfortable sharing my financial data with a 3rd party. I’ve tried to keep it simple, so it’s not a pain to use. But, I’ve also tried to keep it extensible, for others to try and use.
+
+<p>
+    This post was originally published <a href="https://punchagan.muse-amuse.in/blog/made-in-2022/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a> and
+    you are reading it in the
+    <a href="https://blaggregator.recurse.com/new/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Blaggregator</a> feed.
+    <a href="https://recurse.zulipchat.com/#narrow/stream/blogging/topic/Made.20in.202022" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Join the discussion</a> on Zulip!.
+</p>

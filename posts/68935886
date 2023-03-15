@@ -1,0 +1,72 @@
+<p><em>Automobile recalls, small-business loans, European
+Parliamentarians, variable stars, and NYC pizza slices.</em></p>
+<p> </p>
+<p><em>📣 <strong>Ad:</strong> Will your 2023 include a project that
+needs geocoding? Check out OpenCage’s <a href="https://opencagedata.com/guides/how-to-compare-and-test-geocoding-services?ocs=dip" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">geocoding
+buyer’s guide</a> to learn all the factors to consider when deciding on
+which geocoding service to use, and thus avoid “I wish I had known that
+before we started.”</em></p>
+<p> </p>
+<p><strong>Automobile recalls.</strong> In the US, the <a href="https://www.nhtsa.gov/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">National Highway Traffic Safety
+Administration</a> oversees all recalls of vehicles, tires, child safety
+seats, and other auto equipment. Through the agency’s <a href="https://www.nhtsa.gov/recalls" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">recall portal</a>, you can search
+by <a href="https://en.wikipedia.org/wiki/Vehicle_identification_number" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">vehicle
+identification number</a>, make, model, and year; for other types of
+recalls, you can search by brand and model. The agency also provides a
+<a href="https://datahub.transportation.gov/Automobiles/Recalls-Data/6axg-epim" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">dataset
+of all 26,000+ recalls since 1966</a>. It lists the recall type,
+manufacturer’s name, component, number of units potentially affected,
+and date the manufacturer notified NHTSA, plus descriptions of the
+problem, recall action, and remedy. [h/t <a href="https://read.chartr.co/newsletters/2022/11/23/total-recalls" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Chartr</a>]</p>
+<p> </p>
+<p><strong>Small-business loans.</strong> The US Small Business
+Administration publishes <a href="https://data.sba.gov/dataset/7-a-504-foia" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">loan-level data from
+two of its major lending programs</a>, known as <a href="https://www.sba.gov/funding-programs/loans/7a-loans" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">7(a)</a> and
+<a href="https://www.sba.gov/funding-programs/loans/504-loans" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">504</a>,
+going back to the early 1990s. The records, updated quarterly, indicate
+each loan’s amount, term, interest rate, approval date, and current
+status; borrower type, name, and location; bank name and location; and
+more. <strong>As seen in</strong>: The <a href="https://blackwealthdata.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Black Wealth Data Center</a>’s <a href="https://blackwealthdata.org/explore/business" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">business ownership
+indicators</a>. <strong>Previously</strong>: <a href="https://www.sba.gov/funding-programs/loans/covid-19-relief-options/paycheck-protection-program/ppp-data" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">SBA
+data</a> on loans provided through the pandemic-instigated <a href="https://www.sba.gov/funding-programs/loans/covid-19-relief-options/paycheck-protection-program" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Paycheck
+Protection Program</a> (<a href="https://www.data-is-plural.com/archive/2020-07-08-edition/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DIP
+2020.07.08</a>).</p>
+<p> </p>
+<p><strong>European Parliamentarians.</strong> Political scientist <a href="https://www.researchgate.net/profile/Eugenio-Salvati" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Eugenio
+Salvati</a> has <a href="https://journals.sagepub.com/doi/10.1177/14789299221135239" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">created</a>
+a dataset of <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/V2FJEF" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">all
+European Parliament members</a> who’ve held office for at least one
+month since 1979, the EU legislative body’s first year of direct
+elections. For each five-year cycle, Salvati’s spreadsheets list each
+member’s name, country, gender, parliament role, <a href="https://en.wikipedia.org/wiki/Political_groups_of_the_European_Parliament" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">EP
+political group</a>, local political party, previous political
+experience, and more. Entries for the 2019–2024 cohort also indicate
+committee membership. <strong>Previously</strong>: <a href="https://www.lobbyfacts.eu/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">LobbyFacts.eu</a> (<a href="https://www.data-is-plural.com/archive/2017-08-02-edition/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DIP
+2017.08.02</a>).</p>
+<p> </p>
+<p><strong>Star light, star bright.</strong> A <a href="https://www.atnf.csiro.au/outreach/education/senior/astrophysics/variable_types.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">variable
+star</a> is one whose brightness appears (from Earth) to vary over time.
+The <a href="https://www.aavso.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">American Association of Variable
+Star Observers</a>, founded in 1911, maintains a <a href="https://www.aavso.org/aavso-international-database-aid" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">database</a>
+of “tens of millions variable star observations going back over one
+hundred years,” making it “the largest and most comprehensive digital
+variable star database of its kind in the world.” You can download star
+details from the association’s <a href="https://www.aavso.org/vsx/index.php" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">star index</a>, and also <a href="https://www.aavso.org/data-download" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">download any given star’s set
+of observations</a>. [h/t <a href="https://news.ycombinator.com/item?id=29802393" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Peter
+Corless</a>]</p>
+<p> </p>
+<p><strong>NYC pizza slices.</strong> “Starting in 2014, I logged every
+slice of pizza I ate in New York City on the Instagram account <a href="https://www.instagram.com/nycslice/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">NYC Slice</a>,” writes
+reporter <a href="https://elkue.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Liam Quigley</a>, who <a href="https://elkue.com/nyc-slice/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">has published</a> a map, price
+chart, searchable table, and <a href="https://docs.google.com/spreadsheets/d/1EY3oi9ttxybG0A0Obtwey6BFu7QLqdHe02JApijgztg/edit" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">spreadsheet</a>
+of the first 464 slices. The data include each slice’s date, location,
+style, and price. “I did not rate the slices to avoid controversy and
+bribes. The biggest thing I have noticed is the decline in the amount of
+sauce put on slices.”</p>
+<p> </p>
+<p><em>Dataset suggestions? Criticism? Praise? Send saucy feedback to
+jsvine@gmail.com, or just reply to this email. • Looking for past
+datasets? <a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">This
+spreadsheet contains them all</a>. • Visit <a href="https://www.data-is-plural.com" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">data-is-plural.com</a> to
+subscribe and to browse past editions. • <a href="https://docs.google.com/document/d/e/2PACX-1vSP5xYrhqEvoGTi2aFzrsYQXadG8Gv0Y6YGWjib1e4qcXG45Sq5TSvngvh342DdcAEyEDIVd5V3RYcc/pub" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Learn
+how to place an ad in Data Is Plural</a>.</em></p>

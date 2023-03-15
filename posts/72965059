@@ -1,0 +1,112 @@
+<p>New data shows the potential value of artisanal gold mines in Africa, and also documents their significant contribution to deforestation</p>
+                                    
+                    <p>The livelihoods of 130 to 270 million people, in 81 countries, depend on artisanal mining (World Bank 2020). 41 of these countries are in Africa, where a large majority of artisanal miners extract gold (ASM Inventory 2022). We use “artisanal mining” to refer to labour-intensive methods of mineral extraction in artisanal and small-scale mines. These mines, largely informal, have little in common with the widely studied, large-scale and capital intensive industrial mines (Bazillier and Girard 2020).</p>
+<p>Artisanal miners may threaten soils and forests as they exploit deep tunnels or large surface holes. The extent to which soils and forests may suffer from these activities is a pressing question, both for Africa and for the world. Deforestation means a reduced capacity for CO2 absorption, and trees that decompose or are burned release stored CO2 into our atmosphere (Jayachandran 2017). Healthy vegetation and trees are also crucial to stop the desertification process in Africa, where 46 out of 54 countries are at risk (Pravalie 2016). However, a lack of data has prevented any large-scale study of the environmental and socioeconomic impacts of artisanal gold mining.</p>
+<p>In Girard et al. (2022), we construct and use new data to show the impact of artisanal gold mines on deforestation and local economic activity in Africa.</p>
+<h2>Suitability for artisanal gold mining: New data for the continent</h2>
+<p>Mining requires suitable locations, which are those areas that host gold. To measure this, we utilise the notion of suitability which has previously been used for crops (e.g. Nunn and Qian 2011), and create a map of gold-suitable geological layers. While not every gold-suitable cell would necessarily have artisanal mining, if mining were to occur, gold-suitable cells would be the most likely to yield successful results.</p>
+<p><strong>Figure 1: </strong>Comparison of geological gold suitability and other records of (artisanal) gold</p>
+<p><img alt="" src="https://reader.miniflux.app/proxy/Z8_ZQOyRtfHw_O6wl_f9PbnsJmDBdFHgqI1aqQnH9aQ=/aHR0cHM6Ly92b3hkZXYub3JnL3NpdGVzL2RlZmF1bHQvZmlsZXMvZ2lyYXJkX2ZpZ3VyZTIyLnBuZw==" loading="lazy"/></p>
+<p>Notes: “other records” in Panel (c) is a cell-level binary variable taking value one if the cell hosts any gold or evidence of artisanal gold mining activities, as recorded in five different data sources (the French Geological Survey, GOLDATA, the Ministry of Mines of Burkina Faso, the IPIS surveys, and mining related mercury emissions, detailed in Girard et al. (2022)).</p>
+<p>Our data shows that 18% of the surface of Africa is suitable for artisanal gold mining, as shown in Figure 1a. We exploit this data in a panel of 10,628 cells of 0.5×0.5 degrees. We compute the share of each cell which overlaps with bedrocks suitable for artisanal mining to develop a variable of cell-level gold suitability (Figure 1b) that takes continuous values between 0 (fully unsuitable) and 1 (fully suitable).</p>
+<p>This gold suitability-data appears to capture well artisanal gold mining activities. The cell-level measure of gold suitability has a 37% correlation with the existing – partial, inconsistent and endogenous – records of gold and artisanal gold mining (shown in Figure 1c). Out of the 1,737 cells that have a record, 75% of them overlap with a gold suitable layer. We favour the gold suitability data as it is not reliant on the monitoring and reporting capacities of mining authorities in different areas, and has a continent-wide scope which serves our research question better than existing records.</p>
+<h2>An increase in the value of artisanal mines increases both deforestation and local economic activity</h2>
+<p>Changes in the international gold price are important to artisanal miners, who’s revenues directly depend on the international gold market since they are price takers. Moreover, commodity price variation provides an exogenous shock to the value of this mining activity, as it is unrelated to local circumstances – this variation has also be used in research on agriculture and industrial mining (e.g. Berman et al. 2018).</p>
+<p>We can therefore assess the impact of variations in the value of artisanal mining activities. We compare levels of deforestation between more or less gold-suitable cells, in periods of high or low gold price.</p>
+<p><strong>Figure 2: </strong>Estimated increase in deforestation and nightlights due to artisanal mining value</p>
+<p><img alt="" src="https://reader.miniflux.app/proxy/W74250C3rJ70rbu-Ixy8xHEdKl2Y5IdKraWEX0UTGrk=/aHR0cHM6Ly92b3hkZXYub3JnL3NpdGVzL2RlZmF1bHQvZmlsZXMvZ2lyYXJkX2ZpZ3VyZTIucG5n" loading="lazy"/></p>
+<p>Notes: The Figure depicts the effect of artisanal mines value estimated in a model including only cell and country×year fixed effects (No controls), or in a model controlling for industrial gold mines value, local crop values, and weather conditions (With control). Markers represent coefficients, lines around each marker represent 95% confidence intervals.</p>
+<p>Gold-suitable cells experience more deforestation when the gold price increases (Figure 2a). Our estimates suggest that changes in the gold price account for about 8% of predicted deforestation in Africa between 2001 and 2018. If we restrict the prediction to cells that are at least partially suitable for gold, price changes account for as much as 28% of predicted deforestation in these areas.</p>
+<p>Importantly, this result does not come from industrial gold mines potentially operating in gold-suitable cells; or from income shocks in agriculture or climatic conditions likely to affect plants’ health. We obtain similar results if we control for these other sources of income and deforestation (Figure 2a). We also document that artisanal mining reduces vegetation health beyond deforestation itself, as an increase in the value of mines reduces the NDVI, a common measure of vegetation health.</p>
+<p>An increase in the value of potential artisanal mines (when the gold price increases) also increases economic growth, household’s asset wealth, and the probability to work in the extractive sector rather than in agriculture. However, gold price variations account for only 0.1% of the total predicted increase in nighttime lights (0.3% if we focus on gold-suitable cells). If light variations closely follow GDP variations (Henderson et al. 2012), then the artisanal mining contribution to GDP growth may be limited.</p>
+<h2>Artisanal mining reacts to weather shocks</h2>
+<p>The relative value of artisanal mining activities may also vary with weather fluctuations, independently of the “pull” action of a higher gold price. Adverse weather conditions affect vegetation health and jeopardize livelihoods related to agriculture, herding, or forests (Aragón et al. 2019). Thus, the primary source of livelihoods for hundreds of thousands of rural households heavily depends on weather fluctuations.</p>
+<p>As artisanal mining requires low amounts of capital, the activity may become more attractive during periods of adverse weather. Adverse weather may act as a “push” factor, and alternative livelihoods from artisanal mining will be more likely to be available in gold-suitable cells. This allows us to study the levels of deforestation between more or less gold-suitable cells, in years with more or less favourable weather conditions.</p>
+<p><strong>Figure 3: </strong>Temperatures have heterogeneous effects on deforestation and nightlights, depending on how much a cell is suitable to artisanal mining</p>
+<p><img alt="" src="https://reader.miniflux.app/proxy/3AyxW9YPzpeCca09p6p34n15-4y11PzN23ce3Tb58Tw=/aHR0cHM6Ly92b3hkZXYub3JnL3NpdGVzL2RlZmF1bHQvZmlsZXMvZ2lyYXJkX2ZpZ3VyZTMucG5n" loading="lazy"/></p>
+<p>Notes: The Figure depicts the estimated effect of temperatures (in level, standardized) interacted with a split of the gold suitability variable: for cells without any gold suitability, cells with a non-zero overlap with a gold suitable layer but an overlap of less than 37% (the median overlap) or cells with an overlap of more than 37% with a gold suitable layer. The height of the bars represents the coefficient, lines represent 95% confidence intervals. </p>
+<p>We find that adverse weather triggers more deforestation in gold-suitable cells than in other cells. Figure 3a suggests that as temperatures increase, 50% more deforestation would take place in cells largely suitable for artisanal gold mining than in other cells. Meanwhile, deforestation in cells which are only partly gold suitable is statistically similar to deforestation in cells which are not gold suitable.</p>
+<p>In contrast, only cells which are unsuitable to artisanal mining suffer from a drop in economic activities as temperatures increase (Figure 3b). During hotter years, gold-suitable cells witness either no change in activities (for cells with a below-median level of gold suitability) or an increase in activities (for cells with an above median level of gold suitability).</p>
+<p>These results suggest an intensification of artisanal mining activities during periods of adverse weather. Such mining activities would aggravate the environmental consequences of the weather shock, but may act as a short-term buffer to the shock’s economic impacts.</p>
+<h2>Main policy takeaways</h2>
+<p><strong>Artisanal mining drives deforestation</strong></p>
+<p>When the causes of deforestation are discussed, the focus is often on agriculture or land titling. However, our research shows that artisanal mining is a significant factor, and the mining-deforestation nexus deserves greater attention.</p>
+<p><strong>Weather shocks and artisanal mining may create a vicious circle of deforestation</strong></p>
+<p>Our results show that weather shocks worsen deforestation in mining areas. This is particularly concerning as we anticipate more extreme weather events due to global warming, and forests play a vital role in reducing CO2 emissions, preventing desertification, and stabilizing local weather patterns.</p>
+<h2>References</h2>
+<p>Aragón, F M, F Oteiza, and J P Rud (2019), <a href="https://voxdev.org/topic/agriculture/how-do-farmers-cope-extreme-heat" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">“How do farmers cope with extreme heat?”</a> VoxDev.</p>
+<p>ASM Inventory (2022), “World Maps of Artisanal and Small-scale Mining.” Available at: http: //artisanalmining.org/Inventory/.</p>
+<p>Bazillier, R and V Girard (2020), “<a href="https://voxdev.org/topic/firms-trade/gold-mining-burkina-faso-who-wins" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Gold mining in Burkina Faso: Who wins?</a>” VoxDev.</p>
+<p>Berman, N, M Couttenier, D Rohner, and M Thoenig (2018), “<a href="https://voxdev.org/topic/institutions-political-economy/countering-mining-curse" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Countering the mining curse</a>.” VoxDev.</p>
+<p>Girard, V, T Molina-Millan, and G Vic (2022), “<a href="https://novafrica.org/wp-content/uploads/2022/03/2201.pdf" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Artisanal mining in Africa.</a>” NOVAFRICA Working Paper.</p>
+<p>Henderson, J V, A Storeygard, and D N Weil (2012), “Measuring economic growth from outer space.” <em>American Economic Review</em> 102(2): 994–1028.</p>
+<p>Jayachandran, S (2017), “<a href="https://voxdev.org/topic/energy-environment/forest-conservation-uganda-using-financial-incentives-avert-climate-change" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Forest conservation in Uganda: Using financial incentives to avert climate change.</a>” VoxDev.</p>
+<p>Nunn, N and N Qian (2011), “The potato’s contribution to population and urbanization: evidence from a historical experiment.” <em>The Quarterly Journal of Economics</em> 126(2): 593–650.</p>
+<p>Pravalie, R (2016). “Drylands extent and environmental issues. A global approach.” <em>Earth-Science Reviews </em>161: 259-278.</p>
+<p>World Bank (2020) “2020 State of the Artisanal and Small-scale Mining Sector.” <em>World Bank (Washington, DC)</em>.</p>
+                
+
+                    
+                    
+                    Artisanal mining
+                                
+                    Africa
+                                
+                    Deforestation
+                                
+                    Gold mines
+                                
+                    Climate change
+                                
+                    Suitabilising
+                        
+    
+    
+    
+        <p>Share this article:</p>
+
+        <a href="https://twitter.com/intent/tweet/?text=The+role+of+artisanal+mining+in+deforestation%3A+New+insights+from+Africa-wide+data&amp;url=https%3A%2F%2Fvoxdev.org%2Ftopic%2Fenergy-environment%2Frole-artisanal-mining-deforestation-new-insights-africa-wide-data" title="Share on Twitter" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvoxdev.org%2Ftopic%2Fenergy-environment%2Frole-artisanal-mining-deforestation-new-insights-africa-wide-data" title="Share on Facebook" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+        
+        
+        <a href="https://voxdev.org/cdn-cgi/l/email-protection#605f1315020a0503145d28051205400913400140360f182405164001121409030c0540190f15400d011940020540090e140512051314050440090e46020f04195d08141410135a4f4f160f180405164e0f12074f140f1009034f050e051207194d050e1609120f0e0d050e144f120f0c054d0112140913010e010c4d0d090e090e074d0405060f120513140114090f0e4d0e05174d090e1309070814134d0106120903014d170904054d04011401" title="Share on Email" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+        
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fvoxdev.org%2Ftopic%2Fenergy-environment%2Frole-artisanal-mining-deforestation-new-insights-africa-wide-data&amp;title=The+role+of+artisanal+mining+in+deforestation%3A+New+insights+from+Africa-wide+data" title="Share on LinkedIn" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+        
+        
+                    
+        
+        <a href="https://voxdev.org/print/75848" title="Print this page" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">
+            
+
+    
+    
+
+        </a>
+    
+
+            

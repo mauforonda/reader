@@ -1,0 +1,80 @@
+<h3>Simple answers to complex questions</h3>
+
+<p>As humans, we tend to want simple answers to complex questions. Psychologists call this simplification bias. While this might be useful in engineering or mathematics, it doesn’t quite work when applied to social development. The process of development is often slow and nonlinear, inherently complex, challenging, unpredictable and disruptive. This is in part because it involves individuals and communities interacting with institutions in contexts of changing beliefs, norms and laws</p>
+
+<p>So, if social development is complex, why should anyone expect simple, straightforward, lineal theories to explain this complexity?</p>
+
+<p>In a <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099802503012312593" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">recent paper</a>, <a href="https://twitter.com/intent/tweet?text=we+examine+the+relationship+between+trust+in+governments+and+citizen+participation+in+Latin+America%2C+one+of+the+world%27s+most+%20unequal+regions%2C+with+very+low+levels+of+trust+in+government.&amp;url=https://blogs.worldbank.org/developmenttalk/machine-learning-political-trust-and-citizen-participation-latin-america/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">we examine the relationship between trust in governments and citizen participation in Latin America, one of the world&#39;s most  unequal regions, with very low levels of trust in government. </a> We ask, do societies with lower levels of trust in their government participate less in political affairs, or do they participate more? Why has there been such a sudden surge in government trust in El Salvador, while some forms of political participation in the country remain among the lowest in the entire region? Why does Chile—a country that has had orderly presidential elections—have the same, low levels of confidence in government as Peru, which has had five presidential changes in the last five years?</p>
+
+<p>We can all agree that there are no easy answers to these questions. And yet, we have two very simple theories. <a href="https://twitter.com/intent/tweet?text=Proponents+of+the+concept+of+stealth+democracy+argue+that+an+inverse+relationship+exists+between+political+trust+and+citizen+participation%2C+while+deliberative+democracy+theorists+claim+the+opposite.&amp;url=https://blogs.worldbank.org/developmenttalk/machine-learning-political-trust-and-citizen-participation-latin-america/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Proponents of the concept of stealth democracy argue that an inverse relationship exists between political trust and citizen participation, while deliberative democracy theorists claim the opposite. </a> Simply put, countries with lower levels of political trust have citizens that are more likely to participate in politics, according to one of the theories, but the complete opposite is true according to the other theory.</p>
+
+<h3>Machine learning and not so simple answers </h3>
+
+<p>We evaluated these two theories against data from the 2020 Latinobarometro surveys. Latinobarometro is a well-respected harmonized annual survey that has been capturing individual perceptions on socioeconomic and political issues in 18 Latin American countries since 1995, representing 600 million people.</p>
+
+<p>We began with a logistic regression— a simple econometric estimating tool that models the probability of an event taking place ─in our case political participation—by estimating the odds, in a logarithm form, of an event as a linear combination of one or more explanatory variables. The results of our logistic regression confirmed the link between political trust and citizen participation in Latin America. But it failed to confirm that one of the hypotheses dominated over the other. </p>
+
+<p>We then included nonlinearities in the logistic regression, using quadratic specifications—allowing for relations between variables that might increase and then decrease, or vice versa.  Those results also revealed a relationship between political trust and citizen participation, but the evidence was insufficient to support either theory.</p>
+
+<p>At this point, we had to go even further by introducing a more sophisticated nonlinear technique using decision trees. This is a machine learning technique that repeatedly divides the data within a given dataset into multiple groups; learns from the analysis of those data clusters; and based on that learning, develops an algorithm that captures relationships between variables like tree branches (see figure 1). Using this technique, we got a different outcome: while political trust is clearly a factor driving citizen participation, it is not the only factor, rather, it interacts with other significant factors in a complex nonlinear fashion. Put simply, age by itself or education by itself do not matter unless these are combined with other certain personal circumstances, such as having experienced discrimination, having been a victim of a crime, or having an interest in politics. In other words, political trust is like a supporting actor in a Hollywood film: its presence is important to the plot but does not determine the ending. Going back to the two contending theories, trust in governments is not the only critical driver to political participation in Latin America as both theories propose.</p>
+
+<h4>Figure 1. Decision tree on key drivers of working on a community problem in Latin America</h4>
+
+      
+      
+
+        
+          
+            
+  
+  
+  
+    Image
+                
+
+
+          
+
+
+
+      
+      
+
+        
+          
+            <h3>Some clear lessons</h3>
+
+<p>After running dozens of models and examining all the evidence, we have learned three things during this exercise. First, we conclude that neither theory is sufficiently compelling to explain the interactions between citizens’ political trust and their political participation in Latin America. Although this may appear to be a setback or a disappointment, we argue the opposite. And that is our second lesson: <a href="https://twitter.com/intent/tweet?text=political+trust+does+play+a+role+in+explaining+citizen+participation+in+politics%2C+but+this+participation+depends+on+individual+circumstances+and+experiences%2C+such+as+age%2C+gender%2C+education%2C+and+political+interest.&amp;url=https://blogs.worldbank.org/developmenttalk/machine-learning-political-trust-and-citizen-participation-latin-america/?cid=SHR_BlogSiteTweetable_EN_EXT&amp;via=worldbank" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">political trust does play a role in explaining citizen participation in politics, but this participation depends on individual circumstances and experiences, such as age, gender, education, and political interest. </a> Third, in addition to more sophisticated analytical tools we also need better and continuously updated data: Latinobarometro could, for example, provide data on trust in local governments, who are more in touch with their citizens’ motivation to participate in political activities.</p>
+
+<p>These findings are important because we need more nuanced explanations to design better policies. Along with large-caliber reforms to effectively combat corruption, governments can also incentivize people’s participation in politics, for example, through small changes that make political institutions more known and accessible to people.  Complex questions require more complex answers and more integrated interventions to be effective.</p>
+
+      
+      
+
+  
+                  
+	
+
+
+	Topics
+	
+															<a href="https://blogs.worldbank.org/search?f[0]=topic:285&amp;f[1]=language:en" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Digital Development</a>
+						
+
+
+
+      
+
+	
+
+
+	Regions
+	
+															<a href="https://blogs.worldbank.org/search?f[0]=regions:277&amp;f[1]=language:en" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Latin America &amp; Caribbean</a>
+						
+
+
+
+      
+
+              

@@ -1,0 +1,72 @@
+<p><em>Prison-banned books, severe weather warnings, congregations and
+adherents, UAE art establishments, and one billionaire’s
+donations.</em></p>
+<p> </p>
+<p><strong>Prison-banned books.</strong> The Marshall Project is
+building a <a href="https://www.themarshallproject.org/2022/12/21/prison-banned-books-list-find-your-state" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">database
+of books banned from state prisons</a>, based on official lists that
+reporters requested from each state’s correctional agency. The browsable
+and <a href="https://observablehq.com/@themarshallproject/prison-banned-books" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">downloadable</a>
+database includes roughly 50,000 entries from 18 states so far, with
+plans for expansion. The fields include the book’s title, author, date
+banned, and reason for banning, although availability varies by state.
+(Disclosure: I did some <a href="https://www.jsvine.com/consulting/pdf-data-extraction/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">contract
+work</a> for this project, extracting data from PDFs.) <strong>Read
+more</strong>: “<a href="https://www.themarshallproject.org/2022/12/21/prison-banned-books-new-york-florida-censorship" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Why
+Would Prisons Ban My Book? Absurdities Rule the System</a>,” by Marshall
+Project reporter Keri Blakinger. <strong>Previously</strong>: <a href="https://pen.org/banned-in-the-usa/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">School-banned books</a> (<a href="https://www.data-is-plural.com/archive/2022-07-06-edition/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DIP
+2022.07.06</a>).</p>
+<p> </p>
+<p><strong>Severe weather warnings.</strong> Among its many services,
+the <a href="https://mesonet.agron.iastate.edu/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Iowa Environmental
+Mesonet</a> provides a range of <a href="https://mesonet.agron.iastate.edu/nws/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">National Weather Service
+data interfaces and downloads</a>, including current and historical <a href="https://mesonet.agron.iastate.edu/request/gis/watchwarn.phtml" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">severe
+weather warnings, watches, and advisories</a>. Coverage for tornado,
+severe thunderstorm, flash flood, and marine warnings goes back to 1986;
+in more recent decades, the data include <a href="https://github.com/akrherz/pyIEM/blob/d7afb8de354775e922cb8ce3d8f865871e78f179/src/pyiem/nws/vtec.py#L43" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">dozens
+of additional phenomena</a>, such as <em>freezing fog</em>, <em>high
+surf</em>, <em>dense smoke</em>, and <em>excessive heat</em>. The
+records <a href="https://mesonet.agron.iastate.edu/info/datasets/vtec.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">indicate</a>
+each alert’s geospatial boundaries, time of issuance and expiration,
+forecast office, status, and more.</p>
+<p> </p>
+<p><strong>Congregations and adherents.</strong> A <a href="https://www.usreligioncensus.org/index.php/about-census" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">successor</a>
+to the federal government’s <a href="https://www.pewresearch.org/religion/2010/01/26/a-brief-history-of-religion-and-the-u-s-census/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Census
+of Religious Bodies</a> (1890–1936), the <a href="https://www.usreligioncensus.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">US Religion Census</a> is now
+conducted every 10 years by the <a href="http://www.asarb.org/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Association of Statisticians of American
+Religious Bodies</a>. The researchers <a href="https://www.usreligioncensus.org/index.php/methods" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">approach</a>
+“formal denominations and religious groups,” from which they <a href="https://www.usreligioncensus.org/index.php/data_collected" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">collect</a>
+“data on the number of congregations, members, adherents, and attendees”
+at a county level. Results for the 2021 study, <a href="https://www.usreligioncensus.org/node/1639" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">available as
+spreadsheets and maps</a>, include responses from 370+ faith groups.
+<strong>Previously</strong>: <a href="https://sites.duke.edu/ncsweb/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The National Congregations
+Study</a> (<a href="https://www.data-is-plural.com/archive/2021-12-29-edition/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">DIP
+2021.12.29</a>). [h/t <a href="https://www.reddit.com/r/dataisbeautiful/comments/zh4358/but_where_do_folks_actually_attend_church_oc/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Adam
+Porter</a>]</p>
+<p> </p>
+<p><strong>UAE art establishments.</strong> As part of her doctoral
+research into the role of women in the United Arab Emirates’ art scene,
+<a href="https://ihmc.ens.psl.eu/-GRINSTEAD-Eve-.html?lang=en" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Eve
+Grinstead</a> has compiled <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/SWDKKK" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">three
+tables of relevant data</a>, listing 99 galleries, nine fairs, and eight
+auction houses in the country. Each row includes the establishment’s
+name, date founded, specialty, owners/founders, city (or Dubai
+neighborhood), and Grinstead’s notes.</p>
+<p> </p>
+<p><strong>One billionaire’s donations.</strong> Last month, billionaire
+<a href="https://en.wikipedia.org/wiki/MacKenzie_Scott" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">MacKenzie
+Scott</a> unveiled a <a href="https://yieldgiving.com/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">website for her
+philanthropic efforts</a>. It features a <a href="https://yieldgiving.com/gifts/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">downloadable table</a> that lists
+1,600+ donations doled out since 2019, with each gift’s year, amount
+(replaced with “disclosure delayed for benefit of recipient” for 28% of
+entries), and recipient organization. <strong>Read more</strong>: “<a href="https://www.theguardian.com/society/2022/dec/15/mackenzie-scott-billionaire-donations-non-profits" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">MacKenzie
+Scott reveals details of her $14bn in donations to 1,600
+non-profits</a>” (The Guardian). [h/t <a href="https://themorningnews.org/post/saturday-headlines-keep-your-twin-up" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The
+Morning News</a>]</p>
+<p> </p>
+<p><em>Dataset suggestions? Criticism? Praise? Donate your feedback to
+jsvine@gmail.com, or just reply to this email. • Looking for past
+datasets? <a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit#gid=0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">This
+spreadsheet contains them all</a>. • Visit <a href="https://www.data-is-plural.com" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">data-is-plural.com</a> to
+subscribe and to browse past editions. • <a href="https://docs.google.com/document/d/e/2PACX-1vSP5xYrhqEvoGTi2aFzrsYQXadG8Gv0Y6YGWjib1e4qcXG45Sq5TSvngvh342DdcAEyEDIVd5V3RYcc/pub" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Place
+an ad in Data Is Plural</a>.</em></p>

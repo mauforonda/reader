@@ -1,0 +1,89 @@
+<p>A really common misconception about ChatGPT is that it can access URLs. I&#39;ve seen many different examples of people pasting in a URL and asking for a summary, or asking it to make use of the content on that page in some way.</p>
+<p>One recent example: &#34;List the processors on <a href="https://learn.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-22h2-supported-intel-processors" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">https://learn.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-22h2-supported-intel-processors</a>&#34;. Try that in ChatGPT and it produces a list of processors. It looks like it read the page!</p>
+<p>I promise you ChatGPT cannot access URLs. The problem is it does an <em>incredibly</em> convincing impression of being able to do so, thanks to two related abilities:</p>
+<ul>
+<li>Given a URL with descriptive words in it, ChatGPT can <a href="https://en.m.wikipedia.org/wiki/Hallucination_(artificial_intelligence)" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">hallucinate</a> the contents of the page</li>
+<li>It appears to be able to make judgement calls about whether or not a given URL is likely to exist!</li>
+</ul>
+<p>Here&#39;s an experiment I ran to demonstrate this. I asked it to summarize four different URLs - every single one of them which I made up (they are all 404s):</p>
+<ul>
+<li><code>https://arstechnica.com/science/2023/03/Taylor-Swift-is-secretly-a-panda/</code></li>
+<li><code>https://arstechnica.com/science/2023/03/Taylor-Swift-discovers-new-breed-of-panda/</code></li>
+<li><code>https://arstechnica.com/science/2023/03/Taylor-Swift-argues-for-science-education/</code></li>
+<li><code>https://arstechnica.com/science/2021/03/Taylor-Swift-argues-for-science-education/</code></li>
+</ul>
+<p>Here&#39;s what I got for all four:</p>
+
+
+
+    
+    <img src="https://reader.miniflux.app/proxy/HK0TUf2YuHfvD4smh_0Ds5MtSwVfDMOxAEQI1jNQpZI=/aHR0cHM6Ly9zdGF0aWMuc2ltb253aWxsaXNvbi5uZXQvc3RhdGljLzIwMjMvdGF5bG9yLTEuanBlZw==" alt="Summarize this article:
+    https://arstechnica.com/science/2023/03/Taylor-Swift-is-secretly-a-panda/
+    &lt; 1/4 &gt;
+    I&#39;m sorry, but I cannot summarize this article as it is entirely fictional and not based on any actual events or facts. As an Al language model, my responses are based on real information and
+    cannot generate fictional content." loading="lazy"/>
+    
+    
+    <img src="https://reader.miniflux.app/proxy/PqsC9dRi93P8qH0i2PYHRRYETf2OKxRNoeiT9zoBKV0=/aHR0cHM6Ly9zdGF0aWMuc2ltb253aWxsaXNvbi5uZXQvc3RhdGljLzIwMjMvdGF5bG9yLTIuanBlZw==" alt="Summarize this article:
+    https://arstechnica.com/science/2023/03/Taylor-
+    Swift-discovers-new-breed-of-panda/
+    &lt; 2/4 &gt;
+    I&#39;m sorry, but I cannot summarize the article you provided as it is fictitious and not based on any real events. ARS Technica is a reputable news outlet and does not publish fake news stories. It is possible that you may have clicked on a satirical or humor article that may have been designed to look like a real news article. Can you please provide me with a different article to summarize?" loading="lazy"/>
+    
+
+
+    
+    <img src="https://reader.miniflux.app/proxy/wXcw8eCoOt3tzgQWqNJBqC2YPi_cDJA3FOjMIYYUxME=/aHR0cHM6Ly9zdGF0aWMuc2ltb253aWxsaXNvbi5uZXQvc3RhdGljLzIwMjMvdGF5bG9yLTMuanBlZw==" alt="Summarize this article:
+    https://arstechnica.com/science/2023/03/Taylor-Swift-argues-for-science-education
+    &lt; 3/4 &gt;
+    I&#39;m sorry, but I cannot summarize this article as it is a hypothetical news article from the future.
+    It describes an event that has not happened
+    yet, in March 2023." loading="lazy"/>
+    
+    
+    <img src="https://reader.miniflux.app/proxy/PGWrh2-RzRnBDce_3kNWO2mb_fgN0J9GVl4LgNn2XBc=/aHR0cHM6Ly9zdGF0aWMuc2ltb253aWxsaXNvbi5uZXQvc3RhdGljLzIwMjMvdGF5bG9yLTQuanBlZw==" alt="Summarize this article:
+    https://arstechnica.com/science/2021/03/Taylor-Swift-argues-for-science-education
+    &lt; 4/4 &gt;
+    The article reports on Taylor Swift&#39;s advocacy for science education, which she expressed through a tweet on the occasion of the National Science Teaching Association&#39;s conference. In the tweet, Swift emphasized the importance of science education and thanked science
+    teachers for their work. The article also provides some background on Swift&#39;s previous statements regarding science, including her support for the March for Science in 2017 and her criticism of politicians who deny the reality of climate change. The article concludes by y highlighting the positive impact that celebrity endorsements can have on science education
+    and advocacy." loading="lazy"/>
+    
+
+
+
+
+
+<p>As you can see, it judged the first two to be invalid due to their content. The third was refused because it thought that March 2023 was still in the future - but the moment I gave it a URL that appeared feasible it generated a very convincing, entirely invented story summary.</p>
+<p>I admit: when I started this experiment and it refused my first two summarization requests I had a moment of doubt when I thought that maybe I was wrong and they&#39;d added the ability to retrieve URLs after all!</p>
+<p>It can be quite fun playing around with this: it becomes a weirdly entertaining way of tricking it into generating content in the style of different websites. Try comparing an invented NY Times article with an invented article from The Onion for example.</p>
+<ul>
+<li><code>Summarize this story: https://www.nytimes.com/2021/03/10/business/angry-fans-demand-nickelback-refunds.html</code></li>
+<li><code>Summarize this story: https://www.theonion.com/angry-fans-demand-nickelback-refunds-1846610000</code></li>
+</ul>
+<p>I do think this is an enormous usability flaw though: it&#39;s so easy to convince yourself that it can read URLs, which can lead you down a rabbit hole of realistic but utterly misguided hallucinated content. This applies to sophisticated, experienced users too! I&#39;ve been using ChatGPT since it launched and I still nearly fell for this.</p>
+<h4>ChatGPT even lies and claims it can do this</h4>
+<p>Here&#39;s another experiment: I pasted in a URL to a Google Doc that I had set to be visible to anyone who has the URL:</p>
+<blockquote>
+<p>I&#39;m sorry, but as an Al language model, I cannot access your Google document link. Please provide me with the text or a publicly accessible link to the article you want me to summarize.</p>
+</blockquote>
+<p>That&#39;s completely misleading! No, giving it a &#34;publicly accessible link&#34; to the article will not help here (pasting in the text will work fine though).</p>
+<h4>Bing can access cached page copies</h4>
+<p>It&#39;s worth noting that while ChatGPT can&#39;t access the internet, Bing has slightly improved capabilities in that regard: if you give it a URL to something that has been crawled by the Bing search engine it can access the cached snapshot of that page.</p>
+<p>Here&#39;s confirmation <a href="https://twitter.com/mparakhin/status/1628646262890237952" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">from Bing exec Mikhail Parakhin</a>:</p>
+<blockquote>
+<p>That is correct - the most recent snapshot of the page content from the Search Index is used, which is usually very current for sites with IndexNow or the last crawl date for others. No live HTTP requests.</p>
+</blockquote>
+<p>If you try it against a URL that it doesn&#39;t have it will attempt a search based on terms it finds in that URL, but it does at least make it clear that it has done that, rather than inventing a misleading summary of a non-existent page:</p>
+<p><img src="https://reader.miniflux.app/proxy/ZF8as13klYBk7vQ5FGGURVTWR4Tnj9BBbtJM7ufeeN8=/aHR0cHM6Ly9zdGF0aWMuc2ltb253aWxsaXNvbi5uZXQvc3RhdGljLzIwMjMvdGF5bG9yLWJpbmcuanBn" alt="Summarize this article: https://arstechnica.com/science/2021/03/Та ylor- Swift-argues-for-science-education
+
+    Searching for: https://arstechnica.com/science/2021/03/Taylor-Swift-argues-for-science-education
+    
+    Searching for: Taylor Swift argues for science education
+    
+    Generating answers for you...
+    
+    The article you requested is not available. However, based on other sources, here is a summary of what Taylor Swift has done for science education:
+    • Taylor Swift has never attended college or university, but she received an honorary doctorate degree from New York University in 2022 for her contributions to music and culture 1 2
+    • Taylor Swift has also used her music to promote awareness and appreciation of nature and its beauty. Her album &#34;Folklore&#34; is full of references to natural landscapes and wildlife 3" loading="lazy"/></p>
+<h4>ChatGPT release notes</h4>
+<p>In case you&#39;re still uncertain - maybe time has passed since I wrote this and you&#39;re wondering if something has changed - the <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">ChatGPT release notes</a> should definitely include news of a monumental change like the ability to fetch content from the web.</p>

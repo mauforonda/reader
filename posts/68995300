@@ -1,0 +1,83 @@
+<p>I&#39;ve had a lot of fun over the holiday period. I spent a huge amount of time with my family, and in some down time I got to hack.</p>
+<p>Last week I talked about the <a href="https://paul.kinlan.me/button-and-link-scraping-for-ml-training/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Button and Link scraping tool</a> that I created to get the data to train a model that will help me work out if an <code>&lt;a&gt;</code> element looks like a button. I&#39;ve made a number of updates to that tool based on some of the results from what I am planning to talk about in this post.</p>
+<p>This post is about how I trained an ML model to detect if an element is a button or a text link.</p>
+<p>I&#39;m still learning a lot, so if you have any feedback or suggestions on how to improve this please leave a comment or message me.</p>
+<p>You can play with the model using the <a href="https://colab.research.google.com/drive/1njX4Sd-6rfM594ACFx9mS3DHJrGfGdr4#scrollTo=eUC1hx6vezgI" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Google Colab</a> that I built for this project (well, initially copied from Laurence Moroney.)</p>
+<h3 id="the-data">The data</h3>
+<p>I now have a repository of about 3000 images of buttons, and 4000 images of links generated from this list of <a href="https://github.com/PaulKinlan/button-and-link-scraper/blob/main/urls.txt" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">urls</a> data using the <a href="https://paul.kinlan.me/button-and-link-scraping-for-ml-training/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Button and Link scraping tool</a> that I created.</p>
+<p>It can be downloaded like so:</p>
+<pre><code>dataset_url = &#34;https://github.com/PaulKinlan/button-and-link-scraper/releases/download/latest/images.tgz&#34;
+data_dir = tf.keras.utils.get_file(origin=dataset_url,
+                                   fname=&#34;images&#34;,
+                                   untar=True)
+data_dir = pathlib.Path(data_dir)
+</code></pre><p>Which is output into two directories, which can then be loaded into two a training and validation data set.</p>
+<pre><code>train_ds = tf.keras.utils.image_dataset_from_directory(
+  data_dir,
+  validation_split=0.4,
+  subset=&#34;training&#34;,
+  seed=123,
+  image_size=(img_height, img_width),
+  batch_size=batch_size)
+  
+val_ds = tf.keras.utils.image_dataset_from_directory(
+  data_dir,
+  validation_split=0.4,
+  subset=&#34;validation&#34;,
+  seed=123,
+  image_size=(img_height, img_width),
+  batch_size=batch_size)
+</code></pre><p>Each image in the training and validation set are scaled to a 256x256 image to keep things uniform for the model.</p>
+<h3 id="the-model">The model</h3>
+<p>If you are familiar with ML training, you can look at the <a href="https://colab.research.google.com/drive/1njX4Sd-6rfM594ACFx9mS3DHJrGfGdr4#scrollTo=eUC1hx6vezgI" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Colab</a> that I have created. In terms of ML, it&#39;s relatively standard. A convolution network with three layers that spits has two classes: button or text link</p>
+<pre><code>model = tf.keras.Sequential([
+  tf.keras.layers.Conv2D(32, 3, activation=&#39;relu&#39;, input_shape=[img_height, img_width, 1]),
+  tf.keras.layers.GaussianNoise(0.01),
+  tf.keras.layers.MaxPooling2D(),
+  tf.keras.layers.Conv2D(32, 3, activation=&#39;relu&#39;),
+  tf.keras.layers.MaxPooling2D(),
+  tf.keras.layers.Conv2D(32, 3, activation=&#39;relu&#39;),
+  tf.keras.layers.MaxPooling2D(),
+  tf.keras.layers.Flatten(),
+  tf.keras.layers.Dense(128, activation=&#39;relu&#39;),
+  tf.keras.layers.Dense(num_classes) #  activation=&#39;softmax&#39; ??
+])
+</code></pre><p>One interesting thing, I added some noise to the training data as I found it gave me better results for images the model has never seen before (but more on that later).</p>
+<p>Overall, the training and validation numbers are good (well, a little too good).</p>
+<figure>
+    <img src="https://reader.miniflux.app/proxy/36ItBaGqBnmQ8Lcvmj9YSVr7VGV35f9gOfgc6dOF3pg=/aHR0cHM6Ly9wYXVsLmtpbmxhbi5tZS9pbWFnZXMvMjAyMy0wMS0xMS1zY3JlZW5zaG90LTIwMjMtMDEtMTEtYXQtMjMtMTgtMDcucG5n" alt="Graphs of the accuracy and loss of the training and validation sets " loading="lazy"/>
+    
+    </figure>
+<p>I need to work out if my data is varied enough or not, but when I test it against some random images it works pretty well!</p>
+<p>Here&#39;s a button looking thing:</p>
+<figure>
+    <img src="https://reader.miniflux.app/proxy/JvD5Y3a88rzq6G4D4-riW1NaI6PlC_E-gZcoUZT96b8=/aHR0cHM6Ly9wYXVsLmtpbmxhbi5tZS9pbWFnZXMvMjAyMy0wMS0xMi1zY3JlZW5zaG90LTIwMjMtMDEtMTItYXQtMDktNTktMTEucG5n" alt="The output of the ML model showing the image of something that looks like a button being detected as a button " loading="lazy"/>
+    
+    </figure>
+<p>And here is a thing that looks like a link:</p>
+<figure>
+    <img src="https://reader.miniflux.app/proxy/vi-Ug4i3nm1MaxKLPYoFRfGChKprvYrQCJs4z4xbTro=/aHR0cHM6Ly9wYXVsLmtpbmxhbi5tZS9pbWFnZXMvMjAyMy0wMS0xMi1zY3JlZW5zaG90LTIwMjMtMDEtMTItYXQtMTAtMDUtMjYucG5n" alt="The output of the ML model showing the image of something that looks like a link being detected as a link " loading="lazy"/>
+    
+    </figure>
+<p>It&#39;s not perfect, but I&#39;m happy with the result so far.</p>
+<h3 id="things-i-have-learnt">Things I have learnt</h3>
+<p>A lot of time went into cleaning up the training data so I ended up doing a number of things to improve the output of the model. I&#39;d like to say a lot of the changes I made were based on insight and experience, however in reality I had to experiment a lot and that was rather time consuming.</p>
+<p>I&#39;ve documented some of the issues that I had so that maybe they will be useful for anyone else that is new to ML and is looking for things to experiment with.</p>
+<ul>
+<li>Early models seemed to classify buttons as links if the colour was different.
+<em>Attempt</em>: I first changed randomly changed the hue of all my images, however that massively slowed down training as I wanted to train on the original images and then add in the new hues. It didn&#39;t really help with classification.
+<em>Best solution so far</em>: Change the image to grayscale using <code>train_ds = train_ds.map_lambda x, y: (tf.image.rgb_to_grayscale(x), y))</code>, not only is there less data to train on (it seemed to speed up) and the colour vairance became less of an issue because I didn&#39;t have to worry about hues as much any more.</li>
+<li>The model seems to identify text, specifically when the word &#34;here&#34; or &#34;button&#34; is present.
+<em>Attempt</em>: The training data is off sites that I own and there is a lot of buttons with the same text. It appears that the feature extraction in the CNN picked this up.
+<em>Best solution so far</em>: Get better data. I added in a number of sites that that use multiple languages to try and add variety.</li>
+<li>Sometimes the same image button but with a couple of pixels different had a different result.
+<em>Attempt 1</em>: Add some random rotations <code>train_ds = train_ds.map(lambda x, y: (tf.keras.layers.RandomRotation((-0.05, 0.05))(x), y))</code> on images to give some varaiance to the data. This didn&#39;t make any difference other than bloat the training set because in the wild there are very very few links or buttons that aren&#39;t in landscape orientation.
+<em>Attempt 2</em>: On inspection of the input data, some images had jpeg compression artifacts so I tried to use <code>train_ds = train_ds.map(lambda x, y: (tf.image.adjust_jpeg_quality(x, 75), y))</code> however it no longer returns an image tensor (seems like a bug), so in the link scraper software I now also create a heavily compressed version of the image. This yielded better results.
+<em>Best solution so far</em>: Added some random noise to all the images. This increased the accuracy of the the validation set and also my testing in the wild. My suspicion is that the variation means it doesn&#39;t overfit as much.</li>
+</ul>
+<h3 id="next-steps">Next steps</h3>
+<p>I&#39;ve learnt a lot, and while it&#39;s still not perfect I want to get this into &#34;production&#34; so that I can see how it holds up with a bit more usage, so I am going to work on two things:</p>
+<ol>
+<li>Build a web app tool to help me test quickly and see if I can get TensorFlow working and help me quickly validate how well it works.</li>
+<li>Build a Lighthouse Audit that will look at the links on a page and create a report.</li>
+</ol>

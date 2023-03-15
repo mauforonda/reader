@@ -1,0 +1,27 @@
+<p>This morning I was driving Lorrie to the train station early and
+trying to factor the four digit numbers on the license plates as I
+often do.  Along the way I ran into the partial factor 389.  Is this
+prime?</p>
+
+<p>The largest prime less than <img src="https://reader.miniflux.app/proxy/rOFSGZW7qpnNyRnl-6Vs93E9FS8ekygl-6daegeRwkQ=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQlNWNzcXJ0JTdiMzg5JTdkJTI0" loading="lazy"/> is <img src="https://reader.miniflux.app/proxy/o8wMMiLgWAXqqIOIoyviemfC0ftI48Bk3JyVelXp_W8=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQxOSUyNA==" loading="lazy"/>, so I thought I
+would have to test primes up to <img src="https://reader.miniflux.app/proxy/o8wMMiLgWAXqqIOIoyviemfC0ftI48Bk3JyVelXp_W8=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQxOSUyNA==" loading="lazy"/>.  Dividing by <img src="https://reader.miniflux.app/proxy/o8wMMiLgWAXqqIOIoyviemfC0ftI48Bk3JyVelXp_W8=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQxOSUyNA==" loading="lazy"/> can be
+troublesome.  But I had a brain wave: <img src="https://reader.miniflux.app/proxy/foFrrzxxe48cXrOw34FvMyFlLrKtqnCYMORcmvojIQU=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQzODklMjAlM2QlMjAyODklMmIxMDAlMjQ=" loading="lazy"/> is obviously a sum of
+two squares.  And <img src="https://reader.miniflux.app/proxy/o8wMMiLgWAXqqIOIoyviemfC0ftI48Bk3JyVelXp_W8=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQxOSUyNA==" loading="lazy"/> is a <img src="https://reader.miniflux.app/proxy/gn5IuZhQbz9SvvGL_W3UhbkPk7BXVt8Wrgqd4oO_6uM=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQ0ayUyYjMlMjQ=" loading="lazy"/> prime, not
+a <img src="https://reader.miniflux.app/proxy/BtUXcQ6kn6tnnKmC1G79Ctl0CWUQrTHZH4FN5Faw53w=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQ0ayUyYjElMjQ=" loading="lazy"/> prime.  So if <img src="https://reader.miniflux.app/proxy/Cq2Wg9od4a8NJRumSBuhjH1BERnMX4BjHMD6nrIjfXU=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQzODklMjQ=" loading="lazy"/> were divisible by <img src="https://reader.miniflux.app/proxy/o8wMMiLgWAXqqIOIoyviemfC0ftI48Bk3JyVelXp_W8=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQxOSUyNA==" loading="lazy"/> it would
+have to be divisible by <img src="https://reader.miniflux.app/proxy/fFwuL5fGVcK9d3cvGRWBTFJ79hQe6QNeYAmA6KgklNU=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQxOSU1ZTIlMjQ=" loading="lazy"/>, which it obviously isn&#39;t.  Tadaa, I
+<em>don&#39;t</em> have to use trial division to check if it&#39;s a multiple of
+<img src="https://reader.miniflux.app/proxy/o8wMMiLgWAXqqIOIoyviemfC0ftI48Bk3JyVelXp_W8=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQxOSUyNA==" loading="lazy"/>.</p>
+
+<p>Well, that was not actually useful, since the trial division by <img src="https://reader.miniflux.app/proxy/o8wMMiLgWAXqqIOIoyviemfC0ftI48Bk3JyVelXp_W8=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQxOSUyNA==" loading="lazy"/>
+is trivial: 
+<img src="https://reader.miniflux.app/proxy/dknvdxyj3pTLZd5qDzePFKJwuSejoIfN3gaShYkBWBw=/aHR0cHM6Ly9jaGFydC5hcGlzLmdvb2dsZS5jb20vY2hhcnQ_Y2hmPWJnLHMsMDAwMDAwMDAmY2h0PXR4JmNobD0lMjQzODklMjAlM2QlMjAzODAlMjAlMmIlMjA5JTI0" loading="lazy"/>.</p>
+
+<p>Maybe the trick could be useful in other cases, but it&#39;s not very likely,
+because I don&#39;t usually notice that a number is a sum of two squares.</p>
+
+<p>
+    This post was originally published <a href="https://blog.plover.com/math/sum-of-squares-trick.html" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">here</a> and
+    you are reading it in the
+    <a href="https://blaggregator.recurse.com/new/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Blaggregator</a> feed.
+    <a href="https://recurse.zulipchat.com/#narrow/stream/blogging/topic/This.20ONE.20WEIRD.20TRICK.20for.20primality.20testing.E2.80.A6.20doesn.27t.20work" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Join the discussion</a> on Zulip!.
+</p>

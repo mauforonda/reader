@@ -1,0 +1,61 @@
+<p>Publishing platform Medium has opened up their me.dm Mastodon server to all current Medium subscribers, the company <a href="https://blog.medium.com/join-mastodon-with-medium-e2d6d814325b" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">announced</a> this week. The Mastodon server has been up and running for a while, but not openly accessible for all registrations. CEO Tony Stubblebine making active use of it, and publicly discussing how to organise policy that fits within the fediverse community.</p>
+
+
+
+<p>The company announced that everyone who subscribers to Medium (5USD/month) can join the me.dm server, and that they will reserve usernames until March 20th. Medium’s status as a well-known tech company meant that this launch got serious coverage in tech journalism, for example by <a href="https://www.theverge.com/2023/3/7/23628642/medium-opens-mastodon-subscription-membership-twitter" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">The Verge</a> and <a href="https://techcrunch.com/2023/03/06/medium-launches-a-premium-mastodon-instance-as-a-membership-perk/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">TechCrunch</a>.</p>
+
+
+
+<p>When I asked about the subscription service, <a href="https://me.dm/@coachtony/109993798839104099" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Tony Stubblebine confirmed</a> that only current Medium subscribers can use the me.dm server. Medium could not say yet how the transfer process worked, or how much time you have to move away from the server after your Medium subscription has expired. They state they are still working on this policy. Medium states, that they want to have a single subscription, and that people are tired of the advertisement model. However, this means that Medium has decided that go for a more walled garden approach: you can stay in the garden for a fee, but as soon as you stop paying, you are out, with no clear indication yet of how you can transfer your identity and posts.</p>
+
+
+
+<p>The announcement post lists five features of what you get by joining the me.dm server:</p>
+
+
+
+<figure><img width="730" height="360" src="https://reader.miniflux.app/proxy/JFdtx7BUbK4DFLPLc6kvpIlqAQCFUrBEXaKcff0Llsg=/aHR0cHM6Ly9mZWRpdmVyc2VyZXBvcnQuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL21lZGl1bS1wcmVtaXVtLXNlcnZlci5wbmc=" alt="" srcset="https://reader.miniflux.app/proxy/JFdtx7BUbK4DFLPLc6kvpIlqAQCFUrBEXaKcff0Llsg=/aHR0cHM6Ly9mZWRpdmVyc2VyZXBvcnQuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL21lZGl1bS1wcmVtaXVtLXNlcnZlci5wbmc= 730w, https://reader.miniflux.app/proxy/QIylXCHIhfkZxr67MoAxmT-iCmIkLWnQPxKS03BTou0=/aHR0cHM6Ly9mZWRpdmVyc2VyZXBvcnQuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL21lZGl1bS1wcmVtaXVtLXNlcnZlci0zMDB4MTQ4LnBuZw== 300w" sizes="(max-width: 730px) 100vw, 730px" loading="lazy"/></figure>
+
+
+
+<p>All of these features are interesting in their own right.</p>
+
+
+
+<p>Let’s start with number 2: easy sharing of your Medium posts with the Mastodon network. This feels like a missed opportunity. From a branding perspective it is understandable to use the term Mastodon network. But if you want to advertise the great reach that you can get, it feels weird to call it by the smaller reach name (Mastodon) instead of the entire fediverse. Throughout the entire piece, Medium consistently talks about Mastodon, but never mentions the fediverse. Considering that the entire point is to advertise to potential users, this feels like either a massive missed opportunity, or that Medium itself has not really internalised what the difference between Mastodon and the fediverse actually is. They want to convice users that by joining the me.dm server you get great reach, so why not sell the actual great reach that you get? Instead, they sell the smaller (but still signficant reach) that you get on Mastodon. This point also raises the question: how is this different from any other fediverse server?</p>
+
+
+
+<p>Regarding number 4, the local feed. In the interview with TechCrunch, the CEO states that they expect a “six figure” community somewhere this year. This size clashes with the idea of a valuable local feed. Once servers become in the 6 figures, the local feed becomes a fire hose of posts that cannot be read anymore. For context Mastodon.social has 170k active users, and the local timeline features around 20 posts per minute.</p>
+
+
+
+<p>Not all is negative though. Recent news developments regarding the mastodon.lol and mastodon.au server (both shut down due to admin drama) show the value of a professional operated server and content moderation team. Medium has a serious power in this area, even though it is competing with other professionally-run instances: both in corporate form (Flipboard), organisational form (Mozilla), as cooperative (Hachyderm.io) or as NGO (Mastodon organisation).</p>
+
+
+
+<p>The hand-picked recommendations is an interesting approach. Content discovery is a well-known pain point on the fediverse, and this can certainly help. Its not clear how this will be implemented in detail.</p>
+
+
+
+<h2>Domain names</h2>
+
+
+
+<p>One of the primary advantages that Medium advertises itself with is the user domain name. You get a short and simple domain name, @user@me.dm. I think Medium is onto something here. I am not sure if just simply ‘short’ will provide enough value for people, but at the very least it is noticeable and stands out.</p>
+
+
+
+<p>It does however point to a larger point, that Medium has been early to notice: your domain name in your user name becomes part of your identity, and tells you something where you are from. This is obvious in the context of email, which has the exact same format. However, email became dominated by the consumer public by a few companies, leading to only a few mainstream domain names such as Gmail, Hotmail and Live. </p>
+
+
+
+<p>On the fediverse, the battle for domain names is open again, with companies again seeing the advertising power in having people use your company name as your domain name. At the same time, there is a big anti-corporate push on the fediverse, with people actively wanting not to advertise specific companies in their domain now. </p>
+
+
+
+<p>It is too early to tell how this will turn out, if this will lead to only a few common domain names, or if domain names will be more varied. It is something to keep in the back of your mind though, especially now that other companies and organisations are joining the fediverse. </p>
+
+
+
+<p></p>

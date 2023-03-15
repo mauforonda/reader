@@ -1,0 +1,36 @@
+<p><a href="https://snuffleupagus.readthedocs.org" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><img alt="snuffleupagus logo" src="https://reader.miniflux.app/proxy/ogqvs-l7RNvHYNxTPto3bJA0bQiOka2XinPZLwt4mEY=/aHR0cHM6Ly9kdXN0cmkub3JnL2IvaW1hZ2VzL3NwLnBuZw==" loading="lazy"/></a></p>
+<p>I just published a new release of
+<a href="https://github.com/jvoisin/snuffleupagus/releases/tag/v0.8.0" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Snuffleupagus</a>,
+the hardening module for php7+ and php8+,
+version <code>0.9.0</code>, codename &#34;Elephant seal&#34;,
+named after a majestic <a href="https://en.wikipedia.org/wiki/Elephant_seal" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">seal species</a>.</p>
+<p>Adding support for <a href="https://www.php.net/releases/8.2/en.php" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">PHP 8.2</a> in
+Snuffleupagus was <em>relatively</em> straightforward:</p>
+<ul>
+<li>A few function prototypes changed signatures.</li>
+<li>A broken macro, namely <code>ZEND_HASH_FOREACH_END_DEL</code> can&#39;t be used
+  with <code>ZEND_HASH_REVERSE_FOREACH_KEY_PTR</code>, so it was replaced with
+  <code>ZEND_HASH_FOREACH_END</code>. Since <code>ZEND_HASH_FOREACH_END_DEL</code> isn&#39;t used
+  anywhere in PHP&#39;s codebase, nor anywhere else actually, to my knowledge, except in Snuffleupagus,
+  it&#39;s no wonder that nobody noticed it to be completely broken.</li>
+<li>The test suite was broken due to the <code>--CLEAN--</code> part loading Snuffleupagus,
+  but not obeying the <code>--INI--</code> part, leading to error logs being outputted,
+  breaking the tests making use of <code>--CLEAN--</code>. This was &#34;fixed&#34; by moving the
+  cleaning parts before/after the actual tests.</li>
+<li><code>zend_atol</code> is deprecated, and was replaced with <code>ZEND_STRTOL</code>.</li>
+<li>Amusingly, <code>PHP_VERSION_ID</code> for PHP 8.2 isn&#39;t <code>82000</code>, but <code>80200</code>. This
+  wasn&#39;t a source of confusion at all, as usual.</li>
+</ul>
+<p>There is also a new mitigation:
+<a href="https://snuffleupagus.readthedocs.io/config.html#unserialize-noclass" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer"><code>unserialize_noclass</code></a>,
+available on PHP8+. As its name implies, it disables the deserialization of
+objects via <code>unserialize</code>, the equivalent of setting the <code>options</code> parameter
+of <code>unserialize</code> to <code>false</code> for every call. It was suggested by <a href="https://florent.daigniere.com" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Nextgens</a>.</p>
+<h2>Changelog</h2>
+<ul>
+<li>Compatibility with PHP8.2</li>
+<li>Add the ability block object unserialization globally.</li>
+</ul>
+<p>As usual, if you want to help, we have some
+<a href="https://github.com/jvoisin/snuffleupagus/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">low hanging fruits</a> ♥</p>
+<p>See you in your PHP stack!</p>

@@ -1,0 +1,113 @@
+<p><em>Nils Brinker is a researcher and Richard Skalt is a manager at the <a href="https://esmt.berlin/faculty-research/dsi" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Digital Society Institute (DSI)</a> at the European School of Management and Technology (ESMT Berlin)</em></p>
+
+
+
+<figure><img src="https://reader.miniflux.app/proxy/v-1Nw0SbSaf0ER7N6u1uz1_XvBvTgCyYEjpgl6uLWgU=/aHR0cHM6Ly90ZWNocG9saWN5LnByZXNzL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL0N5YmVyc2VjdXJpdHktMS0xMDI0eDU3Ni5wbmc=" alt="" srcset="https://reader.miniflux.app/proxy/v-1Nw0SbSaf0ER7N6u1uz1_XvBvTgCyYEjpgl6uLWgU=/aHR0cHM6Ly90ZWNocG9saWN5LnByZXNzL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL0N5YmVyc2VjdXJpdHktMS0xMDI0eDU3Ni5wbmc= 1024w, https://reader.miniflux.app/proxy/OvteE9YJkobyRNizWC6mzLW7TjC17sW4DBXZxHBfggc=/aHR0cHM6Ly90ZWNocG9saWN5LnByZXNzL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL0N5YmVyc2VjdXJpdHktMS0zMDB4MTY5LnBuZw== 300w, https://reader.miniflux.app/proxy/tn5MP49ZRS9kVXFmW22F9Ry1jZveuJNrZCabmsgLKVM=/aHR0cHM6Ly90ZWNocG9saWN5LnByZXNzL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL0N5YmVyc2VjdXJpdHktMS03Njh4NDMyLnBuZw== 768w, https://reader.miniflux.app/proxy/cg38FsrTBw7tHmXPvhhgyXCGbKxlpZhedn4q0bUe7Iw=/aHR0cHM6Ly90ZWNocG9saWN5LnByZXNzL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAzL0N5YmVyc2VjdXJpdHktMS5wbmc= 1200w" sizes="(max-width: 1024px) 100vw, 1024px" loading="lazy"/></figure>
+
+
+<p>The governance of cyberspace is a challenging task that requires close coordination between governments, private companies and critical infrastructure providers, as well as civil society and international standard-setting bodies to establish new rules, guidelines or regulations. In many ways, the European Union is at the forefront of cyberspace regulation, making it a perfect case study for evaluating different governance models for cybersecurity regulation.</p>
+
+
+
+<p>European regulators have been working to achieve a higher common standard of cybersecurity within the European Union (EU), resulting in the development of the Network and Information Security (NIS) Directive, adopted in 2016 and being replaced by NIS 2.0 in 2023, the European Cybersecurity Act, adopted in 2019, and the upcoming Cyber Resilience Act, announced last September. Yet a major challenge is that cybersecurity as a goal in itself remains blurry. </p>
+
+
+
+<p>Especially on the highest level of policy discussions, understandings of what the term cybersecurity describes can vary widely among stakeholders. Law enforcement and security agencies tend to understand the term as “security in cyberspace,” in the sense that no crimes are committed using information technology as a tool. This understanding of cybersecurity often clashes with the more safety-oriented view of cybersecurity held by civil society stakeholders and security regulators. The latter generally understand cybersecurity as a quality of information technology that prevents impairments to the confidentiality, integrity, or availability of the systems in use. </p>
+
+
+
+<p>These different understandings clash most prominently when it comes to the need for and use of encryption. Encryption is one of the most influential technologies for protecting communications (both human to human and machine to machine) from the eyes and ears of unauthorized parties by making it technically impossible to read those messages. This technical quality collides with the interest of the authorities to interfere with the communication of suspects in order to prevent possible public harm, or to investigate crimes that have been committed.</p>
+
+
+
+<p>However, even if one could agree on a definition of cybersecurity as the ability of systems to resist being compromised in their confidentiality, integrity, or availability, this is not something that can simply be decided on. Security is not a unique state or quality, but a relative one. The countless repetitions of phrases like “no system is secure” or “there is no such thing as 100% security” may have dulled one’s senses to the actual content of the words, but it does not make these statements any less accurate. This characteristic of relational security poses a significant challenge to policymakers and regulators. Since security itself cannot simply be legislated, policymakers must rely on the creation and regulation of processes that enable or even encourage the development of secure systems. </p>
+
+
+
+<p>Two different examples of these governance models are the NIS 2.0 Directive and the Cyber Resilience Act, which rely on methods and tools that will be explored in this text.</p>
+
+
+
+<h2 id="h-nis-2-0-placing-the-duties-on-the-operator"><strong>NIS 2.0: Placing the Duties on the Operator</strong></h2>
+
+
+
+<p>The <a href="https://digital-strategy.ec.europa.eu/en/news/new-stronger-rules-start-apply-cyber-and-physical-resilience-critical-entities-and-networks" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">NIS 2.0 directive</a> on measures for a high common level of cybersecurity across the EU came into effect on January 16, 2023. It outlines the requirements for operators of essential entities to take appropriate and proportionate operational, technical, and organizational measures to ensure the security of the systems used to provide essential services. Broadly speaking, critical infrastructure operators should have a self-interest in ensuring adequate cybersecurity, as incidents also represent a significant business risk. </p>
+
+
+
+<p>The main reason for public policy intervention at this juncture is that the provision of critical infrastructure is a task of such public interest that decisions should not depend solely on the nature of the risks faced by private operators. By formulating legal requirements, policymakers harmonize the risk behavior of all infrastructure providers. However, this harmonization comes at a cost, as operators must not only implement operational cybersecurity, but also bear the burden of providing documentation to prove compliance.</p>
+
+
+
+<p>One could argue that the costs of proving compliance may not outweigh the effects of harmonizing risk behavior on improving actual cybersecurity. This may be because the gap between the average operator’s risk preferences and the now mandatory regulatory requirements is relatively small. However, in an evolving ecosystem with an ever-increasing number of connected systems, the individual risk behavior of an operator is not the only factor shaping overall security. The days of monolithic systems operated by a single actor are slowly fading, even if the pace of adoption of technologies such as the cloud may be slower in the world of critical infrastructure operational technology.</p>
+
+
+
+<p>Operators must rely on third-party products and services, and therefore on the security of the entire supply chain. The problem is that IT security as a quality is already difficult to assess from the inside – if potential vulnerabilities were easy to identify, they would be fixed in the first place – and even more difficult to assess from the outside. As a result, operators are forced to rely on the transparency and trustworthiness of third-party service providers.</p>
+
+
+
+<p>In a market context, however, transparency is not a default but a negotiable good. Introducing risk assessment requirements in this context might strengthen the negotiation power of middle-sized operators, especially when dealing with big providers. Those generally have no interest in being more transparent than the necessary minimum. And as there are certain types of services that are de facto monopolies, middle-sized companies and even bigger corporations are compelled to agree to their standard contractual terms. Legal requirements, however, can take the requirements for transparency out of the negotiation mass, because it leaves operators no other choice. This can potentially result in two situations: either the third-party providers change their approach to transparency, possibly even adapting their products to meet the security requirements of essential entities, or there will be no supply of compliant providers left.</p>
+
+
+
+<p>Which of these situations will occur under the new directive remains to be seen. A positive example – where this approach has led, at least in part, to positive change – is the adoption of the EU General Data Protection Regulation (GDPR). The GDPR placed the burden of ensuring the lawful processing of data on data controllers, even when using the services of third parties. This posed a significant problem for companies using services such as the Microsoft Office suite. This was because Microsoft was initially very opaque about the extent to which it processed personal data, particularly in regard to telemetry. As a result, controllers could not properly assess the lawfulness of the data processing for which they were responsible. As a result, there was no way to use Microsoft products in a legally compliant manner. With the entry into force of the GDPR, Microsoft has become more transparent about its data use and, at least to some extent, more flexible in its contractual design. This should not be interpreted as the result of individual customer negotiations, but rather as the cumulative pressure created by the negotiations.</p>
+
+
+
+<p>NIS 2.0 relies on a mode of governance that promotes cybersecurity by creating cumulative demand for it. It remains to be seen whether the market power of essential entities is significant enough to trigger a supply response.</p>
+
+
+
+<h2><strong>The Cyber Resilience Act: The Product Safety Approach</strong></h2>
+
+
+
+<p>The EU regulation establishing horizontal cybersecurity requirements for products with digital elements, in short, the <a href="https://digital-strategy.ec.europa.eu/en/library/cyber-resilience-act" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Cyber Resilience Act (CRA)</a>, follows a different approach. Instead of formulating requirements for operators, the CRA places the burden on manufacturers of digital products. The regulatory requirements, therefore, are on the supply side rather than the demand side.</p>
+
+
+
+<p>This “product-safety” approach is not new to the EU single market and is an established principle for a wide range of product types. What is new in this case is the idea to apply this principle to digital products. However, it would be false to assume that digital products have been left unregulated so far. Cybersecurity as a product quality always has been subject to legal warranties, but there are two issues with this type of regulation. First, warranty rights have to be proactively exercised. Secondly, as described, “security” is not a uniquely identifiable condition. A lack of “security,” to the extent that would qualify as a defect, is not easy to prove.</p>
+
+
+
+<p>The CRA relies on a more proactive governance mode. Instead of ensuring proper security <em>ex post</em> by providing warranty rights, the manufacturer now has to confirm appropriate security <em>ex ante</em>, before placing his product on the market. This approach might prove much more effective than solely ensuring warranty rights, because, unlike in the United States, compensation does not include penalty payments. Warranty cases are, therefore, generally a lot cheaper for manufacturers in the EU. Accordingly, the threat of warranty cases alone might not trigger the necessary amount of market pressure for manufacturers to design safer products.</p>
+
+
+
+<p>In effect, the CRA could help prevent a <em>market for lemons</em> regarding the security of products. As vague as security is to evaluate – even for professionals – the typical consumer might not be able to judge it at all. In other words, there is a persistent information asymmetry between a product manufacturer and the consumer. The market for lemons describes an effect where the consumer is only willing to pay the price he would pay for a low-quality product because he does not know if he will get a <em>lemon</em>. As a result, the market will only consist of low-quality products because the prices of the production of high-quality products cannot be covered anymore. By dictating a minimum standard, there is no longer any potential in cutting costs by lowering the quality of security features or processes. Even though overall market prices for consumers may rise, so will the security of digital products. Such a market approach might be more suitable for improving cybersecurity on a broader market scale.</p>
+
+
+
+<h2><strong>The Cybersecurity Act – Laying the Groundwork for Good Oversight</strong></h2>
+
+
+
+<p>The <a href="https://digital-strategy.ec.europa.eu/en/policies/cybersecurity-act" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Cybersecurity Act (CSA)</a> is not, as its name suggests, an overarching piece of legislation that takes a holistic approach. In fact, it is quite the opposite. First, the CSA grants a permanent mandate to the European Cyber Security Agency (ENISA) – originally established in 2004 – and roughly outlines its responsibilities. Despite being rather unspectacular in terms of administrative public law, it is crucial for any further oversight measures at the European level. The actual mandates that ENISA is supposed to cover also remained vague and without much means for operational enforcement, but are being expanded with each new act. As originally formulated by the CSA, ENISA’s mandates included efforts such as knowledge building and sharing, as well as building networks and capacities for Union-wide cooperation.</p>
+
+
+
+<p>A more substantial and market-relevant effort within the CSA was the goal of creating a certification scheme for secure digital goods and services. These certifications can serve the same purpose as the mandatory security requirements formulated by the CRA. In a market situation where information about the exact quality of a product is asymmetrically distributed, certification can reduce transaction costs. By guaranteeing a certain set of qualities, a certificate relieves the buyer of the burden of having to evaluate the qualities himself. </p>
+
+
+
+<p>However, unlike the mandatory requirements of the CRA, certification under the CSA is not mandatory. Suppliers could voluntarily certify their products, which may have given them a market advantage over their competitors. To date, the CSA certification program has not had an impact. First, it remains to be seen whether the significant benefit of reduced transaction costs would outweigh the cost and effort of certification. But more importantly, the certification schemes have to be formulated and agreed upon by a committee appointed by ENISA. So far, these schemes have not been published.</p>
+
+
+
+<h2><strong>Good Cybersecurity Governance: Lessons Learned</strong></h2>
+
+
+
+<p>By analyzing the methods and instruments used by the EU to regulate cybersecurity from the demand side (GDPR and NIS 2.0) and the supply side (CSA and CRA), we have identified a number of governance models to strengthen cybersecurity through the use of regulatory measures. While the NIS introduced operational mandatory cybersecurity requirements for operators and critical infrastructure providers, later enhanced by NIS 2.0, the Cybersecurity Act aimed at improving the security of ICT products, services and processes by introducing a voluntary European cybersecurity certification framework. Recognizing the delay in the development and effectiveness of the underlying goals of the Cybersecurity Act – to date, there are no mandatory requirements to strengthen the security of products with digital elements – the European Commission proposed the Cyber Resilience Act to fill this gap by enforcing compliance where voluntary models have failed to achieve the desired results.</p>
+
+
+
+<p>Good cybersecurity governance relies on a mix of interventionist measures that include top-down legislation, as well as adaptive practices that allow the necessary flexibility to raise or lower the burden on operators, manufacturers, and suppliers. The NIS Directive and GDPR have demonstrated the success of this model, but it remains to be seen whether this will continue with NIS 2.0. As written in the <a href="https://ec.europa.eu/newsroom/dae/redirection/document/89543" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">preface of the CRA</a>, “[…] previous EU legislation has substantial gaps in this regard, as it does not cover mandatory requirements for the security of products with digital elements”. Hence, the need to introduce a more interventionist form of supply-side governance in the form of the CRA. This provides us with the key insight that despite being good for reducing transaction costs between suppliers and customers, the voluntary certification model exemplified by the Cyber Security Act did not suffice to achieve the desired policy outcome. </p>
+
+
+
+<p>Instead, we need structures that enable stronger cybersecurity from the bottom up. Cybersecurity cannot be legislated or regulated from the top down without taking into account the necessary knowledge, skills, and capabilities of the people who deliver the necessary goods and services on which our collective security is built. Any cybersecurity governance strategy that relies on top-down regulation alone will fail, but by investing in infrastructure, education and research, governments can create the necessary conditions for a more holistic, whole-of-society approach to cybersecurity.</p>
+<p>The post <a href="https://techpolicy.press/good-cybersecurity-governance-in-the-european-union-best-practices-based-on-nis2-and-the-cyber-resilience-act/" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Good Cybersecurity Governance in the European Union – Best Practices Based on NIS2 and the Cyber Resilience Act</a> appeared first on <a href="https://techpolicy.press" rel="noopener noreferrer" target="_blank" referrerpolicy="no-referrer">Tech Policy Press</a>.</p>
